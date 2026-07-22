@@ -1,0 +1,488 @@
+{
+  "mazda3": {
+    "2024": {
+      "defaultTrimId": "preferred",
+      "trims": [
+        {
+          "id": "preferred",
+          "name": "Preferred",
+          "engine": "2.5L I4",
+          "horsepower": 191,
+          "mpgCombined": 31,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "turbo",
+          "name": "Turbo Premium Plus",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 250,
+          "mpgCombined": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "preferred",
+      "trims": [
+        {
+          "id": "preferred",
+          "name": "Preferred",
+          "engine": "2.5L I4",
+          "horsepower": 191,
+          "mpgCombined": 31,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "turbo",
+          "name": "Turbo Premium Plus",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 250,
+          "mpgCombined": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "preferred",
+      "trims": [
+        {
+          "id": "preferred",
+          "name": "Preferred",
+          "engine": "2.5L I4",
+          "horsepower": 191,
+          "mpgCombined": 31,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "turbo",
+          "name": "Turbo Premium Plus",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 250,
+          "mpgCombined": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "miata": {
+    "2024": {
+      "defaultTrimId": "club",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.0L I4",
+          "horsepower": 181,
+          "drivetrain": "RWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 2
+        },
+        {
+          "id": "club",
+          "name": "Club",
+          "engine": "2.0L I4",
+          "horsepower": 181,
+          "zeroToSixtySec": 5.7,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "club",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.0L I4",
+          "horsepower": 181,
+          "drivetrain": "RWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 2
+        },
+        {
+          "id": "club",
+          "name": "Club",
+          "engine": "2.0L I4",
+          "horsepower": 181,
+          "zeroToSixtySec": 5.7,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "club",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.0L I4",
+          "horsepower": 181,
+          "drivetrain": "RWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 2
+        },
+        {
+          "id": "club",
+          "name": "Club",
+          "engine": "2.0L I4",
+          "horsepower": 181,
+          "zeroToSixtySec": 5.7,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        }
+      ]
+    }
+  },
+  "cx-5": {
+    "2024": {
+      "defaultTrimId": "preferred",
+      "trims": [
+        {
+          "id": "preferred",
+          "name": "Preferred",
+          "engine": "2.5L I4",
+          "horsepower": 187,
+          "mpgCombined": 28,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "turbo",
+          "name": "Turbo",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 256,
+          "mpgCombined": 25,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "preferred",
+      "trims": [
+        {
+          "id": "preferred",
+          "name": "Preferred",
+          "engine": "2.5L I4",
+          "horsepower": 187,
+          "mpgCombined": 28,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "turbo",
+          "name": "Turbo",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 256,
+          "mpgCombined": 25,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "preferred",
+      "trims": [
+        {
+          "id": "preferred",
+          "name": "Preferred",
+          "engine": "2.5L I4",
+          "horsepower": 187,
+          "mpgCombined": 28,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "turbo",
+          "name": "Turbo",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 256,
+          "mpgCombined": 25,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "cx-30": {
+    "2024": {
+      "defaultTrimId": "preferred",
+      "trims": [
+        {
+          "id": "preferred",
+          "name": "Preferred",
+          "engine": "2.5L I4",
+          "horsepower": 191,
+          "mpgCombined": 28,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "turbo",
+          "name": "Turbo",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 250,
+          "mpgCombined": 25,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "preferred",
+      "trims": [
+        {
+          "id": "preferred",
+          "name": "Preferred",
+          "engine": "2.5L I4",
+          "horsepower": 191,
+          "mpgCombined": 28,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "turbo",
+          "name": "Turbo",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 250,
+          "mpgCombined": 25,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "preferred",
+      "trims": [
+        {
+          "id": "preferred",
+          "name": "Preferred",
+          "engine": "2.5L I4",
+          "horsepower": 191,
+          "mpgCombined": 28,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "turbo",
+          "name": "Turbo",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 250,
+          "mpgCombined": 25,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "cx-90": {
+    "2024": {
+      "defaultTrimId": "preferred",
+      "trims": [
+        {
+          "id": "preferred",
+          "name": "Preferred",
+          "engine": "3.3L Turbo I6",
+          "horsepower": 280,
+          "mpgCombined": 25,
+          "drivetrain": "AWD",
+          "seatingCapacity": 8
+        },
+        {
+          "id": "phev",
+          "name": "PHEV",
+          "engine": "2.5L PHEV",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 323,
+          "rangeMiles": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "preferred",
+      "trims": [
+        {
+          "id": "preferred",
+          "name": "Preferred",
+          "engine": "3.3L Turbo I6",
+          "horsepower": 280,
+          "mpgCombined": 25,
+          "drivetrain": "AWD",
+          "seatingCapacity": 8
+        },
+        {
+          "id": "phev",
+          "name": "PHEV",
+          "engine": "2.5L PHEV",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 323,
+          "rangeMiles": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "preferred",
+      "trims": [
+        {
+          "id": "preferred",
+          "name": "Preferred",
+          "engine": "3.3L Turbo I6",
+          "horsepower": 280,
+          "mpgCombined": 25,
+          "drivetrain": "AWD",
+          "seatingCapacity": 8
+        },
+        {
+          "id": "phev",
+          "name": "PHEV",
+          "engine": "2.5L PHEV",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 323,
+          "rangeMiles": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        }
+      ]
+    }
+  },
+  "cx-9": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "CX-9 (succeeded by CX-90)",
+          "notes": "Replaced by CX-90."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "CX-9 (succeeded by CX-90)",
+          "notes": "Replaced by CX-90."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "CX-9 (succeeded by CX-90)",
+          "notes": "Replaced by CX-90."
+        }
+      ]
+    }
+  },
+  "mazda6": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Mazda6 (ended)",
+          "notes": "U.S. Mazda6 ended after 2021."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Mazda6 (ended)",
+          "notes": "U.S. Mazda6 ended after 2021."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Mazda6 (ended)",
+          "notes": "U.S. Mazda6 ended after 2021."
+        }
+      ]
+    }
+  },
+  "rx-8": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "RX-8 (ended)",
+          "notes": "Ended after 2012."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "RX-8 (ended)",
+          "notes": "Ended after 2012."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "RX-8 (ended)",
+          "notes": "Ended after 2012."
+        }
+      ]
+    }
+  },
+  "mazdaspeed3": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Mazdaspeed3 (ended)",
+          "notes": "Ended after 2013."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Mazdaspeed3 (ended)",
+          "notes": "Ended after 2013."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Mazdaspeed3 (ended)",
+          "notes": "Ended after 2013."
+        }
+      ]
+    }
+  }
+}

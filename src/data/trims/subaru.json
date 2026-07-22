@@ -1,0 +1,579 @@
+{
+  "impreza": {
+    "2024": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.0L Flat-4",
+          "horsepower": 152,
+          "mpgCombined": 30,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "rs",
+          "name": "RS",
+          "engine": "2.5L Flat-4",
+          "horsepower": 182,
+          "mpgCombined": 29,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.0L Flat-4",
+          "horsepower": 152,
+          "mpgCombined": 30,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "rs",
+          "name": "RS",
+          "engine": "2.5L Flat-4",
+          "horsepower": 182,
+          "mpgCombined": 29,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.0L Flat-4",
+          "horsepower": 152,
+          "mpgCombined": 30,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "rs",
+          "name": "RS",
+          "engine": "2.5L Flat-4",
+          "horsepower": 182,
+          "mpgCombined": 29,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "wrx-sti": {
+    "2024": {
+      "defaultTrimId": "wrx",
+      "trims": [
+        {
+          "id": "wrx",
+          "name": "WRX",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 271,
+          "torqueLbFt": 258,
+          "zeroToSixtySec": 5.5,
+          "drivetrain": "AWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "tr",
+          "name": "WRX TR",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 271,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "notes": "STI nameplate paused; WRX TR is the current performance trim."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "wrx",
+      "trims": [
+        {
+          "id": "wrx",
+          "name": "WRX",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 271,
+          "torqueLbFt": 258,
+          "zeroToSixtySec": 5.5,
+          "drivetrain": "AWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "tr",
+          "name": "WRX TR",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 271,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "notes": "STI nameplate paused; WRX TR is the current performance trim."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "wrx",
+      "trims": [
+        {
+          "id": "wrx",
+          "name": "WRX",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 271,
+          "torqueLbFt": 258,
+          "zeroToSixtySec": 5.5,
+          "drivetrain": "AWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "tr",
+          "name": "WRX TR",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 271,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "notes": "STI nameplate paused; WRX TR is the current performance trim."
+        }
+      ]
+    }
+  },
+  "outback": {
+    "2024": {
+      "defaultTrimId": "limited",
+      "trims": [
+        {
+          "id": "limited",
+          "name": "Limited",
+          "engine": "2.5L Flat-4",
+          "horsepower": 182,
+          "mpgCombined": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "groundClearanceIn": 8.7
+        },
+        {
+          "id": "wilderness",
+          "name": "Wilderness",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 260,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "groundClearanceIn": 9.5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "limited",
+      "trims": [
+        {
+          "id": "limited",
+          "name": "Limited",
+          "engine": "2.5L Flat-4",
+          "horsepower": 182,
+          "mpgCombined": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "groundClearanceIn": 8.7
+        },
+        {
+          "id": "wilderness",
+          "name": "Wilderness",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 260,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "groundClearanceIn": 9.5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "limited",
+      "trims": [
+        {
+          "id": "limited",
+          "name": "Limited",
+          "engine": "2.5L Flat-4",
+          "horsepower": 182,
+          "mpgCombined": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "groundClearanceIn": 8.7
+        },
+        {
+          "id": "wilderness",
+          "name": "Wilderness",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 260,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "groundClearanceIn": 9.5
+        }
+      ]
+    }
+  },
+  "forester": {
+    "2024": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.5L Flat-4",
+          "horsepower": 180,
+          "mpgCombined": 29,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "wilderness",
+          "name": "Wilderness",
+          "engine": "2.5L Flat-4",
+          "horsepower": 180,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "groundClearanceIn": 9.2
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.5L Flat-4",
+          "horsepower": 180,
+          "mpgCombined": 29,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "wilderness",
+          "name": "Wilderness",
+          "engine": "2.5L Flat-4",
+          "horsepower": 180,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "groundClearanceIn": 9.2
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.5L Flat-4",
+          "horsepower": 180,
+          "mpgCombined": 29,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "wilderness",
+          "name": "Wilderness",
+          "engine": "2.5L Flat-4",
+          "horsepower": 180,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "groundClearanceIn": 9.2
+        }
+      ]
+    }
+  },
+  "crosstrek": {
+    "2024": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.5L Flat-4",
+          "horsepower": 182,
+          "mpgCombined": 29,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "wilderness",
+          "name": "Wilderness",
+          "engine": "2.5L Flat-4",
+          "horsepower": 182,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.5L Flat-4",
+          "horsepower": 182,
+          "mpgCombined": 29,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "wilderness",
+          "name": "Wilderness",
+          "engine": "2.5L Flat-4",
+          "horsepower": 182,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.5L Flat-4",
+          "horsepower": 182,
+          "mpgCombined": 29,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "wilderness",
+          "name": "Wilderness",
+          "engine": "2.5L Flat-4",
+          "horsepower": 182,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "ascent": {
+    "2024": {
+      "defaultTrimId": "limited",
+      "trims": [
+        {
+          "id": "limited",
+          "name": "Limited",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 260,
+          "mpgCombined": 23,
+          "drivetrain": "AWD",
+          "seatingCapacity": 8,
+          "towingLb": 5000
+        },
+        {
+          "id": "touring",
+          "name": "Touring",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 260,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "limited",
+      "trims": [
+        {
+          "id": "limited",
+          "name": "Limited",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 260,
+          "mpgCombined": 23,
+          "drivetrain": "AWD",
+          "seatingCapacity": 8,
+          "towingLb": 5000
+        },
+        {
+          "id": "touring",
+          "name": "Touring",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 260,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "limited",
+      "trims": [
+        {
+          "id": "limited",
+          "name": "Limited",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 260,
+          "mpgCombined": 23,
+          "drivetrain": "AWD",
+          "seatingCapacity": 8,
+          "towingLb": 5000
+        },
+        {
+          "id": "touring",
+          "name": "Touring",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 260,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        }
+      ]
+    }
+  },
+  "legacy": {
+    "2024": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.5L Flat-4",
+          "horsepower": 182,
+          "mpgCombined": 30,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "xt",
+          "name": "XT",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 260,
+          "mpgCombined": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.5L Flat-4",
+          "horsepower": 182,
+          "mpgCombined": 30,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "xt",
+          "name": "XT",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 260,
+          "mpgCombined": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.5L Flat-4",
+          "horsepower": 182,
+          "mpgCombined": 30,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "xt",
+          "name": "XT",
+          "engine": "2.4L Turbo Flat-4",
+          "horsepower": 260,
+          "mpgCombined": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "brz": {
+    "2024": {
+      "defaultTrimId": "premium",
+      "trims": [
+        {
+          "id": "premium",
+          "name": "Premium",
+          "engine": "2.4L Flat-4",
+          "horsepower": 228,
+          "torqueLbFt": 184,
+          "zeroToSixtySec": 6.1,
+          "drivetrain": "RWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 4
+        },
+        {
+          "id": "ts",
+          "name": "tS",
+          "engine": "2.4L Flat-4",
+          "horsepower": 228,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "premium",
+      "trims": [
+        {
+          "id": "premium",
+          "name": "Premium",
+          "engine": "2.4L Flat-4",
+          "horsepower": 228,
+          "torqueLbFt": 184,
+          "zeroToSixtySec": 6.1,
+          "drivetrain": "RWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 4
+        },
+        {
+          "id": "ts",
+          "name": "tS",
+          "engine": "2.4L Flat-4",
+          "horsepower": 228,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "premium",
+      "trims": [
+        {
+          "id": "premium",
+          "name": "Premium",
+          "engine": "2.4L Flat-4",
+          "horsepower": 228,
+          "torqueLbFt": 184,
+          "zeroToSixtySec": 6.1,
+          "drivetrain": "RWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 4
+        },
+        {
+          "id": "ts",
+          "name": "tS",
+          "engine": "2.4L Flat-4",
+          "horsepower": 228,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        }
+      ]
+    }
+  }
+}

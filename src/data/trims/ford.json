@@ -1,0 +1,929 @@
+{
+  "mustang": {
+    "2024": {
+      "defaultTrimId": "gt",
+      "trims": [
+        {
+          "id": "ecoboost",
+          "name": "EcoBoost",
+          "engine": "2.3L Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 315,
+          "torqueLbFt": 350,
+          "zeroToSixtySec": 5.0,
+          "transmission": "6-speed manual / 10-speed automatic",
+          "drivetrain": "RWD",
+          "mpgCity": 21,
+          "mpgHighway": 32,
+          "mpgCombined": 25,
+          "seatingCapacity": 4,
+          "cargoCuFt": 13.3
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "5.0L Coyote V8",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 486,
+          "torqueLbFt": 418,
+          "zeroToSixtySec": 4.2,
+          "transmission": "6-speed manual / 10-speed automatic",
+          "drivetrain": "RWD",
+          "mpgCity": 15,
+          "mpgHighway": 24,
+          "mpgCombined": 18,
+          "seatingCapacity": 4,
+          "cargoCuFt": 13.3
+        },
+        {
+          "id": "dark-horse",
+          "name": "Dark Horse",
+          "engine": "5.0L Coyote V8",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 500,
+          "torqueLbFt": 418,
+          "zeroToSixtySec": 4.1,
+          "transmission": "6-speed manual / 10-speed automatic",
+          "drivetrain": "RWD",
+          "mpgCity": 14,
+          "mpgHighway": 22,
+          "mpgCombined": 17,
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "gt",
+      "trims": [
+        {
+          "id": "ecoboost",
+          "name": "EcoBoost",
+          "engine": "2.3L Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 315,
+          "torqueLbFt": 350,
+          "zeroToSixtySec": 5.0,
+          "transmission": "6-speed manual / 10-speed automatic",
+          "drivetrain": "RWD",
+          "mpgCity": 22,
+          "mpgHighway": 33,
+          "mpgCombined": 26,
+          "seatingCapacity": 4
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "5.0L Coyote V8",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 480,
+          "torqueLbFt": 415,
+          "zeroToSixtySec": 4.2,
+          "transmission": "6-speed manual / 10-speed automatic",
+          "drivetrain": "RWD",
+          "mpgCity": 16,
+          "mpgHighway": 24,
+          "mpgCombined": 19,
+          "seatingCapacity": 4
+        },
+        {
+          "id": "dark-horse",
+          "name": "Dark Horse",
+          "engine": "5.0L Coyote V8",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 500,
+          "torqueLbFt": 418,
+          "zeroToSixtySec": 4.1,
+          "transmission": "6-speed manual / 10-speed automatic",
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "gt",
+      "trims": [
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "5.0L Coyote V8",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 480,
+          "torqueLbFt": 415,
+          "transmission": "6-speed manual / 10-speed automatic",
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        },
+        {
+          "id": "dark-horse",
+          "name": "Dark Horse",
+          "engine": "5.0L Coyote V8",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 500,
+          "torqueLbFt": 418,
+          "transmission": "6-speed manual / 10-speed automatic",
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        }
+      ]
+    }
+  },
+  "mustang-mach-e": {
+    "2024": {
+      "defaultTrimId": "premium",
+      "trims": [
+        {
+          "id": "select",
+          "name": "Select RWD",
+          "engine": "Single-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 266,
+          "torqueLbFt": 387,
+          "zeroToSixtySec": 5.8,
+          "transmission": "Single-speed",
+          "drivetrain": "RWD",
+          "batteryKwh": 70,
+          "rangeMiles": 250,
+          "seatingCapacity": 5,
+          "cargoCuFt": 29.7
+        },
+        {
+          "id": "premium",
+          "name": "Premium eAWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 346,
+          "torqueLbFt": 428,
+          "zeroToSixtySec": 4.8,
+          "transmission": "Single-speed",
+          "drivetrain": "AWD",
+          "batteryKwh": 91,
+          "rangeMiles": 290,
+          "seatingCapacity": 5,
+          "cargoCuFt": 29.7
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 480,
+          "torqueLbFt": 600,
+          "zeroToSixtySec": 3.8,
+          "transmission": "Single-speed",
+          "drivetrain": "AWD",
+          "batteryKwh": 91,
+          "rangeMiles": 265,
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "premium",
+      "trims": [
+        {
+          "id": "select",
+          "name": "Select",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 290,
+          "transmission": "Single-speed",
+          "drivetrain": "RWD",
+          "rangeMiles": 320,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "premium",
+          "name": "Premium",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 365,
+          "transmission": "Single-speed",
+          "drivetrain": "AWD",
+          "rangeMiles": 300,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 480,
+          "zeroToSixtySec": 3.8,
+          "transmission": "Single-speed",
+          "drivetrain": "AWD",
+          "rangeMiles": 265,
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "premium",
+      "trims": [
+        {
+          "id": "premium",
+          "name": "Premium",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 365,
+          "transmission": "Single-speed",
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 480,
+          "transmission": "Single-speed",
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "f-150": {
+    "2024": {
+      "defaultTrimId": "xlt",
+      "trims": [
+        {
+          "id": "xlt",
+          "name": "XLT 2.7 EcoBoost",
+          "engine": "2.7L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 325,
+          "torqueLbFt": 400,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 19,
+          "mpgHighway": 24,
+          "mpgCombined": 21,
+          "seatingCapacity": 5,
+          "towingLb": 8200,
+          "groundClearanceIn": 8.7
+        },
+        {
+          "id": "lariat",
+          "name": "Lariat 5.0 V8",
+          "engine": "5.0L V8",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 400,
+          "torqueLbFt": 410,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 16,
+          "mpgHighway": 22,
+          "mpgCombined": 19,
+          "seatingCapacity": 5,
+          "towingLb": 11200
+        },
+        {
+          "id": "powerboost",
+          "name": "PowerBoost Hybrid",
+          "engine": "3.5L Twin-Turbo Hybrid V6",
+          "aspiration": "Twin-turbo hybrid",
+          "horsepower": 430,
+          "torqueLbFt": 570,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 23,
+          "mpgHighway": 23,
+          "mpgCombined": 23,
+          "seatingCapacity": 5,
+          "towingLb": 12700
+        },
+        {
+          "id": "raptor",
+          "name": "Raptor",
+          "engine": "3.5L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 450,
+          "torqueLbFt": 510,
+          "zeroToSixtySec": 5.1,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 15,
+          "mpgHighway": 18,
+          "mpgCombined": 16,
+          "seatingCapacity": 5,
+          "groundClearanceIn": 12.0
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "xlt",
+      "trims": [
+        {
+          "id": "xlt",
+          "name": "XLT 2.7 EcoBoost",
+          "engine": "2.7L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 325,
+          "torqueLbFt": 400,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 19,
+          "mpgHighway": 24,
+          "mpgCombined": 21,
+          "seatingCapacity": 5,
+          "towingLb": 8200
+        },
+        {
+          "id": "powerboost",
+          "name": "PowerBoost Hybrid",
+          "engine": "3.5L Twin-Turbo Hybrid V6",
+          "aspiration": "Twin-turbo hybrid",
+          "horsepower": 430,
+          "torqueLbFt": 570,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCombined": 23,
+          "seatingCapacity": 5,
+          "towingLb": 12700
+        },
+        {
+          "id": "raptor",
+          "name": "Raptor",
+          "engine": "3.5L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 450,
+          "torqueLbFt": 510,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "xlt",
+      "trims": [
+        {
+          "id": "xlt",
+          "name": "XLT",
+          "engine": "2.7L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 325,
+          "torqueLbFt": 400,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5,
+          "towingLb": 8200
+        },
+        {
+          "id": "raptor",
+          "name": "Raptor",
+          "engine": "3.5L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 450,
+          "torqueLbFt": 510,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "f-150-lightning": {
+    "2024": {
+      "defaultTrimId": "xlt",
+      "trims": [
+        {
+          "id": "xlt",
+          "name": "XLT Extended Range",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 580,
+          "torqueLbFt": 775,
+          "zeroToSixtySec": 4.5,
+          "transmission": "Single-speed",
+          "drivetrain": "AWD",
+          "batteryKwh": 131,
+          "rangeMiles": 320,
+          "seatingCapacity": 5,
+          "towingLb": 7700
+        },
+        {
+          "id": "platinum",
+          "name": "Platinum",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 580,
+          "torqueLbFt": 775,
+          "zeroToSixtySec": 4.5,
+          "transmission": "Single-speed",
+          "drivetrain": "AWD",
+          "batteryKwh": 131,
+          "rangeMiles": 300,
+          "seatingCapacity": 5,
+          "towingLb": 7700
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "xlt",
+      "trims": [
+        {
+          "id": "xlt",
+          "name": "XLT",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 580,
+          "torqueLbFt": 775,
+          "transmission": "Single-speed",
+          "drivetrain": "AWD",
+          "rangeMiles": 320,
+          "seatingCapacity": 5,
+          "towingLb": 7700
+        },
+        {
+          "id": "platinum",
+          "name": "Platinum",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 580,
+          "torqueLbFt": 775,
+          "transmission": "Single-speed",
+          "drivetrain": "AWD",
+          "rangeMiles": 300,
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "xlt",
+      "trims": [
+        {
+          "id": "xlt",
+          "name": "XLT",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 580,
+          "transmission": "Single-speed",
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "towingLb": 7700
+        }
+      ]
+    }
+  },
+  "explorer": {
+    "2024": {
+      "defaultTrimId": "xlt",
+      "trims": [
+        {
+          "id": "xlt",
+          "name": "XLT",
+          "engine": "2.3L Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 300,
+          "torqueLbFt": 310,
+          "transmission": "10-speed automatic",
+          "drivetrain": "RWD / AWD",
+          "mpgCity": 21,
+          "mpgHighway": 28,
+          "mpgCombined": 24,
+          "seatingCapacity": 7,
+          "cargoCuFt": 18.2,
+          "towingLb": 5600
+        },
+        {
+          "id": "st",
+          "name": "ST",
+          "engine": "3.0L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 400,
+          "torqueLbFt": 415,
+          "zeroToSixtySec": 5.3,
+          "transmission": "10-speed automatic",
+          "drivetrain": "AWD",
+          "mpgCity": 18,
+          "mpgHighway": 25,
+          "mpgCombined": 21,
+          "seatingCapacity": 6,
+          "towingLb": 5600
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "xlt",
+      "trims": [
+        {
+          "id": "xlt",
+          "name": "Active / XLT",
+          "engine": "2.3L Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 300,
+          "torqueLbFt": 310,
+          "transmission": "10-speed automatic",
+          "drivetrain": "RWD / AWD",
+          "mpgCombined": 24,
+          "seatingCapacity": 7,
+          "notes": "2025 Explorer is redesigned; figures approximate."
+        },
+        {
+          "id": "st",
+          "name": "ST",
+          "engine": "3.0L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 400,
+          "torqueLbFt": 415,
+          "transmission": "10-speed automatic",
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "xlt",
+      "trims": [
+        {
+          "id": "xlt",
+          "name": "Active",
+          "engine": "2.3L Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 300,
+          "transmission": "10-speed automatic",
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "st",
+          "name": "ST",
+          "engine": "3.0L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 400,
+          "transmission": "10-speed automatic",
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    }
+  },
+  "bronco": {
+    "2024": {
+      "defaultTrimId": "big-bend",
+      "trims": [
+        {
+          "id": "big-bend",
+          "name": "Big Bend",
+          "engine": "2.3L Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 300,
+          "torqueLbFt": 325,
+          "transmission": "7-speed manual / 10-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 20,
+          "mpgHighway": 21,
+          "mpgCombined": 20,
+          "seatingCapacity": 5,
+          "groundClearanceIn": 8.4,
+          "towingLb": 3500
+        },
+        {
+          "id": "badlands",
+          "name": "Badlands",
+          "engine": "2.7L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 330,
+          "torqueLbFt": 415,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 17,
+          "mpgHighway": 18,
+          "mpgCombined": 18,
+          "seatingCapacity": 5,
+          "groundClearanceIn": 11.5
+        },
+        {
+          "id": "raptor",
+          "name": "Raptor",
+          "engine": "3.0L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 418,
+          "torqueLbFt": 440,
+          "zeroToSixtySec": 5.7,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 15,
+          "mpgHighway": 16,
+          "mpgCombined": 15,
+          "seatingCapacity": 5,
+          "groundClearanceIn": 13.1
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "big-bend",
+      "trims": [
+        {
+          "id": "big-bend",
+          "name": "Big Bend",
+          "engine": "2.3L Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 300,
+          "torqueLbFt": 325,
+          "transmission": "7-speed manual / 10-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCombined": 20,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "raptor",
+          "name": "Raptor",
+          "engine": "3.0L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 418,
+          "torqueLbFt": 440,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "big-bend",
+      "trims": [
+        {
+          "id": "big-bend",
+          "name": "Big Bend",
+          "engine": "2.3L Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 300,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "raptor",
+          "name": "Raptor",
+          "engine": "3.0L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 418,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "ranger": {
+    "2024": {
+      "defaultTrimId": "xlt",
+      "trims": [
+        {
+          "id": "xlt",
+          "name": "XLT",
+          "engine": "2.3L Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 270,
+          "torqueLbFt": 310,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 20,
+          "mpgHighway": 24,
+          "mpgCombined": 22,
+          "seatingCapacity": 5,
+          "towingLb": 7500
+        },
+        {
+          "id": "raptor",
+          "name": "Raptor",
+          "engine": "3.0L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 405,
+          "torqueLbFt": 430,
+          "zeroToSixtySec": 6.0,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 16,
+          "mpgHighway": 17,
+          "mpgCombined": 17,
+          "seatingCapacity": 5,
+          "towingLb": 5500
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "xlt",
+      "trims": [
+        {
+          "id": "xlt",
+          "name": "XLT",
+          "engine": "2.3L Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 270,
+          "torqueLbFt": 310,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCombined": 22,
+          "seatingCapacity": 5,
+          "towingLb": 7500
+        },
+        {
+          "id": "raptor",
+          "name": "Raptor",
+          "engine": "3.0L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 405,
+          "torqueLbFt": 430,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "xlt",
+      "trims": [
+        {
+          "id": "xlt",
+          "name": "XLT",
+          "engine": "2.3L Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 270,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "raptor",
+          "name": "Raptor",
+          "engine": "3.0L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 405,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "gt": {
+    "2024": {
+      "defaultTrimId": "gt",
+      "trims": [
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "3.5L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 660,
+          "torqueLbFt": 550,
+          "zeroToSixtySec": 3.0,
+          "transmission": "7-speed dual-clutch",
+          "drivetrain": "RWD",
+          "seatingCapacity": 2,
+          "notes": "Limited-production supercar; availability varies by year."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "gt",
+      "trims": [
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "3.5L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 660,
+          "torqueLbFt": 550,
+          "zeroToSixtySec": 3.0,
+          "transmission": "7-speed dual-clutch",
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "gt",
+      "trims": [
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "3.5L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 660,
+          "torqueLbFt": 550,
+          "transmission": "7-speed dual-clutch",
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        }
+      ]
+    }
+  },
+  "focus": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Focus (discontinued U.S.)",
+          "notes": "U.S. Focus production ended after 2018; page kept for catalog continuity."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Focus (discontinued U.S.)",
+          "notes": "Not offered in the U.S. for this model year."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Focus (discontinued U.S.)",
+          "notes": "Not offered in the U.S. for this model year."
+        }
+      ]
+    }
+  },
+  "focus-rs": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Focus RS (discontinued)",
+          "engine": "2.3L Turbo I4",
+          "horsepower": 350,
+          "notes": "Last U.S. Focus RS was 2018."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Focus RS (discontinued)",
+          "notes": "Not offered for this model year."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Focus RS (discontinued)",
+          "notes": "Not offered for this model year."
+        }
+      ]
+    }
+  },
+  "fiesta-st": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Fiesta ST (discontinued)",
+          "notes": "U.S. Fiesta ended after 2019."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Fiesta ST (discontinued)",
+          "notes": "Not offered for this model year."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Fiesta ST (discontinued)",
+          "notes": "Not offered for this model year."
+        }
+      ]
+    }
+  },
+  "fusion": {
+    "2020": {
+      "defaultTrimId": "se",
+      "trims": [
+        {
+          "id": "se",
+          "name": "SE",
+          "notes": "Final U.S. model year for the Fusion sedan."
+        },
+        {
+          "id": "legacy",
+          "name": "Fusion (final year)",
+          "notes": "U.S. Fusion ended after 2020."
+        }
+      ]
+    }
+  }
+}

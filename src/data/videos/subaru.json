@@ -1,0 +1,39 @@
+{
+  "impreza": {
+    "2024": {
+      "youtubeId": "xo8a1jdU7VM",
+      "title": "2024 Subaru Impreza | Review & Road Test",
+      "owner": "Kelley Blue Book",
+      "ownerUrl": "https://www.youtube.com/channel/UCj9yUGuMVVdm2DqyvJPUeUQ"
+    },
+    "2025": {
+      "youtubeId": "AtenEG67uPg",
+      "title": "5 Reasons to Buy a 2025 Subaru Impreza!",
+      "owner": "Realistick",
+      "ownerUrl": "https://www.youtube.com/channel/UCuPtjeMcxfz7Z6zvUCKNyIw",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "HayUvknYhcw",
+      "title": "2026 Subaru Impreza | Honest Review and 0-60",
+      "owner": "Automotive Anonymous ",
+      "ownerUrl": "https://www.youtube.com/channel/UCuVEI1w_knSPxQFGEITtgkQ",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "wrx-sti": {
+    "2024": {
+      "youtubeId": "eSJSim717zg",
+      "title": "2024 Subaru WRX TR Review // STI In Disguise?",
+      "owner": "Throttle House",
+      "ownerUrl": "https://www.youtube.com/channel/UCyXiDU5qjfOPxgOPeFWGwKw"
+    },
+    "2025": {
+      "youtubeId": "6DIaSYYSc9o",
+      "title": "2025 Subaru WRX tS: The new STI? Full review and track test.",
+      "owner": "Driving Sports TV",
+      "ownerUrl": "https://www.youtube.com/channel/UC4x0_RNxoNkfM8WtRWPoxWw",
+      "note": "Channel is outside the preferred review list."
+    }
+  }
+}

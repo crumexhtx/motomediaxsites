@@ -1,0 +1,506 @@
+{
+  "model-3": {
+    "2024": {
+      "defaultTrimId": "long-range",
+      "trims": [
+        {
+          "id": "rwd",
+          "name": "Rear-Wheel Drive",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 272,
+          "rangeMiles": 272,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "long-range",
+          "name": "Long Range AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 346,
+          "rangeMiles": 341,
+          "zeroToSixtySec": 4.2,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "performance",
+          "name": "Performance",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 510,
+          "rangeMiles": 303,
+          "zeroToSixtySec": 2.9,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "long-range",
+      "trims": [
+        {
+          "id": "rwd",
+          "name": "Rear-Wheel Drive",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 272,
+          "rangeMiles": 272,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "long-range",
+          "name": "Long Range AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 346,
+          "rangeMiles": 341,
+          "zeroToSixtySec": 4.2,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "performance",
+          "name": "Performance",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 510,
+          "rangeMiles": 303,
+          "zeroToSixtySec": 2.9,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "long-range",
+      "trims": [
+        {
+          "id": "rwd",
+          "name": "Rear-Wheel Drive",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 272,
+          "rangeMiles": 272,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "long-range",
+          "name": "Long Range AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 346,
+          "rangeMiles": 341,
+          "zeroToSixtySec": 4.2,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "performance",
+          "name": "Performance",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 510,
+          "rangeMiles": 303,
+          "zeroToSixtySec": 2.9,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "model-y": {
+    "2024": {
+      "defaultTrimId": "long-range",
+      "trims": [
+        {
+          "id": "rwd",
+          "name": "Rear-Wheel Drive",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "rangeMiles": 260,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "long-range",
+          "name": "Long Range AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "rangeMiles": 320,
+          "zeroToSixtySec": 4.8,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "performance",
+          "name": "Performance",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "rangeMiles": 285,
+          "zeroToSixtySec": 3.5,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "long-range",
+      "trims": [
+        {
+          "id": "rwd",
+          "name": "Rear-Wheel Drive",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "rangeMiles": 260,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "long-range",
+          "name": "Long Range AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "rangeMiles": 320,
+          "zeroToSixtySec": 4.8,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "performance",
+          "name": "Performance",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "rangeMiles": 285,
+          "zeroToSixtySec": 3.5,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "long-range",
+      "trims": [
+        {
+          "id": "rwd",
+          "name": "Rear-Wheel Drive",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "rangeMiles": 260,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "long-range",
+          "name": "Long Range AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "rangeMiles": 320,
+          "zeroToSixtySec": 4.8,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "performance",
+          "name": "Performance",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "rangeMiles": 285,
+          "zeroToSixtySec": 3.5,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "model-s": {
+    "2024": {
+      "defaultTrimId": "long-range",
+      "trims": [
+        {
+          "id": "long-range",
+          "name": "Long Range",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 670,
+          "rangeMiles": 405,
+          "zeroToSixtySec": 3.1,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "plaid",
+          "name": "Plaid",
+          "engine": "Tri-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 1020,
+          "rangeMiles": 359,
+          "zeroToSixtySec": 2,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "long-range",
+      "trims": [
+        {
+          "id": "long-range",
+          "name": "Long Range",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 670,
+          "rangeMiles": 405,
+          "zeroToSixtySec": 3.1,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "plaid",
+          "name": "Plaid",
+          "engine": "Tri-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 1020,
+          "rangeMiles": 359,
+          "zeroToSixtySec": 2,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "long-range",
+      "trims": [
+        {
+          "id": "long-range",
+          "name": "Long Range",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 670,
+          "rangeMiles": 405,
+          "zeroToSixtySec": 3.1,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "plaid",
+          "name": "Plaid",
+          "engine": "Tri-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 1020,
+          "rangeMiles": 359,
+          "zeroToSixtySec": 2,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "model-x": {
+    "2024": {
+      "defaultTrimId": "long-range",
+      "trims": [
+        {
+          "id": "long-range",
+          "name": "Long Range",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 670,
+          "rangeMiles": 335,
+          "zeroToSixtySec": 3.8,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        },
+        {
+          "id": "plaid",
+          "name": "Plaid",
+          "engine": "Tri-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 1020,
+          "rangeMiles": 333,
+          "zeroToSixtySec": 2.5,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "long-range",
+      "trims": [
+        {
+          "id": "long-range",
+          "name": "Long Range",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 670,
+          "rangeMiles": 335,
+          "zeroToSixtySec": 3.8,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        },
+        {
+          "id": "plaid",
+          "name": "Plaid",
+          "engine": "Tri-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 1020,
+          "rangeMiles": 333,
+          "zeroToSixtySec": 2.5,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "long-range",
+      "trims": [
+        {
+          "id": "long-range",
+          "name": "Long Range",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 670,
+          "rangeMiles": 335,
+          "zeroToSixtySec": 3.8,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        },
+        {
+          "id": "plaid",
+          "name": "Plaid",
+          "engine": "Tri-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 1020,
+          "rangeMiles": 333,
+          "zeroToSixtySec": 2.5,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    }
+  },
+  "cybertruck": {
+    "2024": {
+      "defaultTrimId": "awd",
+      "trims": [
+        {
+          "id": "awd",
+          "name": "All-Wheel Drive",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 600,
+          "rangeMiles": 325,
+          "zeroToSixtySec": 4.1,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "towingLb": 11000
+        },
+        {
+          "id": "cyberbeast",
+          "name": "Cyberbeast",
+          "engine": "Tri-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 845,
+          "rangeMiles": 320,
+          "zeroToSixtySec": 2.6,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "towingLb": 11000
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "awd",
+      "trims": [
+        {
+          "id": "awd",
+          "name": "All-Wheel Drive",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 600,
+          "rangeMiles": 325,
+          "zeroToSixtySec": 4.1,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "towingLb": 11000
+        },
+        {
+          "id": "cyberbeast",
+          "name": "Cyberbeast",
+          "engine": "Tri-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 845,
+          "rangeMiles": 320,
+          "zeroToSixtySec": 2.6,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "towingLb": 11000
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "awd",
+      "trims": [
+        {
+          "id": "awd",
+          "name": "All-Wheel Drive",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 600,
+          "rangeMiles": 325,
+          "zeroToSixtySec": 4.1,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "towingLb": 11000
+        },
+        {
+          "id": "cyberbeast",
+          "name": "Cyberbeast",
+          "engine": "Tri-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 845,
+          "rangeMiles": 320,
+          "zeroToSixtySec": 2.6,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "towingLb": 11000
+        }
+      ]
+    }
+  },
+  "roadster": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Roadster (next-gen TBA)",
+          "notes": "Next-gen Roadster not yet in volume production."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Roadster (next-gen TBA)",
+          "notes": "Next-gen Roadster not yet in volume production."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Roadster (next-gen TBA)",
+          "notes": "Next-gen Roadster not yet in volume production."
+        }
+      ]
+    }
+  }
+}

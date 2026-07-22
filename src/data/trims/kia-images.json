@@ -1,0 +1,109 @@
+{
+  "k5": {
+    "gt-line": {
+      "query": "kia k5 GT-Line",
+      "src": "/catalog/kia--k5--gt-line.jpg",
+      "alt": "Kia k5 gt line"
+    },
+    "gt": {
+      "query": "kia k5 GT",
+      "src": "/catalog/kia--k5--gt.jpg",
+      "alt": "Kia k5 gt"
+    }
+  },
+  "forte": {
+    "gt-line": {
+      "query": "kia forte GT-Line",
+      "src": "/catalog/kia--forte--gt-line.jpg",
+      "alt": "Kia forte gt line"
+    }
+  },
+  "sportage": {
+    "x-line": {
+      "query": "kia sportage X-Line",
+      "src": "/catalog/kia--sportage--x-line.jpg",
+      "alt": "Kia sportage x line"
+    },
+    "hybrid": {
+      "query": "kia sportage Hybrid",
+      "src": "/catalog/kia--sportage--hybrid.jpg",
+      "alt": "Kia sportage hybrid"
+    }
+  },
+  "sorento": {
+    "x-line": {
+      "query": "kia sorento X-Line",
+      "src": "/catalog/kia--sorento--x-line.jpg",
+      "alt": "Kia sorento x line"
+    },
+    "hybrid": {
+      "query": "kia sorento Hybrid",
+      "src": "/catalog/kia--sorento--hybrid.jpg",
+      "alt": "Kia sorento hybrid"
+    }
+  },
+  "telluride": {
+    "sx": {
+      "query": "kia telluride SX",
+      "src": "/catalog/kia--telluride--sx.jpg",
+      "alt": "Kia telluride sx"
+    },
+    "x-pro": {
+      "query": "kia telluride X-Pro",
+      "src": "/catalog/kia--telluride--x-pro.jpg",
+      "alt": "Kia telluride x pro"
+    }
+  },
+  "soul": {
+    "gt-line": {
+      "query": "kia soul GT-Line",
+      "src": "/catalog/kia--soul--gt-line.jpg",
+      "alt": "Kia soul gt line"
+    }
+  },
+  "ev6": {
+    "wind": {
+      "query": "kia ev6 Wind AWD",
+      "src": "/catalog/kia--ev6--wind.jpg",
+      "alt": "Kia ev6 wind"
+    },
+    "gt": {
+      "query": "kia ev6 GT",
+      "src": "/catalog/kia--ev6--gt.jpg",
+      "alt": "Kia ev6 gt"
+    }
+  },
+  "ev9": {
+    "land": {
+      "query": "kia ev9 Land AWD",
+      "src": "/catalog/kia--ev9--land.jpg",
+      "alt": "Kia ev9 land"
+    },
+    "gt-line": {
+      "query": "kia ev9 GT-Line",
+      "src": "/catalog/kia--ev9--gt-line.jpg",
+      "alt": "Kia ev9 gt line"
+    }
+  },
+  "stinger": {
+    "legacy": {
+      "query": "kia stinger Stinger (ended)",
+      "src": "/catalog/kia--stinger--legacy.jpg",
+      "alt": "Kia stinger legacy"
+    }
+  },
+  "optima": {
+    "legacy": {
+      "query": "kia optima Optima (renamed K5)",
+      "src": "/catalog/kia--optima--legacy.jpg",
+      "alt": "Kia optima legacy"
+    }
+  },
+  "rio": {
+    "legacy": {
+      "query": "kia rio Rio (ending)",
+      "src": "/catalog/kia--rio--legacy.jpg",
+      "alt": "Kia rio legacy"
+    }
+  }
+}

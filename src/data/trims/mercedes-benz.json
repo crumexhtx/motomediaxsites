@@ -1,0 +1,770 @@
+{
+  "c-class": {
+    "2024": {
+      "defaultTrimId": "c300",
+      "trims": [
+        {
+          "id": "c300",
+          "name": "C 300",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 28,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-c43",
+          "name": "AMG C 43",
+          "engine": "2.0L Turbo I4 Hybrid",
+          "horsepower": 416,
+          "zeroToSixtySec": 4.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "c300",
+      "trims": [
+        {
+          "id": "c300",
+          "name": "C 300",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 28,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-c43",
+          "name": "AMG C 43",
+          "engine": "2.0L Turbo I4 Hybrid",
+          "horsepower": 416,
+          "zeroToSixtySec": 4.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "c300",
+      "trims": [
+        {
+          "id": "c300",
+          "name": "C 300",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 28,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-c43",
+          "name": "AMG C 43",
+          "engine": "2.0L Turbo I4 Hybrid",
+          "horsepower": 416,
+          "zeroToSixtySec": 4.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "e-class": {
+    "2024": {
+      "defaultTrimId": "e350",
+      "trims": [
+        {
+          "id": "e350",
+          "name": "E 350",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 28,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-e53",
+          "name": "AMG E 53",
+          "engine": "3.0L Turbo I6 Hybrid",
+          "horsepower": 443,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "e350",
+      "trims": [
+        {
+          "id": "e350",
+          "name": "E 350",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 28,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-e53",
+          "name": "AMG E 53",
+          "engine": "3.0L Turbo I6 Hybrid",
+          "horsepower": 443,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "e350",
+      "trims": [
+        {
+          "id": "e350",
+          "name": "E 350",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 28,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-e53",
+          "name": "AMG E 53",
+          "engine": "3.0L Turbo I6 Hybrid",
+          "horsepower": 443,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "s-class": {
+    "2024": {
+      "defaultTrimId": "s500",
+      "trims": [
+        {
+          "id": "s500",
+          "name": "S 500",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 442,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-s63",
+          "name": "AMG S 63 E Performance",
+          "engine": "4.0L Twin-Turbo V8 PHEV",
+          "horsepower": 791,
+          "zeroToSixtySec": 3.2,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "s500",
+      "trims": [
+        {
+          "id": "s500",
+          "name": "S 500",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 442,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-s63",
+          "name": "AMG S 63 E Performance",
+          "engine": "4.0L Twin-Turbo V8 PHEV",
+          "horsepower": 791,
+          "zeroToSixtySec": 3.2,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "s500",
+      "trims": [
+        {
+          "id": "s500",
+          "name": "S 500",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 442,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-s63",
+          "name": "AMG S 63 E Performance",
+          "engine": "4.0L Twin-Turbo V8 PHEV",
+          "horsepower": 791,
+          "zeroToSixtySec": 3.2,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "g-class": {
+    "2024": {
+      "defaultTrimId": "g550",
+      "trims": [
+        {
+          "id": "g550",
+          "name": "G 550",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 443,
+          "drivetrain": "4WD",
+          "mpgCombined": 14,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-g63",
+          "name": "AMG G 63",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 577,
+          "zeroToSixtySec": 4.2,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "g550",
+      "trims": [
+        {
+          "id": "g550",
+          "name": "G 550",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 443,
+          "drivetrain": "4WD",
+          "mpgCombined": 14,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-g63",
+          "name": "AMG G 63",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 577,
+          "zeroToSixtySec": 4.2,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "g550",
+      "trims": [
+        {
+          "id": "g550",
+          "name": "G 550",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 443,
+          "drivetrain": "4WD",
+          "mpgCombined": 14,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-g63",
+          "name": "AMG G 63",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 577,
+          "zeroToSixtySec": 4.2,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "glc": {
+    "2024": {
+      "defaultTrimId": "glc300",
+      "trims": [
+        {
+          "id": "glc300",
+          "name": "GLC 300",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 25,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-glc43",
+          "name": "AMG GLC 43",
+          "engine": "2.0L Turbo Hybrid",
+          "horsepower": 416,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "glc300",
+      "trims": [
+        {
+          "id": "glc300",
+          "name": "GLC 300",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 25,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-glc43",
+          "name": "AMG GLC 43",
+          "engine": "2.0L Turbo Hybrid",
+          "horsepower": 416,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "glc300",
+      "trims": [
+        {
+          "id": "glc300",
+          "name": "GLC 300",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 25,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-glc43",
+          "name": "AMG GLC 43",
+          "engine": "2.0L Turbo Hybrid",
+          "horsepower": 416,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "gle": {
+    "2024": {
+      "defaultTrimId": "gle350",
+      "trims": [
+        {
+          "id": "gle350",
+          "name": "GLE 350",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 23,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-gle53",
+          "name": "AMG GLE 53",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 429,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "gle350",
+      "trims": [
+        {
+          "id": "gle350",
+          "name": "GLE 350",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 23,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-gle53",
+          "name": "AMG GLE 53",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 429,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "gle350",
+      "trims": [
+        {
+          "id": "gle350",
+          "name": "GLE 350",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 23,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-gle53",
+          "name": "AMG GLE 53",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 429,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "gls": {
+    "2024": {
+      "defaultTrimId": "gls450",
+      "trims": [
+        {
+          "id": "gls450",
+          "name": "GLS 450",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 375,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "maybach",
+          "name": "Maybach GLS 600",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 550,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "gls450",
+      "trims": [
+        {
+          "id": "gls450",
+          "name": "GLS 450",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 375,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "maybach",
+          "name": "Maybach GLS 600",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 550,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "gls450",
+      "trims": [
+        {
+          "id": "gls450",
+          "name": "GLS 450",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 375,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "maybach",
+          "name": "Maybach GLS 600",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 550,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        }
+      ]
+    }
+  },
+  "cla": {
+    "2024": {
+      "defaultTrimId": "cla250",
+      "trims": [
+        {
+          "id": "cla250",
+          "name": "CLA 250",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 221,
+          "mpgCombined": 29,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-cla35",
+          "name": "AMG CLA 35",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 302,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "cla250",
+      "trims": [
+        {
+          "id": "cla250",
+          "name": "CLA 250",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 221,
+          "mpgCombined": 29,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-cla35",
+          "name": "AMG CLA 35",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 302,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "cla250",
+      "trims": [
+        {
+          "id": "cla250",
+          "name": "CLA 250",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 221,
+          "mpgCombined": 29,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "amg-cla35",
+          "name": "AMG CLA 35",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 302,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "eqs": {
+    "2024": {
+      "defaultTrimId": "eqs450",
+      "trims": [
+        {
+          "id": "eqs450",
+          "name": "EQS 450+",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 329,
+          "rangeMiles": 350,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "eqs580",
+          "name": "EQS 580",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 536,
+          "rangeMiles": 340,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "eqs450",
+      "trims": [
+        {
+          "id": "eqs450",
+          "name": "EQS 450+",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 329,
+          "rangeMiles": 350,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "eqs580",
+          "name": "EQS 580",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 536,
+          "rangeMiles": 340,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "eqs450",
+      "trims": [
+        {
+          "id": "eqs450",
+          "name": "EQS 450+",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 329,
+          "rangeMiles": 350,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "eqs580",
+          "name": "EQS 580",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 536,
+          "rangeMiles": 340,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "amg-gt": {
+    "2024": {
+      "defaultTrimId": "gt",
+      "trims": [
+        {
+          "id": "gt",
+          "name": "AMG GT",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 469,
+          "zeroToSixtySec": 3.9,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 2
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "gt",
+      "trims": [
+        {
+          "id": "gt",
+          "name": "AMG GT",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 469,
+          "zeroToSixtySec": 3.9,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 2
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "gt",
+      "trims": [
+        {
+          "id": "gt",
+          "name": "AMG GT",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 469,
+          "zeroToSixtySec": 3.9,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 2
+        }
+      ]
+    }
+  },
+  "sl-class": {
+    "2024": {
+      "defaultTrimId": "sl43",
+      "trims": [
+        {
+          "id": "sl43",
+          "name": "AMG SL 43",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 375,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        },
+        {
+          "id": "sl63",
+          "name": "AMG SL 63",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 577,
+          "zeroToSixtySec": 3.5,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sl43",
+      "trims": [
+        {
+          "id": "sl43",
+          "name": "AMG SL 43",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 375,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        },
+        {
+          "id": "sl63",
+          "name": "AMG SL 63",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 577,
+          "zeroToSixtySec": 3.5,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sl43",
+      "trims": [
+        {
+          "id": "sl43",
+          "name": "AMG SL 43",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 375,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        },
+        {
+          "id": "sl63",
+          "name": "AMG SL 63",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 577,
+          "zeroToSixtySec": 3.5,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        }
+      ]
+    }
+  },
+  "slk-slc": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "SLK/SLC (ended)",
+          "notes": "Succeeded by the new SL."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "SLK/SLC (ended)",
+          "notes": "Succeeded by the new SL."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "SLK/SLC (ended)",
+          "notes": "Succeeded by the new SL."
+        }
+      ]
+    }
+  }
+}

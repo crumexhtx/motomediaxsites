@@ -1,0 +1,383 @@
+{
+  "wrangler": {
+    "2024": {
+      "defaultTrimId": "sport-s",
+      "trims": [
+        {
+          "id": "sport-s",
+          "name": "Sport S",
+          "engine": "3.6L V6",
+          "horsepower": 285,
+          "drivetrain": "4WD",
+          "mpgCombined": 20,
+          "seatingCapacity": 5,
+          "groundClearanceIn": 9.7
+        },
+        {
+          "id": "rubicon",
+          "name": "Rubicon",
+          "engine": "3.6L V6",
+          "horsepower": 285,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5,
+          "groundClearanceIn": 10.8
+        },
+        {
+          "id": "4xe",
+          "name": "Rubicon 4xe",
+          "engine": "2.0L Turbo PHEV",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 375,
+          "rangeMiles": 22,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sport-s",
+      "trims": [
+        {
+          "id": "sport-s",
+          "name": "Sport S",
+          "engine": "3.6L V6",
+          "horsepower": 285,
+          "drivetrain": "4WD",
+          "mpgCombined": 20,
+          "seatingCapacity": 5,
+          "groundClearanceIn": 9.7
+        },
+        {
+          "id": "rubicon",
+          "name": "Rubicon",
+          "engine": "3.6L V6",
+          "horsepower": 285,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5,
+          "groundClearanceIn": 10.8
+        },
+        {
+          "id": "4xe",
+          "name": "Rubicon 4xe",
+          "engine": "2.0L Turbo PHEV",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 375,
+          "rangeMiles": 22,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sport-s",
+      "trims": [
+        {
+          "id": "sport-s",
+          "name": "Sport S",
+          "engine": "3.6L V6",
+          "horsepower": 285,
+          "drivetrain": "4WD",
+          "mpgCombined": 20,
+          "seatingCapacity": 5,
+          "groundClearanceIn": 9.7
+        },
+        {
+          "id": "rubicon",
+          "name": "Rubicon",
+          "engine": "3.6L V6",
+          "horsepower": 285,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5,
+          "groundClearanceIn": 10.8
+        },
+        {
+          "id": "4xe",
+          "name": "Rubicon 4xe",
+          "engine": "2.0L Turbo PHEV",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 375,
+          "rangeMiles": 22,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "grand-cherokee": {
+    "2024": {
+      "defaultTrimId": "limited",
+      "trims": [
+        {
+          "id": "limited",
+          "name": "Limited",
+          "engine": "3.6L V6",
+          "horsepower": 293,
+          "mpgCombined": 22,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "4xe",
+          "name": "4xe",
+          "engine": "2.0L Turbo PHEV",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 375,
+          "rangeMiles": 26,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "limited",
+      "trims": [
+        {
+          "id": "limited",
+          "name": "Limited",
+          "engine": "3.6L V6",
+          "horsepower": 293,
+          "mpgCombined": 22,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "4xe",
+          "name": "4xe",
+          "engine": "2.0L Turbo PHEV",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 375,
+          "rangeMiles": 26,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "limited",
+      "trims": [
+        {
+          "id": "limited",
+          "name": "Limited",
+          "engine": "3.6L V6",
+          "horsepower": 293,
+          "mpgCombined": 22,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "4xe",
+          "name": "4xe",
+          "engine": "2.0L Turbo PHEV",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 375,
+          "rangeMiles": 26,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "gladiator": {
+    "2024": {
+      "defaultTrimId": "sport-s",
+      "trims": [
+        {
+          "id": "sport-s",
+          "name": "Sport S",
+          "engine": "3.6L V6",
+          "horsepower": 285,
+          "drivetrain": "4WD",
+          "mpgCombined": 19,
+          "towingLb": 7650,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "rubicon",
+          "name": "Rubicon",
+          "engine": "3.6L V6",
+          "horsepower": 285,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sport-s",
+      "trims": [
+        {
+          "id": "sport-s",
+          "name": "Sport S",
+          "engine": "3.6L V6",
+          "horsepower": 285,
+          "drivetrain": "4WD",
+          "mpgCombined": 19,
+          "towingLb": 7650,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "rubicon",
+          "name": "Rubicon",
+          "engine": "3.6L V6",
+          "horsepower": 285,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sport-s",
+      "trims": [
+        {
+          "id": "sport-s",
+          "name": "Sport S",
+          "engine": "3.6L V6",
+          "horsepower": 285,
+          "drivetrain": "4WD",
+          "mpgCombined": 19,
+          "towingLb": 7650,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "rubicon",
+          "name": "Rubicon",
+          "engine": "3.6L V6",
+          "horsepower": 285,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "compass": {
+    "2024": {
+      "defaultTrimId": "latitude",
+      "trims": [
+        {
+          "id": "latitude",
+          "name": "Latitude",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 200,
+          "mpgCombined": 25,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "trailhawk",
+          "name": "Trailhawk",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 200,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "latitude",
+      "trims": [
+        {
+          "id": "latitude",
+          "name": "Latitude",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 200,
+          "mpgCombined": 25,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "trailhawk",
+          "name": "Trailhawk",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 200,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "latitude",
+      "trims": [
+        {
+          "id": "latitude",
+          "name": "Latitude",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 200,
+          "mpgCombined": 25,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "trailhawk",
+          "name": "Trailhawk",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 200,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "cherokee": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Cherokee (ended)",
+          "notes": "U.S. Cherokee ended after 2023."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Cherokee (ended)",
+          "notes": "U.S. Cherokee ended after 2023."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Cherokee (ended)",
+          "notes": "U.S. Cherokee ended after 2023."
+        }
+      ]
+    }
+  },
+  "renegade": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Renegade (ended)",
+          "notes": "U.S. Renegade ended after 2023."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Renegade (ended)",
+          "notes": "U.S. Renegade ended after 2023."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Renegade (ended)",
+          "notes": "U.S. Renegade ended after 2023."
+        }
+      ]
+    }
+  }
+}

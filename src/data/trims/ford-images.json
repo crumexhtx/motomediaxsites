@@ -1,0 +1,170 @@
+{
+  "mustang": {
+    "ecoboost": {
+      "query": "Ford Mustang EcoBoost S650",
+      "commonsTitle": "File:2024 Ford Mustang EcoBoost in Atlas Blue Metallic, front left.jpg",
+      "src": "/catalog/ford--mustang--ecoboost.jpg",
+      "alt": "Ford mustang ecoboost"
+    },
+    "gt": {
+      "query": "2024 Ford Mustang GT",
+      "commonsTitle": "File:2024 Ford Mustang GT in Rapid Red Metallic Tinted Clearcoat, front left.jpg",
+      "src": "/catalog/ford--mustang--gt.jpg",
+      "alt": "Ford mustang gt"
+    },
+    "dark-horse": {
+      "query": "Ford Mustang Dark Horse",
+      "commonsTitle": "File:2024 Ford Mustang Dark Horse in Shadow Black, front left.jpg",
+      "src": "/catalog/ford--mustang--dark-horse.jpg",
+      "alt": "Ford mustang dark horse"
+    }
+  },
+  "mustang-mach-e": {
+    "select": {
+      "query": "Ford Mustang Mach-E",
+      "commonsTitle": "File:2021 Ford Mustang Mach-E Select in Iconic Silver, front left.jpg",
+      "src": "/catalog/ford--mustang-mach-e--select.jpg",
+      "alt": "Ford mustang mach e select"
+    },
+    "premium": {
+      "query": "Ford Mustang Mach-E Premium",
+      "commonsTitle": "File:2021 Ford Mustang Mach-E Premium in Rapid Red, front left.jpg",
+      "src": "/catalog/ford--mustang-mach-e--premium.jpg",
+      "alt": "Ford mustang mach e premium"
+    },
+    "gt": {
+      "query": "Ford Mustang Mach-E GT",
+      "commonsTitle": "File:2021 Ford Mustang Mach-E GT in Grabber Blue, front left.jpg",
+      "src": "/catalog/ford--mustang-mach-e--gt.jpg",
+      "alt": "Ford mustang mach e gt"
+    }
+  },
+  "f-150": {
+    "xlt": {
+      "query": "Ford F-150 XLT 2024",
+      "commonsTitle": "File:2021 Ford F-150 XLT in Antimatter Blue, front left.jpg",
+      "src": "/catalog/ford--f-150--xlt.jpg",
+      "alt": "Ford f 150 xlt"
+    },
+    "lariat": {
+      "query": "Ford F-150 Lariat",
+      "commonsTitle": "File:2021 Ford F-150 Lariat in Rapid Red, front left.jpg",
+      "src": "/catalog/ford--f-150--lariat.png",
+      "alt": "Ford f 150 lariat"
+    },
+    "powerboost": {
+      "query": "Ford F-150 PowerBoost",
+      "commonsTitle": "File:2021 Ford F-150 PowerBoost Hybrid in Antimatter Blue, front left.jpg",
+      "src": "/catalog/ford--f-150--powerboost.jpg",
+      "alt": "Ford f 150 powerboost"
+    },
+    "raptor": {
+      "query": "Ford F-150 Raptor 2024",
+      "commonsTitle": "File:2021 Ford F-150 Raptor in Code Orange, front left.jpg",
+      "src": "/catalog/ford--f-150--raptor.jpg",
+      "alt": "Ford f 150 raptor"
+    }
+  },
+  "f-150-lightning": {
+    "xlt": {
+      "query": "Ford F-150 Lightning",
+      "commonsTitle": "File:2022 Ford F-150 Lightning XLT in Antimatter Blue, front left.jpg",
+      "src": "/catalog/ford--f-150-lightning--xlt.jpg",
+      "alt": "Ford f 150 lightning xlt"
+    },
+    "platinum": {
+      "query": "Ford F-150 Lightning Platinum",
+      "commonsTitle": "File:2022 Ford F-150 Lightning Platinum in Agate Black, front left.jpg",
+      "src": "/catalog/ford--f-150-lightning--platinum.jpg",
+      "alt": "Ford f 150 lightning platinum"
+    }
+  },
+  "explorer": {
+    "xlt": {
+      "query": "Ford Explorer XLT 2024",
+      "commonsTitle": "File:2020 Ford Explorer XLT in Rapid Red, front left.jpg",
+      "src": "/catalog/ford--explorer--xlt.jpg",
+      "alt": "Ford explorer xlt"
+    },
+    "st": {
+      "query": "Ford Explorer ST",
+      "commonsTitle": "File:2020 Ford Explorer ST in Agate Black, front left.jpg",
+      "src": "/catalog/ford--explorer--st.jpg",
+      "alt": "Ford explorer st"
+    }
+  },
+  "bronco": {
+    "big-bend": {
+      "query": "Ford Bronco Big Bend",
+      "commonsTitle": "File:2021 Ford Bronco Big Bend in Cyber Orange, front left.jpg",
+      "src": "/catalog/ford--bronco--big-bend.jpg",
+      "alt": "Ford bronco big bend"
+    },
+    "badlands": {
+      "query": "Ford Bronco Badlands",
+      "commonsTitle": "File:2021 Ford Bronco Badlands in Area 51, front left.jpg",
+      "src": "/catalog/ford--bronco--badlands.jpg",
+      "alt": "Ford bronco badlands"
+    },
+    "raptor": {
+      "query": "Ford Bronco Raptor",
+      "commonsTitle": "File:2022 Ford Bronco Raptor in Code Orange, front left.jpg",
+      "src": "/catalog/ford--bronco--raptor.jpg",
+      "alt": "Ford bronco raptor"
+    }
+  },
+  "ranger": {
+    "xlt": {
+      "query": "2024 Ford Ranger",
+      "commonsTitle": "File:2024 Ford Ranger XLT in Cactus Gray, front left.jpg",
+      "src": "/catalog/ford--ranger--xlt.jpg",
+      "alt": "Ford ranger xlt"
+    },
+    "raptor": {
+      "query": "Ford Ranger Raptor",
+      "commonsTitle": "File:2024 Ford Ranger Raptor in Code Orange, front left.jpg",
+      "src": "/catalog/ford--ranger--raptor.jpg",
+      "alt": "Ford ranger raptor"
+    }
+  },
+  "gt": {
+    "gt": {
+      "query": "Ford GT",
+      "commonsTitle": "File:Ford GT (2nd generation).jpg",
+      "src": "/catalog/ford--gt--gt.jpg",
+      "alt": "Ford gt gt"
+    }
+  },
+  "focus": {
+    "legacy": {
+      "query": "Ford Focus",
+      "commonsTitle": "File:2018 Ford Focus SE in Blue Metallic, front left.jpg",
+      "src": "/catalog/ford--focus--legacy.jpg",
+      "alt": "Ford focus legacy"
+    }
+  },
+  "focus-rs": {
+    "legacy": {
+      "query": "Ford Focus RS",
+      "commonsTitle": "File:2017 Ford Focus RS in Nitrous Blue, front left.jpg",
+      "src": "/catalog/ford--focus-rs--legacy.jpg",
+      "alt": "Ford focus rs legacy"
+    }
+  },
+  "fiesta-st": {
+    "legacy": {
+      "query": "Ford Fiesta ST",
+      "commonsTitle": "File:2014 Ford Fiesta ST in Molten Orange, front left.jpg",
+      "src": "/catalog/ford--fiesta-st--legacy.jpg",
+      "alt": "Ford fiesta st legacy"
+    }
+  },
+  "fusion": {
+    "legacy": {
+      "query": "Ford Fusion",
+      "commonsTitle": "File:2019 Ford Fusion SE in Blue Metallic, front left.jpg",
+      "src": "/catalog/ford--fusion--legacy.jpg",
+      "alt": "Ford fusion legacy"
+    }
+  }
+}

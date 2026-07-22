@@ -1,0 +1,603 @@
+{
+  "civic": {
+    "2024": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.0L I4",
+          "horsepower": 158,
+          "mpgCombined": 33,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "sport-touring",
+          "name": "Sport Touring Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 200,
+          "mpgCombined": 48,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.0L I4",
+          "horsepower": 158,
+          "mpgCombined": 33,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "sport-touring",
+          "name": "Sport Touring Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 200,
+          "mpgCombined": 48,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.0L I4",
+          "horsepower": 158,
+          "mpgCombined": 33,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "sport-touring",
+          "name": "Sport Touring Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 200,
+          "mpgCombined": 48,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "civic-type-r": {
+    "2024": {
+      "defaultTrimId": "type-r",
+      "trims": [
+        {
+          "id": "type-r",
+          "name": "Type R",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 315,
+          "torqueLbFt": 310,
+          "zeroToSixtySec": 4.9,
+          "drivetrain": "FWD",
+          "mpgCombined": 25,
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "type-r",
+      "trims": [
+        {
+          "id": "type-r",
+          "name": "Type R",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 315,
+          "torqueLbFt": 310,
+          "zeroToSixtySec": 4.9,
+          "drivetrain": "FWD",
+          "mpgCombined": 25,
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "type-r",
+      "trims": [
+        {
+          "id": "type-r",
+          "name": "Type R",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 315,
+          "torqueLbFt": 310,
+          "zeroToSixtySec": 4.9,
+          "drivetrain": "FWD",
+          "mpgCombined": 25,
+          "seatingCapacity": 4
+        }
+      ]
+    }
+  },
+  "accord": {
+    "2024": {
+      "defaultTrimId": "sport-hybrid",
+      "trims": [
+        {
+          "id": "sport-hybrid",
+          "name": "Sport Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 204,
+          "mpgCombined": 44,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "touring-hybrid",
+          "name": "Touring Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 204,
+          "mpgCombined": 44,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sport-hybrid",
+      "trims": [
+        {
+          "id": "sport-hybrid",
+          "name": "Sport Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 204,
+          "mpgCombined": 44,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "touring-hybrid",
+          "name": "Touring Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 204,
+          "mpgCombined": 44,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sport-hybrid",
+      "trims": [
+        {
+          "id": "sport-hybrid",
+          "name": "Sport Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 204,
+          "mpgCombined": 44,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "touring-hybrid",
+          "name": "Touring Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 204,
+          "mpgCombined": 44,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "cr-v": {
+    "2024": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 204,
+          "mpgCombined": 40,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "cargoCuFt": 39.3
+        },
+        {
+          "id": "sport-l",
+          "name": "Sport-L Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 204,
+          "mpgCombined": 40,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 204,
+          "mpgCombined": 40,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "cargoCuFt": 39.3
+        },
+        {
+          "id": "sport-l",
+          "name": "Sport-L Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 204,
+          "mpgCombined": 40,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 204,
+          "mpgCombined": 40,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "cargoCuFt": 39.3
+        },
+        {
+          "id": "sport-l",
+          "name": "Sport-L Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 204,
+          "mpgCombined": 40,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "pilot": {
+    "2024": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "3.5L V6",
+          "horsepower": 285,
+          "drivetrain": "AWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 8,
+          "towingLb": 5000
+        },
+        {
+          "id": "trailSport",
+          "name": "TrailSport",
+          "engine": "3.5L V6",
+          "horsepower": 285,
+          "drivetrain": "AWD",
+          "seatingCapacity": 8
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "3.5L V6",
+          "horsepower": 285,
+          "drivetrain": "AWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 8,
+          "towingLb": 5000
+        },
+        {
+          "id": "trailSport",
+          "name": "TrailSport",
+          "engine": "3.5L V6",
+          "horsepower": 285,
+          "drivetrain": "AWD",
+          "seatingCapacity": 8
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "3.5L V6",
+          "horsepower": 285,
+          "drivetrain": "AWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 8,
+          "towingLb": 5000
+        },
+        {
+          "id": "trailSport",
+          "name": "TrailSport",
+          "engine": "3.5L V6",
+          "horsepower": 285,
+          "drivetrain": "AWD",
+          "seatingCapacity": 8
+        }
+      ]
+    }
+  },
+  "odyssey": {
+    "2024": {
+      "defaultTrimId": "ex-l",
+      "trims": [
+        {
+          "id": "ex-l",
+          "name": "EX-L",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "mpgCombined": 22,
+          "seatingCapacity": 8,
+          "cargoCuFt": 32.8
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "ex-l",
+      "trims": [
+        {
+          "id": "ex-l",
+          "name": "EX-L",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "mpgCombined": 22,
+          "seatingCapacity": 8,
+          "cargoCuFt": 32.8
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "ex-l",
+      "trims": [
+        {
+          "id": "ex-l",
+          "name": "EX-L",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "mpgCombined": 22,
+          "seatingCapacity": 8,
+          "cargoCuFt": 32.8
+        }
+      ]
+    }
+  },
+  "ridgeline": {
+    "2024": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "AWD",
+          "mpgCombined": 21,
+          "towingLb": 5000,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "trailsport",
+          "name": "TrailSport",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "AWD",
+          "mpgCombined": 21,
+          "towingLb": 5000,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "trailsport",
+          "name": "TrailSport",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "AWD",
+          "mpgCombined": 21,
+          "towingLb": 5000,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "trailsport",
+          "name": "TrailSport",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "insight": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Insight (discontinued)",
+          "notes": "U.S. Insight ended after 2022."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Insight (discontinued)",
+          "notes": "U.S. Insight ended after 2022."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Insight (discontinued)",
+          "notes": "U.S. Insight ended after 2022."
+        }
+      ]
+    }
+  },
+  "fit": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Fit (discontinued)",
+          "notes": "U.S. Fit ended after 2020."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Fit (discontinued)",
+          "notes": "U.S. Fit ended after 2020."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Fit (discontinued)",
+          "notes": "U.S. Fit ended after 2020."
+        }
+      ]
+    }
+  },
+  "element": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Element (discontinued)",
+          "notes": "Discontinued after 2011."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Element (discontinued)",
+          "notes": "Discontinued after 2011."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Element (discontinued)",
+          "notes": "Discontinued after 2011."
+        }
+      ]
+    }
+  },
+  "s2000": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "S2000 (discontinued)",
+          "engine": "2.2L I4",
+          "horsepower": 237,
+          "notes": "Ended after 2009."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "S2000 (discontinued)",
+          "engine": "2.2L I4",
+          "horsepower": 237,
+          "notes": "Ended after 2009."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "S2000 (discontinued)",
+          "engine": "2.2L I4",
+          "horsepower": 237,
+          "notes": "Ended after 2009."
+        }
+      ]
+    }
+  }
+}

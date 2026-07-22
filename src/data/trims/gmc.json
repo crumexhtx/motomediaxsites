@@ -1,0 +1,458 @@
+{
+  "sierra": {
+    "2024": {
+      "defaultTrimId": "elevation",
+      "trims": [
+        {
+          "id": "elevation",
+          "name": "Elevation",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "mpgCombined": 17,
+          "towingLb": 11000,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "at4",
+          "name": "AT4",
+          "engine": "6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "denali",
+          "name": "Denali",
+          "engine": "6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "elevation",
+      "trims": [
+        {
+          "id": "elevation",
+          "name": "Elevation",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "mpgCombined": 17,
+          "towingLb": 11000,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "at4",
+          "name": "AT4",
+          "engine": "6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "denali",
+          "name": "Denali",
+          "engine": "6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "elevation",
+      "trims": [
+        {
+          "id": "elevation",
+          "name": "Elevation",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "mpgCombined": 17,
+          "towingLb": 11000,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "at4",
+          "name": "AT4",
+          "engine": "6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "denali",
+          "name": "Denali",
+          "engine": "6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "yukon": {
+    "2024": {
+      "defaultTrimId": "slt",
+      "trims": [
+        {
+          "id": "slt",
+          "name": "SLT",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "mpgCombined": 17,
+          "drivetrain": "4WD",
+          "seatingCapacity": 8,
+          "towingLb": 8500
+        },
+        {
+          "id": "at4",
+          "name": "AT4",
+          "engine": "6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "4WD",
+          "seatingCapacity": 7
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "slt",
+      "trims": [
+        {
+          "id": "slt",
+          "name": "SLT",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "mpgCombined": 17,
+          "drivetrain": "4WD",
+          "seatingCapacity": 8,
+          "towingLb": 8500
+        },
+        {
+          "id": "at4",
+          "name": "AT4",
+          "engine": "6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "4WD",
+          "seatingCapacity": 7
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "slt",
+      "trims": [
+        {
+          "id": "slt",
+          "name": "SLT",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "mpgCombined": 17,
+          "drivetrain": "4WD",
+          "seatingCapacity": 8,
+          "towingLb": 8500
+        },
+        {
+          "id": "at4",
+          "name": "AT4",
+          "engine": "6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "4WD",
+          "seatingCapacity": 7
+        }
+      ]
+    }
+  },
+  "acadia": {
+    "2024": {
+      "defaultTrimId": "elevation",
+      "trims": [
+        {
+          "id": "elevation",
+          "name": "Elevation",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 328,
+          "mpgCombined": 24,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "denali",
+          "name": "Denali",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 328,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "elevation",
+      "trims": [
+        {
+          "id": "elevation",
+          "name": "Elevation",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 328,
+          "mpgCombined": 24,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "denali",
+          "name": "Denali",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 328,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "elevation",
+      "trims": [
+        {
+          "id": "elevation",
+          "name": "Elevation",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 328,
+          "mpgCombined": 24,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "denali",
+          "name": "Denali",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 328,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    }
+  },
+  "terrain": {
+    "2024": {
+      "defaultTrimId": "elevation",
+      "trims": [
+        {
+          "id": "elevation",
+          "name": "Elevation",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 175,
+          "mpgCombined": 27,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "denali",
+          "name": "Denali",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 175,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "elevation",
+      "trims": [
+        {
+          "id": "elevation",
+          "name": "Elevation",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 175,
+          "mpgCombined": 27,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "denali",
+          "name": "Denali",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 175,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "elevation",
+      "trims": [
+        {
+          "id": "elevation",
+          "name": "Elevation",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 175,
+          "mpgCombined": 27,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "denali",
+          "name": "Denali",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 175,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "canyon": {
+    "2024": {
+      "defaultTrimId": "elevation",
+      "trims": [
+        {
+          "id": "elevation",
+          "name": "Elevation",
+          "engine": "2.7L Turbo I4",
+          "horsepower": 310,
+          "torqueLbFt": 430,
+          "drivetrain": "4WD",
+          "mpgCombined": 20,
+          "towingLb": 7700,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "at4",
+          "name": "AT4",
+          "engine": "2.7L Turbo I4",
+          "horsepower": 310,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "elevation",
+      "trims": [
+        {
+          "id": "elevation",
+          "name": "Elevation",
+          "engine": "2.7L Turbo I4",
+          "horsepower": 310,
+          "torqueLbFt": 430,
+          "drivetrain": "4WD",
+          "mpgCombined": 20,
+          "towingLb": 7700,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "at4",
+          "name": "AT4",
+          "engine": "2.7L Turbo I4",
+          "horsepower": 310,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "elevation",
+      "trims": [
+        {
+          "id": "elevation",
+          "name": "Elevation",
+          "engine": "2.7L Turbo I4",
+          "horsepower": 310,
+          "torqueLbFt": 430,
+          "drivetrain": "4WD",
+          "mpgCombined": 20,
+          "towingLb": 7700,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "at4",
+          "name": "AT4",
+          "engine": "2.7L Turbo I4",
+          "horsepower": 310,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "hummer-ev": {
+    "2024": {
+      "defaultTrimId": "edition-1",
+      "trims": [
+        {
+          "id": "edition-1",
+          "name": "Pickup Edition 1",
+          "engine": "Tri-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 1000,
+          "zeroToSixtySec": 3,
+          "rangeMiles": 329,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "suv",
+          "name": "SUV",
+          "engine": "Tri-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 830,
+          "rangeMiles": 300,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "edition-1",
+      "trims": [
+        {
+          "id": "edition-1",
+          "name": "Pickup Edition 1",
+          "engine": "Tri-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 1000,
+          "zeroToSixtySec": 3,
+          "rangeMiles": 329,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "suv",
+          "name": "SUV",
+          "engine": "Tri-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 830,
+          "rangeMiles": 300,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "edition-1",
+      "trims": [
+        {
+          "id": "edition-1",
+          "name": "Pickup Edition 1",
+          "engine": "Tri-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 1000,
+          "zeroToSixtySec": 3,
+          "rangeMiles": 329,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "suv",
+          "name": "SUV",
+          "engine": "Tri-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 830,
+          "rangeMiles": 300,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  }
+}

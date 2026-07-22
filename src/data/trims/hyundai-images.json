@@ -1,0 +1,107 @@
+{
+  "elantra": {
+    "sel": {
+      "query": "hyundai elantra SEL",
+      "src": "/catalog/hyundai--elantra--sel.jpg",
+      "alt": "Hyundai elantra sel"
+    },
+    "hybrid": {
+      "query": "hyundai elantra Hybrid Blue",
+      "src": "/catalog/hyundai--elantra--hybrid.jpg",
+      "alt": "Hyundai elantra hybrid"
+    }
+  },
+  "elantra-n": {
+    "n": {
+      "query": "hyundai elantra n N",
+      "src": "/catalog/hyundai--elantra-n--n.jpg",
+      "alt": "Hyundai elantra n n"
+    }
+  },
+  "sonata": {
+    "sel": {
+      "query": "hyundai sonata SEL",
+      "src": "/catalog/hyundai--sonata--sel.jpg",
+      "alt": "Hyundai sonata sel"
+    },
+    "hybrid": {
+      "query": "hyundai sonata Hybrid",
+      "src": "/catalog/hyundai--sonata--hybrid.jpg",
+      "alt": "Hyundai sonata hybrid"
+    }
+  },
+  "tucson": {
+    "sel": {
+      "query": "hyundai tucson SEL",
+      "src": "/catalog/hyundai--tucson--sel.jpg",
+      "alt": "Hyundai tucson sel"
+    },
+    "hybrid": {
+      "query": "hyundai tucson Hybrid",
+      "src": "/catalog/hyundai--tucson--hybrid.jpg",
+      "alt": "Hyundai tucson hybrid"
+    }
+  },
+  "santa-fe": {
+    "sel": {
+      "query": "hyundai santa fe SEL",
+      "src": "/catalog/hyundai--santa-fe--sel.jpg",
+      "alt": "Hyundai santa fe sel"
+    },
+    "hybrid": {
+      "query": "hyundai santa fe Hybrid",
+      "src": "/catalog/hyundai--santa-fe--hybrid.jpg",
+      "alt": "Hyundai santa fe hybrid"
+    }
+  },
+  "palisade": {
+    "sel": {
+      "query": "hyundai palisade SEL",
+      "src": "/catalog/hyundai--palisade--sel.jpg",
+      "alt": "Hyundai palisade sel"
+    },
+    "calligraphy": {
+      "query": "hyundai palisade Calligraphy",
+      "src": "/catalog/hyundai--palisade--calligraphy.jpg",
+      "alt": "Hyundai palisade calligraphy"
+    }
+  },
+  "ioniq-5": {
+    "sel": {
+      "query": "hyundai ioniq 5 SEL AWD",
+      "src": "/catalog/hyundai--ioniq-5--sel.jpg",
+      "alt": "Hyundai ioniq 5 sel"
+    },
+    "n": {
+      "query": "hyundai ioniq 5 N",
+      "src": "/catalog/hyundai--ioniq-5--n.jpg",
+      "alt": "Hyundai ioniq 5 n"
+    }
+  },
+  "ioniq-6": {
+    "sel": {
+      "query": "hyundai ioniq 6 SEL",
+      "src": "/catalog/hyundai--ioniq-6--sel.jpg",
+      "alt": "Hyundai ioniq 6 sel"
+    },
+    "limited": {
+      "query": "hyundai ioniq 6 Limited AWD",
+      "src": "/catalog/hyundai--ioniq-6--limited.jpg",
+      "alt": "Hyundai ioniq 6 limited"
+    }
+  },
+  "veloster": {
+    "legacy": {
+      "query": "hyundai veloster Veloster (discontinued)",
+      "src": "/catalog/hyundai--veloster--legacy.jpg",
+      "alt": "Hyundai veloster legacy"
+    }
+  },
+  "genesis": {
+    "legacy": {
+      "query": "hyundai genesis Genesis sedan (moved)",
+      "src": "/catalog/hyundai--genesis--legacy.jpg",
+      "alt": "Hyundai genesis legacy"
+    }
+  }
+}

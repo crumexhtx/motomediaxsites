@@ -1,0 +1,114 @@
+{
+  "corvette": {
+    "stingray": {
+      "query": "chevrolet corvette Stingray",
+      "src": "/catalog/chevrolet--corvette--stingray.jpg",
+      "alt": "Chevrolet corvette stingray"
+    },
+    "z06": {
+      "query": "chevrolet corvette Z06",
+      "src": "/catalog/chevrolet--corvette--z06.jpg",
+      "alt": "Chevrolet corvette z06"
+    }
+  },
+  "camaro": {
+    "ss": {
+      "query": "chevrolet camaro SS (final years)",
+      "src": "/catalog/chevrolet--camaro--ss.jpg",
+      "alt": "Chevrolet camaro ss"
+    },
+    "zl1": {
+      "query": "chevrolet camaro ZL1",
+      "src": "/catalog/chevrolet--camaro--zl1.jpg",
+      "alt": "Chevrolet camaro zl1"
+    }
+  },
+  "silverado": {
+    "lt": {
+      "query": "chevrolet silverado LT 5.3 V8",
+      "src": "/catalog/chevrolet--silverado--lt.jpg",
+      "alt": "Chevrolet silverado lt"
+    },
+    "trail-boss": {
+      "query": "chevrolet silverado LT Trail Boss",
+      "src": "/catalog/chevrolet--silverado--trail-boss.jpg",
+      "alt": "Chevrolet silverado trail boss"
+    },
+    "zr2": {
+      "query": "chevrolet silverado ZR2",
+      "src": "/catalog/chevrolet--silverado--zr2.jpg",
+      "alt": "Chevrolet silverado zr2"
+    }
+  },
+  "tahoe": {
+    "lt": {
+      "query": "chevrolet tahoe LT",
+      "src": "/catalog/chevrolet--tahoe--lt.jpg",
+      "alt": "Chevrolet tahoe lt"
+    },
+    "z71": {
+      "query": "chevrolet tahoe Z71",
+      "src": "/catalog/chevrolet--tahoe--z71.jpg",
+      "alt": "Chevrolet tahoe z71"
+    }
+  },
+  "suburban": {
+    "lt": {
+      "query": "chevrolet suburban LT",
+      "src": "/catalog/chevrolet--suburban--lt.jpg",
+      "alt": "Chevrolet suburban lt"
+    }
+  },
+  "equinox": {
+    "lt": {
+      "query": "chevrolet equinox LT",
+      "src": "/catalog/chevrolet--equinox--lt.jpg",
+      "alt": "Chevrolet equinox lt"
+    },
+    "ev": {
+      "query": "chevrolet equinox EV",
+      "src": "/catalog/chevrolet--equinox--ev.jpg",
+      "alt": "Chevrolet equinox ev"
+    }
+  },
+  "malibu": {
+    "lt": {
+      "query": "chevrolet malibu LT (ending)",
+      "src": "/catalog/chevrolet--malibu--lt.jpg",
+      "alt": "Chevrolet malibu lt"
+    }
+  },
+  "colorado": {
+    "lt": {
+      "query": "chevrolet colorado LT",
+      "src": "/catalog/chevrolet--colorado--lt.jpg",
+      "alt": "Chevrolet colorado lt"
+    },
+    "zr2": {
+      "query": "chevrolet colorado ZR2",
+      "src": "/catalog/chevrolet--colorado--zr2.jpg",
+      "alt": "Chevrolet colorado zr2"
+    }
+  },
+  "bolt-ev": {
+    "1lt": {
+      "query": "chevrolet bolt ev 1LT",
+      "src": "/catalog/chevrolet--bolt-ev--1lt.jpg",
+      "alt": "Chevrolet bolt ev 1lt"
+    }
+  },
+  "volt": {
+    "legacy": {
+      "query": "chevrolet volt Volt (discontinued)",
+      "src": "/catalog/chevrolet--volt--legacy.jpg",
+      "alt": "Chevrolet volt legacy"
+    }
+  },
+  "cruze": {
+    "legacy": {
+      "query": "chevrolet cruze Cruze (discontinued)",
+      "src": "/catalog/chevrolet--cruze--legacy.jpg",
+      "alt": "Chevrolet cruze legacy"
+    }
+  }
+}

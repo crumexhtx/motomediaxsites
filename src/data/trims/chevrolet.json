@@ -1,0 +1,660 @@
+{
+  "corvette": {
+    "2024": {
+      "defaultTrimId": "stingray",
+      "trims": [
+        {
+          "id": "stingray",
+          "name": "Stingray",
+          "engine": "6.2L V8",
+          "horsepower": 490,
+          "torqueLbFt": 465,
+          "zeroToSixtySec": 2.9,
+          "drivetrain": "RWD",
+          "mpgCombined": 19,
+          "seatingCapacity": 2
+        },
+        {
+          "id": "z06",
+          "name": "Z06",
+          "engine": "5.5L Flat-Plane V8",
+          "horsepower": 670,
+          "torqueLbFt": 460,
+          "zeroToSixtySec": 2.6,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "stingray",
+      "trims": [
+        {
+          "id": "stingray",
+          "name": "Stingray",
+          "engine": "6.2L V8",
+          "horsepower": 490,
+          "torqueLbFt": 465,
+          "zeroToSixtySec": 2.9,
+          "drivetrain": "RWD",
+          "mpgCombined": 19,
+          "seatingCapacity": 2
+        },
+        {
+          "id": "z06",
+          "name": "Z06",
+          "engine": "5.5L Flat-Plane V8",
+          "horsepower": 670,
+          "torqueLbFt": 460,
+          "zeroToSixtySec": 2.6,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "stingray",
+      "trims": [
+        {
+          "id": "stingray",
+          "name": "Stingray",
+          "engine": "6.2L V8",
+          "horsepower": 490,
+          "torqueLbFt": 465,
+          "zeroToSixtySec": 2.9,
+          "drivetrain": "RWD",
+          "mpgCombined": 19,
+          "seatingCapacity": 2
+        },
+        {
+          "id": "z06",
+          "name": "Z06",
+          "engine": "5.5L Flat-Plane V8",
+          "horsepower": 670,
+          "torqueLbFt": 460,
+          "zeroToSixtySec": 2.6,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        }
+      ]
+    }
+  },
+  "camaro": {
+    "2024": {
+      "defaultTrimId": "ss",
+      "trims": [
+        {
+          "id": "ss",
+          "name": "SS (final years)",
+          "engine": "6.2L V8",
+          "horsepower": 455,
+          "drivetrain": "RWD",
+          "notes": "Camaro production ended after 2024."
+        },
+        {
+          "id": "zl1",
+          "name": "ZL1",
+          "engine": "6.2L Supercharged V8",
+          "horsepower": 650,
+          "drivetrain": "RWD",
+          "notes": "Limited or discontinued in the U.S. for recent model years."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "ss",
+      "trims": [
+        {
+          "id": "ss",
+          "name": "SS (final years)",
+          "engine": "6.2L V8",
+          "horsepower": 455,
+          "drivetrain": "RWD",
+          "notes": "Camaro production ended after 2024."
+        },
+        {
+          "id": "zl1",
+          "name": "ZL1",
+          "engine": "6.2L Supercharged V8",
+          "horsepower": 650,
+          "drivetrain": "RWD",
+          "notes": "Limited or discontinued in the U.S. for recent model years."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "ss",
+      "trims": [
+        {
+          "id": "ss",
+          "name": "SS (final years)",
+          "engine": "6.2L V8",
+          "horsepower": 455,
+          "drivetrain": "RWD",
+          "notes": "Camaro production ended after 2024."
+        },
+        {
+          "id": "zl1",
+          "name": "ZL1",
+          "engine": "6.2L Supercharged V8",
+          "horsepower": 650,
+          "drivetrain": "RWD",
+          "notes": "Limited or discontinued in the U.S. for recent model years."
+        }
+      ]
+    }
+  },
+  "silverado": {
+    "2024": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT 5.3 V8",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "torqueLbFt": 383,
+          "drivetrain": "4WD",
+          "mpgCombined": 18,
+          "towingLb": 11000,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "trail-boss",
+          "name": "LT Trail Boss",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "groundClearanceIn": 11.2,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "zr2",
+          "name": "ZR2",
+          "engine": "6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT 5.3 V8",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "torqueLbFt": 383,
+          "drivetrain": "4WD",
+          "mpgCombined": 18,
+          "towingLb": 11000,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "trail-boss",
+          "name": "LT Trail Boss",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "groundClearanceIn": 11.2,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "zr2",
+          "name": "ZR2",
+          "engine": "6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT 5.3 V8",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "torqueLbFt": 383,
+          "drivetrain": "4WD",
+          "mpgCombined": 18,
+          "towingLb": 11000,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "trail-boss",
+          "name": "LT Trail Boss",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "groundClearanceIn": 11.2,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "zr2",
+          "name": "ZR2",
+          "engine": "6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "tahoe": {
+    "2024": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "mpgCombined": 17,
+          "seatingCapacity": 8,
+          "towingLb": 8400
+        },
+        {
+          "id": "z71",
+          "name": "Z71",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "seatingCapacity": 8
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "mpgCombined": 17,
+          "seatingCapacity": 8,
+          "towingLb": 8400
+        },
+        {
+          "id": "z71",
+          "name": "Z71",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "seatingCapacity": 8
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "mpgCombined": 17,
+          "seatingCapacity": 8,
+          "towingLb": 8400
+        },
+        {
+          "id": "z71",
+          "name": "Z71",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "seatingCapacity": 8
+        }
+      ]
+    }
+  },
+  "suburban": {
+    "2024": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "mpgCombined": 16,
+          "seatingCapacity": 8,
+          "towingLb": 8300
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "mpgCombined": 16,
+          "seatingCapacity": 8,
+          "towingLb": 8300
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "mpgCombined": 16,
+          "seatingCapacity": 8,
+          "towingLb": 8300
+        }
+      ]
+    }
+  },
+  "equinox": {
+    "2024": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 175,
+          "drivetrain": "FWD / AWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "ev",
+          "name": "EV",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 210,
+          "rangeMiles": 319,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 175,
+          "drivetrain": "FWD / AWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "ev",
+          "name": "EV",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 210,
+          "rangeMiles": 319,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 175,
+          "drivetrain": "FWD / AWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "ev",
+          "name": "EV",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 210,
+          "rangeMiles": 319,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "malibu": {
+    "2024": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT (ending)",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 163,
+          "mpgCombined": 31,
+          "notes": "Malibu ends after 2025 in the U.S."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT (ending)",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 163,
+          "mpgCombined": 31,
+          "notes": "Malibu ends after 2025 in the U.S."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT (ending)",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 163,
+          "mpgCombined": 31,
+          "notes": "Malibu ends after 2025 in the U.S."
+        }
+      ]
+    }
+  },
+  "colorado": {
+    "2024": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "2.7L Turbo I4",
+          "horsepower": 310,
+          "torqueLbFt": 430,
+          "drivetrain": "4WD",
+          "mpgCombined": 20,
+          "towingLb": 7700,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "zr2",
+          "name": "ZR2",
+          "engine": "2.7L Turbo I4",
+          "horsepower": 310,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "2.7L Turbo I4",
+          "horsepower": 310,
+          "torqueLbFt": 430,
+          "drivetrain": "4WD",
+          "mpgCombined": 20,
+          "towingLb": 7700,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "zr2",
+          "name": "ZR2",
+          "engine": "2.7L Turbo I4",
+          "horsepower": 310,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "2.7L Turbo I4",
+          "horsepower": 310,
+          "torqueLbFt": 430,
+          "drivetrain": "4WD",
+          "mpgCombined": 20,
+          "towingLb": 7700,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "zr2",
+          "name": "ZR2",
+          "engine": "2.7L Turbo I4",
+          "horsepower": 310,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "bolt-ev": {
+    "2024": {
+      "defaultTrimId": "1lt",
+      "trims": [
+        {
+          "id": "1lt",
+          "name": "1LT",
+          "engine": "Electric",
+          "horsepower": 200,
+          "rangeMiles": 259,
+          "notes": "Bolt EV production ended; page kept for catalog."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "1lt",
+      "trims": [
+        {
+          "id": "1lt",
+          "name": "1LT",
+          "engine": "Electric",
+          "horsepower": 200,
+          "rangeMiles": 259,
+          "notes": "Bolt EV production ended; page kept for catalog."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "1lt",
+      "trims": [
+        {
+          "id": "1lt",
+          "name": "1LT",
+          "engine": "Electric",
+          "horsepower": 200,
+          "rangeMiles": 259,
+          "notes": "Bolt EV production ended; page kept for catalog."
+        }
+      ]
+    }
+  },
+  "volt": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Volt (discontinued)",
+          "notes": "Discontinued after 2019."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Volt (discontinued)",
+          "notes": "Discontinued after 2019."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Volt (discontinued)",
+          "notes": "Discontinued after 2019."
+        }
+      ]
+    }
+  },
+  "cruze": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Cruze (discontinued)",
+          "notes": "Discontinued after 2019."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Cruze (discontinued)",
+          "notes": "Discontinued after 2019."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Cruze (discontinued)",
+          "notes": "Discontinued after 2019."
+        }
+      ]
+    }
+  }
+}

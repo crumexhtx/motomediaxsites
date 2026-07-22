@@ -1,0 +1,204 @@
+{
+  "corvette": {
+    "2024": {
+      "youtubeId": "Sf7S-kXy76k",
+      "title": "The 2024 Chevrolet Corvette Convertible Is The Ultimate Topless American Sports Car",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2025": {
+      "youtubeId": "i5tVHaRAWy4",
+      "title": "2025 Chevrolet Corvette Stingray 3LT - POV Review",
+      "owner": "TheTopher",
+      "ownerUrl": "https://www.youtube.com/channel/UCD4NnnbISbr4dvmmzQxC2bA"
+    },
+    "2026": {
+      "youtubeId": "VkPx9dYUkBg",
+      "title": "2026 Chevrolet Corvette Review | BIG CHANGES FOR 2026!!!",
+      "owner": "Gold Pony",
+      "ownerUrl": "https://www.youtube.com/channel/UCbnmrTBdvGD3G20S0yOcVTg",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "camaro": {
+    "2024": {
+      "youtubeId": "4PxpnCdfsck",
+      "title": "Chevy Camaro SS 1LE | Best Used Sports Car of 2024",
+      "owner": "savagegeese",
+      "ownerUrl": "https://www.youtube.com/channel/UCgUvk6jVaf-1uKOqG8XNcaQ"
+    }
+  },
+  "silverado": {
+    "2024": {
+      "youtubeId": "0UVv8c0kCPY",
+      "title": "2024 Chevrolet Silverado 1500 | LT Crew Cab | Driving Review",
+      "owner": "Walser Polar Chevrolet",
+      "ownerUrl": "https://www.youtube.com/channel/UCrIfP6FW2TSccyqb3Apk5Tg",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "RwPtWILUS3M",
+      "title": "Is the 2025 Chevrolet Silverado LT Trail Boss BETTER than a Toyota Tundra TRD Sport?",
+      "owner": "Raiti's Rides",
+      "ownerUrl": "https://www.youtube.com/channel/UCILN_EvJ2ocZ5MW7168oQLg",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "41Nz76isX5M",
+      "title": "2026 Chevy Silverado 1500: Which Trim Is the Smartest Buy?",
+      "owner": "Everyman Driver",
+      "ownerUrl": "https://www.youtube.com/channel/UCHO7vbSlz7x8qIAkZWoyVow",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "tahoe": {
+    "2024": {
+      "youtubeId": "IU694gLWagA",
+      "title": "The 2024 Chevrolet Tahoe RST Is A Sporty Family Hauler With Cop Car Vibes",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2025": {
+      "youtubeId": "eLEjKOpld8k",
+      "title": "The 2025 Chevrolet Tahoe High Country Is A High Tech & High Luxury Family SUV",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2026": {
+      "youtubeId": "H3Li0Q42yNE",
+      "title": "2026 Chevy Tahoe High Country -- STILL a GREAT Pick for 2026?? (Anything New?)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    }
+  },
+  "suburban": {
+    "2024": {
+      "youtubeId": "JOjGWYub7q0",
+      "title": "2024 Chevy Suburban Review",
+      "owner": "CarGurus",
+      "ownerUrl": "https://www.youtube.com/channel/UC90ZigN9H_k5hEbZ3r6cuHQ",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "mcSJNDvHDzU",
+      "title": "The 2025 Chevrolet Suburban Z71 Is A Diesel Powered Bus With Extra Off-Road Prowess",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2026": {
+      "youtubeId": "y8J4g30t5PU",
+      "title": "2026 Chevy Suburban: The Problems No One Warns You About",
+      "owner": "CAR INSIDER",
+      "ownerUrl": "https://www.youtube.com/channel/UCZQg07UmacewAjvDz7huAyQ",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "equinox": {
+    "2024": {
+      "youtubeId": "b_2_SKHtDbY",
+      "title": "2024 Chevrolet Equinox EV Review | Consumer Reports",
+      "owner": "Consumer Reports",
+      "ownerUrl": "https://www.youtube.com/channel/UCOClvgLYa7g75eIaTdwj_vg",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "pf1tIl_TTn4",
+      "title": "2025 Chevrolet Equinox Review | Consumer Reports",
+      "owner": "Consumer Reports",
+      "ownerUrl": "https://www.youtube.com/channel/UCOClvgLYa7g75eIaTdwj_vg",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "llSld86s7oQ",
+      "title": "2026 Chevy Equinox -- A GREAT Compact SUV for Thousands Less Than RAV4?? (Value)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    }
+  },
+  "malibu": {
+    "2024": {
+      "youtubeId": "aRUlUA9_2-4",
+      "title": "2024 Chevy Malibu LT Honest Review | Best Economy Car?",
+      "owner": "Brann Auto Media",
+      "ownerUrl": "https://www.youtube.com/channel/UCugvpp3hOcWB6VvN9cE_5rQ",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "N9fLb4KXHVE",
+      "title": "Can the 2025 Chevrolet Malibu compete with the Honda Accord & Toyota Camry?",
+      "owner": "Raiti's Rides",
+      "ownerUrl": "https://www.youtube.com/channel/UCILN_EvJ2ocZ5MW7168oQLg",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "hx0xz7ZX6CU",
+      "title": "2026 Chevy Malibu – Everything You Need to Know Before Buying!",
+      "owner": "Auto Saga",
+      "ownerUrl": "https://www.youtube.com/channel/UC4yhZOkd4PVw2TqdIw9g2bw",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "volt": {
+    "2019": {
+      "youtubeId": "bTK1biHej_k",
+      "title": "2019 Chevrolet Volt | The Plug-In Swan Song",
+      "owner": "Auto Buyers Guide | Alex on Autos",
+      "ownerUrl": "https://www.youtube.com/channel/UC3qM33hHgedfi7qTKKgIApg"
+    }
+  },
+  "bolt-ev": {
+    "2024": {
+      "youtubeId": "2u5wDgV7NKY",
+      "title": "2023 Chevrolet Bolt Review: Is a Lightly Used Bolt EV For You?",
+      "owner": "Cars Simplified",
+      "ownerUrl": "https://www.youtube.com/channel/UCDUz1cHTRYPavruT-G4ivcA",
+      "note": "YouTube title may not include 2024. Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "D9VmW93aaWs",
+      "title": "I Bought A 2019 Chevrolet Bolt In 2025",
+      "owner": "Ed Collects",
+      "ownerUrl": "https://www.youtube.com/channel/UC9AO0hKZctE6I3gBlW4-30g",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "SmmAhPTWktY",
+      "title": "The Chevrolet Bolt is Car and Driver's 2026 EV of the Year",
+      "owner": "Car and Driver",
+      "ownerUrl": "https://www.youtube.com/channel/UCOqhTsqySBCBTy571GArcXg",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "colorado": {
+    "2024": {
+      "youtubeId": "OPnvcPIKorU",
+      "title": "2 WORST And 8 BEST Things About The 2024 Chevrolet Colorado",
+      "owner": "Downshift",
+      "ownerUrl": "https://www.youtube.com/channel/UCBXQM4wXOpzZPcjXMqecArA",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "uBIPfgKAaA8",
+      "title": "2025 Chevrolet Colorado - The Truck's Biggest Pros and Cons, Exposed!",
+      "owner": "Speed Spectrum",
+      "ownerUrl": "https://www.youtube.com/channel/UCrQamVLEimHG2Mj69h50DdQ",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "7zYAJuIpDBs",
+      "title": "More power and features than the competition //  2026 Chevy Colorado review",
+      "owner": "Motormouth",
+      "ownerUrl": "https://www.youtube.com/channel/UCX13wwdzipRhH001W3X0WyQ",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "cruze": {
+    "2019": {
+      "youtubeId": "kCU064ujWTg",
+      "title": "2019 Chevy Cruze review from a mechanic standpoint",
+      "owner": "mikes random videos",
+      "ownerUrl": "https://www.youtube.com/channel/UClKTWVEPfL6U1GQkU1_koAg",
+      "note": "Channel is outside the preferred review list."
+    }
+  }
+}

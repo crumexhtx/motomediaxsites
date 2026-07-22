@@ -1,0 +1,863 @@
+{
+  "3-series": {
+    "2024": {
+      "defaultTrimId": "330i",
+      "trims": [
+        {
+          "id": "330i",
+          "name": "330i",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 29,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "m340i",
+          "name": "M340i",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 382,
+          "zeroToSixtySec": 4.1,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "330i",
+      "trims": [
+        {
+          "id": "330i",
+          "name": "330i",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 29,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "m340i",
+          "name": "M340i",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 382,
+          "zeroToSixtySec": 4.1,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "330i",
+      "trims": [
+        {
+          "id": "330i",
+          "name": "330i",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 29,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "m340i",
+          "name": "M340i",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 382,
+          "zeroToSixtySec": 4.1,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "5-series": {
+    "2024": {
+      "defaultTrimId": "530i",
+      "trims": [
+        {
+          "id": "530i",
+          "name": "530i",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 29,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "550e",
+          "name": "550e xDrive",
+          "engine": "3.0L Turbo PHEV",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 483,
+          "rangeMiles": 24,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "530i",
+      "trims": [
+        {
+          "id": "530i",
+          "name": "530i",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 29,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "550e",
+          "name": "550e xDrive",
+          "engine": "3.0L Turbo PHEV",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 483,
+          "rangeMiles": 24,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "530i",
+      "trims": [
+        {
+          "id": "530i",
+          "name": "530i",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 29,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "550e",
+          "name": "550e xDrive",
+          "engine": "3.0L Turbo PHEV",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 483,
+          "rangeMiles": 24,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "7-series": {
+    "2024": {
+      "defaultTrimId": "740i",
+      "trims": [
+        {
+          "id": "740i",
+          "name": "740i",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 375,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "i7",
+          "name": "i7 xDrive60",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 536,
+          "rangeMiles": 296,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "740i",
+      "trims": [
+        {
+          "id": "740i",
+          "name": "740i",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 375,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "i7",
+          "name": "i7 xDrive60",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 536,
+          "rangeMiles": 296,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "740i",
+      "trims": [
+        {
+          "id": "740i",
+          "name": "740i",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 375,
+          "drivetrain": "RWD / AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "i7",
+          "name": "i7 xDrive60",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 536,
+          "rangeMiles": 296,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "m3": {
+    "2024": {
+      "defaultTrimId": "competition",
+      "trims": [
+        {
+          "id": "competition",
+          "name": "Competition",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "torqueLbFt": 479,
+          "zeroToSixtySec": 3.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "competition",
+      "trims": [
+        {
+          "id": "competition",
+          "name": "Competition",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "torqueLbFt": 479,
+          "zeroToSixtySec": 3.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "competition",
+      "trims": [
+        {
+          "id": "competition",
+          "name": "Competition",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "torqueLbFt": 479,
+          "zeroToSixtySec": 3.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "m4": {
+    "2024": {
+      "defaultTrimId": "competition",
+      "trims": [
+        {
+          "id": "competition",
+          "name": "Competition",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "zeroToSixtySec": 3.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "competition",
+      "trims": [
+        {
+          "id": "competition",
+          "name": "Competition",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "zeroToSixtySec": 3.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "competition",
+      "trims": [
+        {
+          "id": "competition",
+          "name": "Competition",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "zeroToSixtySec": 3.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        }
+      ]
+    }
+  },
+  "m2": {
+    "2024": {
+      "defaultTrimId": "m2",
+      "trims": [
+        {
+          "id": "m2",
+          "name": "M2",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 453,
+          "zeroToSixtySec": 3.9,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "m2",
+      "trims": [
+        {
+          "id": "m2",
+          "name": "M2",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 453,
+          "zeroToSixtySec": 3.9,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "m2",
+      "trims": [
+        {
+          "id": "m2",
+          "name": "M2",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 453,
+          "zeroToSixtySec": 3.9,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        }
+      ]
+    }
+  },
+  "m5": {
+    "2024": {
+      "defaultTrimId": "competition",
+      "trims": [
+        {
+          "id": "competition",
+          "name": "M5",
+          "engine": "4.4L Twin-Turbo V8 Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 717,
+          "zeroToSixtySec": 3.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "competition",
+      "trims": [
+        {
+          "id": "competition",
+          "name": "M5",
+          "engine": "4.4L Twin-Turbo V8 Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 717,
+          "zeroToSixtySec": 3.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "competition",
+      "trims": [
+        {
+          "id": "competition",
+          "name": "M5",
+          "engine": "4.4L Twin-Turbo V8 Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 717,
+          "zeroToSixtySec": 3.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "x3": {
+    "2024": {
+      "defaultTrimId": "30",
+      "trims": [
+        {
+          "id": "30",
+          "name": "xDrive30",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "m",
+          "name": "X3 M",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "30",
+      "trims": [
+        {
+          "id": "30",
+          "name": "xDrive30",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "m",
+          "name": "X3 M",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "30",
+      "trims": [
+        {
+          "id": "30",
+          "name": "xDrive30",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "mpgCombined": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "m",
+          "name": "X3 M",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "x5": {
+    "2024": {
+      "defaultTrimId": "40i",
+      "trims": [
+        {
+          "id": "40i",
+          "name": "xDrive40i",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 375,
+          "mpgCombined": 23,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "m60i",
+          "name": "M60i",
+          "engine": "4.4L Twin-Turbo V8",
+          "horsepower": 523,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "40i",
+      "trims": [
+        {
+          "id": "40i",
+          "name": "xDrive40i",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 375,
+          "mpgCombined": 23,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "m60i",
+          "name": "M60i",
+          "engine": "4.4L Twin-Turbo V8",
+          "horsepower": 523,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "40i",
+      "trims": [
+        {
+          "id": "40i",
+          "name": "xDrive40i",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 375,
+          "mpgCombined": 23,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "m60i",
+          "name": "M60i",
+          "engine": "4.4L Twin-Turbo V8",
+          "horsepower": 523,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "x7": {
+    "2024": {
+      "defaultTrimId": "40i",
+      "trims": [
+        {
+          "id": "40i",
+          "name": "xDrive40i",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 375,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "m60i",
+          "name": "M60i",
+          "engine": "4.4L Twin-Turbo V8",
+          "horsepower": 523,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "40i",
+      "trims": [
+        {
+          "id": "40i",
+          "name": "xDrive40i",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 375,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "m60i",
+          "name": "M60i",
+          "engine": "4.4L Twin-Turbo V8",
+          "horsepower": 523,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "40i",
+      "trims": [
+        {
+          "id": "40i",
+          "name": "xDrive40i",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 375,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "m60i",
+          "name": "M60i",
+          "engine": "4.4L Twin-Turbo V8",
+          "horsepower": 523,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    }
+  },
+  "z4": {
+    "2024": {
+      "defaultTrimId": "m40i",
+      "trims": [
+        {
+          "id": "m40i",
+          "name": "M40i",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 382,
+          "zeroToSixtySec": 3.9,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "m40i",
+      "trims": [
+        {
+          "id": "m40i",
+          "name": "M40i",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 382,
+          "zeroToSixtySec": 3.9,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "m40i",
+      "trims": [
+        {
+          "id": "m40i",
+          "name": "M40i",
+          "engine": "3.0L Turbo I6",
+          "horsepower": 382,
+          "zeroToSixtySec": 3.9,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        }
+      ]
+    }
+  },
+  "i4": {
+    "2024": {
+      "defaultTrimId": "eDrive40",
+      "trims": [
+        {
+          "id": "eDrive40",
+          "name": "eDrive40",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 335,
+          "rangeMiles": 301,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "m50",
+          "name": "M50",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 536,
+          "rangeMiles": 269,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "eDrive40",
+      "trims": [
+        {
+          "id": "eDrive40",
+          "name": "eDrive40",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 335,
+          "rangeMiles": 301,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "m50",
+          "name": "M50",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 536,
+          "rangeMiles": 269,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "eDrive40",
+      "trims": [
+        {
+          "id": "eDrive40",
+          "name": "eDrive40",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 335,
+          "rangeMiles": 301,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "m50",
+          "name": "M50",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 536,
+          "rangeMiles": 269,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "ix": {
+    "2024": {
+      "defaultTrimId": "xdrive50",
+      "trims": [
+        {
+          "id": "xdrive50",
+          "name": "xDrive50",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 516,
+          "rangeMiles": 324,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "m60",
+          "name": "M60",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 610,
+          "rangeMiles": 288,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "xdrive50",
+      "trims": [
+        {
+          "id": "xdrive50",
+          "name": "xDrive50",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 516,
+          "rangeMiles": 324,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "m60",
+          "name": "M60",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 610,
+          "rangeMiles": 288,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "xdrive50",
+      "trims": [
+        {
+          "id": "xdrive50",
+          "name": "xDrive50",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 516,
+          "rangeMiles": 324,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "m60",
+          "name": "M60",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 610,
+          "rangeMiles": 288,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "i3": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "i3 (ended)",
+          "notes": "Ended after 2021."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "i3 (ended)",
+          "notes": "Ended after 2021."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "i3 (ended)",
+          "notes": "Ended after 2021."
+        }
+      ]
+    }
+  },
+  "i8": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "i8 (ended)",
+          "notes": "Ended after 2020."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "i8 (ended)",
+          "notes": "Ended after 2020."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "i8 (ended)",
+          "notes": "Ended after 2020."
+        }
+      ]
+    }
+  }
+}

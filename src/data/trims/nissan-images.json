@@ -1,0 +1,128 @@
+{
+  "z": {
+    "sport": {
+      "query": "nissan z Sport",
+      "src": "/catalog/nissan--z--sport.jpg",
+      "alt": "Nissan z sport"
+    },
+    "nismo": {
+      "query": "nissan z NISMO",
+      "src": "/catalog/nissan--z--nismo.jpg",
+      "alt": "Nissan z nismo"
+    }
+  },
+  "altima": {
+    "sv": {
+      "query": "nissan altima SV",
+      "src": "/catalog/nissan--altima--sv.jpg",
+      "alt": "Nissan altima sv"
+    },
+    "sr": {
+      "query": "nissan altima SR VC-Turbo",
+      "src": "/catalog/nissan--altima--sr.jpg",
+      "alt": "Nissan altima sr"
+    }
+  },
+  "sentra": {
+    "sv": {
+      "query": "nissan sentra SV",
+      "src": "/catalog/nissan--sentra--sv.jpg",
+      "alt": "Nissan sentra sv"
+    },
+    "sr": {
+      "query": "nissan sentra SR",
+      "src": "/catalog/nissan--sentra--sr.jpg",
+      "alt": "Nissan sentra sr"
+    }
+  },
+  "rogue": {
+    "sv": {
+      "query": "nissan rogue SV",
+      "src": "/catalog/nissan--rogue--sv.jpg",
+      "alt": "Nissan rogue sv"
+    },
+    "platinum": {
+      "query": "nissan rogue Platinum",
+      "src": "/catalog/nissan--rogue--platinum.jpg",
+      "alt": "Nissan rogue platinum"
+    }
+  },
+  "pathfinder": {
+    "sv": {
+      "query": "nissan pathfinder SV",
+      "src": "/catalog/nissan--pathfinder--sv.jpg",
+      "alt": "Nissan pathfinder sv"
+    },
+    "rock-creek": {
+      "query": "nissan pathfinder Rock Creek",
+      "src": "/catalog/nissan--pathfinder--rock-creek.jpg",
+      "alt": "Nissan pathfinder rock creek"
+    }
+  },
+  "frontier": {
+    "sv": {
+      "query": "nissan frontier SV",
+      "src": "/catalog/nissan--frontier--sv.png",
+      "alt": "Nissan frontier sv"
+    },
+    "pro-4x": {
+      "query": "nissan frontier PRO-4X",
+      "src": "/catalog/nissan--frontier--pro-4x.jpg",
+      "alt": "Nissan frontier pro 4x"
+    }
+  },
+  "ariya": {
+    "engage": {
+      "query": "nissan ariya Engage",
+      "src": "/catalog/nissan--ariya--engage.jpg",
+      "alt": "Nissan ariya engage"
+    },
+    "platinum": {
+      "query": "nissan ariya Platinum+",
+      "src": "/catalog/nissan--ariya--platinum.jpg",
+      "alt": "Nissan ariya platinum"
+    }
+  },
+  "leaf": {
+    "sv-plus": {
+      "query": "nissan leaf SV Plus",
+      "src": "/catalog/nissan--leaf--sv-plus.jpg",
+      "alt": "Nissan leaf sv plus"
+    }
+  },
+  "maxima": {
+    "legacy": {
+      "query": "nissan maxima Maxima (ending)",
+      "src": "/catalog/nissan--maxima--legacy.jpg",
+      "alt": "Nissan maxima legacy"
+    }
+  },
+  "gt-r": {
+    "legacy": {
+      "query": "nissan gt r GT-R (ended)",
+      "src": "/catalog/nissan--gt-r--legacy.jpg",
+      "alt": "Nissan gt r legacy"
+    }
+  },
+  "370z": {
+    "legacy": {
+      "query": "nissan 370z 370Z (discontinued)",
+      "src": "/catalog/nissan--370z--legacy.jpg",
+      "alt": "Nissan 370z legacy"
+    }
+  },
+  "350z": {
+    "legacy": {
+      "query": "nissan 350z 350Z (discontinued)",
+      "src": "/catalog/nissan--350z--legacy.jpg",
+      "alt": "Nissan 350z legacy"
+    }
+  },
+  "xterra": {
+    "legacy": {
+      "query": "nissan xterra Xterra (discontinued)",
+      "src": "/catalog/nissan--xterra--legacy.jpg",
+      "alt": "Nissan xterra legacy"
+    }
+  }
+}

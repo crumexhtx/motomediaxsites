@@ -1,0 +1,98 @@
+{
+  "impreza": {
+    "sport": {
+      "query": "subaru impreza Sport",
+      "src": "/catalog/subaru--impreza--sport.jpg",
+      "alt": "Subaru impreza sport"
+    },
+    "rs": {
+      "query": "subaru impreza RS",
+      "src": "/catalog/subaru--impreza--rs.jpg",
+      "alt": "Subaru impreza rs"
+    }
+  },
+  "wrx-sti": {
+    "wrx": {
+      "query": "subaru wrx sti WRX",
+      "src": "/catalog/subaru--wrx-sti--wrx.jpg",
+      "alt": "Subaru wrx sti wrx"
+    },
+    "tr": {
+      "query": "subaru wrx sti WRX TR",
+      "src": "/catalog/subaru--wrx-sti--tr.jpg",
+      "alt": "Subaru wrx sti tr"
+    }
+  },
+  "outback": {
+    "limited": {
+      "query": "subaru outback Limited",
+      "src": "/catalog/subaru--outback--limited.jpg",
+      "alt": "Subaru outback limited"
+    },
+    "wilderness": {
+      "query": "subaru outback Wilderness",
+      "src": "/catalog/subaru--outback--wilderness.jpg",
+      "alt": "Subaru outback wilderness"
+    }
+  },
+  "forester": {
+    "sport": {
+      "query": "subaru forester Sport",
+      "src": "/catalog/subaru--forester--sport.jpg",
+      "alt": "Subaru forester sport"
+    },
+    "wilderness": {
+      "query": "subaru forester Wilderness",
+      "src": "/catalog/subaru--forester--wilderness.jpg",
+      "alt": "Subaru forester wilderness"
+    }
+  },
+  "crosstrek": {
+    "sport": {
+      "query": "subaru crosstrek Sport",
+      "src": "/catalog/subaru--crosstrek--sport.jpg",
+      "alt": "Subaru crosstrek sport"
+    },
+    "wilderness": {
+      "query": "subaru crosstrek Wilderness",
+      "src": "/catalog/subaru--crosstrek--wilderness.jpg",
+      "alt": "Subaru crosstrek wilderness"
+    }
+  },
+  "ascent": {
+    "limited": {
+      "query": "subaru ascent Limited",
+      "src": "/catalog/subaru--ascent--limited.jpg",
+      "alt": "Subaru ascent limited"
+    },
+    "touring": {
+      "query": "subaru ascent Touring",
+      "src": "/catalog/subaru--ascent--touring.jpg",
+      "alt": "Subaru ascent touring"
+    }
+  },
+  "legacy": {
+    "sport": {
+      "query": "subaru legacy Sport",
+      "src": "/catalog/subaru--legacy--sport.jpg",
+      "alt": "Subaru legacy sport"
+    },
+    "xt": {
+      "query": "subaru legacy XT",
+      "src": "/catalog/subaru--legacy--xt.jpg",
+      "alt": "Subaru legacy xt"
+    }
+  },
+  "brz": {
+    "premium": {
+      "query": "subaru brz Premium",
+      "src": "/catalog/subaru--brz--premium.jpg",
+      "alt": "Subaru brz premium"
+    },
+    "ts": {
+      "query": "subaru brz tS",
+      "src": "/catalog/subaru--brz--ts.jpg",
+      "alt": "Subaru brz ts"
+    }
+  }
+}

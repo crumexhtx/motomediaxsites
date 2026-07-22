@@ -1,0 +1,90 @@
+{
+  "mazda3": {
+    "preferred": {
+      "query": "mazda mazda3 Preferred",
+      "src": "/catalog/mazda--mazda3--preferred.jpg",
+      "alt": "Mazda mazda3 preferred"
+    },
+    "turbo": {
+      "query": "mazda mazda3 Turbo Premium Plus",
+      "src": "/catalog/mazda--mazda3--turbo.jpg",
+      "alt": "Mazda mazda3 turbo"
+    }
+  },
+  "miata": {
+    "sport": {
+      "query": "mazda miata Sport",
+      "src": "/catalog/mazda--miata--sport.jpg",
+      "alt": "Mazda miata sport"
+    },
+    "club": {
+      "query": "mazda miata Club",
+      "src": "/catalog/mazda--miata--club.jpg",
+      "alt": "Mazda miata club"
+    }
+  },
+  "cx-5": {
+    "preferred": {
+      "query": "mazda cx 5 Preferred",
+      "src": "/catalog/mazda--cx-5--preferred.jpg",
+      "alt": "Mazda cx 5 preferred"
+    },
+    "turbo": {
+      "query": "mazda cx 5 Turbo",
+      "src": "/catalog/mazda--cx-5--turbo.jpg",
+      "alt": "Mazda cx 5 turbo"
+    }
+  },
+  "cx-30": {
+    "preferred": {
+      "query": "mazda cx 30 Preferred",
+      "src": "/catalog/mazda--cx-30--preferred.jpg",
+      "alt": "Mazda cx 30 preferred"
+    },
+    "turbo": {
+      "query": "mazda cx 30 Turbo",
+      "src": "/catalog/mazda--cx-30--turbo.jpg",
+      "alt": "Mazda cx 30 turbo"
+    }
+  },
+  "cx-90": {
+    "preferred": {
+      "query": "mazda cx 90 Preferred",
+      "src": "/catalog/mazda--cx-90--preferred.jpg",
+      "alt": "Mazda cx 90 preferred"
+    },
+    "phev": {
+      "query": "mazda cx 90 PHEV",
+      "src": "/catalog/mazda--cx-90--phev.jpg",
+      "alt": "Mazda cx 90 phev"
+    }
+  },
+  "cx-9": {
+    "legacy": {
+      "query": "mazda cx 9 CX-9 (succeeded by CX-90)",
+      "src": "/catalog/mazda--cx-9--legacy.jpg",
+      "alt": "Mazda cx 9 legacy"
+    }
+  },
+  "mazda6": {
+    "legacy": {
+      "query": "mazda mazda6 Mazda6 (ended)",
+      "src": "/catalog/mazda--mazda6--legacy.jpg",
+      "alt": "Mazda mazda6 legacy"
+    }
+  },
+  "rx-8": {
+    "legacy": {
+      "query": "mazda rx 8 RX-8 (ended)",
+      "src": "/catalog/mazda--rx-8--legacy.jpg",
+      "alt": "Mazda rx 8 legacy"
+    }
+  },
+  "mazdaspeed3": {
+    "legacy": {
+      "query": "mazda mazdaspeed3 Mazdaspeed3 (ended)",
+      "src": "/catalog/mazda--mazdaspeed3--legacy.jpg",
+      "alt": "Mazda mazdaspeed3 legacy"
+    }
+  }
+}

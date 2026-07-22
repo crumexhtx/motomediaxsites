@@ -1,0 +1,642 @@
+{
+  "k5": {
+    "2024": {
+      "defaultTrimId": "gt-line",
+      "trims": [
+        {
+          "id": "gt-line",
+          "name": "GT-Line",
+          "engine": "1.6L Turbo I4",
+          "horsepower": 180,
+          "mpgCombined": 31,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 290,
+          "zeroToSixtySec": 5.1,
+          "mpgCombined": 27,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "gt-line",
+      "trims": [
+        {
+          "id": "gt-line",
+          "name": "GT-Line",
+          "engine": "1.6L Turbo I4",
+          "horsepower": 180,
+          "mpgCombined": 31,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 290,
+          "zeroToSixtySec": 5.1,
+          "mpgCombined": 27,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "gt-line",
+      "trims": [
+        {
+          "id": "gt-line",
+          "name": "GT-Line",
+          "engine": "1.6L Turbo I4",
+          "horsepower": 180,
+          "mpgCombined": 31,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 290,
+          "zeroToSixtySec": 5.1,
+          "mpgCombined": 27,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "forte": {
+    "2024": {
+      "defaultTrimId": "gt-line",
+      "trims": [
+        {
+          "id": "gt-line",
+          "name": "GT-Line",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "mpgCombined": 35,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "gt-line",
+      "trims": [
+        {
+          "id": "gt-line",
+          "name": "GT-Line",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "mpgCombined": 35,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "gt-line",
+      "trims": [
+        {
+          "id": "gt-line",
+          "name": "GT-Line",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "mpgCombined": 35,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "sportage": {
+    "2024": {
+      "defaultTrimId": "x-line",
+      "trims": [
+        {
+          "id": "x-line",
+          "name": "X-Line",
+          "engine": "2.5L I4",
+          "horsepower": 187,
+          "mpgCombined": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "engine": "1.6L Turbo Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 227,
+          "mpgCombined": 38,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "x-line",
+      "trims": [
+        {
+          "id": "x-line",
+          "name": "X-Line",
+          "engine": "2.5L I4",
+          "horsepower": 187,
+          "mpgCombined": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "engine": "1.6L Turbo Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 227,
+          "mpgCombined": 38,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "x-line",
+      "trims": [
+        {
+          "id": "x-line",
+          "name": "X-Line",
+          "engine": "2.5L I4",
+          "horsepower": 187,
+          "mpgCombined": 26,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "engine": "1.6L Turbo Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 227,
+          "mpgCombined": 38,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "sorento": {
+    "2024": {
+      "defaultTrimId": "x-line",
+      "trims": [
+        {
+          "id": "x-line",
+          "name": "X-Line",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 281,
+          "mpgCombined": 23,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "engine": "1.6L Turbo Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 227,
+          "mpgCombined": 36,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "x-line",
+      "trims": [
+        {
+          "id": "x-line",
+          "name": "X-Line",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 281,
+          "mpgCombined": 23,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "engine": "1.6L Turbo Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 227,
+          "mpgCombined": 36,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "x-line",
+      "trims": [
+        {
+          "id": "x-line",
+          "name": "X-Line",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 281,
+          "mpgCombined": 23,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "engine": "1.6L Turbo Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 227,
+          "mpgCombined": 36,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    }
+  },
+  "telluride": {
+    "2024": {
+      "defaultTrimId": "sx",
+      "trims": [
+        {
+          "id": "sx",
+          "name": "SX",
+          "engine": "3.8L V6",
+          "horsepower": 291,
+          "mpgCombined": 22,
+          "drivetrain": "AWD",
+          "seatingCapacity": 8,
+          "towingLb": 5000
+        },
+        {
+          "id": "x-pro",
+          "name": "X-Pro",
+          "engine": "3.8L V6",
+          "horsepower": 291,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sx",
+      "trims": [
+        {
+          "id": "sx",
+          "name": "SX",
+          "engine": "3.8L V6",
+          "horsepower": 291,
+          "mpgCombined": 22,
+          "drivetrain": "AWD",
+          "seatingCapacity": 8,
+          "towingLb": 5000
+        },
+        {
+          "id": "x-pro",
+          "name": "X-Pro",
+          "engine": "3.8L V6",
+          "horsepower": 291,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sx",
+      "trims": [
+        {
+          "id": "sx",
+          "name": "SX",
+          "engine": "3.8L V6",
+          "horsepower": 291,
+          "mpgCombined": 22,
+          "drivetrain": "AWD",
+          "seatingCapacity": 8,
+          "towingLb": 5000
+        },
+        {
+          "id": "x-pro",
+          "name": "X-Pro",
+          "engine": "3.8L V6",
+          "horsepower": 291,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        }
+      ]
+    }
+  },
+  "soul": {
+    "2024": {
+      "defaultTrimId": "gt-line",
+      "trims": [
+        {
+          "id": "gt-line",
+          "name": "GT-Line",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "mpgCombined": 29,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "gt-line",
+      "trims": [
+        {
+          "id": "gt-line",
+          "name": "GT-Line",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "mpgCombined": 29,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "gt-line",
+      "trims": [
+        {
+          "id": "gt-line",
+          "name": "GT-Line",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "mpgCombined": 29,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "ev6": {
+    "2024": {
+      "defaultTrimId": "wind",
+      "trims": [
+        {
+          "id": "wind",
+          "name": "Wind AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 320,
+          "rangeMiles": 282,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 576,
+          "zeroToSixtySec": 3.4,
+          "rangeMiles": 218,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "wind",
+      "trims": [
+        {
+          "id": "wind",
+          "name": "Wind AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 320,
+          "rangeMiles": 282,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 576,
+          "zeroToSixtySec": 3.4,
+          "rangeMiles": 218,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "wind",
+      "trims": [
+        {
+          "id": "wind",
+          "name": "Wind AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 320,
+          "rangeMiles": 282,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 576,
+          "zeroToSixtySec": 3.4,
+          "rangeMiles": 218,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "ev9": {
+    "2024": {
+      "defaultTrimId": "land",
+      "trims": [
+        {
+          "id": "land",
+          "name": "Land AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 379,
+          "rangeMiles": 280,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "gt-line",
+          "name": "GT-Line",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 379,
+          "rangeMiles": 270,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "land",
+      "trims": [
+        {
+          "id": "land",
+          "name": "Land AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 379,
+          "rangeMiles": 280,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "gt-line",
+          "name": "GT-Line",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 379,
+          "rangeMiles": 270,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "land",
+      "trims": [
+        {
+          "id": "land",
+          "name": "Land AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 379,
+          "rangeMiles": 280,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "gt-line",
+          "name": "GT-Line",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 379,
+          "rangeMiles": 270,
+          "drivetrain": "AWD",
+          "seatingCapacity": 6
+        }
+      ]
+    }
+  },
+  "stinger": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Stinger (ended)",
+          "engine": "3.3L Twin-Turbo V6",
+          "horsepower": 368,
+          "notes": "Ended after 2023."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Stinger (ended)",
+          "engine": "3.3L Twin-Turbo V6",
+          "horsepower": 368,
+          "notes": "Ended after 2023."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Stinger (ended)",
+          "engine": "3.3L Twin-Turbo V6",
+          "horsepower": 368,
+          "notes": "Ended after 2023."
+        }
+      ]
+    }
+  },
+  "optima": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Optima (renamed K5)",
+          "notes": "Succeeded by K5."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Optima (renamed K5)",
+          "notes": "Succeeded by K5."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Optima (renamed K5)",
+          "notes": "Succeeded by K5."
+        }
+      ]
+    }
+  },
+  "rio": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Rio (ending)",
+          "notes": "U.S. Rio discontinued."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Rio (ending)",
+          "notes": "U.S. Rio discontinued."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Rio (ending)",
+          "notes": "U.S. Rio discontinued."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "sierra": {
+    "elevation": {
+      "query": "gmc sierra Elevation",
+      "src": "/catalog/gmc--sierra--elevation.jpg",
+      "alt": "Gmc sierra elevation"
+    },
+    "at4": {
+      "query": "gmc sierra AT4",
+      "src": "/catalog/gmc--sierra--at4.jpg",
+      "alt": "Gmc sierra at4"
+    },
+    "denali": {
+      "query": "gmc sierra Denali",
+      "src": "/catalog/gmc--sierra--denali.jpg",
+      "alt": "Gmc sierra denali"
+    }
+  },
+  "yukon": {
+    "slt": {
+      "query": "gmc yukon SLT",
+      "src": "/catalog/gmc--yukon--slt.jpg",
+      "alt": "Gmc yukon slt"
+    },
+    "at4": {
+      "query": "gmc yukon AT4",
+      "src": "/catalog/gmc--yukon--at4.jpg",
+      "alt": "Gmc yukon at4"
+    }
+  },
+  "acadia": {
+    "elevation": {
+      "query": "gmc acadia Elevation",
+      "src": "/catalog/gmc--acadia--elevation.jpg",
+      "alt": "Gmc acadia elevation"
+    },
+    "denali": {
+      "query": "gmc acadia Denali",
+      "src": "/catalog/gmc--acadia--denali.jpg",
+      "alt": "Gmc acadia denali"
+    }
+  },
+  "terrain": {
+    "elevation": {
+      "query": "gmc terrain Elevation",
+      "src": "/catalog/gmc--terrain--elevation.jpg",
+      "alt": "Gmc terrain elevation"
+    },
+    "denali": {
+      "query": "gmc terrain Denali",
+      "src": "/catalog/gmc--terrain--denali.jpg",
+      "alt": "Gmc terrain denali"
+    }
+  },
+  "canyon": {
+    "elevation": {
+      "query": "gmc canyon Elevation",
+      "src": "/catalog/gmc--canyon--elevation.jpg",
+      "alt": "Gmc canyon elevation"
+    },
+    "at4": {
+      "query": "gmc canyon AT4",
+      "src": "/catalog/gmc--canyon--at4.jpg",
+      "alt": "Gmc canyon at4"
+    }
+  },
+  "hummer-ev": {
+    "edition-1": {
+      "query": "gmc hummer ev Pickup Edition 1",
+      "src": "/catalog/gmc--hummer-ev--edition-1.jpg",
+      "alt": "Gmc hummer ev edition 1"
+    },
+    "suv": {
+      "query": "gmc hummer ev SUV",
+      "src": "/catalog/gmc--hummer-ev--suv.jpg",
+      "alt": "Gmc hummer ev suv"
+    }
+  }
+}

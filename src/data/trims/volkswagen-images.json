@@ -1,0 +1,97 @@
+{
+  "jetta": {
+    "se": {
+      "query": "volkswagen jetta SE",
+      "src": "/catalog/volkswagen--jetta--se.jpg",
+      "alt": "Volkswagen jetta se"
+    },
+    "gli": {
+      "query": "volkswagen jetta GLI",
+      "src": "/catalog/volkswagen--jetta--gli.jpg",
+      "alt": "Volkswagen jetta gli"
+    }
+  },
+  "gti": {
+    "s": {
+      "query": "volkswagen gti S",
+      "src": "/catalog/volkswagen--gti--s.jpg",
+      "alt": "Volkswagen gti s"
+    },
+    "autobahn": {
+      "query": "volkswagen gti Autobahn",
+      "src": "/catalog/volkswagen--gti--autobahn.jpg",
+      "alt": "Volkswagen gti autobahn"
+    }
+  },
+  "golf-r": {
+    "r": {
+      "query": "volkswagen golf r Golf R",
+      "src": "/catalog/volkswagen--golf-r--r.jpg",
+      "alt": "Volkswagen golf r r"
+    }
+  },
+  "golf": {
+    "legacy": {
+      "query": "volkswagen golf Golf (base ended U.S.)",
+      "src": "/catalog/volkswagen--golf--legacy.jpg",
+      "alt": "Volkswagen golf legacy"
+    }
+  },
+  "tiguan": {
+    "se": {
+      "query": "volkswagen tiguan SE",
+      "src": "/catalog/volkswagen--tiguan--se.jpg",
+      "alt": "Volkswagen tiguan se"
+    },
+    "sel-r-line": {
+      "query": "volkswagen tiguan SEL R-Line",
+      "src": "/catalog/volkswagen--tiguan--sel-r-line.jpg",
+      "alt": "Volkswagen tiguan sel r line"
+    }
+  },
+  "atlas": {
+    "se": {
+      "query": "volkswagen atlas SE",
+      "src": "/catalog/volkswagen--atlas--se.jpg",
+      "alt": "Volkswagen atlas se"
+    },
+    "cross-sport": {
+      "query": "volkswagen atlas Cross Sport",
+      "src": "/catalog/volkswagen--atlas--cross-sport.jpg",
+      "alt": "Volkswagen atlas cross sport"
+    }
+  },
+  "id-4": {
+    "pro": {
+      "query": "volkswagen id 4 Pro",
+      "src": "/catalog/volkswagen--id-4--pro.jpg",
+      "alt": "Volkswagen id 4 pro"
+    },
+    "pro-s-awd": {
+      "query": "volkswagen id 4 Pro S AWD",
+      "src": "/catalog/volkswagen--id-4--pro-s-awd.jpg",
+      "alt": "Volkswagen id 4 pro s awd"
+    }
+  },
+  "passat": {
+    "legacy": {
+      "query": "volkswagen passat Passat (ended U.S.)",
+      "src": "/catalog/volkswagen--passat--legacy.jpg",
+      "alt": "Volkswagen passat legacy"
+    }
+  },
+  "touareg": {
+    "legacy": {
+      "query": "volkswagen touareg Touareg (ended U.S.)",
+      "src": "/catalog/volkswagen--touareg--legacy.jpg",
+      "alt": "Volkswagen touareg legacy"
+    }
+  },
+  "beetle": {
+    "legacy": {
+      "query": "volkswagen beetle Beetle (ended)",
+      "src": "/catalog/volkswagen--beetle--legacy.jpg",
+      "alt": "Volkswagen beetle legacy"
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "3-series": {
+    "330i": {
+      "query": "bmw 3 series 330i",
+      "src": "/catalog/bmw--3-series--330i.jpg",
+      "alt": "Bmw 3 series 330i"
+    },
+    "m340i": {
+      "query": "bmw 3 series M340i",
+      "src": "/catalog/bmw--3-series--m340i.jpg",
+      "alt": "Bmw 3 series m340i"
+    }
+  },
+  "5-series": {
+    "530i": {
+      "query": "bmw 5 series 530i",
+      "src": "/catalog/bmw--5-series--530i.jpg",
+      "alt": "Bmw 5 series 530i"
+    },
+    "550e": {
+      "query": "bmw 5 series 550e xDrive",
+      "src": "/catalog/bmw--5-series--550e.jpg",
+      "alt": "Bmw 5 series 550e"
+    }
+  },
+  "7-series": {
+    "740i": {
+      "query": "bmw 7 series 740i",
+      "src": "/catalog/bmw--7-series--740i.jpg",
+      "alt": "Bmw 7 series 740i"
+    },
+    "i7": {
+      "query": "bmw 7 series i7 xDrive60",
+      "src": "/catalog/bmw--7-series--i7.jpg",
+      "alt": "Bmw 7 series i7"
+    }
+  },
+  "m3": {
+    "competition": {
+      "query": "bmw m3 Competition",
+      "src": "/catalog/bmw--m3--competition.jpg",
+      "alt": "Bmw m3 competition"
+    }
+  },
+  "m4": {
+    "competition": {
+      "query": "bmw m4 Competition",
+      "src": "/catalog/bmw--m4--competition.jpg",
+      "alt": "Bmw m4 competition"
+    }
+  },
+  "m2": {
+    "m2": {
+      "query": "bmw m2 M2",
+      "src": "/catalog/bmw--m2--m2.jpg",
+      "alt": "Bmw m2 m2"
+    }
+  },
+  "m5": {
+    "competition": {
+      "query": "bmw m5 M5",
+      "src": "/catalog/bmw--m5--competition.jpg",
+      "alt": "Bmw m5 competition"
+    }
+  },
+  "x3": {
+    "30": {
+      "query": "bmw x3 xDrive30",
+      "src": "/catalog/bmw--x3--30.jpg",
+      "alt": "Bmw x3 30"
+    },
+    "m": {
+      "query": "bmw x3 X3 M",
+      "src": "/catalog/bmw--x3--m.jpg",
+      "alt": "Bmw x3 m"
+    }
+  },
+  "x5": {
+    "40i": {
+      "query": "bmw x5 xDrive40i",
+      "src": "/catalog/bmw--x5--40i.jpg",
+      "alt": "Bmw x5 40i"
+    },
+    "m60i": {
+      "query": "bmw x5 M60i",
+      "src": "/catalog/bmw--x5--m60i.jpg",
+      "alt": "Bmw x5 m60i"
+    }
+  },
+  "x7": {
+    "40i": {
+      "query": "bmw x7 xDrive40i",
+      "src": "/catalog/bmw--x7--40i.jpg",
+      "alt": "Bmw x7 40i"
+    },
+    "m60i": {
+      "query": "bmw x7 M60i",
+      "src": "/catalog/bmw--x7--m60i.jpg",
+      "alt": "Bmw x7 m60i"
+    }
+  },
+  "z4": {
+    "m40i": {
+      "query": "bmw z4 M40i",
+      "src": "/catalog/bmw--z4--m40i.jpg",
+      "alt": "Bmw z4 m40i"
+    }
+  },
+  "i4": {
+    "eDrive40": {
+      "query": "bmw i4 eDrive40",
+      "src": "/catalog/bmw--i4--eDrive40.jpg",
+      "alt": "Bmw i4 eDrive40"
+    },
+    "m50": {
+      "query": "bmw i4 M50",
+      "src": "/catalog/bmw--i4--m50.jpg",
+      "alt": "Bmw i4 m50"
+    }
+  },
+  "ix": {
+    "xdrive50": {
+      "query": "bmw ix xDrive50",
+      "src": "/catalog/bmw--ix--xdrive50.jpg",
+      "alt": "Bmw ix xdrive50"
+    },
+    "m60": {
+      "query": "bmw ix M60",
+      "src": "/catalog/bmw--ix--m60.jpg",
+      "alt": "Bmw ix m60"
+    }
+  },
+  "i3": {
+    "legacy": {
+      "query": "bmw i3 i3 (ended)",
+      "src": "/catalog/bmw--i3--legacy.png",
+      "alt": "Bmw i3 legacy"
+    }
+  },
+  "i8": {
+    "legacy": {
+      "query": "bmw i8 i8 (ended)",
+      "src": "/catalog/bmw--i8--legacy.jpg",
+      "alt": "Bmw i8 legacy"
+    }
+  }
+}

@@ -1,0 +1,544 @@
+{
+  "jetta": {
+    "2024": {
+      "defaultTrimId": "se",
+      "trims": [
+        {
+          "id": "se",
+          "name": "SE",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 158,
+          "mpgCombined": 34,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "gli",
+          "name": "GLI",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 228,
+          "zeroToSixtySec": 6,
+          "mpgCombined": 28,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "se",
+      "trims": [
+        {
+          "id": "se",
+          "name": "SE",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 158,
+          "mpgCombined": 34,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "gli",
+          "name": "GLI",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 228,
+          "zeroToSixtySec": 6,
+          "mpgCombined": 28,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "se",
+      "trims": [
+        {
+          "id": "se",
+          "name": "SE",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 158,
+          "mpgCombined": 34,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "gli",
+          "name": "GLI",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 228,
+          "zeroToSixtySec": 6,
+          "mpgCombined": 28,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "gti": {
+    "2024": {
+      "defaultTrimId": "s",
+      "trims": [
+        {
+          "id": "s",
+          "name": "S",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 241,
+          "torqueLbFt": 273,
+          "zeroToSixtySec": 5.6,
+          "drivetrain": "FWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "autobahn",
+          "name": "Autobahn",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 241,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "s",
+      "trims": [
+        {
+          "id": "s",
+          "name": "S",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 241,
+          "torqueLbFt": 273,
+          "zeroToSixtySec": 5.6,
+          "drivetrain": "FWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "autobahn",
+          "name": "Autobahn",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 241,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "s",
+      "trims": [
+        {
+          "id": "s",
+          "name": "S",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 241,
+          "torqueLbFt": 273,
+          "zeroToSixtySec": 5.6,
+          "drivetrain": "FWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "autobahn",
+          "name": "Autobahn",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 241,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "golf-r": {
+    "2024": {
+      "defaultTrimId": "r",
+      "trims": [
+        {
+          "id": "r",
+          "name": "Golf R",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 315,
+          "torqueLbFt": 295,
+          "zeroToSixtySec": 4.6,
+          "drivetrain": "AWD",
+          "mpgCombined": 25,
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "r",
+      "trims": [
+        {
+          "id": "r",
+          "name": "Golf R",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 315,
+          "torqueLbFt": 295,
+          "zeroToSixtySec": 4.6,
+          "drivetrain": "AWD",
+          "mpgCombined": 25,
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "r",
+      "trims": [
+        {
+          "id": "r",
+          "name": "Golf R",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 315,
+          "torqueLbFt": 295,
+          "zeroToSixtySec": 4.6,
+          "drivetrain": "AWD",
+          "mpgCombined": 25,
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "golf": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Golf (base ended U.S.)",
+          "notes": "U.S. lineup focuses on GTI / Golf R."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Golf (base ended U.S.)",
+          "notes": "U.S. lineup focuses on GTI / Golf R."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Golf (base ended U.S.)",
+          "notes": "U.S. lineup focuses on GTI / Golf R."
+        }
+      ]
+    }
+  },
+  "tiguan": {
+    "2024": {
+      "defaultTrimId": "se",
+      "trims": [
+        {
+          "id": "se",
+          "name": "SE",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 201,
+          "mpgCombined": 26,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "sel-r-line",
+          "name": "SEL R-Line",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 201,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "se",
+      "trims": [
+        {
+          "id": "se",
+          "name": "SE",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 201,
+          "mpgCombined": 26,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "sel-r-line",
+          "name": "SEL R-Line",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 201,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "se",
+      "trims": [
+        {
+          "id": "se",
+          "name": "SE",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 201,
+          "mpgCombined": 26,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "sel-r-line",
+          "name": "SEL R-Line",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 201,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        }
+      ]
+    }
+  },
+  "atlas": {
+    "2024": {
+      "defaultTrimId": "se",
+      "trims": [
+        {
+          "id": "se",
+          "name": "SE",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 269,
+          "mpgCombined": 22,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7,
+          "towingLb": 5000
+        },
+        {
+          "id": "cross-sport",
+          "name": "Cross Sport",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 269,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "se",
+      "trims": [
+        {
+          "id": "se",
+          "name": "SE",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 269,
+          "mpgCombined": 22,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7,
+          "towingLb": 5000
+        },
+        {
+          "id": "cross-sport",
+          "name": "Cross Sport",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 269,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "se",
+      "trims": [
+        {
+          "id": "se",
+          "name": "SE",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 269,
+          "mpgCombined": 22,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7,
+          "towingLb": 5000
+        },
+        {
+          "id": "cross-sport",
+          "name": "Cross Sport",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 269,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "id-4": {
+    "2024": {
+      "defaultTrimId": "pro",
+      "trims": [
+        {
+          "id": "pro",
+          "name": "Pro",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 201,
+          "rangeMiles": 275,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "pro-s-awd",
+          "name": "Pro S AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 295,
+          "rangeMiles": 255,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "pro",
+      "trims": [
+        {
+          "id": "pro",
+          "name": "Pro",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 201,
+          "rangeMiles": 275,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "pro-s-awd",
+          "name": "Pro S AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 295,
+          "rangeMiles": 255,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "pro",
+      "trims": [
+        {
+          "id": "pro",
+          "name": "Pro",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 201,
+          "rangeMiles": 275,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "pro-s-awd",
+          "name": "Pro S AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 295,
+          "rangeMiles": 255,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "passat": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Passat (ended U.S.)",
+          "notes": "U.S. Passat ended after 2022."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Passat (ended U.S.)",
+          "notes": "U.S. Passat ended after 2022."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Passat (ended U.S.)",
+          "notes": "U.S. Passat ended after 2022."
+        }
+      ]
+    }
+  },
+  "touareg": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Touareg (ended U.S.)",
+          "notes": "Not sold in the U.S. currently."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Touareg (ended U.S.)",
+          "notes": "Not sold in the U.S. currently."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Touareg (ended U.S.)",
+          "notes": "Not sold in the U.S. currently."
+        }
+      ]
+    }
+  },
+  "beetle": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Beetle (ended)",
+          "notes": "Ended after 2019."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Beetle (ended)",
+          "notes": "Ended after 2019."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Beetle (ended)",
+          "notes": "Ended after 2019."
+        }
+      ]
+    }
+  }
+}

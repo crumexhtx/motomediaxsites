@@ -1,0 +1,232 @@
+{
+  "camry": {
+    "le": {
+      "query": "Toyota Camry XV70 2024",
+      "commonsTitle": "File:2024 Toyota Camry XLE in Blueprint, front left, 06-08-2024.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--camry--le.jpg",
+      "alt": "Toyota camry le"
+    },
+    "hybrid-le": {
+      "commonsTitle": "File:2025 Toyota Camry Hybrid LE in Celestial Silver Metallic, front left.jpg",
+      "confidence": "verified",
+      "src": "/catalog/toyota--camry--hybrid-le.jpg",
+      "alt": "Toyota camry hybrid le"
+    },
+    "xse": {
+      "query": "Toyota Camry XSE 2024",
+      "commonsTitle": "File:2024 Toyota Camry XSE in Underground, front left.jpg",
+      "confidence": "verified",
+      "src": "/catalog/toyota--camry--xse.jpg",
+      "alt": "Toyota camry xse"
+    },
+    "xse-awd": {
+      "commonsTitle": "File:2025 Toyota Camry Hybrid XSE AWD (United States) front view.png",
+      "confidence": "verified",
+      "src": "/catalog/toyota--camry--xse-awd.png",
+      "alt": "Toyota camry xse awd"
+    }
+  },
+  "rav4": {
+    "le": {
+      "query": "Toyota RAV4 LE 2024",
+      "commonsTitle": "File:2022 Toyota RAV4 LE in Magnetic Gray Metallic, front left, 10-16-2022.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--rav4--le.jpg",
+      "alt": "Toyota rav4 le"
+    },
+    "hybrid-xle": {
+      "query": "Toyota RAV4 Hybrid",
+      "commonsTitle": "File:2021 Toyota RAV4 Hybrid XLE in Blueprint, front left, 08-21-2022.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--rav4--hybrid-xle.jpg",
+      "alt": "Toyota rav4 hybrid xle"
+    },
+    "prime": {
+      "commonsTitle": "File:Toyota RAV4 Prime SE (2021) (53652073478).jpg",
+      "query": "Toyota RAV4 Prime SE",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--rav4--prime.jpg",
+      "alt": "Toyota rav4 prime"
+    },
+    "hybrid": {
+      "query": "Toyota RAV4 Hybrid 2025",
+      "commonsTitle": "File:2025 Toyota RAV4 au SIAM 2025.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--rav4--hybrid.jpg",
+      "alt": "Toyota rav4 hybrid"
+    }
+  },
+  "supra": {
+    "2-0": {
+      "commonsTitle": "File:Toyota Supra A90 1.jpg",
+      "query": "Toyota GR Supra A90 exterior",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--supra--2-0.jpg",
+      "alt": "Toyota supra 2 0"
+    },
+    "3-0": {
+      "commonsTitle": "File:The frontiew of Toyota GR Supra RZ mid-year 2025.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--supra--3-0.jpg",
+      "alt": "Toyota supra 3 0"
+    }
+  },
+  "corolla": {
+    "le": {
+      "query": "Toyota Corolla LE 2024",
+      "commonsTitle": "File:2023 Toyota Corolla LE in Celestial Silver Metallic, front left, 03-16-2024.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--corolla--le.jpg",
+      "alt": "Toyota corolla le"
+    },
+    "hybrid-le": {
+      "query": "Toyota Corolla Hybrid",
+      "commonsTitle": "File:2023 Toyota Corolla Hybrid LE in Celestial Silver Metallic, front left.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--corolla--hybrid-le.jpg",
+      "alt": "Toyota corolla hybrid le"
+    },
+    "se": {
+      "query": "Toyota Corolla SE 2024",
+      "commonsTitle": "File:2020 Toyota Corolla SE in Blueprint, front left, 10-05-2020.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--corolla--se.jpg",
+      "alt": "Toyota corolla se"
+    }
+  },
+  "prius": {
+    "le": {
+      "query": "Toyota Prius LE 2024",
+      "commonsTitle": "File:2023 Toyota Prius LE in Cutting Edge, front left.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--prius--le.jpg",
+      "alt": "Toyota prius le"
+    },
+    "prime": {
+      "query": "Toyota Prius Prime",
+      "commonsTitle": "File:2023 Toyota Prius Prime SE in Cutting Edge, front left.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--prius--prime.jpg",
+      "alt": "Toyota prius prime"
+    }
+  },
+  "4runner": {
+    "sr5": {
+      "query": "Toyota 4Runner SR5",
+      "commonsTitle": "File:2019 Toyota 4Runner SR5 in Classic Silver Metallic, front left, 11-24-2019.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--4runner--sr5.jpg",
+      "alt": "Toyota 4runner sr5"
+    },
+    "trd-pro": {
+      "query": "Toyota 4Runner TRD Pro",
+      "commonsTitle": "File:2020 Toyota 4Runner TRD Pro in Lunar Rock, front left, 08-29-2020.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--4runner--trd-pro.jpg",
+      "alt": "Toyota 4runner trd pro"
+    },
+    "hybrid": {
+      "commonsTitle": "File:2025 Toyota 4Runner TRD Sport in Wind Chill Pearl, front right, 2025-05-18.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--4runner--hybrid.jpg",
+      "alt": "Toyota 4runner hybrid"
+    }
+  },
+  "highlander": {
+    "xle": {
+      "query": "Toyota Highlander XLE",
+      "commonsTitle": "File:2021 Toyota Highlander XLE in Blueprint, front left, 08-21-2022.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--highlander--xle.jpg",
+      "alt": "Toyota highlander xle"
+    },
+    "hybrid-xle": {
+      "query": "Toyota Highlander Hybrid",
+      "commonsTitle": "File:2021 Toyota Highlander Hybrid XLE in Blueprint, front left.jpg",
+      "src": "/catalog/toyota--highlander--hybrid-xle.jpg",
+      "alt": "Toyota highlander hybrid xle",
+      "confidence": "unverified"
+    }
+  },
+  "tacoma": {
+    "sr5": {
+      "commonsTitle": "File:Toyota Tacoma TRD Off Road (N400) IMG 9735.jpg",
+      "query": "2024 Toyota Tacoma N400",
+      "src": "/catalog/toyota--tacoma--sr5.jpg",
+      "alt": "Toyota tacoma sr5",
+      "confidence": "unverified"
+    },
+    "hybrid": {
+      "commonsTitle": "File:2024 Toyota Tacoma iForce Max au SIAM 2024.jpg",
+      "query": "Toyota Tacoma iForce Max",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--tacoma--hybrid.jpg",
+      "alt": "Toyota tacoma hybrid"
+    }
+  },
+  "tundra": {
+    "sr5": {
+      "query": "Toyota Tundra SR5 2024",
+      "commonsTitle": "File:2022 Toyota Tundra SR5 in Celestial Silver Metallic, front left.jpg",
+      "src": "/catalog/toyota--tundra--sr5.jpg",
+      "alt": "Toyota tundra sr5",
+      "confidence": "unverified"
+    },
+    "hybrid": {
+      "query": "Toyota Tundra Hybrid Capstone",
+      "commonsTitle": "File:2022 Toyota Tundra Capstone in Wind Chill Pearl, front left.jpg",
+      "src": "/catalog/toyota--tundra--hybrid.jpg",
+      "alt": "Toyota tundra hybrid",
+      "confidence": "unverified"
+    }
+  },
+  "gr86": {
+    "base": {
+      "query": "Toyota GR86",
+      "commonsTitle": "File:2022 Toyota GR86 in Halo, front left, 07-09-2022.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--gr86--base.jpg",
+      "alt": "Toyota gr86 base"
+    },
+    "premium": {
+      "query": "Toyota GR86 Premium",
+      "commonsTitle": "File:2022 Toyota GR86 Premium in Track Bred, front left.jpg",
+      "src": "/catalog/toyota--gr86--premium.jpg",
+      "alt": "Toyota gr86 premium",
+      "confidence": "unverified"
+    }
+  },
+  "gr-corolla": {
+    "core": {
+      "query": "Toyota GR Corolla",
+      "commonsTitle": "File:2023 Toyota GR Corolla Core in Ice Cap, front left.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--gr-corolla--core.jpg",
+      "alt": "Toyota gr corolla core"
+    },
+    "circuit": {
+      "query": "Toyota GR Corolla Circuit",
+      "commonsTitle": "File:2023 Toyota GR Corolla Circuit Edition in Heavy Metal, front left.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--gr-corolla--circuit.jpg",
+      "alt": "Toyota gr corolla circuit"
+    }
+  },
+  "land-cruiser": {
+    "1958": {
+      "query": "Toyota Land Cruiser 1958",
+      "commonsTitle": "File:2024 Toyota Land Cruiser 1958 in Trail Dust, front left.jpg",
+      "src": "/catalog/toyota--land-cruiser--1958.jpg",
+      "alt": "Toyota land cruiser 1958",
+      "confidence": "unverified"
+    },
+    "land-cruiser": {
+      "query": "Toyota Land Cruiser J250 Washington DC",
+      "commonsTitle": "File:Toyota Land Cruiser (J250) Washington DC Metro Area, USA.jpg",
+      "confidence": "unverified",
+      "src": "/catalog/toyota--land-cruiser--land-cruiser.jpg",
+      "alt": "Toyota land cruiser land cruiser"
+    }
+  }
+}

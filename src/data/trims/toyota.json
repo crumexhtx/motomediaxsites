@@ -1,0 +1,1082 @@
+{
+  "camry": {
+    "2024": {
+      "defaultTrimId": "hybrid-le",
+      "trims": [
+        {
+          "id": "le",
+          "name": "LE (gas)",
+          "engine": "2.5L Inline-4",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 203,
+          "torqueLbFt": 184,
+          "transmission": "8-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 39,
+          "mpgCombined": 32,
+          "seatingCapacity": 5,
+          "cargoCuFt": 15.1,
+          "fuelTankGal": 15.8
+        },
+        {
+          "id": "hybrid-le",
+          "name": "LE Hybrid",
+          "engine": "2.5L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 208,
+          "torqueLbFt": 163,
+          "transmission": "eCVT",
+          "drivetrain": "FWD",
+          "mpgCity": 51,
+          "mpgHighway": 53,
+          "mpgCombined": 52,
+          "seatingCapacity": 5,
+          "cargoCuFt": 15.1,
+          "fuelTankGal": 13.2
+        },
+        {
+          "id": "xse",
+          "name": "XSE (gas)",
+          "engine": "2.5L Inline-4",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 203,
+          "torqueLbFt": 184,
+          "transmission": "8-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 27,
+          "mpgHighway": 38,
+          "mpgCombined": 31,
+          "seatingCapacity": 5,
+          "cargoCuFt": 15.1
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "le",
+      "trims": [
+        {
+          "id": "le",
+          "name": "LE Hybrid",
+          "engine": "2.5L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 225,
+          "torqueLbFt": 163,
+          "transmission": "eCVT",
+          "drivetrain": "FWD",
+          "mpgCity": 53,
+          "mpgHighway": 50,
+          "mpgCombined": 51,
+          "seatingCapacity": 5,
+          "cargoCuFt": 15.1,
+          "fuelTankGal": 13.0,
+          "notes": "Ninth-gen Camry is hybrid-only in the U.S."
+        },
+        {
+          "id": "xse-awd",
+          "name": "XSE Hybrid AWD",
+          "engine": "2.5L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 232,
+          "torqueLbFt": 163,
+          "transmission": "eCVT",
+          "drivetrain": "AWD",
+          "mpgCity": 46,
+          "mpgHighway": 46,
+          "mpgCombined": 46,
+          "seatingCapacity": 5,
+          "cargoCuFt": 15.1
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "le",
+      "trims": [
+        {
+          "id": "le",
+          "name": "LE Hybrid",
+          "engine": "2.5L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 225,
+          "torqueLbFt": 163,
+          "transmission": "eCVT",
+          "drivetrain": "FWD",
+          "mpgCity": 53,
+          "mpgHighway": 50,
+          "mpgCombined": 51,
+          "seatingCapacity": 5,
+          "cargoCuFt": 15.1
+        },
+        {
+          "id": "xse-awd",
+          "name": "XSE Hybrid AWD",
+          "engine": "2.5L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 232,
+          "torqueLbFt": 163,
+          "transmission": "eCVT",
+          "drivetrain": "AWD",
+          "mpgCity": 46,
+          "mpgHighway": 46,
+          "mpgCombined": 46,
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "rav4": {
+    "2024": {
+      "defaultTrimId": "hybrid-xle",
+      "trims": [
+        {
+          "id": "le",
+          "name": "LE (gas)",
+          "engine": "2.5L Inline-4",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 203,
+          "torqueLbFt": 184,
+          "transmission": "8-speed automatic",
+          "drivetrain": "AWD",
+          "mpgCity": 27,
+          "mpgHighway": 34,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 37.6,
+          "cargoSeatsFoldedCuFt": 69.8,
+          "towingLb": 3500,
+          "groundClearanceIn": 8.4
+        },
+        {
+          "id": "hybrid-xle",
+          "name": "XLE Hybrid",
+          "engine": "2.5L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 219,
+          "torqueLbFt": 163,
+          "transmission": "eCVT",
+          "drivetrain": "AWD",
+          "mpgCity": 41,
+          "mpgHighway": 38,
+          "mpgCombined": 40,
+          "seatingCapacity": 5,
+          "cargoCuFt": 37.6,
+          "cargoSeatsFoldedCuFt": 69.8,
+          "towingLb": 1750,
+          "groundClearanceIn": 8.1
+        },
+        {
+          "id": "prime",
+          "name": "Prime SE",
+          "engine": "2.5L Plug-in Hybrid",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 302,
+          "torqueLbFt": 247,
+          "zeroToSixtySec": 5.5,
+          "transmission": "eCVT",
+          "drivetrain": "AWD",
+          "mpgCombined": 38,
+          "batteryKwh": 18.1,
+          "rangeMiles": 42,
+          "seatingCapacity": 5,
+          "cargoCuFt": 33.5,
+          "towingLb": 2500,
+          "notes": "EV range is approximate EPA electric range."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "hybrid-xle",
+      "trims": [
+        {
+          "id": "le",
+          "name": "LE (gas)",
+          "engine": "2.5L Inline-4",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 203,
+          "torqueLbFt": 184,
+          "transmission": "8-speed automatic",
+          "drivetrain": "AWD",
+          "mpgCity": 27,
+          "mpgHighway": 34,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 37.6,
+          "cargoSeatsFoldedCuFt": 69.8,
+          "towingLb": 3500,
+          "groundClearanceIn": 8.4
+        },
+        {
+          "id": "hybrid-xle",
+          "name": "XLE Hybrid",
+          "engine": "2.5L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 219,
+          "torqueLbFt": 163,
+          "transmission": "eCVT",
+          "drivetrain": "AWD",
+          "mpgCity": 41,
+          "mpgHighway": 38,
+          "mpgCombined": 40,
+          "seatingCapacity": 5,
+          "cargoCuFt": 37.6,
+          "cargoSeatsFoldedCuFt": 69.8,
+          "towingLb": 1750,
+          "groundClearanceIn": 8.1
+        },
+        {
+          "id": "prime",
+          "name": "Prime SE",
+          "engine": "2.5L Plug-in Hybrid",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 302,
+          "torqueLbFt": 247,
+          "zeroToSixtySec": 5.5,
+          "transmission": "eCVT",
+          "drivetrain": "AWD",
+          "batteryKwh": 18.1,
+          "rangeMiles": 42,
+          "seatingCapacity": 5,
+          "towingLb": 2500
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "hybrid",
+      "trims": [
+        {
+          "id": "hybrid",
+          "name": "Hybrid (expected)",
+          "engine": "Hybrid powertrain",
+          "aspiration": "Hybrid",
+          "horsepower": 226,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5,
+          "notes": "Next-gen RAV4 figures are preliminary / expected."
+        }
+      ]
+    }
+  },
+  "supra": {
+    "2024": {
+      "defaultTrimId": "3-0",
+      "trims": [
+        {
+          "id": "2-0",
+          "name": "2.0",
+          "engine": "2.0L Twin-Scroll Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 255,
+          "torqueLbFt": 295,
+          "zeroToSixtySec": 4.9,
+          "transmission": "8-speed automatic",
+          "drivetrain": "RWD",
+          "mpgCity": 25,
+          "mpgHighway": 32,
+          "mpgCombined": 28,
+          "seatingCapacity": 2,
+          "cargoCuFt": 10.2
+        },
+        {
+          "id": "3-0",
+          "name": "3.0",
+          "engine": "3.0L Twin-Scroll Turbo I6",
+          "aspiration": "Turbocharged",
+          "horsepower": 382,
+          "torqueLbFt": 368,
+          "zeroToSixtySec": 3.9,
+          "transmission": "8-speed automatic / 6-speed manual",
+          "drivetrain": "RWD",
+          "redlineRpm": 7000,
+          "mpgCity": 23,
+          "mpgHighway": 31,
+          "mpgCombined": 26,
+          "seatingCapacity": 2,
+          "cargoCuFt": 10.2
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "3-0",
+      "trims": [
+        {
+          "id": "3-0",
+          "name": "3.0",
+          "engine": "3.0L Twin-Scroll Turbo I6",
+          "aspiration": "Turbocharged",
+          "horsepower": 382,
+          "torqueLbFt": 368,
+          "zeroToSixtySec": 3.9,
+          "transmission": "8-speed automatic / 6-speed manual",
+          "drivetrain": "RWD",
+          "redlineRpm": 7000,
+          "mpgCity": 23,
+          "mpgHighway": 31,
+          "mpgCombined": 26,
+          "seatingCapacity": 2,
+          "cargoCuFt": 10.2
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "3-0",
+      "trims": [
+        {
+          "id": "3-0",
+          "name": "3.0",
+          "engine": "3.0L Twin-Scroll Turbo I6",
+          "aspiration": "Turbocharged",
+          "horsepower": 382,
+          "torqueLbFt": 368,
+          "zeroToSixtySec": 3.9,
+          "transmission": "8-speed automatic / 6-speed manual",
+          "drivetrain": "RWD",
+          "seatingCapacity": 2,
+          "cargoCuFt": 10.2
+        }
+      ]
+    }
+  },
+  "corolla": {
+    "2024": {
+      "defaultTrimId": "hybrid-le",
+      "trims": [
+        {
+          "id": "le",
+          "name": "LE (gas)",
+          "engine": "2.0L Inline-4",
+          "horsepower": 169,
+          "torqueLbFt": 151,
+          "transmission": "CVT",
+          "drivetrain": "FWD",
+          "mpgCity": 32,
+          "mpgHighway": 41,
+          "mpgCombined": 35,
+          "seatingCapacity": 5,
+          "cargoCuFt": 13.1
+        },
+        {
+          "id": "hybrid-le",
+          "name": "LE Hybrid",
+          "engine": "1.8L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 138,
+          "transmission": "eCVT",
+          "drivetrain": "FWD",
+          "mpgCity": 53,
+          "mpgHighway": 46,
+          "mpgCombined": 50,
+          "seatingCapacity": 5,
+          "cargoCuFt": 13.1
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "hybrid-le",
+      "trims": [
+        {
+          "id": "hybrid-le",
+          "name": "LE Hybrid",
+          "engine": "1.8L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 138,
+          "transmission": "eCVT",
+          "drivetrain": "FWD",
+          "mpgCity": 53,
+          "mpgHighway": 46,
+          "mpgCombined": 50,
+          "seatingCapacity": 5,
+          "cargoCuFt": 13.1
+        },
+        {
+          "id": "se",
+          "name": "SE (gas)",
+          "engine": "2.0L Inline-4",
+          "horsepower": 169,
+          "torqueLbFt": 151,
+          "transmission": "CVT",
+          "drivetrain": "FWD",
+          "mpgCity": 31,
+          "mpgHighway": 40,
+          "mpgCombined": 35,
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "hybrid-le",
+      "trims": [
+        {
+          "id": "hybrid-le",
+          "name": "LE Hybrid",
+          "engine": "1.8L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 138,
+          "transmission": "eCVT",
+          "drivetrain": "FWD",
+          "mpgCity": 53,
+          "mpgHighway": 46,
+          "mpgCombined": 50,
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "prius": {
+    "2024": {
+      "defaultTrimId": "le",
+      "trims": [
+        {
+          "id": "le",
+          "name": "LE",
+          "engine": "2.0L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 194,
+          "transmission": "eCVT",
+          "drivetrain": "FWD",
+          "mpgCity": 57,
+          "mpgHighway": 56,
+          "mpgCombined": 57,
+          "seatingCapacity": 5,
+          "cargoCuFt": 20.3
+        },
+        {
+          "id": "prime",
+          "name": "Prime SE",
+          "engine": "2.0L Plug-in Hybrid",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 220,
+          "transmission": "eCVT",
+          "drivetrain": "FWD",
+          "batteryKwh": 13.6,
+          "rangeMiles": 44,
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "le",
+      "trims": [
+        {
+          "id": "le",
+          "name": "LE",
+          "engine": "2.0L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 194,
+          "transmission": "eCVT",
+          "drivetrain": "FWD",
+          "mpgCity": 57,
+          "mpgHighway": 56,
+          "mpgCombined": 57,
+          "seatingCapacity": 5,
+          "cargoCuFt": 20.3
+        },
+        {
+          "id": "prime",
+          "name": "Prime SE",
+          "engine": "2.0L Plug-in Hybrid",
+          "aspiration": "Plug-in hybrid",
+          "horsepower": 220,
+          "batteryKwh": 13.6,
+          "rangeMiles": 44,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "le",
+      "trims": [
+        {
+          "id": "le",
+          "name": "LE",
+          "engine": "2.0L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 194,
+          "transmission": "eCVT",
+          "drivetrain": "FWD",
+          "mpgCity": 57,
+          "mpgHighway": 56,
+          "mpgCombined": 57,
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "4runner": {
+    "2024": {
+      "defaultTrimId": "sr5",
+      "trims": [
+        {
+          "id": "sr5",
+          "name": "SR5",
+          "engine": "4.0L V6",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 270,
+          "torqueLbFt": 278,
+          "transmission": "5-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 16,
+          "mpgHighway": 19,
+          "mpgCombined": 17,
+          "seatingCapacity": 5,
+          "cargoCuFt": 47.2,
+          "cargoSeatsFoldedCuFt": 89.7,
+          "towingLb": 5000,
+          "groundClearanceIn": 9.6
+        },
+        {
+          "id": "trd-pro",
+          "name": "TRD Pro",
+          "engine": "4.0L V6",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 270,
+          "torqueLbFt": 278,
+          "transmission": "5-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 16,
+          "mpgHighway": 19,
+          "mpgCombined": 17,
+          "seatingCapacity": 5,
+          "towingLb": 5000,
+          "groundClearanceIn": 9.6
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sr5",
+      "trims": [
+        {
+          "id": "sr5",
+          "name": "SR5 (hybrid available)",
+          "engine": "2.4L Turbo I4 / Hybrid",
+          "aspiration": "Turbocharged",
+          "horsepower": 278,
+          "torqueLbFt": 317,
+          "transmission": "8-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5,
+          "towingLb": 6000,
+          "groundClearanceIn": 9.3,
+          "notes": "All-new 6th-gen 4Runner; hybrid i-FORCE MAX up to ~326 hp on some trims."
+        },
+        {
+          "id": "hybrid",
+          "name": "i-FORCE MAX Hybrid",
+          "engine": "2.4L Turbo Hybrid",
+          "aspiration": "Turbo hybrid",
+          "horsepower": 326,
+          "torqueLbFt": 465,
+          "transmission": "8-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5,
+          "towingLb": 6000,
+          "groundClearanceIn": 9.3
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "hybrid",
+      "trims": [
+        {
+          "id": "hybrid",
+          "name": "i-FORCE MAX Hybrid",
+          "engine": "2.4L Turbo Hybrid",
+          "aspiration": "Turbo hybrid",
+          "horsepower": 326,
+          "torqueLbFt": 465,
+          "transmission": "8-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5,
+          "towingLb": 6000,
+          "groundClearanceIn": 9.3
+        }
+      ]
+    }
+  },
+  "highlander": {
+    "2024": {
+      "defaultTrimId": "hybrid-xle",
+      "trims": [
+        {
+          "id": "xle",
+          "name": "XLE (gas)",
+          "engine": "2.4L Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 265,
+          "torqueLbFt": 310,
+          "transmission": "8-speed automatic",
+          "drivetrain": "AWD",
+          "mpgCity": 22,
+          "mpgHighway": 29,
+          "mpgCombined": 25,
+          "seatingCapacity": 7,
+          "cargoCuFt": 16.0,
+          "cargoSeatsFoldedCuFt": 84.3,
+          "towingLb": 5000
+        },
+        {
+          "id": "hybrid-xle",
+          "name": "XLE Hybrid",
+          "engine": "2.5L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 243,
+          "transmission": "eCVT",
+          "drivetrain": "AWD",
+          "mpgCity": 36,
+          "mpgHighway": 35,
+          "mpgCombined": 35,
+          "seatingCapacity": 7,
+          "cargoCuFt": 16.0,
+          "towingLb": 3500
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "hybrid-xle",
+      "trims": [
+        {
+          "id": "hybrid-xle",
+          "name": "XLE Hybrid",
+          "engine": "2.5L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 243,
+          "transmission": "eCVT",
+          "drivetrain": "AWD",
+          "mpgCity": 36,
+          "mpgHighway": 35,
+          "mpgCombined": 35,
+          "seatingCapacity": 7,
+          "towingLb": 3500
+        },
+        {
+          "id": "xle",
+          "name": "XLE (gas)",
+          "engine": "2.4L Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 265,
+          "torqueLbFt": 310,
+          "transmission": "8-speed automatic",
+          "drivetrain": "AWD",
+          "mpgCity": 22,
+          "mpgHighway": 29,
+          "mpgCombined": 25,
+          "seatingCapacity": 7,
+          "towingLb": 5000
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "hybrid-xle",
+      "trims": [
+        {
+          "id": "hybrid-xle",
+          "name": "XLE Hybrid",
+          "engine": "2.5L Hybrid I4",
+          "aspiration": "Hybrid",
+          "horsepower": 243,
+          "transmission": "eCVT",
+          "drivetrain": "AWD",
+          "seatingCapacity": 7,
+          "towingLb": 3500
+        }
+      ]
+    }
+  },
+  "tacoma": {
+    "2024": {
+      "defaultTrimId": "sr5",
+      "trims": [
+        {
+          "id": "sr5",
+          "name": "SR5",
+          "engine": "2.4L Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 278,
+          "torqueLbFt": 317,
+          "transmission": "8-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 20,
+          "mpgHighway": 24,
+          "mpgCombined": 22,
+          "seatingCapacity": 5,
+          "towingLb": 6500,
+          "groundClearanceIn": 9.4
+        },
+        {
+          "id": "hybrid",
+          "name": "i-FORCE MAX",
+          "engine": "2.4L Turbo Hybrid",
+          "aspiration": "Turbo hybrid",
+          "horsepower": 326,
+          "torqueLbFt": 465,
+          "zeroToSixtySec": 5.5,
+          "transmission": "8-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5,
+          "towingLb": 6000,
+          "groundClearanceIn": 10.0
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sr5",
+      "trims": [
+        {
+          "id": "sr5",
+          "name": "SR5",
+          "engine": "2.4L Turbo I4",
+          "aspiration": "Turbocharged",
+          "horsepower": 278,
+          "torqueLbFt": 317,
+          "transmission": "8-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 20,
+          "mpgHighway": 24,
+          "mpgCombined": 22,
+          "seatingCapacity": 5,
+          "towingLb": 6500,
+          "groundClearanceIn": 9.4
+        },
+        {
+          "id": "hybrid",
+          "name": "i-FORCE MAX",
+          "engine": "2.4L Turbo Hybrid",
+          "aspiration": "Turbo hybrid",
+          "horsepower": 326,
+          "torqueLbFt": 465,
+          "transmission": "8-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5,
+          "towingLb": 6000
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "hybrid",
+      "trims": [
+        {
+          "id": "hybrid",
+          "name": "i-FORCE MAX",
+          "engine": "2.4L Turbo Hybrid",
+          "aspiration": "Turbo hybrid",
+          "horsepower": 326,
+          "torqueLbFt": 465,
+          "transmission": "8-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5,
+          "towingLb": 6000
+        }
+      ]
+    }
+  },
+  "tundra": {
+    "2024": {
+      "defaultTrimId": "sr5",
+      "trims": [
+        {
+          "id": "sr5",
+          "name": "SR5",
+          "engine": "3.4L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 389,
+          "torqueLbFt": 479,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 17,
+          "mpgHighway": 22,
+          "mpgCombined": 19,
+          "seatingCapacity": 5,
+          "towingLb": 12000,
+          "groundClearanceIn": 9.3
+        },
+        {
+          "id": "hybrid",
+          "name": "i-FORCE MAX",
+          "engine": "3.4L Twin-Turbo Hybrid V6",
+          "aspiration": "Twin-turbo hybrid",
+          "horsepower": 437,
+          "torqueLbFt": 583,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5,
+          "towingLb": 11385
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sr5",
+      "trims": [
+        {
+          "id": "sr5",
+          "name": "SR5",
+          "engine": "3.4L Twin-Turbo V6",
+          "aspiration": "Twin-turbo",
+          "horsepower": 389,
+          "torqueLbFt": 479,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 17,
+          "mpgHighway": 22,
+          "mpgCombined": 19,
+          "seatingCapacity": 5,
+          "towingLb": 12000
+        },
+        {
+          "id": "hybrid",
+          "name": "i-FORCE MAX",
+          "engine": "3.4L Twin-Turbo Hybrid V6",
+          "aspiration": "Twin-turbo hybrid",
+          "horsepower": 437,
+          "torqueLbFt": 583,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5,
+          "towingLb": 11385
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "hybrid",
+      "trims": [
+        {
+          "id": "hybrid",
+          "name": "i-FORCE MAX",
+          "engine": "3.4L Twin-Turbo Hybrid V6",
+          "aspiration": "Twin-turbo hybrid",
+          "horsepower": 437,
+          "torqueLbFt": 583,
+          "transmission": "10-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5,
+          "towingLb": 11385
+        }
+      ]
+    }
+  },
+  "gr86": {
+    "2024": {
+      "defaultTrimId": "premium",
+      "trims": [
+        {
+          "id": "base",
+          "name": "GR86",
+          "engine": "2.4L Flat-4",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 228,
+          "torqueLbFt": 184,
+          "zeroToSixtySec": 6.1,
+          "transmission": "6-speed manual / 6-speed automatic",
+          "drivetrain": "RWD",
+          "redlineRpm": 7400,
+          "mpgCity": 20,
+          "mpgHighway": 26,
+          "mpgCombined": 22,
+          "seatingCapacity": 4,
+          "cargoCuFt": 6.3
+        },
+        {
+          "id": "premium",
+          "name": "Premium",
+          "engine": "2.4L Flat-4",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 228,
+          "torqueLbFt": 184,
+          "zeroToSixtySec": 6.1,
+          "transmission": "6-speed manual / 6-speed automatic",
+          "drivetrain": "RWD",
+          "mpgCity": 20,
+          "mpgHighway": 26,
+          "mpgCombined": 22,
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "premium",
+      "trims": [
+        {
+          "id": "premium",
+          "name": "Premium",
+          "engine": "2.4L Flat-4",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 228,
+          "torqueLbFt": 184,
+          "zeroToSixtySec": 6.1,
+          "transmission": "6-speed manual / 6-speed automatic",
+          "drivetrain": "RWD",
+          "mpgCity": 20,
+          "mpgHighway": 26,
+          "mpgCombined": 22,
+          "seatingCapacity": 4
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "premium",
+      "trims": [
+        {
+          "id": "premium",
+          "name": "Premium",
+          "engine": "2.4L Flat-4",
+          "aspiration": "Naturally aspirated",
+          "horsepower": 228,
+          "torqueLbFt": 184,
+          "transmission": "6-speed manual / 6-speed automatic",
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        }
+      ]
+    }
+  },
+  "gr-corolla": {
+    "2024": {
+      "defaultTrimId": "core",
+      "trims": [
+        {
+          "id": "core",
+          "name": "Core",
+          "engine": "1.6L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 300,
+          "torqueLbFt": 273,
+          "zeroToSixtySec": 4.9,
+          "transmission": "6-speed manual",
+          "drivetrain": "AWD",
+          "mpgCity": 21,
+          "mpgHighway": 28,
+          "mpgCombined": 24,
+          "seatingCapacity": 5,
+          "cargoCuFt": 17.8
+        },
+        {
+          "id": "circuit",
+          "name": "Circuit Edition",
+          "engine": "1.6L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 300,
+          "torqueLbFt": 295,
+          "zeroToSixtySec": 4.9,
+          "transmission": "6-speed manual",
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "core",
+      "trims": [
+        {
+          "id": "core",
+          "name": "Core",
+          "engine": "1.6L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 300,
+          "torqueLbFt": 295,
+          "zeroToSixtySec": 4.9,
+          "transmission": "6-speed manual / 8-speed automatic",
+          "drivetrain": "AWD",
+          "mpgCity": 21,
+          "mpgHighway": 28,
+          "mpgCombined": 24,
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "core",
+      "trims": [
+        {
+          "id": "core",
+          "name": "Core",
+          "engine": "1.6L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 300,
+          "torqueLbFt": 295,
+          "transmission": "6-speed manual / 8-speed automatic",
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "land-cruiser": {
+    "2024": {
+      "defaultTrimId": "1958",
+      "trims": [
+        {
+          "id": "1958",
+          "name": "1958",
+          "engine": "2.4L Turbo Hybrid I4",
+          "aspiration": "Turbo hybrid",
+          "horsepower": 326,
+          "torqueLbFt": 465,
+          "zeroToSixtySec": 6.7,
+          "transmission": "8-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 22,
+          "mpgHighway": 25,
+          "mpgCombined": 23,
+          "seatingCapacity": 5,
+          "towingLb": 6000,
+          "groundClearanceIn": 8.7,
+          "cargoCuFt": 37.5
+        },
+        {
+          "id": "land-cruiser",
+          "name": "Land Cruiser",
+          "engine": "2.4L Turbo Hybrid I4",
+          "aspiration": "Turbo hybrid",
+          "horsepower": 326,
+          "torqueLbFt": 465,
+          "transmission": "8-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 22,
+          "mpgHighway": 25,
+          "mpgCombined": 23,
+          "seatingCapacity": 5,
+          "towingLb": 6000,
+          "groundClearanceIn": 8.7
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "land-cruiser",
+      "trims": [
+        {
+          "id": "land-cruiser",
+          "name": "Land Cruiser",
+          "engine": "2.4L Turbo Hybrid I4",
+          "aspiration": "Turbo hybrid",
+          "horsepower": 326,
+          "torqueLbFt": 465,
+          "transmission": "8-speed automatic",
+          "drivetrain": "4WD",
+          "mpgCity": 22,
+          "mpgHighway": 25,
+          "mpgCombined": 23,
+          "seatingCapacity": 5,
+          "towingLb": 6000,
+          "groundClearanceIn": 8.7
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "land-cruiser",
+      "trims": [
+        {
+          "id": "land-cruiser",
+          "name": "Land Cruiser",
+          "engine": "2.4L Turbo Hybrid I4",
+          "aspiration": "Turbo hybrid",
+          "horsepower": 326,
+          "torqueLbFt": 465,
+          "transmission": "8-speed automatic",
+          "drivetrain": "4WD",
+          "seatingCapacity": 5,
+          "towingLb": 6000,
+          "groundClearanceIn": 8.7
+        }
+      ]
+    }
+  }
+}

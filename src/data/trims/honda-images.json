@@ -1,0 +1,104 @@
+{
+  "civic": {
+    "sport": {
+      "query": "honda civic Sport",
+      "src": "/catalog/honda--civic--sport.jpg",
+      "alt": "Honda civic sport"
+    },
+    "sport-touring": {
+      "query": "honda civic Sport Touring Hybrid",
+      "src": "/catalog/honda--civic--sport-touring.jpg",
+      "alt": "Honda civic sport touring"
+    }
+  },
+  "civic-type-r": {
+    "type-r": {
+      "query": "honda civic type r Type R",
+      "src": "/catalog/honda--civic-type-r--type-r.jpg",
+      "alt": "Honda civic type r type r"
+    }
+  },
+  "accord": {
+    "sport-hybrid": {
+      "query": "honda accord Sport Hybrid",
+      "src": "/catalog/honda--accord--sport-hybrid.jpg",
+      "alt": "Honda accord sport hybrid"
+    },
+    "touring-hybrid": {
+      "query": "honda accord Touring Hybrid",
+      "src": "/catalog/honda--accord--touring-hybrid.jpg",
+      "alt": "Honda accord touring hybrid"
+    }
+  },
+  "cr-v": {
+    "sport": {
+      "query": "honda cr v Sport Hybrid",
+      "src": "/catalog/honda--cr-v--sport.jpg",
+      "alt": "Honda cr v sport"
+    },
+    "sport-l": {
+      "query": "honda cr v Sport-L Hybrid",
+      "src": "/catalog/honda--cr-v--sport-l.jpg",
+      "alt": "Honda cr v sport l"
+    }
+  },
+  "pilot": {
+    "sport": {
+      "query": "honda pilot Sport",
+      "src": "/catalog/honda--pilot--sport.jpg",
+      "alt": "Honda pilot sport"
+    },
+    "trailSport": {
+      "query": "honda pilot TrailSport",
+      "src": "/catalog/honda--pilot--trailSport.jpg",
+      "alt": "Honda pilot trailSport"
+    }
+  },
+  "odyssey": {
+    "ex-l": {
+      "query": "honda odyssey EX-L",
+      "src": "/catalog/honda--odyssey--ex-l.jpg",
+      "alt": "Honda odyssey ex l"
+    }
+  },
+  "ridgeline": {
+    "sport": {
+      "query": "honda ridgeline Sport",
+      "src": "/catalog/honda--ridgeline--sport.jpg",
+      "alt": "Honda ridgeline sport"
+    },
+    "trailsport": {
+      "query": "honda ridgeline TrailSport",
+      "src": "/catalog/honda--ridgeline--trailsport.jpg",
+      "alt": "Honda ridgeline trailsport"
+    }
+  },
+  "insight": {
+    "legacy": {
+      "query": "honda insight Insight (discontinued)",
+      "src": "/catalog/honda--insight--legacy.jpg",
+      "alt": "Honda insight legacy"
+    }
+  },
+  "fit": {
+    "legacy": {
+      "query": "honda fit Fit (discontinued)",
+      "src": "/catalog/honda--fit--legacy.jpg",
+      "alt": "Honda fit legacy"
+    }
+  },
+  "element": {
+    "legacy": {
+      "query": "honda element Element (discontinued)",
+      "src": "/catalog/honda--element--legacy.jpg",
+      "alt": "Honda element legacy"
+    }
+  },
+  "s2000": {
+    "legacy": {
+      "query": "honda s2000 S2000 (discontinued)",
+      "src": "/catalog/honda--s2000--legacy.jpg",
+      "alt": "Honda s2000 legacy"
+    }
+  }
+}

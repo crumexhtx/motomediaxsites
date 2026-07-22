@@ -1,0 +1,739 @@
+{
+  "z": {
+    "2024": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "3.0L Twin-Turbo V6",
+          "horsepower": 400,
+          "torqueLbFt": 350,
+          "zeroToSixtySec": 4.5,
+          "drivetrain": "RWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 2
+        },
+        {
+          "id": "nismo",
+          "name": "NISMO",
+          "engine": "3.0L Twin-Turbo V6",
+          "horsepower": 420,
+          "torqueLbFt": 384,
+          "zeroToSixtySec": 4.3,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "3.0L Twin-Turbo V6",
+          "horsepower": 400,
+          "torqueLbFt": 350,
+          "zeroToSixtySec": 4.5,
+          "drivetrain": "RWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 2
+        },
+        {
+          "id": "nismo",
+          "name": "NISMO",
+          "engine": "3.0L Twin-Turbo V6",
+          "horsepower": 420,
+          "torqueLbFt": 384,
+          "zeroToSixtySec": 4.3,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sport",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "3.0L Twin-Turbo V6",
+          "horsepower": 400,
+          "torqueLbFt": 350,
+          "zeroToSixtySec": 4.5,
+          "drivetrain": "RWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 2
+        },
+        {
+          "id": "nismo",
+          "name": "NISMO",
+          "engine": "3.0L Twin-Turbo V6",
+          "horsepower": 420,
+          "torqueLbFt": 384,
+          "zeroToSixtySec": 4.3,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        }
+      ]
+    }
+  },
+  "altima": {
+    "2024": {
+      "defaultTrimId": "sv",
+      "trims": [
+        {
+          "id": "sv",
+          "name": "SV",
+          "engine": "2.5L I4",
+          "horsepower": 188,
+          "mpgCombined": 31,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "sr",
+          "name": "SR VC-Turbo",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 248,
+          "mpgCombined": 28,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sv",
+      "trims": [
+        {
+          "id": "sv",
+          "name": "SV",
+          "engine": "2.5L I4",
+          "horsepower": 188,
+          "mpgCombined": 31,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "sr",
+          "name": "SR VC-Turbo",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 248,
+          "mpgCombined": 28,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sv",
+      "trims": [
+        {
+          "id": "sv",
+          "name": "SV",
+          "engine": "2.5L I4",
+          "horsepower": 188,
+          "mpgCombined": 31,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "sr",
+          "name": "SR VC-Turbo",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 248,
+          "mpgCombined": 28,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "sentra": {
+    "2024": {
+      "defaultTrimId": "sv",
+      "trims": [
+        {
+          "id": "sv",
+          "name": "SV",
+          "engine": "2.0L I4",
+          "horsepower": 149,
+          "mpgCombined": 33,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "sr",
+          "name": "SR",
+          "engine": "2.0L I4",
+          "horsepower": 149,
+          "mpgCombined": 32,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sv",
+      "trims": [
+        {
+          "id": "sv",
+          "name": "SV",
+          "engine": "2.0L I4",
+          "horsepower": 149,
+          "mpgCombined": 33,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "sr",
+          "name": "SR",
+          "engine": "2.0L I4",
+          "horsepower": 149,
+          "mpgCombined": 32,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sv",
+      "trims": [
+        {
+          "id": "sv",
+          "name": "SV",
+          "engine": "2.0L I4",
+          "horsepower": 149,
+          "mpgCombined": 33,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "sr",
+          "name": "SR",
+          "engine": "2.0L I4",
+          "horsepower": 149,
+          "mpgCombined": 32,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "rogue": {
+    "2024": {
+      "defaultTrimId": "sv",
+      "trims": [
+        {
+          "id": "sv",
+          "name": "SV",
+          "engine": "1.5L Turbo I3",
+          "horsepower": 201,
+          "mpgCombined": 33,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 5,
+          "cargoCuFt": 31.6
+        },
+        {
+          "id": "platinum",
+          "name": "Platinum",
+          "engine": "1.5L Turbo I3",
+          "horsepower": 201,
+          "mpgCombined": 32,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sv",
+      "trims": [
+        {
+          "id": "sv",
+          "name": "SV",
+          "engine": "1.5L Turbo I3",
+          "horsepower": 201,
+          "mpgCombined": 33,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 5,
+          "cargoCuFt": 31.6
+        },
+        {
+          "id": "platinum",
+          "name": "Platinum",
+          "engine": "1.5L Turbo I3",
+          "horsepower": 201,
+          "mpgCombined": 32,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sv",
+      "trims": [
+        {
+          "id": "sv",
+          "name": "SV",
+          "engine": "1.5L Turbo I3",
+          "horsepower": 201,
+          "mpgCombined": 33,
+          "drivetrain": "FWD / AWD",
+          "seatingCapacity": 5,
+          "cargoCuFt": 31.6
+        },
+        {
+          "id": "platinum",
+          "name": "Platinum",
+          "engine": "1.5L Turbo I3",
+          "horsepower": 201,
+          "mpgCombined": 32,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "pathfinder": {
+    "2024": {
+      "defaultTrimId": "sv",
+      "trims": [
+        {
+          "id": "sv",
+          "name": "SV",
+          "engine": "3.5L V6",
+          "horsepower": 284,
+          "mpgCombined": 23,
+          "drivetrain": "4WD",
+          "seatingCapacity": 8,
+          "towingLb": 6000
+        },
+        {
+          "id": "rock-creek",
+          "name": "Rock Creek",
+          "engine": "3.5L V6",
+          "horsepower": 284,
+          "drivetrain": "4WD",
+          "seatingCapacity": 7
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sv",
+      "trims": [
+        {
+          "id": "sv",
+          "name": "SV",
+          "engine": "3.5L V6",
+          "horsepower": 284,
+          "mpgCombined": 23,
+          "drivetrain": "4WD",
+          "seatingCapacity": 8,
+          "towingLb": 6000
+        },
+        {
+          "id": "rock-creek",
+          "name": "Rock Creek",
+          "engine": "3.5L V6",
+          "horsepower": 284,
+          "drivetrain": "4WD",
+          "seatingCapacity": 7
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sv",
+      "trims": [
+        {
+          "id": "sv",
+          "name": "SV",
+          "engine": "3.5L V6",
+          "horsepower": 284,
+          "mpgCombined": 23,
+          "drivetrain": "4WD",
+          "seatingCapacity": 8,
+          "towingLb": 6000
+        },
+        {
+          "id": "rock-creek",
+          "name": "Rock Creek",
+          "engine": "3.5L V6",
+          "horsepower": 284,
+          "drivetrain": "4WD",
+          "seatingCapacity": 7
+        }
+      ]
+    }
+  },
+  "frontier": {
+    "2024": {
+      "defaultTrimId": "sv",
+      "trims": [
+        {
+          "id": "sv",
+          "name": "SV",
+          "engine": "3.8L V6",
+          "horsepower": 310,
+          "torqueLbFt": 281,
+          "drivetrain": "4WD",
+          "mpgCombined": 20,
+          "towingLb": 6720,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "pro-4x",
+          "name": "PRO-4X",
+          "engine": "3.8L V6",
+          "horsepower": 310,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sv",
+      "trims": [
+        {
+          "id": "sv",
+          "name": "SV",
+          "engine": "3.8L V6",
+          "horsepower": 310,
+          "torqueLbFt": 281,
+          "drivetrain": "4WD",
+          "mpgCombined": 20,
+          "towingLb": 6720,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "pro-4x",
+          "name": "PRO-4X",
+          "engine": "3.8L V6",
+          "horsepower": 310,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sv",
+      "trims": [
+        {
+          "id": "sv",
+          "name": "SV",
+          "engine": "3.8L V6",
+          "horsepower": 310,
+          "torqueLbFt": 281,
+          "drivetrain": "4WD",
+          "mpgCombined": 20,
+          "towingLb": 6720,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "pro-4x",
+          "name": "PRO-4X",
+          "engine": "3.8L V6",
+          "horsepower": 310,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "ariya": {
+    "2024": {
+      "defaultTrimId": "engage",
+      "trims": [
+        {
+          "id": "engage",
+          "name": "Engage",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 214,
+          "rangeMiles": 216,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "platinum",
+          "name": "Platinum+",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 389,
+          "rangeMiles": 267,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "engage",
+      "trims": [
+        {
+          "id": "engage",
+          "name": "Engage",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 214,
+          "rangeMiles": 216,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "platinum",
+          "name": "Platinum+",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 389,
+          "rangeMiles": 267,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "engage",
+      "trims": [
+        {
+          "id": "engage",
+          "name": "Engage",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 214,
+          "rangeMiles": 216,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "platinum",
+          "name": "Platinum+",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 389,
+          "rangeMiles": 267,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "leaf": {
+    "2024": {
+      "defaultTrimId": "sv-plus",
+      "trims": [
+        {
+          "id": "sv-plus",
+          "name": "SV Plus",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 214,
+          "rangeMiles": 212,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sv-plus",
+      "trims": [
+        {
+          "id": "sv-plus",
+          "name": "SV Plus",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 214,
+          "rangeMiles": 212,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sv-plus",
+      "trims": [
+        {
+          "id": "sv-plus",
+          "name": "SV Plus",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 214,
+          "rangeMiles": 212,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "maxima": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Maxima (ending)",
+          "engine": "3.5L V6",
+          "horsepower": 300,
+          "notes": "U.S. Maxima ended after 2023."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Maxima (ending)",
+          "engine": "3.5L V6",
+          "horsepower": 300,
+          "notes": "U.S. Maxima ended after 2023."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Maxima (ending)",
+          "engine": "3.5L V6",
+          "horsepower": 300,
+          "notes": "U.S. Maxima ended after 2023."
+        }
+      ]
+    }
+  },
+  "gt-r": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "GT-R (ended)",
+          "engine": "3.8L Twin-Turbo V6",
+          "horsepower": 565,
+          "notes": "U.S. GT-R ended after 2024."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "GT-R (ended)",
+          "engine": "3.8L Twin-Turbo V6",
+          "horsepower": 565,
+          "notes": "U.S. GT-R ended after 2024."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "GT-R (ended)",
+          "engine": "3.8L Twin-Turbo V6",
+          "horsepower": 565,
+          "notes": "U.S. GT-R ended after 2024."
+        }
+      ]
+    }
+  },
+  "370z": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "370Z (discontinued)",
+          "notes": "Replaced by Nissan Z."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "370Z (discontinued)",
+          "notes": "Replaced by Nissan Z."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "370Z (discontinued)",
+          "notes": "Replaced by Nissan Z."
+        }
+      ]
+    }
+  },
+  "350z": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "350Z (discontinued)",
+          "notes": "Ended after 2009."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "350Z (discontinued)",
+          "notes": "Ended after 2009."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "350Z (discontinued)",
+          "notes": "Ended after 2009."
+        }
+      ]
+    }
+  },
+  "xterra": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Xterra (discontinued)",
+          "notes": "Ended after 2015."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Xterra (discontinued)",
+          "notes": "Ended after 2015."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Xterra (discontinued)",
+          "notes": "Ended after 2015."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "wrangler": {
+    "sport-s": {
+      "query": "jeep wrangler Sport S",
+      "src": "/catalog/jeep--wrangler--sport-s.jpg",
+      "alt": "Jeep wrangler sport s"
+    },
+    "rubicon": {
+      "query": "jeep wrangler Rubicon",
+      "src": "/catalog/jeep--wrangler--rubicon.jpg",
+      "alt": "Jeep wrangler rubicon"
+    },
+    "4xe": {
+      "query": "jeep wrangler Rubicon 4xe",
+      "src": "/catalog/jeep--wrangler--4xe.jpg",
+      "alt": "Jeep wrangler 4xe"
+    }
+  },
+  "grand-cherokee": {
+    "limited": {
+      "query": "jeep grand cherokee Limited",
+      "src": "/catalog/jeep--grand-cherokee--limited.jpg",
+      "alt": "Jeep grand cherokee limited"
+    },
+    "4xe": {
+      "query": "jeep grand cherokee 4xe",
+      "src": "/catalog/jeep--grand-cherokee--4xe.jpg",
+      "alt": "Jeep grand cherokee 4xe"
+    }
+  },
+  "gladiator": {
+    "sport-s": {
+      "query": "jeep gladiator Sport S",
+      "src": "/catalog/jeep--gladiator--sport-s.jpg",
+      "alt": "Jeep gladiator sport s"
+    },
+    "rubicon": {
+      "query": "jeep gladiator Rubicon",
+      "src": "/catalog/jeep--gladiator--rubicon.jpg",
+      "alt": "Jeep gladiator rubicon"
+    }
+  },
+  "compass": {
+    "latitude": {
+      "query": "jeep compass Latitude",
+      "src": "/catalog/jeep--compass--latitude.jpg",
+      "alt": "Jeep compass latitude"
+    },
+    "trailhawk": {
+      "query": "jeep compass Trailhawk",
+      "src": "/catalog/jeep--compass--trailhawk.jpg",
+      "alt": "Jeep compass trailhawk"
+    }
+  },
+  "cherokee": {
+    "legacy": {
+      "query": "jeep cherokee Cherokee (ended)",
+      "src": "/catalog/jeep--cherokee--legacy.jpg",
+      "alt": "Jeep cherokee legacy"
+    }
+  },
+  "renegade": {
+    "legacy": {
+      "query": "jeep renegade Renegade (ended)",
+      "src": "/catalog/jeep--renegade--legacy.jpg",
+      "alt": "Jeep renegade legacy"
+    }
+  }
+}

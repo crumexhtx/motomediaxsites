@@ -1,0 +1,136 @@
+{
+  "c-class": {
+    "c300": {
+      "query": "mercedes benz c class C 300",
+      "src": "/catalog/mercedes-benz--c-class--c300.jpg",
+      "alt": "Mercedes benz c class c300"
+    },
+    "amg-c43": {
+      "query": "mercedes benz c class AMG C 43",
+      "src": "/catalog/mercedes-benz--c-class--amg-c43.jpg",
+      "alt": "Mercedes benz c class amg c43"
+    }
+  },
+  "e-class": {
+    "e350": {
+      "query": "mercedes benz e class E 350",
+      "src": "/catalog/mercedes-benz--e-class--e350.jpg",
+      "alt": "Mercedes benz e class e350"
+    },
+    "amg-e53": {
+      "query": "mercedes benz e class AMG E 53",
+      "src": "/catalog/mercedes-benz--e-class--amg-e53.jpg",
+      "alt": "Mercedes benz e class amg e53"
+    }
+  },
+  "s-class": {
+    "s500": {
+      "query": "mercedes benz s class S 500",
+      "src": "/catalog/mercedes-benz--s-class--s500.jpg",
+      "alt": "Mercedes benz s class s500"
+    },
+    "amg-s63": {
+      "query": "mercedes benz s class AMG S 63 E Performance",
+      "src": "/catalog/mercedes-benz--s-class--amg-s63.jpg",
+      "alt": "Mercedes benz s class amg s63"
+    }
+  },
+  "g-class": {
+    "g550": {
+      "query": "mercedes benz g class G 550",
+      "src": "/catalog/mercedes-benz--g-class--g550.jpg",
+      "alt": "Mercedes benz g class g550"
+    },
+    "amg-g63": {
+      "query": "mercedes benz g class AMG G 63",
+      "src": "/catalog/mercedes-benz--g-class--amg-g63.jpg",
+      "alt": "Mercedes benz g class amg g63"
+    }
+  },
+  "glc": {
+    "glc300": {
+      "query": "mercedes benz glc GLC 300",
+      "src": "/catalog/mercedes-benz--glc--glc300.jpg",
+      "alt": "Mercedes benz glc glc300"
+    },
+    "amg-glc43": {
+      "query": "mercedes benz glc AMG GLC 43",
+      "src": "/catalog/mercedes-benz--glc--amg-glc43.jpg",
+      "alt": "Mercedes benz glc amg glc43"
+    }
+  },
+  "gle": {
+    "gle350": {
+      "query": "mercedes benz gle GLE 350",
+      "src": "/catalog/mercedes-benz--gle--gle350.jpg",
+      "alt": "Mercedes benz gle gle350"
+    },
+    "amg-gle53": {
+      "query": "mercedes benz gle AMG GLE 53",
+      "src": "/catalog/mercedes-benz--gle--amg-gle53.jpg",
+      "alt": "Mercedes benz gle amg gle53"
+    }
+  },
+  "gls": {
+    "gls450": {
+      "query": "mercedes benz gls GLS 450",
+      "src": "/catalog/mercedes-benz--gls--gls450.jpg",
+      "alt": "Mercedes benz gls gls450"
+    },
+    "maybach": {
+      "query": "mercedes benz gls Maybach GLS 600",
+      "src": "/catalog/mercedes-benz--gls--maybach.jpg",
+      "alt": "Mercedes benz gls maybach"
+    }
+  },
+  "cla": {
+    "cla250": {
+      "query": "mercedes benz cla CLA 250",
+      "src": "/catalog/mercedes-benz--cla--cla250.jpg",
+      "alt": "Mercedes benz cla cla250"
+    },
+    "amg-cla35": {
+      "query": "mercedes benz cla AMG CLA 35",
+      "src": "/catalog/mercedes-benz--cla--amg-cla35.jpg",
+      "alt": "Mercedes benz cla amg cla35"
+    }
+  },
+  "eqs": {
+    "eqs450": {
+      "query": "mercedes benz eqs EQS 450+",
+      "src": "/catalog/mercedes-benz--eqs--eqs450.jpg",
+      "alt": "Mercedes benz eqs eqs450"
+    },
+    "eqs580": {
+      "query": "mercedes benz eqs EQS 580",
+      "src": "/catalog/mercedes-benz--eqs--eqs580.jpg",
+      "alt": "Mercedes benz eqs eqs580"
+    }
+  },
+  "amg-gt": {
+    "gt": {
+      "query": "mercedes benz amg gt AMG GT",
+      "src": "/catalog/mercedes-benz--amg-gt--gt.jpg",
+      "alt": "Mercedes benz amg gt gt"
+    }
+  },
+  "sl-class": {
+    "sl43": {
+      "query": "mercedes benz sl class AMG SL 43",
+      "src": "/catalog/mercedes-benz--sl-class--sl43.jpg",
+      "alt": "Mercedes benz sl class sl43"
+    },
+    "sl63": {
+      "query": "mercedes benz sl class AMG SL 63",
+      "src": "/catalog/mercedes-benz--sl-class--sl63.jpg",
+      "alt": "Mercedes benz sl class sl63"
+    }
+  },
+  "slk-slc": {
+    "legacy": {
+      "query": "mercedes benz slk slc SLK/SLC (ended)",
+      "src": "/catalog/mercedes-benz--slk-slc--legacy.jpg",
+      "alt": "Mercedes benz slk slc legacy"
+    }
+  }
+}

@@ -1,0 +1,643 @@
+{
+  "elantra": {
+    "2024": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "mpgCombined": 35,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid Blue",
+          "engine": "1.6L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 139,
+          "mpgCombined": 54,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "mpgCombined": 35,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid Blue",
+          "engine": "1.6L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 139,
+          "mpgCombined": 54,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "mpgCombined": 35,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid Blue",
+          "engine": "1.6L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 139,
+          "mpgCombined": 54,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "elantra-n": {
+    "2024": {
+      "defaultTrimId": "n",
+      "trims": [
+        {
+          "id": "n",
+          "name": "N",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 276,
+          "torqueLbFt": 289,
+          "zeroToSixtySec": 5,
+          "drivetrain": "FWD",
+          "mpgCombined": 25,
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "n",
+      "trims": [
+        {
+          "id": "n",
+          "name": "N",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 276,
+          "torqueLbFt": 289,
+          "zeroToSixtySec": 5,
+          "drivetrain": "FWD",
+          "mpgCombined": 25,
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "n",
+      "trims": [
+        {
+          "id": "n",
+          "name": "N",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 276,
+          "torqueLbFt": 289,
+          "zeroToSixtySec": 5,
+          "drivetrain": "FWD",
+          "mpgCombined": 25,
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "sonata": {
+    "2024": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "2.5L I4",
+          "horsepower": 191,
+          "mpgCombined": 31,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 192,
+          "mpgCombined": 47,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "2.5L I4",
+          "horsepower": 191,
+          "mpgCombined": 31,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 192,
+          "mpgCombined": 47,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "2.5L I4",
+          "horsepower": 191,
+          "mpgCombined": 31,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "engine": "2.0L Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 192,
+          "mpgCombined": 47,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "tucson": {
+    "2024": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "2.5L I4",
+          "horsepower": 187,
+          "mpgCombined": 28,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "engine": "1.6L Turbo Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 226,
+          "mpgCombined": 37,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "2.5L I4",
+          "horsepower": 187,
+          "mpgCombined": 28,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "engine": "1.6L Turbo Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 226,
+          "mpgCombined": 37,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "2.5L I4",
+          "horsepower": 187,
+          "mpgCombined": 28,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "engine": "1.6L Turbo Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 226,
+          "mpgCombined": 37,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "santa-fe": {
+    "2024": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "2.5L I4",
+          "horsepower": 277,
+          "torqueLbFt": 311,
+          "drivetrain": "AWD",
+          "mpgCombined": 23,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "engine": "1.6L Turbo Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 231,
+          "mpgCombined": 36,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "2.5L I4",
+          "horsepower": 277,
+          "torqueLbFt": 311,
+          "drivetrain": "AWD",
+          "mpgCombined": 23,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "engine": "1.6L Turbo Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 231,
+          "mpgCombined": 36,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "2.5L I4",
+          "horsepower": 277,
+          "torqueLbFt": 311,
+          "drivetrain": "AWD",
+          "mpgCombined": 23,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "engine": "1.6L Turbo Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 231,
+          "mpgCombined": 36,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "palisade": {
+    "2024": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "3.8L V6",
+          "horsepower": 291,
+          "mpgCombined": 22,
+          "drivetrain": "AWD",
+          "seatingCapacity": 8,
+          "towingLb": 5000
+        },
+        {
+          "id": "calligraphy",
+          "name": "Calligraphy",
+          "engine": "3.8L V6",
+          "horsepower": 291,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "3.8L V6",
+          "horsepower": 291,
+          "mpgCombined": 22,
+          "drivetrain": "AWD",
+          "seatingCapacity": 8,
+          "towingLb": 5000
+        },
+        {
+          "id": "calligraphy",
+          "name": "Calligraphy",
+          "engine": "3.8L V6",
+          "horsepower": 291,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "3.8L V6",
+          "horsepower": 291,
+          "mpgCombined": 22,
+          "drivetrain": "AWD",
+          "seatingCapacity": 8,
+          "towingLb": 5000
+        },
+        {
+          "id": "calligraphy",
+          "name": "Calligraphy",
+          "engine": "3.8L V6",
+          "horsepower": 291,
+          "drivetrain": "AWD",
+          "seatingCapacity": 7
+        }
+      ]
+    }
+  },
+  "ioniq-5": {
+    "2024": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 320,
+          "rangeMiles": 260,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "n",
+          "name": "N",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 641,
+          "zeroToSixtySec": 3.4,
+          "rangeMiles": 221,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 320,
+          "rangeMiles": 260,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "n",
+          "name": "N",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 641,
+          "zeroToSixtySec": 3.4,
+          "rangeMiles": 221,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 320,
+          "rangeMiles": 260,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "n",
+          "name": "N",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 641,
+          "zeroToSixtySec": 3.4,
+          "rangeMiles": 221,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "ioniq-6": {
+    "2024": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 225,
+          "rangeMiles": 361,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "limited",
+          "name": "Limited AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 320,
+          "rangeMiles": 316,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 225,
+          "rangeMiles": 361,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "limited",
+          "name": "Limited AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 320,
+          "rangeMiles": 316,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "sel",
+      "trims": [
+        {
+          "id": "sel",
+          "name": "SEL",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 225,
+          "rangeMiles": 361,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "limited",
+          "name": "Limited AWD",
+          "engine": "Dual-motor electric",
+          "aspiration": "Electric",
+          "horsepower": 320,
+          "rangeMiles": 316,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        }
+      ]
+    }
+  },
+  "veloster": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Veloster (discontinued)",
+          "notes": "Ended after 2022."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Veloster (discontinued)",
+          "notes": "Ended after 2022."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Veloster (discontinued)",
+          "notes": "Ended after 2022."
+        }
+      ]
+    }
+  },
+  "genesis": {
+    "2024": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Genesis sedan (moved)",
+          "notes": "Genesis is now a separate brand; page kept for catalog."
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Genesis sedan (moved)",
+          "notes": "Genesis is now a separate brand; page kept for catalog."
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "legacy",
+      "trims": [
+        {
+          "id": "legacy",
+          "name": "Genesis sedan (moved)",
+          "notes": "Genesis is now a separate brand; page kept for catalog."
+        }
+      ]
+    }
+  }
+}

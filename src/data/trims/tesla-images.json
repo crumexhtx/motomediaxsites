@@ -1,0 +1,79 @@
+{
+  "model-3": {
+    "rwd": {
+      "query": "tesla model 3 Rear-Wheel Drive",
+      "src": "/catalog/tesla--model-3--rwd.jpg",
+      "alt": "Tesla model 3 rwd"
+    },
+    "long-range": {
+      "query": "tesla model 3 Long Range AWD",
+      "src": "/catalog/tesla--model-3--long-range.jpg",
+      "alt": "Tesla model 3 long range"
+    },
+    "performance": {
+      "query": "tesla model 3 Performance",
+      "src": "/catalog/tesla--model-3--performance.jpg",
+      "alt": "Tesla model 3 performance"
+    }
+  },
+  "model-y": {
+    "rwd": {
+      "query": "tesla model y Rear-Wheel Drive",
+      "src": "/catalog/tesla--model-y--rwd.jpg",
+      "alt": "Tesla model y rwd"
+    },
+    "long-range": {
+      "query": "tesla model y Long Range AWD",
+      "src": "/catalog/tesla--model-y--long-range.jpg",
+      "alt": "Tesla model y long range"
+    },
+    "performance": {
+      "query": "tesla model y Performance",
+      "src": "/catalog/tesla--model-y--performance.jpg",
+      "alt": "Tesla model y performance"
+    }
+  },
+  "model-s": {
+    "long-range": {
+      "query": "tesla model s Long Range",
+      "src": "/catalog/tesla--model-s--long-range.jpg",
+      "alt": "Tesla model s long range"
+    },
+    "plaid": {
+      "query": "tesla model s Plaid",
+      "src": "/catalog/tesla--model-s--plaid.jpg",
+      "alt": "Tesla model s plaid"
+    }
+  },
+  "model-x": {
+    "long-range": {
+      "query": "tesla model x Long Range",
+      "src": "/catalog/tesla--model-x--long-range.jpg",
+      "alt": "Tesla model x long range"
+    },
+    "plaid": {
+      "query": "tesla model x Plaid",
+      "src": "/catalog/tesla--model-x--plaid.jpg",
+      "alt": "Tesla model x plaid"
+    }
+  },
+  "cybertruck": {
+    "awd": {
+      "query": "tesla cybertruck All-Wheel Drive",
+      "src": "/catalog/tesla--cybertruck--awd.jpg",
+      "alt": "Tesla cybertruck awd"
+    },
+    "cyberbeast": {
+      "query": "tesla cybertruck Cyberbeast",
+      "src": "/catalog/tesla--cybertruck--cyberbeast.jpg",
+      "alt": "Tesla cybertruck cyberbeast"
+    }
+  },
+  "roadster": {
+    "legacy": {
+      "query": "tesla roadster Roadster (next-gen TBA)",
+      "src": "/catalog/tesla--roadster--legacy.jpg",
+      "alt": "Tesla roadster legacy"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "motomediax",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:clean": "node -e \"require('fs').rmSync('.next',{recursive:true,force:true})\" && next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build:catalog": "tsx scripts/build-catalog.ts",
+    "enrich:epa": "tsx scripts/enrich-epa.ts",
+    "enrich:autodev": "tsx scripts/enrich-autodev.ts",
+    "fetch:toyota-videos": "python scripts/fetch-toyota-videos.py",
+    "fetch:ford-videos": "python scripts/fetch-brand-videos.py ford",
+    "fetch:videos": "python scripts/fetch-brand-videos.py",
+    "fetch:trim-images": "tsx scripts/fetch-trim-images.ts",
+    "audit:images": "tsx scripts/audit-catalog-images.ts",
+    "validate:catalog": "tsx scripts/validate-catalog.ts",
+    "backfill:images": "tsx scripts/backfill-remote-images.ts",
+    "localize:images": "tsx scripts/localize-catalog-images.ts",
+    "optimize:images": "tsx scripts/optimize-catalog-images.ts"
+  },
+  "dependencies": {
+    "next": "16.2.10",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10",
+    "sharp": "^0.35.3",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.1",
+    "typescript": "^5",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "pnpm@10.18.0"
+}
