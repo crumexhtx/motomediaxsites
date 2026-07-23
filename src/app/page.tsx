@@ -25,7 +25,10 @@ export default function HomePage() {
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[var(--bg)] to-transparent md:h-40" />
 
         <div className="container-wide relative flex min-h-[72svh] flex-col justify-end pb-16 pt-24 md:min-h-[78svh] md:justify-center md:pb-24">
-          <p className="fade-up font-display text-4xl tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+          <p className="fade-up font-display text-xs font-bold tracking-[0.28em] text-accent">
+            {SITE.shortName}
+          </p>
+          <p className="fade-up mt-3 font-display text-4xl tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
             {SITE.name}
           </p>
           <h1 className="fade-up-delay mt-4 max-w-2xl text-xl font-medium leading-tight text-white sm:text-2xl md:text-3xl">

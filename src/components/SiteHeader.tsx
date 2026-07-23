@@ -29,10 +29,16 @@ export function SiteHeader() {
       <div className="container-wide flex h-16 items-center justify-between gap-4">
         <Link
           href="/"
-          className="focus-ring font-display text-xl tracking-tight"
+          className="focus-ring flex items-baseline gap-2.5"
           onClick={() => setOpen(false)}
+          aria-label={SITE.name}
         >
-          {SITE.name}
+          <span className="font-display text-xs font-bold tracking-[0.22em] text-accent">
+            {SITE.shortName}
+          </span>
+          <span className="hidden font-display text-xl tracking-tight sm:inline">
+            {SITE.name}
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">

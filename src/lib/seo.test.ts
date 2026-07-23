@@ -34,6 +34,7 @@ describe("seo helpers", () => {
     expect(data).toMatchObject({
       "@type": "Organization",
       name: SITE.name,
+      alternateName: SITE.shortName,
       url: SITE.url,
     });
   });

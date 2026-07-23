@@ -6,7 +6,10 @@ export function SiteFooter() {
     <footer className="mt-auto border-t border-line bg-[var(--bg)]">
       <div className="container-wide grid gap-8 py-12 md:grid-cols-[1.4fr_1fr]">
         <div>
-          <p className="font-display text-2xl tracking-tight">{SITE.name}</p>
+          <p className="font-display text-xs font-bold tracking-[0.22em] text-accent">
+            {SITE.shortName}
+          </p>
+          <p className="mt-2 font-display text-2xl tracking-tight">{SITE.name}</p>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-muted">
             {SITE.description}
           </p>
@@ -57,7 +60,9 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-line">
         <div className="container-wide flex flex-wrap items-center justify-between gap-3 py-4 text-xs text-muted">
-          <p>© {new Date().getFullYear()} {SITE.name}</p>
+          <p>
+            © {new Date().getFullYear()} {SITE.name} · {SITE.shortName}
+          </p>
           <p>Built for clearer car browsing and SEO-friendly discovery.</p>
         </div>
       </div>

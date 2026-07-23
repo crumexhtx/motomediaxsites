@@ -139,6 +139,8 @@ export type MakeEntry = {
 
 export const SITE = {
   name: "MotoMediaX",
+  /** Compact mark for nav monogram, favicon, and short credits. */
+  shortName: "MMX",
   tagline: "All makes. All models. Clearer browsing.",
   description:
     "Browse high-quality car photos and model overviews by make, model, and year. MotoMediaX is a fast, search-friendly catalog for enthusiasts.",
