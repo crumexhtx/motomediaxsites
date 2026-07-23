@@ -126,6 +126,24 @@ export function getLatestEntries(limit = 8) {
     .slice(0, limit);
 }
 
+/** Prefer a specific model for the landing hero when present. */
+export function getLandingHeroImage(): GalleryImage | undefined {
+  const preferred = getYear("gmc", "hummer-ev", "2025") ?? getYear("gmc", "hummer-ev", "2024") ?? getYear("gmc", "hummer-ev", "2026");
+  if (preferred) {
+    const image = pickBestCardImage(preferred.year.images, {
+      makeName: preferred.make.name,
+      modelName: preferred.model.name,
+    });
+    if (image && publicAssetExists(image.src)) {
+      return {
+        ...image,
+        alt: `${preferred.year.year} ${preferred.make.name} ${preferred.model.name}`,
+      };
+    }
+  }
+  return getHeroBackdropImages(1)[0];
+}
+
 /** Diverse local catalog photos for the landing hero (one per make). */
 export function getHeroBackdropImages(limit = 6): GalleryImage[] {
   const picked: GalleryImage[] = [];

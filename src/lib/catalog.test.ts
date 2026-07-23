@@ -59,6 +59,14 @@ describe("catalog lookups", () => {
     expect(yearHref("bmw", "x5", "2025")).toBe("/makes/bmw/x5/2025");
   });
 
+  it("uses the Hummer EV for the landing hero when available", async () => {
+    const { getLandingHeroImage } = await import("@/lib/catalog");
+    const hero = getLandingHeroImage();
+    expect(hero).toBeTruthy();
+    expect(hero!.src).toContain("hummer-ev");
+    expect(hero!.alt.toLowerCase()).toContain("hummer");
+  });
+
   it("picks diverse local hero backdrop images when catalog photos exist", () => {
     const images = getHeroBackdropImages(4);
     expect(images.length).toBeGreaterThan(0);

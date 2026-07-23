@@ -43,12 +43,12 @@ export function MakeTile({
       href={makeHref(make.slug)}
       className="make-tile focus-ring group block overflow-hidden rounded-xl border border-line bg-elevated"
     >
-      <div className="relative aspect-[16/10] overflow-hidden bg-soft">
+      <div className="relative aspect-[16/10] overflow-hidden bg-[linear-gradient(160deg,#151a22_0%,#0f1319_55%,#1a222d_100%)]">
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 opacity-80"
           style={{
             background:
-              "radial-gradient(circle at 30% 20%, rgba(61,156,240,0.18), transparent 55%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.06), transparent 45%)",
+              "radial-gradient(circle at 50% 35%, rgba(61,156,240,0.14), transparent 58%)",
           }}
         />
 
@@ -63,7 +63,7 @@ export function MakeTile({
           />
         </div>
 
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent" />
 
         <div className="absolute inset-x-0 bottom-0 z-10 p-4">
           <p className="font-display text-2xl tracking-tight text-white">

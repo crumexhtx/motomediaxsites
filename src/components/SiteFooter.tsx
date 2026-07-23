@@ -3,7 +3,7 @@ import { SITE } from "@/data/catalog";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-auto border-t border-line bg-elevated/60">
+    <footer className="mt-auto border-t border-line bg-[var(--bg)]">
       <div className="container-wide grid gap-8 py-12 md:grid-cols-[1.4fr_1fr]">
         <div>
           <p className="font-display text-2xl tracking-tight">{SITE.name}</p>
