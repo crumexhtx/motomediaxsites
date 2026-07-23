@@ -690,16 +690,6 @@
           "seatingCapacity": 4
         }
       ]
-    },
-    "2026": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "U.S. GT-R ended after 2025."
-        }
-      ]
     }
   },
   "370z": {

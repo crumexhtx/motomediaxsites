@@ -643,16 +643,6 @@
           "seatingCapacity": 5
         }
       ]
-    },
-    "2026": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "U.S. Malibu ended after 2025."
-        }
-      ]
     }
   },
   "colorado": {
@@ -730,31 +720,11 @@
     }
   },
   "bolt-ev": {
-    "2024": {
-      "defaultTrimId": "discontinued",
+    "2023": {
+      "defaultTrimId": "final",
       "trims": [
         {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "Bolt EV production ended; returns as a 2027 model."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "Bolt EV production ended; returns as a 2027 model."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
+          "id": "final",
           "name": "Discontinued",
           "notes": "Not offered for 2026; next-gen Bolt planned as a 2027 model."
         }

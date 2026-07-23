@@ -317,27 +317,7 @@
     }
   },
   "cherokee": {
-    "2024": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "U.S. Cherokee ended after 2023."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "U.S. Cherokee ended after 2023."
-        }
-      ]
-    },
-    "2026": {
+    "2023": {
       "defaultTrimId": "latitude",
       "trims": [
         {
@@ -370,31 +350,11 @@
     }
   },
   "renegade": {
-    "2024": {
-      "defaultTrimId": "discontinued",
+    "2023": {
+      "defaultTrimId": "final",
       "trims": [
         {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "U.S. Renegade ended after 2023."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "U.S. Renegade ended after 2023."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
+          "id": "final",
           "name": "Discontinued",
           "notes": "U.S. Renegade ended after 2023."
         }

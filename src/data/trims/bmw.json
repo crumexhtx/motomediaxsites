@@ -542,16 +542,6 @@
     }
   },
   "m5": {
-    "2024": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
-          "name": "No U.S. production",
-          "notes": "2024 M5 skipped; new generation arrives for 2025."
-        }
-      ]
-    },
     "2025": {
       "defaultTrimId": "sedan",
       "trims": [

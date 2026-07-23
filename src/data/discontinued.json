@@ -1,0 +1,58 @@
+{
+  "ford/fiesta-st": {
+    "lastYear": 2019,
+    "ghostYears": [2024, 2025, 2026],
+    "message": "The U.S. Fiesta ST ended after 2019. This page covers the final model year."
+  },
+  "ford/focus-rs": {
+    "lastYear": 2018,
+    "ghostYears": [2024, 2025, 2026],
+    "message": "The U.S. Focus RS ended after 2018. This page covers the final model year."
+  },
+  "ford/focus": {
+    "lastYear": 2018,
+    "ghostYears": [2024, 2025, 2026],
+    "message": "The U.S. Focus ended after 2018. Later global Focus years are not offered in this catalog."
+  },
+  "ford/gt": {
+    "lastYear": 2022,
+    "ghostYears": [2024, 2025, 2026],
+    "message": "Ford GT limited production has ended. This page covers the final catalog year."
+  },
+  "chevrolet/bolt-ev": {
+    "lastYear": 2023,
+    "ghostYears": [2024, 2025, 2026],
+    "message": "The Bolt EV ended after 2023. Chevrolet has signaled a return as a 2027 model."
+  },
+  "jeep/renegade": {
+    "lastYear": 2023,
+    "ghostYears": [2024, 2025, 2026],
+    "message": "The U.S. Renegade ended after 2023. This page covers the final model year."
+  },
+  "jeep/cherokee": {
+    "lastYear": 2023,
+    "ghostYears": [2024, 2025, 2026],
+    "message": "The U.S. Cherokee ended after 2023. This page covers the final model year."
+  },
+  "chevrolet/malibu": {
+    "lastYear": 2025,
+    "ghostYears": [2026],
+    "message": "The U.S. Malibu ended after 2025. This page covers the final model year."
+  },
+  "kia/forte": {
+    "lastYear": 2024,
+    "ghostYears": [2025, 2026],
+    "message": "The U.S. Forte ended after 2024. This page covers the final model year."
+  },
+  "nissan/gt-r": {
+    "lastYear": 2025,
+    "ghostYears": [2026],
+    "message": "The U.S. GT-R ended after 2025. This page covers the final model year."
+  },
+  "bmw/m5": {
+    "lastYear": 2025,
+    "ghostYears": [2024],
+    "message": "There was no 2024 M5 model year; the new generation begins in 2025.",
+    "banner": false
+  }
+}

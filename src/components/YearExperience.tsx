@@ -25,6 +25,8 @@ type Props = {
   overview: ReactNode;
   /** Year-over-year delta section (server-rendered). */
   yearChanges?: ReactNode;
+  /** Discontinued / final-year notice above overview. */
+  discontinuedBanner?: ReactNode;
   performance?: YearPerformance;
   specs?: VehicleSpecs;
   baseImages: GalleryImage[];
@@ -41,6 +43,7 @@ export function YearExperience({
   yearChips,
   overview,
   yearChanges,
+  discontinuedBanner,
   performance,
   specs,
   baseImages,
@@ -127,6 +130,8 @@ export function YearExperience({
           </h2>
           {yearChips}
         </section>
+
+        {discontinuedBanner}
 
         {overview}
 

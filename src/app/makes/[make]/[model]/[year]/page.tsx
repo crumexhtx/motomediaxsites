@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { DiscontinuedBanner } from "@/components/DiscontinuedBanner";
 import { YearChips } from "@/components/ModelCard";
 import { YearChanges } from "@/components/YearChanges";
 import { YearExperience } from "@/components/YearExperience";
@@ -12,6 +13,11 @@ import {
   pickBestCardImage,
   yearHref,
 } from "@/lib/catalog";
+import {
+  getDiscontinuedInfo,
+  ghostYearRedirectTarget,
+  shouldShowDiscontinuedBanner,
+} from "@/lib/discontinued";
 import {
   JsonLd,
   absoluteUrl,
@@ -90,6 +96,11 @@ export default async function YearPage({ params }: Props) {
   const modelSlug = String(raw.model ?? "");
   const yearSlug = String(raw.year ?? "");
 
+  const ghostTarget = ghostYearRedirectTarget(makeSlug, modelSlug, yearSlug);
+  if (ghostTarget != null) {
+    permanentRedirect(yearHref(makeSlug, modelSlug, String(ghostTarget)));
+  }
+
   const found = getYear(makeSlug, modelSlug, yearSlug);
   if (!found) notFound();
 
@@ -102,6 +113,10 @@ export default async function YearPage({ params }: Props) {
   const title = `${year.year} ${make.name} ${model.name}`;
   const previousYear = findPreviousYear(model.years, year.year);
   const yearDiff = previousYear ? diffYears(previousYear, year) : null;
+  const discontinued = getDiscontinuedInfo(make.slug, model.slug);
+  const showBanner =
+    shouldShowDiscontinuedBanner(discontinued) &&
+    year.year === discontinued?.lastYear;
 
   return (
     <>
@@ -188,6 +203,15 @@ export default async function YearPage({ params }: Props) {
               </p>
             ) : null}
           </section>
+        }
+        discontinuedBanner={
+          showBanner && discontinued ? (
+            <DiscontinuedBanner
+              message={discontinued.message}
+              lastYear={discontinued.lastYear}
+              modelName={model.name}
+            />
+          ) : null
         }
         yearChanges={
           yearDiff && previousYear ? (

@@ -759,31 +759,11 @@
     }
   },
   "gt": {
-    "2024": {
-      "defaultTrimId": "discontinued",
+    "2022": {
+      "defaultTrimId": "final",
       "trims": [
         {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "Ford GT limited production has ended."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "Not offered for this model year."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
+          "id": "final",
           "name": "Discontinued",
           "notes": "Not offered for this model year."
         }
@@ -791,85 +771,11 @@
     }
   },
   "focus": {
-    "2024": {
-      "defaultTrimId": "titanium",
+    "2018": {
+      "defaultTrimId": "final",
       "trims": [
         {
-          "id": "trend",
-          "name": "Trend",
-          "engine": "1.0L / 1.5L Turbo I3",
-          "horsepower": 123,
-          "drivetrain": "FWD",
-          "notes": "Global market only — not sold in the U.S."
-        },
-        {
-          "id": "titanium",
-          "name": "Titanium",
-          "engine": "1.0L / 1.5L Turbo I3",
-          "horsepower": 150,
-          "drivetrain": "FWD",
-          "notes": "Global market only — not sold in the U.S."
-        },
-        {
-          "id": "st-line",
-          "name": "ST-Line",
-          "engine": "1.0L / 1.5L Turbo I3",
-          "horsepower": 150,
-          "drivetrain": "FWD",
-          "notes": "Global market only — not sold in the U.S."
-        },
-        {
-          "id": "st",
-          "name": "ST",
-          "engine": "2.3L Turbo I4",
-          "horsepower": 280,
-          "drivetrain": "FWD",
-          "notes": "Global market only — not sold in the U.S."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "titanium",
-      "trims": [
-        {
-          "id": "trend",
-          "name": "Trend",
-          "engine": "1.0L / 1.5L Turbo I3",
-          "horsepower": 123,
-          "drivetrain": "FWD",
-          "notes": "Global market only — not sold in the U.S."
-        },
-        {
-          "id": "titanium",
-          "name": "Titanium",
-          "engine": "1.0L / 1.5L Turbo I3",
-          "horsepower": 150,
-          "drivetrain": "FWD",
-          "notes": "Global market only — not sold in the U.S."
-        },
-        {
-          "id": "st-line",
-          "name": "ST-Line",
-          "engine": "1.0L / 1.5L Turbo I3",
-          "horsepower": 150,
-          "drivetrain": "FWD",
-          "notes": "Global market only — not sold in the U.S."
-        },
-        {
-          "id": "st",
-          "name": "ST",
-          "engine": "2.3L Turbo I4",
-          "horsepower": 280,
-          "drivetrain": "FWD",
-          "notes": "Global market only — not sold in the U.S."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
+          "id": "final",
           "name": "Discontinued",
           "notes": "Focus discontinued globally for this catalog year."
         }
@@ -877,33 +783,11 @@
     }
   },
   "focus-rs": {
-    "2024": {
-      "defaultTrimId": "discontinued",
+    "2018": {
+      "defaultTrimId": "final",
       "trims": [
         {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "Last U.S. Focus RS was 2018.",
-          "engine": "2.3L Turbo I4",
-          "horsepower": 350
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "Not offered for this model year."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
+          "id": "final",
           "name": "Discontinued",
           "notes": "Not offered for this model year."
         }
@@ -911,31 +795,11 @@
     }
   },
   "fiesta-st": {
-    "2024": {
-      "defaultTrimId": "discontinued",
+    "2019": {
+      "defaultTrimId": "final",
       "trims": [
         {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "U.S. Fiesta ST ended after 2019."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "Not offered for this model year."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
+          "id": "final",
           "name": "Discontinued",
           "notes": "Not offered for this model year."
         }

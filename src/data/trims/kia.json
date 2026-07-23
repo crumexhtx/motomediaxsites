@@ -115,26 +115,6 @@
           "seatingCapacity": 5
         }
       ]
-    },
-    "2025": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "U.S. Forte ended after 2024."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "discontinued",
-      "trims": [
-        {
-          "id": "discontinued",
-          "name": "Discontinued",
-          "notes": "U.S. Forte ended after 2024."
-        }
-      ]
     }
   },
   "sportage": {
