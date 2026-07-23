@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { MakeGrid } from "@/components/MakeGrid";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { SITE } from "@/data/catalog";
 import { getAllMakes } from "@/lib/catalog";
 import { JsonLd, breadcrumbJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "All makes",
   description:
-    "Browse every car make in the motomediax catalog, A–Z. Open a marque to explore models and years.",
+    `Browse every car make in the ${SITE.name} catalog, A–Z. Open a marque to explore models and years.`,
   alternates: { canonical: "/makes" },
 };
 

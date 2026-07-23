@@ -819,7 +819,7 @@ function buildYearCopy(
       : "";
 
   const description = [
-    `The ${year} ${brand} ${displayName} continues this nameplate in the motomediax catalog.`,
+    `The ${year} ${brand} ${displayName} continues this nameplate in the MotoMediaX catalog.`,
     wikiExtract,
     safetySentence.trim(),
     dimSentence.trim(),
@@ -963,7 +963,7 @@ async function buildCatalog(): Promise<MakeEntry[]> {
       country: BRAND_COUNTRY[seed.brand] ?? "Unknown",
       blurb: (
         brandWiki?.extract ||
-        `${seed.brand} vehicles in the motomediax catalog.`
+        `${seed.brand} vehicles in the MotoMediaX catalog.`
       ).slice(0, 400),
       coverImage,
       models,

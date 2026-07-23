@@ -138,10 +138,10 @@ export type MakeEntry = {
 };
 
 export const SITE = {
-  name: "motomediax",
+  name: "MotoMediaX",
   tagline: "All makes. All models. Clearer browsing.",
   description:
-    "Browse high-quality car photos and model overviews by make, model, and year. motomediax is a fast, search-friendly catalog for enthusiasts.",
+    "Browse high-quality car photos and model overviews by make, model, and year. MotoMediaX is a fast, search-friendly catalog for enthusiasts.",
   /** Canonical site origin. Override with NEXT_PUBLIC_SITE_URL for previews/staging. */
   url: (
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.motomediax.com"

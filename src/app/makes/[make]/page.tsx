@@ -10,6 +10,7 @@ import {
   modelCardImage,
   modelHref,
 } from "@/lib/catalog";
+import { SITE } from "@/data/catalog";
 import { JsonLd, absoluteUrl, breadcrumbJsonLd } from "@/lib/seo";
 
 type Props = {
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!make) return {};
 
   const title = `${make.name} cars & photos`;
-  const description = `${make.blurb} Browse ${make.name} models and model-year galleries on motomediax.`;
+  const description = `${make.blurb} Browse ${make.name} models and model-year galleries on ${SITE.name}.`;
 
   const cover = makeCoverImage(make);
   const ogImage = cover.src.endsWith(".svg")

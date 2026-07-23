@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ModelCard, YearChips } from "@/components/ModelCard";
 import { getAllModelParams, getModel, yearHref } from "@/lib/catalog";
+import { SITE } from "@/data/catalog";
 import { JsonLd, absoluteUrl, breadcrumbJsonLd } from "@/lib/seo";
 
 type Props = {
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const { make, model } = found;
   const title = `${make.name} ${model.name} photos & years`;
-  const description = `${model.tagline} Browse ${make.name} ${model.name} model years and galleries on motomediax.`;
+  const description = `${model.tagline} Browse ${make.name} ${model.name} model years and galleries on ${SITE.name}.`;
   const newest = [...model.years].sort((a, b) => b.year - a.year)[0];
   const image = newest?.images[0];
   const ogImage = image

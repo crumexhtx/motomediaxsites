@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SearchPanel } from "@/components/SearchPanel";
+import { SITE } from "@/data/catalog";
 import { searchCatalog } from "@/lib/catalog";
 import { JsonLd, breadcrumbJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Search",
   description:
-    "Search the motomediax catalog by make, model, or year to find car photo galleries fast.",
+    `Search the ${SITE.name} catalog by make, model, or year to find car photo galleries fast.`,
   alternates: { canonical: "/search" },
 };
 
