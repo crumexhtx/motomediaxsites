@@ -2,6 +2,10 @@
 
 import { useMemo, useState, type ReactNode } from "react";
 import type { TrimSpec, VehicleSpecs, YearPerformance } from "@/data/catalog";
+import {
+  estimateOwnershipCost,
+  formatUsd,
+} from "@/lib/ownership";
 
 type Props = {
   yearLabel: string;
@@ -130,6 +134,26 @@ export function YearDetailPanel({
 
   const heroHasStats = hasAny(hp, torque, zeroSixty, mpg, range);
 
+  const preferEv =
+    /electric|ev\b|battery|phev|hybrid/i.test(
+      `${trim?.engine ?? ""} ${trim?.aspiration ?? ""} ${specs?.electrificationLevel ?? ""} ${specs?.fuelTypePrimary ?? ""}`,
+    ) &&
+    (trim?.rangeMiles != null ||
+      specs?.rangeMiles != null ||
+      trim?.batteryKwh != null ||
+      specs?.batteryKwh != null ||
+      /electric/i.test(String(specs?.fuelTypePrimary ?? "")));
+
+  const ownership = estimateOwnershipCost({
+    mpgCombined: trim?.mpgCombined ?? specs?.mpgCombined,
+    rangeMiles: trim?.rangeMiles ?? specs?.rangeMiles,
+    batteryKwh: trim?.batteryKwh ?? specs?.batteryKwh,
+    preferEv:
+      preferEv ||
+      /electric/i.test(String(specs?.fuelTypePrimary ?? "")) ||
+      /electric/i.test(String(specs?.electrificationLevel ?? "")),
+  });
+
   const mechHas = hasAny(
     trim?.engine,
     trim?.aspiration,
@@ -221,6 +245,36 @@ export function YearDetailPanel({
           <StatBadge label="EV range" value={range} />
         </div>
       </Section>
+
+      {ownership ? (
+        <section className="mb-10 max-w-2xl">
+          <h2 className="font-display text-2xl tracking-tight">
+            Estimated running cost
+          </h2>
+          <p className="mt-2 text-sm text-muted">
+            Fuel or energy only for the selected trim — a quick compare signal,
+            not a full ownership quote.
+          </p>
+          <div className="mt-4 grid grid-cols-2 gap-3">
+            <StatBadge
+              label="Per year"
+              value={formatUsd(ownership.annualUsd)}
+            />
+            <StatBadge
+              label="5-year energy"
+              value={formatUsd(ownership.fiveYearUsd)}
+            />
+          </div>
+          <dl className="mt-4">
+            <SpecRow label="Based on" value={ownership.efficiencyLabel} />
+            <SpecRow label="Assumptions" value={ownership.assumptionsLabel} />
+          </dl>
+          <p className="mt-3 text-xs text-muted">
+            Prices and annual mileage are fixed U.S. catalog assumptions and
+            will not match your local rates or driving mix.
+          </p>
+        </section>
+      ) : null}
 
       <div className="mb-10 grid gap-10 md:grid-cols-2 md:gap-x-12 md:gap-y-10">
         <Section title="Mechanical" empty={!mechHas}>
