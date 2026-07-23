@@ -10,6 +10,7 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
+    "typecheck:scripts": "tsc -p tsconfig.scripts.json --noEmit",
     "build:catalog": "tsx scripts/build-catalog.ts",
     "enrich:epa": "tsx scripts/enrich-epa.ts",
     "enrich:autodev": "tsx scripts/enrich-autodev.ts",

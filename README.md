@@ -5,9 +5,9 @@ Car photo catalog inspired by NetCarShow’s make → model → year browse mode
 ## Stack
 
 - Next.js (App Router) + TypeScript + Tailwind CSS
-- Static generation for catalog routes
-- Catalog built from Wikipedia/Wikimedia + NHTSA (top 15 U.S.-popular brands, years 2024–2026)
-- Search via `/api/search` (catalog stays server-side)
+- Static generation for catalog routes (`generateStaticParams`)
+- Catalog built from Wikipedia/Wikimedia + NHTSA (top 15 U.S.-popular brands, years 2024–2026, plus historical overrides in `model-years.json`)
+- Search via `/api/search` (catalog stays server-side); shareable `/search?q=` is SSR-hydrated
 
 ## Develop
 
@@ -48,7 +48,7 @@ pnpm validate:catalog
 pnpm audit:images
 ```
 
-`pnpm validate:catalog` checks brand coverage, year range, image hosts, and whether local `/catalog/` files exist on disk (warns by default; set `REQUIRE_LOCAL_IMAGES=1` to fail). `pnpm audit:images` probes remote image URLs (may rate-limit against Wikimedia). CI runs Gitleaks, lint, unit tests, catalog validation, and a production build on push/PR.
+`pnpm validate:catalog` checks brand coverage, allowed years (default 2024–2026 plus `model-years.json` overrides), image hosts, cover/trim local files, and whether local `/catalog/` files exist on disk (warns by default; set `REQUIRE_LOCAL_IMAGES=1` to fail). `pnpm audit:images` probes remote image URLs (may rate-limit against Wikimedia; unresolved 429s fail the run) and uses exact model-name matching after normalizing seed names. Set `FAIL_ON_WEAK_IMAGES=1` to fail on empty/weak galleries. CI runs Gitleaks, lint, unit tests, script typecheck, catalog validation, and a production build on push/PR.
 
 ## Routes
 
@@ -67,7 +67,7 @@ Overviews and photos are sourced from Wikipedia/Wikimedia Commons; vehicle specs
 ## Deploy
 
 - Deploy on Vercel (or any Node host that supports Next.js).
-- Set `NEXT_PUBLIC_SITE_URL` to the production domain (for example `https://motomediax.com`).
+- Set `NEXT_PUBLIC_SITE_URL` to the production domain (for example `https://www.motomediax.com`).
 - Preview deployments should use the preview URL so metadata does not point at production.
 - Commit `src/data/catalog.generated.json`, `src/data/videos/`, and `public/catalog/` so production has catalog data, year videos, and hero/trim photos (no live Wikimedia fetch). Auto.dev / YouTube keys are **not** required at runtime (offline enrichment only).
 - If you regenerate the catalog without photos, run `pnpm localize:images` (or `pnpm fetch:trim-images`) before deploying.

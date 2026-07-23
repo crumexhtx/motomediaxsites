@@ -2,7 +2,13 @@
 
 import { CatalogImage } from "@/components/CatalogImage";
 import Link from "next/link";
-import { useDeferredValue, useEffect, useEffectEvent, useState } from "react";
+import {
+  useDeferredValue,
+  useEffect,
+  useEffectEvent,
+  useRef,
+  useState,
+} from "react";
 import type { SearchResult } from "@/lib/catalog";
 
 function shallowReplaceSearchUrl(value: string) {
@@ -14,14 +20,23 @@ function shallowReplaceSearchUrl(value: string) {
   window.history.replaceState(window.history.state, "", next);
 }
 
-export function SearchPanel({ initialQuery = "" }: { initialQuery?: string }) {
+type Props = {
+  initialQuery?: string;
+  initialResults?: SearchResult[];
+};
+
+export function SearchPanel({
+  initialQuery = "",
+  initialResults = [],
+}: Props) {
   const [query, setQuery] = useState(initialQuery);
   const deferredQuery = useDeferredValue(query);
   const trimmed = deferredQuery.trim();
-  const [results, setResults] = useState<SearchResult[]>([]);
+  const [results, setResults] = useState<SearchResult[]>(initialResults);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [activeQuery, setActiveQuery] = useState("");
+  const [activeQuery, setActiveQuery] = useState(initialQuery.trim());
+  const skipFetchFor = useRef(initialQuery.trim());
 
   const syncUrl = useEffectEvent((value: string) => {
     shallowReplaceSearchUrl(value);
@@ -31,6 +46,12 @@ export function SearchPanel({ initialQuery = "" }: { initialQuery?: string }) {
     syncUrl(trimmed);
 
     if (!trimmed) {
+      return;
+    }
+
+    // SSR already resolved this query — avoid a redundant first fetch flash.
+    if (skipFetchFor.current && trimmed === skipFetchFor.current) {
+      skipFetchFor.current = "";
       return;
     }
 

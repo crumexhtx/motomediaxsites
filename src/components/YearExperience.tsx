@@ -2,6 +2,7 @@
 
 import { useMemo, useState, type ReactNode } from "react";
 import { CatalogImage } from "@/components/CatalogImage";
+import { Gallery } from "@/components/Gallery";
 import { YearDetailPanel } from "@/components/YearDetailPanel";
 import { YearVideoEmbed } from "@/components/YearVideoEmbed";
 import type {
@@ -10,6 +11,10 @@ import type {
   YearPerformance,
   YearVideo,
 } from "@/data/catalog";
+import {
+  isTrustedHeroPhoto,
+  photoConfidenceLabel,
+} from "@/lib/imageConfidence";
 
 type Props = {
   title: string;
@@ -53,7 +58,28 @@ export function YearExperience({
     [trims, trimId],
   );
 
-  const hero = baseImages[0];
+  const trimHero = useMemo((): GalleryImage | null => {
+    if (!trim?.image || !isTrustedHeroPhoto(trim.imageConfidence)) return null;
+    return {
+      src: trim.image,
+      alt: `${title} ${trim.name}`,
+      width: baseImages[0]?.width ?? 1600,
+      height: baseImages[0]?.height ?? 1000,
+    };
+  }, [trim, title, baseImages]);
+
+  const hero = trimHero ?? baseImages[0];
+
+  const galleryImages = useMemo(() => {
+    if (!trimHero) return baseImages;
+    if (baseImages.some((img) => img.src === trimHero.src)) return baseImages;
+    return [trimHero, ...baseImages];
+  }, [baseImages, trimHero]);
+
+  const confidenceNote =
+    trim?.image && trim.imageConfidence
+      ? photoConfidenceLabel(trim.imageConfidence)
+      : null;
 
   return (
     <article>
@@ -83,6 +109,9 @@ export function YearExperience({
           {trim ? (
             <p className="mt-2 text-sm text-white/65">Trim: {trim.name}</p>
           ) : null}
+          {confidenceNote ? (
+            <p className="mt-1 text-xs text-white/55">{confidenceNote}</p>
+          ) : null}
         </div>
       </div>
 
@@ -95,6 +124,15 @@ export function YearExperience({
         </section>
 
         {overview}
+
+        {galleryImages.length > 0 ? (
+          <section className="mb-12">
+            <h2 className="mb-4 font-display text-2xl tracking-tight">
+              Photos
+            </h2>
+            <Gallery images={galleryImages} />
+          </section>
+        ) : null}
 
         {video ? <YearVideoEmbed video={video} /> : null}
 

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { YearVideo } from "@/data/catalog";
 import {
+  parseYoutubeId,
   youtubeEmbedUrl,
   youtubeThumbUrl,
   youtubeWatchUrl,
@@ -12,10 +13,25 @@ type Props = {
   video: YearVideo;
 };
 
+function safeOwnerUrl(url: string | undefined): string | undefined {
+  if (!url) return undefined;
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol !== "https:") return undefined;
+    return parsed.toString();
+  } catch {
+    return undefined;
+  }
+}
+
 export function YearVideoEmbed({ video }: Props) {
   const [playing, setPlaying] = useState(false);
-  const watchUrl = youtubeWatchUrl(video.youtubeId);
-  const thumb = youtubeThumbUrl(video.youtubeId);
+  const youtubeId = parseYoutubeId(video.youtubeId);
+  if (!youtubeId) return null;
+
+  const watchUrl = youtubeWatchUrl(youtubeId);
+  const thumb = youtubeThumbUrl(youtubeId);
+  const ownerUrl = safeOwnerUrl(video.ownerUrl);
 
   return (
     <section className="mb-12">
@@ -29,7 +45,7 @@ export function YearVideoEmbed({ video }: Props) {
           {playing ? (
             <iframe
               title={video.title}
-              src={`${youtubeEmbedUrl(video.youtubeId)}?autoplay=1&rel=0`}
+              src={`${youtubeEmbedUrl(youtubeId)}?autoplay=1&rel=0`}
               className="absolute inset-0 h-full w-full"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
@@ -66,9 +82,9 @@ export function YearVideoEmbed({ video }: Props) {
           <p className="font-medium text-foreground">{video.title}</p>
           <p className="text-muted">
             Video by{" "}
-            {video.ownerUrl ? (
+            {ownerUrl ? (
               <a
-                href={video.ownerUrl}
+                href={ownerUrl}
                 className="text-foreground underline-offset-2 hover:underline"
                 rel="noreferrer"
                 target="_blank"

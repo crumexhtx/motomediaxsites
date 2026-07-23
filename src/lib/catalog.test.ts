@@ -50,9 +50,7 @@ describe("catalog lookups", () => {
     expect(years.length).toBeGreaterThanOrEqual(models.length);
     expect(makes.every((p) => typeof p.make === "string")).toBe(true);
     expect(years.every((p) => p.make && p.model && p.year)).toBe(true);
-    expect(years.every((p) => ["2024", "2025", "2026"].includes(p.year))).toBe(
-      true,
-    );
+    expect(years.every((p) => /^\d{4}$/.test(p.year))).toBe(true);
   });
 
   it("builds href helpers", () => {

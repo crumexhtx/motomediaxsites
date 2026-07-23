@@ -3,40 +3,47 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
-import type { MakeEntry } from "../src/data/catalog";
-import brands from "../src/data/brands.json";
+import {
+  ROOT,
+  catalogStats,
+  loadBrands,
+  loadCatalog,
+  localPublicAssetIssue,
+  normalizeModelKey,
+} from "./lib/catalog-report";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const USER_AGENT = "motomediax/0.1 (image audit)";
-const catalog = JSON.parse(
-  fs.readFileSync(
-    path.join(__dirname, "../src/data/catalog.generated.json"),
-    "utf8",
-  ),
-) as MakeEntry[];
+const FETCH_TIMEOUT_MS = 15_000;
+const failOnWeak = process.env.FAIL_ON_WEAK_IMAGES === "1";
 
-function cleanModelName(model: string): string {
-  return model
-    .replace(/\s*\([^)]*\)\s*/g, " ")
-    .replace(/\s*\/\s*/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+const catalog = loadCatalog();
+const brands = loadBrands();
 
 async function checkUrl(
   url: string,
   attempt = 0,
-): Promise<{ ok: boolean; status: number | string; rateLimited?: boolean }> {
+): Promise<{
+  ok: boolean;
+  status: number | string;
+  rateLimited?: boolean;
+  contentType?: string;
+}> {
   try {
     const res = await fetch(url, {
       method: "GET",
       redirect: "follow",
+      signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
       headers: {
         "User-Agent": USER_AGENT,
         Range: "bytes=0-1023",
       },
     });
+    // Drain/cancel body so sockets are released promptly.
+    try {
+      await res.body?.cancel();
+    } catch {
+      /* ignore */
+    }
     if (res.status === 429 && attempt < 3) {
       await new Promise((r) => setTimeout(r, 1500 * (attempt + 1)));
       return checkUrl(url, attempt + 1);
@@ -44,8 +51,17 @@ async function checkUrl(
     if (res.status === 429) {
       return { ok: false, status: 429, rateLimited: true };
     }
-    // 206 Partial Content is success for Range requests
-    return { ok: res.ok || res.status === 206, status: res.status };
+    const contentType = res.headers.get("content-type") ?? undefined;
+    const statusOk = res.ok || res.status === 206;
+    const typeOk =
+      !contentType ||
+      contentType.startsWith("image/") ||
+      contentType.startsWith("application/octet-stream");
+    return {
+      ok: statusOk && typeOk,
+      status: statusOk && !typeOk ? `non-image:${contentType}` : res.status,
+      contentType,
+    };
   } catch (e) {
     return { ok: false, status: String(e) };
   }
@@ -67,6 +83,7 @@ async function main() {
   const uniqueUrls = new Map<string, string[]>();
   const weak: string[] = [];
   const missingModels: string[] = [];
+  const missingLocal: string[] = [];
 
   for (const seed of brands) {
     const make = catalog.find((m) => m.name === seed.brand);
@@ -74,16 +91,14 @@ async function main() {
       missingModels.push(`${seed.brand}: (entire make missing)`);
       continue;
     }
-    const have = new Set(make.models.map((m) => m.name.toLowerCase()));
+    const have = new Set(
+      make.models.map((m) => normalizeModelKey(m.name)),
+    );
     for (const model of seed.models) {
-      const cleaned = cleanModelName(model).toLowerCase();
-      const hit = [...have].some(
-        (h) =>
-          h === cleaned ||
-          cleaned.includes(h) ||
-          h.includes(cleaned.replace(/\s+/g, " ")),
-      );
-      if (!hit) missingModels.push(`${seed.brand}: ${model}`);
+      const cleaned = normalizeModelKey(model);
+      if (!have.has(cleaned)) {
+        missingModels.push(`${seed.brand}: ${model}`);
+      }
     }
   }
 
@@ -93,8 +108,14 @@ async function main() {
       const refs = uniqueUrls.get(cover) ?? [];
       refs.push(`${make.name} cover`);
       uniqueUrls.set(cover, refs);
-      if (isWeakImage(cover, make.coverImage.alt) && !cover.startsWith("/brands/")) {
+      if (
+        isWeakImage(cover, make.coverImage.alt) &&
+        !cover.startsWith("/brands/")
+      ) {
         weak.push(`${make.name} cover: ${cover.slice(0, 100)}`);
+      }
+      if (cover.startsWith("/") && localPublicAssetIssue(cover)) {
+        missingLocal.push(cover);
       }
     }
     for (const model of make.models) {
@@ -110,6 +131,9 @@ async function main() {
             weak.push(
               `${make.name} ${model.name} ${year.year}: weak image ${img.src.slice(0, 90)}`,
             );
+          }
+          if (img.src.startsWith("/") && localPublicAssetIssue(img.src)) {
+            missingLocal.push(img.src);
           }
         }
       }
@@ -148,28 +172,39 @@ async function main() {
   await Promise.all(Array.from({ length: concurrency }, () => worker()));
   console.log("");
 
+  const stats = catalogStats(catalog);
   const report = {
-    makes: catalog.length,
-    models: catalog.reduce((n, m) => n + m.models.length, 0),
+    ...stats,
     uniqueRemoteImages: urls.length,
     brokenCount: broken.length,
     rateLimitedCount: rateLimited.length,
     weakCount: weak.length,
+    missingLocalCount: missingLocal.length,
     missingModels,
     broken: broken.slice(0, 100),
+    rateLimited: rateLimited.slice(0, 100),
     weak: weak.slice(0, 100),
+    missingLocal: [...new Set(missingLocal)].slice(0, 100),
   };
 
-  const out = path.join(__dirname, "..", "catalog-image-audit.json");
+  const out = path.join(ROOT, "catalog-image-audit.json");
   fs.writeFileSync(out, `${JSON.stringify(report, null, 2)}\n`);
   console.log(
-    `Broken: ${broken.length}, rate-limited: ${rateLimited.length}, weak: ${weak.length}, missing models: ${missingModels.length}`,
+    `Broken: ${broken.length}, rate-limited: ${rateLimited.length}, weak: ${weak.length}, missing models: ${missingModels.length}, missing local: ${missingLocal.length}`,
   );
   console.log(`Wrote ${out}`);
-  if (broken.length > 0 || missingModels.length > 0) process.exitCode = 1;
+
+  const shouldFail =
+    broken.length > 0 ||
+    missingModels.length > 0 ||
+    rateLimited.length > 0 ||
+    missingLocal.length > 0 ||
+    (failOnWeak && weak.length > 0);
+
+  if (shouldFail) process.exitCode = 1;
 }
 
 main().catch((e) => {
   console.error(e);
-  process.exit(1);
+  process.exitCode = 1;
 });
