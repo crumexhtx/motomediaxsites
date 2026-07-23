@@ -13,7 +13,7 @@ export default function NotFound() {
       </p>
       <Link
         href="/makes"
-        className="focus-ring mt-8 inline-flex rounded-md bg-accent px-5 py-3 text-sm font-semibold text-[#071018]"
+        className="focus-ring mt-8 inline-flex rounded-md bg-accent px-5 py-3 text-sm font-semibold text-[#071018] transition hover:brightness-110"
       >
         Browse makes
       </Link>

@@ -374,16 +374,17 @@ export function YearDetailPanel({
       {trims.length > 0 ? (
         <section className="mb-10">
           <h2 className="font-display text-2xl tracking-tight">Trim index</h2>
-          <div className="mt-4 overflow-x-auto">
-            <table className="w-full min-w-[36rem] border-collapse text-left text-sm">
-              <thead>
-                <tr className="border-b border-line text-xs uppercase tracking-[0.12em] text-muted">
-                  <th className="py-2 pr-4 font-medium">Trim</th>
-                  <th className="py-2 pr-4 font-medium">HP</th>
-                  <th className="py-2 pr-4 font-medium">Torque</th>
-                  <th className="py-2 pr-4 font-medium">0–60</th>
-                  <th className="py-2 pr-4 font-medium">MPG</th>
-                  <th className="py-2 font-medium">Drivetrain</th>
+          <div className="relative mt-4 overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[36rem] border-collapse text-left text-sm">
+                <thead>
+                  <tr className="border-b border-line text-xs uppercase tracking-[0.12em] text-muted">
+                    <th className="py-2 pr-4 font-medium">Trim</th>
+                    <th className="py-2 pr-4 font-medium">HP</th>
+                    <th className="py-2 pr-4 font-medium">Torque</th>
+                    <th className="py-2 pr-4 font-medium">0–60</th>
+                    <th className="py-2 pr-4 font-medium">MPG</th>
+                    <th className="py-2 font-medium">Drivetrain</th>
                 </tr>
               </thead>
               <tbody>
@@ -428,6 +429,11 @@ export function YearDetailPanel({
                 })}
               </tbody>
             </table>
+            </div>
+            <div
+              className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-[var(--bg)] to-transparent md:hidden"
+              aria-hidden="true"
+            />
           </div>
         </section>
       ) : null}

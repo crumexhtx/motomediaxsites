@@ -44,7 +44,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/search"
-              className="focus-ring inline-flex items-center rounded-md border border-white/30 bg-white/5 px-5 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/10"
+              className="focus-ring inline-flex items-center rounded-md border border-white/25 bg-black/40 px-5 py-3 text-sm font-medium text-white transition hover:bg-black/55"
             >
               Search catalog
             </Link>
@@ -52,7 +52,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden pb-20 pt-6 md:pt-10">
+      <section className="relative overflow-hidden pb-16 pt-6 md:pb-20 md:pt-10">
         <div className="container-wide">
           <div className="mb-8 max-w-2xl">
             <h2 className="font-display text-3xl tracking-tight md:text-4xl">
@@ -73,22 +73,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden border-t border-line/60">
-        <div className="container-wide py-20">
-          <h2 className="font-display text-3xl tracking-tight md:text-4xl">
-            Latest model years
-          </h2>
-          <p className="mt-2 max-w-xl text-muted">
-            Recent entries from the catalog—each with its own SEO page. Photos
-            and copy come from Wikipedia/Wikimedia; specs from NHTSA when
-            available.
-          </p>
-          <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <section className="relative overflow-hidden pb-20 pt-4 md:pt-8">
+        <div className="container-wide">
+          <div className="mb-8 max-w-2xl">
+            <h2 className="font-display text-3xl tracking-tight md:text-4xl">
+              Latest model years
+            </h2>
+            <p className="mt-2 text-muted">
+              Recent entries from the catalog—each with its own SEO page. Photos
+              and copy come from Wikipedia/Wikimedia; specs from NHTSA when
+              available.
+            </p>
+            <Link
+              href="/search"
+              className="focus-ring mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition hover:gap-2.5"
+            >
+              Search the catalog
+              <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+          <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {latest.map((entry) => (
               <li key={entry.href}>
                 <Link
                   href={entry.href}
-                  className="focus-ring group block overflow-hidden rounded-xl border border-line bg-elevated/60 transition hover:border-accent/40"
+                  className="focus-ring group block overflow-hidden rounded-xl border border-line bg-elevated transition hover:border-accent/40"
                 >
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <CatalogImage
