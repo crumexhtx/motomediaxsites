@@ -86,6 +86,114 @@
       "owner": "Raiti's Rides",
       "ownerUrl": "https://www.youtube.com/channel/UCILN_EvJ2ocZ5MW7168oQLg",
       "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "OnfNgKgtexQ",
+      "title": "2025 Kia Sportage -- What's NEW for 2025?? (MORE Style & Value!)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2026": {
+      "youtubeId": "SjjrmmiYwZU",
+      "title": "2026 Kia Sportage -- 7 Days Later... Are We Still Impressed??",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    }
+  },
+  "telluride": {
+    "2024": {
+      "youtubeId": "UrEz1D4zeOg",
+      "title": "AMBERS ARE BACK! -- The 2024 Kia Telluride is a Great SUV only Getting BETTER! (2024 Updates)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2025": {
+      "youtubeId": "zcDMuqdeuDg",
+      "title": "2025 Kia Telluride -- Living With the Family Favorite! (Buy NOW or WAIT??)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2026": {
+      "youtubeId": "s31X_M5-LO8",
+      "title": "2026 Kia Telluride Review: Problems, Reliability & Hidden Issues",
+      "owner": "CAR INSIDER",
+      "ownerUrl": "https://www.youtube.com/channel/UCZQg07UmacewAjvDz7huAyQ",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "ev6": {
+    "2024": {
+      "youtubeId": "Xaq83K6YvrM",
+      "title": "It's Very Good, Except For One Thing – 2024 Kia EV6 Full Review!",
+      "owner": "Hello Road",
+      "ownerUrl": "https://www.youtube.com/channel/UCASdNl0eESlmjmCVJ2U0D7A",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "rderUaqNjas",
+      "title": "2025 Kia EV6 -- Did MAJOR CHANGES Make This a GREAT Choice Over a Sportage??",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2026": {
+      "youtubeId": "Bp3R4mflTAo",
+      "title": "2026 Kia EV6 Review - Better Than IONIQ 5 and Model Y? FIRST LOOK",
+      "owner": "AUTO TV",
+      "ownerUrl": "https://www.youtube.com/channel/UC7ST0-8WveYQYTLbUQX0eSw",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "ev9": {
+    "2024": {
+      "youtubeId": "Odb-Abp9qmQ",
+      "title": "2024 Kia EV9 Quick Review",
+      "owner": "Extra Throttle House",
+      "ownerUrl": "https://www.youtube.com/channel/UCfzWwxboCLyLw7KVfQj84eA"
+    },
+    "2025": {
+      "youtubeId": "PWigi5V-5mY",
+      "title": "Owning the Kia EV9: Still the Best Electric SUV? | One-Year Road Test and Review",
+      "owner": "Edmunds Cars",
+      "ownerUrl": "https://www.youtube.com/channel/UCF8e8zKZ_yk7cL9DvvWGSEw",
+      "note": "YouTube title may not include 2025."
+    },
+    "2026": {
+      "youtubeId": "PWigi5V-5mY",
+      "title": "Owning the Kia EV9: Still the Best Electric SUV? | One-Year Road Test and Review",
+      "owner": "Edmunds Cars",
+      "ownerUrl": "https://www.youtube.com/channel/UCF8e8zKZ_yk7cL9DvvWGSEw",
+      "note": "YouTube title may not include 2026."
+    }
+  },
+  "forte": {
+    "2024": {
+      "youtubeId": "Hgw2fguADTw",
+      "title": "2024 Kia Forte LXS - 6 Minute Review",
+      "owner": "Executive Auto",
+      "ownerUrl": "https://www.youtube.com/channel/UCfYn0qjBjfI9GMvLW4cJXMA",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "zuXvltzq-o8",
+      "title": "2025 Kia Forte Review: The Compact Sedan Just Got Smarter",
+      "owner": "Drive Guide",
+      "ownerUrl": "https://www.youtube.com/channel/UCp2MYMcHUc8p44zqVNkn0bg",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "CmoDlUPZt6o",
+      "title": "2026 Kia Forte Review | Interior, Performance & Price and other features ",
+      "owner": "AutoVibes ",
+      "ownerUrl": "https://www.youtube.com/channel/UCL2Q0YQuvheEzb7aHhkoa4A",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "rio": {
+    "2023": {
+      "youtubeId": "liW3sTj2tgs",
+      "title": "The Least Expensive Car In America With An Automatic Transmission Is The 2023 Kia Rio | Review",
+      "owner": "Auto Buyers Guide | Alex on Autos",
+      "ownerUrl": "https://www.youtube.com/channel/UC3qM33hHgedfi7qTKKgIApg"
     }
   }
 }

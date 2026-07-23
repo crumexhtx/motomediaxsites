@@ -1,1 +1,24 @@
-{}
+{
+  "jetta": {
+    "2024": {
+      "youtubeId": "6-J8u1MQGVs",
+      "title": "How Is This STILL Possible? // 2024 VW Jetta Review",
+      "owner": "Sarah -n- Tuned",
+      "ownerUrl": "https://www.youtube.com/channel/UCHSbIfwVuec_BwUrYAqN_qw",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "AjN_88PKP60",
+      "title": "2025 Volkswagen Jetta SE -- A Mini-Audi for the Price of a Civic Sport?? ($25,000)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2026": {
+      "youtubeId": "HbeNJCpWkrk",
+      "title": "2026 Volkswagen Jetta Review | NICE Updates for 2026!",
+      "owner": "Gold Pony",
+      "ownerUrl": "https://www.youtube.com/channel/UCbnmrTBdvGD3G20S0yOcVTg",
+      "note": "Channel is outside the preferred review list."
+    }
+  }
+}

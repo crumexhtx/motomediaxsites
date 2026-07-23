@@ -5,6 +5,130 @@
       "title": "2024 Jeep Wrangler Review | Competition Is Making Everything Better",
       "owner": "Auto Buyers Guide | Alex on Autos",
       "ownerUrl": "https://www.youtube.com/channel/UC3qM33hHgedfi7qTKKgIApg"
+    },
+    "2025": {
+      "youtubeId": "5dgAUXwUk4k",
+      "title": "2025 Jeep Wrangler Vs 2025 Ford Bronco | What's The Difference?",
+      "owner": "Kelley Blue Book",
+      "ownerUrl": "https://www.youtube.com/channel/UCj9yUGuMVVdm2DqyvJPUeUQ"
+    },
+    "2026": {
+      "youtubeId": "hbLRUft3vyg",
+      "title": "The Honest Truth: Is Living With a 2026 Jeep Wrangler Cool or Crap?",
+      "owner": "The Fast Lane Car",
+      "ownerUrl": "https://www.youtube.com/channel/UC6S0jAvcapqJ48ZzLfva12g",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "grand-cherokee": {
+    "2024": {
+      "youtubeId": "JqoL2LIwDek",
+      "title": "We Put 20,000 Miles on our Jeep Grand Cherokee 4xe and It Was Problematic | Long-Term Test Wrap-Up",
+      "owner": "Edmunds Cars",
+      "ownerUrl": "https://www.youtube.com/channel/UCF8e8zKZ_yk7cL9DvvWGSEw",
+      "note": "YouTube title may not include 2024."
+    },
+    "2025": {
+      "youtubeId": "yf0Tn90NFiw",
+      "title": "The 2025 Jeep Grand Cherokee Summit Reserve Is An Ultra Luxurious & Capable SUV",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2026": {
+      "youtubeId": "LsiL2zmjDu8",
+      "title": "2026 Jeep Grand Cherokee Review",
+      "owner": "TheStraightPipes",
+      "ownerUrl": "https://www.youtube.com/channel/UC86SBFIAgnYL3ll2ZDgmsuA",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "cherokee": {
+    "2024": {
+      "youtubeId": "KTPePY3gBr4",
+      "title": "2024 Jeep Grand Cherokee Limited | Driving Review",
+      "owner": "Walser Chrysler Jeep Dodge Ram",
+      "ownerUrl": "https://www.youtube.com/channel/UCYicyphP2iVhUloweLRyxFQ",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "8aeFK7wY_-M",
+      "title": "2025 Jeep Grand Cherokee L -- HUGE Price *DROP* for This Rugged & Luxurious 3-Row!",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2026": {
+      "youtubeId": "OgeaKBY1fyU",
+      "title": "Popular Jeep Returns! | 2026 Jeep Cherokee Hybrid Laredo | Detailed Review",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    }
+  },
+  "compass": {
+    "2024": {
+      "youtubeId": "dh47ZdKZtnw",
+      "title": "2024 Jeep Compass | Learning the Hard Way",
+      "owner": "savagegeese",
+      "ownerUrl": "https://www.youtube.com/channel/UCgUvk6jVaf-1uKOqG8XNcaQ"
+    },
+    "2025": {
+      "youtubeId": "7kEZ3P7gCaY",
+      "title": "2025 Jeep Compass Review | Consumer Reports",
+      "owner": "Consumer Reports",
+      "ownerUrl": "https://www.youtube.com/channel/UCOClvgLYa7g75eIaTdwj_vg",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "chPJkQ4diIk",
+      "title": "2026 Jeep Compass Review | STARTING AT ONLY $29K!!!",
+      "owner": "Gold Pony",
+      "ownerUrl": "https://www.youtube.com/channel/UCbnmrTBdvGD3G20S0yOcVTg",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "renegade": {
+    "2024": {
+      "youtubeId": "vQSVjAMQOx8",
+      "title": "Here's Why You SHOULDN'T Underestimate the Jeep Renegade!",
+      "owner": "TFLoffroad",
+      "ownerUrl": "https://www.youtube.com/channel/UCDYoRaOBygvmVdRqne0XG2A",
+      "note": "YouTube title may not include 2024. Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "tmL_pQwfJ6o",
+      "title": "“2025 Jeep Renegade Review – The Mini Beast That Conquers Every Road!”🚘",
+      "owner": "Ride review Hub\n",
+      "ownerUrl": "https://www.youtube.com/channel/UCdAEeI6gtmLsQ3_9A7Tf89g",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "2K7UFaIQJyU",
+      "title": "2026 Jeep Renegade – The Compact SUV That’s Shocking Everyone!",
+      "owner": "CAR UPCOMING",
+      "ownerUrl": "https://www.youtube.com/channel/UCadM_N7nOOuGAQb35SADIGg",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "gladiator": {
+    "2024": {
+      "youtubeId": "-fFK79QcPRs",
+      "title": "Better Truck than the NEW Tacoma? 2024 Jeep Gladiator Review",
+      "owner": "Kirk Kreifels",
+      "ownerUrl": "https://www.youtube.com/channel/UCXPVB7s1TJTE0WjDpakGp5Q",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "6Fj2g6IQoWM",
+      "title": "2025 Jeep Gladiator vs EVERYONE: Does It Still Matter?",
+      "owner": "Everyman Driver",
+      "ownerUrl": "https://www.youtube.com/channel/UCHO7vbSlz7x8qIAkZWoyVow",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "XkyLTy8y7J0",
+      "title": "YOU can AFFORD THIS! //2026 Jeep Gladiator Sport//",
+      "owner": "Ben Hardy",
+      "ownerUrl": "https://www.youtube.com/channel/UCwcNqaaXmu9rAtNSbLVl4Bg",
+      "note": "Channel is outside the preferred review list."
     }
   }
 }

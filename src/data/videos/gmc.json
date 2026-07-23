@@ -1,1 +1,130 @@
-{}
+{
+  "sierra": {
+    "2024": {
+      "youtubeId": "eM6GCucip8s",
+      "title": "2024 GMC Sierra 1500 Duramax: The Good, The Bad, and The Ugly After 18,000 Miles!",
+      "owner": "Nikki Covack",
+      "ownerUrl": "https://www.youtube.com/channel/UCyd1HZj2ibjxUfMEQE0jEhQ",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "3meY2G-AFV4",
+      "title": "2025 GMC Sierra 1500 SLT - Is it WORTH Every Penny?",
+      "owner": "Vehicle Visionary",
+      "ownerUrl": "https://www.youtube.com/channel/UCnBzbSeVutBdr7IHfVdD0eA",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "5XvJnGWoE2c",
+      "title": "2026 GMC Sierra 1500 Denali Ultimate -- Still a GREAT Luxury Truck for 2026??",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    }
+  },
+  "yukon": {
+    "2024": {
+      "youtubeId": "cnuGm4xawPU",
+      "title": "2024 GMC Yukon Denali -- Buy NOW or WAIT for the 2025 Refresh?? ($93k Luxury!)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2025": {
+      "youtubeId": "AfaOYP9JpFk",
+      "title": "2025 GMC Yukon -- HUGE Improvements to This HUGE Luxury SUV for 2025!",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2026": {
+      "youtubeId": "o14WluxiQn8",
+      "title": "Do You Really Need An Escalade? | 2026 GMC Yukon Denali Ultimate | Detailed Review",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    }
+  },
+  "acadia": {
+    "2024": {
+      "youtubeId": "Pdpqiukt7aI",
+      "title": "The 2024 GMC Acadia Denali Is A Substantially Upgraded Yukon-Like Family SUV",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2025": {
+      "youtubeId": "xqYykS1_X4A",
+      "title": "2025 GMC Acadia vs Chevy Traverse and Buick Enclave: And The One To Get Is...",
+      "owner": "TFLnow",
+      "ownerUrl": "https://www.youtube.com/channel/UCnRXwIiUyy1Jk3eviwPTdNg",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "G3-VMWYYJYk",
+      "title": "2026 GMC Acadia -- Living With One of the Most Luxurious Family Picks!",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    }
+  },
+  "terrain": {
+    "2024": {
+      "youtubeId": "sxxcqgOa1BA",
+      "title": "10 Things You Need To Know Before Buying The 2024 GMC Terrain",
+      "owner": "Car Junkies",
+      "ownerUrl": "https://www.youtube.com/channel/UCaJN65chGQhuueNcAMmSLDQ",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "pUq1-zCUBvM",
+      "title": "2025 GMC Terrain Elevation -- You Won't BELIEVE All You Get For $30,000! (All-New)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2026": {
+      "youtubeId": "80ZeXs7mbgU",
+      "title": "The 2026 GMC Terrain Denali Brings Professional Grade Luxury To A Smaller SUV Package",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    }
+  },
+  "canyon": {
+    "2024": {
+      "youtubeId": "rDeD0wjwSnA",
+      "title": "2024 GMC Canyon Review",
+      "owner": "CarGurus",
+      "ownerUrl": "https://www.youtube.com/channel/UC90ZigN9H_k5hEbZ3r6cuHQ",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "5ITr5OKSW_U",
+      "title": "The 2025 GMC Canyon Elevation is the MOST affordable midsize 4x4 truck",
+      "owner": "Raiti's Rides",
+      "ownerUrl": "https://www.youtube.com/channel/UCILN_EvJ2ocZ5MW7168oQLg",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "SBNTQFk4z64",
+      "title": "2026 GMC Canyon | Honest Review and 0-60",
+      "owner": "Automotive Anonymous ",
+      "ownerUrl": "https://www.youtube.com/channel/UCuVEI1w_knSPxQFGEITtgkQ",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "hummer-ev": {
+    "2024": {
+      "youtubeId": "-JE5dE2ohKA",
+      "title": "2024 GMC Hummer EV SUV Review: A $110,000 Beast that Nobody Will Buy",
+      "owner": "Doug DeMuro",
+      "ownerUrl": "https://www.youtube.com/channel/UCsqjHFMB_JYTaEnf_vmTNqg",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "aV6bWuBFXYU",
+      "title": "The 2025 GMC Hummer EV SUV 3X Is An Electric Modern Reincarnation Of The Hummer H2",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2026": {
+      "youtubeId": "KlBuDhj5138",
+      "title": "2026 GMC Hummer EV SUV -- An SUV Like NOTHING Else on the Road! (+ Big Changes for 2026!)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    }
+  }
+}

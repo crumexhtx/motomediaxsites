@@ -6,6 +6,28 @@
       "owner": "Autotrader",
       "ownerUrl": "https://www.youtube.com/channel/UC5XoIXdf_zeLvaBG3jErFkw",
       "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "I6WcpSv3Qs8",
+      "title": "New 2025 Mercedes Benz C-Class Review | The Gentleman's Choice",
+      "owner": "Buckle Up",
+      "ownerUrl": "https://www.youtube.com/channel/UCQnCvi6zRZolQsxlIf6ePtQ",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "lpAMjTmusjs",
+      "title": "Mercedes C-Class FIRST LOOK: Everything You Need to Know",
+      "owner": "Autotrader",
+      "ownerUrl": "https://www.youtube.com/channel/UC7Dh_sbcNd4BCXQkAqPM1AQ",
+      "note": "YouTube title may not include 2026. Channel is outside the preferred review list."
+    }
+  },
+  "e-class": {
+    "2024": {
+      "youtubeId": "AbKPoYFbmxo",
+      "title": "2024 Mercedes E-Class | The Tech is Holding it Back",
+      "owner": "savagegeese",
+      "ownerUrl": "https://www.youtube.com/channel/UCgUvk6jVaf-1uKOqG8XNcaQ"
     }
   }
 }

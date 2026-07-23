@@ -1,1 +1,189 @@
-{}
+{
+  "3-series": {
+    "2024": {
+      "youtubeId": "dkK-_dnkjgU",
+      "title": "2023 BMW 3 Series | Last of Traditional BMWs",
+      "owner": "savagegeese",
+      "ownerUrl": "https://www.youtube.com/channel/UCgUvk6jVaf-1uKOqG8XNcaQ",
+      "note": "YouTube title may not include 2024."
+    },
+    "2025": {
+      "youtubeId": "7KShnFLZaW4",
+      "title": "2025 BMW 3 Series Review & Test Drive",
+      "owner": "UsedCarsTV",
+      "ownerUrl": "https://www.youtube.com/channel/UCjXhevg8Suyzl7GQrZAvzuA",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "OCTuk4cQUY4",
+      "title": "2026 BMW 330i Review | The FINAL 7th Gen 3-Series!",
+      "owner": "Gold Pony",
+      "ownerUrl": "https://www.youtube.com/channel/UCbnmrTBdvGD3G20S0yOcVTg",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "5-series": {
+    "2024": {
+      "youtubeId": "m2LuECb5DRM",
+      "title": "2024 BMW 5 Series Review // Not What We Expected",
+      "owner": "Throttle House",
+      "ownerUrl": "https://www.youtube.com/channel/UCyXiDU5qjfOPxgOPeFWGwKw"
+    },
+    "2025": {
+      "youtubeId": "QEghwHrlEGE",
+      "title": "2025 BMW 5 Series First Drive: Stunning Features, Specs & Performance!",
+      "owner": "UsedCarsTV",
+      "ownerUrl": "https://www.youtube.com/channel/UCjXhevg8Suyzl7GQrZAvzuA",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "5jY5OQq0Gqk",
+      "title": "FANCY LIGHTS! -- The 2027 BMW 5-Series Lights up the Night! (Headlights, Exterior & Interior)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA",
+      "note": "YouTube title may not include 2026."
+    }
+  },
+  "7-series": {
+    "2024": {
+      "youtubeId": "Wm_q-PJ2v1k",
+      "title": "BMW 7 Series | Making Sense of Excess",
+      "owner": "savagegeese",
+      "ownerUrl": "https://www.youtube.com/channel/UCgUvk6jVaf-1uKOqG8XNcaQ",
+      "note": "YouTube title may not include 2024."
+    },
+    "2025": {
+      "youtubeId": "t6zjJjgbzqs",
+      "title": "2025 BMW 7 Series.. Better Than The S Class?",
+      "owner": "Discerning Cars",
+      "ownerUrl": "https://www.youtube.com/channel/UCqS8O47UKhrbbAggmr5GdXw",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "PrxvcFqq0V4",
+      "title": "2026 BMW 7 Series Review – Is This the Ultimate Luxury Sedan in America?",
+      "owner": "Car Observations",
+      "ownerUrl": "https://www.youtube.com/channel/UCqP4HSKqDUvJQ2N7yM-vReA",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "m2": {
+    "2024": {
+      "youtubeId": "Kiy1XtbSsWY",
+      "title": "2024 BMW M2 Owners Review After 2 Years and 15k miles! | Pros & Cons..",
+      "owner": "JVette01",
+      "ownerUrl": "https://www.youtube.com/channel/UCo5gsdOSQawWYfAhompworA",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "y3kO7mis7Fk",
+      "title": "2025 BMW M2 | Hope They Keep this Car Alive",
+      "owner": "savagegeese",
+      "ownerUrl": "https://www.youtube.com/channel/UCgUvk6jVaf-1uKOqG8XNcaQ"
+    },
+    "2026": {
+      "youtubeId": "xHNTcUjEfak",
+      "title": "2026 BMW M2: Start Up, Exhaust, Test Drive, Walkaround, POV and Review",
+      "owner": "Bros FOURR Speed",
+      "ownerUrl": "https://www.youtube.com/channel/UCVx5ZqHmGq1PZE_4GUxIe8w",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "m3": {
+    "2024": {
+      "youtubeId": "GWkVmCe85gE",
+      "title": "2024 BMW M3 Competition: Start Up, Exhaust, Test Drive, Walkaround, POV and Review",
+      "owner": "Bros FOURR Speed",
+      "ownerUrl": "https://www.youtube.com/channel/UCVx5ZqHmGq1PZE_4GUxIe8w",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "LaiExa5rpBQ",
+      "title": "I Lived With a 2025 BMW M3 For a Week - My Honest Thoughts",
+      "owner": "ThatDudeinBlue",
+      "ownerUrl": "https://www.youtube.com/channel/UCvLaRcvwQq4RCX-ER_zEG5w",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "VqPtp47Shos",
+      "title": "2026 BMW M3 Competition xDrive: Start Up, Exhaust, Test Drive, Walkaround, POV and Review",
+      "owner": "Bros FOURR Speed",
+      "ownerUrl": "https://www.youtube.com/channel/UCVx5ZqHmGq1PZE_4GUxIe8w",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "m4": {
+    "2024": {
+      "youtubeId": "k8g0ho7y3Mc",
+      "title": "2024 BMW M4 Competition: Start Up, Exhaust, Test Drive, Walkaround, POV and Review",
+      "owner": "Bros FOURR Speed",
+      "ownerUrl": "https://www.youtube.com/channel/UCVx5ZqHmGq1PZE_4GUxIe8w",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "EOSpLm4XXHY",
+      "title": "2025 BMW M4 Competition 1 Year Review: Here's the Truth!",
+      "owner": "Jay Ecom Sales",
+      "ownerUrl": "https://www.youtube.com/channel/UCBVgD8qTd89Wb6DR1UJLhuA",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "OUV7lv0A_OE",
+      "title": "2026 BMW M4 Competition: TEST DRIVE+FULL REVIEW",
+      "owner": "W.T.F Car Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UCkWOWhQ6wEHCy2DPiJD6l4g",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "m5": {
+    "2024": {
+      "youtubeId": "B4Q_dlfQFyg",
+      "title": "2025 BMW M5 Review // We Need To Talk",
+      "owner": "Throttle House",
+      "ownerUrl": "https://www.youtube.com/channel/UCyXiDU5qjfOPxgOPeFWGwKw",
+      "note": "YouTube title may not include 2024."
+    },
+    "2025": {
+      "youtubeId": "B4Q_dlfQFyg",
+      "title": "2025 BMW M5 Review // We Need To Talk",
+      "owner": "Throttle House",
+      "ownerUrl": "https://www.youtube.com/channel/UCyXiDU5qjfOPxgOPeFWGwKw"
+    },
+    "2026": {
+      "youtubeId": "E0h2MB-e2x4",
+      "title": "2026 BMW M5 POV Test Drive & Review",
+      "owner": "Nothin’ But Car Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UCNUozQ8WSD9QdDntuQ6dWOA",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "x3": {
+    "2024": {
+      "youtubeId": "-FNvBN7Q9p4",
+      "title": "2024 BMW X3 -- Still a GREAT Choice for 2024!",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2025": {
+      "youtubeId": "VNYHTroLV_w",
+      "title": "The 2025 BMW X3 xDrive30 Is A Fuel Sipping Electrified SUV For Driving Enthusiasts",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2026": {
+      "youtubeId": "7cVZccqjacs",
+      "title": "Is the 2026 BMW X3 Worth It After a Year? - Full Review",
+      "owner": "CarJuice",
+      "ownerUrl": "https://www.youtube.com/channel/UCex_amvrtNX1LmEjxQ2U3rQ",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "x5": {
+    "2024": {
+      "youtubeId": "fc6dC6WNcCc",
+      "title": "The 2024 BMW X5 xDrive40i Is The Midsize Executive Luxury SUV Perfected",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    }
+  }
+}
