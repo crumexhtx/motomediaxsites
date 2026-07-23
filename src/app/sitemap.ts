@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE } from "@/data/catalog";
+import { getCatalogMtime } from "@/data/catalog.server";
 import {
   getAllMakeParams,
   getAllModelParams,
@@ -8,24 +9,25 @@ import {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url;
+  const lastModified = getCatalogMtime();
 
   const staticRoutes: MetadataRoute.Sitemap = [
-    { url: base, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
+    { url: base, lastModified, changeFrequency: "weekly", priority: 1 },
     {
       url: `${base}/makes`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${base}/search`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.6,
     },
     {
       url: `${base}/about`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.4,
     },
@@ -33,21 +35,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const makes = getAllMakeParams().map(({ make }) => ({
     url: `${base}/makes/${make}`,
-    lastModified: new Date(),
+    lastModified,
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
 
   const models = getAllModelParams().map(({ make, model }) => ({
     url: `${base}/makes/${make}/${model}`,
-    lastModified: new Date(),
+    lastModified,
     changeFrequency: "weekly" as const,
     priority: 0.7,
   }));
 
   const years = getAllYearParams().map(({ make, model, year }) => ({
     url: `${base}/makes/${make}/${model}/${year}`,
-    lastModified: new Date(),
+    lastModified,
     changeFrequency: "monthly" as const,
     priority: 0.85,
   }));

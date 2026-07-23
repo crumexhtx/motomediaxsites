@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { connection } from "next/server";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ModelCard, YearChips } from "@/components/ModelCard";
-import { getModel, yearHref } from "@/lib/catalog";
+import { getAllModelParams, getModel, yearHref } from "@/lib/catalog";
 import { JsonLd, absoluteUrl, breadcrumbJsonLd } from "@/lib/seo";
 
 type Props = {
@@ -11,11 +10,12 @@ type Props = {
 };
 
 export const dynamicParams = true;
-/** Always resolve from live catalog — avoids stale Turbopack static-param 404s. */
-export const dynamic = "force-dynamic";
+
+export function generateStaticParams() {
+  return getAllModelParams();
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  await connection();
   const { make: makeSlug, model: modelSlug } = await params;
   const found = getModel(String(makeSlug), String(modelSlug));
   if (!found) return {};
@@ -44,11 +44,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: absoluteUrl(`/makes/${make.slug}/${model.slug}`),
       ...(ogImage ? { images: [ogImage] } : {}),
     },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      ...(ogImage ? { images: [ogImage.url] } : {}),
+    },
   };
 }
 
 export default async function ModelPage({ params }: Props) {
-  await connection();
   const raw = await params;
   const makeSlug = String(raw.make ?? "");
   const modelSlug = String(raw.model ?? "");

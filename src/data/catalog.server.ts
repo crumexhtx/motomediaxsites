@@ -30,6 +30,11 @@ export function getCatalog(): MakeEntry[] {
   return data;
 }
 
+/** Catalog file mtime — use for sitemap lastModified instead of Date.now(). */
+export function getCatalogMtime(): Date {
+  return new Date(fs.statSync(catalogPath).mtimeMs);
+}
+
 /** True when a site-relative `/…` asset exists under `public/`. Remotes always pass. */
 export function publicAssetExists(src: string | undefined | null): boolean {
   if (!src) return false;
@@ -37,7 +42,10 @@ export function publicAssetExists(src: string | undefined | null): boolean {
   if (!src.startsWith("/")) return false;
   try {
     const abs = path.join(process.cwd(), "public", src.replace(/^\//, ""));
-    return fs.existsSync(abs) && fs.statSync(abs).size > 500;
+    if (!fs.existsSync(abs)) return false;
+    const size = fs.statSync(abs).size;
+    if (src.endsWith(".svg")) return size > 0;
+    return size > 500;
   } catch {
     return false;
   }

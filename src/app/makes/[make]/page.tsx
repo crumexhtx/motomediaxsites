@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { connection } from "next/server";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { MakeHeaderBadge } from "@/components/MakeGrid";
 import { ModelCard } from "@/components/ModelCard";
 import {
+  getAllMakeParams,
   getMake,
   makeCoverImage,
   modelCardImage,
@@ -17,11 +17,12 @@ type Props = {
 };
 
 export const dynamicParams = true;
-/** Always resolve from live catalog — avoids stale Turbopack static-param 404s. */
-export const dynamic = "force-dynamic";
+
+export function generateStaticParams() {
+  return getAllMakeParams();
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  await connection();
   const { make: makeSlug } = await params;
   const make = getMake(String(makeSlug));
   if (!make) return {};
@@ -49,11 +50,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: absoluteUrl(`/makes/${make.slug}`),
       ...(ogImage ? { images: [ogImage] } : {}),
     },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      ...(ogImage ? { images: [ogImage.url] } : {}),
+    },
   };
 }
 
 export default async function MakePage({ params }: Props) {
-  await connection();
   const { make: makeSlug } = await params;
   const make = getMake(String(makeSlug));
   if (!make) notFound();

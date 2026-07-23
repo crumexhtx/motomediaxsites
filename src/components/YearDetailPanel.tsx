@@ -174,8 +174,8 @@ export function YearDetailPanel({
                   aria-pressed={active}
                   className={
                     active
-                      ? "focus-ring flex max-w-[11rem] flex-col overflow-hidden rounded-md border border-accent bg-[var(--accent-soft)] text-left text-sm"
-                      : "focus-ring flex max-w-[11rem] flex-col overflow-hidden rounded-md border border-line bg-elevated/50 text-left text-sm text-muted transition hover:border-accent/50 hover:text-foreground"
+                      ? "focus-ring flex max-w-[11rem] flex-col overflow-hidden rounded-md border border-accent bg-[var(--accent-soft)] px-3 py-2 text-left text-sm"
+                      : "focus-ring flex max-w-[11rem] flex-col overflow-hidden rounded-md border border-line bg-elevated/50 px-3 py-2 text-left text-sm text-muted transition hover:border-accent/50 hover:text-foreground"
                   }
                 >
                   {t.name}

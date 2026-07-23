@@ -1,21 +1,18 @@
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
-import type { MakeEntry } from "../src/data/catalog";
-import brands from "../src/data/brands.json";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const YEARS = new Set([2024, 2025, 2026]);
-
-type Issue = { level: "error" | "warn"; message: string };
+import {
+  ROOT,
+  allowedYearsForModel,
+  catalogStats,
+  isBlankCopy,
+  loadBrands,
+  loadCatalog,
+  loadModelYearOverrides,
+  localPublicAssetIssue,
+  type Issue,
+} from "./lib/catalog-report";
 
 const issues: Issue[] = [];
-const catalog = JSON.parse(
-  fs.readFileSync(
-    path.join(__dirname, "../src/data/catalog.generated.json"),
-    "utf8",
-  ),
-) as MakeEntry[];
 
 function fail(message: string) {
   issues.push({ level: "error", message });
@@ -24,6 +21,17 @@ function fail(message: string) {
 function warn(message: string) {
   issues.push({ level: "warn", message });
 }
+
+const catalog = (() => {
+  try {
+    return loadCatalog();
+  } catch (e) {
+    console.error(e instanceof Error ? e.message : e);
+    process.exit(1);
+  }
+})();
+const brands = loadBrands();
+const modelYearOverrides = loadModelYearOverrides();
 
 const brandNames = new Set(brands.map((b) => b.brand));
 const makeNames = new Set(catalog.map((m) => m.name));
@@ -55,16 +63,21 @@ for (const make of catalog) {
     if (model.years.length === 0) {
       fail(`${make.name} ${model.name}: no years`);
     }
+    const allowed = allowedYearsForModel(
+      make.slug,
+      model.slug,
+      modelYearOverrides,
+    );
     for (const year of model.years) {
-      if (!YEARS.has(year.year)) {
+      if (!allowed.has(year.year)) {
         fail(
-          `${make.name} ${model.name} ${year.year}: year outside 2024–2026`,
+          `${make.name} ${model.name} ${year.year}: year not allowed for ${make.slug}/${model.slug}`,
         );
       }
       if (!year.images?.length) {
         warn(`${make.name} ${model.name} ${year.year}: no images`);
       }
-      if (!year.summary || !year.description) {
+      if (isBlankCopy(year.summary) || isBlankCopy(year.description)) {
         fail(`${make.name} ${model.name} ${year.year}: missing copy`);
       }
     }
@@ -75,35 +88,37 @@ const imageHosts = new Map<string, number>();
 const missingLocal = new Set<string>();
 const requireLocalImages = process.env.REQUIRE_LOCAL_IMAGES === "1";
 
+function trackLocalOrRemote(src: string) {
+  if (src.startsWith("/")) {
+    const kind = src.startsWith("/catalog/")
+      ? "local-catalog"
+      : src.startsWith("/brands/")
+        ? "local-brands"
+        : "local-other";
+    imageHosts.set(kind, (imageHosts.get(kind) ?? 0) + 1);
+    const issue = localPublicAssetIssue(src);
+    if (issue) missingLocal.add(src);
+    return;
+  }
+  try {
+    const host = new URL(src).hostname;
+    imageHosts.set(host, (imageHosts.get(host) ?? 0) + 1);
+  } catch {
+    fail(`Invalid image URL: ${src}`);
+  }
+}
+
 for (const make of catalog) {
+  if (make.coverImage?.src) {
+    trackLocalOrRemote(make.coverImage.src);
+  }
   for (const model of make.models) {
     for (const year of model.years) {
       for (const img of year.images) {
-        if (img.src.startsWith("/")) {
-          const kind = img.src.startsWith("/catalog/")
-            ? "local-catalog"
-            : img.src.startsWith("/brands/")
-              ? "local-brands"
-              : "local-other";
-          imageHosts.set(kind, (imageHosts.get(kind) ?? 0) + 1);
-
-          const abs = path.join(
-            __dirname,
-            "..",
-            "public",
-            img.src.replace(/^\//, ""),
-          );
-          if (!fs.existsSync(abs) || fs.statSync(abs).size < 500) {
-            missingLocal.add(img.src);
-          }
-          continue;
-        }
-        try {
-          const host = new URL(img.src).hostname;
-          imageHosts.set(host, (imageHosts.get(host) ?? 0) + 1);
-        } catch {
-          fail(`Invalid image URL: ${img.src}`);
-        }
+        trackLocalOrRemote(img.src);
+      }
+      for (const trim of year.performance?.trims ?? []) {
+        if (trim.image) trackLocalOrRemote(trim.image);
       }
     }
   }
@@ -111,7 +126,7 @@ for (const make of catalog) {
 
 if (missingLocal.size > 0) {
   const sample = [...missingLocal].slice(0, 8).join(", ");
-  const message = `${missingLocal.size} local image file(s) missing under public/ (e.g. ${sample}). Run \`pnpm build:catalog\` (or \`pnpm fetch:trim-images\`) before deploy.`;
+  const message = `${missingLocal.size} local image file(s) missing or too small under public/ (e.g. ${sample}). Run \`pnpm build:catalog\` (or \`pnpm fetch:trim-images\`) before deploy.`;
   if (requireLocalImages) {
     fail(message);
   } else {
@@ -119,18 +134,14 @@ if (missingLocal.size > 0) {
   }
 }
 
+const stats = catalogStats(catalog);
 const report = {
-  makes: catalog.length,
-  models: catalog.reduce((n, m) => n + m.models.length, 0),
-  years: catalog.reduce(
-    (n, m) => n + m.models.reduce((y, model) => y + model.years.length, 0),
-    0,
-  ),
+  ...stats,
   imageHosts: Object.fromEntries(imageHosts),
   issues,
 };
 
-const out = path.join(__dirname, "..", "catalog-validation.json");
+const out = path.join(ROOT, "catalog-validation.json");
 fs.writeFileSync(out, `${JSON.stringify(report, null, 2)}\n`);
 
 const errors = issues.filter((i) => i.level === "error");
@@ -146,5 +157,5 @@ for (const issue of issues) {
 }
 
 if (errors.length > 0) {
-  process.exit(1);
+  process.exitCode = 1;
 }

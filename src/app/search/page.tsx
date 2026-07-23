@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SearchPanel } from "@/components/SearchPanel";
+import { searchCatalog } from "@/lib/catalog";
 import { JsonLd, breadcrumbJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -14,10 +15,17 @@ type Props = {
   searchParams: Promise<{ q?: string | string[] }>;
 };
 
+const MAX_QUERY_LENGTH = 80;
+
 export default async function SearchPage({ searchParams }: Props) {
   const params = await searchParams;
   const raw = params.q;
-  const initialQuery = Array.isArray(raw) ? (raw[0] ?? "") : (raw ?? "");
+  const initialQuery = (
+    Array.isArray(raw) ? (raw[0] ?? "") : (raw ?? "")
+  ).slice(0, MAX_QUERY_LENGTH);
+  const initialResults = initialQuery.trim()
+    ? searchCatalog(initialQuery.trim())
+    : [];
 
   return (
     <div className="container-wide py-10 md:py-14">
@@ -43,7 +51,10 @@ export default async function SearchPage({ searchParams }: Props) {
         </p>
       </header>
       <div className="mt-10 max-w-3xl">
-        <SearchPanel initialQuery={initialQuery} />
+        <SearchPanel
+          initialQuery={initialQuery}
+          initialResults={initialResults}
+        />
       </div>
     </div>
   );
