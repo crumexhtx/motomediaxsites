@@ -7,6 +7,7 @@ import type { GalleryImage } from "@/data/catalog";
 import {
   getAllYearParams,
   getYear,
+  modelHref,
   pickBestCardImage,
   yearHref,
 } from "@/lib/catalog";
@@ -92,6 +93,7 @@ export default async function YearPage({ params }: Props) {
 
   const { make, model, year } = found;
   const path = yearHref(make.slug, model.slug, year.slug);
+  const modelPath = modelHref(make.slug, model.slug);
   const images = orderedYearImages(make.name, model.name, year.images);
   const hero = images[0];
   const yearsSorted = [...model.years].sort((a, b) => b.year - a.year);
@@ -104,7 +106,7 @@ export default async function YearPage({ params }: Props) {
           { name: "Home", path: "/" },
           { name: "Makes", path: "/makes" },
           { name: make.name, path: `/makes/${make.slug}` },
-          { name: model.name, path: `/makes/${make.slug}/${model.slug}` },
+          { name: model.name, path: modelPath },
           { name: String(year.year), path },
         ])}
       />
@@ -138,7 +140,7 @@ export default async function YearPage({ params }: Props) {
               { label: "Home", href: "/" },
               { label: "Makes", href: "/makes" },
               { label: make.name, href: `/makes/${make.slug}` },
-              { label: model.name, href: `/makes/${make.slug}/${model.slug}` },
+              { label: model.name, href: modelPath },
               { label: String(year.year) },
             ]}
           />

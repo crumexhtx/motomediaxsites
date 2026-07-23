@@ -3,7 +3,6 @@ import { SITE } from "@/data/catalog";
 import { getCatalogMtime } from "@/data/catalog.server";
 import {
   getAllMakeParams,
-  getAllModelParams,
   getAllYearParams,
 } from "@/lib/catalog";
 
@@ -40,13 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const models = getAllModelParams().map(({ make, model }) => ({
-    url: `${base}/makes/${make}/${model}`,
-    lastModified,
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
-
+  // Model index URLs permanently redirect to the newest year — sitemap years only.
   const years = getAllYearParams().map(({ make, model, year }) => ({
     url: `${base}/makes/${make}/${model}/${year}`,
     lastModified,
@@ -54,5 +47,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  return [...staticRoutes, ...makes, ...models, ...years];
+  return [...staticRoutes, ...makes, ...years];
 }

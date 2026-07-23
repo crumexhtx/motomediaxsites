@@ -420,6 +420,11 @@ export function makeHref(makeSlug: string) {
 }
 
 export function modelHref(makeSlug: string, modelSlug: string) {
+  const make = getMake(makeSlug);
+  const key = normSlug(modelSlug);
+  const model = make?.models.find((m) => m.slug === key);
+  const newest = model ? newestYear(model) : undefined;
+  if (newest) return yearHref(makeSlug, model.slug, newest.slug);
   return `/makes/${makeSlug}/${modelSlug}`;
 }
 

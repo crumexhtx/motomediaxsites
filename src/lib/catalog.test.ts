@@ -55,7 +55,8 @@ describe("catalog lookups", () => {
 
   it("builds href helpers", () => {
     expect(makeHref("bmw")).toBe("/makes/bmw");
-    expect(modelHref("bmw", "x5")).toBe("/makes/bmw/x5");
+    // Model links skip the year picker and open the newest year overview.
+    expect(modelHref("bmw", "3-series")).toMatch(/^\/makes\/bmw\/3-series\/\d{4}$/);
     expect(yearHref("bmw", "x5", "2025")).toBe("/makes/bmw/x5/2025");
   });
 
