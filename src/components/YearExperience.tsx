@@ -97,7 +97,9 @@ export function YearExperience({
         ) : (
           <div className="absolute inset-0 bg-soft" />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg)] via-black/50 to-black/25" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[rgba(8,10,14,0.78)] via-[rgba(8,10,14,0.35)] to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg)] via-black/45 to-black/20" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[var(--bg)] to-transparent md:h-32" />
         <div className="container-wide relative flex min-h-[42vh] flex-col justify-end pb-10 pt-24 md:min-h-[52vh]">
           {breadcrumbs}
           <h1 className="mt-4 font-display text-4xl tracking-tight text-white md:text-6xl">

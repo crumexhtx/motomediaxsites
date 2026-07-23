@@ -35,7 +35,7 @@ export function HeroBackdrop({ images }: Props) {
           alt=""
           fill
           priority
-          quality={55}
+          quality={75}
           sizes="100vw"
           className="object-cover object-[center_35%]"
         />

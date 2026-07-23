@@ -111,7 +111,7 @@ export function Gallery({ images }: { images: GalleryImage[] }) {
       {active !== null ? (
         <div
           ref={dialogRef}
-          className="gallery-enter fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+          className="gallery-enter fixed inset-0 z-50 flex flex-col bg-black/92"
           role="dialog"
           aria-modal="true"
           aria-labelledby={titleId}
@@ -120,39 +120,19 @@ export function Gallery({ images }: { images: GalleryImage[] }) {
           <p id={titleId} className="sr-only">
             Photo viewer: {images[active].alt}
           </p>
-          <button
-            ref={closeButtonRef}
-            type="button"
-            className="focus-ring absolute right-4 top-4 rounded-md border border-line bg-elevated px-3 py-2 text-sm"
-            onClick={close}
-            aria-label="Close photo viewer"
-          >
-            Close
-          </button>
-          <button
-            type="button"
-            className="focus-ring absolute left-4 top-1/2 -translate-y-1/2 rounded-md border border-line bg-elevated px-3 py-2 text-sm"
-            onClick={(event) => {
-              event.stopPropagation();
-              showPrev();
-            }}
-            aria-label="Previous photo"
-          >
-            Prev
-          </button>
-          <button
-            type="button"
-            className="focus-ring absolute right-4 top-1/2 -translate-y-1/2 rounded-md border border-line bg-elevated px-3 py-2 text-sm"
-            onClick={(event) => {
-              event.stopPropagation();
-              showNext();
-            }}
-            aria-label="Next photo"
-          >
-            Next
-          </button>
+          <div className="flex items-center justify-end p-4">
+            <button
+              ref={closeButtonRef}
+              type="button"
+              className="focus-ring rounded-md border border-line bg-elevated px-3 py-2 text-sm"
+              onClick={close}
+              aria-label="Close photo viewer"
+            >
+              Close
+            </button>
+          </div>
           <div
-            className="relative h-[70vh] w-full max-w-5xl"
+            className="relative mx-auto min-h-0 w-full max-w-5xl flex-1 px-4"
             onClick={(event) => event.stopPropagation()}
           >
             <CatalogImage
@@ -164,9 +144,30 @@ export function Gallery({ images }: { images: GalleryImage[] }) {
               priority
             />
           </div>
-          <p className="absolute bottom-6 left-1/2 -translate-x-1/2 text-sm text-muted">
-            {active + 1} / {images.length}
-          </p>
+          <div
+            className="flex items-center justify-between gap-3 px-4 pb-6 pt-3 sm:justify-center sm:gap-6"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              type="button"
+              className="focus-ring rounded-md border border-line bg-elevated px-4 py-2 text-sm"
+              onClick={showPrev}
+              aria-label="Previous photo"
+            >
+              Prev
+            </button>
+            <p className="text-sm text-muted">
+              {active + 1} / {images.length}
+            </p>
+            <button
+              type="button"
+              className="focus-ring rounded-md border border-line bg-elevated px-4 py-2 text-sm"
+              onClick={showNext}
+              aria-label="Next photo"
+            >
+              Next
+            </button>
+          </div>
         </div>
       ) : null}
     </>

@@ -133,6 +133,7 @@ export default async function YearPage({ params }: Props) {
         epaUrl={year.sources?.epa}
         breadcrumbs={
           <Breadcrumbs
+            tone="onDark"
             items={[
               { label: "Home", href: "/" },
               { label: "Makes", href: "/makes" },

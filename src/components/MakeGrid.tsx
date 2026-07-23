@@ -43,15 +43,7 @@ export function MakeTile({
       href={makeHref(make.slug)}
       className="make-tile focus-ring group block overflow-hidden rounded-xl border border-line bg-elevated"
     >
-      <div className="relative aspect-[16/10] overflow-hidden bg-[linear-gradient(160deg,#151a22_0%,#0f1319_55%,#1a222d_100%)]">
-        <div
-          className="absolute inset-0 opacity-80"
-          style={{
-            background:
-              "radial-gradient(circle at 50% 35%, rgba(61,156,240,0.14), transparent 58%)",
-          }}
-        />
-
+      <div className="relative aspect-[16/10] overflow-hidden bg-[linear-gradient(160deg,#151a22_0%,#0f1319_100%)]">
         <div className="absolute inset-0 flex items-center justify-center pb-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
