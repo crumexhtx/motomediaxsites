@@ -29,11 +29,11 @@ export default function HomePage() {
             {SITE.name}
           </p>
           <h1 className="fade-up-delay mt-4 max-w-2xl text-xl font-medium leading-tight text-white sm:text-2xl md:text-3xl">
-            Car photos organized the way you actually browse.
+            All makes. All models. Clearer browsing.
           </h1>
           <p className="fade-up-delay-2 mt-3 max-w-xl text-base leading-relaxed text-white/75">
-            Make → model → year, with clearer navigation and pages built for
-            search.
+            Pick a marque, open a model, then step through the years—photos and
+            overviews ready for enthusiasts.
           </p>
           <div className="fade-up-delay-2 mt-7 flex flex-wrap gap-3">
             <Link
@@ -77,12 +77,11 @@ export default function HomePage() {
         <div className="container-wide">
           <div className="mb-8 max-w-2xl">
             <h2 className="font-display text-3xl tracking-tight md:text-4xl">
-              Latest model years
+              Fresh from the catalog
             </h2>
             <p className="mt-2 text-muted">
-              Recent entries from the catalog—each with its own SEO page. Photos
-              and copy come from Wikipedia/Wikimedia; specs from NHTSA when
-              available.
+              Newly listed model years—open one for gallery shots, an overview,
+              and the details that matter.
             </p>
             <Link
               href="/search"
