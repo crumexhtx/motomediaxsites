@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { YearChips } from "@/components/ModelCard";
+import { YearChanges } from "@/components/YearChanges";
 import { YearExperience } from "@/components/YearExperience";
 import type { GalleryImage } from "@/data/catalog";
 import {
@@ -17,6 +18,7 @@ import {
   breadcrumbJsonLd,
   yearPageJsonLd,
 } from "@/lib/seo";
+import { diffYears, findPreviousYear } from "@/lib/yearDiff";
 
 type Props = {
   params: Promise<{ make: string; model: string; year: string }>;
@@ -98,6 +100,8 @@ export default async function YearPage({ params }: Props) {
   const hero = images[0];
   const yearsSorted = [...model.years].sort((a, b) => b.year - a.year);
   const title = `${year.year} ${make.name} ${model.name}`;
+  const previousYear = findPreviousYear(model.years, year.year);
+  const yearDiff = previousYear ? diffYears(previousYear, year) : null;
 
   return (
     <>
@@ -184,6 +188,19 @@ export default async function YearPage({ params }: Props) {
               </p>
             ) : null}
           </section>
+        }
+        yearChanges={
+          yearDiff && previousYear ? (
+            <YearChanges
+              diff={yearDiff}
+              previousHref={yearHref(
+                make.slug,
+                model.slug,
+                previousYear.slug,
+              )}
+              modelName={model.name}
+            />
+          ) : null
         }
       />
     </>

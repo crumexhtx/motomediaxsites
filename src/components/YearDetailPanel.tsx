@@ -91,14 +91,31 @@ export function YearDetailPanel({
 
   const [internalTrimId, setInternalTrimId] = useState(initialId);
   const trimId = controlledTrimId ?? internalTrimId;
+  const compareInitial =
+    trims.find((t) => t.id !== (controlledTrimId ?? initialId))?.id ??
+    trims[1]?.id;
+  const [compareTrimId, setCompareTrimId] = useState(compareInitial);
+
   const setTrimId = (id: string) => {
     onTrimChange?.(id);
     if (controlledTrimId === undefined) setInternalTrimId(id);
+    if (id === compareTrimId) {
+      const other = trims.find((t) => t.id !== id)?.id;
+      if (other) setCompareTrimId(other);
+    }
   };
   const trim: TrimSpec | undefined = useMemo(
     () => trims.find((t) => t.id === trimId) ?? trims[0],
     [trims, trimId],
   );
+
+  const compareTrim: TrimSpec | undefined = useMemo(() => {
+    if (!compareTrimId) return undefined;
+    if (compareTrimId === trim?.id) {
+      return trims.find((t) => t.id !== trim.id) ?? trims[1];
+    }
+    return trims.find((t) => t.id === compareTrimId);
+  }, [compareTrimId, trim?.id, trims]);
 
   const hp = fmt(trim?.horsepower, " hp");
   const torque = fmt(trim?.torqueLbFt, " lb-ft");
@@ -370,6 +387,103 @@ export function YearDetailPanel({
           ) : null}
         </Section>
       </div>
+
+      {trims.length > 1 && trim && compareTrim ? (
+        <section className="mb-10">
+          <h2 className="font-display text-2xl tracking-tight">
+            Trim compare
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm text-muted">
+            Pick two trims and scan the gaps that matter — power, efficiency,
+            and capability.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <label className="flex min-w-[10rem] flex-1 flex-col gap-1.5 text-xs uppercase tracking-[0.12em] text-muted">
+              Trim A
+              <select
+                className="focus-ring rounded-md border border-line bg-elevated/80 px-3 py-2 text-sm normal-case tracking-normal text-foreground"
+                value={trim.id}
+                onChange={(e) => setTrimId(e.target.value)}
+              >
+                {trims.map((t) => (
+                  <option key={t.id} value={t.id}>
+                    {t.name}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label className="flex min-w-[10rem] flex-1 flex-col gap-1.5 text-xs uppercase tracking-[0.12em] text-muted">
+              Trim B
+              <select
+                className="focus-ring rounded-md border border-line bg-elevated/80 px-3 py-2 text-sm normal-case tracking-normal text-foreground"
+                value={compareTrim.id}
+                onChange={(e) => setCompareTrimId(e.target.value)}
+              >
+                {trims.map((t) => (
+                  <option key={t.id} value={t.id}>
+                    {t.name}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
+          <div className="relative mt-4 overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[28rem] border-collapse text-left text-sm">
+                <thead>
+                  <tr className="border-b border-line text-xs uppercase tracking-[0.12em] text-muted">
+                    <th className="py-2 pr-4 font-medium">Spec</th>
+                    <th className="py-2 pr-4 font-medium">{trim.name}</th>
+                    <th className="py-2 font-medium">{compareTrim.name}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {(
+                    [
+                      ["Horsepower", fmt(trim.horsepower, " hp"), fmt(compareTrim.horsepower, " hp")],
+                      ["Torque", fmt(trim.torqueLbFt, " lb-ft"), fmt(compareTrim.torqueLbFt, " lb-ft")],
+                      ["0–60", fmt(trim.zeroToSixtySec, " s"), fmt(compareTrim.zeroToSixtySec, " s")],
+                      ["City MPG", fmt(trim.mpgCity), fmt(compareTrim.mpgCity)],
+                      ["Highway MPG", fmt(trim.mpgHighway), fmt(compareTrim.mpgHighway)],
+                      ["Combined MPG", fmt(trim.mpgCombined), fmt(compareTrim.mpgCombined)],
+                      ["Engine", trim.engine ?? null, compareTrim.engine ?? null],
+                      ["Transmission", trim.transmission ?? null, compareTrim.transmission ?? null],
+                      ["Drivetrain", trim.drivetrain ?? null, compareTrim.drivetrain ?? null],
+                      ["Towing", fmt(trim.towingLb, " lb"), fmt(compareTrim.towingLb, " lb")],
+                      ["Cargo", fmt(trim.cargoCuFt, " cu ft"), fmt(compareTrim.cargoCuFt, " cu ft")],
+                      ["Ground clearance", fmt(trim.groundClearanceIn, " in"), fmt(compareTrim.groundClearanceIn, " in")],
+                      ["Seating", fmt(trim.seatingCapacity), fmt(compareTrim.seatingCapacity)],
+                      ["EV range", fmt(trim.rangeMiles, " mi"), fmt(compareTrim.rangeMiles, " mi")],
+                    ] as const
+                  )
+                    .filter(([, a, b]) => a || b)
+                    .map(([label, a, b]) => {
+                      const differ = a !== b;
+                      return (
+                        <tr
+                          key={label}
+                          className={
+                            differ
+                              ? "border-b border-line/60 bg-[var(--accent-soft)]/40"
+                              : "border-b border-line/60"
+                          }
+                        >
+                          <td className="py-2.5 pr-4 text-muted">{label}</td>
+                          <td className="py-2.5 pr-4 tabular-nums">{a ?? "—"}</td>
+                          <td className="py-2.5 tabular-nums">{b ?? "—"}</td>
+                        </tr>
+                      );
+                    })}
+                </tbody>
+              </table>
+            </div>
+            <div
+              className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-[var(--bg)] to-transparent md:hidden"
+              aria-hidden="true"
+            />
+          </div>
+        </section>
+      ) : null}
 
       {trims.length > 0 ? (
         <section className="mb-10">

@@ -23,6 +23,8 @@ type Props = {
   breadcrumbs: ReactNode;
   yearChips: ReactNode;
   overview: ReactNode;
+  /** Year-over-year delta section (server-rendered). */
+  yearChanges?: ReactNode;
   performance?: YearPerformance;
   specs?: VehicleSpecs;
   baseImages: GalleryImage[];
@@ -38,6 +40,7 @@ export function YearExperience({
   breadcrumbs,
   yearChips,
   overview,
+  yearChanges,
   performance,
   specs,
   baseImages,
@@ -126,6 +129,8 @@ export function YearExperience({
         </section>
 
         {overview}
+
+        {yearChanges}
 
         {galleryImages.length > 0 ? (
           <section className="mb-12">
