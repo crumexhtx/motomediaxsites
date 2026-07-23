@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { YearChips } from "@/components/ModelCard";
 import { YearExperience } from "@/components/YearExperience";
+import type { GalleryImage } from "@/data/catalog";
 import {
   getAllYearParams,
   getYear,
@@ -33,8 +34,8 @@ function absolutizeImage(src: string) {
 function orderedYearImages(
   makeName: string,
   modelName: string,
-  images: { src: string; alt: string; width?: number; height?: number }[],
-) {
+  images: GalleryImage[],
+): GalleryImage[] {
   const best = pickBestCardImage(images, {
     makeName,
     modelName,
