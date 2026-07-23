@@ -34,11 +34,7 @@ html[data-scroll-behavior="smooth"] {
 }
 
 body {
-  background:
-    radial-gradient(ellipse 900px 480px at 12% -8%, rgba(61, 156, 240, 0.12), transparent 60%),
-    radial-gradient(ellipse 700px 420px at 95% 8%, rgba(140, 160, 190, 0.07), transparent 55%),
-    linear-gradient(180deg, #0b0e13 0%, var(--bg) 28%, var(--bg) 100%);
-  background-attachment: fixed;
+  background: var(--bg);
   color: var(--fg);
   font-family: var(--font-body), system-ui, sans-serif;
   min-height: 100%;

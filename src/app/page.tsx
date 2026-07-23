@@ -5,14 +5,15 @@ import { MakeGrid } from "@/components/MakeGrid";
 import { SITE } from "@/data/catalog";
 import {
   getAllMakes,
-  getHeroBackdropImages,
+  getLandingHeroImage,
   getLatestEntries,
 } from "@/lib/catalog";
 
 export default function HomePage() {
   const makes = getAllMakes().slice(0, 6);
   const latest = getLatestEntries(6);
-  const backdropImages = getHeroBackdropImages(1);
+  const hero = getLandingHeroImage();
+  const backdropImages = hero ? [hero] : [];
 
   return (
     <>
@@ -52,14 +53,6 @@ export default function HomePage() {
       </section>
 
       <section className="relative overflow-hidden pb-20 pt-6 md:pt-10">
-        <div
-          className="pointer-events-none absolute inset-0 -z-10"
-          aria-hidden="true"
-          style={{
-            background:
-              "radial-gradient(ellipse 70% 50% at 0% 0%, rgba(61,156,240,0.08), transparent 55%), radial-gradient(ellipse 50% 40% at 100% 30%, rgba(255,255,255,0.03), transparent 50%)",
-          }}
-        />
         <div className="container-wide">
           <div className="mb-8 max-w-2xl">
             <h2 className="font-display text-3xl tracking-tight md:text-4xl">
@@ -81,14 +74,6 @@ export default function HomePage() {
       </section>
 
       <section className="relative overflow-hidden border-t border-line/60">
-        <div
-          className="pointer-events-none absolute inset-0 -z-10"
-          aria-hidden="true"
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(18,22,28,0.55) 0%, rgba(10,12,15,0) 100%)",
-          }}
-        />
         <div className="container-wide py-20">
           <h2 className="font-display text-3xl tracking-tight md:text-4xl">
             Latest model years
