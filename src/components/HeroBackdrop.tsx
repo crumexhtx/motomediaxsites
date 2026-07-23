@@ -1,93 +1,45 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { CatalogImage } from "@/components/CatalogImage";
 import type { GalleryImage } from "@/data/catalog";
 
 type Props = {
   images: GalleryImage[];
-  /** Milliseconds between slides. */
-  intervalMs?: number;
-};
-
-type SlideState = {
-  index: number;
-  prevIndex: number | null;
 };
 
 /**
- * Full-bleed landing backdrop that crossfades between catalog photos.
- * Only mounts prev/active/next so the first paint stays light.
- * Capped `sizes` + lower `quality` keep optimized files small.
+ * Single full-bleed landing backdrop — one dominant photo with a slow
+ * ken-burns drift. Avoids slideshow crossfades that read as a repeating tile.
  */
-export function HeroBackdrop({ images, intervalMs = 7000 }: Props) {
-  const slides = images.filter((img) => Boolean(img?.src));
-  const [{ index, prevIndex }, setSlide] = useState<SlideState>({
-    index: 0,
-    prevIndex: null,
-  });
+export function HeroBackdrop({ images }: Props) {
+  const image = images.find((img) => Boolean(img?.src));
 
-  useEffect(() => {
-    if (slides.length < 2) return;
-    const reduceMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)",
-    ).matches;
-    if (reduceMotion) return;
-
-    const id = window.setInterval(() => {
-      setSlide(({ index: current }) => ({
-        index: (current + 1) % slides.length,
-        prevIndex: current,
-      }));
-    }, intervalMs);
-    return () => window.clearInterval(id);
-  }, [slides.length, intervalMs]);
-
-  // Drop the outgoing slide after the fade finishes.
-  useEffect(() => {
-    if (prevIndex === null) return;
-    const id = window.setTimeout(() => {
-      setSlide((current) =>
-        current.prevIndex === null
-          ? current
-          : { ...current, prevIndex: null },
-      );
-    }, 1300);
-    return () => window.clearTimeout(id);
-  }, [prevIndex, index]);
-
-  if (!slides.length) {
-    return <div className="absolute inset-0 bg-soft" />;
+  if (!image) {
+    return (
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 80% 60% at 70% 40%, rgba(61,156,240,0.2), transparent 55%), linear-gradient(160deg, #0c121a 0%, #0a0c0f 55%, #121820 100%)",
+        }}
+        aria-hidden="true"
+      />
+    );
   }
 
-  const nextIndex = slides.length > 1 ? (index + 1) % slides.length : index;
-  const visible = new Set(
-    [prevIndex, index, nextIndex].filter((i): i is number => i !== null),
-  );
-
   return (
-    <div className="absolute inset-0" aria-hidden="true">
-      {[...visible].map((i) => {
-        const image = slides[i];
-        if (!image) return null;
-        const active = i === index;
-        return (
-          <CatalogImage
-            key={image.src}
-            src={image.src}
-            alt=""
-            fill
-            priority={i === 0}
-            quality={45}
-            sizes="(max-width: 768px) 100vw, 1100px"
-            className={
-              active
-                ? "object-cover opacity-100 transition-opacity duration-[1.2s] ease-out"
-                : "object-cover opacity-0 transition-opacity duration-[1.2s] ease-out"
-            }
-          />
-        );
-      })}
+    <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
+      <div className="hero-pan absolute inset-[-4%]">
+        <CatalogImage
+          src={image.src}
+          alt=""
+          fill
+          priority
+          quality={55}
+          sizes="100vw"
+          className="object-cover object-[center_35%]"
+        />
+      </div>
     </div>
   );
 }

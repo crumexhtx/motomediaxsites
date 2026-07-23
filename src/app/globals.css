@@ -35,9 +35,10 @@ html[data-scroll-behavior="smooth"] {
 
 body {
   background:
-    radial-gradient(1200px 600px at 10% -10%, rgba(61, 156, 240, 0.14), transparent 55%),
-    radial-gradient(900px 500px at 100% 0%, rgba(120, 140, 170, 0.1), transparent 50%),
-    var(--bg);
+    radial-gradient(ellipse 900px 480px at 12% -8%, rgba(61, 156, 240, 0.12), transparent 60%),
+    radial-gradient(ellipse 700px 420px at 95% 8%, rgba(140, 160, 190, 0.07), transparent 55%),
+    linear-gradient(180deg, #0b0e13 0%, var(--bg) 28%, var(--bg) 100%);
+  background-attachment: fixed;
   color: var(--fg);
   font-family: var(--font-body), system-ui, sans-serif;
   min-height: 100%;
@@ -94,7 +95,8 @@ a {
   .fade-up-delay-2,
   .gallery-enter,
   .make-tile,
-  .make-tile img {
+  .make-tile img,
+  .hero-pan {
     animation: none !important;
     transition: none !important;
   }
@@ -167,6 +169,26 @@ a {
 
 .make-tile:hover img {
   transform: scale(1.05);
+}
+
+@keyframes heroPan {
+  from {
+    transform: scale(1.06) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.12) translate3d(-1.5%, -1%, 0);
+  }
+}
+
+.hero-pan {
+  animation: heroPan 28s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-pan {
+    animation: none;
+  }
 }
 
 .focus-ring:focus-visible {
