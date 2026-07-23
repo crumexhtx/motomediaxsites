@@ -69,13 +69,47 @@ describe("catalog lookups", () => {
     }
   });
 
-  it("picks a car photo for make cover tiles", async () => {
+  it("uses the brand logo for make cover tiles", async () => {
     const { makeCoverImage, getMake } = await import("@/lib/catalog");
     const toyota = getMake("toyota");
     expect(toyota).toBeTruthy();
     const cover = makeCoverImage(toyota!);
-    expect(cover.src.startsWith("/catalog/")).toBe(true);
-    expect(cover.src.endsWith(".svg")).toBe(false);
+    expect(cover.src).toBe("/brands/toyota.svg");
+    expect(cover.src.endsWith(".svg")).toBe(true);
+  });
+
+  it("scores front exterior shots above rear and interior details", async () => {
+    const { scoreCardImage } = await import("@/lib/catalog");
+    const front = scoreCardImage(
+      {
+        src: "/catalog/toyota--camry.jpg",
+        alt: "2026 Toyota Camry front three-quarter",
+        width: 1600,
+        height: 900,
+      },
+      { makeName: "Toyota", modelName: "Camry" },
+    );
+    const rear = scoreCardImage(
+      {
+        src: "/catalog/toyota--camry.jpg",
+        alt: "2026 Toyota Camry rear trunk taillight",
+        width: 1600,
+        height: 900,
+      },
+      { makeName: "Toyota", modelName: "Camry" },
+    );
+    const gauge = scoreCardImage(
+      {
+        src: "/catalog/toyota--corolla.jpg",
+        alt: "fuel gauge tank instrument",
+        width: 900,
+        height: 1200,
+      },
+      { makeName: "Toyota", modelName: "Corolla" },
+    );
+    expect(front).toBeGreaterThan(rear);
+    expect(front).toBeGreaterThan(gauge);
+    expect(gauge).toBeLessThan(-12);
   });
 
   it("returns latest entries sorted by year descending", () => {

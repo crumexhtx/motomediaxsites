@@ -105,8 +105,11 @@ export function getLatestEntries(limit = 8) {
   for (const make of getCatalog()) {
     for (const model of make.models) {
       for (const year of model.years) {
-        const image = usableImage(year.images[0]);
-        if (!image || image.src.endsWith(".svg")) continue;
+        const image = pickBestCardImage(year.images, {
+          makeName: make.name,
+          modelName: model.name,
+        });
+        if (!image) continue;
         entries.push({
           make,
           model,
@@ -137,11 +140,11 @@ export function getHeroBackdropImages(limit = 6): GalleryImage[] {
       for (const year of years) {
         if (seenMakes.has(make.slug)) break;
         const enriched = enrichYearEntry(make.slug, model.slug, year);
-        const image = enriched.images.find((img) => {
-          if (!img?.src || img.src.endsWith(".svg")) return false;
-          return publicAssetExists(img.src);
+        const image = pickBestCardImage(enriched.images, {
+          makeName: make.name,
+          modelName: model.name,
         });
-        if (!image) continue;
+        if (!image || !publicAssetExists(image.src)) continue;
         seenMakes.add(make.slug);
         picked.push({
           ...image,
@@ -165,6 +168,93 @@ export function getHeroBackdropImages(limit = 6): GalleryImage[] {
   return picked.slice(0, limit);
 }
 
+/**
+ * Best cover for a make tile: always the brand logo badge.
+ */
+export function makeCoverImage(make: MakeEntry): GalleryImage {
+  const cover = usableImage(make.coverImage);
+  if (cover?.src.endsWith(".svg")) return cover;
+  return brandFallback(make);
+}
+
+/**
+ * Score an image for use as a model/year card hero.
+ * Prefers front / three-quarter exterior shots; demotes rear, interior, gauges, logos.
+ */
+export function scoreCardImage(
+  image: GalleryImage,
+  opts?: { makeName?: string; modelName?: string },
+): number {
+  const hay = `${image.src} ${image.alt}`.toLowerCase();
+  let score = 0;
+
+  if (image.src.endsWith(".svg")) return -100;
+  if (!image.src) return -100;
+
+  // Orientation: landscape cards read better for car exteriors.
+  if (image.width && image.height) {
+    const ratio = image.width / image.height;
+    if (ratio >= 1.2) score += 4;
+    else if (ratio < 0.9) score -= 6;
+  }
+
+  if (/\bfront\b|front[- ]?(left|right|3|three)|three[- ]?quarter|3\/4/.test(hay)) {
+    score += 12;
+  }
+  if (/\bexterior\b|\bstreet\b|\bparked\b|\broad\b/.test(hay)) score += 3;
+
+  if (/\brear\b|\bback\b|taillight|tail[- ]?lamp|\btrunk\b|\bboot\b/.test(hay)) {
+    score -= 14;
+  }
+  if (
+    /\binterior\b|\bdashboard\b|\bcabin\b|\bseat\b|\bgauge\b|\bfuel\b|\btank\b|\binstrument\b/.test(
+      hay,
+    )
+  ) {
+    score -= 18;
+  }
+  if (/\blogo\b|\bbadge\b|\bemblem\b|\bwordmark\b|wikipedia-logo/.test(hay)) {
+    score -= 16;
+  }
+  if (/\bengine\b|\bmotor\b|\bwheel\b only|\bclose[- ]?up\b/.test(hay)) {
+    score -= 8;
+  }
+
+  const make = opts?.makeName?.toLowerCase();
+  const model = opts?.modelName?.toLowerCase();
+  if (make && hay.includes(make)) score += 2;
+  if (model) {
+    const tokens = model
+      .split(/[\s/-]+/)
+      .filter((t) => t.length >= 2 && !["the", "and", "ev"].includes(t));
+    if (tokens.length && tokens.every((t) => hay.includes(t))) score += 4;
+  }
+
+  return score;
+}
+
+/** Pick the best exterior / front-facing card image from a list. */
+export function pickBestCardImage(
+  images: GalleryImage[] | undefined,
+  opts?: { makeName?: string; modelName?: string },
+): GalleryImage | undefined {
+  if (!images?.length) return undefined;
+  let best: GalleryImage | undefined;
+  let bestScore = Number.NEGATIVE_INFINITY;
+  for (const image of images) {
+    const usable = usableImage(image);
+    if (!usable || usable.src.endsWith(".svg")) continue;
+    const score = scoreCardImage(usable, opts);
+    if (score > bestScore) {
+      bestScore = score;
+      best = usable;
+    }
+  }
+  // Reject clearly bad heroes when a better option isn't available.
+  if (best && bestScore <= -12) return undefined;
+  return best;
+}
+
 function firstCarImage(
   make: MakeEntry,
   model?: ModelEntry,
@@ -172,15 +262,21 @@ function firstCarImage(
   if (model) {
     const years = [...model.years].sort((a, b) => b.year - a.year);
     for (const year of years) {
-      const img = usableImage(year.images[0]);
-      if (img && !img.src.endsWith(".svg")) return img;
+      const img = pickBestCardImage(year.images, {
+        makeName: make.name,
+        modelName: model.name,
+      });
+      if (img) return img;
     }
   }
   for (const m of make.models) {
     const years = [...m.years].sort((a, b) => b.year - a.year);
     for (const year of years) {
-      const img = usableImage(year.images[0]);
-      if (img && !img.src.endsWith(".svg")) return img;
+      const img = pickBestCardImage(year.images, {
+        makeName: make.name,
+        modelName: m.name,
+      });
+      if (img) return img;
     }
   }
   return undefined;
@@ -193,22 +289,13 @@ export function modelCardImage(
 ): GalleryImage {
   const year = newestYear(model);
   return (
-    usableImage(year?.images[0]) ??
+    pickBestCardImage(year?.images, {
+      makeName: make.name,
+      modelName: model.name,
+    }) ??
     firstCarImage(make, model) ??
     brandFallback(make)
   );
-}
-
-/**
- * Best cover photo for a make tile: prefer a recent non-SVG car shot.
- * Falls back to the brand badge when nothing usable exists.
- */
-export function makeCoverImage(make: MakeEntry): GalleryImage {
-  const fromCar = firstCarImage(make);
-  if (fromCar) return fromCar;
-  const cover = usableImage(make.coverImage);
-  if (cover && !cover.src.endsWith(".svg")) return cover;
-  return brandFallback(make);
 }
 
 export function searchCatalog(query: string, limit = 40): SearchResult[] {
@@ -225,7 +312,7 @@ export function searchCatalog(query: string, limit = 40): SearchResult[] {
       (make.name.toLowerCase().includes(q) ||
         make.country.toLowerCase().includes(q))
     ) {
-      const image = firstCarImage(make) ?? brandFallback(make);
+      const image = brandFallback(make);
       results.push({
         type: "make",
         title: make.name,
