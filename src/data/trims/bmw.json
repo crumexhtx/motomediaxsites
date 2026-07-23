@@ -797,65 +797,59 @@
     }
   },
   "i3": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2021": {
+      "defaultTrimId": "i3",
       "trims": [
         {
-          "id": "legacy",
-          "name": "i3 (ended)",
-          "notes": "Ended after 2021."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "i3",
+          "name": "i3",
+          "engine": "Electric + range extender opt.",
+          "horsepower": 170,
+          "rangeMiles": 153,
+          "zeroToSixtySec": 7.2,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4,
+          "notes": "Final U.S. model year."
+        },
         {
-          "id": "legacy",
-          "name": "i3 (ended)",
-          "notes": "Ended after 2021."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
-        {
-          "id": "legacy",
-          "name": "i3 (ended)",
-          "notes": "Ended after 2021."
+          "id": "i3s",
+          "name": "i3s",
+          "engine": "Electric + range extender opt.",
+          "horsepower": 184,
+          "rangeMiles": 153,
+          "zeroToSixtySec": 6.8,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4,
+          "notes": "Sport-tuned final-year i3s."
         }
       ]
     }
   },
   "i8": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2020": {
+      "defaultTrimId": "coupe",
       "trims": [
         {
-          "id": "legacy",
-          "name": "i8 (ended)",
-          "notes": "Ended after 2020."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "coupe",
+          "name": "Coupe",
+          "engine": "1.5L Turbo I3 PHEV",
+          "horsepower": 369,
+          "zeroToSixtySec": 4.2,
+          "drivetrain": "AWD",
+          "mpgCombined": 27,
+          "seatingCapacity": 2,
+          "notes": "Final U.S. model year."
+        },
         {
-          "id": "legacy",
-          "name": "i8 (ended)",
-          "notes": "Ended after 2020."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
-        {
-          "id": "legacy",
-          "name": "i8 (ended)",
-          "notes": "Ended after 2020."
+          "id": "roadster",
+          "name": "Roadster",
+          "engine": "1.5L Turbo I3 PHEV",
+          "horsepower": 369,
+          "zeroToSixtySec": 4.4,
+          "drivetrain": "AWD",
+          "mpgCombined": 27,
+          "seatingCapacity": 2,
+          "notes": "Open-top final-year i8."
         }
       ]
     }

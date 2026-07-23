@@ -472,33 +472,30 @@
     }
   },
   "roadster": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2011": {
+      "defaultTrimId": "base",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Roadster (next-gen TBA)",
-          "notes": "Next-gen Roadster not yet in volume production."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "base",
+          "name": "Roadster",
+          "engine": "Electric",
+          "horsepower": 288,
+          "rangeMiles": 245,
+          "zeroToSixtySec": 3.7,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2,
+          "notes": "Final first-gen Roadster year."
+        },
         {
-          "id": "legacy",
-          "name": "Roadster (next-gen TBA)",
-          "notes": "Next-gen Roadster not yet in volume production."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
-        {
-          "id": "legacy",
-          "name": "Roadster (next-gen TBA)",
-          "notes": "Next-gen Roadster not yet in volume production."
+          "id": "sport",
+          "name": "Roadster Sport",
+          "engine": "Electric",
+          "horsepower": 288,
+          "rangeMiles": 245,
+          "zeroToSixtySec": 3.7,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2,
+          "notes": "Sport suspension / wheels package."
         }
       ]
     }

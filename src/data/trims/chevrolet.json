@@ -594,65 +594,65 @@
     }
   },
   "volt": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2019": {
+      "defaultTrimId": "lt",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Volt (discontinued)",
-          "notes": "Discontinued after 2019."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "lt",
+          "name": "LT",
+          "engine": "1.5L I4 PHEV",
+          "horsepower": 149,
+          "rangeMiles": 53,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5,
+          "notes": "Final U.S. model year."
+        },
         {
-          "id": "legacy",
-          "name": "Volt (discontinued)",
-          "notes": "Discontinued after 2019."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
-        {
-          "id": "legacy",
-          "name": "Volt (discontinued)",
-          "notes": "Discontinued after 2019."
+          "id": "premier",
+          "name": "Premier",
+          "engine": "1.5L I4 PHEV",
+          "horsepower": 149,
+          "rangeMiles": 53,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
         }
       ]
     }
   },
   "cruze": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2019": {
+      "defaultTrimId": "lt",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Cruze (discontinued)",
-          "notes": "Discontinued after 2019."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "l",
+          "name": "L / LS",
+          "engine": "1.4L Turbo I4",
+          "horsepower": 153,
+          "torqueLbFt": 177,
+          "drivetrain": "FWD",
+          "mpgCombined": 32,
+          "seatingCapacity": 5,
+          "notes": "Final U.S. model year."
+        },
         {
-          "id": "legacy",
-          "name": "Cruze (discontinued)",
-          "notes": "Discontinued after 2019."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "lt",
+          "name": "LT",
+          "engine": "1.4L Turbo I4",
+          "horsepower": 153,
+          "torqueLbFt": 177,
+          "drivetrain": "FWD",
+          "mpgCombined": 32,
+          "seatingCapacity": 5
+        },
         {
-          "id": "legacy",
-          "name": "Cruze (discontinued)",
-          "notes": "Discontinued after 2019."
+          "id": "premier",
+          "name": "Premier",
+          "engine": "1.4L Turbo I4",
+          "horsepower": 153,
+          "torqueLbFt": 177,
+          "drivetrain": "FWD",
+          "mpgCombined": 30,
+          "seatingCapacity": 5
         }
       ]
     }

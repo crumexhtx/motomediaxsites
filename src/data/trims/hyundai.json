@@ -577,65 +577,67 @@
     }
   },
   "veloster": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2022": {
+      "defaultTrimId": "turbo",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Veloster (discontinued)",
-          "notes": "Ended after 2022."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "base",
+          "name": "2.0",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "drivetrain": "FWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 4,
+          "notes": "Final U.S. model year."
+        },
         {
-          "id": "legacy",
-          "name": "Veloster (discontinued)",
-          "notes": "Ended after 2022."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "turbo",
+          "name": "Turbo",
+          "engine": "1.6L Turbo I4",
+          "horsepower": 201,
+          "torqueLbFt": 195,
+          "drivetrain": "FWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 4
+        },
         {
-          "id": "legacy",
-          "name": "Veloster (discontinued)",
-          "notes": "Ended after 2022."
+          "id": "n",
+          "name": "N",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 275,
+          "torqueLbFt": 260,
+          "zeroToSixtySec": 5.1,
+          "drivetrain": "FWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 4
         }
       ]
     }
   },
   "genesis": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2016": {
+      "defaultTrimId": "38",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Genesis sedan (moved)",
-          "notes": "Genesis is now a separate brand; page kept for catalog."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "38",
+          "name": "3.8",
+          "engine": "3.8L V6",
+          "horsepower": 311,
+          "torqueLbFt": 293,
+          "drivetrain": "RWD / AWD",
+          "mpgCombined": 21,
+          "seatingCapacity": 5,
+          "notes": "Last year as Hyundai Genesis before brand split."
+        },
         {
-          "id": "legacy",
-          "name": "Genesis sedan (moved)",
-          "notes": "Genesis is now a separate brand; page kept for catalog."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
-        {
-          "id": "legacy",
-          "name": "Genesis sedan (moved)",
-          "notes": "Genesis is now a separate brand; page kept for catalog."
+          "id": "50",
+          "name": "5.0",
+          "engine": "5.0L V8",
+          "horsepower": 420,
+          "torqueLbFt": 383,
+          "drivetrain": "RWD / AWD",
+          "mpgCombined": 18,
+          "seatingCapacity": 5
         }
       ]
     }

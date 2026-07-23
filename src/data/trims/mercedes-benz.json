@@ -736,33 +736,30 @@
     }
   },
   "slk-slc": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2020": {
+      "defaultTrimId": "slc300",
       "trims": [
         {
-          "id": "legacy",
-          "name": "SLK/SLC (ended)",
-          "notes": "Succeeded by the new SL."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "slc300",
+          "name": "SLC 300",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 241,
+          "torqueLbFt": 273,
+          "drivetrain": "RWD",
+          "mpgCombined": 25,
+          "seatingCapacity": 2,
+          "notes": "Final SLC year before SL return."
+        },
         {
-          "id": "legacy",
-          "name": "SLK/SLC (ended)",
-          "notes": "Succeeded by the new SL."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
-        {
-          "id": "legacy",
-          "name": "SLK/SLC (ended)",
-          "notes": "Succeeded by the new SL."
+          "id": "amg-slc43",
+          "name": "AMG SLC 43",
+          "engine": "3.0L Twin-Turbo V6",
+          "horsepower": 385,
+          "torqueLbFt": 384,
+          "zeroToSixtySec": 4.6,
+          "drivetrain": "RWD",
+          "mpgCombined": 23,
+          "seatingCapacity": 2
         }
       ]
     }

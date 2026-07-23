@@ -538,103 +538,115 @@
     }
   },
   "stinger": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2023": {
+      "defaultTrimId": "gt-line",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Stinger (ended)",
-          "engine": "3.3L Twin-Turbo V6",
-          "horsepower": 368,
-          "notes": "Ended after 2023."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "gt-line",
+          "name": "GT-Line",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 300,
+          "torqueLbFt": 311,
+          "drivetrain": "RWD / AWD",
+          "mpgCombined": 25,
+          "seatingCapacity": 5,
+          "notes": "Final U.S. model year."
+        },
         {
-          "id": "legacy",
-          "name": "Stinger (ended)",
+          "id": "gt1",
+          "name": "GT1",
           "engine": "3.3L Twin-Turbo V6",
           "horsepower": 368,
-          "notes": "Ended after 2023."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "torqueLbFt": 376,
+          "zeroToSixtySec": 4.7,
+          "drivetrain": "RWD / AWD",
+          "mpgCombined": 20,
+          "seatingCapacity": 5
+        },
         {
-          "id": "legacy",
-          "name": "Stinger (ended)",
+          "id": "gt2",
+          "name": "GT2",
           "engine": "3.3L Twin-Turbo V6",
           "horsepower": 368,
-          "notes": "Ended after 2023."
+          "torqueLbFt": 376,
+          "zeroToSixtySec": 4.7,
+          "drivetrain": "RWD / AWD",
+          "mpgCombined": 20,
+          "seatingCapacity": 5
         }
       ]
     }
   },
   "optima": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2020": {
+      "defaultTrimId": "lx",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Optima (renamed K5)",
-          "notes": "Succeeded by K5."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "lx",
+          "name": "LX / S",
+          "engine": "2.4L I4",
+          "horsepower": 185,
+          "drivetrain": "FWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 5,
+          "notes": "Final U.S. Optima year (became K5)."
+        },
         {
-          "id": "legacy",
-          "name": "Optima (renamed K5)",
-          "notes": "Succeeded by K5."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "ex",
+          "name": "EX",
+          "engine": "1.6L Turbo I4",
+          "horsepower": 180,
+          "drivetrain": "FWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 5
+        },
         {
-          "id": "legacy",
-          "name": "Optima (renamed K5)",
-          "notes": "Succeeded by K5."
+          "id": "sx",
+          "name": "SX",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 245,
+          "torqueLbFt": 260,
+          "drivetrain": "FWD",
+          "mpgCombined": 24,
+          "seatingCapacity": 5
         }
       ]
     }
   },
   "rio": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2023": {
+      "defaultTrimId": "s",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Rio (ending)",
-          "notes": "U.S. Rio discontinued."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "lx",
+          "name": "LX",
+          "engine": "1.6L I4",
+          "horsepower": 120,
+          "torqueLbFt": 112,
+          "drivetrain": "FWD",
+          "mpgCombined": 36,
+          "seatingCapacity": 5,
+          "notes": "Final U.S. model year."
+        },
         {
-          "id": "legacy",
-          "name": "Rio (ending)",
-          "notes": "U.S. Rio discontinued."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "s",
+          "name": "S",
+          "engine": "1.6L I4",
+          "horsepower": 120,
+          "torqueLbFt": 112,
+          "drivetrain": "FWD",
+          "mpgCombined": 36,
+          "seatingCapacity": 5
+        },
         {
-          "id": "legacy",
-          "name": "Rio (ending)",
-          "notes": "U.S. Rio discontinued."
+          "id": "gt-line",
+          "name": "GT-Line",
+          "engine": "1.6L I4",
+          "horsepower": 120,
+          "torqueLbFt": 112,
+          "drivetrain": "FWD",
+          "mpgCombined": 35,
+          "seatingCapacity": 5
         }
       ]
     }

@@ -467,135 +467,135 @@
     }
   },
   "insight": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2022": {
+      "defaultTrimId": "ex",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Insight (discontinued)",
-          "notes": "U.S. Insight ended after 2022."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "ex",
+          "name": "EX",
+          "engine": "1.5L Hybrid I4",
+          "horsepower": 151,
+          "drivetrain": "FWD",
+          "mpgCombined": 52,
+          "seatingCapacity": 5,
+          "notes": "Final U.S. model year."
+        },
         {
-          "id": "legacy",
-          "name": "Insight (discontinued)",
-          "notes": "U.S. Insight ended after 2022."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
-        {
-          "id": "legacy",
-          "name": "Insight (discontinued)",
-          "notes": "U.S. Insight ended after 2022."
+          "id": "touring",
+          "name": "Touring",
+          "engine": "1.5L Hybrid I4",
+          "horsepower": 151,
+          "drivetrain": "FWD",
+          "mpgCombined": 48,
+          "seatingCapacity": 5
         }
       ]
     }
   },
   "fit": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2020": {
+      "defaultTrimId": "lx",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Fit (discontinued)",
-          "notes": "U.S. Fit ended after 2020."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "lx",
+          "name": "LX",
+          "engine": "1.5L I4",
+          "horsepower": 128,
+          "torqueLbFt": 113,
+          "drivetrain": "FWD",
+          "mpgCombined": 36,
+          "seatingCapacity": 5,
+          "notes": "Final U.S. model year."
+        },
         {
-          "id": "legacy",
-          "name": "Fit (discontinued)",
-          "notes": "U.S. Fit ended after 2020."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "sport",
+          "name": "Sport",
+          "engine": "1.5L I4",
+          "horsepower": 128,
+          "torqueLbFt": 113,
+          "drivetrain": "FWD",
+          "mpgCombined": 33,
+          "seatingCapacity": 5
+        },
         {
-          "id": "legacy",
-          "name": "Fit (discontinued)",
-          "notes": "U.S. Fit ended after 2020."
+          "id": "ex",
+          "name": "EX / EX-L",
+          "engine": "1.5L I4",
+          "horsepower": 128,
+          "torqueLbFt": 113,
+          "drivetrain": "FWD",
+          "mpgCombined": 36,
+          "seatingCapacity": 5
         }
       ]
     }
   },
   "element": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2011": {
+      "defaultTrimId": "ex",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Element (discontinued)",
-          "notes": "Discontinued after 2011."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "lx",
+          "name": "LX",
+          "engine": "2.4L I4",
+          "horsepower": 166,
+          "torqueLbFt": 161,
+          "drivetrain": "FWD / AWD",
+          "mpgCombined": 21,
+          "seatingCapacity": 4,
+          "notes": "Final model year."
+        },
         {
-          "id": "legacy",
-          "name": "Element (discontinued)",
-          "notes": "Discontinued after 2011."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "ex",
+          "name": "EX",
+          "engine": "2.4L I4",
+          "horsepower": 166,
+          "torqueLbFt": 161,
+          "drivetrain": "FWD / AWD",
+          "mpgCombined": 21,
+          "seatingCapacity": 4
+        },
         {
-          "id": "legacy",
-          "name": "Element (discontinued)",
-          "notes": "Discontinued after 2011."
+          "id": "sc",
+          "name": "SC",
+          "engine": "2.4L I4",
+          "horsepower": 166,
+          "torqueLbFt": 161,
+          "drivetrain": "FWD",
+          "mpgCombined": 21,
+          "seatingCapacity": 4,
+          "notes": "Street-oriented final-year SC."
         }
       ]
     }
   },
   "s2000": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2009": {
+      "defaultTrimId": "base",
       "trims": [
         {
-          "id": "legacy",
-          "name": "S2000 (discontinued)",
+          "id": "base",
+          "name": "S2000",
           "engine": "2.2L I4",
           "horsepower": 237,
-          "notes": "Ended after 2009."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "torqueLbFt": 162,
+          "redlineRpm": 8000,
+          "drivetrain": "RWD",
+          "zeroToSixtySec": 5.8,
+          "seatingCapacity": 2,
+          "notes": "Final model year."
+        },
         {
-          "id": "legacy",
-          "name": "S2000 (discontinued)",
+          "id": "cr",
+          "name": "CR",
           "engine": "2.2L I4",
           "horsepower": 237,
-          "notes": "Ended after 2009."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
-        {
-          "id": "legacy",
-          "name": "S2000 (discontinued)",
-          "engine": "2.2L I4",
-          "horsepower": 237,
-          "notes": "Ended after 2009."
+          "torqueLbFt": 162,
+          "redlineRpm": 8000,
+          "drivetrain": "RWD",
+          "zeroToSixtySec": 5.7,
+          "seatingCapacity": 2,
+          "notes": "Club Racer hardtop package."
         }
       ]
     }

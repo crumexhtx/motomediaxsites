@@ -358,129 +358,151 @@
     }
   },
   "cx-9": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2023": {
+      "defaultTrimId": "touring",
       "trims": [
         {
-          "id": "legacy",
-          "name": "CX-9 (succeeded by CX-90)",
-          "notes": "Replaced by CX-90."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 227,
+          "torqueLbFt": 310,
+          "drivetrain": "AWD",
+          "mpgCombined": 23,
+          "seatingCapacity": 7,
+          "notes": "Final model year before CX-90."
+        },
         {
-          "id": "legacy",
-          "name": "CX-9 (succeeded by CX-90)",
-          "notes": "Replaced by CX-90."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "touring",
+          "name": "Touring / Carbon",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 227,
+          "torqueLbFt": 310,
+          "drivetrain": "AWD",
+          "mpgCombined": 23,
+          "seatingCapacity": 7
+        },
         {
-          "id": "legacy",
-          "name": "CX-9 (succeeded by CX-90)",
-          "notes": "Replaced by CX-90."
+          "id": "signature",
+          "name": "Signature",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 250,
+          "torqueLbFt": 320,
+          "drivetrain": "AWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 7
         }
       ]
     }
   },
   "mazda6": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2021": {
+      "defaultTrimId": "touring",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Mazda6 (ended)",
-          "notes": "U.S. Mazda6 ended after 2021."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "sport",
+          "name": "Sport",
+          "engine": "2.5L I4",
+          "horsepower": 187,
+          "drivetrain": "FWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 5,
+          "notes": "Final U.S. model year."
+        },
         {
-          "id": "legacy",
-          "name": "Mazda6 (ended)",
-          "notes": "U.S. Mazda6 ended after 2021."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "touring",
+          "name": "Touring",
+          "engine": "2.5L I4",
+          "horsepower": 187,
+          "drivetrain": "FWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 5
+        },
         {
-          "id": "legacy",
-          "name": "Mazda6 (ended)",
-          "notes": "U.S. Mazda6 ended after 2021."
+          "id": "grand-touring",
+          "name": "Grand Touring / Reserve",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 227,
+          "torqueLbFt": 310,
+          "drivetrain": "FWD",
+          "mpgCombined": 26,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "signature",
+          "name": "Signature",
+          "engine": "2.5L Turbo I4",
+          "horsepower": 250,
+          "torqueLbFt": 320,
+          "drivetrain": "FWD",
+          "mpgCombined": 26,
+          "seatingCapacity": 5
         }
       ]
     }
   },
   "rx-8": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2011": {
+      "defaultTrimId": "grand-touring",
       "trims": [
         {
-          "id": "legacy",
-          "name": "RX-8 (ended)",
-          "notes": "Ended after 2012."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "sport",
+          "name": "Sport",
+          "engine": "1.3L Renesis Rotary",
+          "horsepower": 212,
+          "drivetrain": "RWD",
+          "mpgCombined": 19,
+          "seatingCapacity": 4,
+          "notes": "Final U.S. model year."
+        },
         {
-          "id": "legacy",
-          "name": "RX-8 (ended)",
-          "notes": "Ended after 2012."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "grand-touring",
+          "name": "Grand Touring",
+          "engine": "1.3L Renesis Rotary",
+          "horsepower": 232,
+          "drivetrain": "RWD",
+          "mpgCombined": 18,
+          "seatingCapacity": 4
+        },
         {
-          "id": "legacy",
-          "name": "RX-8 (ended)",
-          "notes": "Ended after 2012."
+          "id": "r3",
+          "name": "R3",
+          "engine": "1.3L Renesis Rotary",
+          "horsepower": 232,
+          "drivetrain": "RWD",
+          "mpgCombined": 18,
+          "seatingCapacity": 4,
+          "notes": "Track-oriented final-year R3."
         }
       ]
     }
   },
   "mazdaspeed3": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2013": {
+      "defaultTrimId": "mazdaspeed3",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Mazdaspeed3 (ended)",
-          "notes": "Ended after 2013."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "mazdaspeed3",
+          "name": "Mazdaspeed3",
+          "engine": "2.3L Turbo I4",
+          "horsepower": 263,
+          "torqueLbFt": 280,
+          "zeroToSixtySec": 5.9,
+          "drivetrain": "FWD",
+          "mpgCombined": 21,
+          "seatingCapacity": 5,
+          "notes": "Final model year."
+        },
         {
-          "id": "legacy",
-          "name": "Mazdaspeed3 (ended)",
-          "notes": "Ended after 2013."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
-        {
-          "id": "legacy",
-          "name": "Mazdaspeed3 (ended)",
-          "notes": "Ended after 2013."
+          "id": "touring",
+          "name": "Touring Package",
+          "engine": "2.3L Turbo I4",
+          "horsepower": 263,
+          "torqueLbFt": 280,
+          "drivetrain": "FWD",
+          "mpgCombined": 21,
+          "seatingCapacity": 5,
+          "notes": "Added nav / Bose content on final-year cars."
         }
       ]
     }

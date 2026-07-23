@@ -565,39 +565,39 @@
     }
   },
   "maxima": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2023": {
+      "defaultTrimId": "sv",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Maxima (ending)",
+          "id": "sv",
+          "name": "SV",
           "engine": "3.5L V6",
           "horsepower": 300,
-          "notes": "U.S. Maxima ended after 2023."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "torqueLbFt": 261,
+          "drivetrain": "FWD",
+          "mpgCombined": 24,
+          "seatingCapacity": 5,
+          "notes": "Final U.S. model year."
+        },
         {
-          "id": "legacy",
-          "name": "Maxima (ending)",
+          "id": "sr",
+          "name": "SR",
           "engine": "3.5L V6",
           "horsepower": 300,
-          "notes": "U.S. Maxima ended after 2023."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "torqueLbFt": 261,
+          "drivetrain": "FWD",
+          "mpgCombined": 24,
+          "seatingCapacity": 5
+        },
         {
-          "id": "legacy",
-          "name": "Maxima (ending)",
+          "id": "platinum",
+          "name": "Platinum",
           "engine": "3.5L V6",
           "horsepower": 300,
-          "notes": "U.S. Maxima ended after 2023."
+          "torqueLbFt": 261,
+          "drivetrain": "FWD",
+          "mpgCombined": 24,
+          "seatingCapacity": 5
         }
       ]
     }
@@ -641,97 +641,112 @@
     }
   },
   "370z": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2020": {
+      "defaultTrimId": "sport",
       "trims": [
         {
-          "id": "legacy",
-          "name": "370Z (discontinued)",
-          "notes": "Replaced by Nissan Z."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "sport",
+          "name": "Sport",
+          "engine": "3.7L V6",
+          "horsepower": 332,
+          "torqueLbFt": 270,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2,
+          "notes": "Final 370Z year before Z."
+        },
         {
-          "id": "legacy",
-          "name": "370Z (discontinued)",
-          "notes": "Replaced by Nissan Z."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "sport-touring",
+          "name": "Sport Touring",
+          "engine": "3.7L V6",
+          "horsepower": 332,
+          "torqueLbFt": 270,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        },
         {
-          "id": "legacy",
-          "name": "370Z (discontinued)",
-          "notes": "Replaced by Nissan Z."
+          "id": "nismo",
+          "name": "NISMO",
+          "engine": "3.7L V6",
+          "horsepower": 350,
+          "torqueLbFt": 276,
+          "zeroToSixtySec": 4.9,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
         }
       ]
     }
   },
   "350z": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2009": {
+      "defaultTrimId": "enthusiast",
       "trims": [
         {
-          "id": "legacy",
-          "name": "350Z (discontinued)",
-          "notes": "Ended after 2009."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "enthusiast",
+          "name": "Enthusiast",
+          "engine": "3.5L V6",
+          "horsepower": 306,
+          "torqueLbFt": 268,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2,
+          "notes": "Final 350Z model year."
+        },
         {
-          "id": "legacy",
-          "name": "350Z (discontinued)",
-          "notes": "Ended after 2009."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "touring",
+          "name": "Touring",
+          "engine": "3.5L V6",
+          "horsepower": 306,
+          "torqueLbFt": 268,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        },
         {
-          "id": "legacy",
-          "name": "350Z (discontinued)",
-          "notes": "Ended after 2009."
+          "id": "nismo",
+          "name": "NISMO",
+          "engine": "3.5L V6",
+          "horsepower": 306,
+          "torqueLbFt": 274,
+          "zeroToSixtySec": 5.2,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
         }
       ]
     }
   },
   "xterra": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2015": {
+      "defaultTrimId": "s",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Xterra (discontinued)",
-          "notes": "Ended after 2015."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "x",
+          "name": "X",
+          "engine": "4.0L V6",
+          "horsepower": 261,
+          "torqueLbFt": 281,
+          "drivetrain": "RWD / 4WD",
+          "mpgCombined": 18,
+          "seatingCapacity": 5,
+          "notes": "Final model year."
+        },
         {
-          "id": "legacy",
-          "name": "Xterra (discontinued)",
-          "notes": "Ended after 2015."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "s",
+          "name": "S",
+          "engine": "4.0L V6",
+          "horsepower": 261,
+          "torqueLbFt": 281,
+          "drivetrain": "RWD / 4WD",
+          "mpgCombined": 18,
+          "seatingCapacity": 5
+        },
         {
-          "id": "legacy",
-          "name": "Xterra (discontinued)",
-          "notes": "Ended after 2015."
+          "id": "pro-4x",
+          "name": "PRO-4X",
+          "engine": "4.0L V6",
+          "horsepower": 261,
+          "torqueLbFt": 281,
+          "drivetrain": "4WD",
+          "mpgCombined": 17,
+          "seatingCapacity": 5,
+          "groundClearanceIn": 9.4
         }
       ]
     }

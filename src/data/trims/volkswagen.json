@@ -198,33 +198,29 @@
     }
   },
   "golf": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2021": {
+      "defaultTrimId": "s",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Golf (base ended U.S.)",
-          "notes": "U.S. lineup focuses on GTI / Golf R."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "s",
+          "name": "S",
+          "engine": "1.4L Turbo I4",
+          "horsepower": 147,
+          "torqueLbFt": 184,
+          "drivetrain": "FWD",
+          "mpgCombined": 32,
+          "seatingCapacity": 5,
+          "notes": "Final U.S. Golf hatch year (GTI/R continued)."
+        },
         {
-          "id": "legacy",
-          "name": "Golf (base ended U.S.)",
-          "notes": "U.S. lineup focuses on GTI / Golf R."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
-        {
-          "id": "legacy",
-          "name": "Golf (base ended U.S.)",
-          "notes": "U.S. lineup focuses on GTI / Golf R."
+          "id": "se",
+          "name": "SE",
+          "engine": "1.4L Turbo I4",
+          "horsepower": 147,
+          "torqueLbFt": 184,
+          "drivetrain": "FWD",
+          "mpgCombined": 32,
+          "seatingCapacity": 5
         }
       ]
     }
@@ -446,97 +442,115 @@
     }
   },
   "passat": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2022": {
+      "defaultTrimId": "se",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Passat (ended U.S.)",
-          "notes": "U.S. Passat ended after 2022."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "se",
+          "name": "SE",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 174,
+          "torqueLbFt": 206,
+          "drivetrain": "FWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 5,
+          "notes": "Final U.S. model year."
+        },
         {
-          "id": "legacy",
-          "name": "Passat (ended U.S.)",
-          "notes": "U.S. Passat ended after 2022."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "r-line",
+          "name": "R-Line",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 174,
+          "torqueLbFt": 206,
+          "drivetrain": "FWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 5
+        },
         {
-          "id": "legacy",
-          "name": "Passat (ended U.S.)",
-          "notes": "U.S. Passat ended after 2022."
+          "id": "limited",
+          "name": "Limited Edition",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 174,
+          "torqueLbFt": 206,
+          "drivetrain": "FWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 5
         }
       ]
     }
   },
   "touareg": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2017": {
+      "defaultTrimId": "v6-sport",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Touareg (ended U.S.)",
-          "notes": "Not sold in the U.S. currently."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "v6-sport",
+          "name": "V6 Sport",
+          "engine": "3.6L V6",
+          "horsepower": 280,
+          "torqueLbFt": 265,
+          "drivetrain": "AWD",
+          "mpgCombined": 20,
+          "seatingCapacity": 5,
+          "notes": "Final U.S. Touareg year."
+        },
         {
-          "id": "legacy",
-          "name": "Touareg (ended U.S.)",
-          "notes": "Not sold in the U.S. currently."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "wolfsburg",
+          "name": "Wolfsburg Edition",
+          "engine": "3.6L V6",
+          "horsepower": 280,
+          "torqueLbFt": 265,
+          "drivetrain": "AWD",
+          "mpgCombined": 20,
+          "seatingCapacity": 5
+        },
         {
-          "id": "legacy",
-          "name": "Touareg (ended U.S.)",
-          "notes": "Not sold in the U.S. currently."
+          "id": "executive",
+          "name": "Executive",
+          "engine": "3.6L V6",
+          "horsepower": 280,
+          "torqueLbFt": 265,
+          "drivetrain": "AWD",
+          "mpgCombined": 19,
+          "seatingCapacity": 5
         }
       ]
     }
   },
   "beetle": {
-    "2024": {
-      "defaultTrimId": "legacy",
+    "2019": {
+      "defaultTrimId": "se",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Beetle (ended)",
-          "notes": "Ended after 2019."
-        }
-      ]
-    },
-    "2025": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "s",
+          "name": "S",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 174,
+          "torqueLbFt": 184,
+          "drivetrain": "FWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 4,
+          "notes": "Final U.S. model year."
+        },
         {
-          "id": "legacy",
-          "name": "Beetle (ended)",
-          "notes": "Ended after 2019."
-        }
-      ]
-    },
-    "2026": {
-      "defaultTrimId": "legacy",
-      "trims": [
+          "id": "se",
+          "name": "SE",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 174,
+          "torqueLbFt": 184,
+          "drivetrain": "FWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 4
+        },
         {
-          "id": "legacy",
-          "name": "Beetle (ended)",
-          "notes": "Ended after 2019."
+          "id": "final-edition",
+          "name": "Final Edition",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 174,
+          "torqueLbFt": 184,
+          "drivetrain": "FWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 4
         }
       ]
     }
