@@ -86,7 +86,8 @@
           "zeroToSixtySec": 4.9,
           "drivetrain": "FWD",
           "mpgCombined": 25,
-          "seatingCapacity": 4
+          "seatingCapacity": 4,
+          "notes": "Single U.S. trim."
         }
       ]
     },
@@ -102,7 +103,8 @@
           "zeroToSixtySec": 4.9,
           "drivetrain": "FWD",
           "mpgCombined": 25,
-          "seatingCapacity": 4
+          "seatingCapacity": 4,
+          "notes": "Single U.S. trim."
         }
       ]
     },
@@ -118,7 +120,8 @@
           "zeroToSixtySec": 4.9,
           "drivetrain": "FWD",
           "mpgCombined": 25,
-          "seatingCapacity": 4
+          "seatingCapacity": 4,
+          "notes": "Single U.S. trim."
         }
       ]
     }
@@ -356,13 +359,50 @@
       "defaultTrimId": "ex-l",
       "trims": [
         {
+          "id": "ex",
+          "name": "EX",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "FWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 8
+        },
+        {
           "id": "ex-l",
           "name": "EX-L",
           "engine": "3.5L V6",
           "horsepower": 280,
+          "drivetrain": "FWD",
           "mpgCombined": 22,
           "seatingCapacity": 8,
           "cargoCuFt": 32.8
+        },
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "FWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 8
+        },
+        {
+          "id": "touring",
+          "name": "Touring",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "FWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 8
+        },
+        {
+          "id": "elite",
+          "name": "Elite",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "FWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 8
         }
       ]
     },
@@ -374,9 +414,37 @@
           "name": "EX-L",
           "engine": "3.5L V6",
           "horsepower": 280,
+          "drivetrain": "FWD",
           "mpgCombined": 22,
           "seatingCapacity": 8,
           "cargoCuFt": 32.8
+        },
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "FWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 8
+        },
+        {
+          "id": "touring",
+          "name": "Touring",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "FWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 8
+        },
+        {
+          "id": "elite",
+          "name": "Elite",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "FWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 8
         }
       ]
     },
@@ -388,9 +456,37 @@
           "name": "EX-L",
           "engine": "3.5L V6",
           "horsepower": 280,
+          "drivetrain": "FWD",
           "mpgCombined": 22,
           "seatingCapacity": 8,
           "cargoCuFt": 32.8
+        },
+        {
+          "id": "sport",
+          "name": "Sport",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "FWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 8
+        },
+        {
+          "id": "touring",
+          "name": "Touring",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "FWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 8
+        },
+        {
+          "id": "elite",
+          "name": "Elite",
+          "engine": "3.5L V6",
+          "horsepower": 280,
+          "drivetrain": "FWD",
+          "mpgCombined": 22,
+          "seatingCapacity": 8
         }
       ]
     }

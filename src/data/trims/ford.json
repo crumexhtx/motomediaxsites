@@ -10,7 +10,7 @@
           "aspiration": "Turbocharged",
           "horsepower": 315,
           "torqueLbFt": 350,
-          "zeroToSixtySec": 5.0,
+          "zeroToSixtySec": 5,
           "transmission": "6-speed manual / 10-speed automatic",
           "drivetrain": "RWD",
           "mpgCity": 21,
@@ -62,7 +62,7 @@
           "aspiration": "Turbocharged",
           "horsepower": 315,
           "torqueLbFt": 350,
-          "zeroToSixtySec": 5.0,
+          "zeroToSixtySec": 5,
           "transmission": "6-speed manual / 10-speed automatic",
           "drivetrain": "RWD",
           "mpgCity": 22,
@@ -306,7 +306,7 @@
           "mpgHighway": 18,
           "mpgCombined": 16,
           "seatingCapacity": 5,
-          "groundClearanceIn": 12.0
+          "groundClearanceIn": 12
         }
       ]
     },
@@ -692,7 +692,7 @@
           "aspiration": "Twin-turbo",
           "horsepower": 405,
           "torqueLbFt": 430,
-          "zeroToSixtySec": 6.0,
+          "zeroToSixtySec": 6,
           "transmission": "10-speed automatic",
           "drivetrain": "4WD",
           "mpgCity": 16,
@@ -760,118 +760,151 @@
   },
   "gt": {
     "2024": {
-      "defaultTrimId": "gt",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "gt",
-          "name": "GT",
-          "engine": "3.5L Twin-Turbo V6",
-          "aspiration": "Twin-turbo",
-          "horsepower": 660,
-          "torqueLbFt": 550,
-          "zeroToSixtySec": 3.0,
-          "transmission": "7-speed dual-clutch",
-          "drivetrain": "RWD",
-          "seatingCapacity": 2,
-          "notes": "Limited-production supercar; availability varies by year."
+          "id": "discontinued",
+          "name": "Discontinued",
+          "notes": "Ford GT limited production has ended."
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "gt",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "gt",
-          "name": "GT",
-          "engine": "3.5L Twin-Turbo V6",
-          "aspiration": "Twin-turbo",
-          "horsepower": 660,
-          "torqueLbFt": 550,
-          "zeroToSixtySec": 3.0,
-          "transmission": "7-speed dual-clutch",
-          "drivetrain": "RWD",
-          "seatingCapacity": 2
+          "id": "discontinued",
+          "name": "Discontinued",
+          "notes": "Not offered for this model year."
         }
       ]
     },
     "2026": {
-      "defaultTrimId": "gt",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "gt",
-          "name": "GT",
-          "engine": "3.5L Twin-Turbo V6",
-          "aspiration": "Twin-turbo",
-          "horsepower": 660,
-          "torqueLbFt": 550,
-          "transmission": "7-speed dual-clutch",
-          "drivetrain": "RWD",
-          "seatingCapacity": 2
+          "id": "discontinued",
+          "name": "Discontinued",
+          "notes": "Not offered for this model year."
         }
       ]
     }
   },
   "focus": {
     "2024": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "titanium",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Focus (discontinued U.S.)",
-          "notes": "U.S. Focus production ended after 2018; page kept for catalog continuity."
+          "id": "trend",
+          "name": "Trend",
+          "engine": "1.0L / 1.5L Turbo I3",
+          "horsepower": 123,
+          "drivetrain": "FWD",
+          "notes": "Global market only — not sold in the U.S."
+        },
+        {
+          "id": "titanium",
+          "name": "Titanium",
+          "engine": "1.0L / 1.5L Turbo I3",
+          "horsepower": 150,
+          "drivetrain": "FWD",
+          "notes": "Global market only — not sold in the U.S."
+        },
+        {
+          "id": "st-line",
+          "name": "ST-Line",
+          "engine": "1.0L / 1.5L Turbo I3",
+          "horsepower": 150,
+          "drivetrain": "FWD",
+          "notes": "Global market only — not sold in the U.S."
+        },
+        {
+          "id": "st",
+          "name": "ST",
+          "engine": "2.3L Turbo I4",
+          "horsepower": 280,
+          "drivetrain": "FWD",
+          "notes": "Global market only — not sold in the U.S."
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "titanium",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Focus (discontinued U.S.)",
-          "notes": "Not offered in the U.S. for this model year."
+          "id": "trend",
+          "name": "Trend",
+          "engine": "1.0L / 1.5L Turbo I3",
+          "horsepower": 123,
+          "drivetrain": "FWD",
+          "notes": "Global market only — not sold in the U.S."
+        },
+        {
+          "id": "titanium",
+          "name": "Titanium",
+          "engine": "1.0L / 1.5L Turbo I3",
+          "horsepower": 150,
+          "drivetrain": "FWD",
+          "notes": "Global market only — not sold in the U.S."
+        },
+        {
+          "id": "st-line",
+          "name": "ST-Line",
+          "engine": "1.0L / 1.5L Turbo I3",
+          "horsepower": 150,
+          "drivetrain": "FWD",
+          "notes": "Global market only — not sold in the U.S."
+        },
+        {
+          "id": "st",
+          "name": "ST",
+          "engine": "2.3L Turbo I4",
+          "horsepower": 280,
+          "drivetrain": "FWD",
+          "notes": "Global market only — not sold in the U.S."
         }
       ]
     },
     "2026": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Focus (discontinued U.S.)",
-          "notes": "Not offered in the U.S. for this model year."
+          "id": "discontinued",
+          "name": "Discontinued",
+          "notes": "Focus discontinued globally for this catalog year."
         }
       ]
     }
   },
   "focus-rs": {
     "2024": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Focus RS (discontinued)",
+          "id": "discontinued",
+          "name": "Discontinued",
+          "notes": "Last U.S. Focus RS was 2018.",
           "engine": "2.3L Turbo I4",
-          "horsepower": 350,
-          "notes": "Last U.S. Focus RS was 2018."
+          "horsepower": 350
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Focus RS (discontinued)",
+          "id": "discontinued",
+          "name": "Discontinued",
           "notes": "Not offered for this model year."
         }
       ]
     },
     "2026": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Focus RS (discontinued)",
+          "id": "discontinued",
+          "name": "Discontinued",
           "notes": "Not offered for this model year."
         }
       ]
@@ -879,31 +912,31 @@
   },
   "fiesta-st": {
     "2024": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Fiesta ST (discontinued)",
-          "notes": "U.S. Fiesta ended after 2019."
+          "id": "discontinued",
+          "name": "Discontinued",
+          "notes": "U.S. Fiesta ST ended after 2019."
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Fiesta ST (discontinued)",
+          "id": "discontinued",
+          "name": "Discontinued",
           "notes": "Not offered for this model year."
         }
       ]
     },
     "2026": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Fiesta ST (discontinued)",
+          "id": "discontinued",
+          "name": "Discontinued",
           "notes": "Not offered for this model year."
         }
       ]

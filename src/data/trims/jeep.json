@@ -318,63 +318,84 @@
   },
   "cherokee": {
     "2024": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Cherokee (ended)",
+          "id": "discontinued",
+          "name": "Discontinued",
           "notes": "U.S. Cherokee ended after 2023."
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Cherokee (ended)",
+          "id": "discontinued",
+          "name": "Discontinued",
           "notes": "U.S. Cherokee ended after 2023."
         }
       ]
     },
     "2026": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "latitude",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Cherokee (ended)",
-          "notes": "U.S. Cherokee ended after 2023."
+          "id": "latitude",
+          "name": "Latitude",
+          "engine": "2.0L / 2.4L",
+          "horsepower": 180,
+          "drivetrain": "FWD / 4WD",
+          "seatingCapacity": 5,
+          "notes": "Catalog placeholder if lineup returns."
+        },
+        {
+          "id": "limited",
+          "name": "Limited",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 270,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "trailhawk",
+          "name": "Trailhawk",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 270,
+          "drivetrain": "4WD",
+          "seatingCapacity": 5,
+          "groundClearanceIn": 8.7
         }
       ]
     }
   },
   "renegade": {
     "2024": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Renegade (ended)",
+          "id": "discontinued",
+          "name": "Discontinued",
           "notes": "U.S. Renegade ended after 2023."
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Renegade (ended)",
+          "id": "discontinued",
+          "name": "Discontinued",
           "notes": "U.S. Renegade ended after 2023."
         }
       ]
     },
     "2026": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "legacy",
-          "name": "Renegade (ended)",
+          "id": "discontinued",
+          "name": "Discontinued",
           "notes": "U.S. Renegade ended after 2023."
         }
       ]

@@ -625,43 +625,112 @@
   },
   "amg-gt": {
     "2024": {
-      "defaultTrimId": "gt",
+      "defaultTrimId": "gt55",
       "trims": [
         {
-          "id": "gt",
-          "name": "AMG GT",
+          "id": "gt55",
+          "name": "AMG GT 55",
           "engine": "4.0L Twin-Turbo V8",
           "horsepower": 469,
-          "zeroToSixtySec": 3.9,
-          "drivetrain": "RWD / AWD",
+          "torqueLbFt": 516,
+          "zeroToSixtySec": 3.7,
+          "drivetrain": "AWD",
+          "seatingCapacity": 2
+        },
+        {
+          "id": "gt63",
+          "name": "AMG GT 63",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 577,
+          "torqueLbFt": 590,
+          "zeroToSixtySec": 3.1,
+          "drivetrain": "AWD",
           "seatingCapacity": 2
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "gt",
+      "defaultTrimId": "gt55",
       "trims": [
         {
-          "id": "gt",
-          "name": "AMG GT",
+          "id": "gt43",
+          "name": "AMG GT 43",
+          "engine": "2.0L Turbo I4 Hybrid",
+          "horsepower": 416,
+          "zeroToSixtySec": 4.5,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        },
+        {
+          "id": "gt55",
+          "name": "AMG GT 55",
           "engine": "4.0L Twin-Turbo V8",
           "horsepower": 469,
-          "zeroToSixtySec": 3.9,
-          "drivetrain": "RWD / AWD",
+          "torqueLbFt": 516,
+          "zeroToSixtySec": 3.7,
+          "drivetrain": "AWD",
+          "seatingCapacity": 2
+        },
+        {
+          "id": "gt63",
+          "name": "AMG GT 63",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 577,
+          "torqueLbFt": 590,
+          "zeroToSixtySec": 3.1,
+          "drivetrain": "AWD",
+          "seatingCapacity": 2
+        },
+        {
+          "id": "gt63s-e",
+          "name": "AMG GT 63 S E Performance",
+          "engine": "4.0L Twin-Turbo V8 PHEV",
+          "horsepower": 805,
+          "zeroToSixtySec": 2.7,
+          "drivetrain": "AWD",
           "seatingCapacity": 2
         }
       ]
     },
     "2026": {
-      "defaultTrimId": "gt",
+      "defaultTrimId": "gt55",
       "trims": [
         {
-          "id": "gt",
-          "name": "AMG GT",
+          "id": "gt43",
+          "name": "AMG GT 43",
+          "engine": "2.0L Turbo I4 Hybrid",
+          "horsepower": 416,
+          "zeroToSixtySec": 4.5,
+          "drivetrain": "RWD",
+          "seatingCapacity": 2
+        },
+        {
+          "id": "gt55",
+          "name": "AMG GT 55",
           "engine": "4.0L Twin-Turbo V8",
           "horsepower": 469,
-          "zeroToSixtySec": 3.9,
-          "drivetrain": "RWD / AWD",
+          "torqueLbFt": 516,
+          "zeroToSixtySec": 3.7,
+          "drivetrain": "AWD",
+          "seatingCapacity": 2
+        },
+        {
+          "id": "gt63",
+          "name": "AMG GT 63",
+          "engine": "4.0L Twin-Turbo V8",
+          "horsepower": 577,
+          "torqueLbFt": 590,
+          "zeroToSixtySec": 3.1,
+          "drivetrain": "AWD",
+          "seatingCapacity": 2
+        },
+        {
+          "id": "gt63s-e",
+          "name": "AMG GT 63 S E Performance",
+          "engine": "4.0L Twin-Turbo V8 PHEV",
+          "horsepower": 805,
+          "zeroToSixtySec": 2.7,
+          "drivetrain": "AWD",
           "seatingCapacity": 2
         }
       ]

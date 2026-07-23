@@ -519,8 +519,18 @@
   },
   "leaf": {
     "2024": {
-      "defaultTrimId": "sv-plus",
+      "defaultTrimId": "s",
       "trims": [
+        {
+          "id": "s",
+          "name": "S",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 147,
+          "rangeMiles": 149,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
         {
           "id": "sv-plus",
           "name": "SV Plus",
@@ -534,8 +544,18 @@
       ]
     },
     "2025": {
-      "defaultTrimId": "sv-plus",
+      "defaultTrimId": "s",
       "trims": [
+        {
+          "id": "s",
+          "name": "S",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 147,
+          "rangeMiles": 149,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
         {
           "id": "sv-plus",
           "name": "SV Plus",
@@ -549,8 +569,18 @@
       ]
     },
     "2026": {
-      "defaultTrimId": "sv-plus",
+      "defaultTrimId": "s",
       "trims": [
+        {
+          "id": "s",
+          "name": "S",
+          "engine": "Electric",
+          "aspiration": "Electric",
+          "horsepower": 147,
+          "rangeMiles": 149,
+          "drivetrain": "FWD",
+          "seatingCapacity": 5
+        },
         {
           "id": "sv-plus",
           "name": "SV Plus",
@@ -604,38 +634,70 @@
   },
   "gt-r": {
     "2024": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "premium",
       "trims": [
         {
-          "id": "legacy",
-          "name": "GT-R (ended)",
+          "id": "premium",
+          "name": "Premium",
           "engine": "3.8L Twin-Turbo V6",
           "horsepower": 565,
-          "notes": "U.S. GT-R ended after 2024."
+          "torqueLbFt": 467,
+          "zeroToSixtySec": 2.9,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        },
+        {
+          "id": "t-spec",
+          "name": "T-Spec",
+          "engine": "3.8L Twin-Turbo V6",
+          "horsepower": 565,
+          "torqueLbFt": 467,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        },
+        {
+          "id": "nismo",
+          "name": "NISMO",
+          "engine": "3.8L Twin-Turbo V6",
+          "horsepower": 600,
+          "torqueLbFt": 481,
+          "zeroToSixtySec": 2.9,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "t-spec",
       "trims": [
         {
-          "id": "legacy",
-          "name": "GT-R (ended)",
+          "id": "t-spec",
+          "name": "Premium Edition T-Spec",
           "engine": "3.8L Twin-Turbo V6",
           "horsepower": 565,
-          "notes": "U.S. GT-R ended after 2024."
+          "torqueLbFt": 467,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4,
+          "notes": "Final U.S. model year variants."
+        },
+        {
+          "id": "nismo",
+          "name": "NISMO",
+          "engine": "3.8L Twin-Turbo V6",
+          "horsepower": 600,
+          "torqueLbFt": 481,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
         }
       ]
     },
     "2026": {
-      "defaultTrimId": "legacy",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "legacy",
-          "name": "GT-R (ended)",
-          "engine": "3.8L Twin-Turbo V6",
-          "horsepower": 565,
-          "notes": "U.S. GT-R ended after 2024."
+          "id": "discontinued",
+          "name": "Discontinued",
+          "notes": "U.S. GT-R ended after 2025."
         }
       ]
     }

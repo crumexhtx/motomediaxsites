@@ -75,44 +75,64 @@
   },
   "forte": {
     "2024": {
-      "defaultTrimId": "gt-line",
+      "defaultTrimId": "lx",
       "trims": [
+        {
+          "id": "lx",
+          "name": "LX",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "drivetrain": "FWD",
+          "mpgCombined": 35,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "lxs",
+          "name": "LXS",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "drivetrain": "FWD",
+          "mpgCombined": 35,
+          "seatingCapacity": 5
+        },
         {
           "id": "gt-line",
           "name": "GT-Line",
           "engine": "2.0L I4",
           "horsepower": 147,
-          "mpgCombined": 35,
           "drivetrain": "FWD",
+          "mpgCombined": 35,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "engine": "1.6L Turbo I4",
+          "horsepower": 201,
+          "torqueLbFt": 195,
+          "drivetrain": "FWD",
+          "mpgCombined": 31,
           "seatingCapacity": 5
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "gt-line",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "gt-line",
-          "name": "GT-Line",
-          "engine": "2.0L I4",
-          "horsepower": 147,
-          "mpgCombined": 35,
-          "drivetrain": "FWD",
-          "seatingCapacity": 5
+          "id": "discontinued",
+          "name": "Discontinued",
+          "notes": "U.S. Forte ended after 2024."
         }
       ]
     },
     "2026": {
-      "defaultTrimId": "gt-line",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "gt-line",
-          "name": "GT-Line",
-          "engine": "2.0L I4",
-          "horsepower": 147,
-          "mpgCombined": 35,
-          "drivetrain": "FWD",
-          "seatingCapacity": 5
+          "id": "discontinued",
+          "name": "Discontinued",
+          "notes": "U.S. Forte ended after 2024."
         }
       ]
     }
@@ -338,43 +358,124 @@
   },
   "soul": {
     "2024": {
-      "defaultTrimId": "gt-line",
+      "defaultTrimId": "lx",
       "trims": [
+        {
+          "id": "lx",
+          "name": "LX",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "drivetrain": "FWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "s",
+          "name": "S",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "drivetrain": "FWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "ex",
+          "name": "EX",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "drivetrain": "FWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 5
+        },
         {
           "id": "gt-line",
           "name": "GT-Line",
           "engine": "2.0L I4",
           "horsepower": 147,
-          "mpgCombined": 29,
           "drivetrain": "FWD",
+          "mpgCombined": 29,
           "seatingCapacity": 5
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "gt-line",
+      "defaultTrimId": "lx",
       "trims": [
+        {
+          "id": "lx",
+          "name": "LX",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "drivetrain": "FWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "s",
+          "name": "S",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "drivetrain": "FWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "ex",
+          "name": "EX",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "drivetrain": "FWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 5
+        },
         {
           "id": "gt-line",
           "name": "GT-Line",
           "engine": "2.0L I4",
           "horsepower": 147,
-          "mpgCombined": 29,
           "drivetrain": "FWD",
+          "mpgCombined": 29,
           "seatingCapacity": 5
         }
       ]
     },
     "2026": {
-      "defaultTrimId": "gt-line",
+      "defaultTrimId": "lx",
       "trims": [
+        {
+          "id": "lx",
+          "name": "LX",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "drivetrain": "FWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "s",
+          "name": "S",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "drivetrain": "FWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "ex",
+          "name": "EX",
+          "engine": "2.0L I4",
+          "horsepower": 147,
+          "drivetrain": "FWD",
+          "mpgCombined": 29,
+          "seatingCapacity": 5
+        },
         {
           "id": "gt-line",
           "name": "GT-Line",
           "engine": "2.0L I4",
           "horsepower": 147,
-          "mpgCombined": 29,
           "drivetrain": "FWD",
+          "mpgCombined": 29,
           "seatingCapacity": 5
         }
       ]

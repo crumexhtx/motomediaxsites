@@ -79,14 +79,15 @@
       "trims": [
         {
           "id": "n",
-          "name": "N",
+          "name": "Elantra N",
           "engine": "2.0L Turbo I4",
           "horsepower": 276,
           "torqueLbFt": 289,
           "zeroToSixtySec": 5,
           "drivetrain": "FWD",
           "mpgCombined": 25,
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "notes": "Single U.S. trim."
         }
       ]
     },
@@ -95,14 +96,15 @@
       "trims": [
         {
           "id": "n",
-          "name": "N",
+          "name": "Elantra N",
           "engine": "2.0L Turbo I4",
           "horsepower": 276,
           "torqueLbFt": 289,
           "zeroToSixtySec": 5,
           "drivetrain": "FWD",
           "mpgCombined": 25,
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "notes": "Single U.S. trim."
         }
       ]
     },
@@ -111,14 +113,15 @@
       "trims": [
         {
           "id": "n",
-          "name": "N",
+          "name": "Elantra N",
           "engine": "2.0L Turbo I4",
           "horsepower": 276,
           "torqueLbFt": 289,
           "zeroToSixtySec": 5,
           "drivetrain": "FWD",
           "mpgCombined": 25,
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "notes": "Single U.S. trim."
         }
       ]
     }

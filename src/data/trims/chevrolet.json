@@ -321,14 +321,57 @@
       "defaultTrimId": "lt",
       "trims": [
         {
+          "id": "ls",
+          "name": "LS",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "RWD / 4WD",
+          "mpgCombined": 16,
+          "seatingCapacity": 8,
+          "towingLb": 8300
+        },
+        {
           "id": "lt",
           "name": "LT",
           "engine": "5.3L V8",
           "horsepower": 355,
-          "drivetrain": "4WD",
+          "drivetrain": "RWD / 4WD",
           "mpgCombined": 16,
           "seatingCapacity": 8,
           "towingLb": 8300
+        },
+        {
+          "id": "rst",
+          "name": "RST",
+          "engine": "5.3L V8 / 6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "RWD / 4WD",
+          "seatingCapacity": 8
+        },
+        {
+          "id": "z71",
+          "name": "Z71",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "seatingCapacity": 8
+        },
+        {
+          "id": "premier",
+          "name": "Premier",
+          "engine": "5.3L V8 / 6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "RWD / 4WD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "high-country",
+          "name": "High Country",
+          "engine": "6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "RWD / 4WD",
+          "seatingCapacity": 7,
+          "towingLb": 7900
         }
       ]
     },
@@ -336,14 +379,55 @@
       "defaultTrimId": "lt",
       "trims": [
         {
+          "id": "ls",
+          "name": "LS",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "RWD / 4WD",
+          "mpgCombined": 16,
+          "seatingCapacity": 8
+        },
+        {
           "id": "lt",
           "name": "LT",
           "engine": "5.3L V8",
           "horsepower": 355,
-          "drivetrain": "4WD",
+          "drivetrain": "RWD / 4WD",
           "mpgCombined": 16,
           "seatingCapacity": 8,
           "towingLb": 8300
+        },
+        {
+          "id": "rst",
+          "name": "RST",
+          "engine": "5.3L V8 / 6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "RWD / 4WD",
+          "seatingCapacity": 8
+        },
+        {
+          "id": "z71",
+          "name": "Z71",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "seatingCapacity": 8
+        },
+        {
+          "id": "premier",
+          "name": "Premier",
+          "engine": "5.3L V8 / 6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "RWD / 4WD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "high-country",
+          "name": "High Country",
+          "engine": "6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "RWD / 4WD",
+          "seatingCapacity": 7
         }
       ]
     },
@@ -351,14 +435,53 @@
       "defaultTrimId": "lt",
       "trims": [
         {
+          "id": "ls",
+          "name": "LS",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "RWD / 4WD",
+          "seatingCapacity": 8
+        },
+        {
           "id": "lt",
           "name": "LT",
           "engine": "5.3L V8",
           "horsepower": 355,
-          "drivetrain": "4WD",
-          "mpgCombined": 16,
+          "drivetrain": "RWD / 4WD",
           "seatingCapacity": 8,
           "towingLb": 8300
+        },
+        {
+          "id": "rst",
+          "name": "RST",
+          "engine": "5.3L V8 / 6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "RWD / 4WD",
+          "seatingCapacity": 8
+        },
+        {
+          "id": "z71",
+          "name": "Z71",
+          "engine": "5.3L V8",
+          "horsepower": 355,
+          "drivetrain": "4WD",
+          "seatingCapacity": 8
+        },
+        {
+          "id": "premier",
+          "name": "Premier",
+          "engine": "5.3L V8 / 6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "RWD / 4WD",
+          "seatingCapacity": 7
+        },
+        {
+          "id": "high-country",
+          "name": "High Country",
+          "engine": "6.2L V8",
+          "horsepower": 420,
+          "drivetrain": "RWD / 4WD",
+          "seatingCapacity": 7
         }
       ]
     }
@@ -439,41 +562,95 @@
   },
   "malibu": {
     "2024": {
-      "defaultTrimId": "lt",
+      "defaultTrimId": "ls",
       "trims": [
         {
-          "id": "lt",
-          "name": "LT (ending)",
+          "id": "ls",
+          "name": "LS",
           "engine": "1.5L Turbo I4",
           "horsepower": 163,
+          "drivetrain": "FWD",
           "mpgCombined": 31,
-          "notes": "Malibu ends after 2025 in the U.S."
+          "seatingCapacity": 5
+        },
+        {
+          "id": "rs",
+          "name": "RS",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 163,
+          "drivetrain": "FWD",
+          "mpgCombined": 31,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 163,
+          "drivetrain": "FWD",
+          "mpgCombined": 31,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "1lt",
+          "name": "1LT",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 163,
+          "drivetrain": "FWD",
+          "mpgCombined": 31,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "2lt",
+          "name": "2LT",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 163,
+          "drivetrain": "FWD",
+          "mpgCombined": 31,
+          "seatingCapacity": 5
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "lt",
+      "defaultTrimId": "ls",
       "trims": [
         {
-          "id": "lt",
-          "name": "LT (ending)",
+          "id": "ls",
+          "name": "LS",
           "engine": "1.5L Turbo I4",
           "horsepower": 163,
+          "drivetrain": "FWD",
           "mpgCombined": 31,
-          "notes": "Malibu ends after 2025 in the U.S."
+          "seatingCapacity": 5,
+          "notes": "Final U.S. model year."
+        },
+        {
+          "id": "rs",
+          "name": "RS",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 163,
+          "drivetrain": "FWD",
+          "mpgCombined": 31,
+          "seatingCapacity": 5
+        },
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "1.5L Turbo I4",
+          "horsepower": 163,
+          "drivetrain": "FWD",
+          "mpgCombined": 31,
+          "seatingCapacity": 5
         }
       ]
     },
     "2026": {
-      "defaultTrimId": "lt",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "lt",
-          "name": "LT (ending)",
-          "engine": "1.5L Turbo I4",
-          "horsepower": 163,
-          "mpgCombined": 31,
-          "notes": "Malibu ends after 2025 in the U.S."
+          "id": "discontinued",
+          "name": "Discontinued",
+          "notes": "U.S. Malibu ended after 2025."
         }
       ]
     }
@@ -554,41 +731,32 @@
   },
   "bolt-ev": {
     "2024": {
-      "defaultTrimId": "1lt",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "1lt",
-          "name": "1LT",
-          "engine": "Electric",
-          "horsepower": 200,
-          "rangeMiles": 259,
-          "notes": "Bolt EV production ended; page kept for catalog."
+          "id": "discontinued",
+          "name": "Discontinued",
+          "notes": "Bolt EV production ended; returns as a 2027 model."
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "1lt",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "1lt",
-          "name": "1LT",
-          "engine": "Electric",
-          "horsepower": 200,
-          "rangeMiles": 259,
-          "notes": "Bolt EV production ended; page kept for catalog."
+          "id": "discontinued",
+          "name": "Discontinued",
+          "notes": "Bolt EV production ended; returns as a 2027 model."
         }
       ]
     },
     "2026": {
-      "defaultTrimId": "1lt",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "1lt",
-          "name": "1LT",
-          "engine": "Electric",
-          "horsepower": 200,
-          "rangeMiles": 259,
-          "notes": "Bolt EV production ended; page kept for catalog."
+          "id": "discontinued",
+          "name": "Discontinued",
+          "notes": "Not offered for 2026; next-gen Bolt planned as a 2027 model."
         }
       ]
     }

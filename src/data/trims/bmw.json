@@ -217,26 +217,76 @@
   },
   "m3": {
     "2024": {
-      "defaultTrimId": "competition",
+      "defaultTrimId": "sedan",
       "trims": [
         {
+          "id": "sedan",
+          "name": "Sedan",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 473,
+          "torqueLbFt": 406,
+          "zeroToSixtySec": 4.1,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
           "id": "competition",
-          "name": "Competition",
+          "name": "Competition Sedan",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "torqueLbFt": 479,
+          "zeroToSixtySec": 3.8,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "competition-xdrive",
+          "name": "Competition xDrive Sedan",
           "engine": "3.0L Twin-Turbo I6",
           "horsepower": 503,
           "torqueLbFt": 479,
           "zeroToSixtySec": 3.4,
           "drivetrain": "AWD",
           "seatingCapacity": 5
+        },
+        {
+          "id": "cs",
+          "name": "CS Sedan",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 543,
+          "torqueLbFt": 479,
+          "zeroToSixtySec": 3.2,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "competition",
+      "defaultTrimId": "sedan",
       "trims": [
         {
+          "id": "sedan",
+          "name": "Sedan",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 473,
+          "torqueLbFt": 406,
+          "zeroToSixtySec": 4.1,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
           "id": "competition",
-          "name": "Competition",
+          "name": "Competition Sedan",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "torqueLbFt": 479,
+          "zeroToSixtySec": 3.8,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "competition-xdrive",
+          "name": "Competition xDrive Sedan",
           "engine": "3.0L Twin-Turbo I6",
           "horsepower": 503,
           "torqueLbFt": 479,
@@ -247,11 +297,31 @@
       ]
     },
     "2026": {
-      "defaultTrimId": "competition",
+      "defaultTrimId": "sedan",
       "trims": [
         {
+          "id": "sedan",
+          "name": "Sedan",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 473,
+          "torqueLbFt": 406,
+          "zeroToSixtySec": 4.1,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
           "id": "competition",
-          "name": "Competition",
+          "name": "Competition Sedan",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "torqueLbFt": 479,
+          "zeroToSixtySec": 3.8,
+          "drivetrain": "RWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "competition-xdrive",
+          "name": "Competition xDrive Sedan",
           "engine": "3.0L Twin-Turbo I6",
           "horsepower": 503,
           "torqueLbFt": 479,
@@ -264,42 +334,149 @@
   },
   "m4": {
     "2024": {
-      "defaultTrimId": "competition",
+      "defaultTrimId": "coupe",
       "trims": [
         {
+          "id": "coupe",
+          "name": "Coupe",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 473,
+          "torqueLbFt": 406,
+          "zeroToSixtySec": 4.1,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        },
+        {
           "id": "competition",
-          "name": "Competition",
+          "name": "Competition Coupe",
           "engine": "3.0L Twin-Turbo I6",
           "horsepower": 503,
+          "torqueLbFt": 479,
+          "zeroToSixtySec": 3.8,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        },
+        {
+          "id": "competition-xdrive",
+          "name": "Competition xDrive Coupe",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "torqueLbFt": 479,
           "zeroToSixtySec": 3.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        },
+        {
+          "id": "competition-xdrive-convertible",
+          "name": "Competition xDrive Convertible",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "torqueLbFt": 479,
+          "zeroToSixtySec": 3.5,
           "drivetrain": "AWD",
           "seatingCapacity": 4
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "competition",
+      "defaultTrimId": "coupe",
       "trims": [
         {
+          "id": "coupe",
+          "name": "Coupe",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 473,
+          "torqueLbFt": 406,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        },
+        {
           "id": "competition",
-          "name": "Competition",
+          "name": "Competition Coupe",
           "engine": "3.0L Twin-Turbo I6",
           "horsepower": 503,
+          "torqueLbFt": 479,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        },
+        {
+          "id": "competition-xdrive",
+          "name": "Competition xDrive Coupe",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "torqueLbFt": 479,
           "zeroToSixtySec": 3.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        },
+        {
+          "id": "competition-xdrive-convertible",
+          "name": "Competition xDrive Convertible",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "torqueLbFt": 479,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        },
+        {
+          "id": "cs",
+          "name": "CS Coupe",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 543,
+          "torqueLbFt": 479,
+          "zeroToSixtySec": 3.2,
           "drivetrain": "AWD",
           "seatingCapacity": 4
         }
       ]
     },
     "2026": {
-      "defaultTrimId": "competition",
+      "defaultTrimId": "coupe",
       "trims": [
         {
+          "id": "coupe",
+          "name": "Coupe",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 473,
+          "torqueLbFt": 406,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        },
+        {
           "id": "competition",
-          "name": "Competition",
+          "name": "Competition Coupe",
           "engine": "3.0L Twin-Turbo I6",
           "horsepower": 503,
+          "torqueLbFt": 479,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4
+        },
+        {
+          "id": "competition-xdrive",
+          "name": "Competition xDrive Coupe",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "torqueLbFt": 479,
           "zeroToSixtySec": 3.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        },
+        {
+          "id": "competition-xdrive-convertible",
+          "name": "Competition xDrive Convertible",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 503,
+          "torqueLbFt": 479,
+          "drivetrain": "AWD",
+          "seatingCapacity": 4
+        },
+        {
+          "id": "cs",
+          "name": "CS Coupe",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 543,
+          "torqueLbFt": 479,
+          "zeroToSixtySec": 3.2,
           "drivetrain": "AWD",
           "seatingCapacity": 4
         }
@@ -308,13 +485,14 @@
   },
   "m2": {
     "2024": {
-      "defaultTrimId": "m2",
+      "defaultTrimId": "coupe",
       "trims": [
         {
-          "id": "m2",
-          "name": "M2",
+          "id": "coupe",
+          "name": "Coupe",
           "engine": "3.0L Twin-Turbo I6",
           "horsepower": 453,
+          "torqueLbFt": 406,
           "zeroToSixtySec": 3.9,
           "drivetrain": "RWD",
           "seatingCapacity": 4
@@ -322,13 +500,14 @@
       ]
     },
     "2025": {
-      "defaultTrimId": "m2",
+      "defaultTrimId": "coupe",
       "trims": [
         {
-          "id": "m2",
-          "name": "M2",
+          "id": "coupe",
+          "name": "Coupe",
           "engine": "3.0L Twin-Turbo I6",
           "horsepower": 453,
+          "torqueLbFt": 406,
           "zeroToSixtySec": 3.9,
           "drivetrain": "RWD",
           "seatingCapacity": 4
@@ -336,61 +515,92 @@
       ]
     },
     "2026": {
-      "defaultTrimId": "m2",
+      "defaultTrimId": "coupe",
       "trims": [
         {
-          "id": "m2",
-          "name": "M2",
+          "id": "coupe",
+          "name": "Coupe",
           "engine": "3.0L Twin-Turbo I6",
           "horsepower": 453,
+          "torqueLbFt": 406,
           "zeroToSixtySec": 3.9,
           "drivetrain": "RWD",
           "seatingCapacity": 4
+        },
+        {
+          "id": "cs",
+          "name": "M2 CS",
+          "engine": "3.0L Twin-Turbo I6",
+          "horsepower": 523,
+          "torqueLbFt": 406,
+          "zeroToSixtySec": 3.7,
+          "drivetrain": "RWD",
+          "seatingCapacity": 4,
+          "notes": "CS track-focused package."
         }
       ]
     }
   },
   "m5": {
     "2024": {
-      "defaultTrimId": "competition",
+      "defaultTrimId": "discontinued",
       "trims": [
         {
-          "id": "competition",
-          "name": "M5",
-          "engine": "4.4L Twin-Turbo V8 Hybrid",
-          "aspiration": "Hybrid",
-          "horsepower": 717,
-          "zeroToSixtySec": 3.4,
-          "drivetrain": "AWD",
-          "seatingCapacity": 5
+          "id": "discontinued",
+          "name": "No U.S. production",
+          "notes": "2024 M5 skipped; new generation arrives for 2025."
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "competition",
+      "defaultTrimId": "sedan",
       "trims": [
         {
-          "id": "competition",
-          "name": "M5",
+          "id": "sedan",
+          "name": "Sedan",
           "engine": "4.4L Twin-Turbo V8 Hybrid",
           "aspiration": "Hybrid",
           "horsepower": 717,
+          "torqueLbFt": 738,
           "zeroToSixtySec": 3.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "touring",
+          "name": "Touring (Wagon)",
+          "engine": "4.4L Twin-Turbo V8 Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 717,
+          "torqueLbFt": 738,
+          "zeroToSixtySec": 3.5,
           "drivetrain": "AWD",
           "seatingCapacity": 5
         }
       ]
     },
     "2026": {
-      "defaultTrimId": "competition",
+      "defaultTrimId": "sedan",
       "trims": [
         {
-          "id": "competition",
-          "name": "M5",
+          "id": "sedan",
+          "name": "Sedan",
           "engine": "4.4L Twin-Turbo V8 Hybrid",
           "aspiration": "Hybrid",
           "horsepower": 717,
+          "torqueLbFt": 738,
           "zeroToSixtySec": 3.4,
+          "drivetrain": "AWD",
+          "seatingCapacity": 5
+        },
+        {
+          "id": "touring",
+          "name": "Touring (Wagon)",
+          "engine": "4.4L Twin-Turbo V8 Hybrid",
+          "aspiration": "Hybrid",
+          "horsepower": 717,
+          "torqueLbFt": 738,
+          "zeroToSixtySec": 3.5,
           "drivetrain": "AWD",
           "seatingCapacity": 5
         }
@@ -600,43 +810,79 @@
   },
   "z4": {
     "2024": {
-      "defaultTrimId": "m40i",
+      "defaultTrimId": "sdrive30i",
       "trims": [
         {
+          "id": "sdrive30i",
+          "name": "sDrive30i",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "torqueLbFt": 295,
+          "drivetrain": "RWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 2
+        },
+        {
           "id": "m40i",
-          "name": "M40i",
+          "name": "sDrive M40i",
           "engine": "3.0L Turbo I6",
           "horsepower": 382,
+          "torqueLbFt": 369,
           "zeroToSixtySec": 3.9,
           "drivetrain": "RWD",
+          "mpgCombined": 25,
           "seatingCapacity": 2
         }
       ]
     },
     "2025": {
-      "defaultTrimId": "m40i",
+      "defaultTrimId": "sdrive30i",
       "trims": [
         {
+          "id": "sdrive30i",
+          "name": "sDrive30i",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "torqueLbFt": 295,
+          "drivetrain": "RWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 2
+        },
+        {
           "id": "m40i",
-          "name": "M40i",
+          "name": "sDrive M40i",
           "engine": "3.0L Turbo I6",
           "horsepower": 382,
+          "torqueLbFt": 369,
           "zeroToSixtySec": 3.9,
           "drivetrain": "RWD",
+          "mpgCombined": 25,
           "seatingCapacity": 2
         }
       ]
     },
     "2026": {
-      "defaultTrimId": "m40i",
+      "defaultTrimId": "sdrive30i",
       "trims": [
         {
+          "id": "sdrive30i",
+          "name": "sDrive30i",
+          "engine": "2.0L Turbo I4",
+          "horsepower": 255,
+          "torqueLbFt": 295,
+          "drivetrain": "RWD",
+          "mpgCombined": 28,
+          "seatingCapacity": 2
+        },
+        {
           "id": "m40i",
-          "name": "M40i",
+          "name": "sDrive M40i",
           "engine": "3.0L Turbo I6",
           "horsepower": 382,
+          "torqueLbFt": 369,
           "zeroToSixtySec": 3.9,
           "drivetrain": "RWD",
+          "mpgCombined": 25,
           "seatingCapacity": 2
         }
       ]

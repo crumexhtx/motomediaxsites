@@ -160,7 +160,8 @@
           "zeroToSixtySec": 4.6,
           "drivetrain": "AWD",
           "mpgCombined": 25,
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "notes": "Single U.S. trim."
         }
       ]
     },
@@ -176,7 +177,8 @@
           "zeroToSixtySec": 4.6,
           "drivetrain": "AWD",
           "mpgCombined": 25,
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "notes": "Single U.S. trim."
         }
       ]
     },
@@ -192,7 +194,8 @@
           "zeroToSixtySec": 4.6,
           "drivetrain": "AWD",
           "mpgCombined": 25,
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "notes": "Single U.S. trim."
         }
       ]
     }
