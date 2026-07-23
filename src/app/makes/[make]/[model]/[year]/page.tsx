@@ -3,7 +3,12 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { YearChips } from "@/components/ModelCard";
 import { YearExperience } from "@/components/YearExperience";
-import { getAllYearParams, getYear, yearHref } from "@/lib/catalog";
+import {
+  getAllYearParams,
+  getYear,
+  pickBestCardImage,
+  yearHref,
+} from "@/lib/catalog";
 import {
   JsonLd,
   absoluteUrl,
@@ -25,6 +30,19 @@ function absolutizeImage(src: string) {
   return src.startsWith("http") ? src : absoluteUrl(src);
 }
 
+function orderedYearImages(
+  makeName: string,
+  modelName: string,
+  images: { src: string; alt: string; width?: number; height?: number }[],
+) {
+  const best = pickBestCardImage(images, {
+    makeName,
+    modelName,
+  });
+  if (!best) return images;
+  return [best, ...images.filter((img) => img.src !== best.src)];
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { make: makeSlug, model: modelSlug, year: yearSlug } = await params;
   const found = getYear(String(makeSlug), String(modelSlug), String(yearSlug));
@@ -33,7 +51,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { make, model, year } = found;
   const title = `${year.year} ${make.name} ${model.name} photos`;
   const description = year.summary;
-  const image = year.images[0];
+  const image =
+    pickBestCardImage(year.images, {
+      makeName: make.name,
+      modelName: model.name,
+    }) ?? year.images[0];
   const path = yearHref(make.slug, model.slug, year.slug);
   const ogImage = image
     ? { url: absolutizeImage(image.src), alt: image.alt }
@@ -69,7 +91,8 @@ export default async function YearPage({ params }: Props) {
 
   const { make, model, year } = found;
   const path = yearHref(make.slug, model.slug, year.slug);
-  const hero = year.images[0];
+  const images = orderedYearImages(make.name, model.name, year.images);
+  const hero = images[0];
   const yearsSorted = [...model.years].sort((a, b) => b.year - a.year);
   const title = `${year.year} ${make.name} ${model.name}`;
 
@@ -103,7 +126,7 @@ export default async function YearPage({ params }: Props) {
         yearLabel={`${year.year}`}
         performance={year.performance}
         specs={year.specs}
-        baseImages={year.images}
+        baseImages={images}
         video={year.video}
         nhtsaUrl={year.sources?.nhtsa}
         epaUrl={year.sources?.epa}

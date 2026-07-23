@@ -95,7 +95,21 @@ def commons_thumb(title: str, width: int = 1600) -> tuple[bytes, int, int] | Non
     return buf.getvalue(), im.size[0], im.size[1]
 
 
-def title_score(title: str, brand: str, model: str) -> int:
+# Sibling/extra tokens that mean a different model when our seed is the base name.
+VARIANT_EXTRAS = {
+    "corolla": {"cross", "hatchback", "im", "gr"},
+    "camry": {"solara"},
+    "highlander": {"grand"},
+    "tacoma": set(),
+    "tundra": set(),
+    "prius": {"c", "v", "prime", "plug"},
+    "4runner": set(),
+    "supra": {"a80", "a70", "mkiv", "mk4", "mkiii"},
+    "land cruiser": {"prado"},
+}
+
+
+def title_score_details(title: str, brand: str, model: str) -> tuple[int, int]:
     t = title.lower()
     brand_l = brand.lower()
     model_l = model.lower()
@@ -103,42 +117,76 @@ def title_score(title: str, brand: str, model: str) -> int:
 
     # Hard requirement: brand must appear
     if brand_l not in t:
-        return -100
+        return -100, 0
     # Model tokens (ignore very short noise)
     model_tokens = [
         tok
         for tok in re.split(r"[\s/-]+", model_l)
         if len(tok) >= 2 and tok not in {"ev", "the", "and"}
     ]
+    compact_model = re.sub(r"[^a-z0-9]+", "", model_l)
+    compact_title = re.sub(r"[^a-z0-9]+", "", t)
     if model_tokens and not all(tok in t for tok in model_tokens):
         # Allow hyphen/space variants for things like "bolt ev" / "bolt-ev"
-        compact_model = re.sub(r"[^a-z0-9]+", "", model_l)
-        compact_title = re.sub(r"[^a-z0-9]+", "", t)
         if compact_model not in compact_title:
-            return -100
+            return -100, 0
+
+    # Reject obvious sibling models (Corolla Cross for Corolla, Grand Highlander, …)
+    extras = VARIANT_EXTRAS.get(model_l, set())
+    for extra in extras:
+        if extra and re.search(rf"\b{re.escape(extra)}\b", t) and extra not in model_l:
+            return -100, 0
+
+    # Prefer titles where the model phrase is intact (not only a shared token)
+    if model_l.replace("-", " ") in t or compact_model in compact_title:
+        score += 4
 
     if "front" in t:
-        score += 5
-    if "front left" in t or "front-left" in t or "three-quarter" in t:
+        score += 8
+    if "front left" in t or "front-left" in t or "three-quarter" in t or "3/4" in t:
+        score += 6
+    if "exterior" in t or "street" in t or "parked" in t:
         score += 3
-    if "rear" in t or "back" in t:
-        score -= 8
-    if "logo" in t or "badge" in t or "emblem" in t:
-        score -= 10
-    if "interior" in t or "dashboard" in t:
-        score -= 10
+    if "rear" in t or "back" in t or "taillight" in t or "trunk" in t:
+        score -= 14
+    if "logo" in t or "badge" in t or "emblem" in t or "wordmark" in t:
+        score -= 16
+    if (
+        "interior" in t
+        or "dashboard" in t
+        or "gauge" in t
+        or "fuel" in t
+        or "tank" in t
+        or "instrument" in t
+        or "engine" in t
+        or "cabin" in t
+    ):
+        score -= 20
+    if "abandoned" in t or "wreck" in t or "crash" in t or "damaged" in t:
+        score -= 20
+
     years = [int(y) for y in re.findall(r"\b(19\d{2}|20\d{2})\b", t)]
-    if years:
-        newest = max(years)
-        if newest >= 2020:
-            score += 10
-        elif newest >= 2016:
-            score += 5
-        elif newest >= 2010:
-            score += 1
+    # Prefer a model year near the start of the title; ignore trailing photo dates.
+    head = t.split(",", 1)[0]
+    head_years = [int(y) for y in re.findall(r"\b(19\d{2}|20\d{2})\b", head)]
+    model_year = head_years[0] if head_years else (min(years) if years else None)
+    if model_year is not None:
+        if model_year >= 2022:
+            score += 14
+        elif model_year >= 2019:
+            score += 8
+        elif model_year >= 2015:
+            score += 2
+        elif model_year >= 2010:
+            score -= 8
         else:
-            score -= 20
-    return score
+            # Far-too-old body style for current catalog pages.
+            return -100, model_year
+    return score, model_year or 0
+
+
+def title_score(title: str, brand: str, model: str) -> int:
+    return title_score_details(title, brand, model)[0]
 
 
 def pick_image(
@@ -159,13 +207,16 @@ def pick_image(
             print(f"    curated fail: {exc}", flush=True)
 
     queries = [
+        f'"{brand}" "{model}" 2024 OR 2025 OR 2026 front left',
         f'"{brand}" "{model}" 2024 OR 2025 OR 2026 front',
-        f'"{brand}" "{model}" 2023 OR 2022 OR 2021 front',
+        f'"{brand}" "{model}" 2022 OR 2023 front left',
+        f'"{brand}" "{model}" 2020 OR 2021 OR 2022 front',
+        f'"{brand}" "{model}" front left three-quarter',
         f'"{brand}" "{model}" front left',
-        f'"{brand}" "{model}" front',
+        f'"{brand}" "{model}" front exterior',
     ]
     seen: set[str] = set()
-    candidates: list[tuple[int, str]] = []
+    candidates: list[tuple[int, int, str]] = []
     for q in queries:
         time.sleep(0.35)
         try:
@@ -177,10 +228,11 @@ def pick_image(
             if title in seen:
                 continue
             seen.add(title)
-            candidates.append((title_score(title, brand, model), title))
-    candidates.sort(key=lambda x: x[0], reverse=True)
-    for score, title in candidates[:12]:
-        if score < 5:
+            score, year = title_score_details(title, brand, model)
+            candidates.append((score, year, title))
+    candidates.sort(key=lambda x: (x[0], x[1]), reverse=True)
+    for score, _year, title in candidates[:16]:
+        if score < 8:
             continue
         time.sleep(0.35)
         try:
@@ -190,8 +242,8 @@ def pick_image(
         if not got:
             continue
         data, w, h = got
-        # Prefer landscape
-        if w < h * 0.9:
+        # Prefer landscape exterior cards
+        if w < h * 1.05:
             continue
         return title, data, w, h
     return None

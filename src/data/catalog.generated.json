@@ -35,8 +35,8 @@
               {
                 "src": "/catalog/toyota--camry.jpg",
                 "alt": "2024 Toyota Camry",
-                "width": 1280,
-                "height": 720
+                "width": 1920,
+                "height": 1270
               }
             ],
             "specs": {
@@ -96,8 +96,8 @@
               {
                 "src": "/catalog/toyota--camry.jpg",
                 "alt": "2025 Toyota Camry",
-                "width": 1280,
-                "height": 720
+                "width": 1920,
+                "height": 1270
               }
             ],
             "specs": {
@@ -152,8 +152,8 @@
               {
                 "src": "/catalog/toyota--camry.jpg",
                 "alt": "2026 Toyota Camry",
-                "width": 1280,
-                "height": 720
+                "width": 1920,
+                "height": 1270
               }
             ],
             "specs": {
@@ -221,8 +221,8 @@
               {
                 "src": "/catalog/toyota--corolla.jpg",
                 "alt": "2024 Toyota Corolla",
-                "width": 1280,
-                "height": 1512
+                "width": 1920,
+                "height": 910
               }
             ],
             "specs": {
@@ -283,8 +283,8 @@
               {
                 "src": "/catalog/toyota--corolla.jpg",
                 "alt": "2025 Toyota Corolla",
-                "width": 1280,
-                "height": 1512
+                "width": 1920,
+                "height": 910
               }
             ],
             "specs": {
@@ -341,8 +341,8 @@
               {
                 "src": "/catalog/toyota--corolla.jpg",
                 "alt": "2026 Toyota Corolla",
-                "width": 1280,
-                "height": 1512
+                "width": 1920,
+                "height": 910
               }
             ],
             "specs": {
@@ -406,8 +406,8 @@
               {
                 "src": "/catalog/toyota--prius.jpg",
                 "alt": "2024 Toyota Prius",
-                "width": 1280,
-                "height": 688
+                "width": 1920,
+                "height": 1011
               }
             ],
             "specs": {
@@ -469,8 +469,8 @@
               {
                 "src": "/catalog/toyota--prius.jpg",
                 "alt": "2025 Toyota Prius",
-                "width": 1280,
-                "height": 688
+                "width": 1920,
+                "height": 1011
               }
             ],
             "specs": {
@@ -526,8 +526,8 @@
               {
                 "src": "/catalog/toyota--prius.jpg",
                 "alt": "2026 Toyota Prius",
-                "width": 1280,
-                "height": 688
+                "width": 1920,
+                "height": 1011
               }
             ],
             "specs": {
@@ -589,8 +589,8 @@
               {
                 "src": "/catalog/toyota--4runner.jpg",
                 "alt": "2024 Toyota 4Runner",
-                "width": 1280,
-                "height": 763
+                "width": 1920,
+                "height": 1280
               }
             ],
             "specs": {
@@ -657,8 +657,8 @@
               {
                 "src": "/catalog/toyota--4runner.jpg",
                 "alt": "2025 Toyota 4Runner",
-                "width": 1280,
-                "height": 763
+                "width": 1920,
+                "height": 1280
               }
             ],
             "specs": {
@@ -726,8 +726,8 @@
               {
                 "src": "/catalog/toyota--4runner.jpg",
                 "alt": "2026 Toyota 4Runner",
-                "width": 1280,
-                "height": 763
+                "width": 1920,
+                "height": 1280
               }
             ],
             "specs": {
@@ -805,8 +805,8 @@
               {
                 "src": "/catalog/toyota--rav4.jpg",
                 "alt": "2024 Toyota RAV4",
-                "width": 1280,
-                "height": 852
+                "width": 1920,
+                "height": 1149
               }
             ],
             "specs": {
@@ -871,8 +871,8 @@
               {
                 "src": "/catalog/toyota--rav4.jpg",
                 "alt": "2025 Toyota RAV4",
-                "width": 1280,
-                "height": 852
+                "width": 1920,
+                "height": 1149
               }
             ],
             "specs": {
@@ -931,8 +931,8 @@
               {
                 "src": "/catalog/toyota--rav4.jpg",
                 "alt": "2026 Toyota RAV4",
-                "width": 1280,
-                "height": 852
+                "width": 1920,
+                "height": 1149
               }
             ],
             "specs": {
@@ -997,8 +997,8 @@
               {
                 "src": "/catalog/toyota--highlander.jpg",
                 "alt": "2024 Toyota Highlander",
-                "width": 1280,
-                "height": 960
+                "width": 1920,
+                "height": 1093
               }
             ],
             "specs": {
@@ -1060,8 +1060,8 @@
               {
                 "src": "/catalog/toyota--highlander.jpg",
                 "alt": "2025 Toyota Highlander",
-                "width": 1280,
-                "height": 960
+                "width": 1920,
+                "height": 1093
               }
             ],
             "specs": {
@@ -1121,8 +1121,8 @@
               {
                 "src": "/catalog/toyota--highlander.jpg",
                 "alt": "2026 Toyota Highlander",
-                "width": 1280,
-                "height": 960
+                "width": 1920,
+                "height": 1093
               }
             ],
             "specs": {
@@ -1187,8 +1187,8 @@
               {
                 "src": "/catalog/toyota--tacoma.jpg",
                 "alt": "2024 Toyota Tacoma",
-                "width": 1280,
-                "height": 667
+                "width": 1920,
+                "height": 1137
               }
             ],
             "specs": {
@@ -1248,8 +1248,8 @@
               {
                 "src": "/catalog/toyota--tacoma.jpg",
                 "alt": "2025 Toyota Tacoma",
-                "width": 1280,
-                "height": 667
+                "width": 1920,
+                "height": 1137
               }
             ],
             "specs": {
@@ -1307,8 +1307,8 @@
               {
                 "src": "/catalog/toyota--tacoma.jpg",
                 "alt": "2026 Toyota Tacoma",
-                "width": 1280,
-                "height": 667
+                "width": 1920,
+                "height": 1137
               }
             ],
             "specs": {
@@ -1375,8 +1375,8 @@
               {
                 "src": "/catalog/toyota--tundra.jpg",
                 "alt": "2024 Toyota Tundra",
-                "width": 1280,
-                "height": 729
+                "width": 1920,
+                "height": 1078
               }
             ],
             "specs": {
@@ -1440,8 +1440,8 @@
               {
                 "src": "/catalog/toyota--tundra.jpg",
                 "alt": "2025 Toyota Tundra",
-                "width": 1280,
-                "height": 729
+                "width": 1920,
+                "height": 1078
               }
             ],
             "specs": {
@@ -1504,8 +1504,8 @@
               {
                 "src": "/catalog/toyota--tundra.jpg",
                 "alt": "2026 Toyota Tundra",
-                "width": 1280,
-                "height": 729
+                "width": 1920,
+                "height": 1078
               }
             ],
             "specs": {
@@ -1571,8 +1571,8 @@
               {
                 "src": "/catalog/toyota--supra.jpg",
                 "alt": "2024 Toyota Supra",
-                "width": 1280,
-                "height": 703
+                "width": 1920,
+                "height": 1023
               }
             ],
             "specs": {
@@ -1621,8 +1621,8 @@
               {
                 "src": "/catalog/toyota--supra.jpg",
                 "alt": "2025 Toyota Supra",
-                "width": 1280,
-                "height": 703
+                "width": 1920,
+                "height": 1023
               }
             ],
             "specs": {
@@ -1667,8 +1667,8 @@
               {
                 "src": "/catalog/toyota--supra.jpg",
                 "alt": "2026 Toyota Supra",
-                "width": 1280,
-                "height": 703
+                "width": 1920,
+                "height": 1023
               }
             ],
             "specs": {
@@ -1722,8 +1722,8 @@
               {
                 "src": "/catalog/toyota--gr86.jpg",
                 "alt": "2024 Toyota GR86",
-                "width": 1280,
-                "height": 651
+                "width": 1920,
+                "height": 1440
               }
             ],
             "specs": {
@@ -1774,8 +1774,8 @@
               {
                 "src": "/catalog/toyota--gr86.jpg",
                 "alt": "2025 Toyota GR86",
-                "width": 1280,
-                "height": 651
+                "width": 1920,
+                "height": 1440
               }
             ],
             "specs": {
@@ -1822,8 +1822,8 @@
               {
                 "src": "/catalog/toyota--gr86.jpg",
                 "alt": "2026 Toyota GR86",
-                "width": 1280,
-                "height": 651
+                "width": 1920,
+                "height": 1440
               }
             ],
             "specs": {
@@ -1875,8 +1875,8 @@
               {
                 "src": "/catalog/toyota--gr-corolla.jpg",
                 "alt": "2024 Toyota GR Corolla",
-                "width": 1280,
-                "height": 588
+                "width": 1920,
+                "height": 1351
               }
             ],
             "specs": {
@@ -1927,8 +1927,8 @@
               {
                 "src": "/catalog/toyota--gr-corolla.jpg",
                 "alt": "2025 Toyota GR Corolla",
-                "width": 1280,
-                "height": 588
+                "width": 1920,
+                "height": 1351
               }
             ],
             "specs": {
@@ -1976,8 +1976,8 @@
               {
                 "src": "/catalog/toyota--gr-corolla.jpg",
                 "alt": "2026 Toyota GR Corolla",
-                "width": 1280,
-                "height": 588
+                "width": 1920,
+                "height": 1351
               }
             ],
             "specs": {
@@ -2033,8 +2033,8 @@
               {
                 "src": "/catalog/toyota--land-cruiser.jpg",
                 "alt": "2024 Toyota Land Cruiser",
-                "width": 1280,
-                "height": 1024
+                "width": 1920,
+                "height": 1136
               }
             ],
             "specs": {
@@ -2086,8 +2086,8 @@
               {
                 "src": "/catalog/toyota--land-cruiser.jpg",
                 "alt": "2025 Toyota Land Cruiser",
-                "width": 1280,
-                "height": 1024
+                "width": 1920,
+                "height": 1136
               }
             ],
             "specs": {
@@ -2141,8 +2141,8 @@
               {
                 "src": "/catalog/toyota--land-cruiser.jpg",
                 "alt": "2026 Toyota Land Cruiser",
-                "width": 1280,
-                "height": 1024
+                "width": 1920,
+                "height": 1136
               }
             ],
             "specs": {
