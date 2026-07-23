@@ -4,6 +4,7 @@ import {
   breadcrumbJsonLd,
   organizationJsonLd,
   vehicleJsonLd,
+  yearPageJsonLd,
 } from "@/lib/seo";
 import { SITE } from "@/data/catalog";
 
@@ -39,8 +40,8 @@ describe("seo helpers", () => {
     });
   });
 
-  it("builds vehicle JSON-LD", () => {
-    const data = vehicleJsonLd({
+  it("builds year-page WebPage JSON-LD (not Product/Vehicle)", () => {
+    const data = yearPageJsonLd({
       make: "Ferrari",
       model: "Roma",
       year: 2021,
@@ -50,11 +51,25 @@ describe("seo helpers", () => {
     });
 
     expect(data).toMatchObject({
-      "@type": "Vehicle",
+      "@type": "WebPage",
       name: "2021 Ferrari Roma",
-      vehicleModelDate: "2021",
       url: `${SITE.url}/makes/ferrari/roma/2021`,
+      about: { "@type": "Thing", name: "2021 Ferrari Roma" },
     });
+    expect(data).not.toHaveProperty("offers");
+    expect(JSON.stringify(data)).not.toMatch(/"@type":"Vehicle"/);
+  });
+
+  it("keeps vehicleJsonLd as an alias of yearPageJsonLd", () => {
+    const input = {
+      make: "Ford",
+      model: "Bronco",
+      year: 2024,
+      description: "SUV",
+      image: "https://example.com/bronco.jpg",
+      path: "/makes/ford/bronco/2024",
+    };
+    expect(vehicleJsonLd(input)).toEqual(yearPageJsonLd(input));
   });
 
   it("escapes script breakouts in JsonLd payload", async () => {

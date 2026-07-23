@@ -15,7 +15,7 @@ import {
   JsonLd,
   absoluteUrl,
   breadcrumbJsonLd,
-  vehicleJsonLd,
+  yearPageJsonLd,
 } from "@/lib/seo";
 
 type Props = {
@@ -111,7 +111,7 @@ export default async function YearPage({ params }: Props) {
         ])}
       />
       <JsonLd
-        data={vehicleJsonLd({
+        data={yearPageJsonLd({
           make: make.name,
           model: model.name,
           year: year.year,

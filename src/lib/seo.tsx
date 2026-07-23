@@ -32,7 +32,12 @@ export function organizationJsonLd() {
   };
 }
 
-export function vehicleJsonLd(input: {
+/**
+ * Year overview pages are informational catalogs, not product listings.
+ * Avoid schema.org Vehicle/Car (Product subtypes) — Google then expects
+ * offers / review / aggregateRating for Product rich results.
+ */
+export function yearPageJsonLd(input: {
   make: string;
   model: string;
   year: number;
@@ -40,20 +45,40 @@ export function vehicleJsonLd(input: {
   image: string;
   path: string;
 }) {
+  const name = `${input.year} ${input.make} ${input.model}`;
+  const url = absoluteUrl(input.path);
   return {
     "@context": "https://schema.org",
-    "@type": "Vehicle",
-    name: `${input.year} ${input.make} ${input.model}`,
-    brand: {
-      "@type": "Brand",
-      name: input.make,
-    },
-    model: input.model,
-    vehicleModelDate: String(input.year),
+    "@type": "WebPage",
+    name,
     description: input.description,
+    url,
     image: input.image,
-    url: absoluteUrl(input.path),
+    isPartOf: {
+      "@type": "WebSite",
+      name: SITE.name,
+      alternateName: SITE.shortName,
+      url: SITE.url,
+    },
+    about: {
+      "@type": "Thing",
+      name,
+      description: input.description,
+      image: input.image,
+    },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      contentUrl: input.image,
+      url: input.image,
+    },
   };
+}
+
+/** @deprecated Use yearPageJsonLd — Vehicle markup triggers Product rich-result checks. */
+export function vehicleJsonLd(
+  input: Parameters<typeof yearPageJsonLd>[0],
+) {
+  return yearPageJsonLd(input);
 }
 
 export function JsonLd({ data }: { data: Record<string, unknown> }) {
