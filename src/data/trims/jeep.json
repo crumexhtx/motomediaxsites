@@ -351,12 +351,16 @@
   },
   "renegade": {
     "2023": {
-      "defaultTrimId": "final",
+      "defaultTrimId": "latitude",
       "trims": [
         {
-          "id": "final",
-          "name": "Discontinued",
-          "notes": "U.S. Renegade ended after 2023."
+          "id": "latitude",
+          "name": "Latitude",
+          "engine": "1.3L MultiAir Turbo I4",
+          "horsepower": 177,
+          "transmission": "9-speed automatic",
+          "drivetrain": "AWD",
+          "notes": "Final U.S. model year."
         }
       ]
     }

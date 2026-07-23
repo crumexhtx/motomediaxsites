@@ -123,7 +123,8 @@
           "aspiration": "Electric",
           "rangeMiles": 260,
           "drivetrain": "RWD",
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "horsepower": 295
         },
         {
           "id": "long-range",
@@ -133,7 +134,8 @@
           "rangeMiles": 320,
           "zeroToSixtySec": 4.8,
           "drivetrain": "AWD",
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "horsepower": 425
         },
         {
           "id": "performance",
@@ -143,7 +145,8 @@
           "rangeMiles": 285,
           "zeroToSixtySec": 3.5,
           "drivetrain": "AWD",
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "horsepower": 510
         }
       ]
     },
@@ -157,7 +160,8 @@
           "aspiration": "Electric",
           "rangeMiles": 260,
           "drivetrain": "RWD",
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "horsepower": 295
         },
         {
           "id": "long-range",
@@ -167,7 +171,8 @@
           "rangeMiles": 320,
           "zeroToSixtySec": 4.8,
           "drivetrain": "AWD",
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "horsepower": 425
         },
         {
           "id": "performance",
@@ -177,7 +182,8 @@
           "rangeMiles": 285,
           "zeroToSixtySec": 3.5,
           "drivetrain": "AWD",
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "horsepower": 510
         }
       ]
     },
@@ -191,7 +197,8 @@
           "aspiration": "Electric",
           "rangeMiles": 260,
           "drivetrain": "RWD",
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "horsepower": 295
         },
         {
           "id": "long-range",
@@ -201,7 +208,8 @@
           "rangeMiles": 320,
           "zeroToSixtySec": 4.8,
           "drivetrain": "AWD",
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "horsepower": 425
         },
         {
           "id": "performance",
@@ -211,7 +219,8 @@
           "rangeMiles": 285,
           "zeroToSixtySec": 3.5,
           "drivetrain": "AWD",
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "horsepower": 510
         }
       ]
     }

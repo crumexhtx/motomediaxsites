@@ -157,7 +157,8 @@
           "horsepower": 791,
           "zeroToSixtySec": 3.2,
           "drivetrain": "AWD",
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "rangeMiles": 16
         }
       ]
     },
@@ -179,7 +180,8 @@
           "horsepower": 791,
           "zeroToSixtySec": 3.2,
           "drivetrain": "AWD",
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "rangeMiles": 16
         }
       ]
     },
@@ -201,7 +203,8 @@
           "horsepower": 791,
           "zeroToSixtySec": 3.2,
           "drivetrain": "AWD",
-          "seatingCapacity": 5
+          "seatingCapacity": 5,
+          "rangeMiles": 16
         }
       ]
     }
@@ -688,7 +691,8 @@
           "horsepower": 805,
           "zeroToSixtySec": 2.7,
           "drivetrain": "AWD",
-          "seatingCapacity": 2
+          "seatingCapacity": 2,
+          "rangeMiles": 8
         }
       ]
     },
@@ -731,7 +735,8 @@
           "horsepower": 805,
           "zeroToSixtySec": 2.7,
           "drivetrain": "AWD",
-          "seatingCapacity": 2
+          "seatingCapacity": 2,
+          "rangeMiles": 8
         }
       ]
     }

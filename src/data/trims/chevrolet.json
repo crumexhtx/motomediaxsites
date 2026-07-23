@@ -721,12 +721,20 @@
   },
   "bolt-ev": {
     "2023": {
-      "defaultTrimId": "final",
+      "defaultTrimId": "1lt",
       "trims": [
         {
-          "id": "final",
-          "name": "Discontinued",
-          "notes": "Not offered for 2026; next-gen Bolt planned as a 2027 model."
+          "id": "1lt",
+          "name": "1LT",
+          "engine": "Electric (65 kWh)",
+          "aspiration": "Electric",
+          "horsepower": 200,
+          "transmission": "Single-speed",
+          "drivetrain": "FWD",
+          "batteryKwh": 65,
+          "rangeMiles": 259,
+          "seatingCapacity": 5,
+          "notes": "Final first-gen Bolt EV year; returns planned as 2027."
         }
       ]
     }
