@@ -477,17 +477,6 @@
           "seatingCapacity": 5,
           "towingLb": 7700,
           "notes": "STX replaces XLT for 2026."
-        },
-        {
-          "id": "xlt",
-          "name": "XLT (discontinued)",
-          "engine": "Dual-motor electric",
-          "aspiration": "Electric",
-          "horsepower": 580,
-          "transmission": "Single-speed",
-          "drivetrain": "AWD",
-          "seatingCapacity": 5,
-          "notes": "XLT discontinued for 2026; see STX."
         }
       ]
     }

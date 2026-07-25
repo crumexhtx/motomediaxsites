@@ -10,7 +10,15 @@ describe("discontinued helpers", () => {
     expect(ghostYearRedirectTarget("ford", "fiesta-st", "2026")).toBe(2019);
     expect(ghostYearRedirectTarget("chevrolet", "bolt-ev", "2024")).toBe(2023);
     expect(ghostYearRedirectTarget("bmw", "m5", "2024")).toBe(2025);
+    expect(ghostYearRedirectTarget("ford", "fusion", "2025")).toBe(2020);
     expect(ghostYearRedirectTarget("ford", "fiesta-st", "2019")).toBeUndefined();
+  });
+
+  it("covers model-years pins such as Fusion with banner copy", () => {
+    const info = getDiscontinuedInfo("ford", "fusion");
+    expect(info?.lastYear).toBe(2020);
+    expect(info?.ghostYears).toEqual([2024, 2025, 2026]);
+    expect(shouldShowDiscontinuedBanner(info)).toBe(true);
   });
 
   it("exposes discontinued banner copy", () => {

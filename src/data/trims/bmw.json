@@ -155,16 +155,6 @@
           "horsepower": 375,
           "drivetrain": "RWD / AWD",
           "seatingCapacity": 5
-        },
-        {
-          "id": "i7",
-          "name": "i7 xDrive60",
-          "engine": "Dual-motor electric",
-          "aspiration": "Electric",
-          "horsepower": 536,
-          "rangeMiles": 296,
-          "drivetrain": "AWD",
-          "seatingCapacity": 5
         }
       ]
     },
@@ -178,16 +168,6 @@
           "horsepower": 375,
           "drivetrain": "RWD / AWD",
           "seatingCapacity": 5
-        },
-        {
-          "id": "i7",
-          "name": "i7 xDrive60",
-          "engine": "Dual-motor electric",
-          "aspiration": "Electric",
-          "horsepower": 536,
-          "rangeMiles": 296,
-          "drivetrain": "AWD",
-          "seatingCapacity": 5
         }
       ]
     },
@@ -200,16 +180,6 @@
           "engine": "3.0L Turbo I6",
           "horsepower": 375,
           "drivetrain": "RWD / AWD",
-          "seatingCapacity": 5
-        },
-        {
-          "id": "i7",
-          "name": "i7 xDrive60",
-          "engine": "Dual-motor electric",
-          "aspiration": "Electric",
-          "horsepower": 536,
-          "rangeMiles": 296,
-          "drivetrain": "AWD",
           "seatingCapacity": 5
         }
       ]

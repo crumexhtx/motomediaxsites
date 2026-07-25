@@ -1,6 +1,7 @@
 /**
  * Prune ghost years from catalog.generated.json using model-years.json.
- * When the pinned last year is missing, clone the newest existing year entry.
+ * When the pinned last year is missing, clone the newest existing year entry
+ * and rewrite year-bound copy/alts/highlights so the clone matches the pin.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -17,6 +18,53 @@ const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, "utf8"));
 
 let pruned = 0;
 let cloned = 0;
+
+function rewriteYearTokens(text, year) {
+  if (typeof text !== "string" || !text) return text;
+  return text.replace(/\b20\d{2}\b/g, String(year));
+}
+
+function adaptClone(clone, year, make, model, disc) {
+  clone.year = year;
+  clone.slug = String(year);
+  clone.summary = disc
+    ? `${year} ${make.name} ${model.name} — final U.S. catalog year.`
+    : `${year} ${make.name} ${model.name}.`;
+
+  if (Array.isArray(clone.images)) {
+    for (const img of clone.images) {
+      if (!img || typeof img !== "object") continue;
+      img.alt = `${year} ${make.name} ${model.name}`;
+    }
+  }
+
+  if (Array.isArray(clone.highlights)) {
+    clone.highlights = clone.highlights.filter((h) => {
+      if (typeof h !== "string") return false;
+      if (/listed for 20\d{2}/i.test(h)) return false;
+      const years = [...h.matchAll(/\b(20\d{2})\b/g)].map((m) => Number(m[1]));
+      if (years.some((y) => y !== year && y >= 2024)) return false;
+      return true;
+    });
+  }
+
+  if (typeof clone.description === "string") {
+    let description = clone.description
+      .replace(/[^.]*\bcontinues\b[^.]*\./gi, "")
+      .replace(/[^.]*listed for 20\d{2}[^.]*\./gi, "")
+      .replace(/\s{2,}/g, " ")
+      .trim();
+    description = rewriteYearTokens(description, year);
+    clone.description = disc?.message
+      ? `${disc.message} ${description}`.trim()
+      : description;
+  }
+
+  if (clone.specs && typeof clone.specs === "object") {
+    clone.specs.modelYear = year;
+    if (disc) clone.specs.available = false;
+  }
+}
 
 for (const make of catalog) {
   for (const model of make.models) {
@@ -38,18 +86,7 @@ for (const make of catalog) {
       if (!template) continue;
       const disc = discontinued[key];
       const clone = structuredClone(template);
-      clone.year = year;
-      clone.slug = String(year);
-      clone.summary = disc
-        ? `${year} ${make.name} ${model.name} — final U.S. catalog year.`
-        : `${year} ${make.name} ${model.name}.`;
-      if (typeof clone.description === "string" && disc) {
-        clone.description = `${disc.message} ${clone.description}`;
-      }
-      if (clone.specs && typeof clone.specs === "object") {
-        clone.specs.modelYear = year;
-        clone.specs.available = false;
-      }
+      adaptClone(clone, year, make, model, disc);
       nextYears.push(clone);
       cloned += 1;
       console.log(`cloned ${key} → ${year}`);

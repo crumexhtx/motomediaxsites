@@ -20,6 +20,9 @@
     "fetch:trim-images": "tsx scripts/fetch-trim-images.ts",
     "audit:images": "tsx scripts/audit-catalog-images.ts",
     "validate:catalog": "tsx scripts/validate-catalog.ts",
+    "sync:discontinued": "node scripts/sync-discontinued.mjs",
+    "sanitize:discontinued": "node scripts/sanitize-discontinued-years.mjs",
+    "prune:ghost-years": "node scripts/prune-ghost-years.mjs",
     "backfill:images": "tsx scripts/backfill-remote-images.ts",
     "localize:images": "tsx scripts/localize-catalog-images.ts",
     "optimize:images": "tsx scripts/optimize-catalog-images.ts"

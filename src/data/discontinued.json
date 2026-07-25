@@ -1,58 +1,355 @@
 {
-  "ford/fiesta-st": {
-    "lastYear": 2019,
-    "ghostYears": [2024, 2025, 2026],
-    "message": "The U.S. Fiesta ST ended after 2019. This page covers the final model year."
+  "bmw/i3": {
+    "lastYear": 2021,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The BMW i3 ended after 2021. This page covers the final model year."
   },
-  "ford/focus-rs": {
-    "lastYear": 2018,
-    "ghostYears": [2024, 2025, 2026],
-    "message": "The U.S. Focus RS ended after 2018. This page covers the final model year."
-  },
-  "ford/focus": {
-    "lastYear": 2018,
-    "ghostYears": [2024, 2025, 2026],
-    "message": "The U.S. Focus ended after 2018. Later global Focus years are not offered in this catalog."
-  },
-  "ford/gt": {
-    "lastYear": 2022,
-    "ghostYears": [2024, 2025, 2026],
-    "message": "Ford GT limited production has ended. This page covers the final catalog year."
-  },
-  "chevrolet/bolt-ev": {
-    "lastYear": 2023,
-    "ghostYears": [2024, 2025, 2026],
-    "message": "The Bolt EV ended after 2023. Chevrolet has signaled a return as a 2027 model."
-  },
-  "jeep/renegade": {
-    "lastYear": 2023,
-    "ghostYears": [2024, 2025, 2026],
-    "message": "The U.S. Renegade ended after 2023. This page covers the final model year."
-  },
-  "jeep/cherokee": {
-    "lastYear": 2023,
-    "ghostYears": [2024, 2025, 2026],
-    "message": "The U.S. Cherokee ended after 2023. This page covers the final model year."
-  },
-  "chevrolet/malibu": {
-    "lastYear": 2025,
-    "ghostYears": [2026],
-    "message": "The U.S. Malibu ended after 2025. This page covers the final model year."
-  },
-  "kia/forte": {
-    "lastYear": 2024,
-    "ghostYears": [2025, 2026],
-    "message": "The U.S. Forte ended after 2024. This page covers the final model year."
-  },
-  "nissan/gt-r": {
-    "lastYear": 2025,
-    "ghostYears": [2026],
-    "message": "The U.S. GT-R ended after 2025. This page covers the final model year."
+  "bmw/i8": {
+    "lastYear": 2020,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The BMW i8 ended after 2020. This page covers the final model year."
   },
   "bmw/m5": {
     "lastYear": 2025,
-    "ghostYears": [2024],
+    "ghostYears": [
+      2024
+    ],
     "message": "There was no 2024 M5 model year; the new generation begins in 2025.",
     "banner": false
+  },
+  "chevrolet/bolt-ev": {
+    "lastYear": 2023,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Bolt EV ended after 2023. Chevrolet has signaled a return as a 2027 model."
+  },
+  "chevrolet/camaro": {
+    "lastYear": 2024,
+    "ghostYears": [
+      2025,
+      2026
+    ],
+    "message": "The U.S. Camaro ended after 2024. This page covers the final model year."
+  },
+  "chevrolet/cruze": {
+    "lastYear": 2019,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The U.S. Cruze ended after 2019. This page covers the final model year."
+  },
+  "chevrolet/malibu": {
+    "lastYear": 2025,
+    "ghostYears": [
+      2026
+    ],
+    "message": "The U.S. Malibu ended after 2025. This page covers the final model year."
+  },
+  "chevrolet/volt": {
+    "lastYear": 2019,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Chevrolet Volt ended after 2019. This page covers the final model year."
+  },
+  "ford/fiesta-st": {
+    "lastYear": 2019,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The U.S. Fiesta ST ended after 2019. This page covers the final model year."
+  },
+  "ford/focus": {
+    "lastYear": 2018,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The U.S. Focus ended after 2018. Later global Focus years are not offered in this catalog."
+  },
+  "ford/focus-rs": {
+    "lastYear": 2018,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The U.S. Focus RS ended after 2018. This page covers the final model year."
+  },
+  "ford/fusion": {
+    "lastYear": 2020,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The U.S. Fusion ended after 2020. This page covers the final model year."
+  },
+  "ford/gt": {
+    "lastYear": 2022,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "Ford GT limited production has ended. This page covers the final catalog year."
+  },
+  "honda/element": {
+    "lastYear": 2011,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Honda Element ended after 2011. This page covers the final model year."
+  },
+  "honda/fit": {
+    "lastYear": 2020,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The U.S. Fit ended after 2020. This page covers the final model year."
+  },
+  "honda/insight": {
+    "lastYear": 2022,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The U.S. Insight ended after 2022. This page covers the final model year."
+  },
+  "honda/s2000": {
+    "lastYear": 2009,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Honda S2000 ended after 2009. This page covers the final model year."
+  },
+  "hyundai/genesis": {
+    "lastYear": 2016,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Hyundai Genesis sedan ended after 2016. This page covers the final model year."
+  },
+  "hyundai/veloster": {
+    "lastYear": 2022,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Hyundai Veloster ended after 2022. This page covers the final model year."
+  },
+  "jeep/cherokee": {
+    "lastYear": 2023,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The U.S. Cherokee ended after 2023. This page covers the final model year."
+  },
+  "jeep/renegade": {
+    "lastYear": 2023,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The U.S. Renegade ended after 2023. This page covers the final model year."
+  },
+  "kia/forte": {
+    "lastYear": 2024,
+    "ghostYears": [
+      2025,
+      2026
+    ],
+    "message": "The U.S. Forte ended after 2024. This page covers the final model year."
+  },
+  "kia/optima": {
+    "lastYear": 2020,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Kia Optima ended after 2020. This page covers the final model year."
+  },
+  "kia/rio": {
+    "lastYear": 2023,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The U.S. Rio ended after 2023. This page covers the final model year."
+  },
+  "kia/stinger": {
+    "lastYear": 2023,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Kia Stinger ended after 2023. This page covers the final model year."
+  },
+  "mazda/cx-9": {
+    "lastYear": 2023,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Mazda CX-9 ended after 2023. This page covers the final model year."
+  },
+  "mazda/mazda6": {
+    "lastYear": 2021,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Mazda6 ended after 2021. This page covers the final model year."
+  },
+  "mazda/mazdaspeed3": {
+    "lastYear": 2013,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Mazdaspeed3 ended after 2013. This page covers the final model year."
+  },
+  "mazda/rx-8": {
+    "lastYear": 2011,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Mazda RX-8 ended after 2011. This page covers the final model year."
+  },
+  "mercedes-benz/slk-slc": {
+    "lastYear": 2020,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Mercedes-Benz SLK/SLC ended after 2020. This page covers the final model year."
+  },
+  "nissan/350z": {
+    "lastYear": 2009,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Nissan 350Z ended after 2009. This page covers the final model year."
+  },
+  "nissan/370z": {
+    "lastYear": 2020,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Nissan 370Z ended after 2020. This page covers the final model year."
+  },
+  "nissan/gt-r": {
+    "lastYear": 2025,
+    "ghostYears": [
+      2026
+    ],
+    "message": "The U.S. GT-R ended after 2025. This page covers the final model year."
+  },
+  "nissan/maxima": {
+    "lastYear": 2023,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The U.S. Maxima ended after 2023. This page covers the final model year."
+  },
+  "nissan/xterra": {
+    "lastYear": 2015,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Nissan Xterra ended after 2015. This page covers the final model year."
+  },
+  "tesla/roadster": {
+    "lastYear": 2011,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Tesla Roadster ended after 2011. This page covers the final model year."
+  },
+  "volkswagen/beetle": {
+    "lastYear": 2019,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Volkswagen Beetle ended after 2019. This page covers the final model year."
+  },
+  "volkswagen/golf": {
+    "lastYear": 2021,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The U.S. Golf ended after 2021. This page covers the final model year."
+  },
+  "volkswagen/passat": {
+    "lastYear": 2022,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The U.S. Passat ended after 2022. This page covers the final model year."
+  },
+  "volkswagen/touareg": {
+    "lastYear": 2017,
+    "ghostYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "message": "The Volkswagen Touareg ended after 2017. This page covers the final model year."
   }
 }
