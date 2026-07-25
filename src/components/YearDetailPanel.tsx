@@ -119,7 +119,7 @@ export function YearDetailPanel({
       return trims.find((t) => t.id !== trim.id) ?? trims[1];
     }
     return trims.find((t) => t.id === compareTrimId);
-  }, [compareTrimId, trim?.id, trims]);
+  }, [compareTrimId, trim, trims]);
 
   const hp = fmt(trim?.horsepower, " hp");
   const torque = fmt(trim?.torqueLbFt, " lb-ft");
