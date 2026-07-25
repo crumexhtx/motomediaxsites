@@ -23,6 +23,15 @@ const YEARS = [2024, 2025, 2026] as const;
 const MODEL_YEARS: Record<string, number[]> = JSON.parse(
   fs.readFileSync(path.join(ROOT, "src/data/model-years.json"), "utf8"),
 ) as Record<string, number[]>;
+type DiscontinuedInfo = {
+  lastYear: number;
+  message: string;
+  banner?: boolean;
+  ghostYears?: number[];
+};
+const DISCONTINUED: Record<string, DiscontinuedInfo> = JSON.parse(
+  fs.readFileSync(path.join(ROOT, "src/data/discontinued.json"), "utf8"),
+) as Record<string, DiscontinuedInfo>;
 const USER_AGENT =
   "motomediax/0.1 (catalog builder; https://github.com/motomediax)";
 
@@ -181,6 +190,15 @@ function wikiTitleCandidates(brand: string, model: string): string[] {
   }
   if (brand === "Nissan" && cleaned.toLowerCase() === "z") {
     candidates.unshift("Nissan Z (RZ34)", "Nissan Fairlady Z", "Nissan Z");
+  }
+  if (brand === "BMW" && /^i3$/i.test(cleaned)) {
+    candidates.unshift("BMW i3 (hatchback)");
+  }
+  if (brand === "Ford" && /^fusion$/i.test(cleaned)) {
+    candidates.unshift("Ford Fusion (Americas)");
+  }
+  if (brand === "Chevrolet" && /^bolt/i.test(cleaned)) {
+    candidates.unshift("Chevrolet Bolt EV", "Chevrolet Bolt");
   }
 
   return [...new Set(candidates.map((c) => c.trim()).filter(Boolean))];
@@ -352,7 +370,12 @@ async function resolveWiki(
 
   for (const title of titles) {
     const summary = await fetchWikiSummary(title);
-    if (!summary || summary.type === "disambiguation" || !summary.extract) {
+    const extractPreview = (summary?.extract ?? "").trim().toLowerCase();
+    const looksLikeDisambig =
+      summary?.type === "disambiguation" ||
+      extractPreview.startsWith("may refer to") ||
+      extractPreview.includes(" may refer to:");
+    if (!summary || looksLikeDisambig || !summary.extract) {
       continue;
     }
     const raw =
@@ -722,11 +745,15 @@ function buildYearCopy(
   year: number,
   wikiExtract: string,
   specs?: VehicleSpecs,
+  options?: { finalYear?: boolean; discontinuedMessage?: string },
 ): { summary: string; description: string; highlights: string[] } {
   const highlights: string[] = [];
   const bits: string[] = [];
+  const finalYear = Boolean(options?.finalYear);
 
-  if (specs?.available) {
+  if (finalYear) {
+    highlights.push("Final U.S. catalog year");
+  } else if (specs?.available) {
     highlights.push(`Listed for ${year} in NHTSA vPIC`);
   } else if (specs?.available === false) {
     highlights.push(`No clear ${year} vPIC model match`);
@@ -770,9 +797,17 @@ function buildYearCopy(
     highlights.push(specs.electrificationLevel);
   }
 
-  const summary = `${year} ${brand} ${displayName}${
-    bits.length ? ` — ${bits[0]}` : specs?.available ? " — offered in the U.S. market" : ""
-  }.`.slice(0, 220);
+  const summary = (
+    finalYear
+      ? `${year} ${brand} ${displayName} — final U.S. catalog year.`
+      : `${year} ${brand} ${displayName}${
+          bits.length
+            ? ` — ${bits[0]}`
+            : specs?.available
+              ? " — offered in the U.S. market"
+              : ""
+        }.`
+  ).slice(0, 220);
 
   const dimSentence =
     specs?.overallLengthIn || specs?.wheelbaseIn || specs?.curbWeightLb
@@ -795,9 +830,11 @@ function buildYearCopy(
       }.`
     : specs?.vehicleDescription
       ? ` NHTSA lists ${year} configurations such as ${specs.vehicleDescription}.`
-      : specs?.available
+      : specs?.available && !finalYear
         ? ` This model appears in NHTSA vPIC for ${year}, though detailed crash ratings may not be published yet.`
-        : ` Detailed ${year} NHTSA crash ratings were not found for this nameplate.`;
+        : finalYear
+          ? ""
+          : ` Detailed ${year} NHTSA crash ratings were not found for this nameplate.`;
 
   const trimSentence =
     specs?.trims && specs.trims.length > 1
@@ -818,8 +855,17 @@ function buildYearCopy(
       ? ` EPA lists an estimated driving range around ${specs.rangeMiles} miles for a representative ${year} configuration.`
       : "";
 
+  const lead = finalYear
+    ? [
+        options?.discontinuedMessage,
+        `The ${year} ${brand} ${displayName} was the final model year covered in this catalog.`,
+      ]
+        .filter(Boolean)
+        .join(" ")
+    : `The ${year} ${brand} ${displayName} continues this nameplate in the MotoMediaX catalog.`;
+
   const description = [
-    `The ${year} ${brand} ${displayName} continues this nameplate in the MotoMediaX catalog.`,
+    lead,
     wikiExtract,
     safetySentence.trim(),
     dimSentence.trim(),
@@ -884,19 +930,32 @@ async function buildCatalog(): Promise<MakeEntry[]> {
       const tagline = modelWiki.tagline || `${seed.brand} ${displayName}`;
 
       const modelSlug = slugify(displayName);
-      const yearList = MODEL_YEARS[`${makeSlug}/${modelSlug}`] ?? [...YEARS];
+      const modelKey = `${makeSlug}/${modelSlug}`;
+      const yearList = MODEL_YEARS[modelKey] ?? [...YEARS];
+      const disc = DISCONTINUED[modelKey];
 
       for (const year of yearList) {
         const nhtsa = await fetchNhtsaSpecs(seed.brand, modelName, year);
         const epa = lookupEpaSummary(epaIndex, seed.brand, modelName, year);
         if (epa) epaHits += 1;
         const specs = mergeEpaIntoSpecs(nhtsa, epa);
+        const finalYear =
+          Boolean(disc) && disc.banner !== false && year === disc.lastYear;
+        if (finalYear && specs) {
+          specs.available = false;
+        }
         const { summary, description, highlights } = buildYearCopy(
           seed.brand,
           displayName,
           year,
           extract,
           specs,
+          finalYear
+            ? {
+                finalYear: true,
+                discontinuedMessage: disc.message,
+              }
+            : undefined,
         );
 
         const images: GalleryImage[] = carImage

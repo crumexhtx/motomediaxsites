@@ -54,6 +54,16 @@ jobs:
       - name: Validate catalog
         run: REQUIRE_LOCAL_IMAGES=1 pnpm validate:catalog
 
+      - name: Check discontinued.json is synced
+        run: |
+          cp src/data/discontinued.json /tmp/discontinued.before.json
+          pnpm sync:discontinued
+          if ! cmp -s src/data/discontinued.json /tmp/discontinued.before.json; then
+            echo "discontinued.json drifted from model-years.json — run pnpm sync:discontinued (or pnpm maintain:discontinued) and commit"
+            diff -u /tmp/discontinued.before.json src/data/discontinued.json || true
+            exit 1
+          fi
+
       - name: Production build
         run: pnpm build
         env:

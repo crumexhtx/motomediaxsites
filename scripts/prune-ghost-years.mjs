@@ -19,11 +19,6 @@ const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, "utf8"));
 let pruned = 0;
 let cloned = 0;
 
-function rewriteYearTokens(text, year) {
-  if (typeof text !== "string" || !text) return text;
-  return text.replace(/\b20\d{2}\b/g, String(year));
-}
-
 function adaptClone(clone, year, make, model, disc) {
   clone.year = year;
   clone.slug = String(year);
@@ -50,14 +45,17 @@ function adaptClone(clone, year, make, model, disc) {
 
   if (typeof clone.description === "string") {
     let description = clone.description
+      .replace(/^The .+? ended after \d{4}\.[^.]*\.\s*/i, "")
       .replace(/[^.]*\bcontinues\b[^.]*\./gi, "")
       .replace(/[^.]*listed for 20\d{2}[^.]*\./gi, "")
+      // Only rewrite default-window catalog leftovers in "the YYYY Brand" form.
+      .replace(/\bthe (202[4-9]|203\d)\b(?=\s+[A-Z])/g, `the ${year}`)
       .replace(/\s{2,}/g, " ")
       .trim();
-    description = rewriteYearTokens(description, year);
+    const framing = `The ${year} ${make.name} ${model.name} was the final model year covered in this catalog.`;
     clone.description = disc?.message
-      ? `${disc.message} ${description}`.trim()
-      : description;
+      ? `${disc.message} ${framing} ${description}`.trim()
+      : `${framing} ${description}`.trim();
   }
 
   if (clone.specs && typeof clone.specs === "object") {

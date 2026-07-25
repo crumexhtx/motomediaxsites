@@ -23,6 +23,8 @@
     "sync:discontinued": "node scripts/sync-discontinued.mjs",
     "sanitize:discontinued": "node scripts/sanitize-discontinued-years.mjs",
     "prune:ghost-years": "node scripts/prune-ghost-years.mjs",
+    "refresh:discontinued": "node scripts/refresh-discontinued-content.mjs",
+    "maintain:discontinued": "node scripts/sync-discontinued.mjs && node scripts/prune-ghost-years.mjs && node scripts/refresh-discontinued-content.mjs && node scripts/sanitize-discontinued-years.mjs",
     "backfill:images": "tsx scripts/backfill-remote-images.ts",
     "localize:images": "tsx scripts/localize-catalog-images.ts",
     "optimize:images": "tsx scripts/optimize-catalog-images.ts"
