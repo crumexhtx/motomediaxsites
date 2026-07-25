@@ -15,6 +15,8 @@ export type YearDiffResult = {
   changes: YearDiffChange[];
   trimsAdded: string[];
   trimsRemoved: string[];
+  /** Trim names used for field comparison when matched. */
+  comparedTrims?: { previous: string; current: string };
 };
 
 type FieldDef = {
@@ -158,11 +160,48 @@ function defaultTrim(year: YearEntry): TrimSpec | undefined {
   return (id && trims.find((t) => t.id === id)) || trims[0];
 }
 
+function normalizeTrimName(name: string) {
+  return name.toLowerCase().replace(/\s+/g, " ").trim();
+}
+
+/** Prefer the same trim id/name across years for field comparison. */
+export function matchedTrims(
+  previous: YearEntry,
+  current: YearEntry,
+): { previous?: TrimSpec; current?: TrimSpec } {
+  const prevTrims = previous.performance?.trims ?? [];
+  const currTrims = current.performance?.trims ?? [];
+  if (!prevTrims.length && !currTrims.length) return {};
+
+  const currDefault = defaultTrim(current);
+  const prevDefault = defaultTrim(previous);
+
+  if (currDefault) {
+    const byId = prevTrims.find((t) => t.id === currDefault.id);
+    if (byId) return { previous: byId, current: currDefault };
+    const byName = prevTrims.find(
+      (t) => normalizeTrimName(t.name) === normalizeTrimName(currDefault.name),
+    );
+    if (byName) return { previous: byName, current: currDefault };
+  }
+
+  if (prevDefault) {
+    const byId = currTrims.find((t) => t.id === prevDefault.id);
+    if (byId) return { previous: prevDefault, current: byId };
+    const byName = currTrims.find(
+      (t) => normalizeTrimName(t.name) === normalizeTrimName(prevDefault.name),
+    );
+    if (byName) return { previous: prevDefault, current: byName };
+  }
+
+  return { previous: prevDefault, current: currDefault };
+}
+
 function pickValue(
   field: FieldDef,
   year: YearEntry,
+  trim?: TrimSpec,
 ): string | number | undefined | null {
-  const trim = defaultTrim(year);
   const fromTrim = field.fromTrim?.(trim);
   if (fromTrim !== undefined && fromTrim !== null && fromTrim !== "") {
     return fromTrim;
@@ -228,25 +267,46 @@ function trimNames(year: YearEntry): string[] {
   return year.specs?.trims ?? [];
 }
 
-/** Compare a year entry to the previous model year (specs + default trim). */
+/** Compare a year entry to the previous model year (specs + matched trim). */
 export function diffYears(
   previous: YearEntry,
   current: YearEntry,
 ): YearDiffResult {
   const changes: YearDiffChange[] = [];
+  const matched = matchedTrims(previous, current);
 
   for (const field of FIELDS) {
-    const prevRaw = pickValue(field, previous);
-    const currRaw = pickValue(field, current);
+    const prevRaw = pickValue(field, previous, matched.previous);
+    const currRaw = pickValue(field, current, matched.current);
     const prevFmt = formatValue(field.key, prevRaw);
     const currFmt = formatValue(field.key, currRaw);
-    if (!prevFmt || !currFmt) continue;
+    if (!prevFmt && !currFmt) continue;
     if (prevFmt === currFmt) continue;
+    if (!prevFmt && currFmt) {
+      changes.push({
+        key: field.key,
+        label: field.label,
+        previous: "—",
+        current: currFmt,
+        tone: "change",
+      });
+      continue;
+    }
+    if (prevFmt && !currFmt) {
+      changes.push({
+        key: field.key,
+        label: field.label,
+        previous: prevFmt,
+        current: "—",
+        tone: "change",
+      });
+      continue;
+    }
     changes.push({
       key: field.key,
       label: field.label,
-      previous: prevFmt,
-      current: currFmt,
+      previous: prevFmt!,
+      current: currFmt!,
       tone: toneFor(field, prevRaw as string | number, currRaw as string | number),
     });
   }
@@ -262,6 +322,14 @@ export function diffYears(
     changes,
     trimsAdded,
     trimsRemoved,
+    ...(matched.previous && matched.current
+      ? {
+          comparedTrims: {
+            previous: matched.previous.name,
+            current: matched.current.name,
+          },
+        }
+      : {}),
   };
 }
 

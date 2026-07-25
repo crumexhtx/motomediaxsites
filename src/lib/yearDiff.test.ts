@@ -76,6 +76,49 @@ describe("yearDiff", () => {
     expect(result.changes.find((c) => c.key === "electrificationLevel")).toBeUndefined();
   });
 
+  it("matches the same trim id across years for field diffs", () => {
+    const prev = year(2025, {
+      performance: {
+        defaultTrimId: "xlt",
+        trims: [
+          { id: "xlt", name: "XLT", horsepower: 580, rangeMiles: 320 },
+          { id: "platinum", name: "Platinum", horsepower: 580 },
+        ],
+      },
+    });
+    const curr = year(2026, {
+      performance: {
+        defaultTrimId: "stx",
+        trims: [
+          { id: "stx", name: "STX", horsepower: 580, rangeMiles: 290 },
+          { id: "xlt", name: "XLT", horsepower: 560, rangeMiles: 300 },
+        ],
+      },
+    });
+    const result = diffYears(prev, curr);
+    // Default changed XLT→STX, but matched trim should still compare XLT→XLT.
+    expect(result.comparedTrims).toEqual({ previous: "XLT", current: "XLT" });
+    expect(result.changes.find((c) => c.key === "horsepower")).toMatchObject({
+      previous: "580 hp",
+      current: "560 hp",
+    });
+    expect(result.trimsAdded).toContain("STX");
+  });
+
+  it("surfaces fields added or removed between years", () => {
+    const prev = year(2024, {
+      specs: { mpgCombined: 30 },
+    });
+    const curr = year(2025, {
+      specs: { mpgCombined: 30, towingLb: 5000 },
+    });
+    const result = diffYears(prev, curr);
+    expect(result.changes.find((c) => c.key === "towingLb")).toMatchObject({
+      previous: "—",
+      current: "5000 lb",
+    });
+  });
+
   it("returns empty when nothing changed", () => {
     const a = year(2025, {
       specs: { mpgCombined: 51, overallLengthIn: "193.7" },

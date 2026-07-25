@@ -134,24 +134,14 @@ export function YearDetailPanel({
 
   const heroHasStats = hasAny(hp, torque, zeroSixty, mpg, range);
 
-  const preferEv =
-    /electric|ev\b|battery|phev|hybrid/i.test(
-      `${trim?.engine ?? ""} ${trim?.aspiration ?? ""} ${specs?.electrificationLevel ?? ""} ${specs?.fuelTypePrimary ?? ""}`,
-    ) &&
-    (trim?.rangeMiles != null ||
-      specs?.rangeMiles != null ||
-      trim?.batteryKwh != null ||
-      specs?.batteryKwh != null ||
-      /electric/i.test(String(specs?.fuelTypePrimary ?? "")));
-
   const ownership = estimateOwnershipCost({
     mpgCombined: trim?.mpgCombined ?? specs?.mpgCombined,
     rangeMiles: trim?.rangeMiles ?? specs?.rangeMiles,
     batteryKwh: trim?.batteryKwh ?? specs?.batteryKwh,
-    preferEv:
-      preferEv ||
-      /electric/i.test(String(specs?.fuelTypePrimary ?? "")) ||
-      /electric/i.test(String(specs?.electrificationLevel ?? "")),
+    fuelTypePrimary: specs?.fuelTypePrimary,
+    electrificationLevel: specs?.electrificationLevel,
+    engine: trim?.engine,
+    aspiration: trim?.aspiration,
   });
 
   const mechHas = hasAny(
@@ -266,6 +256,18 @@ export function YearDetailPanel({
             />
           </div>
           <dl className="mt-4">
+            <SpecRow
+              label="Powertrain"
+              value={
+                ownership.kind === "ev"
+                  ? "Battery electric"
+                  : ownership.kind === "phev"
+                    ? "Plug-in hybrid"
+                    : ownership.kind === "hybrid"
+                      ? "Hybrid"
+                      : "Gas"
+              }
+            />
             <SpecRow label="Based on" value={ownership.efficiencyLabel} />
             <SpecRow label="Assumptions" value={ownership.assumptionsLabel} />
           </dl>
