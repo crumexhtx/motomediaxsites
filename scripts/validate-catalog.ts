@@ -12,6 +12,13 @@ import {
   type Issue,
 } from "./lib/catalog-report";
 
+type DiscontinuedInfo = {
+  lastYear: number;
+  message: string;
+  banner?: boolean;
+  ghostYears?: number[];
+};
+
 const issues: Issue[] = [];
 
 function fail(message: string) {
@@ -32,6 +39,9 @@ const catalog = (() => {
 })();
 const brands = loadBrands();
 const modelYearOverrides = loadModelYearOverrides();
+const discontinued = JSON.parse(
+  fs.readFileSync(path.join(ROOT, "src/data/discontinued.json"), "utf8"),
+) as Record<string, DiscontinuedInfo>;
 
 const brandNames = new Set(brands.map((b) => b.brand));
 const makeNames = new Set(catalog.map((m) => m.name));
@@ -68,6 +78,8 @@ for (const make of catalog) {
       model.slug,
       modelYearOverrides,
     );
+    const key = `${make.slug}/${model.slug}`;
+    const disc = discontinued[key];
     for (const year of model.years) {
       if (!allowed.has(year.year)) {
         fail(
@@ -79,6 +91,51 @@ for (const make of catalog) {
       }
       if (isBlankCopy(year.summary) || isBlankCopy(year.description)) {
         fail(`${make.name} ${model.name} ${year.year}: missing copy`);
+      }
+    }
+
+    if (disc && disc.banner !== false) {
+      const last = model.years.find((y) => y.year === disc.lastYear);
+      if (!last) {
+        fail(
+          `${key}: discontinued lastYear ${disc.lastYear} missing from catalog — run pnpm prune:ghost-years`,
+        );
+      } else {
+        if (!/final u\.?s\.? catalog year/i.test(last.summary ?? "")) {
+          fail(
+            `${key} ${disc.lastYear}: summary should mark final U.S. catalog year`,
+          );
+        }
+        if (disc.message && !(last.description ?? "").includes(disc.message)) {
+          fail(
+            `${key} ${disc.lastYear}: description missing discontinued message`,
+          );
+        }
+        if (/\bcontinues\b/i.test(last.description ?? "")) {
+          fail(
+            `${key} ${disc.lastYear}: discontinued description still says "continues" — run pnpm refresh:discontinued`,
+          );
+        }
+        if (/\bfrom 20(\d{2}) until 20\1\b/i.test(last.description ?? "")) {
+          fail(
+            `${key} ${disc.lastYear}: corrupted same-year range — run pnpm refresh:discontinued`,
+          );
+        }
+        if (/may refer to/i.test((last.description ?? "").slice(0, 280))) {
+          fail(
+            `${key} ${disc.lastYear}: Wikipedia disambiguation leaked into description`,
+          );
+        }
+        if (last.specs && last.specs.available !== false) {
+          fail(`${key} ${disc.lastYear}: specs.available should be false`);
+        }
+      }
+      for (const ghost of disc.ghostYears ?? []) {
+        if (model.years.some((y) => y.year === ghost)) {
+          fail(
+            `${key}: ghost year ${ghost} still present in catalog — run pnpm prune:ghost-years`,
+          );
+        }
       }
     }
   }

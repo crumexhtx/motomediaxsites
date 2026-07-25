@@ -15,6 +15,7 @@ Car photo catalog inspired by NetCarShow’s make → model → year browse mode
 pnpm install
 cp .env.example .env.local
 pnpm build:catalog   # first time, or after changing brands.json — also fills public/catalog/
+pnpm maintain:discontinued  # after model-years / catalog rebuilds
 pnpm dev:clean       # clears .next then starts (use if routes 404 after catalog rebuild)
 ```
 
@@ -26,8 +27,11 @@ Set `NEXT_PUBLIC_SITE_URL` to your local or preview origin so canonicals, sitema
 
 - Seed list: [`src/data/brands.json`](src/data/brands.json)
 - Generated catalog: [`src/data/catalog.generated.json`](src/data/catalog.generated.json) (loaded by [`src/data/catalog.server.ts`](src/data/catalog.server.ts))
+- Year pins: [`src/data/model-years.json`](src/data/model-years.json) (historical / discontinued last years)
+- Discontinued banners: [`src/data/discontinued.json`](src/data/discontinued.json) (synced from year pins)
 - Photos: `public/catalog/` (committed local JPEGs so Next can optimize them; regenerate with `pnpm localize:images`)
 - Rebuild: `pnpm build:catalog` (caches API responses under `scripts/.cache/`)
+- After changing `model-years.json` or rebuilding the catalog, run `pnpm maintain:discontinued` (sync → prune ghosts → refresh final-year copy → sanitize)
 - Refresh MPG only: `pnpm enrich:epa`
 - Image pipeline if sources change: `pnpm backfill:images` (remote URLs) → `pnpm localize:images` (download into `public/catalog/`)
 
@@ -35,6 +39,7 @@ Set `NEXT_PUBLIC_SITE_URL` to your local or preview origin so canonicals, sitema
 
 ```bash
 pnpm build:catalog
+pnpm maintain:discontinued   # keep discontinued years / copy consistent
 pnpm build
 pnpm start
 ```
@@ -48,7 +53,7 @@ pnpm validate:catalog
 pnpm audit:images
 ```
 
-`pnpm validate:catalog` checks brand coverage, allowed years (default 2024–2026 plus `model-years.json` overrides), image hosts, cover/trim local files, and whether local `/catalog/` files exist on disk (warns by default; set `REQUIRE_LOCAL_IMAGES=1` to fail). `pnpm audit:images` probes remote image URLs (may rate-limit against Wikimedia; unresolved 429s fail the run) and uses exact model-name matching after normalizing seed names. Set `FAIL_ON_WEAK_IMAGES=1` to fail on empty/weak galleries. CI runs Gitleaks, lint, unit tests, script typecheck, catalog validation, and a production build on push/PR.
+`pnpm validate:catalog` checks brand coverage, allowed years (default 2024–2026 plus `model-years.json` overrides), discontinued last-year consistency, image hosts, cover/trim local files, and whether local `/catalog/` files exist on disk (warns by default; set `REQUIRE_LOCAL_IMAGES=1` to fail). `pnpm audit:images` probes remote image URLs (may rate-limit against Wikimedia; unresolved 429s fail the run) and uses exact model-name matching after normalizing seed names. Set `FAIL_ON_WEAK_IMAGES=1` to fail on empty/weak galleries. CI runs Gitleaks, lint, unit tests, script typecheck, catalog validation (including discontinued checks), and a production build on push/PR.
 
 ## Routes
 

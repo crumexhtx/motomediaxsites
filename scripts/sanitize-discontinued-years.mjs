@@ -2,8 +2,12 @@
  * Sanitize discontinued / cloned year entries in catalog.generated.json:
  * - Fix image alts to the entry year
  * - Drop highlights that reference other model years (e.g. "Listed for 2026")
- * - Strip contradictory "continues"/wrong-year phrasing from descriptions
+ * - Strip contradictory "continues"/listed-for phrasing from descriptions
  * - Ensure summary reflects the final catalog year when discontinued
+ *
+ * Does NOT rewrite historical year tokens inside Wikipedia extracts. Blind
+ * year rewriting caused corruption like "from 2020 until 2020". Prefer
+ * `pnpm refresh:discontinued` for overview regeneration.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -18,9 +22,15 @@ const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, "utf8"));
 
 let fixed = 0;
 
-function rewriteYearTokens(text, year) {
-  if (typeof text !== "string" || !text) return text;
-  return text.replace(/\b20\d{2}\b/g, String(year));
+function rewriteAltYear(text, year, makeName, modelName) {
+  if (typeof text !== "string" || !text) {
+    return `${year} ${makeName} ${modelName}`;
+  }
+  // Prefer a clean canonical alt rather than rewriting arbitrary years in prose.
+  if (/\b20\d{2}\b/.test(text) || text.length < 8) {
+    return `${year} ${makeName} ${modelName}`;
+  }
+  return text;
 }
 
 function cleanHighlights(highlights, year) {
@@ -40,22 +50,26 @@ function cleanDescription(description, year, discMessage) {
     return discMessage ?? description;
   }
   let next = description;
-  // Drop leading duplicated discontinued banners if we re-apply.
   if (discMessage && next.startsWith(discMessage)) {
     next = next.slice(discMessage.length).trim();
   }
-  // Remove sentences that claim the nameplate continues into a later year.
   next = next
     .replace(/[^.]*\bcontinues\b[^.]*\./gi, "")
     .replace(/[^.]*listed for 20\d{2}[^.]*\./gi, "")
+    // Fix only obvious same-year clone corruption, leave real history alone.
+    .replace(/\bfrom (20\d{2}) until \1\b/gi, `through $1`)
+    .replace(/\bproduced for the (20\d{2})[–-](\1)\b/gi, `produced for the $1`)
     .replace(/\s{2,}/g, " ")
     .trim();
 
-  // Soft-rewrite remaining year tokens that clearly disagree with the page year
-  // when they appear as "the 2026 …" style catalog leftovers.
+  // Soft-fix only "the YYYY Brand" when YYYY is a default catalog year
+  // that disagrees with this page year (clone leftover), not all year tokens.
   next = next.replace(
-    new RegExp(`\\b(?!${year})(202[4-9]|203\\d)\\b`, "g"),
-    String(year),
+    new RegExp(
+      `\\bthe (?!${year})(202[4-9]|203\\d)\\b(?=\\s+[A-Z])`,
+      "g",
+    ),
+    `the ${year}`,
   );
 
   if (discMessage) {
@@ -74,14 +88,15 @@ for (const make of catalog) {
 
       if (Array.isArray(yearEntry.images)) {
         for (const img of yearEntry.images) {
-          if (img?.alt && /\b20\d{2}\b/.test(img.alt)) {
-            const nextAlt = rewriteYearTokens(img.alt, year);
-            if (nextAlt !== img.alt) {
-              img.alt = nextAlt;
-              touched = true;
-            }
-          } else if (img && !img.alt) {
-            img.alt = `${year} ${make.name} ${model.name}`;
+          if (!img || typeof img !== "object") continue;
+          const nextAlt = rewriteAltYear(
+            img.alt,
+            year,
+            make.name,
+            model.name,
+          );
+          if (nextAlt !== img.alt) {
+            img.alt = nextAlt;
             touched = true;
           }
         }
@@ -118,11 +133,12 @@ for (const make of catalog) {
             touched = true;
           }
         }
-      } else {
-        // Even for active years, keep image alts aligned if they drifted.
-        const cleaned = cleanHighlights(yearEntry.highlights, year);
-        if (JSON.stringify(cleaned) !== JSON.stringify(yearEntry.highlights)) {
-          yearEntry.highlights = cleaned;
+        const highlights = cleanHighlights(yearEntry.highlights, year) ?? [];
+        if (!highlights.some((h) => /final u\.?s\.?/i.test(h))) {
+          yearEntry.highlights = ["Final U.S. catalog year", ...highlights].slice(
+            0,
+            8,
+          );
           touched = true;
         }
       }
