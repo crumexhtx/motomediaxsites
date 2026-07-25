@@ -34,9 +34,23 @@ describe("videos", () => {
     expect(bronco?.youtubeId).toMatch(/^[\w-]{11}$/);
   });
 
-  it("loads partial chevrolet videos when present", () => {
-    const corvette = getCuratedYearVideo("chevrolet", "corvette", 2025);
-    expect(corvette?.youtubeId).toMatch(/^[\w-]{11}$/);
-    expect(corvette?.title?.toLowerCase()).toContain("corvette");
+  it("loads curated mazda and tesla year videos", () => {
+    const miata = getCuratedYearVideo("mazda", "miata", 2025);
+    expect(miata?.youtubeId).toMatch(/^[\w-]{11}$/);
+    expect(miata?.title?.toLowerCase()).toMatch(/miata|mx-5|mx5/);
+
+    const modelY = getCuratedYearVideo("tesla", "model-y", 2026);
+    expect(modelY?.youtubeId).toMatch(/^[\w-]{11}$/);
+    expect(modelY?.title?.toLowerCase()).toContain("model y");
+  });
+
+  it("loads mercedes and volkswagen year videos", () => {
+    const glc = getCuratedYearVideo("mercedes-benz", "glc", 2024);
+    expect(glc?.youtubeId).toMatch(/^[\w-]{11}$/);
+    expect(glc?.title?.toLowerCase()).toContain("glc");
+
+    const gti = getCuratedYearVideo("volkswagen", "gti", 2025);
+    expect(gti?.youtubeId).toMatch(/^[\w-]{11}$/);
+    expect(gti?.title?.toLowerCase()).toContain("gti");
   });
 });

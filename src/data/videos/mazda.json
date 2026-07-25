@@ -1,1 +1,140 @@
-{}
+{
+  "miata": {
+    "2024": {
+      "youtubeId": "uH_JcnrkElY",
+      "title": "2024 Refreshed Mazda MX-5 Review // More Perfecter",
+      "owner": "Throttle House",
+      "ownerUrl": "https://www.youtube.com/channel/UCyXiDU5qjfOPxgOPeFWGwKw"
+    },
+    "2025": {
+      "youtubeId": "eFmhlEdHNHw",
+      "title": "The 2025 Mazda MX-5 Miata RF Club Is A Perfected Affordable Classic New Roadster",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2026": {
+      "youtubeId": "JMCRFRgYPvE",
+      "title": "2026 Mazda MX-5 Miata Club: TEST DRIVE+FULL REVIEW",
+      "owner": "W.T.F Car Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UCkWOWhQ6wEHCy2DPiJD6l4g",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "mazda3": {
+    "2024": {
+      "youtubeId": "5cbaaVUDeWY",
+      "title": "UPGRADES! -- Is the 2024 Mazda 3 Select Sport a GREAT Pick for Only $25,000??",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2025": {
+      "youtubeId": "7WpMyNe7oqs",
+      "title": "2025 Mazda 3 Select Sport -- Is This a BETTER DEAL Than Civic Sport?? (Thousands Less!)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2026": {
+      "youtubeId": "hjpqIjQVsrs",
+      "title": "Why the 2026 Mazda3 is the New Car Antidote // In-depth Review",
+      "owner": "Realistick",
+      "ownerUrl": "https://www.youtube.com/channel/UCuPtjeMcxfz7Z6zvUCKNyIw",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "mazda6": {
+    "2021": {
+      "youtubeId": "14gtbONG3HU",
+      "title": "2021 Mazda 6 Review | The Driver's Midsize Sedan",
+      "owner": "Gold Pony",
+      "ownerUrl": "https://www.youtube.com/channel/UCbnmrTBdvGD3G20S0yOcVTg",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "rx-8": {
+    "2011": {
+      "youtubeId": "gnQok8pyk-Q",
+      "title": "OLD CARS ARE THE BEST! 2011 Mazda RX-8",
+      "owner": "TheStraightPipes",
+      "ownerUrl": "https://www.youtube.com/channel/UC86SBFIAgnYL3ll2ZDgmsuA",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "cx-5": {
+    "2024": {
+      "youtubeId": "MDfWyWS8mhs",
+      "title": "What's NEW?? -- The 2024 Mazda CX-5 has FIXED the Tech (and More) for 2024!",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2025": {
+      "youtubeId": "kEtLCeCVyMU",
+      "title": "2025 Mazda CX-5 | Review",
+      "owner": "Kelley Blue Book",
+      "ownerUrl": "https://www.youtube.com/channel/UCj9yUGuMVVdm2DqyvJPUeUQ"
+    },
+    "2026": {
+      "youtubeId": "3nv4nqDP99A",
+      "title": "2026 Mazda CX-5 Premium Plus First Drive | Big Changes To Mazda's Best-Seller!",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    }
+  },
+  "cx-30": {
+    "2024": {
+      "youtubeId": "ecwq-pQYgkI",
+      "title": "2024 Mazda CX-30 / On a Mission!",
+      "owner": "Realistick",
+      "ownerUrl": "https://www.youtube.com/channel/UCuPtjeMcxfz7Z6zvUCKNyIw",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "AGhcShazQ4Q",
+      "title": "2025 Mazda CX-30 -- Should you BUY THIS Instead of a CX-5??",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2026": {
+      "youtubeId": "E1EWy6YZUtA",
+      "title": "2026 Mazda CX 30 Turbo | More Than Just My Favorite Mazda",
+      "owner": "Auto Buyers Guide | Alex on Autos",
+      "ownerUrl": "https://www.youtube.com/channel/UC3qM33hHgedfi7qTKKgIApg"
+    }
+  },
+  "cx-9": {
+    "2023": {
+      "youtubeId": "0PruqJpecPs",
+      "title": "Mazda CX-9 Review | Should You Buy a 2016–2023 Mazda CX-9?",
+      "owner": "CarMax",
+      "ownerUrl": "https://www.youtube.com/channel/UC-kNP_fPjvyQqC25VcHhDMQ",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "cx-90": {
+    "2024": {
+      "youtubeId": "6qGUoVvQvF8",
+      "title": "2024 Mazda CX-90 | Mixed Feelings",
+      "owner": "savagegeese",
+      "ownerUrl": "https://www.youtube.com/channel/UCgUvk6jVaf-1uKOqG8XNcaQ"
+    },
+    "2025": {
+      "youtubeId": "8eXLKrJGhHc",
+      "title": "2025 Mazda CX-90 -- HUGE Price *DROP* & New Trim for This Luxurious 3-Row SUV!",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2026": {
+      "youtubeId": "t6buXUWNAc0",
+      "title": "The 2026 Mazda CX-90 Turbo S Premium Sport Is A BMW-Like SUV Without The Outrageous Price",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    }
+  },
+  "mazdaspeed3": {
+    "2013": {
+      "youtubeId": "AcPOVbrci2w",
+      "title": "2013 Mazda Mazdaspeed3 - POV Driving Impressions",
+      "owner": "TheTopher",
+      "ownerUrl": "https://www.youtube.com/channel/UCD4NnnbISbr4dvmmzQxC2bA"
+    }
+  }
+}

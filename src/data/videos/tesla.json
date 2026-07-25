@@ -1,1 +1,115 @@
-{}
+{
+  "model-s": {
+    "2024": {
+      "youtubeId": "QKFQcoBgMJM",
+      "title": "Tesla Model S Plaid 2024 - What's New and Why we upgraded",
+      "owner": "Black Tesla",
+      "ownerUrl": "https://www.youtube.com/channel/UCatID1g14HqyWufbrkgtbyg"
+    },
+    "2025": {
+      "youtubeId": "uZO5VbV1fLE",
+      "title": "2025 Tesla Model S Review: Is It Still the Best Electric Sedan?",
+      "owner": "NamCar",
+      "ownerUrl": "https://www.youtube.com/channel/UCwya-oGbqjD1XCxZAZh6DRg",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "sXzaxcs5L5U",
+      "title": "2026 Tesla Model S Plaid Review | Is It Worth $110,000?",
+      "owner": "Tesla Flex",
+      "ownerUrl": "https://www.youtube.com/channel/UCIMasKY5YlgzcOmxVW4loaw"
+    }
+  },
+  "model-3": {
+    "2024": {
+      "youtubeId": "Fzvgc0N-gZQ",
+      "title": "2024 Tesla Model 3 vs The Cheapest Model 3 You Can Buy",
+      "owner": "Throttle House",
+      "ownerUrl": "https://www.youtube.com/channel/UCyXiDU5qjfOPxgOPeFWGwKw"
+    },
+    "2025": {
+      "youtubeId": "i1CuTaYmMiM",
+      "title": "2025 Tesla Model 3 Performance 3-Month Review - Is It Worth It?",
+      "owner": "Tesla Flex",
+      "ownerUrl": "https://www.youtube.com/channel/UCIMasKY5YlgzcOmxVW4loaw"
+    },
+    "2026": {
+      "youtubeId": "XTeWKmlNmN8",
+      "title": "Driving Tesla's Cheapest Car | First Review of the 2026 Tesla Model 3 Standard",
+      "owner": "Edmunds Cars",
+      "ownerUrl": "https://www.youtube.com/channel/UCF8e8zKZ_yk7cL9DvvWGSEw"
+    }
+  },
+  "model-x": {
+    "2024": {
+      "youtubeId": "vXsS0KgD8R4",
+      "title": "BRUTALLY Honest Review - Still Worth It? | Tesla Model X 2024",
+      "owner": "Robert Rosenfeld",
+      "ownerUrl": "https://www.youtube.com/channel/UCmn2G5dd_AvSk0VNJLAU5uw",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "8LBYBGmDjmQ",
+      "title": "Tesla Model X Refresh: Is the 2025 Tesla Model X Refresh Worth It? Full First Look Review",
+      "owner": "Bearded Tesla Guy",
+      "ownerUrl": "https://www.youtube.com/channel/UCBsANJdoKs-BVz-kLT2BeVQ"
+    },
+    "2026": {
+      "youtubeId": "jgyG86zYRTA",
+      "title": "2026 Tesla Model X Review | Is It Worth Buying Again?",
+      "owner": "Tesla Flex",
+      "ownerUrl": "https://www.youtube.com/channel/UCIMasKY5YlgzcOmxVW4loaw"
+    }
+  },
+  "model-y": {
+    "2024": {
+      "youtubeId": "ARyQ90oJJ5E",
+      "title": "2024 Tesla Model Y Long Range | Hardware 4, FSD & Grok Deep Dive",
+      "owner": "Way Scarff Ford Isuzu in Auburn, WA",
+      "ownerUrl": "https://www.youtube.com/channel/UCDzHmv2pnKX3y6OTqzM0tfw"
+    },
+    "2025": {
+      "youtubeId": "4DadIl_9SuA",
+      "title": "Hands On 2025 Tesla Model Y Review | No One Told Me About This",
+      "owner": "Ryan Shaw",
+      "ownerUrl": "https://www.youtube.com/channel/UCfv7-e6_6ZhvDL9-7Yw5OVA",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "i1Mah46LHIc",
+      "title": "Hands-On With the 2026 Tesla Model Y: What’s New with Model Y Juniper?",
+      "owner": "Edmunds Cars",
+      "ownerUrl": "https://www.youtube.com/channel/UCF8e8zKZ_yk7cL9DvvWGSEw"
+    }
+  },
+  "cybertruck": {
+    "2024": {
+      "youtubeId": "XDkzm_LR0Co",
+      "title": "2024 Tesla Cybertruck Review: This Is Just Plain Cool",
+      "owner": "Doug DeMuro",
+      "ownerUrl": "https://www.youtube.com/watch?v=XDkzm_LR0Co"
+    },
+    "2025": {
+      "youtubeId": "L3oO510dyVI",
+      "title": "2025 Tesla Cybertruck: Regular Car Reviews",
+      "owner": "Regular Car Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UCo1pShh6dtg-T_ZZkgi_JDQ",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "8LfftZYzjkU",
+      "title": "2026 Cybertruck Premium AWD: Best Truck for the Money???",
+      "owner": "Detroit Tesla",
+      "ownerUrl": "https://www.youtube.com/channel/UCk3Y1z4QAl0eQK9WnsaOfeA"
+    }
+  },
+  "roadster": {
+    "2011": {
+      "youtubeId": "sni00T5NlUM",
+      "title": "Road Test: 2011 Tesla Roadster",
+      "owner": "MotorWeek",
+      "ownerUrl": "https://www.youtube.com/channel/UC66lTpcL4h5wqxCWioKQOrg",
+      "note": "Channel is outside the preferred review list."
+    }
+  }
+}

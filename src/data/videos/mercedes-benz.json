@@ -1,33 +1,246 @@
 {
   "c-class": {
     "2024": {
-      "youtubeId": "g8oBPl9FQIM",
-      "title": "2024 Mercedes-Benz C-Class – Which to Buy?",
-      "owner": "Autotrader",
-      "ownerUrl": "https://www.youtube.com/channel/UC5XoIXdf_zeLvaBG3jErFkw",
+      "youtubeId": "K_ERL38qXTM",
+      "title": "Pros & Cons of the 2024 Mercedes C300",
+      "owner": "Discerning Cars",
+      "ownerUrl": "https://www.youtube.com/channel/UCqS8O47UKhrbbAggmr5GdXw",
       "note": "Channel is outside the preferred review list."
     },
     "2025": {
-      "youtubeId": "I6WcpSv3Qs8",
-      "title": "New 2025 Mercedes Benz C-Class Review | The Gentleman's Choice",
-      "owner": "Buckle Up",
-      "ownerUrl": "https://www.youtube.com/channel/UCQnCvi6zRZolQsxlIf6ePtQ",
+      "youtubeId": "Uvpzq6vw6OE",
+      "title": "The 2025 Mercedes-Benz C300 is a BETTER compact luxury sedan than a BMW 330i",
+      "owner": "Raiti's Rides",
+      "ownerUrl": "https://www.youtube.com/channel/UCILN_EvJ2ocZ5MW7168oQLg",
       "note": "Channel is outside the preferred review list."
     },
     "2026": {
-      "youtubeId": "lpAMjTmusjs",
-      "title": "Mercedes C-Class FIRST LOOK: Everything You Need to Know",
-      "owner": "Autotrader",
-      "ownerUrl": "https://www.youtube.com/channel/UC7Dh_sbcNd4BCXQkAqPM1AQ",
-      "note": "YouTube title may not include 2026. Channel is outside the preferred review list."
+      "youtubeId": "FP8nZqHOpIs",
+      "title": "The BEST CAR Mercedes Makes! //2026 Mercedes C 300//",
+      "owner": "Ben Hardy",
+      "ownerUrl": "https://www.youtube.com/channel/UCwcNqaaXmu9rAtNSbLVl4Bg",
+      "note": "Channel is outside the preferred review list."
     }
   },
   "e-class": {
     "2024": {
-      "youtubeId": "AbKPoYFbmxo",
-      "title": "2024 Mercedes E-Class | The Tech is Holding it Back",
-      "owner": "savagegeese",
-      "ownerUrl": "https://www.youtube.com/channel/UCgUvk6jVaf-1uKOqG8XNcaQ"
+      "youtubeId": "GTwgsffvLIQ",
+      "title": "The 2024 Mercedes-Benz E450 4Matic Is A Near Perfect Modern Executive Luxury Sedan",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2025": {
+      "youtubeId": "QXpNKVSXRn8",
+      "title": "2025 Mercedes E Class Review - Mercedes Luxury is BACK!",
+      "owner": "TheStraightPipes",
+      "ownerUrl": "https://www.youtube.com/channel/UC86SBFIAgnYL3ll2ZDgmsuA",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "LBsD0Jv1dz0",
+      "title": "2026 Mercedes E-Class -- SPOILED With Luxury, but Better Than 5-Series & Lexus ES??",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    }
+  },
+  "s-class": {
+    "2024": {
+      "youtubeId": "AkWuX-LtW7c",
+      "title": "2024 Mercedes-Benz S-Class (S 580): TEST DRIVE+FULL REVIEW",
+      "owner": "W.T.F Car Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UCkWOWhQ6wEHCy2DPiJD6l4g",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "D0B_DaXGuCA",
+      "title": "2025 Mercedes S-Class -- Is This STILL the Pinnacle of Flagship Luxury??",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2026": {
+      "youtubeId": "KUHWSu4E-rg",
+      "title": "2026 Mercedes S-Class: Everything You Need to Know",
+      "owner": "CAR magazine",
+      "ownerUrl": "https://www.youtube.com/channel/UC2xJqlJyVh0ASDwmOvMMYZA",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "g-class": {
+    "2024": {
+      "youtubeId": "HAZYH2jY3Z4",
+      "title": "Trying a G-WAGON for a day! | Mercedes G-Class Review 2024",
+      "owner": "Nick O'Leary",
+      "ownerUrl": "https://www.youtube.com/channel/UC8VSC5vv_SUeydoBo9ISucw",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "NtjXyGqFPks",
+      "title": "Is the 2025 Mercedes Benz G550 G-Wagon a BETTER luxury SUV than a Lexus GX 550?",
+      "owner": "Raiti's Rides",
+      "ownerUrl": "https://www.youtube.com/channel/UCILN_EvJ2ocZ5MW7168oQLg",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "n4bm2x18y-E",
+      "title": "5 Pros & Cons of the 2026 Mercedes-Benz G-Class (G-Wagon) | Iconic SUV Review",
+      "owner": "MotorNation",
+      "ownerUrl": "https://www.youtube.com/channel/UC9HmzxcrnW3CGZVf0iPK6Eg",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "amg-gt": {
+    "2024": {
+      "youtubeId": "FYtEjSuYhPo",
+      "title": "2024 Mercedes AMG GT Review: Last Real AMG? 4K",
+      "owner": "Autotrader",
+      "ownerUrl": "https://www.youtube.com/channel/UC7Dh_sbcNd4BCXQkAqPM1AQ",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "LcfdYYjZwzs",
+      "title": "2025 Mercedes-AMG GT 63 S E Performance Quick Review",
+      "owner": "Extra Throttle House",
+      "ownerUrl": "https://www.youtube.com/channel/UCfzWwxboCLyLw7KVfQj84eA"
+    },
+    "2026": {
+      "youtubeId": "wK2-058Bblc",
+      "title": "The 2026 Mercedes-AMG GT63 S E-Performance Is a $225,000 Super Sedan",
+      "owner": "Doug DeMuro",
+      "ownerUrl": "https://www.youtube.com/channel/UCsqjHFMB_JYTaEnf_vmTNqg",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "sl-class": {
+    "2024": {
+      "youtubeId": "2yKbpCFM9hY",
+      "title": "2024 Mercedes AMG SL63 Quick Review",
+      "owner": "Extra Throttle House",
+      "ownerUrl": "https://www.youtube.com/channel/UCfzWwxboCLyLw7KVfQj84eA"
+    },
+    "2025": {
+      "youtubeId": "6l7tv5AcbVo",
+      "title": "IS 55 A FAKE AMG!? 2025 Mercedes-AMG SL55 Review",
+      "owner": "TheStraightPipes",
+      "ownerUrl": "https://www.youtube.com/channel/UC86SBFIAgnYL3ll2ZDgmsuA",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "6bhQCmJM1Ds",
+      "title": "2026 Mercedes SL-Class Review | Performance, Luxury & Price Breakdown",
+      "owner": "Next Gen Garage ",
+      "ownerUrl": "https://www.youtube.com/channel/UC9mtTMbE41-Fkrtj3RSf7qQ",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "glc": {
+    "2024": {
+      "youtubeId": "CMgOaS_Ik7A",
+      "title": "2024 Mercedes-Benz GLC Review | Consumer Reports",
+      "owner": "Consumer Reports",
+      "ownerUrl": "https://www.youtube.com/watch?v=CMgOaS_Ik7A"
+    },
+    "2025": {
+      "youtubeId": "yYb3ABowcLo",
+      "title": "The 2025 Mercedes-Benz GLC 350e Is A Balanced Luxury PHEV SUV With Class Leading Range",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2026": {
+      "youtubeId": "PnlXCJMpAY4",
+      "title": "2026 Mercedes GLC 300 -- What’s NEW and Does This DEFEAT the BMW X3??",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    }
+  },
+  "gle": {
+    "2024": {
+      "youtubeId": "Z0WGAuNq_EY",
+      "title": "The 2024 Mercedes-Benz GLE 450 4Matic Is Smooth & Refined E-Class Luxury SUV",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2025": {
+      "youtubeId": "RyFQ8V7AQyU",
+      "title": "The 2025 Mercedes-Benz GLE 450e Is An Ultra Plush & Efficient SUV That Prefers To Be Charged Up",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2026": {
+      "youtubeId": "RyFQ8V7AQyU",
+      "title": "The 2025 Mercedes-Benz GLE 450e Is An Ultra Plush & Efficient SUV That Prefers To Be Charged Up",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA",
+      "note": "YouTube title may not include 2026."
+    }
+  },
+  "gls": {
+    "2024": {
+      "youtubeId": "41MgydM37NY",
+      "title": "The 2024 Mercedes-Benz GLS 450 4Matic Is A Posh & Pricey Luxury Family SUV",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2025": {
+      "youtubeId": "GJ1fOw_8cgQ",
+      "title": "2025 Mercedes GLS 450 -- What's NEW for 2025 with the Largest Benz SUV?? ($100,000)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2026": {
+      "youtubeId": "W2nePTYIITU",
+      "title": "2026 Mercedes GLS 450 -- Is the Largest Mercedes SUV the Best One?? (Anything NEW??)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    }
+  },
+  "cla": {
+    "2024": {
+      "youtubeId": "PQPT5lK_vC8",
+      "title": "2024 Mercedes CLA 250 -- A Whole Lotta Benz for ONLY $42,000! (REFRESHED)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2025": {
+      "youtubeId": "XuiIz3-sDT0",
+      "title": "2025 Mercedes-AMG CLA 45 S Review // Pocket Rocket",
+      "owner": "Throttle House",
+      "ownerUrl": "https://www.youtube.com/channel/UCyXiDU5qjfOPxgOPeFWGwKw"
+    },
+    "2026": {
+      "youtubeId": "TBm_De9FvrA",
+      "title": "2026 Mercedes-Benz CLA with EQ Technology | First Drive",
+      "owner": "Kelley Blue Book",
+      "ownerUrl": "https://www.youtube.com/channel/UCj9yUGuMVVdm2DqyvJPUeUQ"
+    }
+  },
+  "eqs": {
+    "2024": {
+      "youtubeId": "XcqQEFrgcbE",
+      "title": "2024 Mercedes-EQ EQS450+ Review: Sizing Up Mercedes’ Flagship EV",
+      "owner": "Cars.com",
+      "ownerUrl": "https://www.youtube.com/watch?v=XcqQEFrgcbE"
+    },
+    "2025": {
+      "youtubeId": "Jh_mQtgGnXI",
+      "title": "2025 Mercedes EQS.. Nobody Wants This, So Enjoy The Discounts",
+      "owner": "Discerning Cars",
+      "ownerUrl": "https://www.youtube.com/watch?v=Jh_mQtgGnXI",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "z1ryMpZbW4Q",
+      "title": "Next-Generation 2025/2026 Mercedes EQS! Futuristic Luxury Sedan",
+      "owner": "AutomagzTV",
+      "ownerUrl": "https://www.youtube.com/watch?v=z1ryMpZbW4Q"
+    }
+  },
+  "slk-slc": {
+    "2020": {
+      "youtubeId": "3s7ECIoc4GU",
+      "title": "Mercedes SLK buyers guide review (2011-2020) Reliability and known faults (SLK/SLC R172)",
+      "owner": "The Miles Driven",
+      "ownerUrl": "https://www.youtube.com/channel/UCuTHLfdAGdJITGPnvguW8Dg",
+      "note": "Channel is outside the preferred review list."
     }
   }
 }
