@@ -53,7 +53,9 @@ pnpm validate:catalog
 pnpm audit:images
 ```
 
-`pnpm validate:catalog` checks brand coverage, allowed years (default 2024–2026 plus `model-years.json` overrides), discontinued last-year consistency, image hosts, cover/trim local files, and whether local `/catalog/` files exist on disk (warns by default; set `REQUIRE_LOCAL_IMAGES=1` to fail). `pnpm audit:images` probes remote image URLs (may rate-limit against Wikimedia; unresolved 429s fail the run) and uses exact model-name matching after normalizing seed names. Set `FAIL_ON_WEAK_IMAGES=1` to fail on empty/weak galleries. CI runs Gitleaks, lint, unit tests, script typecheck, catalog validation (including discontinued checks), and a production build on push/PR.
+`pnpm validate:catalog` checks brand coverage, allowed years (default 2024–2026 plus `model-years.json` overrides), discontinued last-year consistency, image hosts, cover/trim local files, and whether local `/catalog/` files exist on disk (warns by default; set `REQUIRE_LOCAL_IMAGES=1` to fail). `pnpm validate:videos` checks curated YouTube embeds for coverage, title relevance, and live oEmbed availability. `pnpm audit:images` probes remote image URLs (may rate-limit against Wikimedia; unresolved 429s fail the run) and uses exact model-name matching after normalizing seed names. Set `FAIL_ON_WEAK_IMAGES=1` to fail on empty/weak galleries. CI runs Gitleaks, lint, unit tests, script typecheck, catalog validation (including discontinued checks), and a production build on push/PR.
+
+Year videos: `pnpm fetch:videos <brand>` (YouTube API if `YOUTUBE_API_KEY` is set, otherwise yt-dlp). Prefer filling gaps without `--overwrite`; run `pnpm validate:videos` afterward.
 
 ## Routes
 

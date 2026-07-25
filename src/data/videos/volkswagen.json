@@ -1,11 +1,10 @@
 {
   "jetta": {
     "2024": {
-      "youtubeId": "6-J8u1MQGVs",
-      "title": "How Is This STILL Possible? // 2024 VW Jetta Review",
-      "owner": "Sarah -n- Tuned",
-      "ownerUrl": "https://www.youtube.com/channel/UCHSbIfwVuec_BwUrYAqN_qw",
-      "note": "Channel is outside the preferred review list."
+      "youtubeId": "4RyyqzEFd94",
+      "title": "2024 Volkswagen Jetta Sport is a Bargain Sedan :All Specs &Test Drive",
+      "owner": "Hawkeye Rides",
+      "ownerUrl": "https://www.youtube.com/watch?v=4RyyqzEFd94"
     },
     "2025": {
       "youtubeId": "AjN_88PKP60",
@@ -18,6 +17,145 @@
       "title": "2026 Volkswagen Jetta Review | NICE Updates for 2026!",
       "owner": "Gold Pony",
       "ownerUrl": "https://www.youtube.com/channel/UCbnmrTBdvGD3G20S0yOcVTg",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "golf": {
+    "2021": {
+      "youtubeId": "wOzdRhgcoRI",
+      "title": "2021 VW Golf TSI Review - Fun For Under $25,000",
+      "owner": "Shifting Lanes",
+      "ownerUrl": "https://www.youtube.com/channel/UCifhwi7Eb4vnf12ox9Bq1yQ",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "gti": {
+    "2024": {
+      "youtubeId": "wlyKoUWIKUs",
+      "title": "2025 VW Golf GTI | Fixed and Broken",
+      "owner": "savagegeese",
+      "ownerUrl": "https://www.youtube.com/channel/UCgUvk6jVaf-1uKOqG8XNcaQ",
+      "note": "YouTube title may not include 2024."
+    },
+    "2025": {
+      "youtubeId": "SsFGs0Dem6Y",
+      "title": "The 2025 Volkswagen GTI Is An Enthusiastic Hot Hatch That Works On Both The Street & Track",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2026": {
+      "youtubeId": "wVQS_s4sidM",
+      "title": "2026 VW Golf GTI Review | IS IT WORTH IT?",
+      "owner": "UsedCarsTV",
+      "ownerUrl": "https://www.youtube.com/channel/UCjXhevg8Suyzl7GQrZAvzuA",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "golf-r": {
+    "2024": {
+      "youtubeId": "O6XnUUF_SiA",
+      "title": "I Bought A 2024 Volkswagen Golf R",
+      "owner": "Throttle House",
+      "ownerUrl": "https://www.youtube.com/channel/UCyXiDU5qjfOPxgOPeFWGwKw"
+    },
+    "2025": {
+      "youtubeId": "5JPt3KcBmTQ",
+      "title": "The 2025 Volkswgen Golf R Is The Perfect European Hot Hatch For A Mature Driving Enthusiast",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2026": {
+      "youtubeId": "s2sXAp0kESc",
+      "title": "2026 VW GOLF R | Long Term Testing",
+      "owner": "savagegeese",
+      "ownerUrl": "https://www.youtube.com/channel/UCgUvk6jVaf-1uKOqG8XNcaQ"
+    }
+  },
+  "passat": {
+    "2022": {
+      "youtubeId": "nSlqOejhYvg",
+      "title": "2022 Volkswagen Passat Review | The FINAL Passat",
+      "owner": "Gold Pony",
+      "ownerUrl": "https://www.youtube.com/channel/UCbnmrTBdvGD3G20S0yOcVTg",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "tiguan": {
+    "2024": {
+      "youtubeId": "JAjvyIf69u0",
+      "title": "2024 Volkswagen Tiguan review // A compact SUV that handles well.",
+      "owner": "Motormouth",
+      "ownerUrl": "https://www.youtube.com/channel/UCX13wwdzipRhH001W3X0WyQ",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "wOU98Xoqptw",
+      "title": "The 2025 Volkswagen Tiguan SEL R-Line Is A Pivotal Family SUV With Luxury Audi Vibes",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2026": {
+      "youtubeId": "NoOvgbBucUQ",
+      "title": "2026 Volkswagen Tiguan -- Upscale, Powerful & BETTER Than RAV4 or CR-V??",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    }
+  },
+  "touareg": {
+    "2017": {
+      "youtubeId": "kYBQhYzeF40",
+      "title": "2017 Volkswagen Touareg Review | Features Rundown | Edmunds",
+      "owner": "Edmunds Cars",
+      "ownerUrl": "https://www.youtube.com/channel/UCF8e8zKZ_yk7cL9DvvWGSEw"
+    }
+  },
+  "atlas": {
+    "2024": {
+      "youtubeId": "vXclX59_XtA",
+      "title": "2024 VW Atlas | Updated in The Wrong Places",
+      "owner": "savagegeese",
+      "ownerUrl": "https://www.youtube.com/channel/UCgUvk6jVaf-1uKOqG8XNcaQ"
+    },
+    "2025": {
+      "youtubeId": "gbOxeydSgw4",
+      "title": "2025 Volkswagen Atlas -- What's NEW for 2025?? (Massage Seats & MORE Luxury!)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2026": {
+      "youtubeId": "5aynfO1HSrk",
+      "title": "2026 Volkswagen Atlas -- Anything NEW for 2026?? (Buy This Over Grand Highlander??)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    }
+  },
+  "beetle": {
+    "2019": {
+      "youtubeId": "_HFofMSc5m0",
+      "title": "2019 Volkswagen Beetle Final Edition - Review - Iconic but Impractical",
+      "owner": "Bachman Volkswagen",
+      "ownerUrl": "https://www.youtube.com/channel/UCdKu_ekTl17xEZ4mYiAlqJA"
+    }
+  },
+  "id-4": {
+    "2024": {
+      "youtubeId": "8Z67taPo9q8",
+      "title": "The 2024 Volkswagen ID.4 Pro S Is An Improved Peoples Car With More Power & Range",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2025": {
+      "youtubeId": "gCQ0pE2DnvQ",
+      "title": "Is The Volkswagen EV Worth It? //2025 VW ID.4 AWD//",
+      "owner": "Ben Hardy",
+      "ownerUrl": "https://www.youtube.com/channel/UCwcNqaaXmu9rAtNSbLVl4Bg",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2026": {
+      "youtubeId": "NAzfWXBjuhI",
+      "title": "2026 VW ID.4 Review - Is It Finally Worth Buying?",
+      "owner": "AUTO TV",
+      "ownerUrl": "https://www.youtube.com/channel/UC7ST0-8WveYQYTLbUQX0eSw",
       "note": "Channel is outside the preferred review list."
     }
   }

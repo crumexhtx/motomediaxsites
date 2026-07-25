@@ -46,11 +46,10 @@
   },
   "7-series": {
     "2024": {
-      "youtubeId": "Wm_q-PJ2v1k",
-      "title": "BMW 7 Series | Making Sense of Excess",
-      "owner": "savagegeese",
-      "ownerUrl": "https://www.youtube.com/channel/UCgUvk6jVaf-1uKOqG8XNcaQ",
-      "note": "YouTube title may not include 2024."
+      "youtubeId": "ct9Nyz3jlHk",
+      "title": "2024 BMW 760i: Start Up, Test Drive, Walkaround, POV and Review",
+      "owner": "Bros FOURR Speed",
+      "ownerUrl": "https://www.youtube.com/watch?v=ct9Nyz3jlHk"
     },
     "2025": {
       "youtubeId": "t6zjJjgbzqs",
@@ -182,6 +181,118 @@
     "2024": {
       "youtubeId": "fc6dC6WNcCc",
       "title": "The 2024 BMW X5 xDrive40i Is The Midsize Executive Luxury SUV Perfected",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2025": {
+      "youtubeId": "5STBl6mNXGM",
+      "title": "2025 BMW X5 -- \"Eye\" Spy Some 2025 Updates to BMW's #1 Selling Luxury SUV!",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    },
+    "2026": {
+      "youtubeId": "TNig-eBP0L4",
+      "title": "2026 BMW X5 -- Still a GREAT Pick for 2026! (Anything New?)",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/channel/UCeVTw5cnNOjtUN24PMKN8DA"
+    }
+  },
+  "x7": {
+    "2024": {
+      "youtubeId": "vFemonPigwY",
+      "title": "All the Right Moves! -- Is the 2024 BMW X7 the ULTIMATE (Driving) Luxury SUV??",
+      "owner": "Car Confections",
+      "ownerUrl": "https://www.youtube.com/watch?v=vFemonPigwY"
+    },
+    "2025": {
+      "youtubeId": "wH6zszFHPTg",
+      "title": "The 2025 BMW X7 M60i Is A Twin-Turbo V8 Powered Ultimate Driver's SUV For Families",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
+    },
+    "2026": {
+      "youtubeId": "qiKUNC-tjz4",
+      "title": "2026 BMW X7 Review | BMW's Real Flagship Is Our Top Pick",
+      "owner": "Auto Buyers Guide | Alex on Autos",
+      "ownerUrl": "https://www.youtube.com/channel/UC3qM33hHgedfi7qTKKgIApg"
+    }
+  },
+  "z4": {
+    "2024": {
+      "youtubeId": "OPc4ne6Q0f8",
+      "title": "2024 BMW Z4 M40i Review",
+      "owner": "BMWBLOG",
+      "ownerUrl": "https://www.youtube.com/watch?v=OPc4ne6Q0f8"
+    },
+    "2025": {
+      "youtubeId": "7R47goysWKI",
+      "title": "2025 BMW Z4 M40i vs The Cheapest Z4 You Can Buy",
+      "owner": "Throttle House",
+      "ownerUrl": "https://www.youtube.com/channel/UCyXiDU5qjfOPxgOPeFWGwKw"
+    },
+    "2026": {
+      "youtubeId": "lVdJiL90a6g",
+      "title": "2026 BMW Z4 Review – Why This White Edition Redefines Driving Luxury!",
+      "owner": "AutoCrazeX",
+      "ownerUrl": "https://www.youtube.com/channel/UC2AfbICjxb8ca5LMSNjVtQQ",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "i3": {
+    "2021": {
+      "youtubeId": "qNBcK2m4hKI",
+      "title": "2021 BMW i3 | Is it overlooked? (4K)",
+      "owner": "SytnerTV",
+      "ownerUrl": "https://www.youtube.com/channel/UCoJgbGeUsbm3VkcKo0NoD0g",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "i8": {
+    "2020": {
+      "youtubeId": "ho_u5fZs3P0",
+      "title": "2020 BMW i8 Roadster - One Take",
+      "owner": "TheSmokingTire",
+      "ownerUrl": "https://www.youtube.com/channel/UCgeGealT0QYcrnoYRMltDZg",
+      "note": "Channel is outside the preferred review list."
+    }
+  },
+  "i4": {
+    "2024": {
+      "youtubeId": "tIrktdqCQY4",
+      "title": "2024 BMW i4 Review | Range, Efficiency and Charging",
+      "owner": "BMWBLOG",
+      "ownerUrl": "https://www.youtube.com/channel/UCTy_K-DwKVBUc4Anbub4arw",
+      "note": "Channel is outside the preferred review list."
+    },
+    "2025": {
+      "youtubeId": "61EXu66w690",
+      "title": "2025 BMW i4: Tesla's Biggest Nightmare Just Got Better | Here's What Changed",
+      "owner": "Brian Makse",
+      "ownerUrl": "https://www.youtube.com/watch?v=61EXu66w690"
+    },
+    "2026": {
+      "youtubeId": "xLZmrhT7auY",
+      "title": "2026 BMW i4 — The Problems Nobody Talks About",
+      "owner": "CAR INSIDER",
+      "ownerUrl": "https://www.youtube.com/watch?v=xLZmrhT7auY"
+    }
+  },
+  "ix": {
+    "2024": {
+      "youtubeId": "x8BKwYK3Xq4",
+      "title": "2024 BMW ix xdrive50 is it Worth IT? :Full Specs & Test Drive",
+      "owner": "Hawkeye Rides",
+      "ownerUrl": "https://www.youtube.com/watch?v=x8BKwYK3Xq4"
+    },
+    "2025": {
+      "youtubeId": "NcyWfQpdNGc",
+      "title": "2025 BMW iX Full Review: Vicki Butler-Henderson Finds Out if It’s Still the One to Beat",
+      "owner": "DriverReviews",
+      "ownerUrl": "https://www.youtube.com/watch?v=NcyWfQpdNGc"
+    },
+    "2026": {
+      "youtubeId": "BV7MW_gz5KU",
+      "title": "The 2026 BMW iX Is A More Comfortable & Road Trip Ready Luxury SUV",
       "owner": "Redline Reviews",
       "ownerUrl": "https://www.youtube.com/channel/UC2MrtVb1dT4FhcbOlW736kA"
     }

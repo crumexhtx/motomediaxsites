@@ -128,6 +128,12 @@
       "owner": "CAR REVIEW TODAY",
       "ownerUrl": "https://www.youtube.com/channel/UCSb55_a8flo9Mj8AG5F49vw",
       "note": "Channel is outside the preferred review list."
+    },
+    "2018": {
+      "youtubeId": "kxwheWldZr0",
+      "title": "2018 Ford Focus Sedan – Ford's Big Mistake?",
+      "owner": "Redline Reviews",
+      "ownerUrl": "https://www.youtube.com/watch?v=kxwheWldZr0"
     }
   },
   "focus-rs": {
@@ -151,6 +157,12 @@
       "owner": "Matt Dutton",
       "ownerUrl": "https://www.youtube.com/channel/UCGnGNMz7rstG9Xp9fWTXT3A",
       "note": "Channel is outside the preferred review list."
+    },
+    "2018": {
+      "youtubeId": "GX3s0JXmw6c",
+      "title": "2018 Ford Focus RS Review: America's Hot Hatch vs. Civics and Golfs",
+      "owner": "Cars & Bids",
+      "ownerUrl": "https://www.youtube.com/watch?v=GX3s0JXmw6c"
     }
   },
   "fiesta-st": {
@@ -174,6 +186,12 @@
       "owner": "CB Auto News",
       "ownerUrl": "https://www.youtube.com/channel/UCJgcmo8VhKfADT6rlm1QjsA",
       "note": "Channel is outside the preferred review list."
+    },
+    "2019": {
+      "youtubeId": "UpvRPl-CEDI",
+      "title": "2019 Ford Fiesta ST Review - The Last of it's Kind",
+      "owner": "Xcelerate",
+      "ownerUrl": "https://www.youtube.com/watch?v=UpvRPl-CEDI"
     }
   },
   "bronco": {
@@ -239,6 +257,12 @@
       "title": "Ford GT Review // The Car That Tried To Kill Us",
       "owner": "Throttle House",
       "ownerUrl": "https://www.youtube.com/@ThrottleHouse"
+    },
+    "2022": {
+      "youtubeId": "SBagFtYZa0U",
+      "title": "2023 Corvette Z06 vs 2022 Ford GT // The American Superheroes [+Drag Race]",
+      "owner": "Throttle House",
+      "ownerUrl": "https://www.youtube.com/watch?v=SBagFtYZa0U"
     }
   },
   "fusion": {
