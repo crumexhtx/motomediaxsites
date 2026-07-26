@@ -109,6 +109,40 @@ for (const make of catalog) {
           `${make.name} ${model.name} ${year.year}: thin summary stub — run pnpm repair:copy`,
         );
       }
+
+      if (year.recalls) {
+        for (const recall of year.recalls) {
+          if (
+            !recall.campaignNumber?.trim() ||
+            !recall.date?.trim() ||
+            !recall.component?.trim() ||
+            !recall.summary?.trim()
+          ) {
+            fail(
+              `${make.name} ${model.name} ${year.year}: incomplete recall entry — require date, component, summary, campaignNumber`,
+            );
+          }
+        }
+      }
+      if (year.safetyStatus?.recalls === "error") {
+        warn(
+          `${make.name} ${model.name} ${year.year}: recall fetch failed (${year.safetyStatus.recallsError ?? "unknown"}) — re-run pnpm enrich:nhtsa-recalls`,
+        );
+      }
+      if (year.safetyStatus?.complaints === "error") {
+        warn(
+          `${make.name} ${model.name} ${year.year}: complaint fetch failed (${year.safetyStatus.complaintsError ?? "unknown"}) — re-run pnpm enrich:nhtsa-complaints`,
+        );
+      }
+      if (year.complaints?.byComponent) {
+        for (const row of year.complaints.byComponent) {
+          if (!row.component?.trim() || !(row.count > 0)) {
+            fail(
+              `${make.name} ${model.name} ${year.year}: invalid complaint category row`,
+            );
+          }
+        }
+      }
     }
 
     if (disc && disc.banner !== false) {

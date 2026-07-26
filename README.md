@@ -32,6 +32,7 @@ Set `NEXT_PUBLIC_SITE_URL` to your local or preview origin so canonicals, sitema
 - Photos: `public/catalog/` (committed local JPEGs so Next can optimize them; regenerate with `pnpm localize:images`)
 - Rebuild: `pnpm build:catalog` (caches API responses under `scripts/.cache/`)
 - After changing `model-years.json` or rebuilding the catalog, run `pnpm maintain:discontinued` (sync → prune ghosts → refresh final-year copy → sanitize)
+- Used-buyer safety data: `pnpm enrich:nhtsa-safety` (NHTSA recalls + complaint category counts; or run `enrich:nhtsa-recalls` / `enrich:nhtsa-complaints` separately)
 - Refresh MPG only: `pnpm enrich:epa`
 - Image pipeline if sources change: `pnpm backfill:images` (remote URLs) → `pnpm localize:images` (download into `public/catalog/`)
 

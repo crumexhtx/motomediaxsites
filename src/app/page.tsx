@@ -32,11 +32,11 @@ export default function HomePage() {
             {SITE.name}
           </p>
           <h1 className="fade-up-delay mt-4 max-w-2xl text-xl font-medium leading-tight text-white sm:text-2xl md:text-3xl">
-            All makes. All models. Clearer browsing.
+            Which used model year should you actually buy?
           </h1>
           <p className="fade-up-delay-2 mt-3 max-w-xl text-base leading-relaxed text-white/75">
-            Pick a marque, open a model, then step through the years—photos and
-            overviews ready for enthusiasts.
+            Compare years, check NHTSA recalls and owner complaints, and see
+            what changed — then decide if the newer year is worth the price.
           </p>
           <div className="fade-up-delay-2 mt-7 flex flex-wrap gap-3">
             <Link
@@ -62,7 +62,8 @@ export default function HomePage() {
               Start with a make
             </h2>
             <p className="mt-2 text-muted">
-              Jump into popular marques, then drill into models and model years.
+              Pick a marque, then compare model years for recalls, complaints,
+              and year-over-year changes.
             </p>
             <Link
               href="/makes"
@@ -83,8 +84,8 @@ export default function HomePage() {
               Fresh from the catalog
             </h2>
             <p className="mt-2 text-muted">
-              Newly listed model years—open one for gallery shots, an overview,
-              and the details that matter.
+              Recently listed model years — open one for recalls, year-over-year
+              changes, photos, and specs.
             </p>
             <Link
               href="/search"
