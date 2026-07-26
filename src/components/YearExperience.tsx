@@ -23,8 +23,12 @@ type Props = {
   breadcrumbs: ReactNode;
   yearChips: ReactNode;
   overview: ReactNode;
+  /** Used-buyer signals: recalls + complaints (server-rendered). */
+  safetyPanel?: ReactNode;
   /** Year-over-year delta section (server-rendered). */
   yearChanges?: ReactNode;
+  /** Valuation CTA (affiliate outbound). */
+  valuationCta?: ReactNode;
   /** Discontinued / final-year notice above overview. */
   discontinuedBanner?: ReactNode;
   performance?: YearPerformance;
@@ -42,7 +46,9 @@ export function YearExperience({
   breadcrumbs,
   yearChips,
   overview,
+  safetyPanel,
   yearChanges,
+  valuationCta,
   discontinuedBanner,
   performance,
   specs,
@@ -133,9 +139,13 @@ export function YearExperience({
 
         {discontinuedBanner}
 
-        {overview}
+        {safetyPanel}
 
         {yearChanges}
+
+        {valuationCta}
+
+        {overview}
 
         {galleryImages.length > 0 ? (
           <section className="mb-12">

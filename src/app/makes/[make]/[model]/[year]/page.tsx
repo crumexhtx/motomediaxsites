@@ -5,6 +5,8 @@ import { DiscontinuedBanner } from "@/components/DiscontinuedBanner";
 import { YearChips } from "@/components/ModelCard";
 import { YearChanges } from "@/components/YearChanges";
 import { YearExperience } from "@/components/YearExperience";
+import { YearSafetyPanel } from "@/components/YearSafetyPanel";
+import { YearValuationCta } from "@/components/YearValuationCta";
 import type { GalleryImage } from "@/data/catalog";
 import {
   getAllYearParams,
@@ -67,6 +69,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     modelName: model.name,
     summary: year.summary,
     description: year.description,
+    recallCount: year.recalls?.length,
   });
   const image =
     pickBestCardImage(year.images, {
@@ -227,6 +230,19 @@ export default async function YearPage({ params }: Props) {
             />
           ) : null
         }
+        safetyPanel={
+          <YearSafetyPanel
+            yearLabel={String(year.year)}
+            makeName={make.name}
+            modelName={model.name}
+            recalls={year.recalls}
+            complaints={year.complaints}
+            recallsStatus={year.safetyStatus?.recalls}
+            complaintsStatus={year.safetyStatus?.complaints}
+            recallsError={year.safetyStatus?.recallsError}
+            complaintsError={year.safetyStatus?.complaintsError}
+          />
+        }
         yearChanges={
           yearDiff && previousYear ? (
             <YearChanges
@@ -239,6 +255,13 @@ export default async function YearPage({ params }: Props) {
               modelName={model.name}
             />
           ) : null
+        }
+        valuationCta={
+          <YearValuationCta
+            year={year.year}
+            makeName={make.name}
+            modelName={model.name}
+          />
         }
       />
     </>

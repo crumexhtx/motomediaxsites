@@ -93,6 +93,39 @@ export type CatalogSources = {
   nhtsa?: string;
   epa?: string;
   autodev?: string;
+  /** NHTSA recalls API used for this year entry. */
+  recalls?: string;
+  /** NHTSA complaints API used for this year entry. */
+  complaints?: string;
+};
+
+/** Safety recall row from NHTSA (curated subset for used-buyer pages). */
+export type YearRecall = {
+  /** NHTSA campaign number, e.g. 20V771000 */
+  campaignNumber: string;
+  /** Report received date (YYYY-MM-DD when parseable). */
+  date: string;
+  component: string;
+  summary: string;
+};
+
+/** Aggregated owner complaints for a model year (not raw narratives). */
+export type YearComplaintSummary = {
+  total: number;
+  crashCount: number;
+  fireCount: number;
+  injuryCount: number;
+  /** Top components by complaint count. */
+  byComponent: Array<{ component: string; count: number }>;
+};
+
+/** Offline enrich status so failed fetches are visible, not silent gaps. */
+export type YearSafetyStatus = {
+  recalls: "ok" | "empty" | "error";
+  complaints: "ok" | "empty" | "error";
+  recallsError?: string;
+  complaintsError?: string;
+  fetchedAt?: string;
 };
 
 /** Optional curated YouTube overview for a model year (embedded, not rehosted). */
@@ -117,6 +150,9 @@ export type YearEntry = {
   specs?: VehicleSpecs;
   performance?: YearPerformance;
   video?: YearVideo;
+  recalls?: YearRecall[];
+  complaints?: YearComplaintSummary;
+  safetyStatus?: YearSafetyStatus;
   sources?: CatalogSources;
 };
 
@@ -141,9 +177,9 @@ export const SITE = {
   name: "MotoMediaX",
   /** Compact mark for nav monogram, favicon, and short credits. */
   shortName: "MMX",
-  tagline: "All makes. All models. Clearer browsing.",
+  tagline: "Compare years. Check recalls. Buy used with confidence.",
   description:
-    "Browse high-quality car photos and model overviews by make, model, and year. MotoMediaX is a fast, search-friendly catalog for enthusiasts.",
+    "Compare model years, check NHTSA recalls and owner complaints, and decide which used car year to buy — with photos, specs, and year-over-year changes.",
   /** Canonical site origin. Override with NEXT_PUBLIC_SITE_URL for previews/staging. */
   url: (
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.motomediax.com"

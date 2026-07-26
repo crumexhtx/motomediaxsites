@@ -8,7 +8,7 @@ import { JsonLd, breadcrumbJsonLd } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "All makes",
   description:
-    `Browse every car make in the ${SITE.name} catalog, A–Z. Open a marque to explore models and years.`,
+    `Compare used model years across every make in the ${SITE.name} catalog — recalls, complaints, and year-over-year changes.`,
   alternates: { canonical: "/makes" },
 };
 
@@ -34,7 +34,8 @@ export default function MakesIndexPage() {
           All makes
         </h1>
         <p className="mt-3 text-muted">
-          {makes.length} marques. Pick one to browse models and photo galleries.
+          {makes.length} marques. Pick one to compare model years, check
+          recalls, and find the right used year.
         </p>
       </header>
       <div className="mt-10">

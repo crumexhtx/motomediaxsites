@@ -91,6 +91,7 @@ export function yearSeoDescription(input: {
   summary?: string;
   description?: string;
   siteName?: string;
+  recallCount?: number;
 }): string {
   const {
     year,
@@ -99,36 +100,42 @@ export function yearSeoDescription(input: {
     summary,
     description,
     siteName = "MotoMediaX",
+    recallCount,
   } = input;
+
+  const recallBit =
+    typeof recallCount === "number" && recallCount > 0
+      ? `${recallCount} NHTSA recall${recallCount === 1 ? "" : "s"} on record. `
+      : "";
 
   if (summary && !isThinYearSummary(summary)) {
     // Final-year stubs are intentional but thin for search — append wiki prose.
     if (/final u\.?s\.? catalog year/i.test(summary)) {
-      const sentence = firstContentSentence(description, 200);
+      const sentence = firstContentSentence(description, 180);
       if (
         sentence &&
         !/final model year covered/i.test(sentence) &&
         !/ended after \d{4}/i.test(sentence)
       ) {
         return truncateAtSentence(
-          `${summary.replace(/\.$/, "")}. ${sentence}`,
+          `${recallBit}${summary.replace(/\.$/, "")}. ${sentence}`,
           300,
         );
       }
     }
-    return truncateAtSentence(summary, 300);
+    return truncateAtSentence(`${recallBit}${summary}`, 300);
   }
 
-  const sentence = firstContentSentence(description, 220);
+  const sentence = firstContentSentence(description, 200);
   if (sentence) {
     const lead = `${year} ${makeName} ${modelName}`;
     if (sentence.toLowerCase().startsWith(lead.toLowerCase())) {
-      return truncateAtSentence(sentence, 300);
+      return truncateAtSentence(`${recallBit}${sentence}`, 300);
     }
-    return truncateAtSentence(`${lead} — ${sentence}`, 300);
+    return truncateAtSentence(`${recallBit}${lead} — ${sentence}`, 300);
   }
 
-  return `${year} ${makeName} ${modelName} photos, overview, and specs on ${siteName}.`;
+  return `${recallBit}${year} ${makeName} ${modelName} — compare years, check recalls, and review specs on ${siteName}.`;
 }
 
 /** Display / stored summary when the catalog stub is too thin. */

@@ -23,18 +23,20 @@ export function YearChanges({ diff, previousHref, modelName }: Props) {
     return (
       <section className="mb-12 max-w-3xl">
         <h2 className="font-display text-2xl tracking-tight">
-          vs {diff.previousYear}
+          Is {diff.currentYear} worth more than {diff.previousYear}?
         </h2>
         <p className="mt-3 text-base leading-relaxed text-muted md:text-lg">
           No material spec or trim lineup changes vs the {diff.previousYear}{" "}
-          {modelName} in our catalog data.
+          {modelName} in our catalog data — for used shopping, the older year is
+          often the better value unless you need a specific fix or feature from{" "}
+          {diff.currentYear}.
         </p>
         <p className="mt-3 text-sm text-muted">
           <Link
             href={previousHref}
             className="underline-offset-2 hover:underline"
           >
-            View {diff.previousYear} {modelName}
+            Compare the {diff.previousYear} {modelName}
           </Link>
         </p>
       </section>
@@ -44,11 +46,12 @@ export function YearChanges({ diff, previousHref, modelName }: Props) {
   return (
     <section className="mb-12">
       <h2 className="font-display text-2xl tracking-tight">
-        What changed vs {diff.previousYear}
+        Is {diff.currentYear} worth more than {diff.previousYear}?
       </h2>
       <p className="mt-2 max-w-2xl text-sm text-muted md:text-base">
-        Spec and trim deltas from the prior model year — the fastest way to see
-        if this {modelName} actually moved.
+        Spec and trim deltas vs {diff.previousYear} — use this to decide whether
+        the newer {modelName} justifies the used-price jump, or if last year is
+        close enough.
       </p>
 
       {diff.changes.length > 0 ? (

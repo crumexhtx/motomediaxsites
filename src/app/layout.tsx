@@ -34,7 +34,7 @@ const defaultOgImage =
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} · car photos by make, model, and year`,
+    default: `${SITE.name} · compare used model years`,
     template: `%s · ${SITE.name}`,
   },
   description: SITE.description,

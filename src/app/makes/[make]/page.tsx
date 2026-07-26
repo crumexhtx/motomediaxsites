@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = `${make.name} cars & photos`;
   const blurb = truncateAtSentence(make.blurb, 400);
-  const description = `${blurb} Browse ${make.name} models and model-year galleries on ${SITE.name}.`;
+  const description = `Compare ${make.name} model years for NHTSA recalls, owner complaints, and year-over-year changes. ${blurb}`;
 
   const cover = makeCoverImage(make);
   const ogImage = cover.src.endsWith(".svg")
