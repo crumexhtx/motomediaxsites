@@ -24,6 +24,7 @@ import {
   breadcrumbJsonLd,
   yearPageJsonLd,
 } from "@/lib/seo";
+import { enrichYearSummary, yearSeoDescription } from "@/lib/text";
 import { diffYears, findPreviousYear } from "@/lib/yearDiff";
 
 type Props = {
@@ -60,7 +61,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const { make, model, year } = found;
   const title = `${year.year} ${make.name} ${model.name} photos`;
-  const description = year.summary;
+  const description = yearSeoDescription({
+    year: year.year,
+    makeName: make.name,
+    modelName: model.name,
+    summary: year.summary,
+    description: year.description,
+  });
   const image =
     pickBestCardImage(year.images, {
       makeName: make.name,
@@ -111,6 +118,13 @@ export default async function YearPage({ params }: Props) {
   const hero = images[0];
   const yearsSorted = [...model.years].sort((a, b) => b.year - a.year);
   const title = `${year.year} ${make.name} ${model.name}`;
+  const summary = enrichYearSummary({
+    year: year.year,
+    makeName: make.name,
+    modelName: model.name,
+    summary: year.summary,
+    description: year.description,
+  });
   const previousYear = findPreviousYear(model.years, year.year);
   const yearDiff = previousYear ? diffYears(previousYear, year) : null;
   const discontinued = getDiscontinuedInfo(make.slug, model.slug);
@@ -144,7 +158,7 @@ export default async function YearPage({ params }: Props) {
 
       <YearExperience
         title={title}
-        summary={year.summary}
+        summary={summary}
         yearLabel={`${year.year}`}
         performance={year.performance}
         specs={year.specs}

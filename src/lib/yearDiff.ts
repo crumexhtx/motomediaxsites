@@ -280,33 +280,15 @@ export function diffYears(
     const currRaw = pickValue(field, current, matched.current);
     const prevFmt = formatValue(field.key, prevRaw);
     const currFmt = formatValue(field.key, currRaw);
-    if (!prevFmt && !currFmt) continue;
+    // Only show real both-sided changes. One-sided blanks are usually missing
+    // NHTSA/EPA enrichment for the newer year (e.g. 2026 dims), not a product change.
+    if (!prevFmt || !currFmt) continue;
     if (prevFmt === currFmt) continue;
-    if (!prevFmt && currFmt) {
-      changes.push({
-        key: field.key,
-        label: field.label,
-        previous: "—",
-        current: currFmt,
-        tone: "change",
-      });
-      continue;
-    }
-    if (prevFmt && !currFmt) {
-      changes.push({
-        key: field.key,
-        label: field.label,
-        previous: prevFmt,
-        current: "—",
-        tone: "change",
-      });
-      continue;
-    }
     changes.push({
       key: field.key,
       label: field.label,
-      previous: prevFmt!,
-      current: currFmt!,
+      previous: prevFmt,
+      current: currFmt,
       tone: toneFor(field, prevRaw as string | number, currRaw as string | number),
     });
   }

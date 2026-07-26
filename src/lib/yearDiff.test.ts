@@ -105,18 +105,25 @@ describe("yearDiff", () => {
     expect(result.trimsAdded).toContain("STX");
   });
 
-  it("surfaces fields added or removed between years", () => {
-    const prev = year(2024, {
-      specs: { mpgCombined: 30 },
+  it("ignores one-sided blanks so missing enrichment is not a fake delta", () => {
+    const prev = year(2025, {
+      specs: {
+        mpgCombined: 30,
+        overallLengthIn: "180.0",
+        overallWidthIn: "72.0",
+        curbWeightLb: "3500",
+      },
     });
-    const curr = year(2025, {
-      specs: { mpgCombined: 30, towingLb: 5000 },
+    const curr = year(2026, {
+      specs: {
+        mpgCombined: 30,
+        // Newer year often lacks NHTSA dimensions yet — must not render "180 → —".
+      },
     });
     const result = diffYears(prev, curr);
-    expect(result.changes.find((c) => c.key === "towingLb")).toMatchObject({
-      previous: "—",
-      current: "5000 lb",
-    });
+    expect(result.changes.find((c) => c.key === "overallLengthIn")).toBeUndefined();
+    expect(result.changes.find((c) => c.key === "curbWeightLb")).toBeUndefined();
+    expect(result.changes).toHaveLength(0);
   });
 
   it("returns empty when nothing changed", () => {

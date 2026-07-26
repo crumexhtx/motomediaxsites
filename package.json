@@ -21,6 +21,7 @@
     "fetch:trim-images": "tsx scripts/fetch-trim-images.ts",
     "audit:images": "tsx scripts/audit-catalog-images.ts",
     "validate:catalog": "tsx scripts/validate-catalog.ts",
+    "repair:copy": "tsx scripts/repair-catalog-copy.mjs",
     "sync:discontinued": "node scripts/sync-discontinued.mjs",
     "sanitize:discontinued": "node scripts/sanitize-discontinued-years.mjs",
     "prune:ghost-years": "node scripts/prune-ghost-years.mjs",

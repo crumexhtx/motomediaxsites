@@ -24,6 +24,17 @@ function safeOwnerUrl(url: string | undefined): string | undefined {
   }
 }
 
+/** Internal fetch/QA notes must never ship in the public UI. */
+function publicVideoNote(note: string | undefined): string | undefined {
+  if (!note?.trim()) return undefined;
+  const lower = note.toLowerCase();
+  if (lower.includes("preferred review list")) return undefined;
+  if (lower.includes("youtube title may not")) return undefined;
+  if (lower.includes("title may not clearly match")) return undefined;
+  if (lower.includes("channel is outside")) return undefined;
+  return note.trim();
+}
+
 export function YearVideoEmbed({ video }: Props) {
   const [playing, setPlaying] = useState(false);
   const youtubeId = parseYoutubeId(video.youtubeId);
@@ -32,6 +43,7 @@ export function YearVideoEmbed({ video }: Props) {
   const watchUrl = youtubeWatchUrl(youtubeId);
   const thumb = youtubeThumbUrl(youtubeId);
   const ownerUrl = safeOwnerUrl(video.ownerUrl);
+  const note = publicVideoNote(video.note);
 
   return (
     <section className="mb-12">
@@ -104,9 +116,7 @@ export function YearVideoEmbed({ video }: Props) {
               Watch on YouTube
             </a>
           </p>
-          {video.note ? (
-            <p className="text-xs text-muted">{video.note}</p>
-          ) : null}
+          {note ? <p className="text-xs text-muted">{note}</p> : null}
         </div>
       </div>
     </section>

@@ -153,6 +153,29 @@ function cleanModelName(model: string): string {
     .trim();
 }
 
+/** Truncate on a sentence boundary — never leave mid-sentence SEO fragments. */
+function truncateAtSentence(text: string, maxLen: number): string {
+  const normalized = text.replace(/\s+/g, " ").trim();
+  if (!normalized) return "";
+  if (normalized.length <= maxLen && /[.!?]["']?$/.test(normalized)) {
+    return normalized;
+  }
+  const window = normalized.slice(0, Math.min(maxLen, normalized.length));
+  const sentenceEnds = [...window.matchAll(/[.!?]["']?(?=\s|$)/g)];
+  if (sentenceEnds.length > 0) {
+    const last = sentenceEnds[sentenceEnds.length - 1];
+    const end = (last.index ?? 0) + last[0].length;
+    if (end >= 24) {
+      return window.slice(0, end).trim();
+    }
+  }
+  const boundary = window.lastIndexOf(" ");
+  if (boundary >= 24) {
+    return `${window.slice(0, boundary).trim()}…`;
+  }
+  return `${window.trim()}…`;
+}
+
 function wikiTitleCandidates(brand: string, model: string): string[] {
   const cleaned = cleanModelName(model);
   const candidates = [
@@ -797,17 +820,20 @@ function buildYearCopy(
     highlights.push(specs.electrificationLevel);
   }
 
-  const summary = (
+  const wikiBit = wikiExtract
+    .split(/(?<=\.)\s+/)
+    .map((s) => s.trim())
+    .find((s) => s.length >= 28);
+  const summary = truncateAtSentence(
     finalYear
       ? `${year} ${brand} ${displayName} — final U.S. catalog year.`
-      : `${year} ${brand} ${displayName}${
-          bits.length
-            ? ` — ${bits[0]}`
-            : specs?.available
-              ? " — offered in the U.S. market"
-              : ""
-        }.`
-  ).slice(0, 220);
+      : bits.length
+        ? `${year} ${brand} ${displayName} — ${bits[0]}.`
+        : wikiBit
+          ? `${year} ${brand} ${displayName} — ${wikiBit}`
+          : `${year} ${brand} ${displayName} photos, overview, and specs.`,
+    220,
+  );
 
   const dimSentence =
     specs?.overallLengthIn || specs?.wheelbaseIn || specs?.curbWeightLb
@@ -1020,10 +1046,11 @@ async function buildCatalog(): Promise<MakeEntry[]> {
       name: seed.brand,
       slug: makeSlug,
       country: BRAND_COUNTRY[seed.brand] ?? "Unknown",
-      blurb: (
+      blurb: truncateAtSentence(
         brandWiki?.extract ||
-        `${seed.brand} vehicles in the MotoMediaX catalog.`
-      ).slice(0, 400),
+          `${seed.brand} vehicles in the MotoMediaX catalog.`,
+        400,
+      ),
       coverImage,
       models,
     });
