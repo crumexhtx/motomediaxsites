@@ -444,16 +444,7 @@ def pick_best(
     else:
         # Stable watch link when channel id is unknown (yt-dlp flat).
         entry["ownerUrl"] = f"https://www.youtube.com/watch?v={video_id}"
-    rel, rank, year_hit = score_item(best, brand, model, year, model_slug)
-    notes: list[str] = []
-    if rel:
-        notes.append("Title may not clearly match this model.")
-    if year_hit:
-        notes.append(f"YouTube title may not include {year}.")
-    if rank >= 99:
-        notes.append("Channel is outside the preferred review list.")
-    if notes:
-        entry["note"] = " ".join(notes)
+    # Internal QA signals stay out of the public `note` field (UI must not show them).
     return entry
 
 

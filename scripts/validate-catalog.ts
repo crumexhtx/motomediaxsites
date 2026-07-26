@@ -52,6 +52,13 @@ for (const brand of brandNames) {
   }
 }
 
+function looksTruncatedMidSentence(text: string): boolean {
+  const t = text.trim();
+  if (!t) return false;
+  if (/[.!?]["']?$/.test(t) || /…$/.test(t)) return false;
+  return /[a-zA-Z,;:]$/.test(t);
+}
+
 for (const make of catalog) {
   if (!brandNames.has(make.name)) {
     warn(`Catalog make not in brands.json: ${make.name}`);
@@ -63,6 +70,11 @@ for (const make of catalog) {
     !make.coverImage.src.includes("wikimedia.org")
   ) {
     warn(`${make.name}: cover is not a brand badge or Wikimedia image`);
+  }
+  if (looksTruncatedMidSentence(make.blurb ?? "")) {
+    fail(
+      `${make.name}: blurb truncated mid-sentence — run pnpm repair:copy`,
+    );
   }
 
   if (make.models.length === 0) {
@@ -91,6 +103,11 @@ for (const make of catalog) {
       }
       if (isBlankCopy(year.summary) || isBlankCopy(year.description)) {
         fail(`${make.name} ${model.name} ${year.year}: missing copy`);
+      }
+      if (/—\s*offered in the U\.S\. market\.?$/i.test(year.summary ?? "")) {
+        fail(
+          `${make.name} ${model.name} ${year.year}: thin summary stub — run pnpm repair:copy`,
+        );
       }
     }
 

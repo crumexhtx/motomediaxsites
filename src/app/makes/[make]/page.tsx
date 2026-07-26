@@ -12,6 +12,7 @@ import {
 } from "@/lib/catalog";
 import { SITE } from "@/data/catalog";
 import { JsonLd, absoluteUrl, breadcrumbJsonLd } from "@/lib/seo";
+import { truncateAtSentence } from "@/lib/text";
 
 type Props = {
   params: Promise<{ make: string }>;
@@ -29,7 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!make) return {};
 
   const title = `${make.name} cars & photos`;
-  const description = `${make.blurb} Browse ${make.name} models and model-year galleries on ${SITE.name}.`;
+  const blurb = truncateAtSentence(make.blurb, 400);
+  const description = `${blurb} Browse ${make.name} models and model-year galleries on ${SITE.name}.`;
 
   const cover = makeCoverImage(make);
   const ogImage = cover.src.endsWith(".svg")
@@ -64,6 +66,7 @@ export default async function MakePage({ params }: Props) {
   const { make: makeSlug } = await params;
   const make = getMake(String(makeSlug));
   if (!make) notFound();
+  const blurb = truncateAtSentence(make.blurb, 400);
 
   return (
     <div className="container-wide py-10 md:py-14">
@@ -89,7 +92,7 @@ export default async function MakePage({ params }: Props) {
         <h1 className="mt-2 font-display text-4xl tracking-tight md:text-5xl">
           {make.name}
         </h1>
-        <p className="mt-3 text-lg text-muted">{make.blurb}</p>
+        <p className="mt-3 text-lg text-muted">{blurb}</p>
       </header>
       <section className="mt-10 space-y-4">
         <h2 className="font-display text-2xl tracking-tight">Models</h2>
