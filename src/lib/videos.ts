@@ -60,9 +60,26 @@ export function youtubeEmbedUrl(youtubeId: string): string {
   return `https://www.youtube-nocookie.com/embed/${youtubeId}`;
 }
 
-export function youtubeThumbUrl(youtubeId: string): string {
-  return `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`;
+/** YouTube poster sizes — prefer maxres (1280×720) so desktop embeds stay sharp. */
+export type YoutubeThumbQuality =
+  | "maxresdefault"
+  | "sddefault"
+  | "hqdefault"
+  | "mqdefault";
+
+export function youtubeThumbUrl(
+  youtubeId: string,
+  quality: YoutubeThumbQuality = "maxresdefault",
+): string {
+  return `https://i.ytimg.com/vi/${youtubeId}/${quality}.jpg`;
 }
+
+/** Fallback chain when maxres is missing (404 or 120×90 placeholder). */
+export const YOUTUBE_THUMB_FALLBACKS: YoutubeThumbQuality[] = [
+  "maxresdefault",
+  "sddefault",
+  "hqdefault",
+];
 
 /** Extract an 11-char YouTube ID from a URL or bare ID. */
 export function parseYoutubeId(input: string): string | undefined {
