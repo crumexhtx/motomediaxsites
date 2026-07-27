@@ -4,9 +4,11 @@ import { useState } from "react";
 import type { YearVideo } from "@/data/catalog";
 import {
   parseYoutubeId,
+  YOUTUBE_THUMB_FALLBACKS,
   youtubeEmbedUrl,
   youtubeThumbUrl,
   youtubeWatchUrl,
+  type YoutubeThumbQuality,
 } from "@/lib/videos";
 
 type Props = {
@@ -35,13 +37,83 @@ function publicVideoNote(note: string | undefined): string | undefined {
   return note.trim();
 }
 
+function YoutubePoster({
+  youtubeId,
+  playing,
+  onPlay,
+  title,
+}: {
+  youtubeId: string;
+  playing: boolean;
+  onPlay: () => void;
+  title: string;
+}) {
+  const [qualityIndex, setQualityIndex] = useState(0);
+  const quality = YOUTUBE_THUMB_FALLBACKS[
+    Math.min(qualityIndex, YOUTUBE_THUMB_FALLBACKS.length - 1)
+  ] as YoutubeThumbQuality;
+  const thumb = youtubeThumbUrl(youtubeId, quality);
+
+  function advanceFallback() {
+    setQualityIndex((i) =>
+      i < YOUTUBE_THUMB_FALLBACKS.length - 1 ? i + 1 : i,
+    );
+  }
+
+  if (playing) {
+    return (
+      <iframe
+        title={title}
+        src={`${youtubeEmbedUrl(youtubeId)}?autoplay=1&rel=0`}
+        className="absolute inset-0 h-full w-full"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="strict-origin-when-cross-origin"
+      />
+    );
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={onPlay}
+      className="focus-ring group absolute inset-0 flex items-center justify-center"
+      aria-label={`Play video: ${title}`}
+    >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={thumb}
+        alt=""
+        width={1280}
+        height={720}
+        decoding="async"
+        className="absolute inset-0 h-full w-full object-cover opacity-90 transition group-hover:opacity-100"
+        onError={advanceFallback}
+        onLoad={(e) => {
+          // Missing maxres often returns a tiny 120×90 placeholder instead of 404.
+          if (e.currentTarget.naturalWidth <= 120) advanceFallback();
+        }}
+      />
+      <span className="relative flex h-14 w-14 items-center justify-center rounded-full bg-accent text-[#071018] shadow-lg transition group-hover:scale-105 sm:h-16 sm:w-16">
+        <svg
+          viewBox="0 0 24 24"
+          className="ml-1 h-6 w-6 fill-current sm:h-7 sm:w-7"
+          aria-hidden
+        >
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </span>
+    </button>
+  );
+}
+
 export function YearVideoEmbed({ video }: Props) {
   const [playing, setPlaying] = useState(false);
   const youtubeId = parseYoutubeId(video.youtubeId);
   if (!youtubeId) return null;
 
   const watchUrl = youtubeWatchUrl(youtubeId);
-  const thumb = youtubeThumbUrl(youtubeId);
   const ownerUrl = safeOwnerUrl(video.ownerUrl);
   const note = publicVideoNote(video.note);
 
@@ -52,42 +124,15 @@ export function YearVideoEmbed({ video }: Props) {
         Embedded from YouTube. We do not host or claim ownership of this video.
       </p>
 
-      <div className="overflow-hidden rounded-lg border border-line bg-elevated">
+      {/* Cap desktop width so the poster isn’t upscaled past native resolution. */}
+      <div className="max-w-2xl overflow-hidden rounded-lg border border-line bg-elevated">
         <div className="relative aspect-video w-full bg-black">
-          {playing ? (
-            <iframe
-              title={video.title}
-              src={`${youtubeEmbedUrl(youtubeId)}?autoplay=1&rel=0`}
-              className="absolute inset-0 h-full w-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="strict-origin-when-cross-origin"
-            />
-          ) : (
-            <button
-              type="button"
-              onClick={() => setPlaying(true)}
-              className="focus-ring group absolute inset-0 flex items-center justify-center"
-              aria-label={`Play video: ${video.title}`}
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={thumb}
-                alt=""
-                className="absolute inset-0 h-full w-full object-cover opacity-90 transition group-hover:opacity-100"
-              />
-              <span className="relative flex h-16 w-16 items-center justify-center rounded-full bg-accent text-[#071018] shadow-lg transition group-hover:scale-105">
-                <svg
-                  viewBox="0 0 24 24"
-                  className="ml-1 h-7 w-7 fill-current"
-                  aria-hidden
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </span>
-            </button>
-          )}
+          <YoutubePoster
+            youtubeId={youtubeId}
+            playing={playing}
+            onPlay={() => setPlaying(true)}
+            title={video.title}
+          />
         </div>
 
         <div className="space-y-2 border-t border-line px-4 py-3 text-sm md:px-5">

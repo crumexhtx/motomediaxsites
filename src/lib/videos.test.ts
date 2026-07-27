@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   getCuratedYearVideo,
   parseYoutubeId,
+  youtubeThumbUrl,
   youtubeWatchUrl,
 } from "@/lib/videos";
 
@@ -12,6 +13,13 @@ describe("videos", () => {
       parseYoutubeId("https://www.youtube.com/watch?v=ZWBfNCv2Vps"),
     ).toBe("ZWBfNCv2Vps");
     expect(parseYoutubeId("https://youtu.be/ymm4Ej0ocBw")).toBe("ymm4Ej0ocBw");
+  });
+
+  it("prefers maxres YouTube posters for sharper desktop embeds", () => {
+    expect(youtubeThumbUrl("ZWBfNCv2Vps")).toContain("/maxresdefault.jpg");
+    expect(youtubeThumbUrl("ZWBfNCv2Vps", "hqdefault")).toContain(
+      "/hqdefault.jpg",
+    );
   });
 
   it("loads curated toyota year videos", () => {
