@@ -47,14 +47,27 @@ export function normalizeComponent(raw: string): string {
 
 function parseReportDate(raw: string | undefined): string {
   if (!raw) return "";
-  // NHTSA often returns MM/DD/YYYY
-  const m = raw.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/);
-  if (m) {
-    const [, mm, dd, yyyy] = m;
+  // NHTSA recalls/complaints APIs return DD/MM/YYYY (day first).
+  const dmy = raw.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if (dmy) {
+    const [, dd, mm, yyyy] = dmy;
     return `${yyyy}-${mm.padStart(2, "0")}-${dd.padStart(2, "0")}`;
   }
   if (/^\d{4}-\d{2}-\d{2}/.test(raw)) return raw.slice(0, 10);
   return raw.slice(0, 32);
+}
+
+/** Repair dates previously stored as YYYY-DD-MM from a MM/DD mis-parse. */
+export function coerceIsoDate(date: string): string {
+  const m = date.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!m) return parseReportDate(date) || date;
+  const [, y, a, b] = m;
+  const ai = Number(a);
+  const bi = Number(b);
+  if (ai > 12 && bi >= 1 && bi <= 12) {
+    return `${y}-${b}-${a}`;
+  }
+  return date;
 }
 
 function truncateSummary(text: string, max = 320): string {

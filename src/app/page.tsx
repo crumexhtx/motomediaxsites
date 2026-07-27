@@ -7,11 +7,13 @@ import {
   getAllMakes,
   getLandingHeroImage,
   getLatestEntries,
+  getRecentRecalls,
 } from "@/lib/catalog";
 
 export default function HomePage() {
   const makes = getAllMakes().slice(0, 6);
   const latest = getLatestEntries(6);
+  const recentRecalls = getRecentRecalls(6);
   const hero = getLandingHeroImage();
   const backdropImages = hero ? [hero] : [];
 
@@ -21,7 +23,6 @@ export default function HomePage() {
         <HeroBackdrop images={backdropImages} />
         <div className="absolute inset-0 bg-gradient-to-r from-[rgba(8,10,14,0.92)] via-[rgba(8,10,14,0.72)] to-[rgba(8,10,14,0.35)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(61,156,240,0.18),transparent_50%)]" />
-        {/* Soft fade into the page so the hero doesn't end on a hard seam */}
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[var(--bg)] to-transparent md:h-40" />
 
         <div className="container-wide relative flex min-h-[72svh] flex-col justify-end pb-16 pt-24 md:min-h-[78svh] md:justify-center md:pb-24">
@@ -46,6 +47,12 @@ export default function HomePage() {
               Browse makes
             </Link>
             <Link
+              href="/recalls"
+              className="focus-ring inline-flex items-center rounded-md border border-white/25 bg-black/40 px-5 py-3 text-sm font-medium text-white transition hover:bg-black/55"
+            >
+              Recent recalls
+            </Link>
+            <Link
               href="/search"
               className="focus-ring inline-flex items-center rounded-md border border-white/25 bg-black/40 px-5 py-3 text-sm font-medium text-white transition hover:bg-black/55"
             >
@@ -55,6 +62,52 @@ export default function HomePage() {
         </div>
       </section>
 
+      {recentRecalls.length > 0 ? (
+        <section className="relative overflow-hidden border-b border-line/50 pb-14 pt-10 md:pb-16 md:pt-12">
+          <div className="container-wide">
+            <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+              <div className="max-w-2xl">
+                <h2 className="font-display text-3xl tracking-tight md:text-4xl">
+                  Recent recalls
+                </h2>
+                <p className="mt-2 text-muted">
+                  Newest NHTSA campaigns in the catalog — jump straight to the
+                  model year before you buy used.
+                </p>
+              </div>
+              <Link
+                href="/recalls"
+                className="focus-ring inline-flex items-center gap-1.5 text-sm font-medium text-accent transition hover:gap-2.5"
+              >
+                View all recent recalls
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+            <ul className="grid gap-4 md:grid-cols-2">
+              {recentRecalls.map((r) => (
+                <li key={`${r.campaignNumber}-${r.href}`}>
+                  <Link
+                    href={r.href}
+                    className="focus-ring block rounded-lg border border-line bg-elevated/50 px-4 py-4 transition hover:border-accent/40"
+                  >
+                    <div className="flex flex-wrap items-baseline justify-between gap-2">
+                      <p className="font-display text-lg tracking-tight">
+                        {r.year} {r.makeName} {r.modelName}
+                      </p>
+                      <p className="text-xs tabular-nums text-muted">{r.date}</p>
+                    </div>
+                    <p className="mt-1 text-sm text-muted">{r.component}</p>
+                    <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted">
+                      {r.summary}
+                    </p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : null}
+
       <section className="relative overflow-hidden pb-16 pt-6 md:pb-20 md:pt-10">
         <div className="container-wide">
           <div className="mb-8 max-w-2xl">
@@ -62,8 +115,8 @@ export default function HomePage() {
               Start with a make
             </h2>
             <p className="mt-2 text-muted">
-              Pick a marque, then compare model years for recalls, complaints,
-              and year-over-year changes.
+              Brand history, then model years with recalls, complaints, and
+              year-over-year changes.
             </p>
             <Link
               href="/makes"
