@@ -1,0 +1,107 @@
+{
+  "toyota": {
+    "founded": "1937",
+    "headquarters": "Toyota City, Aichi, Japan",
+    "parent": "Toyota Motor Corporation",
+    "focus": "Reliable volume cars, hybrids, trucks, and SUVs for global markets",
+    "history": "Toyota grew out of the Toyoda Automatic Loom Works when Kiichiro Toyoda pushed the company into automobiles in the 1930s. After World War II it rebuilt around lean manufacturing — the Toyota Production System — and became a byword for durability and hybrid efficiency with the Prius. Today it remains one of the world’s largest automakers, spanning passenger cars, light trucks, and an expanding electrified lineup."
+  },
+  "ford": {
+    "founded": "1903",
+    "headquarters": "Dearborn, Michigan, United States",
+    "parent": "Ford Motor Company",
+    "focus": "Trucks, SUVs, performance cars, and commercial vehicles",
+    "history": "Henry Ford founded the company in 1903 and transformed personal transport with the Model T and moving assembly line. Ford has long been defined by the F-Series pickup, Mustang sports cars, and blue-collar work trucks, while also cycling through passenger cars and European brands over the decades. It remains a core U.S. manufacturer with a heavy emphasis on trucks, utilities, and performance nameplates."
+  },
+  "chevrolet": {
+    "founded": "1911",
+    "headquarters": "Detroit, Michigan, United States",
+    "parent": "General Motors",
+    "focus": "Mainstream cars, trucks, SUVs, and performance icons like Corvette",
+    "history": "Louis Chevrolet and William C. Durant launched Chevrolet in 1911; it quickly became GM’s volume brand in North America. Chevy covers everyday transport — Silverado, Equinox, Malibu — alongside halo cars such as the Corvette and Camaro. For used buyers it is one of the deepest catalogs of American trucks, crossovers, and affordable performance."
+  },
+  "honda": {
+    "founded": "1948",
+    "headquarters": "Tokyo, Japan",
+    "parent": "Honda Motor Co., Ltd.",
+    "focus": "Efficient cars, motorcycles, power equipment, and performance variants",
+    "history": "Soichiro Honda started with motorcycles after World War II and moved into automobiles in the 1960s. Civic, Accord, and CR-V made Honda a reliability staple in the U.S., while Type R and S2000 cemented an enthusiast following. The company still balances practical daily drivers with engineering-led performance and hybrid powertrains."
+  },
+  "nissan": {
+    "founded": "1933",
+    "headquarters": "Yokohama, Japan",
+    "parent": "Nissan Motor Co., Ltd.",
+    "focus": "Volume sedans and crossovers, plus performance Z and GT-R heritage",
+    "history": "Nissan’s roots go back to early Japanese industrial conglomerates; the modern company took shape in the 1930s. It built a U.S. following with affordable cars and later the 350Z/370Z and GT-R. Today its U.S. lineup centers on Rogue, Altima, and trucks, while heritage sports cars remain important for enthusiasts shopping used."
+  },
+  "hyundai": {
+    "founded": "1967",
+    "headquarters": "Seoul, South Korea",
+    "parent": "Hyundai Motor Company",
+    "focus": "Value-oriented cars and SUVs with rising design and warranty appeal",
+    "history": "Hyundai Motor began assembling cars in the late 1960s and spent decades climbing from bargain reputation to mainstream quality. Strong warranties, modern design, and models like Elantra, Tucson, and Santa Fe helped it win U.S. share. Used shoppers often weigh Hyundai’s feature content and warranty history against long-term ownership data."
+  },
+  "kia": {
+    "founded": "1944",
+    "headquarters": "Seoul, South Korea",
+    "parent": "Kia Corporation (Hyundai Motor Group)",
+    "focus": "Stylish value cars and SUVs, including performance N and Telluride family haulers",
+    "history": "Kia started in steel tubing and bikes before becoming a full automaker and later joining Hyundai Motor Group. A design-led turnaround in the 2010s — Thinkware-era styling, Telluride, Stinger, EV6 — shifted perception from cheap alternative to design-forward value brand. It shares platforms with Hyundai while keeping a distinct product mix."
+  },
+  "subaru": {
+    "founded": "1953",
+    "headquarters": "Ebisu, Tokyo, Japan",
+    "parent": "Subaru Corporation",
+    "focus": "All-wheel-drive cars and wagons with boxer engines and outdoors branding",
+    "history": "Subaru grew from Fuji Heavy Industries’ aircraft heritage into a niche AWD specialist. Horizontally opposed engines and standard all-wheel drive on most models define the brand, with Outback, Forester, and WRX carrying that identity in the U.S. Used buyers often look to Subaru for weather capability and longevity when maintained."
+  },
+  "jeep": {
+    "founded": "1943",
+    "headquarters": "Toledo, Ohio, United States",
+    "parent": "Stellantis (Jeep brand)",
+    "focus": "Off-road SUVs and 4x4 lifestyle vehicles",
+    "history": "Jeep began as the World War II Willys MB and became an American off-road icon. Through Kaiser, AMC, Chrysler, and now Stellantis, Wrangler and Grand Cherokee kept the brand’s trail reputation while expanding into softer crossovers like Cherokee and Renegade. Used shopping often centers on 4x4 capability, rust, and modification history."
+  },
+  "gmc": {
+    "founded": "1912",
+    "headquarters": "Detroit, Michigan, United States",
+    "parent": "General Motors",
+    "focus": "Premium trucks, SUVs, and commercial vans under GM",
+    "history": "GMC started as a truck specialist and remains GM’s upscale professional and lifestyle truck brand beside Chevrolet. Sierra, Yukon, and Canyon share architecture with Chevy counterparts but aim at a more premium trim and marketing stance. For used buyers, GMC is often a higher-content twin to related Chevy trucks and SUVs."
+  },
+  "bmw": {
+    "founded": "1916",
+    "headquarters": "Munich, Germany",
+    "parent": "BMW Group",
+    "focus": "Sport luxury sedans, SAVs, and M performance cars",
+    "history": "BMW began in aircraft engines, moved into motorcycles, then automobiles — building the “Ultimate Driving Machine” reputation through the 2002, 3 Series, and M cars. Today it spans combustion, plug-in, and battery-electric models (i4, iX) while keeping rear-drive dynamics central to the brand story. Used shoppers weigh driving feel against maintenance costs."
+  },
+  "mercedes-benz": {
+    "founded": "1926",
+    "headquarters": "Stuttgart, Germany",
+    "parent": "Mercedes-Benz Group AG",
+    "focus": "Luxury cars, SUVs, and performance AMG variants",
+    "history": "Mercedes-Benz traces to Karl Benz and Gottlieb Daimler’s pioneering automobiles; the modern brand formed in 1926. It set the template for luxury sedans (S-Class) and expanded into SUVs, EVs (EQ), and AMG high-performance models. Used buyers often compare comfort and prestige against complexity and ownership cost."
+  },
+  "tesla": {
+    "founded": "2003",
+    "headquarters": "Austin, Texas, United States",
+    "parent": "Tesla, Inc.",
+    "focus": "Battery-electric cars, trucks, and energy products",
+    "history": "Tesla popularized long-range EVs with the Roadster, then Model S, 3, X, and Y — plus Cybertruck. Over-the-air updates, Supercharging, and software-defined features distinguish it from traditional automakers. Used Tesla shopping is as much about battery health, Autopilot hardware, and recall/software history as about trim levels."
+  },
+  "volkswagen": {
+    "founded": "1937",
+    "headquarters": "Wolfsburg, Germany",
+    "parent": "Volkswagen AG",
+    "focus": "Volume European cars, hot hatches, and family SUVs",
+    "history": "Volkswagen (“people’s car”) was founded in the 1930s around the Beetle and later became Europe’s largest automaker group. Golf, Jetta, GTI, and Atlas define much of its U.S. story, with ID. electric models expanding the lineup. Used shoppers often chase GTI/R driving manners or practical family SUVs."
+  },
+  "mazda": {
+    "founded": "1920",
+    "headquarters": "Hiroshima, Japan",
+    "parent": "Mazda Motor Corporation",
+    "focus": "Driver-focused compact cars and crossovers with upscale design",
+    "history": "Mazda started in cork and tooling before automobiles, later famous for rotary engines (RX-7, RX-8) and the MX-5 Miata. Modern Mazda emphasizes Jinba Ittai driving feel and premium design in Mazda3, CX-5, and CX-90. Used buyers often cite steering feel and interior quality relative to price."
+  }
+}

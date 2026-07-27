@@ -435,3 +435,59 @@ export function yearHref(
 ) {
   return `/makes/${makeSlug}/${modelSlug}/${yearSlug}`;
 }
+
+export type RecentRecallItem = {
+  date: string;
+  campaignNumber: string;
+  component: string;
+  summary: string;
+  makeName: string;
+  makeSlug: string;
+  modelName: string;
+  modelSlug: string;
+  year: number;
+  href: string;
+};
+
+/** Coerce NHTSA dates that may have been stored as YYYY-DD-MM. */
+function coerceRecallDate(date: string): string {
+  const m = date.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!m) return date;
+  const [, y, a, b] = m;
+  if (Number(a) > 12 && Number(b) >= 1 && Number(b) <= 12) {
+    return `${y}-${b}-${a}`;
+  }
+  return date;
+}
+
+/** Newest NHTSA recalls across the catalog for landing / /recalls pages. */
+export function getRecentRecalls(limit = 24): RecentRecallItem[] {
+  const items: RecentRecallItem[] = [];
+  for (const make of getCatalog()) {
+    for (const model of make.models) {
+      for (const year of model.years) {
+        for (const recall of year.recalls ?? []) {
+          items.push({
+            date: coerceRecallDate(recall.date),
+            campaignNumber: recall.campaignNumber,
+            component: recall.component,
+            summary: recall.summary,
+            makeName: make.name,
+            makeSlug: make.slug,
+            modelName: model.name,
+            modelSlug: model.slug,
+            year: year.year,
+            href: yearHref(make.slug, model.slug, year.slug),
+          });
+        }
+      }
+    }
+  }
+  return items
+    .sort((a, b) => {
+      const byDate = b.date.localeCompare(a.date);
+      if (byDate) return byDate;
+      return b.campaignNumber.localeCompare(a.campaignNumber);
+    })
+    .slice(0, limit);
+}
