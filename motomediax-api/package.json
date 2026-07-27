@@ -1,0 +1,21 @@
+{
+  "name": "motomediax-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "JSON API for the MotoMediaX vehicle catalog — makes, models, years, specs, plus NHTSA recalls and owner-complaint summaries.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test test/*.test.js",
+    "enrich:recalls": "node scripts/enrich-recalls-complaints.js",
+    "build:catalog": "node scripts/build-catalog-from-site.mjs",
+    "seed:recalls-from-site": "node scripts/seed-recalls-from-site.mjs"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
