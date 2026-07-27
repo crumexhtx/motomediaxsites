@@ -60,11 +60,13 @@ explanatory error, never a fabricated empty-looking result.
 ## Refreshing recall/complaint data
 
 ```bash
-npm run enrich:recalls                              # fetch everything not yet fetched
-node scripts/enrich-recalls-complaints.js --force    # refetch everything
+npm run enrich:recalls                                # fetch everything not yet fetched
+node scripts/enrich-recalls-complaints.js --force      # refetch everything
 node scripts/enrich-recalls-complaints.js --brand ford --model mustang-mach-e
 node scripts/enrich-recalls-complaints.js --limit 20 --dry-run
-node scripts/enrich-recalls-complaints.js --delay-ms 400  # gentler pacing
+node scripts/enrich-recalls-complaints.js --delay-ms 1500   # even gentler pacing
+node scripts/enrich-recalls-complaints.js --retries 5        # more attempts per request
+node scripts/enrich-recalls-complaints.js --retry-failed     # re-process only ERROR vehicles
 ```
 
 The script queries NHTSA's public, keyless APIs:
@@ -72,12 +74,28 @@ The script queries NHTSA's public, keyless APIs:
 - `https://api.nhtsa.gov/recalls/recallsByVehicle?make=&model=&modelYear=`
 - `https://api.nhtsa.gov/complaints/complaintsByVehicle?make=&model=&modelYear=`
 
-NHTSA does not publish a documented rate limit for these endpoints; requests
-are serialized (no concurrency) with a configurable delay between every call
-(`--delay-ms`, default 250ms) as a conservative default. It prints a summary
-at the end — vehicles processed, and an `ok` / `confirmed empty` / **`FETCH
-FAILED`** count for each of recalls and complaints, so failures are visible
-rather than silently rolled into the empty count.
+NHTSA does not publish a documented rate limit for these endpoints, but in
+practice they return intermittent HTTP 400s under load — observed across
+both simple and multi-word model names, so it's rate limiting, not a
+request-format bug. Requests are serialized (no concurrency) with a delay
+between every call (`--delay-ms`, default **750ms**), and each request gets
+up to `--retries` attempts (default **3**) with exponential backoff between
+retries (500ms, 1000ms, ...) before it's marked failed. A request is only
+ever reported `FETCH FAILED` after every attempt has failed — never after
+just one.
+
+`--retry-failed` re-processes only vehicles whose stored record currently
+has `recallDataAvailable: false` or `complaintDataAvailable: false`; it
+skips vehicles that were never fetched at all (that's what a plain run or
+`--force` is for) and, within a vehicle, only refetches the data source
+that actually failed — a vehicle whose recalls errored but complaints
+succeeded won't re-request complaints. `--force` and `--retry-failed` are
+mutually exclusive.
+
+It prints a summary at the end — vehicles processed, and an `ok` /
+`confirmed empty` / `reused` (skipped because it already had good data) /
+**`FETCH FAILED`** count for each of recalls and complaints, so failures
+stay visible rather than silently rolled into the empty count.
 
 Known limitation: the script queries NHTSA using the catalog's model name
 as-is (e.g. "Mustang Mach-E"). It does not do the fuzzy make/model-name
