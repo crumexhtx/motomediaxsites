@@ -32,7 +32,7 @@ type Props = {
   params: Promise<{ make: string; model: string; year: string }>;
 };
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return getAllYearParams();
