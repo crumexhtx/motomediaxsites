@@ -2,7 +2,7 @@ import discontinued from "@/data/discontinued.json";
 
 export type DiscontinuedInfo = {
   lastYear: number;
-  /** Ghost catalog years that should 301 to lastYear. */
+  /** Catalog years that never existed for this model — serve 404, do not 301. */
   ghostYears?: number[];
   message: string;
   /** Show discontinued banner on year pages (default true). */
@@ -28,7 +28,7 @@ export function getDiscontinuedInfo(
   return BY_KEY[key(makeSlug, modelSlug)];
 }
 
-/** If this year is a ghost year, return the last real year to redirect to. */
+/** If this year is a ghost year (never offered), treat as not found — do not 301. */
 export function ghostYearRedirectTarget(
   makeSlug: string,
   modelSlug: string,

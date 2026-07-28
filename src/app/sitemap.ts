@@ -3,6 +3,7 @@ import { SITE } from "@/data/catalog";
 import { getCatalogMtime } from "@/data/catalog.server";
 import {
   getAllMakeParams,
+  getAllModelParams,
   getAllYearParams,
 } from "@/lib/catalog";
 
@@ -45,7 +46,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Model index URLs permanently redirect to the newest year — sitemap years only.
+  // Model indexes are real pages again (not redirects) — include them for GSC.
+  const models = getAllModelParams().map(({ make, model }) => ({
+    url: `${base}/makes/${make}/${model}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.82,
+  }));
+
   const years = getAllYearParams().map(({ make, model, year }) => ({
     url: `${base}/makes/${make}/${model}/${year}`,
     lastModified,
@@ -53,5 +61,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  return [...staticRoutes, ...makes, ...years];
+  return [...staticRoutes, ...makes, ...models, ...years];
 }
