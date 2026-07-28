@@ -6,7 +6,7 @@ import {
 } from "@/lib/discontinued";
 
 describe("discontinued helpers", () => {
-  it("resolves ghost year redirects to the last real year", () => {
+  it("resolves ghost years so pages can 404 instead of redirecting", () => {
     expect(ghostYearRedirectTarget("ford", "fiesta-st", "2026")).toBe(2019);
     expect(ghostYearRedirectTarget("chevrolet", "bolt-ev", "2024")).toBe(2023);
     expect(ghostYearRedirectTarget("bmw", "m5", "2024")).toBe(2025);

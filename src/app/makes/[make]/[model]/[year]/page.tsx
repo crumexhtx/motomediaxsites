@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound, permanentRedirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { DiscontinuedBanner } from "@/components/DiscontinuedBanner";
 import { YearChips } from "@/components/ModelCard";
@@ -11,7 +11,6 @@ import type { GalleryImage } from "@/data/catalog";
 import {
   getAllYearParams,
   getYear,
-  modelHref,
   pickBestCardImage,
   yearHref,
 } from "@/lib/catalog";
@@ -107,8 +106,10 @@ export default async function YearPage({ params }: Props) {
   const yearSlug = String(raw.year ?? "");
 
   const ghostTarget = ghostYearRedirectTarget(makeSlug, modelSlug, yearSlug);
+  // Non-existent “ghost” years must 404 — a 301 implies the year moved, which
+  // Google Search Console reports as “Page with redirect” and blocks indexing.
   if (ghostTarget != null) {
-    permanentRedirect(yearHref(makeSlug, modelSlug, String(ghostTarget)));
+    notFound();
   }
 
   const found = getYear(makeSlug, modelSlug, yearSlug);
@@ -116,7 +117,7 @@ export default async function YearPage({ params }: Props) {
 
   const { make, model, year } = found;
   const path = yearHref(make.slug, model.slug, year.slug);
-  const modelPath = modelHref(make.slug, model.slug);
+  const modelPath = `/makes/${make.slug}/${model.slug}`;
   const images = orderedYearImages(make.name, model.name, year.images);
   const hero = images[0];
   const yearsSorted = [...model.years].sort((a, b) => b.year - a.year);
