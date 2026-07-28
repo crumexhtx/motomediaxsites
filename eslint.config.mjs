@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Separate Express package — not part of the Next.js lint surface.
+    "motomediax-api/**",
   ]),
 ]);
 
