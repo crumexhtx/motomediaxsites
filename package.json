@@ -14,6 +14,7 @@
     "build:catalog": "tsx scripts/build-catalog.ts",
     "enrich:epa": "tsx scripts/enrich-epa.ts",
     "enrich:autodev": "tsx scripts/enrich-autodev.ts",
+    "enrich:pricing": "tsx scripts/enrich-pricing.ts",
     "enrich:nhtsa-recalls": "tsx scripts/enrich-nhtsa-recalls.ts",
     "enrich:nhtsa-complaints": "tsx scripts/enrich-nhtsa-complaints.ts",
     "enrich:nhtsa-safety": "tsx scripts/enrich-nhtsa-recalls.ts -- --with-complaints",
