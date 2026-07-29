@@ -6,6 +6,7 @@ import { YearChips } from "@/components/ModelCard";
 import { YearChanges } from "@/components/YearChanges";
 import { YearExperience } from "@/components/YearExperience";
 import { YearSafetyPanel } from "@/components/YearSafetyPanel";
+import { YearPricingPanel } from "@/components/YearPricingPanel";
 import { YearValuationCta } from "@/components/YearValuationCta";
 import type { GalleryImage } from "@/data/catalog";
 import {
@@ -19,6 +20,7 @@ import {
   ghostYearRedirectTarget,
   shouldShowDiscontinuedBanner,
 } from "@/lib/discontinued";
+import { getYearPricing } from "@/lib/pricing";
 import {
   JsonLd,
   absoluteUrl,
@@ -135,6 +137,7 @@ export default async function YearPage({ params }: Props) {
   const showBanner =
     shouldShowDiscontinuedBanner(discontinued) &&
     year.year === discontinued?.lastYear;
+  const pricing = getYearPricing(make.slug, model.slug, year.year);
 
   return (
     <>
@@ -258,11 +261,20 @@ export default async function YearPage({ params }: Props) {
           ) : null
         }
         valuationCta={
-          <YearValuationCta
-            year={year.year}
-            makeName={make.name}
-            modelName={model.name}
-          />
+          pricing ? (
+            <YearPricingPanel
+              pricing={pricing}
+              year={year.year}
+              makeName={make.name}
+              modelName={model.name}
+            />
+          ) : (
+            <YearValuationCta
+              year={year.year}
+              makeName={make.name}
+              modelName={model.name}
+            />
+          )
         }
       />
     </>
