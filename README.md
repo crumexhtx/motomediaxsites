@@ -79,7 +79,3 @@ Overviews and photos are sourced from Wikipedia/Wikimedia Commons; vehicle specs
 - Preview deployments should use the preview URL so metadata does not point at production.
 - Commit `src/data/catalog.generated.json`, `src/data/videos/`, and `public/catalog/` so production has catalog data, year videos, and hero/trim photos (no live Wikimedia fetch). Auto.dev / YouTube keys are **not** required at runtime (offline enrichment only).
 - If you regenerate the catalog without photos, run `pnpm localize:images` (or `pnpm fetch:trim-images`) before deploying.
-
-## Security note
-
-If this repository ever contained secrets in git history (for example old `readme.md` commits), revoke those credentials in GitHub immediately even if they no longer appear on `HEAD`. CI includes Gitleaks to catch future leaks.
