@@ -26,10 +26,10 @@ export function YearChanges({ diff, previousHref, modelName }: Props) {
           Is {diff.currentYear} worth more than {diff.previousYear}?
         </h2>
         <p className="mt-3 text-base leading-relaxed text-muted md:text-lg">
-          No material spec or trim lineup changes vs the {diff.previousYear}{" "}
-          {modelName} in our catalog data — for used shopping, the older year is
-          often the better value unless you need a specific fix or feature from{" "}
-          {diff.currentYear}.
+          Usually no — our catalog shows no material spec or trim lineup
+          changes vs the {diff.previousYear} {modelName}. For used shopping, the
+          older year is often the better value unless you need a specific fix
+          or feature from {diff.currentYear}.
         </p>
         <p className="mt-3 text-sm text-muted">
           <Link
@@ -49,9 +49,9 @@ export function YearChanges({ diff, previousHref, modelName }: Props) {
         Is {diff.currentYear} worth more than {diff.previousYear}?
       </h2>
       <p className="mt-2 max-w-2xl text-sm text-muted md:text-base">
-        Spec and trim deltas vs {diff.previousYear} — use this to decide whether
-        the newer {modelName} justifies the used-price jump, or if last year is
-        close enough.
+        {diff.changes[0]
+          ? `Maybe — the clearest delta we track is ${diff.changes[0].label.toLowerCase()} (${diff.changes[0].previous} → ${diff.changes[0].current}). Weigh that against the used-price jump before you pay for ${diff.currentYear}.`
+          : `Maybe — the trim lineup shifted vs ${diff.previousYear}. Check added and dropped trims below before you pay more for ${diff.currentYear}.`}
       </p>
 
       {diff.changes.length > 0 ? (

@@ -64,11 +64,14 @@ export function YearSafetyPanel({
   return (
     <section className="mb-12">
       <h2 className="font-display text-2xl tracking-tight">
-        Used-buyer checks
+        Are there recalls or complaint patterns on the {yearLabel} {modelName}?
       </h2>
       <p className="mt-2 max-w-2xl text-sm text-muted md:text-base">
-        NHTSA recalls and owner-complaint patterns for the {yearLabel}{" "}
-        {makeName} {modelName} — the issues that matter before you buy used.
+        {recallList.length === 0 && (!complaints || complaints.total === 0)
+          ? `Our last NHTSA refresh shows a clean sheet for the ${yearLabel} ${makeName} ${modelName} — still verify the VIN before you buy.`
+          : recallList.length > 0
+            ? `Yes — ${recallList.length} recall campaign${recallList.length === 1 ? "" : "s"} ${complaints && complaints.total > 0 ? `and ${complaints.total} owner complaint${complaints.total === 1 ? "" : "s"}` : "in our catalog"} for the ${yearLabel} ${makeName} ${modelName}. Scan the list before you write a check.`
+            : `No recalls in our last refresh, but owners filed ${complaints?.total ?? 0} complaint${(complaints?.total ?? 0) === 1 ? "" : "s"} — review the top components below.`}
       </p>
 
       {showRecalls ? (

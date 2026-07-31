@@ -22,6 +22,9 @@ export function SiteFooter() {
             <Link href="/makes" className="focus-ring hover:text-accent">
               All makes
             </Link>
+            <Link href="/compare" className="focus-ring hover:text-accent">
+              Comparisons
+            </Link>
             <Link href="/recalls" className="focus-ring hover:text-accent">
               Recent recalls
             </Link>

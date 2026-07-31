@@ -8,6 +8,8 @@ import { YearExperience } from "@/components/YearExperience";
 import { YearSafetyPanel } from "@/components/YearSafetyPanel";
 import { YearPricingPanel } from "@/components/YearPricingPanel";
 import { YearValuationCta } from "@/components/YearValuationCta";
+import { YearSnapshot } from "@/components/YearSnapshot";
+import { RelatedComparisons } from "@/components/RelatedComparisons";
 import type { GalleryImage } from "@/data/catalog";
 import {
   getAllYearParams,
@@ -21,6 +23,7 @@ import {
   shouldShowDiscontinuedBanner,
 } from "@/lib/discontinued";
 import { getYearPricing } from "@/lib/pricing";
+import { buildYearSnapshot } from "@/lib/yearSnapshot";
 import {
   JsonLd,
   absoluteUrl,
@@ -138,6 +141,14 @@ export default async function YearPage({ params }: Props) {
     shouldShowDiscontinuedBanner(discontinued) &&
     year.year === discontinued?.lastYear;
   const pricing = getYearPricing(make.slug, model.slug, year.year);
+  const snapshot = buildYearSnapshot({
+    year,
+    makeName: make.name,
+    makeSlug: make.slug,
+    modelName: model.name,
+    modelSlug: model.slug,
+    yearDiff,
+  });
 
   return (
     <>
@@ -193,9 +204,24 @@ export default async function YearPage({ params }: Props) {
             activeYear={year.slug}
           />
         }
+        snapshot={
+          <YearSnapshot
+            snapshot={snapshot}
+            yearLabel={String(year.year)}
+            makeName={make.name}
+            modelName={model.name}
+          />
+        }
         overview={
           <section className="mb-12 max-w-3xl">
-            <h2 className="font-display text-2xl tracking-tight">Overview</h2>
+            <h2 className="font-display text-2xl tracking-tight">
+              What should a used buyer know about the {year.year} {model.name}?
+            </h2>
+            <p className="mt-3 text-base leading-relaxed text-muted md:text-lg">
+              {year.year === yearsSorted[0]?.year
+                ? `The ${year.year} ${make.name} ${model.name} is the newest year in our catalog — start here for current specs, then check older years if you want to save money.`
+                : `The ${year.year} ${make.name} ${model.name} sits ${yearsSorted[0] ? `${yearsSorted[0].year - year.year} model year${yearsSorted[0].year - year.year === 1 ? "" : "s"} behind the newest ${yearsSorted[0].year}` : "in our catalog"} — use the snapshot above for price and recall context before reading the full overview.`}
+            </p>
             <p className="mt-3 text-base leading-relaxed text-muted md:text-lg">
               {year.description}
             </p>
@@ -275,6 +301,13 @@ export default async function YearPage({ params }: Props) {
               modelName={model.name}
             />
           )
+        }
+        relatedComparisons={
+          <RelatedComparisons
+            makeSlug={make.slug}
+            modelSlug={model.slug}
+            modelName={model.name}
+          />
         }
       />
     </>

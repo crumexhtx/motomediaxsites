@@ -55,11 +55,13 @@ function SpecRow({ label, value }: { label: string; value: string | null }) {
 
 function Section({
   title,
+  lead,
   children,
   empty,
   className = "",
 }: {
   title: string;
+  lead?: string;
   children: ReactNode;
   empty?: boolean;
   className?: string;
@@ -68,6 +70,9 @@ function Section({
   return (
     <section className={className}>
       <h2 className="font-display text-2xl tracking-tight">{title}</h2>
+      {lead ? (
+        <p className="mt-2 max-w-2xl text-sm text-muted md:text-base">{lead}</p>
+      ) : null}
       <div className="mt-4">{children}</div>
     </section>
   );
@@ -223,7 +228,8 @@ export function YearDetailPanel({
       ) : null}
 
       <Section
-        title={`${yearLabel} at a glance`}
+        title={`How does the ${yearLabel} stack up on paper?`}
+        lead={`At a glance: ${[hp, torque, zeroSixty && `0–60 in ${zeroSixty}`, mpg && `${mpg} combined`, range].filter(Boolean).slice(0, 3).join(", ") || "key performance figures for the selected trim"}. Dig into mechanicals and efficiency below.`}
         empty={!heroHasStats}
         className="mb-10"
       >
@@ -239,11 +245,12 @@ export function YearDetailPanel({
       {ownership ? (
         <section className="mb-10 max-w-2xl">
           <h2 className="font-display text-2xl tracking-tight">
-            Estimated running cost
+            What will fuel or charging roughly cost?
           </h2>
           <p className="mt-2 text-sm text-muted">
-            Fuel or energy only for the selected trim — a quick compare signal,
-            not a full ownership quote.
+            About {formatUsd(ownership.annualUsd)} per year in energy for the
+            selected trim on our fixed U.S. assumptions ({ownership.efficiencyLabel}) —
+            a compare signal, not a full ownership quote.
           </p>
           <div className="mt-4 grid grid-cols-2 gap-3">
             <StatBadge
@@ -279,7 +286,11 @@ export function YearDetailPanel({
       ) : null}
 
       <div className="mb-10 grid gap-10 md:grid-cols-2 md:gap-x-12 md:gap-y-10">
-        <Section title="Mechanical" empty={!mechHas}>
+        <Section
+          title="What powertrain and drivetrain does it use?"
+          lead="Mechanical basics for the selected trim — engine, transmission, and drive type."
+          empty={!mechHas}
+        >
           <dl>
             <SpecRow label="Engine" value={trim?.engine ?? null} />
             <SpecRow label="Aspiration" value={trim?.aspiration ?? null} />
@@ -303,7 +314,11 @@ export function YearDetailPanel({
           </dl>
         </Section>
 
-        <Section title="Dimensions & capacity" empty={!dimHas}>
+        <Section
+          title="How big is it, and what can it carry?"
+          lead="Exterior size, seating, cargo, and towing figures when we have them."
+          empty={!dimHas}
+        >
           <dl>
             <SpecRow
               label="Length"
@@ -351,7 +366,11 @@ export function YearDetailPanel({
           </dl>
         </Section>
 
-        <Section title="Efficiency" empty={!effHas}>
+        <Section
+          title="How efficient is this year on fuel or charge?"
+          lead="EPA-style efficiency and range fields from our catalog enrich — useful for YoY compares."
+          empty={!effHas}
+        >
           <dl>
             <SpecRow
               label="City MPG"
@@ -394,7 +413,11 @@ export function YearDetailPanel({
           ) : null}
         </Section>
 
-        <Section title="Safety ratings" empty={!safetyHas}>
+        <Section
+          title="What are the NHTSA crash ratings?"
+          lead="Overall and category scores when NHTSA published them for a representative config."
+          empty={!safetyHas}
+        >
           <dl>
             <SpecRow
               label="Overall"

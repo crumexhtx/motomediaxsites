@@ -6,6 +6,7 @@ import {
   getAllModelParams,
   getAllYearParams,
 } from "@/lib/catalog";
+import { getAllComparisonParams } from "@/lib/comparisons";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url;
@@ -32,6 +33,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${base}/compare`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.75,
+    },
+    {
       url: `${base}/about`,
       lastModified,
       changeFrequency: "monthly",
@@ -46,7 +53,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Model indexes are real pages again (not redirects) — include them for GSC.
   const models = getAllModelParams().map(({ make, model }) => ({
     url: `${base}/makes/${make}/${model}`,
     lastModified,
@@ -61,5 +67,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  return [...staticRoutes, ...makes, ...models, ...years];
+  const comparisons = getAllComparisonParams().map(({ slug }) => ({
+    url: `${base}/compare/${slug}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.78,
+  }));
+
+  return [...staticRoutes, ...makes, ...models, ...years, ...comparisons];
 }

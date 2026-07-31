@@ -30,11 +30,16 @@ export function YearPricingPanel({
   return (
     <section className="mb-12 max-w-3xl rounded-lg border border-line bg-elevated/40 px-5 py-5 md:px-6">
       <h2 className="font-display text-xl tracking-tight md:text-2xl">
-        Used price vs original MSRP
+        How much does a used {year} {modelName} cost vs original MSRP?
       </h2>
       <p className="mt-2 text-sm leading-relaxed text-muted md:text-base">
-        How a {year} {makeName} {modelName} typically compares to its starting
-        MSRP — useful when weighing an older year against a newer one.
+        Expect about {formatUsd(pricing.usedAverage)} in typical used asking
+        against a {formatUsd(pricing.msrpBase)} starting MSRP — roughly{" "}
+        {retainedLabel} retained
+        {pricing.method === "listing-average"
+          ? " based on dealer listing samples"
+          : " on our labeled retention estimate"}
+        . Use that gap to decide whether a newer year is worth the jump.
       </p>
 
       <dl className="mt-5 grid gap-4 sm:grid-cols-2">
