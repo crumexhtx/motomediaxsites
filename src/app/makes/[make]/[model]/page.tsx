@@ -13,6 +13,7 @@ import {
 import { getDiscontinuedInfo } from "@/lib/discontinued";
 import { SITE } from "@/data/catalog";
 import { JsonLd, absoluteUrl, breadcrumbJsonLd } from "@/lib/seo";
+import { RelatedComparisons } from "@/components/RelatedComparisons";
 
 type Props = {
   params: Promise<{ make: string; model: string }>;
@@ -170,6 +171,14 @@ export default async function ModelPage({ params }: Props) {
           ))}
         </ul>
       </section>
+
+      <div className="mt-12">
+        <RelatedComparisons
+          makeSlug={make.slug}
+          modelSlug={model.slug}
+          modelName={model.name}
+        />
+      </div>
     </div>
   );
 }

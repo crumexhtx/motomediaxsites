@@ -1,0 +1,102 @@
+[
+  {
+    "slug": "camry-vs-accord",
+    "a": { "makeSlug": "toyota", "modelSlug": "camry" },
+    "b": { "makeSlug": "honda", "modelSlug": "accord" },
+    "title": "Camry vs Accord",
+    "query": "Which used midsize sedan should you buy — Camry or Accord?",
+    "pickA": "Choose the Camry when you want hybrid efficiency as the default story and the deepest used inventory in this class.",
+    "pickB": "Choose the Accord when you prefer a more engaging drive and strong residual value on higher trims.",
+    "verdict": "For most used shoppers, start with the newest Camry Hybrid you can afford; pick the Accord if ride feel and cabin polish matter more than hybrid mpg."
+  },
+  {
+    "slug": "rav4-vs-cr-v",
+    "a": { "makeSlug": "toyota", "modelSlug": "rav4" },
+    "b": { "makeSlug": "honda", "modelSlug": "cr-v" },
+    "title": "RAV4 vs CR-V",
+    "query": "RAV4 or CR-V — which used compact SUV is the better buy?",
+    "pickA": "Pick the RAV4 for hybrid range, available AWD depth, and rugged packaging if you tow lightly or drive in snow.",
+    "pickB": "Pick the CR-V for a quieter cabin, easier cargo load floor, and often sharper used pricing on volume trims.",
+    "verdict": "Hybrid shoppers lean RAV4; comfort-and-value shoppers often land on the CR-V — compare the same model year on recalls before you choose."
+  },
+  {
+    "slug": "f-150-vs-silverado",
+    "a": { "makeSlug": "ford", "modelSlug": "f-150" },
+    "b": { "makeSlug": "chevrolet", "modelSlug": "silverado" },
+    "title": "F-150 vs Silverado",
+    "query": "Used F-150 or Silverado — which full-size truck fits better?",
+    "pickA": "Choose the F-150 for powertrain variety (including PowerBoost and Lightning cousins nearby) and the largest used sample size.",
+    "pickB": "Choose the Silverado when you want GM trailer tech, a preferred dealer network, or a specific diesel/gas combo in your budget.",
+    "verdict": "Inventory and config match matter more than brand loyalty here — shortlist both, then compare recalls and used asking for the exact year."
+  },
+  {
+    "slug": "model-y-vs-mach-e",
+    "a": { "makeSlug": "tesla", "modelSlug": "model-y" },
+    "b": { "makeSlug": "ford", "modelSlug": "mustang-mach-e" },
+    "title": "Model Y vs Mustang Mach-E",
+    "query": "Model Y or Mach-E — which used electric crossover should you buy?",
+    "pickA": "Pick the Model Y for Supercharger access, software updates, and typically stronger efficiency in our running-cost estimates.",
+    "pickB": "Pick the Mach-E for a more conventional car-like cabin, Ford service network, and often lower used asking on early years.",
+    "verdict": "Road-trip and charging-network buyers usually prefer Model Y; deal-hunters who want a traditional SUV feel often prefer Mach-E."
+  },
+  {
+    "slug": "corolla-vs-civic",
+    "a": { "makeSlug": "toyota", "modelSlug": "corolla" },
+    "b": { "makeSlug": "honda", "modelSlug": "civic" },
+    "title": "Corolla vs Civic",
+    "query": "Corolla or Civic for a used compact — which wins?",
+    "pickA": "Choose the Corolla for hybrid mpg, a softer ride, and bulletproof reliability reputation on volume trims.",
+    "pickB": "Choose the Civic for sharper handling, stronger performance variants (Si / Type R nearby), and a sportier cabin.",
+    "verdict": "Daily-commute value usually goes Corolla Hybrid; enthusiasts and drivers who prioritize feel pick Civic — check Type R pages separately if you want hot-hatch power."
+  },
+  {
+    "slug": "highlander-vs-pilot",
+    "a": { "makeSlug": "toyota", "modelSlug": "highlander" },
+    "b": { "makeSlug": "honda", "modelSlug": "pilot" },
+    "title": "Highlander vs Pilot",
+    "query": "Highlander or Pilot — which used 3-row SUV is smarter?",
+    "pickA": "Pick the Highlander for hybrid efficiency and Toyota’s used-market liquidity in family crossovers.",
+    "pickB": "Pick the Pilot for more third-row space, available trailering focus, and a more traditional SUV stance.",
+    "verdict": "Families prioritizing mpg lean Highlander Hybrid; families prioritizing people-and-cargo space often prefer Pilot — compare the same year side by side."
+  },
+  {
+    "slug": "wrangler-vs-bronco",
+    "a": { "makeSlug": "jeep", "modelSlug": "wrangler" },
+    "b": { "makeSlug": "ford", "modelSlug": "bronco" },
+    "title": "Wrangler vs Bronco",
+    "query": "Wrangler or Bronco — which used off-road SUV should you buy?",
+    "pickA": "Choose the Wrangler for removable tops/doors culture, aftermarket depth, and long-running used supply.",
+    "pickB": "Choose the Bronco for modern trail manners, available Sasquatch-style packages, and fresher on-road manners in many configs.",
+    "verdict": "Icon seekers and modifiers lean Wrangler; buyers who want a newer trail SUV with stronger daily manners often pick Bronco — inspect for off-road wear either way."
+  },
+  {
+    "slug": "telluride-vs-palisade",
+    "a": { "makeSlug": "kia", "modelSlug": "telluride" },
+    "b": { "makeSlug": "hyundai", "modelSlug": "palisade" },
+    "title": "Telluride vs Palisade",
+    "query": "Telluride or Palisade — which used three-row crossover wins?",
+    "pickA": "Pick the Telluride for design-led demand, strong resale on clean examples, and a slightly more premium cabin vibe.",
+    "pickB": "Pick the Palisade for feature-rich trims at similar money and Hyundai’s warranty story on later years.",
+    "verdict": "They’re platform cousins — buy the cleaner, lower-mile example after checking recalls; Telluride wins on style demand, Palisade often on equipment per dollar."
+  },
+  {
+    "slug": "model-3-vs-3-series",
+    "a": { "makeSlug": "tesla", "modelSlug": "model-3" },
+    "b": { "makeSlug": "bmw", "modelSlug": "3-series" },
+    "title": "Model 3 vs BMW 3 Series",
+    "query": "Used Model 3 or 3 Series — EV efficiency or gas luxury sports sedan?",
+    "pickA": "Choose the Model 3 for low running costs, instant torque, and over-the-air feature updates.",
+    "pickB": "Choose the 3 Series for driving engagement, traditional luxury materials, and gas-station convenience.",
+    "verdict": "Commute-and-energy-cost buyers pick Model 3; drivers who want a stick-shift soul (or classic sport-sedan feel) pick the 3 Series — different jobs, same budget band on many used examples."
+  },
+  {
+    "slug": "sierra-vs-f-150",
+    "a": { "makeSlug": "gmc", "modelSlug": "sierra" },
+    "b": { "makeSlug": "ford", "modelSlug": "f-150" },
+    "title": "Sierra vs F-150",
+    "query": "GMC Sierra or Ford F-150 for a used full-size truck?",
+    "pickA": "Pick the Sierra when you want GM’s MultiPro tailgate tricks, Denali-level interiors, or a preferred GMC dealer.",
+    "pickB": "Pick the F-150 for broader powertrain choice, denser used inventory, and easier config matching nationwide.",
+    "verdict": "Content and condition beat badge — shortlist both, then use our year pages for recalls, used asking vs MSRP, and year-over-year changes."
+  }
+]
