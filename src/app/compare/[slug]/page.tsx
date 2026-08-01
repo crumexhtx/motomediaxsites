@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { DimensionSchematic } from "@/components/DimensionSchematic";
 import { SITE } from "@/data/catalog";
 import {
   buildComparisonPage,
@@ -46,7 +47,7 @@ export default async function ComparePairPage({ params }: Props) {
   if (!page) notFound();
 
   const path = `/compare/${page.def.slug}`;
-  const { def, a, b, metrics, summary, asOf } = page;
+  const { def, a, b, metrics, summary, asOf, schematic } = page;
 
   return (
     <div className="container-wide py-10 md:py-14">
@@ -131,6 +132,14 @@ export default async function ComparePairPage({ params }: Props) {
           </table>
         </div>
       </section>
+
+      {schematic ? (
+        <DimensionSchematic
+          layout={schematic}
+          title="How do their proportions compare?"
+          compare
+        />
+      ) : null}
 
       <section className="mt-12 grid gap-8 md:grid-cols-2">
         <div>

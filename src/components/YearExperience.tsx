@@ -33,6 +33,8 @@ type Props = {
   valuationCta?: ReactNode;
   /** Related A vs B comparisons (server-rendered). */
   relatedComparisons?: ReactNode;
+  /** Blueprint dimension schematic (server-rendered SVG). */
+  dimensionSchematic?: ReactNode;
   /** Discontinued / final-year notice above overview. */
   discontinuedBanner?: ReactNode;
   performance?: YearPerformance;
@@ -55,6 +57,7 @@ export function YearExperience({
   yearChanges,
   valuationCta,
   relatedComparisons,
+  dimensionSchematic,
   discontinuedBanner,
   performance,
   specs,
@@ -167,6 +170,8 @@ export function YearExperience({
         ) : null}
 
         {video ? <YearVideoEmbed video={video} /> : null}
+
+        {dimensionSchematic}
 
         <YearDetailPanel
           yearLabel={yearLabel}

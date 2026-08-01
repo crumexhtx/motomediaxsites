@@ -10,7 +10,14 @@ import {
   type YearPricing,
 } from "@/lib/pricing";
 import { estimateOwnershipCost } from "@/lib/ownership";
-import type { ModelEntry, TrimSpec } from "@/data/catalog";
+import type { ModelEntry, TrimSpec, VehicleSpecs } from "@/data/catalog";
+import {
+  buildSchematicLayout,
+  dimensionsFromSpecs,
+  formatInches,
+  type SchematicLayout,
+  type VehicleDimensions,
+} from "@/lib/dimensionSchematic";
 
 function newestYear(model: ModelEntry) {
   return [...model.years].sort((a, b) => b.year - a.year)[0];
@@ -54,6 +61,8 @@ export type ComparisonSide = {
   nhtsaOverall?: string;
   ownershipAnnual?: number;
   imageSrc?: string;
+  dims?: VehicleDimensions;
+  specs?: VehicleSpecs;
 };
 
 export type ComparisonPageData = {
@@ -63,6 +72,7 @@ export type ComparisonPageData = {
   asOf: string;
   summary: string;
   metrics: ComparisonMetricRow[];
+  schematic?: SchematicLayout;
 };
 
 const DEFS = comparisonsJson as ComparisonDef[];
@@ -129,6 +139,8 @@ function resolveSide(ref: ComparisonSideRef): ComparisonSide | undefined {
     nhtsaOverall: year.specs?.overallRating,
     ownershipAnnual: ownership?.annualUsd,
     imageSrc: cover.src.endsWith(".svg") ? undefined : cover.src,
+    dims: dimensionsFromSpecs(year.specs),
+    specs: year.specs,
   };
 }
 
@@ -194,7 +206,41 @@ export function buildComparisonPage(
       a: a.ownershipAnnual != null ? formatUsd(a.ownershipAnnual) : "—",
       b: b.ownershipAnnual != null ? formatUsd(b.ownershipAnnual) : "—",
     },
+    {
+      label: "Overall length",
+      a: a.dims ? formatInches(a.dims.lengthIn) : "—",
+      b: b.dims ? formatInches(b.dims.lengthIn) : "—",
+    },
+    {
+      label: "Overall height",
+      a: a.dims ? formatInches(a.dims.heightIn) : "—",
+      b: b.dims ? formatInches(b.dims.heightIn) : "—",
+    },
+    {
+      label: "Wheelbase",
+      a: a.dims?.wheelbaseIn != null ? formatInches(a.dims.wheelbaseIn) : "—",
+      b: b.dims?.wheelbaseIn != null ? formatInches(b.dims.wheelbaseIn) : "—",
+    },
   ];
+
+  const schematic =
+    a.dims && b.dims
+      ? buildSchematicLayout(
+          [
+            {
+              id: "a",
+              label: `${a.year} ${a.makeName} ${a.modelName}`,
+              dims: a.dims,
+            },
+            {
+              id: "b",
+              label: `${b.year} ${b.makeName} ${b.modelName}`,
+              dims: b.dims,
+            },
+          ],
+          { showDiffs: true },
+        )
+      : undefined;
 
   return {
     def,
@@ -203,5 +249,6 @@ export function buildComparisonPage(
     asOf,
     summary: buildSummary(a, b, def),
     metrics,
+    schematic,
   };
 }

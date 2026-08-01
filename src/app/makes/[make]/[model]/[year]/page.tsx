@@ -10,6 +10,7 @@ import { YearPricingPanel } from "@/components/YearPricingPanel";
 import { YearValuationCta } from "@/components/YearValuationCta";
 import { YearSnapshot } from "@/components/YearSnapshot";
 import { RelatedComparisons } from "@/components/RelatedComparisons";
+import { DimensionSchematic } from "@/components/DimensionSchematic";
 import type { GalleryImage } from "@/data/catalog";
 import {
   getAllYearParams,
@@ -24,6 +25,10 @@ import {
 } from "@/lib/discontinued";
 import { getYearPricing } from "@/lib/pricing";
 import { buildYearSnapshot } from "@/lib/yearSnapshot";
+import {
+  buildSchematicLayout,
+  dimensionsFromSpecs,
+} from "@/lib/dimensionSchematic";
 import {
   JsonLd,
   absoluteUrl,
@@ -149,6 +154,16 @@ export default async function YearPage({ params }: Props) {
     modelSlug: model.slug,
     yearDiff,
   });
+  const dims = dimensionsFromSpecs(year.specs);
+  const schematicLayout = dims
+    ? buildSchematicLayout([
+        {
+          id: `${make.slug}-${model.slug}-${year.year}`,
+          label: `${year.year} ${make.name} ${model.name}`,
+          dims,
+        },
+      ])
+    : undefined;
 
   return (
     <>
@@ -308,6 +323,14 @@ export default async function YearPage({ params }: Props) {
             modelSlug={model.slug}
             modelName={model.name}
           />
+        }
+        dimensionSchematic={
+          schematicLayout ? (
+            <DimensionSchematic
+              layout={schematicLayout}
+              title="What are the published exterior dimensions?"
+            />
+          ) : null
         }
       />
     </>
