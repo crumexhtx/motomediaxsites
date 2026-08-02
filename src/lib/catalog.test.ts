@@ -10,7 +10,9 @@ import {
   getYear,
   makeHref,
   modelHref,
+  normalizeSearchKey,
   searchCatalog,
+  searchTextMatch,
   yearHref,
 } from "@/lib/catalog";
 
@@ -159,6 +161,33 @@ describe("searchCatalog", () => {
     const results = searchCatalog("camry");
     expect(
       results.some((r) => r.type === "model" && r.title.includes("Camry")),
+    ).toBe(true);
+  });
+
+  it("normalizes shorthand like f150 / F 150 to F-150", () => {
+    expect(normalizeSearchKey("F-150")).toBe("f150");
+    expect(normalizeSearchKey("F 150")).toBe("f150");
+    expect(searchTextMatch("Ford F-150", "f150")).toBe(true);
+    expect(searchTextMatch("Ford F-150", "F 150")).toBe(true);
+
+    for (const q of ["f150", "F 150", "f-150", "ford f150"]) {
+      const results = searchCatalog(q);
+      expect(
+        results.some((r) => r.title.toLowerCase().includes("f-150")),
+        q,
+      ).toBe(true);
+    }
+  });
+
+  it("matches other hyphenated shorthands", () => {
+    expect(
+      searchCatalog("crv").some((r) => r.title.includes("CR-V")),
+    ).toBe(true);
+    expect(
+      searchCatalog("4runner").some((r) => r.title.includes("4Runner")),
+    ).toBe(true);
+    expect(
+      searchCatalog("modely").some((r) => r.title.toLowerCase().includes("model y")),
     ).toBe(true);
   });
 });

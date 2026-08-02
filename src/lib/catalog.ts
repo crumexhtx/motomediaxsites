@@ -15,6 +15,26 @@ export type SearchResult = {
   image: GalleryImage;
 };
 
+/**
+ * Collapse punctuation/spaces so "f150", "F 150", and "F-150" share a key.
+ * Keeps letters+digits only, lowercased.
+ */
+export function normalizeSearchKey(value: string): string {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, "");
+}
+
+/** True when query matches haystack via substring or normalized alphanumeric key. */
+export function searchTextMatch(haystack: string, query: string): boolean {
+  const h = haystack.toLowerCase();
+  const q = query.toLowerCase().trim();
+  if (!q) return false;
+  if (h.includes(q)) return true;
+  const hn = normalizeSearchKey(haystack);
+  const qn = normalizeSearchKey(query);
+  if (!qn) return false;
+  return hn.includes(qn);
+}
+
 function normSlug(slug: string) {
   try {
     return decodeURIComponent(slug).toLowerCase();
@@ -327,8 +347,9 @@ export function searchCatalog(query: string, limit = 40): SearchResult[] {
   for (const make of getCatalog()) {
     if (
       !exactYearQuery &&
-      (make.name.toLowerCase().includes(q) ||
-        make.country.toLowerCase().includes(q))
+      (searchTextMatch(make.name, q) ||
+        searchTextMatch(make.slug, q) ||
+        searchTextMatch(make.country, q))
     ) {
       const image = brandFallback(make);
       results.push({
@@ -341,17 +362,21 @@ export function searchCatalog(query: string, limit = 40): SearchResult[] {
     }
 
     for (const model of make.models) {
+      const modelLabel = `${make.name} ${model.name}`;
       const modelMatch =
         !exactYearQuery &&
-        (model.name.toLowerCase().includes(q) ||
-          model.tagline.toLowerCase().includes(q) ||
-          `${make.name} ${model.name}`.toLowerCase().includes(q));
+        (searchTextMatch(model.name, q) ||
+          searchTextMatch(model.slug, q) ||
+          searchTextMatch(model.tagline, q) ||
+          searchTextMatch(modelLabel, q) ||
+          // "ford f150" / "f150 ford"
+          searchTextMatch(`${make.slug} ${model.slug}`, q));
 
       if (modelMatch) {
         const image = modelCardImage(make, model);
         results.push({
           type: "model",
-          title: `${make.name} ${model.name}`,
+          title: modelLabel,
           subtitle: model.tagline,
           href: modelHref(make.slug, model.slug),
           image,
@@ -365,8 +390,9 @@ export function searchCatalog(query: string, limit = 40): SearchResult[] {
           yearHit = String(year.year) === q;
         } else if (!digitsOnlyQuery) {
           yearHit =
-            yearLabel.toLowerCase().includes(q) ||
-            year.summary.toLowerCase().includes(q);
+            searchTextMatch(yearLabel, q) ||
+            searchTextMatch(`${make.slug} ${model.slug} ${year.year}`, q) ||
+            searchTextMatch(year.summary, q);
         }
 
         if (yearHit) {
@@ -386,6 +412,19 @@ export function searchCatalog(query: string, limit = 40): SearchResult[] {
       }
     }
   }
+
+  // Prefer tighter matches: exact normalized model/make titles first.
+  const qn = normalizeSearchKey(q);
+  results.sort((a, b) => {
+    const score = (r: SearchResult) => {
+      const tn = normalizeSearchKey(r.title);
+      if (tn === qn) return 0;
+      if (tn.startsWith(qn)) return 1;
+      if (tn.includes(qn)) return 2;
+      return 3;
+    };
+    return score(a) - score(b);
+  });
 
   return results.slice(0, limit);
 }
