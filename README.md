@@ -33,6 +33,7 @@ Set `NEXT_PUBLIC_SITE_URL` to your local or preview origin so canonicals, sitema
 - Rebuild: `pnpm build:catalog` (caches API responses under `scripts/.cache/`)
 - After changing `model-years.json` or rebuilding the catalog, run `pnpm maintain:discontinued` (sync → prune ghosts → refresh final-year copy → sanitize)
 - Used-buyer safety data: `pnpm enrich:nhtsa-safety` (NHTSA recalls + complaint category counts; or run `enrich:nhtsa-recalls` / `enrich:nhtsa-complaints` separately)
+- **Daily recalls:** GitHub Actions [`.github/workflows/daily-recalls.yml`](.github/workflows/daily-recalls.yml) force-refreshes NHTSA recalls into `catalog.generated.json`, seeds `motomediax-api/data/recalls-complaints.json` from that result, and commits to `main` only when campaign data actually changed (ignores `fetchedAt`-only churn). Runs on a daily cron (~08:30 CT) and via **Actions → Daily recalls → Run workflow**. Manual local equivalent: `pnpm enrich:nhtsa-recalls -- --force` then `node motomediax-api/scripts/seed-recalls-from-site.mjs`.
 - Refresh MPG only: `pnpm enrich:epa`
 - Image pipeline if sources change: `pnpm backfill:images` (remote URLs) → `pnpm localize:images` (download into `public/catalog/`)
 

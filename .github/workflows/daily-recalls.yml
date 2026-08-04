@@ -1,0 +1,81 @@
+name: Daily recalls
+
+on:
+  schedule:
+    # ~08:30 America/Chicago (CDT); GitHub cron is UTC.
+    - cron: "30 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-recalls
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Refresh NHTSA recalls
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Need full history only for push; shallow is fine for enrich.
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.18.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Snapshot recall campaigns
+        run: pnpm recall:snapshot -- --out scripts/.cache/recalls-before.json
+
+      - name: Enrich site catalog recalls
+        run: pnpm enrich:nhtsa-recalls -- --force
+
+      - name: Seed API recalls from site catalog
+        run: node motomediax-api/scripts/seed-recalls-from-site.mjs
+
+      - name: Diff campaigns
+        id: diff
+        run: |
+          pnpm recall:diff -- --before scripts/.cache/recalls-before.json --out recall-diff.json
+          echo "changed=$(jq -r .changed recall-diff.json)" >> "$GITHUB_OUTPUT"
+          echo "added=$(jq -r .addedCount recall-diff.json)" >> "$GITHUB_OUTPUT"
+          echo "removed=$(jq -r .removedCount recall-diff.json)" >> "$GITHUB_OUTPUT"
+          echo "updated=$(jq -r .updatedCount recall-diff.json)" >> "$GITHUB_OUTPUT"
+          jq '{changed, addedCount, removedCount, updatedCount, beforeCount, afterCount, added: .added[0:30], removed: .removed[0:30], updated: .updated[0:30]}' recall-diff.json
+
+      - name: Commit and push when campaigns changed
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/catalog.generated.json motomediax-api/data/recalls-complaints.json
+          if git diff --cached --quiet; then
+            echo "Campaign set changed in memory but working tree has nothing to commit."
+            exit 0
+          fi
+          ADDED="${{ steps.diff.outputs.added }}"
+          REMOVED="${{ steps.diff.outputs.removed }}"
+          UPDATED="${{ steps.diff.outputs.updated }}"
+          git commit -m "$(cat <<EOF
+          chore: refresh NHTSA recalls (${ADDED} new, ${REMOVED} removed, ${UPDATED} updated)
+
+          Automated daily enrich via .github/workflows/daily-recalls.yml.
+          EOF
+          )"
+          git push origin HEAD:main
+
+      - name: No campaign changes
+        if: steps.diff.outputs.changed != 'true'
+        run: echo "No recall campaign additions, removals, or content updates — skipping commit."

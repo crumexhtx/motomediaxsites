@@ -111,6 +111,71 @@ function resultsOf(json: unknown): unknown[] {
   return Array.isArray(r) ? r : [];
 }
 
+const POWERTRAIN_TOKENS = new Set([
+  "gas",
+  "bev",
+  "hev",
+  "phev",
+  "diesel",
+  "hybrid",
+  "electric",
+  "cng",
+]);
+
+function normalizeModelTokens(raw: string): string[] {
+  return raw
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+}
+
+/**
+ * Pick the best NHTSA product-model string for a catalog model name.
+ * Prefer full multi-token matches (Mustang Mach-E over Mustang) and prefer
+ * bare names over powertrain-tagged variants (EXPLORER over EXPLORER GAS),
+ * because recallsByVehicle often indexes the bare model only.
+ */
+export function pickBestNhtsaModel(
+  catalogModel: string,
+  nhtsaModels: string[],
+): string {
+  const wantTokens = normalizeModelTokens(catalogModel);
+  if (!wantTokens.length) return catalogModel;
+  const want = wantTokens.join(" ");
+
+  const scored = nhtsaModels
+    .map((m) => {
+      const tokens = normalizeModelTokens(m);
+      const n = tokens.join(" ");
+      const core = tokens.filter((t) => !POWERTRAIN_TOKENS.has(t));
+      const coreJoined = core.join(" ");
+      const fuelExtra = tokens.length - core.length;
+
+      let score = 0;
+      if (n === want || coreJoined === want) {
+        score = 100 - fuelExtra;
+      } else {
+        const hit = wantTokens.filter((t) => core.includes(t) || tokens.includes(t)).length;
+        const coverage = hit / wantTokens.length;
+        // Require every catalog token to appear — blocks Mustang stealing Mach-E.
+        if (coverage < 1) {
+          score = coverage * 30;
+        } else {
+          // All want tokens present; prefer fewer extra non-fuel tokens.
+          const extraCore = core.filter((t) => !wantTokens.includes(t)).length;
+          score = 90 - fuelExtra - Math.min(extraCore, 8);
+        }
+      }
+      return { m, score, len: core.length };
+    })
+    .sort((a, b) => b.score - a.score || b.len - a.len);
+
+  if (scored[0] && scored[0].score >= 40) return scored[0].m;
+  return catalogModel;
+}
+
 /** Map catalog model names to NHTSA product model strings for a make/year. */
 export async function resolveNhtsaModel(
   make: string,
@@ -141,27 +206,23 @@ export async function resolveNhtsaModel(
     }
   }
 
-  const want = model.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-  if (!want) return model;
+  return pickBestNhtsaModel(model, models);
+}
 
-  const scored = models
-    .map((m) => {
-      const n = m.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-      let score = 0;
-      if (n === want) score = 100;
-      else if (n.startsWith(want) || want.startsWith(n)) score = 80;
-      else if (n.includes(want) || want.includes(n)) score = 60;
-      else {
-        const wt = want.split(" ").filter(Boolean);
-        const hit = wt.filter((t) => n.includes(t)).length;
-        score = hit ? (hit / wt.length) * 40 : 0;
-      }
-      return { m, score };
-    })
-    .sort((a, b) => b.score - a.score);
-
-  if (scored[0] && scored[0].score >= 40) return scored[0].m;
-  return model;
+function recallQueryCandidates(catalogModel: string, resolvedModel: string): string[] {
+  const out: string[] = [];
+  const push = (value: string) => {
+    const v = value.trim();
+    if (v && !out.some((x) => x.toLowerCase() === v.toLowerCase())) out.push(v);
+  };
+  push(resolvedModel);
+  // Bare catalog name often works when the product list only has "EXPLORER GAS".
+  push(catalogModel);
+  const stripped = normalizeModelTokens(resolvedModel)
+    .filter((t) => !POWERTRAIN_TOKENS.has(t))
+    .join(" ");
+  if (stripped) push(stripped);
+  return out;
 }
 
 export async function fetchRecalls(
@@ -177,64 +238,80 @@ export async function fetchRecalls(
     "r",
     opts.force,
   );
-  const file = cachePath("recalls", make, resolvedModel, year);
+  const candidates = recallQueryCandidates(model, resolvedModel);
   fs.mkdirSync(SAFETY_CACHE_DIR, { recursive: true });
 
-  let json: unknown;
-  if (fs.existsSync(file) && !opts.force) {
-    json = JSON.parse(fs.readFileSync(file, "utf8")).payload;
-  } else {
-    const url = `https://api.nhtsa.gov/recalls/recallsByVehicle?make=${encodeURIComponent(make)}&model=${encodeURIComponent(resolvedModel)}&modelYear=${year}`;
-    const res = await fetchJson(url);
-    if (!res.ok || res.json == null) {
-      return {
-        status: "error",
-        data: [],
-        error: `HTTP ${res.status}`,
-        resolvedModel,
-      };
-    }
-    json = res.json;
-    fs.writeFileSync(
-      file,
-      JSON.stringify({
-        payload: json,
-        resolvedModel,
-        fetchedAt: new Date().toISOString(),
-      }),
-    );
-  }
-
-  const rows = resultsOf(json);
-  const recalls: YearRecall[] = [];
-  const seen = new Set<string>();
-  for (const row of rows) {
-    const r = row as Record<string, unknown>;
-    const campaignNumber = String(
-      r.NHTSACampaignNumber ?? r.nhtsaCampaignNumber ?? "",
-    ).trim();
-    const component = String(r.Component ?? r.component ?? "").trim();
-    const summary = String(r.Summary ?? r.summary ?? "").trim();
-    const date = parseReportDate(
-      String(r.ReportReceivedDate ?? r.reportReceivedDate ?? ""),
-    );
-    if (!campaignNumber || !component || !summary || !date) continue;
-    if (seen.has(campaignNumber)) continue;
-    seen.add(campaignNumber);
-    recalls.push({
-      campaignNumber,
-      date,
-      component: normalizeComponent(component),
-      summary: truncateSummary(summary, 320),
-    });
-  }
-
-  recalls.sort((a, b) => b.date.localeCompare(a.date));
-  return {
-    status: recalls.length ? "ok" : "empty",
-    data: recalls.slice(0, 20),
+  let best: SafetyFetchResult<YearRecall[]> = {
+    status: "empty",
+    data: [],
     resolvedModel,
   };
+
+  for (const candidate of candidates) {
+    const file = cachePath("recalls", make, candidate, year);
+    let json: unknown;
+    if (fs.existsSync(file) && !opts.force) {
+      json = JSON.parse(fs.readFileSync(file, "utf8")).payload;
+    } else {
+      const url = `https://api.nhtsa.gov/recalls/recallsByVehicle?make=${encodeURIComponent(make)}&model=${encodeURIComponent(candidate)}&modelYear=${year}`;
+      const res = await fetchJson(url);
+      if (!res.ok || res.json == null) {
+        if (best.status === "empty" && best.data.length === 0) {
+          best = {
+            status: "error",
+            data: [],
+            error: `HTTP ${res.status}`,
+            resolvedModel: candidate,
+          };
+        }
+        continue;
+      }
+      json = res.json;
+      fs.writeFileSync(
+        file,
+        JSON.stringify({
+          payload: json,
+          resolvedModel: candidate,
+          fetchedAt: new Date().toISOString(),
+        }),
+      );
+    }
+
+    const rows = resultsOf(json);
+    const recalls: YearRecall[] = [];
+    const seen = new Set<string>();
+    for (const row of rows) {
+      const r = row as Record<string, unknown>;
+      const campaignNumber = String(
+        r.NHTSACampaignNumber ?? r.nhtsaCampaignNumber ?? "",
+      ).trim();
+      const component = String(r.Component ?? r.component ?? "").trim();
+      const summary = String(r.Summary ?? r.summary ?? "").trim();
+      const date = parseReportDate(
+        String(r.ReportReceivedDate ?? r.reportReceivedDate ?? ""),
+      );
+      if (!campaignNumber || !component || !summary || !date) continue;
+      if (seen.has(campaignNumber)) continue;
+      seen.add(campaignNumber);
+      recalls.push({
+        campaignNumber,
+        date,
+        component: normalizeComponent(component),
+        summary: truncateSummary(summary, 320),
+      });
+    }
+
+    recalls.sort((a, b) => b.date.localeCompare(a.date));
+    const next: SafetyFetchResult<YearRecall[]> = {
+      status: recalls.length ? "ok" : "empty",
+      data: recalls.slice(0, 20),
+      resolvedModel: candidate,
+    };
+    if (next.status === "ok") return next;
+    if (best.status !== "ok") best = next;
+  }
+
+  return best;
 }
 
 export async function fetchComplaintSummary(

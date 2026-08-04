@@ -18,6 +18,8 @@
     "enrich:nhtsa-recalls": "tsx scripts/enrich-nhtsa-recalls.ts",
     "enrich:nhtsa-complaints": "tsx scripts/enrich-nhtsa-complaints.ts",
     "enrich:nhtsa-safety": "tsx scripts/enrich-nhtsa-recalls.ts -- --with-complaints",
+    "recall:snapshot": "tsx scripts/recall-diff.ts snapshot",
+    "recall:diff": "tsx scripts/recall-diff.ts compare",
     "fetch:toyota-videos": "python3 scripts/fetch-toyota-videos.py",
     "fetch:ford-videos": "python3 scripts/fetch-brand-videos.py ford",
     "fetch:videos": "python3 scripts/fetch-brand-videos.py",

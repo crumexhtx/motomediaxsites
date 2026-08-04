@@ -44,6 +44,7 @@ next-env.d.ts
 # generated validation report
 catalog-validation.json
 catalog-image-audit.json
+recall-diff.json
 
 # catalog build API cache (regenerate with pnpm build:catalog)
 scripts/.cache/
