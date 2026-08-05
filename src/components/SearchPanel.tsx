@@ -108,7 +108,7 @@ export function SearchPanel({
           type="search"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
-          placeholder="Try Toyota, Camry, 2025…"
+          placeholder="Try F-150, f150, Camry, 2025…"
           className="focus-ring w-full rounded-xl border border-line bg-elevated px-4 py-3 text-base outline-none placeholder:text-muted"
           autoComplete="off"
           spellCheck={false}
@@ -127,7 +127,8 @@ export function SearchPanel({
           <p className="text-sm text-muted">{error}</p>
         ) : results.length === 0 ? (
           <p className="text-sm text-muted">
-            No matches for “{trimmed}”. Try a make name or year.
+            No matches for “{trimmed}”. Try a make, model shorthand (f150,
+            crv), or year.
           </p>
         ) : (
           <ul className="space-y-3">

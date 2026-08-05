@@ -1,6 +1,7 @@
 ﻿import Link from "next/link";
 import { HeroBackdrop } from "@/components/HeroBackdrop";
 import { CatalogImage } from "@/components/CatalogImage";
+import { LandingSearch } from "@/components/LandingSearch";
 import { MakeGrid } from "@/components/MakeGrid";
 import { SITE } from "@/data/catalog";
 import {
@@ -39,7 +40,13 @@ export default function HomePage() {
             Compare years, check NHTSA recalls and owner complaints, and see
             what changed — then decide if the newer year is worth the price.
           </p>
-          <div className="fade-up-delay-2 mt-7 flex flex-wrap gap-3">
+          <div className="fade-up-delay-2 mt-7 w-full max-w-xl">
+            <LandingSearch tone="hero" />
+            <p className="mt-2 text-xs text-white/50">
+              Shorthand works — f150, crv, 4runner, modely…
+            </p>
+          </div>
+          <div className="fade-up-delay-2 mt-5 flex flex-wrap gap-3">
             <Link
               href="/makes"
               className="focus-ring inline-flex items-center rounded-md bg-accent px-5 py-3 text-sm font-semibold text-[#071018] transition hover:brightness-110"
@@ -53,10 +60,10 @@ export default function HomePage() {
               Recent recalls
             </Link>
             <Link
-              href="/search"
+              href="/compare"
               className="focus-ring inline-flex items-center rounded-md border border-white/25 bg-black/40 px-5 py-3 text-sm font-medium text-white transition hover:bg-black/55"
             >
-              Search catalog
+              Compare models
             </Link>
           </div>
         </div>
