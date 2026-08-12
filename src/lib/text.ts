@@ -83,6 +83,17 @@ export function firstContentSentence(
   return truncateAtSentence(sentence, maxLen);
 }
 
+/** SEO / social title for a year page. */
+export function yearSeoTitle(input: {
+  year: number;
+  makeName: string;
+  modelName: string;
+  siteName?: string;
+}): string {
+  const site = input.siteName ?? "MotoMediaX";
+  return `${input.year} ${input.makeName} ${input.modelName}: Recalls, Specs & Used Price Guide | ${site}`;
+}
+
 /** SEO / social description for a year page — never a thin “offered in the U.S. market” stub. */
 export function yearSeoDescription(input: {
   year: number;
@@ -103,13 +114,14 @@ export function yearSeoDescription(input: {
     recallCount,
   } = input;
 
+  const lead = `${year} ${makeName} ${modelName}`;
   const recallBit =
     typeof recallCount === "number" && recallCount > 0
-      ? `${recallCount} NHTSA recall${recallCount === 1 ? "" : "s"} on record. `
+      ? `${recallCount} NHTSA recall${recallCount === 1 ? "" : "s"} on record.`
       : "";
 
+  let body: string | undefined;
   if (summary && !isThinYearSummary(summary)) {
-    // Final-year stubs are intentional but thin for search — append wiki prose.
     if (/final u\.?s\.? catalog year/i.test(summary)) {
       const sentence = firstContentSentence(description, 180);
       if (
@@ -117,25 +129,34 @@ export function yearSeoDescription(input: {
         !/final model year covered/i.test(sentence) &&
         !/ended after \d{4}/i.test(sentence)
       ) {
-        return truncateAtSentence(
-          `${recallBit}${summary.replace(/\.$/, "")}. ${sentence}`,
-          300,
-        );
+        body = `${summary.replace(/\.$/, "")}. ${sentence}`;
+      } else {
+        body = summary;
       }
+    } else {
+      body = summary;
     }
-    return truncateAtSentence(`${recallBit}${summary}`, 300);
+  } else {
+    const sentence = firstContentSentence(description, 200);
+    if (sentence) {
+      body = sentence.toLowerCase().startsWith(lead.toLowerCase())
+        ? sentence
+        : `${lead} — ${sentence}`;
+    }
   }
 
-  const sentence = firstContentSentence(description, 200);
-  if (sentence) {
-    const lead = `${year} ${makeName} ${modelName}`;
-    if (sentence.toLowerCase().startsWith(lead.toLowerCase())) {
-      return truncateAtSentence(`${recallBit}${sentence}`, 300);
-    }
-    return truncateAtSentence(`${recallBit}${lead} — ${sentence}`, 300);
+  if (!body) {
+    body = `${lead} — compare years, check recalls, and review specs on ${siteName}.`;
   }
 
-  return `${recallBit}${year} ${makeName} ${modelName} — compare years, check recalls, and review specs on ${siteName}.`;
+  // Put vehicle context first so truncateAtSentence cannot stop at a short
+  // leading "N recalls on record." sentence and drop the rest.
+  const combined = recallBit
+    ? body.toLowerCase().includes("nhtsa recall")
+      ? body
+      : `${body.replace(/\.$/, "")}. ${recallBit}`
+    : body;
+  return truncateAtSentence(combined, 300);
 }
 
 /** Display / stored summary when the catalog stub is too thin. */

@@ -28,6 +28,16 @@ function blobOf(parts: Array<string | null | undefined>): string {
   return parts.filter(Boolean).join(" ").toLowerCase();
 }
 
+/** True when curated trim copy indicates a hybrid / PHEV / BEV / PowerBoost powertrain. */
+export function trimLooksElectrified(input: {
+  name?: string | null;
+  engine?: string | null;
+  aspiration?: string | null;
+}): boolean {
+  const blob = blobOf([input.name, input.engine, input.aspiration]);
+  return /\bhybrid\b|powerboost|phev|plug[- ]?in|\bbev\b|electric/.test(blob);
+}
+
 /**
  * Classify powertrain for cost math.
  * PHEV/hybrid with combined MPG use gas estimates (not all-electric).

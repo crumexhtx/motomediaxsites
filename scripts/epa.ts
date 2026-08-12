@@ -213,16 +213,14 @@ function electrificationFromAtv(atv?: string, fuel?: string): string | undefined
 }
 
 function pickRepresentative(rows: EpaVehicle[]): EpaVehicle {
-  // Prefer a mid/popular config: hybrid if present, else highest combined MPG gas,
-  // else first row. Avoid exotic/guzzler extremes when possible.
+  // Prefer gas when the lineup includes non-hybrid configs. Optional hybrids
+  // (e.g. F-150 PowerBoost) must not stamp the whole model year as Hybrid /
+  // hybrid MPG. Prefer hybrid only when every matched row is hybrid (Camry).
   const hybrids = rows.filter(
     (r) =>
       (r.atvType || "").toLowerCase().includes("hybrid") &&
       !(r.atvType || "").toLowerCase().includes("plug"),
   );
-  if (hybrids.length) {
-    return [...hybrids].sort((a, b) => b.combinedMpg - a.combinedMpg)[0];
-  }
   const plugIns = rows.filter((r) =>
     (r.atvType || "").toLowerCase().includes("plug"),
   );
@@ -231,7 +229,13 @@ function pickRepresentative(rows: EpaVehicle[]): EpaVehicle {
       !(r.atvType || "").toLowerCase().includes("hybrid") &&
       !(r.fuelType || "").toLowerCase().includes("electricity"),
   );
-  const pool = gas.length ? gas : plugIns.length ? plugIns : rows;
+  const pool = gas.length
+    ? gas
+    : hybrids.length
+      ? hybrids
+      : plugIns.length
+        ? plugIns
+        : rows;
   return [...pool].sort((a, b) => b.combinedMpg - a.combinedMpg)[0];
 }
 
@@ -434,8 +438,17 @@ export function mergeEpaIntoSpecs<T extends Record<string, unknown>>(
   if (!next.driveType && epa.driveType) next.driveType = epa.driveType;
   if (!next.fuelTypePrimary && epa.fuelTypePrimary)
     next.fuelTypePrimary = epa.fuelTypePrimary;
-  if (!next.electrificationLevel && epa.electrificationLevel)
+  // When refreshing EPA, replace electrification so a prior Hybrid stamp
+  // (optional PowerBoost bleed) does not stick after the representative flips to gas.
+  if (overwrite) {
+    if (epa.electrificationLevel) {
+      next.electrificationLevel = epa.electrificationLevel;
+    } else {
+      delete next.electrificationLevel;
+    }
+  } else if (!next.electrificationLevel && epa.electrificationLevel) {
     next.electrificationLevel = epa.electrificationLevel;
+  }
   if (next.rangeMiles == null && epa.rangeMiles != null)
     next.rangeMiles = epa.rangeMiles;
 

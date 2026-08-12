@@ -8,6 +8,7 @@ import type {
   YearPerformance,
 } from "@/data/catalog";
 import { suggestTrimImageConfidence } from "@/lib/imageConfidence";
+import { trimLooksElectrified } from "@/lib/ownership";
 import { getCuratedYearVideo } from "@/lib/videos";
 import toyotaTrims from "@/data/trims/toyota.json";
 import toyotaImages from "@/data/trims/toyota-images.json";
@@ -197,6 +198,17 @@ function mergeTrimIntoSpecs(
   if (!next.driveType && trim.drivetrain) next.driveType = trim.drivetrain;
   if (!next.curbWeightLb && trim.curbWeightLb != null)
     next.curbWeightLb = String(trim.curbWeightLb);
+
+  // Default gas trims must not inherit year-level Hybrid/PHEV stamps left by
+  // optional powertrains (F-150 XLT + PowerBoost EPA bleed).
+  if (
+    !trimLooksElectrified(trim) &&
+    next.electrificationLevel &&
+    /hybrid|phev|plug|bev|electric/i.test(next.electrificationLevel)
+  ) {
+    delete next.electrificationLevel;
+  }
+
   return next;
 }
 

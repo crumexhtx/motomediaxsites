@@ -5,6 +5,7 @@ import {
   looksTruncatedMidSentence,
   truncateAtSentence,
   yearSeoDescription,
+  yearSeoTitle,
 } from "@/lib/text";
 
 describe("text helpers", () => {
@@ -55,5 +56,29 @@ describe("text helpers", () => {
       description,
     });
     expect(enriched).toBe(seo);
+  });
+
+  it("does not collapse meta to only the recall sentence", () => {
+    const seo = yearSeoDescription({
+      year: 2026,
+      makeName: "Ford",
+      modelName: "F-150",
+      summary:
+        "2026 Ford F-150 — The Ford F-Series is a series of light-duty trucks marketed and sold by Ford Motor Company.",
+      description:
+        "The 2026 Ford F-150 continues this nameplate in the MotoMediaX catalog. The Ford F-Series is a series of light-duty trucks.",
+      recallCount: 1,
+    });
+    expect(seo).toMatch(/2026 Ford F-150/i);
+    expect(seo).toMatch(/NHTSA recall/i);
+    expect(seo).not.toBe("1 NHTSA recall on record.");
+  });
+
+  it("builds a specific year SEO title", () => {
+    expect(
+      yearSeoTitle({ year: 2026, makeName: "Ford", modelName: "F-150" }),
+    ).toBe(
+      "2026 Ford F-150: Recalls, Specs & Used Price Guide | MotoMediaX",
+    );
   });
 });

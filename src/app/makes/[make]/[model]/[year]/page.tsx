@@ -35,7 +35,7 @@ import {
   breadcrumbJsonLd,
   yearPageJsonLd,
 } from "@/lib/seo";
-import { enrichYearSummary, yearSeoDescription } from "@/lib/text";
+import { enrichYearSummary, yearSeoDescription, yearSeoTitle } from "@/lib/text";
 import { diffYears, findPreviousYear } from "@/lib/yearDiff";
 
 type Props = {
@@ -71,7 +71,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!found) return { title: "Not found" };
 
   const { make, model, year } = found;
-  const title = `${year.year} ${make.name} ${model.name} photos`;
+  const title = yearSeoTitle({
+    year: year.year,
+    makeName: make.name,
+    modelName: model.name,
+  });
   const description = yearSeoDescription({
     year: year.year,
     makeName: make.name,

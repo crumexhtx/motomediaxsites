@@ -379,6 +379,9 @@
           "torqueLbFt": 400,
           "transmission": "10-speed automatic",
           "drivetrain": "4WD",
+          "mpgCity": 19,
+          "mpgHighway": 24,
+          "mpgCombined": 21,
           "seatingCapacity": 5,
           "towingLb": 8200
         },

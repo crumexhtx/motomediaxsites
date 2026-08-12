@@ -97,6 +97,78 @@ describe("EPA lookup", () => {
     );
     expect(merged?.mpgCombined).toBe(51);
   });
+
+  it("overwrite clears a prior Hybrid stamp when the representative is gas", () => {
+    const merged = mergeEpaIntoSpecs(
+      {
+        mpgCombined: 23,
+        electrificationLevel: "Hybrid",
+      },
+      {
+        mpgCity: 19,
+        mpgHighway: 24,
+        mpgCombined: 21,
+        fuelTypePrimary: "Regular Gasoline",
+        variantCount: 4,
+        variants: ["F150"],
+      },
+      { overwriteMpg: true },
+    );
+    expect(merged?.mpgCombined).toBe(21);
+    expect(merged?.electrificationLevel).toBeUndefined();
+  });
+});
+
+describe("EPA optional-hybrid model years", () => {
+  const index: EpaIndex = {
+    byMakeYear: new Map([
+      [
+        "ford|2026",
+        [
+          row({
+            make: "Ford",
+            year: 2026,
+            model: "F150 Pickup 2WD",
+            baseModel: "F150 Pickup",
+            cityMpg: 20,
+            highwayMpg: 26,
+            combinedMpg: 22,
+            fuelType: "Regular Gasoline",
+            drive: "Rear-Wheel Drive",
+          }),
+          row({
+            make: "Ford",
+            year: 2026,
+            model: "F150 Pickup 4WD FFV",
+            baseModel: "F150 Pickup",
+            cityMpg: 19,
+            highwayMpg: 24,
+            combinedMpg: 21,
+            fuelType: "Regular Gasoline",
+            drive: "Part-time 4-Wheel Drive",
+          }),
+          row({
+            make: "Ford",
+            year: 2026,
+            model: "F150 Pickup 4WD PowerBoost Hybrid",
+            baseModel: "F150 Pickup",
+            cityMpg: 23,
+            highwayMpg: 23,
+            combinedMpg: 23,
+            atvType: "Hybrid",
+            fuelType: "Regular Gasoline",
+            drive: "Part-time 4-Wheel Drive",
+          }),
+        ],
+      ],
+    ]),
+  };
+
+  it("does not stamp F-150 as Hybrid when gas configs exist", () => {
+    const s = lookupEpaSummary(index, "Ford", "F-150", 2026);
+    expect(s?.electrificationLevel).toBeUndefined();
+    expect(s?.mpgCombined).toBe(22);
+  });
 });
 
 describe("EPA performance-variant matching", () => {

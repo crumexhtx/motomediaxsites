@@ -5,6 +5,7 @@ import type { TrimSpec, VehicleSpecs, YearPerformance } from "@/data/catalog";
 import {
   estimateOwnershipCost,
   formatUsd,
+  trimLooksElectrified,
 } from "@/lib/ownership";
 
 type Props = {
@@ -139,12 +140,35 @@ export function YearDetailPanel({
 
   const heroHasStats = hasAny(hp, torque, zeroSixty, mpg, range);
 
+  const trimElectrification = trim
+    ? trimLooksElectrified(trim)
+      ? /\bphev\b|plug[- ]?in/i.test(
+          [trim.name, trim.engine, trim.aspiration].filter(Boolean).join(" "),
+        )
+        ? "Plug-in Hybrid"
+        : /electric|bev/i.test(
+              [trim.name, trim.engine, trim.aspiration]
+                .filter(Boolean)
+                .join(" "),
+            ) && !/hybrid/i.test([trim.name, trim.engine].filter(Boolean).join(" "))
+          ? "BEV"
+          : "Hybrid"
+      : null
+    : undefined;
+  // Prefer trim-derived electrification so optional hybrids (PowerBoost) do not
+  // stamp gas defaults (XLT) as Hybrid. Fall back to year specs only when the
+  // trim does not contradict them.
+  const electrificationLevel =
+    trimElectrification === null
+      ? undefined
+      : (trimElectrification ?? specs?.electrificationLevel);
+
   const ownership = estimateOwnershipCost({
     mpgCombined: trim?.mpgCombined ?? specs?.mpgCombined,
     rangeMiles: trim?.rangeMiles ?? specs?.rangeMiles,
     batteryKwh: trim?.batteryKwh ?? specs?.batteryKwh,
     fuelTypePrimary: specs?.fuelTypePrimary,
-    electrificationLevel: specs?.electrificationLevel,
+    electrificationLevel,
     engine: trim?.engine,
     aspiration: trim?.aspiration,
   });
@@ -156,7 +180,7 @@ export function YearDetailPanel({
     trim?.drivetrain ?? specs?.driveType,
     fmt(trim?.redlineRpm, " rpm"),
     specs?.fuelTypePrimary,
-    specs?.electrificationLevel,
+    electrificationLevel,
   );
 
   const dimHas = hasAny(
@@ -309,7 +333,7 @@ export function YearDetailPanel({
             />
             <SpecRow
               label="Electrification"
-              value={specs?.electrificationLevel ?? null}
+              value={electrificationLevel ?? null}
             />
           </dl>
         </Section>
