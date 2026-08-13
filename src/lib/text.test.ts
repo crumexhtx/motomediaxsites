@@ -3,6 +3,7 @@ import {
   enrichYearSummary,
   isThinYearSummary,
   looksTruncatedMidSentence,
+  repairUtf8Mojibake,
   truncateAtSentence,
   yearSeoDescription,
   yearSeoTitle,
@@ -79,6 +80,20 @@ describe("text helpers", () => {
       yearSeoTitle({ year: 2026, makeName: "Ford", modelName: "F-150" }),
     ).toBe(
       "2026 Ford F-150: Recalls, Specs & Used Price Guide | MotoMediaX",
+    );
+  });
+
+  it("repairs ??? mojibake from corrupted UTF-8 dashes", () => {
+    expect(
+      repairUtf8Mojibake(
+        "2026 Toyota Camry ??? The Toyota Camry is an automobile.",
+      ),
+    ).toBe("2026 Toyota Camry — The Toyota Camry is an automobile.");
+    expect(
+      repairUtf8Mojibake("classification (wide-body)???although the two"),
+    ).toBe("classification (wide-body)—although the two");
+    expect(repairUtf8Mojibake("Federal Motor Vehicle Safety???")).toBe(
+      "Federal Motor Vehicle Safety…",
     );
   });
 });

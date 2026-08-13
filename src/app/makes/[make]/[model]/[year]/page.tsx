@@ -238,11 +238,9 @@ export default async function YearPage({ params }: Props) {
             </h2>
             <p className="mt-3 text-base leading-relaxed text-muted md:text-lg">
               {year.year === yearsSorted[0]?.year
-                ? `The ${year.year} ${make.name} ${model.name} is the newest year in our catalog — start here for current specs, then check older years if you want to save money.`
-                : `The ${year.year} ${make.name} ${model.name} sits ${yearsSorted[0] ? `${yearsSorted[0].year - year.year} model year${yearsSorted[0].year - year.year === 1 ? "" : "s"} behind the newest ${yearsSorted[0].year}` : "in our catalog"} — use the snapshot above for price and recall context before reading the full overview.`}
-            </p>
-            <p className="mt-3 text-base leading-relaxed text-muted md:text-lg">
-              {year.description}
+                ? `The ${year.year} ${make.name} ${model.name} is the newest year in our catalog — start here for current specs, then check older years if you want to save money. `
+                : `The ${year.year} ${make.name} ${model.name} sits ${yearsSorted[0] ? `${yearsSorted[0].year - year.year} model year${yearsSorted[0].year - year.year === 1 ? "" : "s"} behind the newest ${yearsSorted[0].year}` : "in our catalog"} — use the snapshot above for price and recall context before reading the full overview. `}
+              {year.description.replace(/\s+/g, " ").trim()}
             </p>
             {year.highlights && year.highlights.length > 0 ? (
               <ul className="mt-5 space-y-2 text-sm text-muted md:text-base">

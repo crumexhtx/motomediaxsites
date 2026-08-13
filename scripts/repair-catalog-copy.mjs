@@ -11,6 +11,7 @@ import { fileURLToPath } from "node:url";
 import {
   enrichYearSummary,
   looksTruncatedMidSentence,
+  repairUtf8Mojibake,
   truncateAtSentence,
 } from "../src/lib/text.ts";
 
@@ -23,8 +24,17 @@ const discontinued = JSON.parse(fs.readFileSync(DISCONTINUED_PATH, "utf8"));
 
 let blurbsFixed = 0;
 let summariesFixed = 0;
+let mojibakeFixed = 0;
+
+function fixMojibakeField(value) {
+  if (typeof value !== "string" || !value.includes("???")) return value;
+  const next = repairUtf8Mojibake(value);
+  if (next !== value) mojibakeFixed += 1;
+  return next;
+}
 
 for (const make of catalog) {
+  make.blurb = fixMojibakeField(make.blurb);
   const nextBlurb = truncateAtSentence(make.blurb || "", 400);
   if (nextBlurb && nextBlurb !== make.blurb) {
     make.blurb = nextBlurb;
@@ -37,7 +47,19 @@ for (const make of catalog) {
   for (const model of make.models) {
     const key = `${make.slug}/${model.slug}`;
     const disc = discontinued[key];
+    model.tagline = fixMojibakeField(model.tagline);
     for (const year of model.years) {
+      year.summary = fixMojibakeField(year.summary);
+      year.description = fixMojibakeField(year.description);
+      if (Array.isArray(year.highlights)) {
+        year.highlights = year.highlights.map((h) => fixMojibakeField(h));
+      }
+      if (Array.isArray(year.recalls)) {
+        for (const recall of year.recalls) {
+          recall.summary = fixMojibakeField(recall.summary);
+          recall.component = fixMojibakeField(recall.component);
+        }
+      }
       if (disc && disc.banner !== false && year.year === disc.lastYear) {
         const finalSummary = `${year.year} ${make.name} ${model.name} — final U.S. catalog year.`;
         if (year.summary !== finalSummary) {
@@ -61,7 +83,7 @@ for (const make of catalog) {
   }
 }
 
-fs.writeFileSync(CATALOG_PATH, `${JSON.stringify(catalog)}\n`);
+fs.writeFileSync(CATALOG_PATH, `${JSON.stringify(catalog, null, 2)}\n`);
 console.log(
-  `Repaired catalog copy: ${blurbsFixed} blurbs, ${summariesFixed} year summaries`,
+  `Repaired catalog copy: ${blurbsFixed} blurbs, ${summariesFixed} year summaries, ${mojibakeFixed} mojibake fields`,
 );

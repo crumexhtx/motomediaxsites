@@ -184,3 +184,17 @@ export function looksTruncatedMidSentence(text: string): boolean {
   if (/[a-zA-Z,;:]$/.test(t)) return true;
   return false;
 }
+
+/**
+ * Repair UTF-8 mojibake where em-dash / ellipsis bytes were replaced with `???`
+ * (common when a catalog JSON is piped through a non-UTF-8 shell on Windows).
+ */
+export function repairUtf8Mojibake(text: string): string {
+  if (!text.includes("???")) return text;
+  return text
+    .replace(/\)\?\?\?(?=\S)/g, ")—")
+    .replace(/\?\?\?\s*$/g, "…")
+    .replace(/\?\?\?/g, "—")
+    .replace(/\s+/g, " ")
+    .trim();
+}

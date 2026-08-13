@@ -127,7 +127,7 @@ export function YearExperience({
             {title}
           </h1>
           <p className="mt-3 max-w-2xl text-base text-white/80 md:text-lg">
-            {summary}
+            {summary.replace(/\s+/g, " ").trim()}
           </p>
           {trim ? (
             <p className="mt-2 text-sm text-white/65">Trim: {trim.name}</p>

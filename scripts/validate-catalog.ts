@@ -104,6 +104,15 @@ for (const make of catalog) {
       if (isBlankCopy(year.summary) || isBlankCopy(year.description)) {
         fail(`${make.name} ${model.name} ${year.year}: missing copy`);
       }
+      if (
+        year.summary?.includes("???") ||
+        year.description?.includes("???") ||
+        year.recalls?.some((r) => r.summary?.includes("???"))
+      ) {
+        fail(
+          `${make.name} ${model.name} ${year.year}: UTF-8 mojibake (???) — restore catalog or run pnpm repair:copy`,
+        );
+      }
       if (/—\s*offered in the U\.S\. market\.?$/i.test(year.summary ?? "")) {
         fail(
           `${make.name} ${model.name} ${year.year}: thin summary stub — run pnpm repair:copy`,
