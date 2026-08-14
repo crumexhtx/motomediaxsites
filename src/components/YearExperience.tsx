@@ -151,10 +151,12 @@ export function YearExperience({
         {discontinuedBanner}
 
         {galleryImages.length > 0 || video ? (
-          <div className="mb-12 grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start">
+          <div className="mb-12 grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_414px] lg:items-start">
             <div className="min-w-0">{safetyPanel}</div>
 
             <div className="min-w-0 lg:sticky lg:top-24">
+              {video ? <YearVideoEmbed video={video} /> : null}
+
               {galleryImages.length > 0 ? (
                 <section className="mb-8">
                   <h2 className="mb-4 font-display text-2xl tracking-tight">
@@ -163,8 +165,6 @@ export function YearExperience({
                   <Gallery images={galleryImages} compact />
                 </section>
               ) : null}
-
-              {video ? <YearVideoEmbed video={video} /> : null}
             </div>
           </div>
         ) : (
