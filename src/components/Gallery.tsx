@@ -4,7 +4,13 @@ import { CatalogImage } from "@/components/CatalogImage";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import type { GalleryImage } from "@/data/catalog";
 
-export function Gallery({ images }: { images: GalleryImage[] }) {
+type Props = {
+  images: GalleryImage[];
+  /** Fixed 2-column grid for narrow layouts (e.g. a sidebar column), instead of scaling up to 3 columns at desktop widths. */
+  compact?: boolean;
+};
+
+export function Gallery({ images, compact = false }: Props) {
   const [active, setActive] = useState<number | null>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
@@ -87,7 +93,9 @@ export function Gallery({ images }: { images: GalleryImage[] }) {
 
   return (
     <>
-      <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      <ul
+        className={`grid gap-3 ${compact ? "grid-cols-2" : "sm:grid-cols-2 lg:grid-cols-3"}`}
+      >
         {images.map((image, index) => (
           <li key={`${image.src}-${index}`}>
             <button
@@ -100,7 +108,11 @@ export function Gallery({ images }: { images: GalleryImage[] }) {
                 src={image.src}
                 alt={image.alt}
                 fill
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                sizes={
+                  compact
+                    ? "(max-width: 1024px) 45vw, 170px"
+                    : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                }
                 className="object-cover transition duration-500 group-hover:scale-[1.03]"
               />
             </button>
