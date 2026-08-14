@@ -146,6 +146,75 @@ export function getLatestEntries(limit = 8) {
     .slice(0, limit);
 }
 
+export type HomeMixedEntry = {
+  type: "make" | "model" | "year";
+  key: string;
+  href: string;
+  title: string;
+  subtitle: string;
+  image: GalleryImage;
+};
+
+/** Model with the deepest catalog coverage for a make — used as its featured model. */
+function featuredModel(make: MakeEntry): ModelEntry | undefined {
+  if (!make.models.length) return undefined;
+  return [...make.models].sort((a, b) => b.years.length - a.years.length)[0];
+}
+
+/**
+ * Interleaved makes/models/years for the homepage grid — no single card
+ * type is more "primary" than another, so mix them (make, model, year,
+ * make, model, year, ...) instead of three homogeneous rows.
+ */
+export function getHomeMixedEntries(limit = 12): HomeMixedEntry[] {
+  const perType = Math.ceil(limit / 3);
+  const allMakes = getAllMakes();
+
+  const makeEntries: HomeMixedEntry[] = allMakes.slice(0, perType).map((make) => ({
+    type: "make",
+    key: `make-${make.slug}`,
+    href: makeHref(make.slug),
+    title: make.name,
+    subtitle: `${make.country} · ${make.models.length} model${make.models.length === 1 ? "" : "s"}`,
+    image: makeCoverImage(make),
+  }));
+
+  const modelEntries: HomeMixedEntry[] = allMakes
+    .slice(perType, perType * 2)
+    .flatMap((make) => {
+      const model = featuredModel(make);
+      if (!model) return [];
+      return [
+        {
+          type: "model" as const,
+          key: `model-${make.slug}-${model.slug}`,
+          href: modelHref(make.slug, model.slug),
+          title: `${make.name} ${model.name}`,
+          subtitle: model.tagline,
+          image: modelCardImage(make, model),
+        },
+      ];
+    });
+
+  const yearEntries: HomeMixedEntry[] = getLatestEntries(perType).map((entry) => ({
+    type: "year",
+    key: `year-${entry.href}`,
+    href: entry.href,
+    title: `${entry.make.name} ${entry.model.name}`,
+    subtitle: `${entry.year.year} model year`,
+    image: entry.image,
+  }));
+
+  const mixed: HomeMixedEntry[] = [];
+  const rows = Math.max(makeEntries.length, modelEntries.length, yearEntries.length);
+  for (let i = 0; i < rows; i++) {
+    if (makeEntries[i]) mixed.push(makeEntries[i]);
+    if (modelEntries[i]) mixed.push(modelEntries[i]);
+    if (yearEntries[i]) mixed.push(yearEntries[i]);
+  }
+  return mixed.slice(0, limit);
+}
+
 /** Prefer a specific model for the landing hero when present. */
 export function getLandingHeroImage(): GalleryImage | undefined {
   const preferred = getYear("gmc", "hummer-ev", "2025") ?? getYear("gmc", "hummer-ev", "2024") ?? getYear("gmc", "hummer-ev", "2026");
