@@ -1,19 +1,16 @@
 ﻿import Link from "next/link";
 import { HeroBackdrop } from "@/components/HeroBackdrop";
-import { CatalogImage } from "@/components/CatalogImage";
+import { HomeMixedGrid } from "@/components/HomeMixedGrid";
 import { LandingSearch } from "@/components/LandingSearch";
-import { MakeGrid } from "@/components/MakeGrid";
 import { SITE } from "@/data/catalog";
 import {
-  getAllMakes,
+  getHomeMixedEntries,
   getLandingHeroImage,
-  getLatestEntries,
   getRecentRecalls,
 } from "@/lib/catalog";
 
 export default function HomePage() {
-  const makes = getAllMakes().slice(0, 6);
-  const latest = getLatestEntries(6);
+  const mixedEntries = getHomeMixedEntries(12);
   const recentRecalls = getRecentRecalls(6);
   const hero = getLandingHeroImage();
   const backdropImages = hero ? [hero] : [];
@@ -115,74 +112,25 @@ export default function HomePage() {
         </section>
       ) : null}
 
-      <section className="relative overflow-hidden pb-16 pt-6 md:pb-20 md:pt-10">
+      <section className="relative overflow-hidden pb-20 pt-6 md:pb-24 md:pt-10">
         <div className="container-wide">
           <div className="mb-8 max-w-2xl">
             <h2 className="font-display text-3xl tracking-tight md:text-4xl">
-              Start with a make
+              Explore the catalog
             </h2>
             <p className="mt-2 text-muted">
-              Brand history, then model years with recalls, complaints, and
-              year-over-year changes.
+              Makes, models, and model years — open any of them for recalls,
+              year-over-year changes, photos, and specs.
             </p>
             <Link
               href="/makes"
               className="focus-ring mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition hover:gap-2.5"
             >
-              View all makes
+              Browse all makes
               <span aria-hidden="true">→</span>
             </Link>
           </div>
-          <MakeGrid makes={makes} />
-        </div>
-      </section>
-
-      <section className="relative overflow-hidden pb-20 pt-4 md:pt-8">
-        <div className="container-wide">
-          <div className="mb-8 max-w-2xl">
-            <h2 className="font-display text-3xl tracking-tight md:text-4xl">
-              Fresh from the catalog
-            </h2>
-            <p className="mt-2 text-muted">
-              Recently listed model years — open one for recalls, year-over-year
-              changes, photos, and specs.
-            </p>
-            <Link
-              href="/search"
-              className="focus-ring mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition hover:gap-2.5"
-            >
-              Search the catalog
-              <span aria-hidden="true">→</span>
-            </Link>
-          </div>
-          <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {latest.map((entry) => (
-              <li key={entry.href}>
-                <Link
-                  href={entry.href}
-                  className="focus-ring group block overflow-hidden rounded-xl border border-line bg-elevated transition hover:border-accent/40"
-                >
-                  <div className="relative aspect-[16/10] overflow-hidden">
-                    <CatalogImage
-                      src={entry.image.src}
-                      alt={entry.image.alt}
-                      fill
-                      sizes="(max-width: 640px) 100vw, 33vw"
-                      className="object-cover transition duration-500 group-hover:scale-[1.03]"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <p className="text-xs uppercase tracking-[0.14em] text-muted">
-                      {entry.year.year}
-                    </p>
-                    <p className="mt-1 font-display text-xl tracking-tight">
-                      {entry.make.name} {entry.model.name}
-                    </p>
-                  </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <HomeMixedGrid entries={mixedEntries} />
         </div>
       </section>
     </>
