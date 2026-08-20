@@ -17,6 +17,7 @@
     "enrich:pricing": "tsx scripts/enrich-pricing.ts",
     "enrich:nhtsa-recalls": "tsx scripts/enrich-nhtsa-recalls.ts",
     "enrich:nhtsa-complaints": "tsx scripts/enrich-nhtsa-complaints.ts",
+    "enrich:nhtsa-dims": "tsx scripts/enrich-nhtsa-dims.ts",
     "enrich:nhtsa-safety": "tsx scripts/enrich-nhtsa-recalls.ts -- --with-complaints",
     "recall:snapshot": "tsx scripts/recall-diff.ts snapshot",
     "recall:diff": "tsx scripts/recall-diff.ts compare",
