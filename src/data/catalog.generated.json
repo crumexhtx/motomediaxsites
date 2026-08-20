@@ -35,8 +35,8 @@
               {
                 "src": "/catalog/toyota--camry.jpg",
                 "alt": "2024 Toyota Camry",
-                "width": 1920,
-                "height": 1270
+                "width": 1600,
+                "height": 1058
               }
             ],
             "specs": {
@@ -150,8 +150,8 @@
               {
                 "src": "/catalog/toyota--camry.jpg",
                 "alt": "2025 Toyota Camry",
-                "width": 1920,
-                "height": 1270
+                "width": 1600,
+                "height": 1058
               }
             ],
             "specs": {
@@ -261,8 +261,8 @@
               {
                 "src": "/catalog/toyota--camry.jpg",
                 "alt": "2026 Toyota Camry",
-                "width": 1920,
-                "height": 1270
+                "width": 1600,
+                "height": 1058
               }
             ],
             "specs": {
@@ -378,8 +378,8 @@
               {
                 "src": "/catalog/toyota--corolla.jpg",
                 "alt": "2024 Toyota Corolla",
-                "width": 1920,
-                "height": 910
+                "width": 1600,
+                "height": 758
               }
             ],
             "specs": {
@@ -500,8 +500,8 @@
               {
                 "src": "/catalog/toyota--corolla.jpg",
                 "alt": "2025 Toyota Corolla",
-                "width": 1920,
-                "height": 910
+                "width": 1600,
+                "height": 758
               }
             ],
             "specs": {
@@ -606,8 +606,8 @@
               {
                 "src": "/catalog/toyota--corolla.jpg",
                 "alt": "2026 Toyota Corolla",
-                "width": 1920,
-                "height": 910
+                "width": 1600,
+                "height": 758
               }
             ],
             "specs": {
@@ -731,8 +731,8 @@
               {
                 "src": "/catalog/toyota--prius.jpg",
                 "alt": "2024 Toyota Prius",
-                "width": 1920,
-                "height": 1011
+                "width": 1600,
+                "height": 843
               }
             ],
             "specs": {
@@ -843,8 +843,8 @@
               {
                 "src": "/catalog/toyota--prius.jpg",
                 "alt": "2025 Toyota Prius",
-                "width": 1920,
-                "height": 1011
+                "width": 1600,
+                "height": 843
               }
             ],
             "specs": {
@@ -962,8 +962,8 @@
               {
                 "src": "/catalog/toyota--prius.jpg",
                 "alt": "2026 Toyota Prius",
-                "width": 1920,
-                "height": 1011
+                "width": 1600,
+                "height": 843
               }
             ],
             "specs": {
@@ -1066,8 +1066,8 @@
               {
                 "src": "/catalog/toyota--4runner.jpg",
                 "alt": "2024 Toyota 4Runner",
-                "width": 1920,
-                "height": 1280
+                "width": 1600,
+                "height": 1067
               }
             ],
             "specs": {
@@ -1177,8 +1177,8 @@
               {
                 "src": "/catalog/toyota--4runner.jpg",
                 "alt": "2025 Toyota 4Runner",
-                "width": 1920,
-                "height": 1280
+                "width": 1600,
+                "height": 1067
               }
             ],
             "specs": {
@@ -1300,8 +1300,8 @@
               {
                 "src": "/catalog/toyota--4runner.jpg",
                 "alt": "2026 Toyota 4Runner",
-                "width": 1920,
-                "height": 1280
+                "width": 1600,
+                "height": 1067
               }
             ],
             "specs": {
@@ -1417,8 +1417,8 @@
               {
                 "src": "/catalog/toyota--rav4.jpg",
                 "alt": "2024 Toyota RAV4",
-                "width": 1920,
-                "height": 1149
+                "width": 1600,
+                "height": 958
               }
             ],
             "specs": {
@@ -1549,8 +1549,8 @@
               {
                 "src": "/catalog/toyota--rav4.jpg",
                 "alt": "2025 Toyota RAV4",
-                "width": 1920,
-                "height": 1149
+                "width": 1600,
+                "height": 958
               }
             ],
             "specs": {
@@ -1675,8 +1675,8 @@
               {
                 "src": "/catalog/toyota--rav4.jpg",
                 "alt": "2026 Toyota RAV4",
-                "width": 1920,
-                "height": 1149
+                "width": 1600,
+                "height": 958
               }
             ],
             "specs": {
@@ -1791,8 +1791,8 @@
               {
                 "src": "/catalog/toyota--highlander.jpg",
                 "alt": "2024 Toyota Highlander",
-                "width": 1920,
-                "height": 1093
+                "width": 1600,
+                "height": 911
               }
             ],
             "specs": {
@@ -1902,8 +1902,8 @@
               {
                 "src": "/catalog/toyota--highlander.jpg",
                 "alt": "2025 Toyota Highlander",
-                "width": 1920,
-                "height": 1093
+                "width": 1600,
+                "height": 911
               }
             ],
             "specs": {
@@ -2025,8 +2025,8 @@
               {
                 "src": "/catalog/toyota--highlander.jpg",
                 "alt": "2026 Toyota Highlander",
-                "width": 1920,
-                "height": 1093
+                "width": 1600,
+                "height": 911
               }
             ],
             "specs": {
@@ -2117,8 +2117,8 @@
               {
                 "src": "/catalog/toyota--tacoma.jpg",
                 "alt": "2024 Toyota Tacoma",
-                "width": 1920,
-                "height": 1137
+                "width": 1600,
+                "height": 948
               }
             ],
             "specs": {
@@ -2256,8 +2256,8 @@
               {
                 "src": "/catalog/toyota--tacoma.jpg",
                 "alt": "2025 Toyota Tacoma",
-                "width": 1920,
-                "height": 1137
+                "width": 1600,
+                "height": 948
               }
             ],
             "specs": {
@@ -2393,8 +2393,8 @@
               {
                 "src": "/catalog/toyota--tacoma.jpg",
                 "alt": "2026 Toyota Tacoma",
-                "width": 1920,
-                "height": 1137
+                "width": 1600,
+                "height": 948
               }
             ],
             "specs": {
@@ -2498,8 +2498,8 @@
               {
                 "src": "/catalog/toyota--tundra.jpg",
                 "alt": "2024 Toyota Tundra",
-                "width": 1920,
-                "height": 1078
+                "width": 1600,
+                "height": 898
               }
             ],
             "specs": {
@@ -2671,8 +2671,8 @@
               {
                 "src": "/catalog/toyota--tundra.jpg",
                 "alt": "2025 Toyota Tundra",
-                "width": 1920,
-                "height": 1078
+                "width": 1600,
+                "height": 898
               }
             ],
             "specs": {
@@ -2808,8 +2808,8 @@
               {
                 "src": "/catalog/toyota--tundra.jpg",
                 "alt": "2026 Toyota Tundra",
-                "width": 1920,
-                "height": 1078
+                "width": 1600,
+                "height": 898
               }
             ],
             "specs": {
@@ -2935,8 +2935,8 @@
               {
                 "src": "/catalog/toyota--supra.jpg",
                 "alt": "2024 Toyota Supra",
-                "width": 1920,
-                "height": 1023
+                "width": 1600,
+                "height": 853
               }
             ],
             "specs": {
@@ -3005,8 +3005,8 @@
               {
                 "src": "/catalog/toyota--supra.jpg",
                 "alt": "2025 Toyota Supra",
-                "width": 1920,
-                "height": 1023
+                "width": 1600,
+                "height": 853
               }
             ],
             "specs": {
@@ -3075,8 +3075,8 @@
               {
                 "src": "/catalog/toyota--supra.jpg",
                 "alt": "2026 Toyota Supra",
-                "width": 1920,
-                "height": 1023
+                "width": 1600,
+                "height": 853
               }
             ],
             "specs": {
@@ -3151,8 +3151,8 @@
               {
                 "src": "/catalog/toyota--gr86.jpg",
                 "alt": "2024 Toyota GR86",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -3233,8 +3233,8 @@
               {
                 "src": "/catalog/toyota--gr86.jpg",
                 "alt": "2025 Toyota GR86",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -3305,8 +3305,8 @@
               {
                 "src": "/catalog/toyota--gr86.jpg",
                 "alt": "2026 Toyota GR86",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -3379,8 +3379,8 @@
               {
                 "src": "/catalog/toyota--gr-corolla.jpg",
                 "alt": "2024 Toyota GR Corolla",
-                "width": 1920,
-                "height": 1351
+                "width": 1600,
+                "height": 1126
               }
             ],
             "specs": {
@@ -3472,8 +3472,8 @@
               {
                 "src": "/catalog/toyota--gr-corolla.jpg",
                 "alt": "2025 Toyota GR Corolla",
-                "width": 1920,
-                "height": 1351
+                "width": 1600,
+                "height": 1126
               }
             ],
             "specs": {
@@ -3569,8 +3569,8 @@
               {
                 "src": "/catalog/toyota--gr-corolla.jpg",
                 "alt": "2026 Toyota GR Corolla",
-                "width": 1920,
-                "height": 1351
+                "width": 1600,
+                "height": 1126
               }
             ],
             "specs": {
@@ -3680,8 +3680,8 @@
               {
                 "src": "/catalog/toyota--land-cruiser.jpg",
                 "alt": "2024 Toyota Land Cruiser",
-                "width": 1920,
-                "height": 1136
+                "width": 1600,
+                "height": 947
               }
             ],
             "specs": {
@@ -3788,8 +3788,8 @@
               {
                 "src": "/catalog/toyota--land-cruiser.jpg",
                 "alt": "2025 Toyota Land Cruiser",
-                "width": 1920,
-                "height": 1136
+                "width": 1600,
+                "height": 947
               }
             ],
             "specs": {
@@ -3890,8 +3890,8 @@
               {
                 "src": "/catalog/toyota--land-cruiser.jpg",
                 "alt": "2026 Toyota Land Cruiser",
-                "width": 1920,
-                "height": 1136
+                "width": 1600,
+                "height": 947
               }
             ],
             "specs": {
@@ -6042,7 +6042,7 @@
                 "src": "/catalog/ford--focus.jpg",
                 "alt": "2018 Ford Focus",
                 "width": 1280,
-                "height": 804
+                "height": 853
               }
             ],
             "specs": {
@@ -7591,8 +7591,8 @@
               {
                 "src": "/catalog/chevrolet--corvette.jpg",
                 "alt": "2024 Chevrolet Corvette",
-                "width": 1920,
-                "height": 1002
+                "width": 1600,
+                "height": 834
               }
             ],
             "specs": {
@@ -7700,8 +7700,8 @@
               {
                 "src": "/catalog/chevrolet--corvette.jpg",
                 "alt": "2025 Chevrolet Corvette",
-                "width": 1920,
-                "height": 1002
+                "width": 1600,
+                "height": 834
               }
             ],
             "specs": {
@@ -7810,8 +7810,8 @@
               {
                 "src": "/catalog/chevrolet--corvette.jpg",
                 "alt": "2026 Chevrolet Corvette",
-                "width": 1920,
-                "height": 1002
+                "width": 1600,
+                "height": 834
               }
             ],
             "specs": {
@@ -7888,8 +7888,8 @@
               {
                 "src": "/catalog/chevrolet--camaro.jpg",
                 "alt": "2024 Chevrolet Camaro",
-                "width": 1920,
-                "height": 1105
+                "width": 1600,
+                "height": 825
               }
             ],
             "specs": {
@@ -7964,8 +7964,8 @@
               {
                 "src": "/catalog/chevrolet--silverado-v2.jpg",
                 "alt": "2024 Chevrolet Silverado",
-                "width": 1920,
-                "height": 1231
+                "width": 1600,
+                "height": 1026
               }
             ],
             "specs": {
@@ -8072,8 +8072,8 @@
               {
                 "src": "/catalog/chevrolet--silverado-v2.jpg",
                 "alt": "2025 Chevrolet Silverado",
-                "width": 1920,
-                "height": 1231
+                "width": 1600,
+                "height": 1026
               }
             ],
             "specs": {
@@ -8156,8 +8156,8 @@
               {
                 "src": "/catalog/chevrolet--silverado-v2.jpg",
                 "alt": "2026 Chevrolet Silverado",
-                "width": 1920,
-                "height": 1231
+                "width": 1600,
+                "height": 1026
               }
             ],
             "specs": {
@@ -8263,8 +8263,8 @@
               {
                 "src": "/catalog/chevrolet--tahoe-v2.jpg",
                 "alt": "2024 Chevrolet Tahoe",
-                "width": 1920,
-                "height": 1074
+                "width": 1600,
+                "height": 895
               }
             ],
             "specs": {
@@ -8385,8 +8385,8 @@
               {
                 "src": "/catalog/chevrolet--tahoe-v2.jpg",
                 "alt": "2025 Chevrolet Tahoe",
-                "width": 1920,
-                "height": 1074
+                "width": 1600,
+                "height": 895
               }
             ],
             "specs": {
@@ -8495,8 +8495,8 @@
               {
                 "src": "/catalog/chevrolet--tahoe-v2.jpg",
                 "alt": "2026 Chevrolet Tahoe",
-                "width": 1920,
-                "height": 1074
+                "width": 1600,
+                "height": 895
               }
             ],
             "specs": {
@@ -8624,8 +8624,8 @@
               {
                 "src": "/catalog/chevrolet--suburban.jpg",
                 "alt": "2024 Chevrolet Suburban",
-                "width": 1920,
-                "height": 1320
+                "width": 1600,
+                "height": 1100
               }
             ],
             "specs": {
@@ -8734,8 +8734,8 @@
               {
                 "src": "/catalog/chevrolet--suburban.jpg",
                 "alt": "2025 Chevrolet Suburban",
-                "width": 1920,
-                "height": 1320
+                "width": 1600,
+                "height": 1100
               }
             ],
             "specs": {
@@ -8837,8 +8837,8 @@
               {
                 "src": "/catalog/chevrolet--suburban.jpg",
                 "alt": "2026 Chevrolet Suburban",
-                "width": 1920,
-                "height": 1320
+                "width": 1600,
+                "height": 1100
               }
             ],
             "specs": {
@@ -8929,8 +8929,8 @@
               {
                 "src": "/catalog/chevrolet--equinox.jpg",
                 "alt": "2024 Chevrolet Equinox",
-                "width": 1920,
-                "height": 845
+                "width": 1600,
+                "height": 948
               }
             ],
             "specs": {
@@ -9034,8 +9034,8 @@
               {
                 "src": "/catalog/chevrolet--equinox.jpg",
                 "alt": "2025 Chevrolet Equinox",
-                "width": 1920,
-                "height": 845
+                "width": 1600,
+                "height": 948
               }
             ],
             "specs": {
@@ -9133,8 +9133,8 @@
               {
                 "src": "/catalog/chevrolet--equinox.jpg",
                 "alt": "2026 Chevrolet Equinox",
-                "width": 1920,
-                "height": 845
+                "width": 1600,
+                "height": 948
               }
             ],
             "specs": {
@@ -9252,8 +9252,8 @@
               {
                 "src": "/catalog/chevrolet--malibu-v2.jpg",
                 "alt": "2024 Chevrolet Malibu",
-                "width": 1920,
-                "height": 1047
+                "width": 1600,
+                "height": 873
               }
             ],
             "specs": {
@@ -9367,8 +9367,8 @@
               {
                 "src": "/catalog/chevrolet--malibu-v2.jpg",
                 "alt": "2025 Chevrolet Malibu",
-                "width": 1920,
-                "height": 1047
+                "width": 1600,
+                "height": 873
               }
             ],
             "specs": {
@@ -9465,8 +9465,8 @@
               {
                 "src": "/catalog/chevrolet--volt.jpg",
                 "alt": "2019 Chevrolet Volt",
-                "width": 1920,
-                "height": 1207
+                "width": 1600,
+                "height": 1006
               }
             ],
             "specs": {
@@ -9571,8 +9571,8 @@
               {
                 "src": "/catalog/chevrolet--bolt-ev.jpg",
                 "alt": "2023 Chevrolet Bolt EV",
-                "width": 1920,
-                "height": 1280
+                "width": 1600,
+                "height": 1067
               }
             ],
             "sources": {
@@ -9684,8 +9684,8 @@
               {
                 "src": "/catalog/chevrolet--colorado.jpg",
                 "alt": "2024 Chevrolet Colorado",
-                "width": 1920,
-                "height": 1373
+                "width": 1600,
+                "height": 1144
               }
             ],
             "specs": {
@@ -9806,8 +9806,8 @@
               {
                 "src": "/catalog/chevrolet--colorado.jpg",
                 "alt": "2025 Chevrolet Colorado",
-                "width": 1920,
-                "height": 1373
+                "width": 1600,
+                "height": 1144
               }
             ],
             "specs": {
@@ -9916,8 +9916,8 @@
               {
                 "src": "/catalog/chevrolet--colorado.jpg",
                 "alt": "2026 Chevrolet Colorado",
-                "width": 1920,
-                "height": 1373
+                "width": 1600,
+                "height": 1144
               }
             ],
             "specs": {
@@ -10028,8 +10028,8 @@
               {
                 "src": "/catalog/chevrolet--cruze.jpg",
                 "alt": "2019 Chevrolet Cruze",
-                "width": 1920,
-                "height": 1360
+                "width": 1600,
+                "height": 678
               }
             ],
             "specs": {
@@ -10150,8 +10150,8 @@
               {
                 "src": "/catalog/honda--civic.jpg",
                 "alt": "2024 Honda Civic",
-                "width": 1920,
-                "height": 1027
+                "width": 1600,
+                "height": 856
               }
             ],
             "specs": {
@@ -10253,8 +10253,8 @@
               {
                 "src": "/catalog/honda--civic.jpg",
                 "alt": "2025 Honda Civic",
-                "width": 1920,
-                "height": 1027
+                "width": 1600,
+                "height": 856
               }
             ],
             "specs": {
@@ -10355,8 +10355,8 @@
               {
                 "src": "/catalog/honda--civic.jpg",
                 "alt": "2026 Honda Civic",
-                "width": 1920,
-                "height": 1027
+                "width": 1600,
+                "height": 856
               }
             ],
             "specs": {
@@ -10453,8 +10453,8 @@
               {
                 "src": "/catalog/honda--civic-type-r.jpg",
                 "alt": "2024 Honda Civic Type R",
-                "width": 1920,
-                "height": 1320
+                "width": 1600,
+                "height": 1100
               }
             ],
             "specs": {
@@ -10525,8 +10525,8 @@
               {
                 "src": "/catalog/honda--civic-type-r.jpg",
                 "alt": "2025 Honda Civic Type R",
-                "width": 1920,
-                "height": 1320
+                "width": 1600,
+                "height": 1100
               }
             ],
             "specs": {
@@ -10596,8 +10596,8 @@
               {
                 "src": "/catalog/honda--civic-type-r.jpg",
                 "alt": "2026 Honda Civic Type R",
-                "width": 1920,
-                "height": 1320
+                "width": 1600,
+                "height": 1100
               }
             ],
             "specs": {
@@ -10664,8 +10664,8 @@
               {
                 "src": "/catalog/honda--accord.jpg",
                 "alt": "2024 Honda Accord",
-                "width": 1920,
-                "height": 1168
+                "width": 1600,
+                "height": 973
               }
             ],
             "specs": {
@@ -10779,8 +10779,8 @@
               {
                 "src": "/catalog/honda--accord.jpg",
                 "alt": "2025 Honda Accord",
-                "width": 1920,
-                "height": 1168
+                "width": 1600,
+                "height": 973
               }
             ],
             "specs": {
@@ -10879,8 +10879,8 @@
               {
                 "src": "/catalog/honda--accord.jpg",
                 "alt": "2026 Honda Accord",
-                "width": 1920,
-                "height": 1168
+                "width": 1600,
+                "height": 973
               }
             ],
             "specs": {
@@ -10963,8 +10963,8 @@
               {
                 "src": "/catalog/honda--cr-v.jpg",
                 "alt": "2024 Honda CR-V",
-                "width": 1920,
-                "height": 1053
+                "width": 1600,
+                "height": 878
               }
             ],
             "specs": {
@@ -11079,8 +11079,8 @@
               {
                 "src": "/catalog/honda--cr-v.jpg",
                 "alt": "2025 Honda CR-V",
-                "width": 1920,
-                "height": 1053
+                "width": 1600,
+                "height": 878
               }
             ],
             "specs": {
@@ -11189,8 +11189,8 @@
               {
                 "src": "/catalog/honda--cr-v.jpg",
                 "alt": "2026 Honda CR-V",
-                "width": 1920,
-                "height": 1053
+                "width": 1600,
+                "height": 878
               }
             ],
             "specs": {
@@ -11304,8 +11304,8 @@
               {
                 "src": "/catalog/honda--pilot.jpg",
                 "alt": "2024 Honda Pilot",
-                "width": 1920,
-                "height": 1177
+                "width": 1600,
+                "height": 981
               }
             ],
             "specs": {
@@ -11444,8 +11444,8 @@
               {
                 "src": "/catalog/honda--pilot.jpg",
                 "alt": "2025 Honda Pilot",
-                "width": 1920,
-                "height": 1177
+                "width": 1600,
+                "height": 981
               }
             ],
             "specs": {
@@ -11572,8 +11572,8 @@
               {
                 "src": "/catalog/honda--pilot.jpg",
                 "alt": "2026 Honda Pilot",
-                "width": 1920,
-                "height": 1177
+                "width": 1600,
+                "height": 981
               }
             ],
             "specs": {
@@ -11654,8 +11654,8 @@
               {
                 "src": "/catalog/honda--s2000.jpg",
                 "alt": "2009 Honda S2000",
-                "width": 1920,
-                "height": 1415
+                "width": 1600,
+                "height": 1179
               }
             ],
             "sources": {
@@ -11715,8 +11715,8 @@
               {
                 "src": "/catalog/honda--odyssey.jpg",
                 "alt": "2024 Honda Odyssey",
-                "width": 1920,
-                "height": 1094
+                "width": 1600,
+                "height": 912
               }
             ],
             "specs": {
@@ -11836,8 +11836,8 @@
               {
                 "src": "/catalog/honda--odyssey.jpg",
                 "alt": "2025 Honda Odyssey",
-                "width": 1920,
-                "height": 1094
+                "width": 1600,
+                "height": 912
               }
             ],
             "specs": {
@@ -11950,8 +11950,8 @@
               {
                 "src": "/catalog/honda--odyssey.jpg",
                 "alt": "2026 Honda Odyssey",
-                "width": 1920,
-                "height": 1094
+                "width": 1600,
+                "height": 912
               }
             ],
             "specs": {
@@ -12071,8 +12071,8 @@
               {
                 "src": "/catalog/honda--element.jpg",
                 "alt": "2011 Honda Element",
-                "width": 1920,
-                "height": 1398
+                "width": 1600,
+                "height": 1165
               }
             ],
             "sources": {
@@ -12215,8 +12215,8 @@
               {
                 "src": "/catalog/honda--fit.jpg",
                 "alt": "2020 Honda Fit",
-                "width": 1920,
-                "height": 1060
+                "width": 1600,
+                "height": 883
               }
             ],
             "sources": {
@@ -12334,8 +12334,8 @@
               {
                 "src": "/catalog/honda--ridgeline.jpg",
                 "alt": "2024 Honda Ridgeline",
-                "width": 1920,
-                "height": 1009
+                "width": 1600,
+                "height": 841
               }
             ],
             "specs": {
@@ -12444,8 +12444,8 @@
               {
                 "src": "/catalog/honda--ridgeline.jpg",
                 "alt": "2025 Honda Ridgeline",
-                "width": 1920,
-                "height": 1009
+                "width": 1600,
+                "height": 841
               }
             ],
             "specs": {
@@ -12559,8 +12559,8 @@
               {
                 "src": "/catalog/honda--ridgeline.jpg",
                 "alt": "2026 Honda Ridgeline",
-                "width": 1920,
-                "height": 1009
+                "width": 1600,
+                "height": 841
               }
             ],
             "specs": {
@@ -12656,8 +12656,8 @@
               {
                 "src": "/catalog/honda--insight.jpg",
                 "alt": "2022 Honda Insight",
-                "width": 1920,
-                "height": 1317
+                "width": 1600,
+                "height": 1098
               }
             ],
             "sources": {
@@ -12779,8 +12779,8 @@
               {
                 "src": "/catalog/nissan--gt-r.jpg",
                 "alt": "2024 Nissan GT-R",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -12832,8 +12832,8 @@
               {
                 "src": "/catalog/nissan--gt-r.jpg",
                 "alt": "2025 Nissan GT-R",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -12885,8 +12885,8 @@
               {
                 "src": "/catalog/nissan--350z.jpg",
                 "alt": "2009 Nissan 350Z",
-                "width": 1920,
-                "height": 867
+                "width": 1600,
+                "height": 723
               }
             ],
             "sources": {
@@ -12957,8 +12957,8 @@
               {
                 "src": "/catalog/nissan--370z.jpg",
                 "alt": "2020 Nissan 370Z",
-                "width": 1920,
-                "height": 1370
+                "width": 1600,
+                "height": 1142
               }
             ],
             "sources": {
@@ -13015,8 +13015,8 @@
               {
                 "src": "/catalog/nissan--z.jpg",
                 "alt": "2024 Nissan Z",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -13094,8 +13094,8 @@
               {
                 "src": "/catalog/nissan--z.jpg",
                 "alt": "2025 Nissan Z",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -13153,8 +13153,8 @@
               {
                 "src": "/catalog/nissan--z.jpg",
                 "alt": "2026 Nissan Z",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -13229,8 +13229,8 @@
               {
                 "src": "/catalog/nissan--altima.jpg",
                 "alt": "2024 Nissan Altima",
-                "width": 1920,
-                "height": 1261
+                "width": 1600,
+                "height": 1051
               }
             ],
             "specs": {
@@ -13339,8 +13339,8 @@
               {
                 "src": "/catalog/nissan--altima.jpg",
                 "alt": "2025 Nissan Altima",
-                "width": 1920,
-                "height": 1261
+                "width": 1600,
+                "height": 1051
               }
             ],
             "specs": {
@@ -13440,8 +13440,8 @@
               {
                 "src": "/catalog/nissan--altima.jpg",
                 "alt": "2026 Nissan Altima",
-                "width": 1920,
-                "height": 1261
+                "width": 1600,
+                "height": 1051
               }
             ],
             "specs": {
@@ -13518,8 +13518,8 @@
               {
                 "src": "/catalog/nissan--maxima.jpg",
                 "alt": "2023 Nissan Maxima",
-                "width": 1920,
-                "height": 1203
+                "width": 1600,
+                "height": 1003
               }
             ],
             "specs": {
@@ -13587,8 +13587,8 @@
               {
                 "src": "/catalog/nissan--sentra.jpg",
                 "alt": "2024 Nissan Sentra",
-                "width": 1920,
-                "height": 1178
+                "width": 1600,
+                "height": 982
               }
             ],
             "specs": {
@@ -13708,8 +13708,8 @@
               {
                 "src": "/catalog/nissan--sentra.jpg",
                 "alt": "2025 Nissan Sentra",
-                "width": 1920,
-                "height": 1178
+                "width": 1600,
+                "height": 982
               }
             ],
             "specs": {
@@ -13830,8 +13830,8 @@
               {
                 "src": "/catalog/nissan--sentra.jpg",
                 "alt": "2026 Nissan Sentra",
-                "width": 1920,
-                "height": 1178
+                "width": 1600,
+                "height": 982
               }
             ],
             "specs": {
@@ -13942,8 +13942,8 @@
               {
                 "src": "/catalog/nissan--pathfinder.jpg",
                 "alt": "2024 Nissan Pathfinder",
-                "width": 1920,
-                "height": 1176
+                "width": 1600,
+                "height": 980
               }
             ],
             "specs": {
@@ -14058,8 +14058,8 @@
               {
                 "src": "/catalog/nissan--pathfinder.jpg",
                 "alt": "2025 Nissan Pathfinder",
-                "width": 1920,
-                "height": 1176
+                "width": 1600,
+                "height": 980
               }
             ],
             "specs": {
@@ -14167,8 +14167,8 @@
               {
                 "src": "/catalog/nissan--pathfinder.jpg",
                 "alt": "2026 Nissan Pathfinder",
-                "width": 1920,
-                "height": 1176
+                "width": 1600,
+                "height": 980
               }
             ],
             "specs": {
@@ -14269,8 +14269,8 @@
               {
                 "src": "/catalog/nissan--rogue.jpg",
                 "alt": "2024 Nissan Rogue",
-                "width": 1920,
-                "height": 1219
+                "width": 1600,
+                "height": 1016
               }
             ],
             "specs": {
@@ -14397,8 +14397,8 @@
               {
                 "src": "/catalog/nissan--rogue.jpg",
                 "alt": "2025 Nissan Rogue",
-                "width": 1920,
-                "height": 1219
+                "width": 1600,
+                "height": 1016
               }
             ],
             "specs": {
@@ -14518,8 +14518,8 @@
               {
                 "src": "/catalog/nissan--rogue.jpg",
                 "alt": "2026 Nissan Rogue",
-                "width": 1920,
-                "height": 1219
+                "width": 1600,
+                "height": 1016
               }
             ],
             "specs": {
@@ -14641,8 +14641,8 @@
               {
                 "src": "/catalog/nissan--frontier.jpg",
                 "alt": "2024 Nissan Frontier",
-                "width": 1920,
-                "height": 1035
+                "width": 1600,
+                "height": 863
               }
             ],
             "specs": {
@@ -14750,8 +14750,8 @@
               {
                 "src": "/catalog/nissan--frontier.jpg",
                 "alt": "2025 Nissan Frontier",
-                "width": 1920,
-                "height": 1035
+                "width": 1600,
+                "height": 863
               }
             ],
             "specs": {
@@ -14845,8 +14845,8 @@
               {
                 "src": "/catalog/nissan--frontier.jpg",
                 "alt": "2026 Nissan Frontier",
-                "width": 1920,
-                "height": 1035
+                "width": 1600,
+                "height": 863
               }
             ],
             "specs": {
@@ -14934,8 +14934,8 @@
               {
                 "src": "/catalog/nissan--xterra.jpg",
                 "alt": "2015 Nissan Xterra",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "sources": {
@@ -15004,8 +15004,8 @@
               {
                 "src": "/catalog/nissan--leaf.jpg",
                 "alt": "2024 Nissan Leaf",
-                "width": 1920,
-                "height": 1399
+                "width": 1600,
+                "height": 1166
               }
             ],
             "specs": {
@@ -15069,8 +15069,8 @@
               {
                 "src": "/catalog/nissan--leaf.jpg",
                 "alt": "2025 Nissan Leaf",
-                "width": 1920,
-                "height": 1399
+                "width": 1600,
+                "height": 1166
               }
             ],
             "specs": {
@@ -15145,8 +15145,8 @@
               {
                 "src": "/catalog/nissan--leaf.jpg",
                 "alt": "2026 Nissan Leaf",
-                "width": 1920,
-                "height": 1399
+                "width": 1600,
+                "height": 1166
               }
             ],
             "specs": {
@@ -15238,8 +15238,8 @@
               {
                 "src": "/catalog/nissan--ariya.jpg",
                 "alt": "2024 Nissan Ariya",
-                "width": 1920,
-                "height": 1102
+                "width": 1600,
+                "height": 918
               }
             ],
             "specs": {
@@ -15329,8 +15329,8 @@
               {
                 "src": "/catalog/nissan--ariya.jpg",
                 "alt": "2025 Nissan Ariya",
-                "width": 1920,
-                "height": 1102
+                "width": 1600,
+                "height": 918
               }
             ],
             "specs": {
@@ -15411,8 +15411,8 @@
               {
                 "src": "/catalog/nissan--ariya.jpg",
                 "alt": "2026 Nissan Ariya",
-                "width": 1920,
-                "height": 1102
+                "width": 1600,
+                "height": 918
               }
             ],
             "specs": {
@@ -15506,8 +15506,8 @@
               {
                 "src": "/catalog/hyundai--elantra.jpg",
                 "alt": "2024 Hyundai Elantra",
-                "width": 1920,
-                "height": 1372
+                "width": 1600,
+                "height": 1143
               }
             ],
             "specs": {
@@ -15615,8 +15615,8 @@
               {
                 "src": "/catalog/hyundai--elantra.jpg",
                 "alt": "2025 Hyundai Elantra",
-                "width": 1920,
-                "height": 1372
+                "width": 1600,
+                "height": 1143
               }
             ],
             "specs": {
@@ -15716,8 +15716,8 @@
               {
                 "src": "/catalog/hyundai--elantra.jpg",
                 "alt": "2026 Hyundai Elantra",
-                "width": 1920,
-                "height": 1372
+                "width": 1600,
+                "height": 1143
               }
             ],
             "specs": {
@@ -15803,8 +15803,8 @@
               {
                 "src": "/catalog/hyundai--sonata.jpg",
                 "alt": "2024 Hyundai Sonata",
-                "width": 1920,
-                "height": 1069
+                "width": 1600,
+                "height": 891
               }
             ],
             "specs": {
@@ -15913,8 +15913,8 @@
               {
                 "src": "/catalog/hyundai--sonata.jpg",
                 "alt": "2025 Hyundai Sonata",
-                "width": 1920,
-                "height": 1069
+                "width": 1600,
+                "height": 891
               }
             ],
             "specs": {
@@ -16012,8 +16012,8 @@
               {
                 "src": "/catalog/hyundai--sonata.jpg",
                 "alt": "2026 Hyundai Sonata",
-                "width": 1920,
-                "height": 1069
+                "width": 1600,
+                "height": 891
               }
             ],
             "specs": {
@@ -16109,8 +16109,8 @@
               {
                 "src": "/catalog/hyundai--tucson.jpg",
                 "alt": "2024 Hyundai Tucson",
-                "width": 1920,
-                "height": 1165
+                "width": 1600,
+                "height": 971
               }
             ],
             "specs": {
@@ -16237,8 +16237,8 @@
               {
                 "src": "/catalog/hyundai--tucson.jpg",
                 "alt": "2025 Hyundai Tucson",
-                "width": 1920,
-                "height": 1165
+                "width": 1600,
+                "height": 971
               }
             ],
             "specs": {
@@ -16377,8 +16377,8 @@
               {
                 "src": "/catalog/hyundai--tucson.jpg",
                 "alt": "2026 Hyundai Tucson",
-                "width": 1920,
-                "height": 1165
+                "width": 1600,
+                "height": 971
               }
             ],
             "specs": {
@@ -16522,8 +16522,8 @@
               {
                 "src": "/catalog/hyundai--santa-fe.jpg",
                 "alt": "2024 Hyundai Santa Fe",
-                "width": 1920,
-                "height": 1173
+                "width": 1600,
+                "height": 978
               }
             ],
             "specs": {
@@ -16668,8 +16668,8 @@
               {
                 "src": "/catalog/hyundai--santa-fe.jpg",
                 "alt": "2025 Hyundai Santa Fe",
-                "width": 1920,
-                "height": 1173
+                "width": 1600,
+                "height": 978
               }
             ],
             "specs": {
@@ -16802,8 +16802,8 @@
               {
                 "src": "/catalog/hyundai--santa-fe.jpg",
                 "alt": "2026 Hyundai Santa Fe",
-                "width": 1920,
-                "height": 1173
+                "width": 1600,
+                "height": 978
               }
             ],
             "specs": {
@@ -16941,8 +16941,8 @@
               {
                 "src": "/catalog/hyundai--palisade.jpg",
                 "alt": "2024 Hyundai Palisade",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -17075,8 +17075,8 @@
               {
                 "src": "/catalog/hyundai--palisade.jpg",
                 "alt": "2025 Hyundai Palisade",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -17196,8 +17196,8 @@
               {
                 "src": "/catalog/hyundai--palisade.jpg",
                 "alt": "2026 Hyundai Palisade",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -17318,8 +17318,8 @@
               {
                 "src": "/catalog/hyundai--genesis.jpg",
                 "alt": "2016 Hyundai Genesis",
-                "width": 1920,
-                "height": 873
+                "width": 1600,
+                "height": 728
               }
             ],
             "sources": {
@@ -17426,8 +17426,8 @@
               {
                 "src": "/catalog/hyundai--veloster.jpg",
                 "alt": "2022 Hyundai Veloster",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "sources": {
@@ -17506,8 +17506,8 @@
               {
                 "src": "/catalog/hyundai--elantra-n.jpg",
                 "alt": "2024 Hyundai Elantra N",
-                "width": 1920,
-                "height": 1372
+                "width": 1600,
+                "height": 1143
               }
             ],
             "specs": {
@@ -17575,8 +17575,8 @@
               {
                 "src": "/catalog/hyundai--elantra-n.jpg",
                 "alt": "2025 Hyundai Elantra N",
-                "width": 1920,
-                "height": 1372
+                "width": 1600,
+                "height": 1143
               }
             ],
             "specs": {
@@ -17660,8 +17660,8 @@
               {
                 "src": "/catalog/hyundai--elantra-n.jpg",
                 "alt": "2026 Hyundai Elantra N",
-                "width": 1920,
-                "height": 1372
+                "width": 1600,
+                "height": 1143
               }
             ],
             "specs": {
@@ -17737,8 +17737,8 @@
               {
                 "src": "/catalog/hyundai--ioniq-5.jpg",
                 "alt": "2024 Hyundai Ioniq 5",
-                "width": 1920,
-                "height": 1176
+                "width": 1600,
+                "height": 980
               }
             ],
             "specs": {
@@ -17858,8 +17858,8 @@
               {
                 "src": "/catalog/hyundai--ioniq-5.jpg",
                 "alt": "2025 Hyundai Ioniq 5",
-                "width": 1920,
-                "height": 1176
+                "width": 1600,
+                "height": 980
               }
             ],
             "specs": {
@@ -18008,8 +18008,8 @@
               {
                 "src": "/catalog/hyundai--ioniq-5.jpg",
                 "alt": "2026 Hyundai Ioniq 5",
-                "width": 1920,
-                "height": 1176
+                "width": 1600,
+                "height": 980
               }
             ],
             "specs": {
@@ -18125,8 +18125,8 @@
               {
                 "src": "/catalog/hyundai--ioniq-6.jpg",
                 "alt": "2024 Hyundai Ioniq 6",
-                "width": 1920,
-                "height": 1062
+                "width": 1600,
+                "height": 885
               }
             ],
             "specs": {
@@ -18259,8 +18259,8 @@
               {
                 "src": "/catalog/hyundai--ioniq-6.jpg",
                 "alt": "2025 Hyundai Ioniq 6",
-                "width": 1920,
-                "height": 1062
+                "width": 1600,
+                "height": 885
               }
             ],
             "specs": {
@@ -18374,8 +18374,8 @@
               {
                 "src": "/catalog/hyundai--ioniq-6.jpg",
                 "alt": "2026 Hyundai Ioniq 6",
-                "width": 1920,
-                "height": 1062
+                "width": 1600,
+                "height": 885
               }
             ],
             "specs": {
@@ -18447,8 +18447,8 @@
               {
                 "src": "/catalog/kia--optima.jpg",
                 "alt": "2020 Kia Optima",
-                "width": 1920,
-                "height": 988
+                "width": 1600,
+                "height": 823
               }
             ],
             "sources": {
@@ -18541,8 +18541,8 @@
               {
                 "src": "/catalog/kia--k5.jpg",
                 "alt": "2024 Kia K5",
-                "width": 1920,
-                "height": 1076
+                "width": 1600,
+                "height": 897
               }
             ],
             "specs": {
@@ -18657,8 +18657,8 @@
               {
                 "src": "/catalog/kia--k5.jpg",
                 "alt": "2025 Kia K5",
-                "width": 1920,
-                "height": 1076
+                "width": 1600,
+                "height": 897
               }
             ],
             "specs": {
@@ -18772,8 +18772,8 @@
               {
                 "src": "/catalog/kia--k5.jpg",
                 "alt": "2026 Kia K5",
-                "width": 1920,
-                "height": 1076
+                "width": 1600,
+                "height": 897
               }
             ],
             "specs": {
@@ -18870,8 +18870,8 @@
               {
                 "src": "/catalog/kia--stinger.jpg",
                 "alt": "2023 Kia Stinger",
-                "width": 1920,
-                "height": 1422
+                "width": 1600,
+                "height": 1185
               }
             ],
             "sources": {
@@ -18951,8 +18951,8 @@
               {
                 "src": "/catalog/kia--soul.jpg",
                 "alt": "2024 Kia Soul",
-                "width": 1920,
-                "height": 1215
+                "width": 1600,
+                "height": 1013
               }
             ],
             "specs": {
@@ -19053,8 +19053,8 @@
               {
                 "src": "/catalog/kia--soul.jpg",
                 "alt": "2025 Kia Soul",
-                "width": 1920,
-                "height": 1215
+                "width": 1600,
+                "height": 1013
               }
             ],
             "specs": {
@@ -19142,8 +19142,8 @@
               {
                 "src": "/catalog/kia--soul.jpg",
                 "alt": "2026 Kia Soul",
-                "width": 1920,
-                "height": 1215
+                "width": 1600,
+                "height": 1013
               }
             ],
             "specs": {
@@ -19201,8 +19201,8 @@
               {
                 "src": "/catalog/kia--sorento.jpg",
                 "alt": "2024 Kia Sorento",
-                "width": 1920,
-                "height": 1135
+                "width": 1600,
+                "height": 946
               }
             ],
             "specs": {
@@ -19317,8 +19317,8 @@
               {
                 "src": "/catalog/kia--sorento.jpg",
                 "alt": "2025 Kia Sorento",
-                "width": 1920,
-                "height": 1135
+                "width": 1600,
+                "height": 946
               }
             ],
             "specs": {
@@ -19439,8 +19439,8 @@
               {
                 "src": "/catalog/kia--sorento.jpg",
                 "alt": "2026 Kia Sorento",
-                "width": 1920,
-                "height": 1135
+                "width": 1600,
+                "height": 946
               }
             ],
             "specs": {
@@ -19546,8 +19546,8 @@
               {
                 "src": "/catalog/kia--sportage.jpg",
                 "alt": "2024 Kia Sportage",
-                "width": 1920,
-                "height": 1170
+                "width": 1600,
+                "height": 975
               }
             ],
             "specs": {
@@ -19668,8 +19668,8 @@
               {
                 "src": "/catalog/kia--sportage.jpg",
                 "alt": "2025 Kia Sportage",
-                "width": 1920,
-                "height": 1170
+                "width": 1600,
+                "height": 975
               }
             ],
             "specs": {
@@ -19778,8 +19778,8 @@
               {
                 "src": "/catalog/kia--sportage.jpg",
                 "alt": "2026 Kia Sportage",
-                "width": 1920,
-                "height": 1170
+                "width": 1600,
+                "height": 975
               }
             ],
             "specs": {
@@ -19895,8 +19895,8 @@
               {
                 "src": "/catalog/kia--telluride.jpg",
                 "alt": "2024 Kia Telluride",
-                "width": 1920,
-                "height": 1537
+                "width": 1600,
+                "height": 1281
               }
             ],
             "specs": {
@@ -20029,8 +20029,8 @@
               {
                 "src": "/catalog/kia--telluride.jpg",
                 "alt": "2025 Kia Telluride",
-                "width": 1920,
-                "height": 1537
+                "width": 1600,
+                "height": 1281
               }
             ],
             "specs": {
@@ -20144,8 +20144,8 @@
               {
                 "src": "/catalog/kia--telluride.jpg",
                 "alt": "2026 Kia Telluride",
-                "width": 1920,
-                "height": 1537
+                "width": 1600,
+                "height": 1281
               }
             ],
             "specs": {
@@ -20209,8 +20209,8 @@
               {
                 "src": "/catalog/kia--ev6.jpg",
                 "alt": "2024 Kia EV6",
-                "width": 1920,
-                "height": 960
+                "width": 1600,
+                "height": 800
               }
             ],
             "specs": {
@@ -20331,8 +20331,8 @@
               {
                 "src": "/catalog/kia--ev6.jpg",
                 "alt": "2025 Kia EV6",
-                "width": 1920,
-                "height": 960
+                "width": 1600,
+                "height": 800
               }
             ],
             "specs": {
@@ -20426,8 +20426,8 @@
               {
                 "src": "/catalog/kia--ev6.jpg",
                 "alt": "2026 Kia EV6",
-                "width": 1920,
-                "height": 960
+                "width": 1600,
+                "height": 800
               }
             ],
             "specs": {
@@ -20496,8 +20496,8 @@
               {
                 "src": "/catalog/kia--ev9.jpg",
                 "alt": "2024 Kia EV9",
-                "width": 1920,
-                "height": 1205
+                "width": 1600,
+                "height": 1004
               }
             ],
             "specs": {
@@ -20642,8 +20642,8 @@
               {
                 "src": "/catalog/kia--ev9.jpg",
                 "alt": "2025 Kia EV9",
-                "width": 1920,
-                "height": 1205
+                "width": 1600,
+                "height": 1004
               }
             ],
             "specs": {
@@ -20755,8 +20755,8 @@
               {
                 "src": "/catalog/kia--ev9.jpg",
                 "alt": "2026 Kia EV9",
-                "width": 1920,
-                "height": 1205
+                "width": 1600,
+                "height": 1004
               }
             ],
             "specs": {
@@ -20854,8 +20854,8 @@
               {
                 "src": "/catalog/kia--forte.jpg",
                 "alt": "2024 Kia Forte",
-                "width": 1920,
-                "height": 1162
+                "width": 1600,
+                "height": 968
               }
             ],
             "specs": {
@@ -20963,8 +20963,8 @@
               {
                 "src": "/catalog/kia--rio.jpg",
                 "alt": "2023 Kia Rio",
-                "width": 1920,
-                "height": 1180
+                "width": 1600,
+                "height": 983
               }
             ],
             "specs": {
@@ -21070,8 +21070,8 @@
               {
                 "src": "/catalog/subaru--impreza.jpg",
                 "alt": "2024 Subaru Impreza",
-                "width": 1920,
-                "height": 1060
+                "width": 1600,
+                "height": 883
               }
             ],
             "specs": {
@@ -21185,8 +21185,8 @@
               {
                 "src": "/catalog/subaru--impreza.jpg",
                 "alt": "2025 Subaru Impreza",
-                "width": 1920,
-                "height": 1060
+                "width": 1600,
+                "height": 883
               }
             ],
             "specs": {
@@ -21269,8 +21269,8 @@
               {
                 "src": "/catalog/subaru--impreza.jpg",
                 "alt": "2026 Subaru Impreza",
-                "width": 1920,
-                "height": 1060
+                "width": 1600,
+                "height": 883
               }
             ],
             "specs": {
@@ -21348,8 +21348,8 @@
               {
                 "src": "/catalog/subaru--wrx-sti.jpg",
                 "alt": "2024 Subaru WRX STI",
-                "width": 1920,
-                "height": 868
+                "width": 1600,
+                "height": 723
               }
             ],
             "specs": {
@@ -21432,8 +21432,8 @@
               {
                 "src": "/catalog/subaru--wrx-sti.jpg",
                 "alt": "2025 Subaru WRX STI",
-                "width": 1920,
-                "height": 868
+                "width": 1600,
+                "height": 723
               }
             ],
             "specs": {
@@ -21496,8 +21496,8 @@
               {
                 "src": "/catalog/subaru--wrx-sti.jpg",
                 "alt": "2026 Subaru WRX STI",
-                "width": 1920,
-                "height": 868
+                "width": 1600,
+                "height": 723
               }
             ],
             "specs": {
@@ -21567,8 +21567,8 @@
               {
                 "src": "/catalog/subaru--legacy.jpg",
                 "alt": "2024 Subaru Legacy",
-                "width": 1920,
-                "height": 1067
+                "width": 1600,
+                "height": 889
               }
             ],
             "specs": {
@@ -21661,8 +21661,8 @@
               {
                 "src": "/catalog/subaru--legacy.jpg",
                 "alt": "2025 Subaru Legacy",
-                "width": 1920,
-                "height": 1067
+                "width": 1600,
+                "height": 889
               }
             ],
             "specs": {
@@ -21748,8 +21748,8 @@
               {
                 "src": "/catalog/subaru--legacy.jpg",
                 "alt": "2026 Subaru Legacy",
-                "width": 1920,
-                "height": 1067
+                "width": 1600,
+                "height": 889
               }
             ],
             "specs": {
@@ -21813,8 +21813,8 @@
               {
                 "src": "/catalog/subaru--outback.jpg",
                 "alt": "2024 Subaru Outback",
-                "width": 1920,
-                "height": 1050
+                "width": 1600,
+                "height": 875
               }
             ],
             "specs": {
@@ -21891,8 +21891,8 @@
               {
                 "src": "/catalog/subaru--outback.jpg",
                 "alt": "2025 Subaru Outback",
-                "width": 1920,
-                "height": 1050
+                "width": 1600,
+                "height": 875
               }
             ],
             "specs": {
@@ -21987,8 +21987,8 @@
               {
                 "src": "/catalog/subaru--outback.jpg",
                 "alt": "2026 Subaru Outback",
-                "width": 1920,
-                "height": 1050
+                "width": 1600,
+                "height": 875
               }
             ],
             "specs": {
@@ -22088,8 +22088,8 @@
               {
                 "src": "/catalog/subaru--forester.jpg",
                 "alt": "2024 Subaru Forester",
-                "width": 1920,
-                "height": 1034
+                "width": 1600,
+                "height": 862
               }
             ],
             "specs": {
@@ -22203,8 +22203,8 @@
               {
                 "src": "/catalog/subaru--forester.jpg",
                 "alt": "2025 Subaru Forester",
-                "width": 1920,
-                "height": 1034
+                "width": 1600,
+                "height": 862
               }
             ],
             "specs": {
@@ -22324,8 +22324,8 @@
               {
                 "src": "/catalog/subaru--forester.jpg",
                 "alt": "2026 Subaru Forester",
-                "width": 1920,
-                "height": 1034
+                "width": 1600,
+                "height": 862
               }
             ],
             "specs": {
@@ -22443,8 +22443,8 @@
               {
                 "src": "/catalog/subaru--brz.jpg",
                 "alt": "2024 Subaru BRZ",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -22513,8 +22513,8 @@
               {
                 "src": "/catalog/subaru--brz.jpg",
                 "alt": "2025 Subaru BRZ",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -22572,8 +22572,8 @@
               {
                 "src": "/catalog/subaru--brz.jpg",
                 "alt": "2026 Subaru BRZ",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -22648,8 +22648,8 @@
               {
                 "src": "/catalog/subaru--crosstrek.jpg",
                 "alt": "2024 Subaru Crosstrek",
-                "width": 1920,
-                "height": 1225
+                "width": 1600,
+                "height": 1021
               }
             ],
             "specs": {
@@ -22763,8 +22763,8 @@
               {
                 "src": "/catalog/subaru--crosstrek.jpg",
                 "alt": "2025 Subaru Crosstrek",
-                "width": 1920,
-                "height": 1225
+                "width": 1600,
+                "height": 1021
               }
             ],
             "specs": {
@@ -22863,8 +22863,8 @@
               {
                 "src": "/catalog/subaru--crosstrek.jpg",
                 "alt": "2026 Subaru Crosstrek",
-                "width": 1920,
-                "height": 1225
+                "width": 1600,
+                "height": 1021
               }
             ],
             "specs": {
@@ -22968,8 +22968,8 @@
               {
                 "src": "/catalog/subaru--ascent.jpg",
                 "alt": "2024 Subaru Ascent",
-                "width": 1920,
-                "height": 1009
+                "width": 1600,
+                "height": 841
               }
             ],
             "specs": {
@@ -23077,8 +23077,8 @@
               {
                 "src": "/catalog/subaru--ascent.jpg",
                 "alt": "2025 Subaru Ascent",
-                "width": 1920,
-                "height": 1009
+                "width": 1600,
+                "height": 841
               }
             ],
             "specs": {
@@ -23185,8 +23185,8 @@
               {
                 "src": "/catalog/subaru--ascent.jpg",
                 "alt": "2026 Subaru Ascent",
-                "width": 1920,
-                "height": 1009
+                "width": 1600,
+                "height": 841
               }
             ],
             "specs": {
@@ -23288,8 +23288,8 @@
               {
                 "src": "/catalog/jeep--wrangler.jpg",
                 "alt": "2024 Jeep Wrangler",
-                "width": 1920,
-                "height": 1189
+                "width": 1600,
+                "height": 991
               }
             ],
             "specs": {
@@ -23445,8 +23445,8 @@
               {
                 "src": "/catalog/jeep--wrangler.jpg",
                 "alt": "2025 Jeep Wrangler",
-                "width": 1920,
-                "height": 1189
+                "width": 1600,
+                "height": 991
               }
             ],
             "specs": {
@@ -23558,8 +23558,8 @@
               {
                 "src": "/catalog/jeep--wrangler.jpg",
                 "alt": "2026 Jeep Wrangler",
-                "width": 1920,
-                "height": 1189
+                "width": 1600,
+                "height": 991
               }
             ],
             "specs": {
@@ -23667,8 +23667,8 @@
               {
                 "src": "/catalog/jeep--grand-cherokee.jpg",
                 "alt": "2024 Jeep Grand Cherokee",
-                "width": 1920,
-                "height": 1129
+                "width": 1600,
+                "height": 941
               }
             ],
             "specs": {
@@ -23861,8 +23861,8 @@
               {
                 "src": "/catalog/jeep--grand-cherokee.jpg",
                 "alt": "2025 Jeep Grand Cherokee",
-                "width": 1920,
-                "height": 1129
+                "width": 1600,
+                "height": 941
               }
             ],
             "specs": {
@@ -23983,8 +23983,8 @@
               {
                 "src": "/catalog/jeep--grand-cherokee.jpg",
                 "alt": "2026 Jeep Grand Cherokee",
-                "width": 1920,
-                "height": 1129
+                "width": 1600,
+                "height": 941
               }
             ],
             "specs": {
@@ -24100,8 +24100,8 @@
               {
                 "src": "/catalog/jeep--cherokee.jpg",
                 "alt": "2023 Jeep Cherokee",
-                "width": 1920,
-                "height": 1270
+                "width": 1600,
+                "height": 1058
               }
             ],
             "specs": {
@@ -24188,8 +24188,8 @@
               {
                 "src": "/catalog/jeep--compass.jpg",
                 "alt": "2024 Jeep Compass",
-                "width": 1920,
-                "height": 1264
+                "width": 1600,
+                "height": 1053
               }
             ],
             "specs": {
@@ -24290,8 +24290,8 @@
               {
                 "src": "/catalog/jeep--compass.jpg",
                 "alt": "2025 Jeep Compass",
-                "width": 1920,
-                "height": 1264
+                "width": 1600,
+                "height": 1053
               }
             ],
             "specs": {
@@ -24390,8 +24390,8 @@
               {
                 "src": "/catalog/jeep--compass.jpg",
                 "alt": "2026 Jeep Compass",
-                "width": 1920,
-                "height": 1264
+                "width": 1600,
+                "height": 1053
               }
             ],
             "specs": {
@@ -24474,8 +24474,8 @@
               {
                 "src": "/catalog/jeep--renegade.jpg",
                 "alt": "2023 Jeep Renegade",
-                "width": 1920,
-                "height": 1333
+                "width": 1600,
+                "height": 1111
               }
             ],
             "specs": {
@@ -24583,8 +24583,8 @@
               {
                 "src": "/catalog/jeep--gladiator.jpg",
                 "alt": "2024 Jeep Gladiator",
-                "width": 1920,
-                "height": 1150
+                "width": 1600,
+                "height": 958
               }
             ],
             "specs": {
@@ -24690,8 +24690,8 @@
               {
                 "src": "/catalog/jeep--gladiator.jpg",
                 "alt": "2025 Jeep Gladiator",
-                "width": 1920,
-                "height": 1150
+                "width": 1600,
+                "height": 958
               }
             ],
             "specs": {
@@ -24794,8 +24794,8 @@
               {
                 "src": "/catalog/jeep--gladiator.jpg",
                 "alt": "2026 Jeep Gladiator",
-                "width": 1920,
-                "height": 1150
+                "width": 1600,
+                "height": 958
               }
             ],
             "specs": {
@@ -24894,8 +24894,8 @@
               {
                 "src": "/catalog/gmc--sierra.jpg",
                 "alt": "2024 GMC Sierra",
-                "width": 1920,
-                "height": 1090
+                "width": 1600,
+                "height": 908
               }
             ],
             "specs": {
@@ -25001,8 +25001,8 @@
               {
                 "src": "/catalog/gmc--sierra.jpg",
                 "alt": "2025 GMC Sierra",
-                "width": 1920,
-                "height": 1090
+                "width": 1600,
+                "height": 908
               }
             ],
             "specs": {
@@ -25091,8 +25091,8 @@
               {
                 "src": "/catalog/gmc--sierra.jpg",
                 "alt": "2026 GMC Sierra",
-                "width": 1920,
-                "height": 1090
+                "width": 1600,
+                "height": 908
               }
             ],
             "specs": {
@@ -25191,8 +25191,8 @@
               {
                 "src": "/catalog/gmc--yukon.jpg",
                 "alt": "2024 GMC Yukon",
-                "width": 1920,
-                "height": 1236
+                "width": 1600,
+                "height": 1030
               }
             ],
             "specs": {
@@ -25313,8 +25313,8 @@
               {
                 "src": "/catalog/gmc--yukon.jpg",
                 "alt": "2025 GMC Yukon",
-                "width": 1920,
-                "height": 1236
+                "width": 1600,
+                "height": 1030
               }
             ],
             "specs": {
@@ -25429,8 +25429,8 @@
               {
                 "src": "/catalog/gmc--yukon.jpg",
                 "alt": "2026 GMC Yukon",
-                "width": 1920,
-                "height": 1236
+                "width": 1600,
+                "height": 1030
               }
             ],
             "specs": {
@@ -25562,8 +25562,8 @@
               {
                 "src": "/catalog/gmc--acadia.jpg",
                 "alt": "2024 GMC Acadia",
-                "width": 1920,
-                "height": 1021
+                "width": 1600,
+                "height": 851
               }
             ],
             "specs": {
@@ -25664,8 +25664,8 @@
               {
                 "src": "/catalog/gmc--acadia.jpg",
                 "alt": "2025 GMC Acadia",
-                "width": 1920,
-                "height": 1021
+                "width": 1600,
+                "height": 851
               }
             ],
             "specs": {
@@ -25767,8 +25767,8 @@
               {
                 "src": "/catalog/gmc--acadia.jpg",
                 "alt": "2026 GMC Acadia",
-                "width": 1920,
-                "height": 1021
+                "width": 1600,
+                "height": 851
               }
             ],
             "specs": {
@@ -25872,8 +25872,8 @@
               {
                 "src": "/catalog/gmc--terrain.jpg",
                 "alt": "2024 GMC Terrain",
-                "width": 1920,
-                "height": 896
+                "width": 1600,
+                "height": 747
               }
             ],
             "specs": {
@@ -25981,8 +25981,8 @@
               {
                 "src": "/catalog/gmc--terrain.jpg",
                 "alt": "2025 GMC Terrain",
-                "width": 1920,
-                "height": 896
+                "width": 1600,
+                "height": 747
               }
             ],
             "specs": {
@@ -26074,8 +26074,8 @@
               {
                 "src": "/catalog/gmc--terrain.jpg",
                 "alt": "2026 GMC Terrain",
-                "width": 1920,
-                "height": 896
+                "width": 1600,
+                "height": 747
               }
             ],
             "specs": {
@@ -26192,8 +26192,8 @@
               {
                 "src": "/catalog/gmc--canyon.jpg",
                 "alt": "2024 GMC Canyon",
-                "width": 1920,
-                "height": 1169
+                "width": 1600,
+                "height": 974
               }
             ],
             "specs": {
@@ -26314,8 +26314,8 @@
               {
                 "src": "/catalog/gmc--canyon.jpg",
                 "alt": "2025 GMC Canyon",
-                "width": 1920,
-                "height": 1169
+                "width": 1600,
+                "height": 974
               }
             ],
             "specs": {
@@ -26418,8 +26418,8 @@
               {
                 "src": "/catalog/gmc--canyon.jpg",
                 "alt": "2026 GMC Canyon",
-                "width": 1920,
-                "height": 1169
+                "width": 1600,
+                "height": 974
               }
             ],
             "specs": {
@@ -26523,8 +26523,8 @@
               {
                 "src": "/catalog/gmc--hummer-ev.jpg",
                 "alt": "2024 GMC Hummer EV",
-                "width": 1920,
-                "height": 1415
+                "width": 1600,
+                "height": 1179
               }
             ],
             "specs": {
@@ -26624,8 +26624,8 @@
               {
                 "src": "/catalog/gmc--hummer-ev.jpg",
                 "alt": "2025 GMC Hummer EV",
-                "width": 1920,
-                "height": 1415
+                "width": 1600,
+                "height": 1179
               }
             ],
             "specs": {
@@ -26692,8 +26692,8 @@
               {
                 "src": "/catalog/gmc--hummer-ev.jpg",
                 "alt": "2026 GMC Hummer EV",
-                "width": 1920,
-                "height": 1415
+                "width": 1600,
+                "height": 1179
               }
             ],
             "specs": {
@@ -26764,8 +26764,8 @@
               {
                 "src": "/catalog/bmw--3-series.jpg",
                 "alt": "2024 BMW 3 Series",
-                "width": 1920,
-                "height": 930
+                "width": 1600,
+                "height": 775
               }
             ],
             "sources": {
@@ -26837,8 +26837,8 @@
               {
                 "src": "/catalog/bmw--3-series.jpg",
                 "alt": "2025 BMW 3 Series",
-                "width": 1920,
-                "height": 930
+                "width": 1600,
+                "height": 775
               }
             ],
             "sources": {
@@ -26900,8 +26900,8 @@
               {
                 "src": "/catalog/bmw--3-series.jpg",
                 "alt": "2026 BMW 3 Series",
-                "width": 1920,
-                "height": 930
+                "width": 1600,
+                "height": 775
               }
             ],
             "sources": {
@@ -26965,8 +26965,8 @@
               {
                 "src": "/catalog/bmw--5-series.jpg",
                 "alt": "2024 BMW 5 Series",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -27019,8 +27019,8 @@
               {
                 "src": "/catalog/bmw--5-series.jpg",
                 "alt": "2025 BMW 5 Series",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "sources": {
@@ -27074,8 +27074,8 @@
               {
                 "src": "/catalog/bmw--5-series.jpg",
                 "alt": "2026 BMW 5 Series",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "sources": {
@@ -27144,8 +27144,8 @@
               {
                 "src": "/catalog/bmw--7-series.jpg",
                 "alt": "2024 BMW 7 Series",
-                "width": 1920,
-                "height": 1263
+                "width": 1600,
+                "height": 1053
               }
             ],
             "specs": {
@@ -27227,8 +27227,8 @@
               {
                 "src": "/catalog/bmw--7-series.jpg",
                 "alt": "2025 BMW 7 Series",
-                "width": 1920,
-                "height": 1263
+                "width": 1600,
+                "height": 1053
               }
             ],
             "specs": {
@@ -27291,8 +27291,8 @@
               {
                 "src": "/catalog/bmw--7-series.jpg",
                 "alt": "2026 BMW 7 Series",
-                "width": 1920,
-                "height": 1263
+                "width": 1600,
+                "height": 1053
               }
             ],
             "sources": {
@@ -27355,8 +27355,8 @@
               {
                 "src": "/catalog/bmw--m2.jpg",
                 "alt": "2024 BMW M2",
-                "width": 1920,
-                "height": 1200
+                "width": 1600,
+                "height": 1000
               }
             ],
             "specs": {
@@ -27416,8 +27416,8 @@
               {
                 "src": "/catalog/bmw--m2.jpg",
                 "alt": "2025 BMW M2",
-                "width": 1920,
-                "height": 1200
+                "width": 1600,
+                "height": 1000
               }
             ],
             "specs": {
@@ -27475,8 +27475,8 @@
               {
                 "src": "/catalog/bmw--m2.jpg",
                 "alt": "2026 BMW M2",
-                "width": 1920,
-                "height": 1200
+                "width": 1600,
+                "height": 1000
               }
             ],
             "specs": {
@@ -27542,8 +27542,8 @@
               {
                 "src": "/catalog/bmw--m3.jpg",
                 "alt": "2024 BMW M3",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -27598,8 +27598,8 @@
               {
                 "src": "/catalog/bmw--m3.jpg",
                 "alt": "2025 BMW M3",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -27661,8 +27661,8 @@
               {
                 "src": "/catalog/bmw--m3.jpg",
                 "alt": "2026 BMW M3",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -27728,8 +27728,8 @@
               {
                 "src": "/catalog/bmw--m4.jpg",
                 "alt": "2024 BMW M4",
-                "width": 1920,
-                "height": 1329
+                "width": 1600,
+                "height": 1108
               }
             ],
             "specs": {
@@ -27793,8 +27793,8 @@
               {
                 "src": "/catalog/bmw--m4.jpg",
                 "alt": "2025 BMW M4",
-                "width": 1920,
-                "height": 1329
+                "width": 1600,
+                "height": 1108
               }
             ],
             "specs": {
@@ -27853,8 +27853,8 @@
               {
                 "src": "/catalog/bmw--m4.jpg",
                 "alt": "2026 BMW M4",
-                "width": 1920,
-                "height": 1329
+                "width": 1600,
+                "height": 1108
               }
             ],
             "specs": {
@@ -27928,8 +27928,8 @@
               {
                 "src": "/catalog/bmw--m5.jpg",
                 "alt": "2025 BMW M5",
-                "width": 1920,
-                "height": 1171
+                "width": 1600,
+                "height": 976
               }
             ],
             "specs": {
@@ -28005,8 +28005,8 @@
               {
                 "src": "/catalog/bmw--m5.jpg",
                 "alt": "2026 BMW M5",
-                "width": 1920,
-                "height": 1171
+                "width": 1600,
+                "height": 976
               }
             ],
             "specs": {
@@ -28084,8 +28084,8 @@
               {
                 "src": "/catalog/bmw--x3.jpg",
                 "alt": "2024 BMW X3",
-                "width": 1920,
-                "height": 1134
+                "width": 1600,
+                "height": 945
               }
             ],
             "specs": {
@@ -28212,8 +28212,8 @@
               {
                 "src": "/catalog/bmw--x3.jpg",
                 "alt": "2025 BMW X3",
-                "width": 1920,
-                "height": 1134
+                "width": 1600,
+                "height": 945
               }
             ],
             "specs": {
@@ -28370,8 +28370,8 @@
               {
                 "src": "/catalog/bmw--x3.jpg",
                 "alt": "2026 BMW X3",
-                "width": 1920,
-                "height": 1134
+                "width": 1600,
+                "height": 945
               }
             ],
             "specs": {
@@ -28492,8 +28492,8 @@
               {
                 "src": "/catalog/bmw--x5.jpg",
                 "alt": "2024 BMW X5",
-                "width": 1920,
-                "height": 1174
+                "width": 1600,
+                "height": 978
               }
             ],
             "specs": {
@@ -28645,8 +28645,8 @@
               {
                 "src": "/catalog/bmw--x5.jpg",
                 "alt": "2025 BMW X5",
-                "width": 1920,
-                "height": 1174
+                "width": 1600,
+                "height": 978
               }
             ],
             "specs": {
@@ -28780,8 +28780,8 @@
               {
                 "src": "/catalog/bmw--x5.jpg",
                 "alt": "2026 BMW X5",
-                "width": 1920,
-                "height": 1174
+                "width": 1600,
+                "height": 978
               }
             ],
             "specs": {
@@ -28897,8 +28897,8 @@
               {
                 "src": "/catalog/bmw--x7.jpg",
                 "alt": "2024 BMW X7",
-                "width": 1920,
-                "height": 1323
+                "width": 1600,
+                "height": 1103
               }
             ],
             "specs": {
@@ -29036,8 +29036,8 @@
               {
                 "src": "/catalog/bmw--x7.jpg",
                 "alt": "2025 BMW X7",
-                "width": 1920,
-                "height": 1323
+                "width": 1600,
+                "height": 1103
               }
             ],
             "specs": {
@@ -29150,8 +29150,8 @@
               {
                 "src": "/catalog/bmw--x7.jpg",
                 "alt": "2026 BMW X7",
-                "width": 1920,
-                "height": 1323
+                "width": 1600,
+                "height": 1103
               }
             ],
             "specs": {
@@ -29254,8 +29254,8 @@
               {
                 "src": "/catalog/bmw--z4.jpg",
                 "alt": "2024 BMW Z4",
-                "width": 1920,
-                "height": 1197
+                "width": 1600,
+                "height": 998
               }
             ],
             "specs": {
@@ -29328,8 +29328,8 @@
               {
                 "src": "/catalog/bmw--z4.jpg",
                 "alt": "2025 BMW Z4",
-                "width": 1920,
-                "height": 1197
+                "width": 1600,
+                "height": 998
               }
             ],
             "specs": {
@@ -29390,8 +29390,8 @@
               {
                 "src": "/catalog/bmw--z4.jpg",
                 "alt": "2026 BMW Z4",
-                "width": 1920,
-                "height": 1197
+                "width": 1600,
+                "height": 998
               }
             ],
             "specs": {
@@ -29467,8 +29467,8 @@
               {
                 "src": "/catalog/bmw--i3.jpg",
                 "alt": "2021 BMW i3",
-                "width": 1920,
-                "height": 1281
+                "width": 1600,
+                "height": 1068
               }
             ],
             "sources": {
@@ -29523,8 +29523,8 @@
               {
                 "src": "/catalog/bmw--i8.jpg",
                 "alt": "2020 BMW i8",
-                "width": 1920,
-                "height": 1080
+                "width": 1600,
+                "height": 900
               }
             ],
             "sources": {
@@ -29593,8 +29593,8 @@
               {
                 "src": "/catalog/bmw--i4.jpg",
                 "alt": "2024 BMW i4",
-                "width": 1920,
-                "height": 1246
+                "width": 1600,
+                "height": 1038
               }
             ],
             "specs": {
@@ -29701,8 +29701,8 @@
               {
                 "src": "/catalog/bmw--i4.jpg",
                 "alt": "2025 BMW i4",
-                "width": 1920,
-                "height": 1246
+                "width": 1600,
+                "height": 1038
               }
             ],
             "specs": {
@@ -29776,8 +29776,8 @@
               {
                 "src": "/catalog/bmw--i4.jpg",
                 "alt": "2026 BMW i4",
-                "width": 1920,
-                "height": 1246
+                "width": 1600,
+                "height": 1038
               }
             ],
             "specs": {
@@ -29849,8 +29849,8 @@
               {
                 "src": "/catalog/bmw--ix.jpg",
                 "alt": "2024 BMW iX",
-                "width": 1920,
-                "height": 1184
+                "width": 1600,
+                "height": 987
               }
             ],
             "specs": {
@@ -29969,8 +29969,8 @@
               {
                 "src": "/catalog/bmw--ix.jpg",
                 "alt": "2025 BMW iX",
-                "width": 1920,
-                "height": 1184
+                "width": 1600,
+                "height": 987
               }
             ],
             "specs": {
@@ -30059,8 +30059,8 @@
               {
                 "src": "/catalog/bmw--ix.jpg",
                 "alt": "2026 BMW iX",
-                "width": 1920,
-                "height": 1184
+                "width": 1600,
+                "height": 987
               }
             ],
             "specs": {
@@ -30144,8 +30144,8 @@
               {
                 "src": "/catalog/mercedes-benz--c-class.jpg",
                 "alt": "2024 Mercedes-Benz C-Class",
-                "width": 1920,
-                "height": 946
+                "width": 1600,
+                "height": 788
               }
             ],
             "specs": {
@@ -30239,8 +30239,8 @@
               {
                 "src": "/catalog/mercedes-benz--c-class.jpg",
                 "alt": "2025 Mercedes-Benz C-Class",
-                "width": 1920,
-                "height": 946
+                "width": 1600,
+                "height": 788
               }
             ],
             "specs": {
@@ -30296,8 +30296,8 @@
               {
                 "src": "/catalog/mercedes-benz--c-class.jpg",
                 "alt": "2026 Mercedes-Benz C-Class",
-                "width": 1920,
-                "height": 946
+                "width": 1600,
+                "height": 788
               }
             ],
             "specs": {
@@ -30374,8 +30374,8 @@
               {
                 "src": "/catalog/mercedes-benz--e-class.jpg",
                 "alt": "2024 Mercedes-Benz E-Class",
-                "width": 1920,
-                "height": 932
+                "width": 1600,
+                "height": 777
               }
             ],
             "specs": {
@@ -30471,8 +30471,8 @@
               {
                 "src": "/catalog/mercedes-benz--e-class.jpg",
                 "alt": "2025 Mercedes-Benz E-Class",
-                "width": 1920,
-                "height": 932
+                "width": 1600,
+                "height": 777
               }
             ],
             "specs": {
@@ -30529,8 +30529,8 @@
               {
                 "src": "/catalog/mercedes-benz--e-class.jpg",
                 "alt": "2026 Mercedes-Benz E-Class",
-                "width": 1920,
-                "height": 932
+                "width": 1600,
+                "height": 777
               }
             ],
             "specs": {
@@ -30622,8 +30622,8 @@
               {
                 "src": "/catalog/mercedes-benz--s-class.jpg",
                 "alt": "2024 Mercedes-Benz S-Class",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -30708,8 +30708,8 @@
               {
                 "src": "/catalog/mercedes-benz--s-class.jpg",
                 "alt": "2025 Mercedes-Benz S-Class",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -30763,8 +30763,8 @@
               {
                 "src": "/catalog/mercedes-benz--s-class.jpg",
                 "alt": "2026 Mercedes-Benz S-Class",
-                "width": 1920,
-                "height": 1440
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -30835,8 +30835,8 @@
               {
                 "src": "/catalog/mercedes-benz--g-class.jpg",
                 "alt": "2024 Mercedes-Benz G-Class",
-                "width": 1920,
-                "height": 1281
+                "width": 1600,
+                "height": 1068
               }
             ],
             "specs": {
@@ -30905,8 +30905,8 @@
               {
                 "src": "/catalog/mercedes-benz--g-class.jpg",
                 "alt": "2025 Mercedes-Benz G-Class",
-                "width": 1920,
-                "height": 1281
+                "width": 1600,
+                "height": 1068
               }
             ],
             "specs": {
@@ -30960,8 +30960,8 @@
               {
                 "src": "/catalog/mercedes-benz--g-class.jpg",
                 "alt": "2026 Mercedes-Benz G-Class",
-                "width": 1920,
-                "height": 1281
+                "width": 1600,
+                "height": 1068
               }
             ],
             "specs": {
@@ -31025,8 +31025,8 @@
               {
                 "src": "/catalog/mercedes-benz--amg-gt.jpg",
                 "alt": "2024 Mercedes-Benz AMG GT",
-                "width": 1920,
-                "height": 727
+                "width": 1600,
+                "height": 606
               }
             ],
             "specs": {
@@ -31073,8 +31073,8 @@
               {
                 "src": "/catalog/mercedes-benz--amg-gt.jpg",
                 "alt": "2025 Mercedes-Benz AMG GT",
-                "width": 1920,
-                "height": 727
+                "width": 1600,
+                "height": 606
               }
             ],
             "specs": {
@@ -31126,8 +31126,8 @@
               {
                 "src": "/catalog/mercedes-benz--amg-gt.jpg",
                 "alt": "2026 Mercedes-Benz AMG GT",
-                "width": 1920,
-                "height": 727
+                "width": 1600,
+                "height": 606
               }
             ],
             "specs": {
@@ -31190,8 +31190,8 @@
               {
                 "src": "/catalog/mercedes-benz--sl-class.jpg",
                 "alt": "2024 Mercedes-Benz SL-Class",
-                "width": 1920,
-                "height": 1280
+                "width": 1600,
+                "height": 1067
               }
             ],
             "specs": {
@@ -31253,8 +31253,8 @@
               {
                 "src": "/catalog/mercedes-benz--sl-class.jpg",
                 "alt": "2025 Mercedes-Benz SL-Class",
-                "width": 1920,
-                "height": 1280
+                "width": 1600,
+                "height": 1067
               }
             ],
             "specs": {
@@ -31301,8 +31301,8 @@
               {
                 "src": "/catalog/mercedes-benz--sl-class.jpg",
                 "alt": "2026 Mercedes-Benz SL-Class",
-                "width": 1920,
-                "height": 1280
+                "width": 1600,
+                "height": 1067
               }
             ],
             "specs": {
@@ -31363,8 +31363,8 @@
               {
                 "src": "/catalog/mercedes-benz--glc.jpg",
                 "alt": "2024 Mercedes-Benz GLC",
-                "width": 1920,
-                "height": 1136
+                "width": 1600,
+                "height": 947
               }
             ],
             "specs": {
@@ -31460,8 +31460,8 @@
               {
                 "src": "/catalog/mercedes-benz--glc.jpg",
                 "alt": "2025 Mercedes-Benz GLC",
-                "width": 1920,
-                "height": 1136
+                "width": 1600,
+                "height": 947
               }
             ],
             "specs": {
@@ -31566,8 +31566,8 @@
               {
                 "src": "/catalog/mercedes-benz--glc.jpg",
                 "alt": "2026 Mercedes-Benz GLC",
-                "width": 1920,
-                "height": 1136
+                "width": 1600,
+                "height": 947
               }
             ],
             "specs": {
@@ -31663,8 +31663,8 @@
               {
                 "src": "/catalog/mercedes-benz--gle.jpg",
                 "alt": "2024 Mercedes-Benz GLE",
-                "width": 1920,
-                "height": 1035
+                "width": 1600,
+                "height": 863
               }
             ],
             "specs": {
@@ -31762,8 +31762,8 @@
               {
                 "src": "/catalog/mercedes-benz--gle.jpg",
                 "alt": "2025 Mercedes-Benz GLE",
-                "width": 1920,
-                "height": 1035
+                "width": 1600,
+                "height": 863
               }
             ],
             "specs": {
@@ -31860,8 +31860,8 @@
               {
                 "src": "/catalog/mercedes-benz--gle.jpg",
                 "alt": "2026 Mercedes-Benz GLE",
-                "width": 1920,
-                "height": 1035
+                "width": 1600,
+                "height": 863
               }
             ],
             "specs": {
@@ -31961,8 +31961,8 @@
               {
                 "src": "/catalog/mercedes-benz--gls.jpg",
                 "alt": "2024 Mercedes-Benz GLS",
-                "width": 1920,
-                "height": 893
+                "width": 1600,
+                "height": 744
               }
             ],
             "specs": {
@@ -32057,8 +32057,8 @@
               {
                 "src": "/catalog/mercedes-benz--gls.jpg",
                 "alt": "2025 Mercedes-Benz GLS",
-                "width": 1920,
-                "height": 893
+                "width": 1600,
+                "height": 744
               }
             ],
             "specs": {
@@ -32148,8 +32148,8 @@
               {
                 "src": "/catalog/mercedes-benz--gls.jpg",
                 "alt": "2026 Mercedes-Benz GLS",
-                "width": 1920,
-                "height": 893
+                "width": 1600,
+                "height": 744
               }
             ],
             "specs": {
@@ -32222,8 +32222,8 @@
               {
                 "src": "/catalog/mercedes-benz--cla.jpg",
                 "alt": "2024 Mercedes-Benz CLA",
-                "width": 1920,
-                "height": 1137
+                "width": 1600,
+                "height": 948
               }
             ],
             "specs": {
@@ -32293,8 +32293,8 @@
               {
                 "src": "/catalog/mercedes-benz--cla.jpg",
                 "alt": "2025 Mercedes-Benz CLA",
-                "width": 1920,
-                "height": 1137
+                "width": 1600,
+                "height": 948
               }
             ],
             "specs": {
@@ -32354,8 +32354,8 @@
               {
                 "src": "/catalog/mercedes-benz--cla.jpg",
                 "alt": "2026 Mercedes-Benz CLA",
-                "width": 1920,
-                "height": 1137
+                "width": 1600,
+                "height": 948
               }
             ],
             "specs": {
@@ -32426,8 +32426,8 @@
               {
                 "src": "/catalog/mercedes-benz--eqs.jpg",
                 "alt": "2024 Mercedes-Benz EQS",
-                "width": 1920,
-                "height": 1368
+                "width": 1600,
+                "height": 1140
               }
             ],
             "specs": {
@@ -32522,8 +32522,8 @@
               {
                 "src": "/catalog/mercedes-benz--eqs.jpg",
                 "alt": "2025 Mercedes-Benz EQS",
-                "width": 1920,
-                "height": 1368
+                "width": 1600,
+                "height": 1140
               }
             ],
             "specs": {
@@ -32594,8 +32594,8 @@
               {
                 "src": "/catalog/mercedes-benz--eqs.jpg",
                 "alt": "2026 Mercedes-Benz EQS",
-                "width": 1920,
-                "height": 1368
+                "width": 1600,
+                "height": 1140
               }
             ],
             "specs": {
@@ -32658,8 +32658,8 @@
               {
                 "src": "/catalog/mercedes-benz--slk-slc.jpg",
                 "alt": "2020 Mercedes-Benz SLK SLC",
-                "width": 1280,
-                "height": 853
+                "width": 1600,
+                "height": 900
               }
             ],
             "sources": {
@@ -32722,8 +32722,8 @@
               {
                 "src": "/catalog/tesla--model-s.jpg",
                 "alt": "2024 Tesla Model S",
-                "width": 1920,
-                "height": 1080
+                "width": 1600,
+                "height": 900
               }
             ],
             "specs": {
@@ -32849,8 +32849,8 @@
               {
                 "src": "/catalog/tesla--model-s.jpg",
                 "alt": "2025 Tesla Model S",
-                "width": 1920,
-                "height": 1080
+                "width": 1600,
+                "height": 900
               }
             ],
             "specs": {
@@ -32933,8 +32933,8 @@
               {
                 "src": "/catalog/tesla--model-s.jpg",
                 "alt": "2026 Tesla Model S",
-                "width": 1920,
-                "height": 1080
+                "width": 1600,
+                "height": 900
               }
             ],
             "specs": {
@@ -33015,8 +33015,8 @@
               {
                 "src": "/catalog/tesla--model-3.jpg",
                 "alt": "2024 Tesla Model 3",
-                "width": 1920,
-                "height": 1035
+                "width": 1600,
+                "height": 863
               }
             ],
             "specs": {
@@ -33142,8 +33142,8 @@
               {
                 "src": "/catalog/tesla--model-3.jpg",
                 "alt": "2025 Tesla Model 3",
-                "width": 1920,
-                "height": 1035
+                "width": 1600,
+                "height": 863
               }
             ],
             "specs": {
@@ -33249,8 +33249,8 @@
               {
                 "src": "/catalog/tesla--model-3.jpg",
                 "alt": "2026 Tesla Model 3",
-                "width": 1920,
-                "height": 1035
+                "width": 1600,
+                "height": 863
               }
             ],
             "specs": {
@@ -33353,8 +33353,8 @@
               {
                 "src": "/catalog/tesla--model-x.jpg",
                 "alt": "2024 Tesla Model X",
-                "width": 1920,
-                "height": 1288
+                "width": 1600,
+                "height": 1073
               }
             ],
             "specs": {
@@ -33492,8 +33492,8 @@
               {
                 "src": "/catalog/tesla--model-x.jpg",
                 "alt": "2025 Tesla Model X",
-                "width": 1920,
-                "height": 1288
+                "width": 1600,
+                "height": 1073
               }
             ],
             "specs": {
@@ -33598,8 +33598,8 @@
               {
                 "src": "/catalog/tesla--model-x.jpg",
                 "alt": "2026 Tesla Model X",
-                "width": 1920,
-                "height": 1288
+                "width": 1600,
+                "height": 1073
               }
             ],
             "specs": {
@@ -33687,8 +33687,8 @@
               {
                 "src": "/catalog/tesla--model-y.jpg",
                 "alt": "2024 Tesla Model Y",
-                "width": 1920,
-                "height": 1234
+                "width": 1600,
+                "height": 1028
               }
             ],
             "specs": {
@@ -33811,8 +33811,8 @@
               {
                 "src": "/catalog/tesla--model-y.jpg",
                 "alt": "2025 Tesla Model Y",
-                "width": 1920,
-                "height": 1234
+                "width": 1600,
+                "height": 1028
               }
             ],
             "specs": {
@@ -33930,8 +33930,8 @@
               {
                 "src": "/catalog/tesla--model-y.jpg",
                 "alt": "2026 Tesla Model Y",
-                "width": 1920,
-                "height": 1234
+                "width": 1600,
+                "height": 1028
               }
             ],
             "specs": {
@@ -34076,8 +34076,8 @@
               {
                 "src": "/catalog/tesla--cybertruck.jpg",
                 "alt": "2024 Tesla Cybertruck",
-                "width": 1920,
-                "height": 1139
+                "width": 1600,
+                "height": 949
               }
             ],
             "specs": {
@@ -34236,8 +34236,8 @@
               {
                 "src": "/catalog/tesla--cybertruck.jpg",
                 "alt": "2025 Tesla Cybertruck",
-                "width": 1920,
-                "height": 1139
+                "width": 1600,
+                "height": 949
               }
             ],
             "specs": {
@@ -34343,8 +34343,8 @@
               {
                 "src": "/catalog/tesla--cybertruck.jpg",
                 "alt": "2026 Tesla Cybertruck",
-                "width": 1920,
-                "height": 1139
+                "width": 1600,
+                "height": 949
               }
             ],
             "specs": {
@@ -34505,8 +34505,8 @@
               {
                 "src": "/catalog/volkswagen--jetta.jpg",
                 "alt": "2024 Volkswagen Jetta",
-                "width": 1920,
-                "height": 1146
+                "width": 1600,
+                "height": 955
               }
             ],
             "specs": {
@@ -34607,8 +34607,8 @@
               {
                 "src": "/catalog/volkswagen--jetta.jpg",
                 "alt": "2025 Volkswagen Jetta",
-                "width": 1920,
-                "height": 1146
+                "width": 1600,
+                "height": 955
               }
             ],
             "specs": {
@@ -34721,8 +34721,8 @@
               {
                 "src": "/catalog/volkswagen--jetta.jpg",
                 "alt": "2026 Volkswagen Jetta",
-                "width": 1920,
-                "height": 1146
+                "width": 1600,
+                "height": 955
               }
             ],
             "specs": {
@@ -34815,8 +34815,8 @@
               {
                 "src": "/catalog/volkswagen--golf.jpg",
                 "alt": "2021 Volkswagen Golf",
-                "width": 1920,
-                "height": 1280
+                "width": 1600,
+                "height": 1067
               }
             ],
             "specs": {
@@ -34914,8 +34914,8 @@
               {
                 "src": "/catalog/volkswagen--gti.jpg",
                 "alt": "2024 Volkswagen GTI",
-                "width": 1920,
-                "height": 1129
+                "width": 1600,
+                "height": 941
               }
             ],
             "specs": {
@@ -35017,8 +35017,8 @@
               {
                 "src": "/catalog/volkswagen--gti.jpg",
                 "alt": "2025 Volkswagen GTI",
-                "width": 1920,
-                "height": 1129
+                "width": 1600,
+                "height": 941
               }
             ],
             "specs": {
@@ -35078,8 +35078,8 @@
               {
                 "src": "/catalog/volkswagen--gti.jpg",
                 "alt": "2026 Volkswagen GTI",
-                "width": 1920,
-                "height": 1129
+                "width": 1600,
+                "height": 941
               }
             ],
             "specs": {
@@ -35146,8 +35146,8 @@
               {
                 "src": "/catalog/volkswagen--golf-r.jpg",
                 "alt": "2024 Volkswagen Golf R",
-                "width": 1920,
-                "height": 1096
+                "width": 1600,
+                "height": 913
               }
             ],
             "specs": {
@@ -35240,8 +35240,8 @@
               {
                 "src": "/catalog/volkswagen--golf-r.jpg",
                 "alt": "2025 Volkswagen Golf R",
-                "width": 1920,
-                "height": 1096
+                "width": 1600,
+                "height": 913
               }
             ],
             "specs": {
@@ -35306,8 +35306,8 @@
               {
                 "src": "/catalog/volkswagen--golf-r.jpg",
                 "alt": "2026 Volkswagen Golf R",
-                "width": 1920,
-                "height": 1096
+                "width": 1600,
+                "height": 913
               }
             ],
             "specs": {
@@ -35388,8 +35388,8 @@
               {
                 "src": "/catalog/volkswagen--passat.jpg",
                 "alt": "2022 Volkswagen Passat",
-                "width": 1920,
-                "height": 952
+                "width": 1600,
+                "height": 793
               }
             ],
             "specs": {
@@ -35477,8 +35477,8 @@
               {
                 "src": "/catalog/volkswagen--tiguan.jpg",
                 "alt": "2024 Volkswagen Tiguan",
-                "width": 1920,
-                "height": 1185
+                "width": 1600,
+                "height": 988
               }
             ],
             "specs": {
@@ -35593,8 +35593,8 @@
               {
                 "src": "/catalog/volkswagen--tiguan.jpg",
                 "alt": "2025 Volkswagen Tiguan",
-                "width": 1920,
-                "height": 1185
+                "width": 1600,
+                "height": 988
               }
             ],
             "specs": {
@@ -35709,8 +35709,8 @@
               {
                 "src": "/catalog/volkswagen--tiguan.jpg",
                 "alt": "2026 Volkswagen Tiguan",
-                "width": 1920,
-                "height": 1185
+                "width": 1600,
+                "height": 988
               }
             ],
             "specs": {
@@ -35817,8 +35817,8 @@
               {
                 "src": "/catalog/volkswagen--touareg.jpg",
                 "alt": "2017 Volkswagen Touareg",
-                "width": 1920,
-                "height": 1072
+                "width": 1600,
+                "height": 893
               }
             ],
             "sources": {
@@ -35914,8 +35914,8 @@
               {
                 "src": "/catalog/volkswagen--atlas.jpg",
                 "alt": "2024 Volkswagen Atlas",
-                "width": 1920,
-                "height": 1055
+                "width": 1600,
+                "height": 879
               }
             ],
             "specs": {
@@ -36066,8 +36066,8 @@
               {
                 "src": "/catalog/volkswagen--atlas.jpg",
                 "alt": "2025 Volkswagen Atlas",
-                "width": 1920,
-                "height": 1055
+                "width": 1600,
+                "height": 879
               }
             ],
             "specs": {
@@ -36200,8 +36200,8 @@
               {
                 "src": "/catalog/volkswagen--atlas.jpg",
                 "alt": "2026 Volkswagen Atlas",
-                "width": 1920,
-                "height": 1055
+                "width": 1600,
+                "height": 879
               }
             ],
             "specs": {
@@ -36306,8 +36306,8 @@
               {
                 "src": "/catalog/volkswagen--beetle.jpg",
                 "alt": "2019 Volkswagen Beetle",
-                "width": 1920,
-                "height": 1246
+                "width": 1600,
+                "height": 1038
               }
             ],
             "sources": {
@@ -36425,8 +36425,8 @@
               {
                 "src": "/catalog/volkswagen--id-4.jpg",
                 "alt": "2024 Volkswagen ID.4",
-                "width": 1920,
-                "height": 1449
+                "width": 1600,
+                "height": 1208
               }
             ],
             "specs": {
@@ -36577,8 +36577,8 @@
               {
                 "src": "/catalog/volkswagen--id-4.jpg",
                 "alt": "2025 Volkswagen ID.4",
-                "width": 1920,
-                "height": 1449
+                "width": 1600,
+                "height": 1208
               }
             ],
             "specs": {
@@ -36682,8 +36682,8 @@
               {
                 "src": "/catalog/volkswagen--id-4.jpg",
                 "alt": "2026 Volkswagen ID.4",
-                "width": 1920,
-                "height": 1449
+                "width": 1600,
+                "height": 1208
               }
             ],
             "specs": {
@@ -36768,8 +36768,8 @@
               {
                 "src": "/catalog/mazda--miata.jpg",
                 "alt": "2024 Mazda Miata",
-                "width": 1280,
-                "height": 738
+                "width": 1600,
+                "height": 1183
               }
             ],
             "sources": {
@@ -36819,8 +36819,8 @@
               {
                 "src": "/catalog/mazda--miata.jpg",
                 "alt": "2025 Mazda Miata",
-                "width": 1280,
-                "height": 738
+                "width": 1600,
+                "height": 1183
               }
             ],
             "sources": {
@@ -36870,8 +36870,8 @@
               {
                 "src": "/catalog/mazda--miata.jpg",
                 "alt": "2026 Mazda Miata",
-                "width": 1280,
-                "height": 738
+                "width": 1600,
+                "height": 1183
               }
             ],
             "sources": {
@@ -36937,8 +36937,8 @@
               {
                 "src": "/catalog/mazda--mazda3.jpg",
                 "alt": "2024 Mazda Mazda3",
-                "width": 1280,
-                "height": 627
+                "width": 1600,
+                "height": 648
               }
             ],
             "specs": {
@@ -37047,8 +37047,8 @@
               {
                 "src": "/catalog/mazda--mazda3.jpg",
                 "alt": "2025 Mazda Mazda3",
-                "width": 1280,
-                "height": 627
+                "width": 1600,
+                "height": 648
               }
             ],
             "specs": {
@@ -37126,8 +37126,8 @@
               {
                 "src": "/catalog/mazda--mazda3.jpg",
                 "alt": "2026 Mazda Mazda3",
-                "width": 1280,
-                "height": 627
+                "width": 1600,
+                "height": 648
               }
             ],
             "specs": {
@@ -37190,8 +37190,8 @@
               {
                 "src": "/catalog/mazda--mazda6.jpg",
                 "alt": "2021 Mazda Mazda6",
-                "width": 1280,
-                "height": 853
+                "width": 1600,
+                "height": 934
               }
             ],
             "sources": {
@@ -37263,8 +37263,8 @@
               {
                 "src": "/catalog/mazda--rx-8.jpg",
                 "alt": "2011 Mazda RX-8",
-                "width": 1280,
-                "height": 854
+                "width": 1600,
+                "height": 900
               }
             ],
             "sources": {
@@ -37360,8 +37360,8 @@
               {
                 "src": "/catalog/mazda--cx-5.jpg",
                 "alt": "2024 Mazda CX-5",
-                "width": 1280,
-                "height": 854
+                "width": 1600,
+                "height": 1143
               }
             ],
             "specs": {
@@ -37462,8 +37462,8 @@
               {
                 "src": "/catalog/mazda--cx-5.jpg",
                 "alt": "2025 Mazda CX-5",
-                "width": 1280,
-                "height": 854
+                "width": 1600,
+                "height": 1143
               }
             ],
             "specs": {
@@ -37558,8 +37558,8 @@
               {
                 "src": "/catalog/mazda--cx-5.jpg",
                 "alt": "2026 Mazda CX-5",
-                "width": 1280,
-                "height": 854
+                "width": 1600,
+                "height": 1143
               }
             ],
             "specs": {
@@ -37653,8 +37653,8 @@
               {
                 "src": "/catalog/mazda--cx-30.jpg",
                 "alt": "2024 Mazda CX-30",
-                "width": 1280,
-                "height": 656
+                "width": 1600,
+                "height": 978
               }
             ],
             "specs": {
@@ -37768,8 +37768,8 @@
               {
                 "src": "/catalog/mazda--cx-30.jpg",
                 "alt": "2025 Mazda CX-30",
-                "width": 1280,
-                "height": 656
+                "width": 1600,
+                "height": 978
               }
             ],
             "specs": {
@@ -37876,8 +37876,8 @@
               {
                 "src": "/catalog/mazda--cx-30.jpg",
                 "alt": "2026 Mazda CX-30",
-                "width": 1280,
-                "height": 656
+                "width": 1600,
+                "height": 978
               }
             ],
             "specs": {
@@ -37951,8 +37951,8 @@
               {
                 "src": "/catalog/mazda--cx-9.jpg",
                 "alt": "2023 Mazda CX-9",
-                "width": 1280,
-                "height": 653
+                "width": 1600,
+                "height": 1200
               }
             ],
             "specs": {
@@ -38047,8 +38047,8 @@
               {
                 "src": "/catalog/mazda--cx-90.jpg",
                 "alt": "2024 Mazda CX-90",
-                "width": 1280,
-                "height": 1024
+                "width": 1600,
+                "height": 777
               }
             ],
             "specs": {
@@ -38208,8 +38208,8 @@
               {
                 "src": "/catalog/mazda--cx-90.jpg",
                 "alt": "2025 Mazda CX-90",
-                "width": 1280,
-                "height": 1024
+                "width": 1600,
+                "height": 777
               }
             ],
             "specs": {
@@ -38319,8 +38319,8 @@
               {
                 "src": "/catalog/mazda--cx-90.jpg",
                 "alt": "2026 Mazda CX-90",
-                "width": 1280,
-                "height": 1024
+                "width": 1600,
+                "height": 777
               }
             ],
             "specs": {

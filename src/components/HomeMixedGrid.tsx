@@ -31,6 +31,7 @@ function HomeMixedTile({ entry }: { entry: HomeMixedEntry }) {
             src={entry.image.src}
             alt={entry.image.alt}
             fill
+            quality={45}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover transition duration-500 group-hover:scale-[1.03]"
           />

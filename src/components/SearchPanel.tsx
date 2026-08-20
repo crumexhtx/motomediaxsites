@@ -153,6 +153,7 @@ export function SearchPanel({
                         src={result.image.src}
                         alt={result.image.alt}
                         fill
+                        quality={45}
                         sizes="120px"
                         className="object-cover"
                       />

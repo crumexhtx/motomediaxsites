@@ -108,6 +108,7 @@ export function Gallery({ images, compact = false }: Props) {
                 src={image.src}
                 alt={image.alt}
                 fill
+                quality={45}
                 sizes={
                   compact
                     ? "(max-width: 1024px) 45vw, 200px"

@@ -16,6 +16,7 @@ function PhotoOrPlaceholder({
         src={image.src}
         alt={image.alt || title}
         fill
+        quality={45}
         sizes="(max-width: 640px) 100vw, 180px"
         className="object-cover transition duration-500 group-hover:scale-[1.03]"
       />
