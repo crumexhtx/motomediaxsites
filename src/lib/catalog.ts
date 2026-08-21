@@ -162,56 +162,55 @@ function featuredModel(make: MakeEntry): ModelEntry | undefined {
 }
 
 /**
- * Interleaved makes/models/years for the homepage grid — no single card
- * type is more "primary" than another, so mix them (make, model, year,
- * make, model, year, ...) instead of three homogeneous rows.
+ * Interleaved make / model / year cards for the homepage grid.
+ * Each visual row (make, model, year) stays on the same brand so the
+ * grid reads as matched triplets rather than three unrelated lists.
  */
 export function getHomeMixedEntries(limit = 12): HomeMixedEntry[] {
-  const perType = Math.ceil(limit / 3);
-  const allMakes = getAllMakes();
+  const rows = Math.ceil(limit / 3);
+  const mixed: HomeMixedEntry[] = [];
 
-  const makeEntries: HomeMixedEntry[] = allMakes.slice(0, perType).map((make) => ({
-    type: "make",
-    key: `make-${make.slug}`,
-    href: makeHref(make.slug),
-    title: make.name,
-    subtitle: `${make.country} · ${make.models.length} model${make.models.length === 1 ? "" : "s"}`,
-    image: makeCoverImage(make),
-  }));
+  for (const make of getAllMakes().slice(0, rows)) {
+    const model = featuredModel(make);
+    if (!model) continue;
 
-  const modelEntries: HomeMixedEntry[] = allMakes
-    .slice(perType, perType * 2)
-    .flatMap((make) => {
-      const model = featuredModel(make);
-      if (!model) return [];
-      return [
-        {
-          type: "model" as const,
-          key: `model-${make.slug}-${model.slug}`,
-          href: modelHref(make.slug, model.slug),
-          title: `${make.name} ${model.name}`,
-          subtitle: model.tagline,
-          image: modelCardImage(make, model),
-        },
-      ];
+    mixed.push({
+      type: "make",
+      key: `make-${make.slug}`,
+      href: makeHref(make.slug),
+      title: make.name,
+      subtitle: `${make.country} · ${make.models.length} model${make.models.length === 1 ? "" : "s"}`,
+      image: makeCoverImage(make),
     });
 
-  const yearEntries: HomeMixedEntry[] = getLatestEntries(perType).map((entry) => ({
-    type: "year",
-    key: `year-${entry.href}`,
-    href: entry.href,
-    title: `${entry.make.name} ${entry.model.name}`,
-    subtitle: `${entry.year.year} model year`,
-    image: entry.image,
-  }));
+    mixed.push({
+      type: "model",
+      key: `model-${make.slug}-${model.slug}`,
+      href: modelHref(make.slug, model.slug),
+      title: `${make.name} ${model.name}`,
+      subtitle: model.tagline,
+      image: modelCardImage(make, model),
+    });
 
-  const mixed: HomeMixedEntry[] = [];
-  const rows = Math.max(makeEntries.length, modelEntries.length, yearEntries.length);
-  for (let i = 0; i < rows; i++) {
-    if (makeEntries[i]) mixed.push(makeEntries[i]);
-    if (modelEntries[i]) mixed.push(modelEntries[i]);
-    if (yearEntries[i]) mixed.push(yearEntries[i]);
+    const year = newestYear(model);
+    if (year) {
+      mixed.push({
+        type: "year",
+        key: `year-${make.slug}-${model.slug}-${year.slug}`,
+        href: yearHref(make.slug, model.slug, year.slug),
+        title: `${make.name} ${model.name}`,
+        subtitle: `${year.year} model year`,
+        image:
+          pickBestCardImage(year.images, {
+            makeName: make.name,
+            modelName: model.name,
+          }) ?? modelCardImage(make, model),
+      });
+    }
+
+    if (mixed.length >= limit) break;
   }
+
   return mixed.slice(0, limit);
 }
 

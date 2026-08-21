@@ -70,6 +70,39 @@ describe("catalog lookups", () => {
     expect(hero!.alt.toLowerCase()).toContain("hummer");
   });
 
+  it("keeps each homepage mixed-grid row on the same make", async () => {
+    const { getHomeMixedEntries } = await import("@/lib/catalog");
+    const entries = getHomeMixedEntries(12);
+    expect(entries.length).toBe(12);
+    expect(entries.map((e) => e.type)).toEqual([
+      "make",
+      "model",
+      "year",
+      "make",
+      "model",
+      "year",
+      "make",
+      "model",
+      "year",
+      "make",
+      "model",
+      "year",
+    ]);
+
+    for (let i = 0; i < entries.length; i += 3) {
+      const make = entries[i];
+      const model = entries[i + 1];
+      const year = entries[i + 2];
+      expect(make.type).toBe("make");
+      expect(model.type).toBe("model");
+      expect(year.type).toBe("year");
+      expect(model.title.startsWith(make.title)).toBe(true);
+      expect(year.title.startsWith(make.title)).toBe(true);
+      expect(model.href).toContain(`/makes/${make.key.replace("make-", "")}/`);
+      expect(year.href).toContain(`/makes/${make.key.replace("make-", "")}/`);
+    }
+  });
+
   it("picks diverse local hero backdrop images when catalog photos exist", () => {
     const images = getHeroBackdropImages(4);
     expect(images.length).toBeGreaterThan(0);
