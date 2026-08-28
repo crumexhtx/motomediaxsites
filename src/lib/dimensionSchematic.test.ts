@@ -58,9 +58,10 @@ describe("dimension schematic", () => {
     expect(formatInches(a.lengthIn - b.lengthIn)).toMatch(/in$/);
   });
 
-  it("returns undefined layout when no dimensions exist (e.g. Mach-E)", () => {
-    const mache = getYear("ford", "mustang-mach-e", "2024");
-    expect(dimensionsFromSpecs(mache?.year.specs)).toBeUndefined();
+  it("returns undefined layout when no dimensions exist", () => {
+    const amg = getYear("mercedes-benz", "amg-gt", "2026");
+    expect(dimensionsFromSpecs(amg?.year.specs)).toBeUndefined();
+    expect(dimensionsFromSpecs({})).toBeUndefined();
     expect(buildSchematicLayout([])).toBeUndefined();
   });
 });

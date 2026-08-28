@@ -78,9 +78,7 @@ describe("text helpers", () => {
   it("builds a specific year SEO title", () => {
     expect(
       yearSeoTitle({ year: 2026, makeName: "Ford", modelName: "F-150" }),
-    ).toBe(
-      "2026 Ford F-150: Recalls, Specs & Used Price Guide | MotoMediaX",
-    );
+    ).toBe("2026 Ford F-150: Recalls, Specs & Used Price Guide");
   });
 
   it("repairs ??? mojibake from corrupted UTF-8 dashes", () => {

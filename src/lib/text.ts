@@ -83,15 +83,13 @@ export function firstContentSentence(
   return truncateAtSentence(sentence, maxLen);
 }
 
-/** SEO / social title for a year page. */
+/** SEO / social title for a year page (root layout template appends · MotoMediaX). */
 export function yearSeoTitle(input: {
   year: number;
   makeName: string;
   modelName: string;
-  siteName?: string;
 }): string {
-  const site = input.siteName ?? "MotoMediaX";
-  return `${input.year} ${input.makeName} ${input.modelName}: Recalls, Specs & Used Price Guide | ${site}`;
+  return `${input.year} ${input.makeName} ${input.modelName}: Recalls, Specs & Used Price Guide`;
 }
 
 /** SEO / social description for a year page — never a thin “offered in the U.S. market” stub. */

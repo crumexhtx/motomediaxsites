@@ -74,10 +74,9 @@ export function DimensionSchematic({
         <svg
           viewBox={layout.viewBox}
           width="100%"
-          height="auto"
           role="img"
           aria-label={layout.caption}
-          className="mx-auto max-w-full"
+          className="mx-auto h-auto max-w-full"
         >
           {/* Ground line */}
           <line
