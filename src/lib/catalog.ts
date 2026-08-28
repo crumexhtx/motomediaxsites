@@ -155,24 +155,25 @@ export type HomeMixedEntry = {
   image: GalleryImage;
 };
 
-/** Model with the deepest catalog coverage for a make — used as its featured model. */
-function featuredModel(make: MakeEntry): ModelEntry | undefined {
-  if (!make.models.length) return undefined;
-  return [...make.models].sort((a, b) => b.years.length - a.years.length)[0];
+/** Models ranked by catalog depth — used for homepage featured picks. */
+function rankedModels(make: MakeEntry): ModelEntry[] {
+  return [...make.models].sort((a, b) => b.years.length - a.years.length);
 }
 
 /**
  * Interleaved make / model / year cards for the homepage grid.
- * Each visual row (make, model, year) stays on the same brand so the
- * grid reads as matched triplets rather than three unrelated lists.
+ * Each visual row stays on one brand and uses two different models
+ * (model card + year card) so the row isn't a duplicate pair.
  */
 export function getHomeMixedEntries(limit = 12): HomeMixedEntry[] {
   const rows = Math.ceil(limit / 3);
   const mixed: HomeMixedEntry[] = [];
 
   for (const make of getAllMakes().slice(0, rows)) {
-    const model = featuredModel(make);
-    if (!model) continue;
+    const [modelA, modelB] = rankedModels(make);
+    if (!modelA) continue;
+    // Prefer a second model for the year card; fall back to modelA if the make is thin.
+    const yearModel = modelB ?? modelA;
 
     mixed.push({
       type: "make",
@@ -185,26 +186,26 @@ export function getHomeMixedEntries(limit = 12): HomeMixedEntry[] {
 
     mixed.push({
       type: "model",
-      key: `model-${make.slug}-${model.slug}`,
-      href: modelHref(make.slug, model.slug),
-      title: `${make.name} ${model.name}`,
-      subtitle: model.tagline,
-      image: modelCardImage(make, model),
+      key: `model-${make.slug}-${modelA.slug}`,
+      href: modelHref(make.slug, modelA.slug),
+      title: `${make.name} ${modelA.name}`,
+      subtitle: modelA.tagline,
+      image: modelCardImage(make, modelA),
     });
 
-    const year = newestYear(model);
+    const year = newestYear(yearModel);
     if (year) {
       mixed.push({
         type: "year",
-        key: `year-${make.slug}-${model.slug}-${year.slug}`,
-        href: yearHref(make.slug, model.slug, year.slug),
-        title: `${make.name} ${model.name}`,
+        key: `year-${make.slug}-${yearModel.slug}-${year.slug}`,
+        href: yearHref(make.slug, yearModel.slug, year.slug),
+        title: `${make.name} ${yearModel.name}`,
         subtitle: `${year.year} model year`,
         image:
           pickBestCardImage(year.images, {
             makeName: make.name,
-            modelName: model.name,
-          }) ?? modelCardImage(make, model),
+            modelName: yearModel.name,
+          }) ?? modelCardImage(make, yearModel),
       });
     }
 

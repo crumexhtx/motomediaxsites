@@ -98,8 +98,11 @@ describe("catalog lookups", () => {
       expect(year.type).toBe("year");
       expect(model.title.startsWith(make.title)).toBe(true);
       expect(year.title.startsWith(make.title)).toBe(true);
-      expect(model.href).toContain(`/makes/${make.key.replace("make-", "")}/`);
-      expect(year.href).toContain(`/makes/${make.key.replace("make-", "")}/`);
+      const makeSlug = make.key.replace("make-", "");
+      expect(model.href).toContain(`/makes/${makeSlug}/`);
+      expect(year.href).toContain(`/makes/${makeSlug}/`);
+      // Model card and year card should feature different models when possible.
+      expect(model.title).not.toBe(year.title);
     }
   });
 
