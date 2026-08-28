@@ -6,6 +6,7 @@ import {
   DEFAULT_MIN_MPG,
   efficiencyMpgBounds,
   filterModelsByMinMpg,
+  groupEfficiencyResults,
   type EfficiencyCandidate,
 } from "@/lib/efficiency";
 import { getEfficiencyCandidates } from "@/lib/efficiency.server";
@@ -24,6 +25,12 @@ function candidate(
     href: partial.href ?? "/",
     trimName: partial.trimName ?? null,
     powertrain: partial.powertrain ?? "gas",
+    image: partial.image ?? {
+      src: "/brands/toyota.svg",
+      alt: "badge",
+      width: 128,
+      height: 128,
+    },
     ...partial,
   };
 }
@@ -120,6 +127,64 @@ describe("filterModelsByMinMpg", () => {
   });
 });
 
+describe("groupEfficiencyResults", () => {
+  it("splits hybrids, PHEVs, EVs, and gas into separate sections", () => {
+    const groups = groupEfficiencyResults([
+      candidate({
+        makeSlug: "toyota",
+        modelSlug: "camry",
+        year: 2025,
+        mpgCombined: 52,
+        powertrain: "hybrid",
+      }),
+      candidate({
+        makeSlug: "toyota",
+        modelSlug: "rav4-prime",
+        year: 2025,
+        mpgCombined: 38,
+        powertrain: "phev",
+      }),
+      candidate({
+        makeSlug: "tesla",
+        modelSlug: "model-3",
+        year: 2025,
+        mpgCombined: 130,
+        powertrain: "ev",
+      }),
+      candidate({
+        makeSlug: "honda",
+        modelSlug: "civic",
+        year: 2025,
+        mpgCombined: 36,
+        powertrain: "gas",
+      }),
+    ]);
+    expect(groups.map((g) => g.id)).toEqual([
+      "hybrid",
+      "phev",
+      "ev",
+      "gas",
+    ]);
+    expect(groups.find((g) => g.id === "hybrid")?.items).toHaveLength(1);
+    expect(groups.find((g) => g.id === "ev")?.items[0].modelSlug).toBe(
+      "model-3",
+    );
+  });
+
+  it("omits empty powertrain sections", () => {
+    const groups = groupEfficiencyResults([
+      candidate({
+        makeSlug: "toyota",
+        modelSlug: "camry",
+        year: 2025,
+        mpgCombined: 52,
+        powertrain: "hybrid",
+      }),
+    ]);
+    expect(groups.map((g) => g.id)).toEqual(["hybrid"]);
+  });
+});
+
 describe("efficiencyMpgBounds / clampMinMpg", () => {
   it("derives bounds from candidates", () => {
     expect(
@@ -142,6 +207,7 @@ describe("getEfficiencyCandidates", () => {
     const list = getEfficiencyCandidates();
     expect(list.length).toBeGreaterThan(0);
     expect(list.every((c) => c.mpgCombined > 0)).toBe(true);
+    expect(list.every((c) => Boolean(c.image?.src))).toBe(true);
     expect(list[0].mpgCombined).toBeGreaterThanOrEqual(
       list[list.length - 1].mpgCombined,
     );

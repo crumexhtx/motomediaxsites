@@ -1,4 +1,4 @@
-import type { YearEntry } from "@/data/catalog";
+import type { GalleryImage, YearEntry } from "@/data/catalog";
 import { resolvePowertrainKind, type OwnershipKind } from "@/lib/ownership";
 
 export type EfficiencyCandidate = {
@@ -12,6 +12,7 @@ export type EfficiencyCandidate = {
   mpgCombined: number;
   trimName: string | null;
   powertrain: OwnershipKind | null;
+  image: GalleryImage;
 };
 
 export type EfficiencyMpgBounds = {
@@ -19,8 +20,44 @@ export type EfficiencyMpgBounds = {
   max: number;
 };
 
+export type EfficiencyGroupId = "hybrid" | "phev" | "ev" | "gas";
+
+export type EfficiencyGroup = {
+  id: EfficiencyGroupId;
+  title: string;
+  lead: string;
+  items: EfficiencyCandidate[];
+};
+
 /** Default slider start — useful “efficient enough” without only showing hybrids. */
 export const DEFAULT_MIN_MPG = 30;
+
+const GROUP_META: Array<{
+  id: EfficiencyGroupId;
+  title: string;
+  lead: string;
+}> = [
+  {
+    id: "hybrid",
+    title: "Hybrids",
+    lead: "Gas-electric hybrids — combined MPG from catalog specs.",
+  },
+  {
+    id: "phev",
+    title: "Plug-in hybrids",
+    lead: "PHEV gas-combined estimates; electric-only range is not modeled here.",
+  },
+  {
+    id: "ev",
+    title: "Battery electric",
+    lead: "BEVs when the catalog lists combined MPGe (not mi/kWh).",
+  },
+  {
+    id: "gas",
+    title: "Gas",
+    lead: "Conventional gas powertrains that still clear your MPG floor.",
+  },
+];
 
 /**
  * Best published combined MPG for a year (year specs or any trim).
@@ -109,6 +146,35 @@ export function filterModelsByMinMpg(
       b.mpgCombined - a.mpgCombined ||
       a.makeName.localeCompare(b.makeName) ||
       a.modelName.localeCompare(b.modelName),
+  );
+}
+
+/** Bucket filtered models into hybrid / PHEV / EV / gas (empty groups omitted). */
+export function groupEfficiencyResults(
+  results: EfficiencyCandidate[],
+): EfficiencyGroup[] {
+  const buckets: Record<EfficiencyGroupId, EfficiencyCandidate[]> = {
+    hybrid: [],
+    phev: [],
+    ev: [],
+    gas: [],
+  };
+
+  for (const item of results) {
+    const id: EfficiencyGroupId =
+      item.powertrain === "hybrid" ||
+      item.powertrain === "phev" ||
+      item.powertrain === "ev"
+        ? item.powertrain
+        : "gas";
+    buckets[id].push(item);
+  }
+
+  return GROUP_META.filter((meta) => buckets[meta.id].length > 0).map(
+    (meta) => ({
+      ...meta,
+      items: buckets[meta.id],
+    }),
   );
 }
 

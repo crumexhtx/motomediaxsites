@@ -1,7 +1,7 @@
 import "server-only";
 
 import { getCatalog } from "@/data/catalog.server";
-import { yearHref } from "@/lib/catalog";
+import { modelCardImage, pickBestCardImage, yearHref } from "@/lib/catalog";
 import {
   bestCombinedMpg,
   type EfficiencyCandidate,
@@ -14,10 +14,16 @@ export function getEfficiencyCandidates(): EfficiencyCandidate[] {
 
   for (const make of getCatalog()) {
     for (const model of make.models) {
+      const fallbackImage = modelCardImage(make, model);
       for (const raw of model.years) {
         const year = enrichYearEntry(make.slug, model.slug, raw);
         const { mpg, trimName, powertrain } = bestCombinedMpg(year);
         if (mpg == null) continue;
+        const image =
+          pickBestCardImage(year.images, {
+            makeName: make.name,
+            modelName: model.name,
+          }) ?? fallbackImage;
         out.push({
           makeName: make.name,
           makeSlug: make.slug,
@@ -29,6 +35,7 @@ export function getEfficiencyCandidates(): EfficiencyCandidate[] {
           mpgCombined: mpg,
           trimName,
           powertrain,
+          image,
         });
       }
     }

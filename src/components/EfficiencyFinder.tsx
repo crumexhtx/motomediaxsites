@@ -2,35 +2,73 @@
 
 import Link from "next/link";
 import { useEffect, useId, useMemo, useState } from "react";
+import { CatalogImage } from "@/components/CatalogImage";
 import {
   clampMinMpg,
   filterModelsByMinMpg,
+  groupEfficiencyResults,
   type EfficiencyCandidate,
   type EfficiencyMpgBounds,
 } from "@/lib/efficiency";
-
-function powertrainLabel(
-  kind: EfficiencyCandidate["powertrain"],
-): string | null {
-  switch (kind) {
-    case "ev":
-      return "EV";
-    case "phev":
-      return "PHEV";
-    case "hybrid":
-      return "Hybrid";
-    case "gas":
-      return "Gas";
-    default:
-      return null;
-  }
-}
 
 type Props = {
   candidates: EfficiencyCandidate[];
   bounds: EfficiencyMpgBounds;
   initialMinMpg: number;
 };
+
+function ResultCard({ item }: { item: EfficiencyCandidate }) {
+  const title = `${item.year} ${item.makeName} ${item.modelName}`;
+  const isBadge = item.image.src.endsWith(".svg");
+
+  return (
+    <Link
+      href={item.href}
+      className="focus-ring group grid overflow-hidden rounded-xl border border-line bg-elevated transition hover:border-accent/50 sm:grid-cols-[160px_1fr]"
+    >
+      <div className="relative aspect-[16/10] bg-soft sm:aspect-auto sm:min-h-[110px]">
+        {isBadge ? (
+          <div className="flex h-full min-h-[110px] items-center justify-center p-6">
+            <CatalogImage
+              src={item.image.src}
+              alt={item.image.alt || title}
+              width={96}
+              height={96}
+              className="brand-badge h-16 w-16 object-contain opacity-80"
+            />
+          </div>
+        ) : (
+          <CatalogImage
+            src={item.image.src}
+            alt={item.image.alt || title}
+            fill
+            quality={45}
+            sizes="(max-width: 640px) 100vw, 160px"
+            className="object-cover transition duration-500 group-hover:scale-[1.03]"
+          />
+        )}
+      </div>
+      <div className="flex flex-col justify-center gap-1 p-4 sm:p-5">
+        <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+          <h3 className="font-display text-lg tracking-tight sm:text-xl">
+            {title}
+          </h3>
+          <p className="font-display text-xl tabular-nums tracking-tight text-accent">
+            {item.mpgCombined}{" "}
+            <span className="text-sm font-sans text-muted">
+              {item.powertrain === "ev" ? "MPGe" : "mpg"}
+            </span>
+          </p>
+        </div>
+        {item.trimName ? (
+          <p className="text-sm text-muted">{item.trimName} trim</p>
+        ) : (
+          <p className="text-sm text-muted">Best combined figure for this year</p>
+        )}
+      </div>
+    </Link>
+  );
+}
 
 export function EfficiencyFinder({
   candidates,
@@ -46,6 +84,7 @@ export function EfficiencyFinder({
     () => filterModelsByMinMpg(candidates, minMpg),
     [candidates, minMpg],
   );
+  const groups = useMemo(() => groupEfficiencyResults(results), [results]);
 
   useEffect(() => {
     const url = new URL(window.location.href);
@@ -108,9 +147,8 @@ export function EfficiencyFinder({
       </div>
 
       <p className="mt-4 max-w-2xl text-xs text-muted">
-        Shows the newest model year in our catalog that meets or exceeds your
-        number, using the best published combined MPG for that year (trim or
-        year specs). Not real-world driving.
+        Newest qualifying year per model, grouped by powertrain. Combined MPG
+        (or MPGe for battery electric when published) — not real-world driving.
       </p>
 
       {results.length === 0 ? (
@@ -118,34 +156,31 @@ export function EfficiencyFinder({
           Nothing hits {minMpg}+ mpg yet. Slide down to widen the list.
         </p>
       ) : (
-        <ul className="mt-8 max-w-3xl divide-y divide-line/70">
-          {results.map((r) => {
-            const kind = powertrainLabel(r.powertrain);
-            return (
-              <li key={`${r.makeSlug}-${r.modelSlug}`} className="py-4">
-                <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-                  <p className="font-medium text-foreground">
-                    <Link
-                      href={r.href}
-                      className="underline-offset-2 hover:underline"
-                    >
-                      {r.year} {r.makeName} {r.modelName}
-                    </Link>
-                  </p>
-                  <p className="font-display text-xl tabular-nums tracking-tight text-accent">
-                    {r.mpgCombined}{" "}
-                    <span className="text-sm font-sans text-muted">mpg</span>
-                  </p>
-                </div>
-                <p className="mt-1 text-sm text-muted">
-                  {[kind, r.trimName ? `${r.trimName} trim` : null]
-                    .filter(Boolean)
-                    .join(" · ") || "Combined MPG from catalog specs"}
-                </p>
-              </li>
-            );
-          })}
-        </ul>
+        <div className="mt-10 space-y-12">
+          {groups.map((group) => (
+            <section key={group.id} aria-labelledby={`eff-${group.id}`}>
+              <div className="mb-4 max-w-2xl">
+                <h2
+                  id={`eff-${group.id}`}
+                  className="font-display text-2xl tracking-tight md:text-3xl"
+                >
+                  {group.title}
+                  <span className="ml-2 text-base font-sans tabular-nums text-muted">
+                    ({group.items.length})
+                  </span>
+                </h2>
+                <p className="mt-1 text-sm text-muted">{group.lead}</p>
+              </div>
+              <ul className="grid gap-4">
+                {group.items.map((item) => (
+                  <li key={`${item.makeSlug}-${item.modelSlug}`}>
+                    <ResultCard item={item} />
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
       )}
     </div>
   );
