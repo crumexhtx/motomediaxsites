@@ -191,3 +191,38 @@ a {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
+
+/* MPG tool range input */
+.efficiency-slider {
+  appearance: none;
+  height: 0.35rem;
+  border-radius: 999px;
+  background: var(--bg-soft);
+  outline: none;
+}
+
+.efficiency-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 1px rgba(61, 156, 240, 0.45);
+  cursor: pointer;
+}
+
+.efficiency-slider::-moz-range-thumb {
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 1px rgba(61, 156, 240, 0.45);
+  cursor: pointer;
+}
+
+.efficiency-slider:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}

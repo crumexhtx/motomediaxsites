@@ -62,6 +62,12 @@ export default function HomePage() {
             >
               Compare models
             </Link>
+            <Link
+              href="/efficiency"
+              className="focus-ring inline-flex items-center rounded-md border border-white/25 bg-black/40 px-5 py-3 text-sm font-medium text-white transition hover:bg-black/55"
+            >
+              Find by MPG
+            </Link>
           </div>
         </div>
       </section>

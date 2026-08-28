@@ -2,11 +2,8 @@
 
 import { useMemo, useState, type ReactNode } from "react";
 import type { TrimSpec, VehicleSpecs, YearPerformance } from "@/data/catalog";
-import {
-  estimateOwnershipCost,
-  formatUsd,
-  trimLooksElectrified,
-} from "@/lib/ownership";
+import { OwnershipCostCalculator } from "@/components/OwnershipCostCalculator";
+import { trimLooksElectrified } from "@/lib/ownership";
 
 type Props = {
   yearLabel: string;
@@ -163,16 +160,6 @@ export function YearDetailPanel({
       ? undefined
       : (trimElectrification ?? specs?.electrificationLevel);
 
-  const ownership = estimateOwnershipCost({
-    mpgCombined: trim?.mpgCombined ?? specs?.mpgCombined,
-    rangeMiles: trim?.rangeMiles ?? specs?.rangeMiles,
-    batteryKwh: trim?.batteryKwh ?? specs?.batteryKwh,
-    fuelTypePrimary: specs?.fuelTypePrimary,
-    electrificationLevel,
-    engine: trim?.engine,
-    aspiration: trim?.aspiration,
-  });
-
   const mechHas = hasAny(
     trim?.engine,
     trim?.aspiration,
@@ -266,48 +253,16 @@ export function YearDetailPanel({
         </div>
       </Section>
 
-      {ownership ? (
-        <section className="mb-10 max-w-2xl">
-          <h2 className="font-display text-2xl tracking-tight">
-            What will fuel or charging roughly cost?
-          </h2>
-          <p className="mt-2 text-sm text-muted">
-            About {formatUsd(ownership.annualUsd)} per year in energy for the
-            selected trim on our fixed U.S. assumptions ({ownership.efficiencyLabel}) —
-            a compare signal, not a full ownership quote.
-          </p>
-          <div className="mt-4 grid grid-cols-2 gap-3">
-            <StatBadge
-              label="Per year"
-              value={formatUsd(ownership.annualUsd)}
-            />
-            <StatBadge
-              label="5-year energy"
-              value={formatUsd(ownership.fiveYearUsd)}
-            />
-          </div>
-          <dl className="mt-4">
-            <SpecRow
-              label="Powertrain"
-              value={
-                ownership.kind === "ev"
-                  ? "Battery electric"
-                  : ownership.kind === "phev"
-                    ? "Plug-in hybrid"
-                    : ownership.kind === "hybrid"
-                      ? "Hybrid"
-                      : "Gas"
-              }
-            />
-            <SpecRow label="Based on" value={ownership.efficiencyLabel} />
-            <SpecRow label="Assumptions" value={ownership.assumptionsLabel} />
-          </dl>
-          <p className="mt-3 text-xs text-muted">
-            Prices and annual mileage are fixed U.S. catalog assumptions and
-            will not match your local rates or driving mix.
-          </p>
-        </section>
-      ) : null}
+      <OwnershipCostCalculator
+        yearLabel={yearLabel}
+        mpgCombined={trim?.mpgCombined ?? specs?.mpgCombined}
+        rangeMiles={trim?.rangeMiles ?? specs?.rangeMiles}
+        batteryKwh={trim?.batteryKwh ?? specs?.batteryKwh}
+        fuelTypePrimary={specs?.fuelTypePrimary}
+        electrificationLevel={electrificationLevel}
+        engine={trim?.engine}
+        aspiration={trim?.aspiration}
+      />
 
       <div className="mb-10 grid gap-10 md:grid-cols-2 md:gap-x-12 md:gap-y-10">
         <Section

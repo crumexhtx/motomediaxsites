@@ -8,6 +8,7 @@ import { SITE } from "@/data/catalog";
 const links = [
   { href: "/makes", label: "Makes" },
   { href: "/compare", label: "Compare" },
+  { href: "/efficiency", label: "MPG" },
   { href: "/search", label: "Search" },
   { href: "/about", label: "About" },
 ];

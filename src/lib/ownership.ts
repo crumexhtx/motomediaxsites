@@ -9,11 +9,23 @@ export const OWNERSHIP_ASSUMPTIONS = {
   years: 5,
 } as const;
 
+export type OwnershipAssumptions = {
+  milesPerYear: number;
+  gasUsdPerGallon: number;
+  electricityUsdPerKwh: number;
+  defaultEvMilesPerKwh: number;
+  years: number;
+};
+
 export type OwnershipKind = "gas" | "hybrid" | "phev" | "ev";
 
 export type OwnershipEstimate = {
   kind: OwnershipKind;
   annualUsd: number;
+  /** Energy cost over `horizonYears` at the annual rate. */
+  horizonUsd: number;
+  horizonYears: number;
+  /** @deprecated Use horizonUsd; kept for call-site compat. */
   fiveYearUsd: number;
   /** Human-readable efficiency basis, e.g. "28 mpg" or "~3.5 mi/kWh". */
   efficiencyLabel: string;
@@ -26,6 +38,23 @@ function roundMoney(n: number) {
 
 function blobOf(parts: Array<string | null | undefined>): string {
   return parts.filter(Boolean).join(" ").toLowerCase();
+}
+
+function mergeAssumptions(
+  overrides?: Partial<OwnershipAssumptions>,
+): OwnershipAssumptions {
+  return {
+    milesPerYear: overrides?.milesPerYear ?? OWNERSHIP_ASSUMPTIONS.milesPerYear,
+    gasUsdPerGallon:
+      overrides?.gasUsdPerGallon ?? OWNERSHIP_ASSUMPTIONS.gasUsdPerGallon,
+    electricityUsdPerKwh:
+      overrides?.electricityUsdPerKwh ??
+      OWNERSHIP_ASSUMPTIONS.electricityUsdPerKwh,
+    defaultEvMilesPerKwh:
+      overrides?.defaultEvMilesPerKwh ??
+      OWNERSHIP_ASSUMPTIONS.defaultEvMilesPerKwh,
+    years: overrides?.years ?? OWNERSHIP_ASSUMPTIONS.years,
+  };
 }
 
 /** True when curated trim copy indicates a hybrid / PHEV / BEV / PowerBoost powertrain. */
@@ -91,6 +120,8 @@ export function estimateOwnershipCost(input: {
   electrificationLevel?: string | null;
   engine?: string | null;
   aspiration?: string | null;
+  /** Override catalog defaults (miles, energy price, horizon years). */
+  assumptions?: Partial<OwnershipAssumptions>;
   /** @deprecated Prefer powertrain fields; kept for call-site compat. */
   preferEv?: boolean;
 }): OwnershipEstimate | null {
@@ -100,7 +131,7 @@ export function estimateOwnershipCost(input: {
     electricityUsdPerKwh,
     defaultEvMilesPerKwh,
     years,
-  } = OWNERSHIP_ASSUMPTIONS;
+  } = mergeAssumptions(input.assumptions);
 
   const mpg = input.mpgCombined ?? undefined;
   const range = input.rangeMiles ?? undefined;
@@ -125,10 +156,13 @@ export function estimateOwnershipCost(input: {
     if (!(miPerKwh > 0)) return null;
     const annualKwh = milesPerYear / miPerKwh;
     const annualUsd = annualKwh * electricityUsdPerKwh;
+    const horizonUsd = roundMoney(annualUsd * years);
     return {
       kind: "ev",
       annualUsd: roundMoney(annualUsd),
-      fiveYearUsd: roundMoney(annualUsd * years),
+      horizonUsd,
+      horizonYears: years,
+      fiveYearUsd: horizonUsd,
       efficiencyLabel:
         range != null && battery != null && battery > 0
           ? `~${miPerKwh.toFixed(1)} mi/kWh (${range} mi / ${battery} kWh)`
@@ -144,6 +178,7 @@ export function estimateOwnershipCost(input: {
   }
   const annualGallons = milesPerYear / mpg;
   const annualUsd = annualGallons * gasUsdPerGallon;
+  const horizonUsd = roundMoney(annualUsd * years);
   const kindLabel =
     kind === "phev"
       ? `${mpg} mpg combined (PHEV gas estimate; electric range not modeled)`
@@ -153,7 +188,9 @@ export function estimateOwnershipCost(input: {
   return {
     kind,
     annualUsd: roundMoney(annualUsd),
-    fiveYearUsd: roundMoney(annualUsd * years),
+    horizonUsd,
+    horizonYears: years,
+    fiveYearUsd: horizonUsd,
     efficiencyLabel: kindLabel,
     assumptionsLabel: `${milesPerYear.toLocaleString()} mi/yr · $${gasUsdPerGallon.toFixed(2)}/gal · ${years}-year horizon`,
   };

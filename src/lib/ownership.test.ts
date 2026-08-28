@@ -13,8 +13,49 @@ describe("ownership estimates", () => {
     const gallons = OWNERSHIP_ASSUMPTIONS.milesPerYear / 30;
     const annual = gallons * OWNERSHIP_ASSUMPTIONS.gasUsdPerGallon;
     expect(est?.annualUsd).toBe(Math.round(annual));
-    expect(est?.fiveYearUsd).toBe(Math.round(annual * 5));
+    expect(est?.horizonUsd).toBe(Math.round(annual * 5));
+    expect(est?.horizonYears).toBe(5);
     expect(est?.efficiencyLabel).toBe("30 mpg combined");
+  });
+
+  it("honors interactive assumption overrides", () => {
+    const est = estimateOwnershipCost({
+      mpgCombined: 30,
+      assumptions: {
+        milesPerYear: 15_000,
+        gasUsdPerGallon: 4,
+        years: 3,
+      },
+    });
+    expect(est?.kind).toBe("gas");
+    const annual = (15_000 / 30) * 4;
+    expect(est?.annualUsd).toBe(Math.round(annual));
+    expect(est?.horizonUsd).toBe(Math.round(annual * 3));
+    expect(est?.horizonYears).toBe(3);
+    expect(est?.assumptionsLabel).toContain("15,000");
+    expect(est?.assumptionsLabel).toContain("$4.00/gal");
+  });
+
+  it("scales EV cost with electricity price and miles", () => {
+    const base = estimateOwnershipCost({
+      rangeMiles: 300,
+      batteryKwh: 75,
+      fuelTypePrimary: "Electric",
+    });
+    const denser = estimateOwnershipCost({
+      rangeMiles: 300,
+      batteryKwh: 75,
+      fuelTypePrimary: "Electric",
+      assumptions: {
+        milesPerYear: 24_000,
+        electricityUsdPerKwh: 0.32,
+        years: 2,
+      },
+    });
+    expect(base?.kind).toBe("ev");
+    expect(denser?.kind).toBe("ev");
+    expect(denser!.annualUsd).toBeGreaterThan(base!.annualUsd);
+    expect(denser?.horizonYears).toBe(2);
   });
 
   it("estimates EV cost from range and battery", () => {
