@@ -6,8 +6,8 @@ import {
   clampMinMpg,
   DEFAULT_MIN_MPG,
   efficiencyMpgBounds,
-  getEfficiencyCandidates,
 } from "@/lib/efficiency";
+import { getEfficiencyCandidates } from "@/lib/efficiency.server";
 import { JsonLd, breadcrumbJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {

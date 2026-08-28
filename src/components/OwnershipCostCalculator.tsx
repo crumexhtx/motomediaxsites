@@ -50,14 +50,14 @@ export function OwnershipCostCalculator({
   aspiration,
 }: OwnershipCostCalculatorProps) {
   const baseId = useId();
-  const [milesPerYear, setMilesPerYear] = useState(
+  const [milesPerYear, setMilesPerYear] = useState<number>(
     OWNERSHIP_ASSUMPTIONS.milesPerYear,
   );
-  const [years, setYears] = useState(OWNERSHIP_ASSUMPTIONS.years);
-  const [gasUsdPerGallon, setGasUsdPerGallon] = useState(
+  const [years, setYears] = useState<number>(OWNERSHIP_ASSUMPTIONS.years);
+  const [gasUsdPerGallon, setGasUsdPerGallon] = useState<number>(
     OWNERSHIP_ASSUMPTIONS.gasUsdPerGallon,
   );
-  const [electricityUsdPerKwh, setElectricityUsdPerKwh] = useState(
+  const [electricityUsdPerKwh, setElectricityUsdPerKwh] = useState<number>(
     OWNERSHIP_ASSUMPTIONS.electricityUsdPerKwh,
   );
 

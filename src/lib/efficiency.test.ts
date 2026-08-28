@@ -6,9 +6,9 @@ import {
   DEFAULT_MIN_MPG,
   efficiencyMpgBounds,
   filterModelsByMinMpg,
-  getEfficiencyCandidates,
   type EfficiencyCandidate,
 } from "@/lib/efficiency";
+import { getEfficiencyCandidates } from "@/lib/efficiency.server";
 
 function candidate(
   partial: Partial<EfficiencyCandidate> &
