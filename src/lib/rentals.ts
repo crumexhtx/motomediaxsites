@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { GalleryImage } from "@/data/catalog";
 import { SITE } from "@/data/catalog";
 import { absoluteUrl } from "@/lib/seo";
 
@@ -11,15 +12,48 @@ export const TURO_LISTING_URL =
 
 export const TURO_PARTNER_LABEL = "Turo";
 
+/**
+ * Photos for the listing CTA on /rentals pages.
+ * Prefer real listing shots under `/public/rentals/` when available;
+ * catalog Trax images are used until those are added.
+ */
+export const RENTAL_LISTING_IMAGES: GalleryImage[] = [
+  {
+    src: "/catalog/chevrolet--trax.jpg",
+    alt: "Chevrolet Trax — rental fleet listing vehicle",
+    width: 1600,
+    height: 900,
+  },
+  {
+    src: "/catalog/chevrolet--trax--lt.jpg",
+    alt: "Chevrolet Trax LT",
+    width: 1280,
+    height: 720,
+  },
+  {
+    src: "/catalog/chevrolet--trax--activ.jpg",
+    alt: "Chevrolet Trax ACTIV",
+    width: 1280,
+    height: 720,
+  },
+  {
+    src: "/catalog/chevrolet--trax--2rs.jpg",
+    alt: "Chevrolet Trax 2RS",
+    width: 1280,
+    height: 720,
+  },
+];
+
 /** Listing vehicle shown in rental CTAs (not an LLC / host brand name). */
 export const RENTAL_LISTING = {
   makeName: "Chevrolet",
   modelName: "Trax",
   bodyStyle: "compact SUV",
   market: "Houston, TX",
-  /** Catalog paths used when the model exists; may be undefined until Trax is added. */
+  /** Catalog paths used when the model exists. */
   catalogMakeSlug: "chevrolet",
   catalogModelSlug: "trax",
+  images: RENTAL_LISTING_IMAGES,
 } as const;
 
 export type RentalGuide = {
@@ -59,6 +93,14 @@ export function rentalPageMetadata(input: {
   path: string;
 }): Metadata {
   const url = absoluteUrl(input.path);
+  const hero = RENTAL_LISTING_IMAGES[0];
+  const ogImage = hero
+    ? {
+        url: absoluteUrl(hero.src),
+        alt: hero.alt,
+      }
+    : undefined;
+
   return {
     title: input.title,
     description: input.description,
@@ -69,11 +111,13 @@ export function rentalPageMetadata(input: {
       title: input.title,
       description: input.description,
       url,
+      ...(ogImage ? { images: [ogImage] } : {}),
     },
     twitter: {
       card: "summary_large_image",
       title: input.title,
       description: input.description,
+      ...(ogImage ? { images: [ogImage.url] } : {}),
     },
   };
 }
