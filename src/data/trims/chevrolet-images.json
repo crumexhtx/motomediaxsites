@@ -71,6 +71,32 @@
       "alt": "Chevrolet equinox ev"
     }
   },
+  "trax": {
+    "ls": {
+      "query": "chevrolet trax LS",
+      "src": "/catalog/chevrolet--trax--ls.jpg",
+      "alt": "Chevrolet trax ls",
+      "confidence": "unverified"
+    },
+    "lt": {
+      "query": "chevrolet trax LT",
+      "src": "/catalog/chevrolet--trax--lt.jpg",
+      "alt": "Chevrolet trax lt",
+      "confidence": "unverified"
+    },
+    "activ": {
+      "query": "chevrolet trax ACTIV",
+      "src": "/catalog/chevrolet--trax--activ.jpg",
+      "alt": "Chevrolet trax activ",
+      "confidence": "unverified"
+    },
+    "2rs": {
+      "query": "chevrolet trax 2RS",
+      "src": "/catalog/chevrolet--trax--2rs.jpg",
+      "alt": "Chevrolet trax 2rs",
+      "confidence": "unverified"
+    }
+  },
   "malibu": {
     "lt": {
       "query": "chevrolet malibu LT (ending)",

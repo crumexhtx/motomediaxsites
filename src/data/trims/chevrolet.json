@@ -560,6 +560,248 @@
       ]
     }
   },
+  "trax": {
+    "2024": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "ls",
+          "name": "LS",
+          "engine": "1.2L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 137,
+          "torqueLbFt": 162,
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 32,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 25.6
+        },
+        {
+          "id": "1rs",
+          "name": "1RS",
+          "engine": "1.2L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 137,
+          "torqueLbFt": 162,
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 32,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 25.6
+        },
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "1.2L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 137,
+          "torqueLbFt": 162,
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 32,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 25.6
+        },
+        {
+          "id": "activ",
+          "name": "ACTIV",
+          "engine": "1.2L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 137,
+          "torqueLbFt": 162,
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 32,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 25.6
+        },
+        {
+          "id": "2rs",
+          "name": "2RS",
+          "engine": "1.2L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 137,
+          "torqueLbFt": 162,
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 32,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 25.6
+        }
+      ]
+    },
+    "2025": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "ls",
+          "name": "LS",
+          "engine": "1.2L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 137,
+          "torqueLbFt": 162,
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 32,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 25.6
+        },
+        {
+          "id": "1rs",
+          "name": "1RS",
+          "engine": "1.2L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 137,
+          "torqueLbFt": 162,
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 32,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 25.6
+        },
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "1.2L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 137,
+          "torqueLbFt": 162,
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 32,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 25.6
+        },
+        {
+          "id": "activ",
+          "name": "ACTIV",
+          "engine": "1.2L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 137,
+          "torqueLbFt": 162,
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 32,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 25.6
+        },
+        {
+          "id": "2rs",
+          "name": "2RS",
+          "engine": "1.2L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 137,
+          "torqueLbFt": 162,
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 32,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 25.6
+        }
+      ]
+    },
+    "2026": {
+      "defaultTrimId": "lt",
+      "trims": [
+        {
+          "id": "ls",
+          "name": "LS",
+          "engine": "1.2L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 137,
+          "torqueLbFt": 162,
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 32,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 25.6
+        },
+        {
+          "id": "1rs",
+          "name": "1RS",
+          "engine": "1.2L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 137,
+          "torqueLbFt": 162,
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 32,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 25.6
+        },
+        {
+          "id": "lt",
+          "name": "LT",
+          "engine": "1.2L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 137,
+          "torqueLbFt": 162,
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 32,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 25.6
+        },
+        {
+          "id": "activ",
+          "name": "ACTIV",
+          "engine": "1.2L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 137,
+          "torqueLbFt": 162,
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 32,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 25.6
+        },
+        {
+          "id": "2rs",
+          "name": "2RS",
+          "engine": "1.2L Turbo I3",
+          "aspiration": "Turbocharged",
+          "horsepower": 137,
+          "torqueLbFt": 162,
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "mpgCity": 28,
+          "mpgHighway": 32,
+          "mpgCombined": 30,
+          "seatingCapacity": 5,
+          "cargoCuFt": 25.6
+        }
+      ]
+    }
+  },
   "malibu": {
     "2024": {
       "defaultTrimId": "ls",

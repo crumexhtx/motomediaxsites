@@ -45,6 +45,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.75,
     },
     {
+      url: `${base}/rentals`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.72,
+    },
+    {
+      url: `${base}/rentals/how-to-choose`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${base}/rentals/what-to-expect`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${base}/rentals/houston`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.74,
+    },
+    {
       url: `${base}/about`,
       lastModified,
       changeFrequency: "monthly",

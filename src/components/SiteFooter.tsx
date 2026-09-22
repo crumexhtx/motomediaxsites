@@ -25,6 +25,9 @@ export function SiteFooter() {
             <Link href="/compare" className="focus-ring hover:text-accent">
               Comparisons
             </Link>
+            <Link href="/rentals" className="focus-ring hover:text-accent">
+              Rentals
+            </Link>
             <Link href="/efficiency" className="focus-ring hover:text-accent">
               Find cars by MPG
             </Link>

@@ -32,6 +32,59 @@ export function organizationJsonLd() {
   };
 }
 
+export function articleJsonLd(input: {
+  title: string;
+  description: string;
+  path: string;
+  dateModified?: string;
+}) {
+  const url = absoluteUrl(input.path);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: input.title,
+    description: input.description,
+    url,
+    mainEntityOfPage: url,
+    isPartOf: {
+      "@type": "WebSite",
+      name: SITE.name,
+      alternateName: SITE.shortName,
+      url: SITE.url,
+    },
+    author: {
+      "@type": "Organization",
+      name: SITE.name,
+      url: SITE.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE.name,
+      url: SITE.url,
+    },
+    ...(input.dateModified
+      ? { dateModified: input.dateModified }
+      : {}),
+  };
+}
+
+export function faqPageJsonLd(
+  faqs: Array<{ question: string; answer: string }>,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+}
+
 /**
  * Year overview pages are informational catalogs, not product listings.
  * Avoid schema.org Vehicle/Car (Product subtypes) — Google then expects

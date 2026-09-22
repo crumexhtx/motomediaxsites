@@ -12,6 +12,7 @@
     "test:watch": "vitest",
     "typecheck:scripts": "tsc -p tsconfig.scripts.json --noEmit",
     "build:catalog": "tsx scripts/build-catalog.ts",
+    "merge:model": "tsx scripts/merge-model-into-catalog.ts",
     "enrich:epa": "tsx scripts/enrich-epa.ts",
     "enrich:autodev": "tsx scripts/enrich-autodev.ts",
     "enrich:pricing": "tsx scripts/enrich-pricing.ts",
