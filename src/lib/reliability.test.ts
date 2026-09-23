@@ -7,7 +7,7 @@ import {
 } from "@/lib/reliability";
 
 describe("reliability accessors", () => {
-  it("exposes an unpublished Trax scaffold without inventing claims", () => {
+  it("scaffolds every catalog model as unpublished empty guides", () => {
     const guide = getReliabilityGuide("chevrolet", "trax");
     expect(guide).toBeDefined();
     expect(guide?.published).toBe(false);
@@ -15,6 +15,9 @@ describe("reliability accessors", () => {
     expect(guide?.yearsToAvoid).toEqual([]);
     expect(guide?.generations).toEqual([]);
     expect(guide?.byYear).toEqual({});
+
+    expect(getReliabilityGuide("toyota", "camry")?.published).toBe(false);
+    expect(getReliabilityGuide("honda", "civic")?.published).toBe(false);
   });
 
   it("hides unpublished guides from the hub and year glance", () => {
