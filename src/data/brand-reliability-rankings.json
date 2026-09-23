@@ -1,0 +1,113 @@
+{
+  "asOf": "2026-03",
+  "notes": [
+    "CarGurus 2025 top-10 averages Consumer Reports and J.D. Power (plus RepairPal / CarComplaints research).",
+    "Consumer Reports predicted reliability scores: higher is better (member survey).",
+    "J.D. Power 2026 U.S. Vehicle Dependability Study (VDS): Problems per 100 vehicles (PP100); lower is better. Three-year-old vehicles.",
+    "Edmunds does not publish a brand-level reliability ranking; their Top Rated Awards measure road-test scores, not survey reliability."
+  ],
+  "sources": [
+    {
+      "id": "cargurus-2025",
+      "label": "CarGurus — The 10 Most Reliable Car Brands in 2025",
+      "url": "https://www.cargurus.com/research/articles/most-reliable-car-brands",
+      "published": "2025-07-09"
+    },
+    {
+      "id": "cr-predicted",
+      "label": "Consumer Reports — brand predicted reliability (member surveys)",
+      "url": "https://www.consumerreports.org/cars/",
+      "published": "2026"
+    },
+    {
+      "id": "jdpower-vds-2026",
+      "label": "J.D. Power 2026 U.S. Vehicle Dependability Study (VDS)",
+      "url": "https://www.jdpower.com/",
+      "published": "2026"
+    },
+    {
+      "id": "edmunds-most-reliable",
+      "label": "Edmunds — Most Reliable Cars (feature; not a brand ranking)",
+      "url": "https://www.edmunds.com/car-reviews/features/most-reliable-cars.html",
+      "published": null
+    }
+  ],
+  "cargurusTop10": [
+    { "rank": 1, "brand": "Lexus", "makeSlug": null },
+    { "rank": 2, "brand": "Toyota", "makeSlug": "toyota" },
+    { "rank": 3, "brand": "Mazda", "makeSlug": "mazda" },
+    { "rank": 4, "brand": "Buick", "makeSlug": null },
+    { "rank": 5, "brand": "Honda", "makeSlug": "honda" },
+    { "rank": 6, "brand": "Subaru", "makeSlug": "subaru" },
+    { "rank": 7, "brand": "BMW", "makeSlug": "bmw" },
+    { "rank": 8, "brand": "Kia", "makeSlug": "kia" },
+    { "rank": 9, "brand": "Chevrolet", "makeSlug": "chevrolet" },
+    { "rank": 10, "brand": "Ford", "makeSlug": "ford" }
+  ],
+  "consumerReportsPredicted": [
+    { "rank": 1, "brand": "Toyota", "makeSlug": "toyota", "score": 66 },
+    { "rank": 2, "brand": "Subaru", "makeSlug": "subaru", "score": 63 },
+    { "rank": 3, "brand": "Lexus", "makeSlug": null, "score": 60 },
+    { "rank": 4, "brand": "Honda", "makeSlug": "honda", "score": 59 },
+    { "rank": 5, "brand": "BMW", "makeSlug": "bmw", "score": 58 },
+    { "rank": 6, "brand": "Nissan", "makeSlug": "nissan", "score": 57 },
+    { "rank": 7, "brand": "Acura", "makeSlug": null, "score": 54 },
+    { "rank": 8, "brand": "Buick", "makeSlug": null, "score": 51 },
+    { "rank": 9, "brand": "Tesla", "makeSlug": "tesla", "score": 50 },
+    { "rank": 10, "brand": "Kia", "makeSlug": "kia", "score": 49 },
+    { "rank": 11, "brand": "Ford", "makeSlug": "ford", "score": 48 },
+    { "rank": 12, "brand": "Hyundai", "makeSlug": "hyundai", "score": 48 },
+    { "rank": 13, "brand": "Audi", "makeSlug": null, "score": 44 },
+    { "rank": 14, "brand": "Mazda", "makeSlug": "mazda", "score": 43 },
+    { "rank": 15, "brand": "Volvo", "makeSlug": null, "score": 42 },
+    { "rank": 16, "brand": "Volkswagen", "makeSlug": "volkswagen", "score": 42 },
+    { "rank": 17, "brand": "Chevrolet", "makeSlug": "chevrolet", "score": 42 },
+    { "rank": 18, "brand": "Cadillac", "makeSlug": null, "score": 41 },
+    { "rank": 19, "brand": "Mercedes-Benz", "makeSlug": "mercedes-benz", "score": 41 },
+    { "rank": 20, "brand": "Lincoln", "makeSlug": null, "score": 40 },
+    { "rank": 21, "brand": "Genesis", "makeSlug": null, "score": 33 },
+    { "rank": 22, "brand": "Chrysler", "makeSlug": null, "score": 31 },
+    { "rank": 23, "brand": "GMC", "makeSlug": "gmc", "score": 31 },
+    { "rank": 24, "brand": "Jeep", "makeSlug": "jeep", "score": 28 },
+    { "rank": 25, "brand": "Ram", "makeSlug": null, "score": 26 },
+    { "rank": 26, "brand": "Rivian", "makeSlug": null, "score": 24 }
+  ],
+  "jdPowerVds2026": [
+    { "rank": 1, "brand": "Lexus", "makeSlug": null, "pp100": 151 },
+    { "rank": 2, "brand": "Buick", "makeSlug": null, "pp100": 160 },
+    { "rank": 3, "brand": "MINI", "makeSlug": null, "pp100": 168 },
+    { "rank": 4, "brand": "Cadillac", "makeSlug": null, "pp100": 175 },
+    { "rank": 5, "brand": "Chevrolet", "makeSlug": "chevrolet", "pp100": 178 },
+    { "rank": 6, "brand": "Subaru", "makeSlug": "subaru", "pp100": 181 },
+    { "rank": 7, "brand": "Porsche", "makeSlug": null, "pp100": 182 },
+    { "rank": 8, "brand": "Toyota", "makeSlug": "toyota", "pp100": 185 },
+    { "rank": 9, "brand": "Kia", "makeSlug": "kia", "pp100": 193 },
+    { "rank": 10, "brand": "Nissan", "makeSlug": "nissan", "pp100": 194 },
+    { "rank": 11, "brand": "BMW", "makeSlug": "bmw", "pp100": 198 },
+    { "rank": 12, "brand": "Hyundai", "makeSlug": "hyundai", "pp100": 198 },
+    { "rank": null, "brand": "Industry average", "makeSlug": null, "pp100": 204, "isBenchmark": true },
+    { "rank": 13, "brand": "Genesis", "makeSlug": null, "pp100": 208 },
+    { "rank": 14, "brand": "Mitsubishi", "makeSlug": null, "pp100": 208 },
+    { "rank": 15, "brand": "Mazda", "makeSlug": "mazda", "pp100": 210 },
+    { "rank": 16, "brand": "Honda", "makeSlug": "honda", "pp100": 211 },
+    { "rank": 17, "brand": "Ram", "makeSlug": null, "pp100": 216 },
+    { "rank": 18, "brand": "Lincoln", "makeSlug": null, "pp100": 217 },
+    { "rank": 19, "brand": "Ford", "makeSlug": "ford", "pp100": 228 },
+    { "rank": 20, "brand": "GMC", "makeSlug": "gmc", "pp100": 229 },
+    { "rank": 21, "brand": "Acura", "makeSlug": null, "pp100": 233 },
+    { "rank": 22, "brand": "Infiniti", "makeSlug": null, "pp100": 233 },
+    { "rank": 23, "brand": "Mercedes-Benz", "makeSlug": "mercedes-benz", "pp100": 235 },
+    { "rank": 24, "brand": "Audi", "makeSlug": null, "pp100": 244 },
+    { "rank": 25, "brand": "Jeep", "makeSlug": "jeep", "pp100": 267 },
+    { "rank": 26, "brand": "Land Rover", "makeSlug": null, "pp100": 274 },
+    { "rank": 27, "brand": "Volvo", "makeSlug": null, "pp100": 296 },
+    { "rank": 28, "brand": "Volkswagen", "makeSlug": "volkswagen", "pp100": 301 },
+    {
+      "rank": null,
+      "brand": "Tesla",
+      "makeSlug": "tesla",
+      "pp100": 226,
+      "note": "Listed separately in the study chart (not in the official ranked set)."
+    }
+  ]
+}

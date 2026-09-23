@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BrandReliabilityRanking } from "@/components/BrandReliabilityRanking";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SITE } from "@/data/catalog";
 import { getPublishedReliabilityGuides } from "@/lib/reliability";
 import { JsonLd, absoluteUrl, breadcrumbJsonLd } from "@/lib/seo";
 
-const TITLE = "Used car reliability guides";
-const DESCRIPTION = `Best years to buy, years to avoid, and common problems by model — sourced reliability guides on ${SITE.name}.`;
+const TITLE = "Most reliable car brands & model guides";
+const DESCRIPTION = `Most to least reliable brands from Consumer Reports, J.D. Power, and CarGurus — plus model-year reliability guides on ${SITE.name}.`;
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -46,37 +47,44 @@ export default function ReliabilityHubPage() {
           Reliability guides
         </h1>
         <p className="mt-3 text-muted md:text-lg">
-          Best years to buy, years to avoid, and common issues by generation —
-          for models we have researched and sourced. Pair these with NHTSA
-          recalls on each year page before you buy used.
+          Brand rankings from published surveys, plus best years / years to
+          avoid guides for models we have researched and sourced. Pair these
+          with NHTSA recalls on each year page before you buy used.
         </p>
       </header>
 
-      {guides.length === 0 ? (
-        <p className="mt-10 max-w-2xl text-muted">
-          No reliability guides are published yet. Guides appear here after
-          claims are verified against Consumer Reports, RepairPal, NHTSA, and
-          manufacturer TSBs — we do not publish placeholder ratings.
-        </p>
-      ) : (
-        <ul className="mt-10 grid gap-4 md:grid-cols-2">
-          {guides.map((g) => (
-            <li key={g.href}>
-              <Link
-                href={g.href}
-                className="focus-ring block rounded-lg border border-line bg-elevated/40 px-5 py-5 transition hover:border-accent/40"
-              >
-                <p className="font-display text-xl tracking-tight">
-                  {g.makeName} {g.modelName}
-                </p>
-                <p className="mt-2 text-sm text-muted">
-                  Years to avoid, best years, and common problems
-                </p>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
+      <BrandReliabilityRanking />
+
+      <section className="mt-14 max-w-3xl">
+        <h2 className="font-display text-2xl tracking-tight md:text-3xl">
+          Model reliability guides
+        </h2>
+        {guides.length === 0 ? (
+          <p className="mt-4 text-muted">
+            No model guides are published yet. Guides appear here after claims
+            are verified against Consumer Reports, RepairPal, NHTSA, and
+            manufacturer TSBs — we do not publish placeholder ratings.
+          </p>
+        ) : (
+          <ul className="mt-6 grid gap-4 md:grid-cols-2">
+            {guides.map((g) => (
+              <li key={g.href}>
+                <Link
+                  href={g.href}
+                  className="focus-ring block rounded-lg border border-line bg-elevated/40 px-5 py-5 transition hover:border-accent/40"
+                >
+                  <p className="font-display text-xl tracking-tight">
+                    {g.makeName} {g.modelName}
+                  </p>
+                  <p className="mt-2 text-sm text-muted">
+                    Years to avoid, best years, and common problems
+                  </p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
     </div>
   );
 }
