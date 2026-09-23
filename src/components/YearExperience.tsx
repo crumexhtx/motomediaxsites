@@ -27,6 +27,8 @@ type Props = {
   snapshot?: ReactNode;
   /** Used-buyer signals: recalls + complaints (server-rendered). */
   safetyPanel?: ReactNode;
+  /** Sourced reliability glance for this year (server-rendered). */
+  reliabilityGlance?: ReactNode;
   /** Year-over-year delta section (server-rendered). */
   yearChanges?: ReactNode;
   /** Valuation CTA (affiliate outbound). */
@@ -54,6 +56,7 @@ export function YearExperience({
   overview,
   snapshot,
   safetyPanel,
+  reliabilityGlance,
   yearChanges,
   valuationCta,
   relatedComparisons,
@@ -170,6 +173,8 @@ export function YearExperience({
         ) : (
           <div className="mb-12">{safetyPanel}</div>
         )}
+
+        {reliabilityGlance}
 
         {yearChanges}
 

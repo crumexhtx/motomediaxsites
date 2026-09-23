@@ -9,6 +9,7 @@ import { YearSafetyPanel } from "@/components/YearSafetyPanel";
 import { YearPricingPanel } from "@/components/YearPricingPanel";
 import { YearValuationCta } from "@/components/YearValuationCta";
 import { YearSnapshot } from "@/components/YearSnapshot";
+import { ReliabilityAtAGlance } from "@/components/ReliabilityAtAGlance";
 import { RelatedComparisons } from "@/components/RelatedComparisons";
 import { DimensionSchematic } from "@/components/DimensionSchematic";
 import type { GalleryImage } from "@/data/catalog";
@@ -24,6 +25,7 @@ import {
   shouldShowDiscontinuedBanner,
 } from "@/lib/discontinued";
 import { getYearPricing } from "@/lib/pricing";
+import { getYearReliabilityGlance } from "@/lib/reliability";
 import { buildYearSnapshot } from "@/lib/yearSnapshot";
 import {
   buildSchematicLayout,
@@ -150,6 +152,11 @@ export default async function YearPage({ params }: Props) {
     shouldShowDiscontinuedBanner(discontinued) &&
     year.year === discontinued?.lastYear;
   const pricing = getYearPricing(make.slug, model.slug, year.year);
+  const reliabilityGlance = getYearReliabilityGlance(
+    make.slug,
+    model.slug,
+    year.year,
+  );
   const snapshot = buildYearSnapshot({
     year,
     makeName: make.name,
@@ -289,6 +296,18 @@ export default async function YearPage({ params }: Props) {
             recallsError={year.safetyStatus?.recallsError}
             complaintsError={year.safetyStatus?.complaintsError}
           />
+        }
+        reliabilityGlance={
+          reliabilityGlance ? (
+            <ReliabilityAtAGlance
+              yearLabel={String(year.year)}
+              makeName={make.name}
+              modelName={model.name}
+              ratingTier={reliabilityGlance.ratingTier}
+              summary={reliabilityGlance.summary}
+              guideHref={reliabilityGlance.guideHref}
+            />
+          ) : null
         }
         yearChanges={
           yearDiff && previousYear ? (

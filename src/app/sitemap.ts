@@ -7,6 +7,7 @@ import {
   getAllYearParams,
 } from "@/lib/catalog";
 import { getAllComparisonParams } from "@/lib/comparisons";
+import { getPublishedReliabilityGuides } from "@/lib/reliability";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url;
@@ -43,6 +44,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "weekly",
       priority: 0.75,
+    },
+    {
+      url: `${base}/reliability`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.76,
     },
     {
       url: `${base}/rentals`,
@@ -104,5 +111,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.78,
   }));
 
-  return [...staticRoutes, ...makes, ...models, ...years, ...comparisons];
+  const reliabilityGuides = getPublishedReliabilityGuides().map((g) => ({
+    url: `${base}${g.href}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...makes,
+    ...models,
+    ...years,
+    ...comparisons,
+    ...reliabilityGuides,
+  ];
 }

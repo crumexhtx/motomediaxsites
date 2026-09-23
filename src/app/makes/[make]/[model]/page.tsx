@@ -11,6 +11,10 @@ import {
   yearHref,
 } from "@/lib/catalog";
 import { getDiscontinuedInfo } from "@/lib/discontinued";
+import {
+  getReliabilityGuide,
+  reliabilityGuideHref,
+} from "@/lib/reliability";
 import { SITE } from "@/data/catalog";
 import { JsonLd, absoluteUrl, breadcrumbJsonLd } from "@/lib/seo";
 import { RelatedComparisons } from "@/components/RelatedComparisons";
@@ -88,6 +92,8 @@ export default async function ModelPage({ params }: Props) {
   const path = `/makes/${make.slug}/${model.slug}`;
   const discontinued = getDiscontinuedInfo(make.slug, model.slug);
   const newest = yearsSorted[0];
+  const reliabilityGuide = getReliabilityGuide(make.slug, model.slug);
+  const showReliabilityLink = Boolean(reliabilityGuide?.published);
 
   return (
     <div className="container-wide py-10 md:py-14">
@@ -139,6 +145,18 @@ export default async function ModelPage({ params }: Props) {
             >
               {newest.year} {make.name} {model.name}
             </Link>
+          </p>
+        ) : null}
+        {showReliabilityLink ? (
+          <p className="mt-3 text-sm text-muted">
+            <Link
+              href={reliabilityGuideHref(make.slug, model.slug)}
+              className="font-medium text-accent underline-offset-2 hover:underline"
+            >
+              {model.name} reliability guide
+            </Link>
+            {" — "}
+            best years, years to avoid, and common problems
           </p>
         ) : null}
       </section>
