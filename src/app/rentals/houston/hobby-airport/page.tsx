@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "Is the car parked at Hobby Airport?",
     answer:
-      "Our cars are based in the Hobby Airport area of southeast Houston, but that does not necessarily mean a spot inside airport parking. Pickup instructions, the exact handoff, and any delivery options are shown on the Turo listing and in the trip chat after you book.",
+      "Yes — our Hobby Airport pickup is set up at William P. Hobby Airport (HOU) via The Parking Spot 2, a shuttle lot near the terminal (not a counter inside the airport). From the terminal, take the shuttle or a rideshare to The Parking Spot 2. The key is in a lockbox on the driver-side window; the host messages the code the morning of your trip. Exact steps can change, so always confirm on the live Turo listing and in trip chat.",
   },
   {
     question: "How much does it cost per day?",
@@ -47,7 +47,7 @@ const faqs = [
   {
     question: "Which is better for a short Houston trip, the Venue or the Trax?",
     answer:
-      "Both seat five. The Trax is generally the larger of the two, which can help with luggage, while the Venue may suit a lighter trip. Confirm cargo space, year, and trim on the live listing before you decide.",
+      "Both are 2025 model-year small SUVs that seat five. Ours are a Hyundai Venue SE and a Chevrolet Trax LT. The Trax is generally the larger of the two for luggage; the Venue may suit a lighter trip. Confirm cargo and the all-in trip price on the live listing before you decide.",
   },
   {
     question: "Are there mileage limits or extra fees?",
@@ -122,10 +122,9 @@ export default function HobbyAirportRentalsPage() {
           Our cars near Hobby
         </h2>
         <p className="mt-2 leading-relaxed text-muted">
-          Both listings are ours. Price and availability are set on Turo and
-          change with your dates, so use the button on each card to check your
-          trip. Fields marked TODO are still being confirmed from the live
-          listing.
+          Both listings are ours — a 2025 Hyundai Venue SE and a 2025
+          Chevrolet Trax LT. Price and availability are set on Turo and change
+          with your dates, so use the button on each card to check your trip.
         </p>
         <RentalListingGrid listings={turoListings} className="mt-6" />
       </section>
@@ -135,27 +134,38 @@ export default function HobbyAirportRentalsPage() {
           Getting your car at Hobby
         </h2>
         <p className="leading-relaxed text-muted">
-          Turo handoffs vary by listing. Common setups are a pickup at a
-          listed spot with keyless or lockbox access, or delivery to an
-          address you choose, often for an added fee. The listing shows which
-          options are available for your dates, and the trip chat carries the
-          exact instructions once your booking is approved.
+          Our Hobby Airport location on Turo is William P. Hobby Airport
+          (HOU). Pickup is through The Parking Spot 2 — a shuttle lot near
+          the airport, not a staffed rental counter inside the terminal.
         </p>
+        <ol className="list-decimal space-y-2 pl-5 leading-relaxed text-muted">
+          <li>
+            From the terminal, take the shuttle or a rideshare to The Parking
+            Spot 2.
+          </li>
+          <li>
+            The key is in a lockbox on the driver-side window. The host
+            messages you the code the morning of your trip.
+          </li>
+          <li>
+            If you cannot find the car, message the host in the Turo app for
+            a walkthrough.
+          </li>
+          <li>
+            When you leave, you should not need a ticket or payment — a
+            windshield tag opens the gate. Leave the tag on the car; if the
+            gate does not open, message the host right away.
+          </li>
+        </ol>
         <p className="leading-relaxed text-muted">
-          After you book, message the host your flight number and expected
-          arrival time. Flights run late, and a realistic handoff window saves
-          a stressful hour at the curb. Take your check-in photos before you
-          drive away, as described in{" "}
+          After you book, send your flight number and expected arrival time so
+          the handoff window stays realistic if the plane runs late. Take your
+          check-in photos before you drive away, as described in{" "}
           <Link href="/rentals/what-to-expect" className={linkClass}>
             what to expect on a Turo trip
           </Link>
-          .
-        </p>
-        <p className="leading-relaxed text-muted">
-          <Todo /> Owner to add the specific HOU handoff: where the car is
-          left or met, the typical window, and whether delivery to the
-          terminal is offered. Until then, treat the live listing as the
-          source of truth.
+          . Listing instructions can change — treat the live Turo page and
+          trip chat as the source of truth for your dates.
         </p>
       </section>
 
@@ -211,8 +221,8 @@ export default function HobbyAirportRentalsPage() {
         </h2>
         <p className="leading-relaxed text-muted">
           Both are small SUVs that seat five and are easy to park in the
-          city. The table shows what we can state today; gaps are marked TODO
-          rather than guessed.
+          city. Specs below come from the live Turo listings; cargo space is
+          still marked TODO until we confirm a figure.
         </p>
         <div className="overflow-x-auto rounded-lg border border-line">
           <table className="w-full min-w-[28rem] text-left text-sm">
@@ -243,11 +253,14 @@ export default function HobbyAirportRentalsPage() {
                 </th>
                 <td className="px-4 py-3">
                   {venue?.mpgCombined ?? <Todo />}
+                  {venue?.mpgCombined ? (
+                    <span className="text-muted"> (listing)</span>
+                  ) : null}
                 </td>
                 <td className="px-4 py-3">
                   {trax?.mpgCombined ?? <Todo />}
                   {trax?.mpgCombined ? (
-                    <span className="text-muted"> (catalog)</span>
+                    <span className="text-muted"> (listing)</span>
                   ) : null}
                 </td>
               </tr>
@@ -291,15 +304,16 @@ export default function HobbyAirportRentalsPage() {
         <p className="leading-relaxed text-muted">
           The Trax is generally the larger of the two, which can matter for
           luggage and rear-seat room; the Venue is the smaller option for
-          tighter parking. The Trax’s mileage figure comes from our{" "}
+          tighter parking. Combined MPG is what each Turo listing shows today.
+          For used-buyer research on the Trax, see our{" "}
           {trax?.catalogPath ? (
             <Link href={trax.catalogPath} className={linkClass}>
-              Chevrolet Trax catalog page
+              2025 Chevrolet Trax page
             </Link>
           ) : (
-            "catalog"
-          )}{" "}
-          and varies by year and trim, so confirm against the listing.
+            "Chevrolet Trax catalog page"
+          )}
+          .
         </p>
       </section>
 

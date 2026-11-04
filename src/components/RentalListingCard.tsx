@@ -69,12 +69,7 @@ export function RentalListingCard({ listing, className = "" }: Props) {
           <dt className="text-muted">MPG (combined)</dt>
           <dd>
             {listing.mpgCombined !== null ? (
-              <>
-                {listing.mpgCombined}
-                {listing.catalogPath ? (
-                  <span className="text-muted"> (catalog)</span>
-                ) : null}
-              </>
+              <>{listing.mpgCombined}</>
             ) : (
               <Todo>TODO</Todo>
             )}

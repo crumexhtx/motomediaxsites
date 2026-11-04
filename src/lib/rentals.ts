@@ -53,14 +53,19 @@ export const turoListings: readonly TuroListing[] = [
     id: "3970774",
     slug: "hyundai-venue",
     url: "https://turo.com/us/en/suv-rental/united-states/houston-tx/hyundai/venue/3970774",
-    year: null, // TODO: fill actual year
+    year: 2025, // from live Turo listing
     make: "Hyundai",
     model: "Venue",
-    trim: null, // TODO
+    trim: "SE", // from live Turo listing
     seats: 5,
-    mpgCombined: null, // TODO — Venue is not in the catalog
-    fromPricePerDay: null,
-    features: [], // TODO
+    mpgCombined: 30, // from live Turo listing
+    fromPricePerDay: null, // dates-based; do not hardcode a stale daily rate
+    features: [
+      "Apple CarPlay",
+      "Android Auto",
+      "Backup camera",
+      "Lane keeping assist",
+    ],
     photos: [
       {
         src: "/rentals/hyundai-venue-1.png",
@@ -75,14 +80,21 @@ export const turoListings: readonly TuroListing[] = [
     id: "3905905",
     slug: "chevrolet-trax",
     url: "https://turo.com/us/en/suv-rental/united-states/houston-tx/chevrolet/trax/3905905",
-    year: null, // TODO: which model year is the listing
+    year: 2025, // from live Turo listing
     make: "Chevrolet",
     model: "Trax",
-    trim: null, // TODO: LT / ACTIV / 2RS
+    trim: "LT", // from live Turo listing
     seats: 5,
-    mpgCombined: 30, // from catalog Trax years (2024–2026)
-    fromPricePerDay: null,
-    features: [], // TODO
+    mpgCombined: 30, // from live Turo listing (matches catalog)
+    fromPricePerDay: null, // dates-based; do not hardcode a stale daily rate
+    features: [
+      "Apple CarPlay",
+      "Android Auto",
+      "Backup camera",
+      "GPS",
+      "Keyless entry",
+      "Heated seats",
+    ],
     photos: [
       {
         src: "/rentals/chevrolet-trax-1.png",
@@ -91,7 +103,7 @@ export const turoListings: readonly TuroListing[] = [
         height: 352,
       },
     ],
-    catalogPath: "/makes/chevrolet/trax", // model page exists; listing year TBD
+    catalogPath: "/makes/chevrolet/trax/2025",
   },
 ];
 
@@ -104,8 +116,11 @@ export function getRentalListingForModel(
   makeSlug: string,
   modelSlug: string,
 ): TuroListing | undefined {
+  const modelBase = `/makes/${makeSlug}/${modelSlug}`;
   return turoListings.find(
-    (l) => l.catalogPath === `/makes/${makeSlug}/${modelSlug}`,
+    (l) =>
+      l.catalogPath === modelBase ||
+      l.catalogPath?.startsWith(`${modelBase}/`),
   );
 }
 
