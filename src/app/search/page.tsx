@@ -3,14 +3,13 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SearchPanel } from "@/components/SearchPanel";
 import { SITE } from "@/data/catalog";
 import { searchCatalog } from "@/lib/catalog";
-import { JsonLd, breadcrumbJsonLd } from "@/lib/seo";
+import { JsonLd, breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Search",
-  description:
-    `Search the ${SITE.name} catalog by make, model, or year to find car photo galleries fast.`,
-  alternates: { canonical: "/search" },
-};
+  description: `Search the ${SITE.name} catalog by make, model, or year to find car photo galleries fast.`,
+  path: "/search",
+});
 
 type Props = {
   searchParams: Promise<{ q?: string | string[] }>;

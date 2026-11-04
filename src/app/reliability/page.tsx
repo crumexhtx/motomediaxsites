@@ -4,26 +4,16 @@ import { BrandReliabilityRanking } from "@/components/BrandReliabilityRanking";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SITE } from "@/data/catalog";
 import { getPublishedReliabilityGuides } from "@/lib/reliability";
-import { JsonLd, absoluteUrl, breadcrumbJsonLd } from "@/lib/seo";
+import { JsonLd, breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
 const TITLE = "Most reliable car brands & model guides";
 const DESCRIPTION = `Most to least reliable brands from Consumer Reports, J.D. Power, and CarGurus — plus model-year reliability guides on ${SITE.name}.`;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/reliability" },
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    url: absoluteUrl("/reliability"),
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: TITLE,
-    description: DESCRIPTION,
-  },
-};
+  path: "/reliability",
+});
 
 export default function ReliabilityHubPage() {
   const guides = getPublishedReliabilityGuides();

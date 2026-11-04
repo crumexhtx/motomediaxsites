@@ -106,6 +106,25 @@ describe("catalog lookups", () => {
     }
   });
 
+  it("never returns an empty hero alt", async () => {
+    const { getLandingHeroImage } = await import("@/lib/catalog");
+    expect(getLandingHeroImage()!.alt.trim().length).toBeGreaterThan(0);
+  });
+
+  it("features popular used years (not 2026) and avoids raw Wikidata subtitles on the homepage", async () => {
+    const { getHomeMixedEntries } = await import("@/lib/catalog");
+    const entries = getHomeMixedEntries(12);
+    for (const e of entries.filter((x) => x.type === "year")) {
+      expect(e.subtitle).not.toMatch(/2026/);
+      expect(e.href).not.toMatch(/\/2026$/);
+    }
+    for (const e of entries.filter((x) => x.type === "model")) {
+      expect(e.subtitle).not.toMatch(
+        /^(motor vehicle|car model)$|index of articles|manufactured by|^model year/i,
+      );
+    }
+  });
+
   it("picks diverse local hero backdrop images when catalog photos exist", () => {
     const images = getHeroBackdropImages(4);
     expect(images.length).toBeGreaterThan(0);
@@ -167,6 +186,42 @@ describe("catalog lookups", () => {
         latest[i].year.year,
       );
     }
+  });
+});
+
+describe("model subtitles", () => {
+  it("flags raw Wikidata labels and keeps clean taglines", async () => {
+    const { isRawWikidataLabel } = await import("@/lib/catalog");
+    for (const raw of [
+      "",
+      "Motor vehicle",
+      "Car model",
+      "Index of articles associated with the same name",
+      "Model year BMW 3 Series",
+      "Series of pickup trucks manufactured by Ford",
+      "Compact car (2008–2023)",
+      "Seventh-generation of the Nissan Z sports car",
+    ]) {
+      expect(isRawWikidataLabel(raw), raw).toBe(true);
+    }
+    for (const clean of [
+      "Compact crossover SUV",
+      "Mid-size pickup truck",
+      "Battery electric compact crossover SUV",
+    ]) {
+      expect(isRawWikidataLabel(clean), clean).toBe(false);
+    }
+  });
+
+  it("generates one-liners from catalog data when the tagline is raw", async () => {
+    const { getModel, modelCardSubtitle } = await import("@/lib/catalog");
+    const colorado = getModel("chevrolet", "colorado")!.model; // tagline: "Motor vehicle"
+    const line = modelCardSubtitle(colorado);
+    expect(line).not.toMatch(/motor vehicle/i);
+    expect(line).toMatch(/model years?/);
+
+    const rav4 = getModel("toyota", "rav4")!.model;
+    expect(modelCardSubtitle(rav4)).toBe("Compact crossover SUV");
   });
 });
 

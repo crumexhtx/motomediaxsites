@@ -4,6 +4,7 @@ import { useMemo, useState, type ReactNode } from "react";
 import type { TrimSpec, VehicleSpecs, YearPerformance } from "@/data/catalog";
 import { OwnershipCostCalculator } from "@/components/OwnershipCostCalculator";
 import { trimLooksElectrified } from "@/lib/ownership";
+import { pickCompareTrimId, trimDisplayLabels } from "@/lib/trimLabels";
 
 type Props = {
   yearLabel: string;
@@ -16,8 +17,16 @@ type Props = {
   onTrimChange?: (id: string) => void;
 };
 
+/** Placeholder strings that mean "no value" — rows with these are hidden. */
+function isMissing(value: unknown): boolean {
+  if (value === undefined || value === null) return true;
+  if (typeof value === "number") return Number.isNaN(value);
+  const t = String(value).trim();
+  return t === "" || /^(—|–|-+|n\/a|na|null|undefined|unknown|tbd)$/i.test(t);
+}
+
 function fmt(value: number | string | undefined, suffix = "") {
-  if (value === undefined || value === null || value === "") return null;
+  if (isMissing(value)) return null;
   return `${value}${suffix}`;
 }
 
@@ -42,7 +51,7 @@ function StatBadge({
 }
 
 function SpecRow({ label, value }: { label: string; value: string | null }) {
-  if (!value) return null;
+  if (isMissing(value)) return null;
   return (
     <div className="flex justify-between gap-4 border-b border-line/60 py-2.5 text-sm last:border-0">
       <dt className="text-muted">{label}</dt>
@@ -98,18 +107,33 @@ export function YearDetailPanel({
 
   const [internalTrimId, setInternalTrimId] = useState(initialId);
   const trimId = controlledTrimId ?? internalTrimId;
-  const compareInitial =
-    trims.find((t) => t.id !== (controlledTrimId ?? initialId))?.id ??
-    trims[1]?.id;
-  const [compareTrimId, setCompareTrimId] = useState(compareInitial);
+  // Unique display labels (e.g. "SR5" vs "SR5 i-FORCE MAX" never collide).
+  const labels = useMemo(() => trimDisplayLabels(trims), [trims]);
+  const labelOf = (t: TrimSpec) => labels[t.id] ?? t.name;
+  // Trim B defaults to a different trim (by id and label) than Trim A.
+  const [compareTrimId, setCompareTrimId] = useState(() =>
+    pickCompareTrimId(trims, controlledTrimId ?? initialId, labels),
+  );
 
   const setTrimId = (id: string) => {
     onTrimChange?.(id);
     if (controlledTrimId === undefined) setInternalTrimId(id);
     if (id === compareTrimId) {
-      const other = trims.find((t) => t.id !== id)?.id;
+      const other = pickCompareTrimId(trims, id, labels);
       if (other) setCompareTrimId(other);
     }
+  };
+
+  /** Choosing the trim already in the other slot swaps A and B. */
+  const setCompareTrim = (id: string, currentA: string | undefined) => {
+    if (id === currentA && compareTrimId) {
+      const previousB = compareTrimId;
+      onTrimChange?.(previousB);
+      if (controlledTrimId === undefined) setInternalTrimId(previousB);
+      setCompareTrimId(currentA);
+      return;
+    }
+    setCompareTrimId(id);
   };
   const trim: TrimSpec | undefined = useMemo(
     () => trims.find((t) => t.id === trimId) ?? trims[0],
@@ -119,10 +143,11 @@ export function YearDetailPanel({
   const compareTrim: TrimSpec | undefined = useMemo(() => {
     if (!compareTrimId) return undefined;
     if (compareTrimId === trim?.id) {
-      return trims.find((t) => t.id !== trim.id) ?? trims[1];
+      const otherId = pickCompareTrimId(trims, trim.id, labels);
+      return trims.find((t) => t.id === otherId);
     }
     return trims.find((t) => t.id === compareTrimId);
-  }, [compareTrimId, trim, trims]);
+  }, [compareTrimId, trim, trims, labels]);
 
   const hp = fmt(trim?.horsepower, " hp");
   const torque = fmt(trim?.torqueLbFt, " lb-ft");
@@ -199,6 +224,17 @@ export function YearDetailPanel({
     specs?.rolloverRating,
   );
 
+  // Trim index: drop whole columns that no trim has a value for.
+  const indexColumns = (
+    [
+      { label: "HP", cell: (t: TrimSpec) => fmt(t.horsepower) },
+      { label: "Torque", cell: (t: TrimSpec) => fmt(t.torqueLbFt) },
+      { label: "0–60", cell: (t: TrimSpec) => fmt(t.zeroToSixtySec, "s") },
+      { label: "MPG", cell: (t: TrimSpec) => fmt(t.mpgCombined) },
+      { label: "Drivetrain", cell: (t: TrimSpec) => fmt(t.drivetrain) },
+    ] as const
+  ).filter((col) => trims.some((t) => col.cell(t) !== null));
+
   if (!heroHasStats && !mechHas && !dimHas && !effHas && !safetyHas && !trims.length) {
     return null;
   }
@@ -225,7 +261,7 @@ export function YearDetailPanel({
                       : "focus-ring flex max-w-[11rem] flex-col overflow-hidden rounded-md border border-line bg-elevated/50 px-3 py-2 text-left text-sm text-muted transition hover:border-accent/50 hover:text-foreground"
                   }
                 >
-                  {t.name}
+                  {labelOf(t)}
                 </button>
               );
             })}
@@ -465,7 +501,7 @@ export function YearDetailPanel({
               >
                 {trims.map((t) => (
                   <option key={t.id} value={t.id}>
-                    {t.name}
+                    {labelOf(t)}
                   </option>
                 ))}
               </select>
@@ -475,11 +511,11 @@ export function YearDetailPanel({
               <select
                 className="focus-ring rounded-md border border-line bg-elevated/80 px-3 py-2 text-sm normal-case tracking-normal text-foreground"
                 value={compareTrim.id}
-                onChange={(e) => setCompareTrimId(e.target.value)}
+                onChange={(e) => setCompareTrim(e.target.value, trim.id)}
               >
                 {trims.map((t) => (
                   <option key={t.id} value={t.id}>
-                    {t.name}
+                    {labelOf(t)}
                   </option>
                 ))}
               </select>
@@ -491,8 +527,8 @@ export function YearDetailPanel({
                 <thead>
                   <tr className="border-b border-line text-xs uppercase tracking-[0.12em] text-muted">
                     <th className="py-2 pr-4 font-medium">Spec</th>
-                    <th className="py-2 pr-4 font-medium">{trim.name}</th>
-                    <th className="py-2 font-medium">{compareTrim.name}</th>
+                    <th className="py-2 pr-4 font-medium">{labelOf(trim)}</th>
+                    <th className="py-2 font-medium">{labelOf(compareTrim)}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -552,11 +588,18 @@ export function YearDetailPanel({
                 <thead>
                   <tr className="border-b border-line text-xs uppercase tracking-[0.12em] text-muted">
                     <th className="py-2 pr-4 font-medium">Trim</th>
-                    <th className="py-2 pr-4 font-medium">HP</th>
-                    <th className="py-2 pr-4 font-medium">Torque</th>
-                    <th className="py-2 pr-4 font-medium">0–60</th>
-                    <th className="py-2 pr-4 font-medium">MPG</th>
-                    <th className="py-2 font-medium">Drivetrain</th>
+                    {indexColumns.map((col, i) => (
+                      <th
+                        key={col.label}
+                        className={
+                          i === indexColumns.length - 1
+                            ? "py-2 font-medium"
+                            : "py-2 pr-4 font-medium"
+                        }
+                      >
+                        {col.label}
+                      </th>
+                    ))}
                 </tr>
               </thead>
               <tbody>
@@ -578,24 +621,21 @@ export function YearDetailPanel({
                           aria-pressed={active}
                           className="focus-ring text-left underline-offset-2 hover:underline"
                         >
-                          {t.name}
+                          {labelOf(t)}
                         </button>
                       </td>
-                      <td className="py-2.5 pr-4 tabular-nums">
-                        {t.horsepower ?? "—"}
-                      </td>
-                      <td className="py-2.5 pr-4 tabular-nums">
-                        {t.torqueLbFt ?? "—"}
-                      </td>
-                      <td className="py-2.5 pr-4 tabular-nums">
-                        {t.zeroToSixtySec != null
-                          ? `${t.zeroToSixtySec}s`
-                          : "—"}
-                      </td>
-                      <td className="py-2.5 pr-4 tabular-nums">
-                        {t.mpgCombined ?? "—"}
-                      </td>
-                      <td className="py-2.5">{t.drivetrain ?? "—"}</td>
+                      {indexColumns.map((col, i) => (
+                        <td
+                          key={col.label}
+                          className={
+                            i === indexColumns.length - 1
+                              ? "py-2.5 tabular-nums"
+                              : "py-2.5 pr-4 tabular-nums"
+                          }
+                        >
+                          {col.cell(t) ?? "—"}
+                        </td>
+                      ))}
                     </tr>
                   );
                 })}

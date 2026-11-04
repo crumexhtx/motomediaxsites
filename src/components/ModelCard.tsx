@@ -75,17 +75,21 @@ export function YearChips({
         const active = activeYear === year.slug;
         return (
           <li key={year.slug}>
-            <Link
-              href={href}
-              aria-current={active ? "page" : undefined}
-              className={`focus-ring inline-flex rounded-md border px-3 py-1.5 text-sm transition ${
-                active
-                  ? "border-accent bg-accent/15 text-foreground"
-                  : "border-line text-muted hover:border-accent/40 hover:text-foreground"
-              }`}
-            >
-              {year.year}
-            </Link>
+            {active ? (
+              <span
+                aria-current="page"
+                className="inline-flex rounded-md border border-accent bg-accent/15 px-3 py-1.5 text-sm text-foreground"
+              >
+                {year.year}
+              </span>
+            ) : (
+              <Link
+                href={href}
+                className="focus-ring inline-flex rounded-md border border-line px-3 py-1.5 text-sm text-muted transition hover:border-accent/40 hover:text-foreground"
+              >
+                {year.year}
+              </Link>
+            )}
           </li>
         );
       })}

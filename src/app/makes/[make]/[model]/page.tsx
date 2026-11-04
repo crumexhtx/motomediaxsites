@@ -6,6 +6,8 @@ import { ModelCard, YearChips } from "@/components/ModelCard";
 import {
   getAllModelParams,
   getModel,
+  isRawWikidataLabel,
+  modelCardSubtitle,
   modelCardImage,
   pickBestCardImage,
   yearHref,
@@ -16,8 +18,10 @@ import {
   reliabilityGuideHref,
 } from "@/lib/reliability";
 import { SITE } from "@/data/catalog";
-import { JsonLd, absoluteUrl, breadcrumbJsonLd } from "@/lib/seo";
+import { JsonLd, breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 import { RelatedComparisons } from "@/components/RelatedComparisons";
+import { HoustonRentalCallout } from "@/components/HoustonRentalCallout";
+import { getRentalListingForModel } from "@/lib/rentals";
 
 type Props = {
   params: Promise<{ make: string; model: string }>;
@@ -44,39 +48,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         ? String(yearsSorted[0].year)
         : "";
   const title = `${make.name} ${model.name} used years & recalls`;
-  const description = `${model.tagline} Compare ${make.name} ${model.name} model years${yearRange ? ` (${yearRange})` : ""} for NHTSA recalls, complaints, and year-over-year changes on ${SITE.name}.`;
+  const taglineLead = isRawWikidataLabel(model.tagline)
+    ? ""
+    : `${model.tagline.trim().replace(/\.$/, "")}. `;
+  const description = `${taglineLead}Compare ${make.name} ${model.name} model years${yearRange ? ` (${yearRange})` : ""} for NHTSA recalls, complaints, and year-over-year changes on ${SITE.name}.`;
   const cover =
     pickBestCardImage(yearsSorted[0]?.images, {
       makeName: make.name,
       modelName: model.name,
     }) ?? modelCardImage(make, model);
-  const ogImage =
-    cover && !cover.src.endsWith(".svg")
-      ? {
-          url: cover.src.startsWith("http")
-            ? cover.src
-            : absoluteUrl(cover.src),
-          alt: cover.alt || `${make.name} ${model.name}`,
-        }
-      : undefined;
+  const useCover = Boolean(cover) && !cover.src.endsWith(".svg");
 
-  return {
+  return buildMetadata({
     title,
     description,
-    alternates: { canonical: path },
-    openGraph: {
-      title,
-      description,
-      url: absoluteUrl(path),
-      ...(ogImage ? { images: [ogImage] } : {}),
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      ...(ogImage ? { images: [ogImage.url] } : {}),
-    },
-  };
+    path,
+    ...(useCover
+      ? {
+          image: cover.src,
+          imageAlt: cover.alt || `${make.name} ${model.name}`,
+        }
+      : {}),
+  });
 }
 
 /** Indexable model landing — lists years instead of redirecting (GSC “Page with redirect”). */
@@ -120,7 +113,9 @@ export default async function ModelPage({ params }: Props) {
         <h1 className="mt-2 font-display text-4xl tracking-tight md:text-5xl">
           {model.name}
         </h1>
-        <p className="mt-3 text-lg text-muted">{model.tagline}</p>
+        {modelCardSubtitle(model) ? (
+          <p className="mt-3 text-lg text-muted">{modelCardSubtitle(model)}</p>
+        ) : null}
         {discontinued ? (
           <p className="mt-3 text-sm text-muted">{discontinued.message}</p>
         ) : null}
@@ -189,6 +184,14 @@ export default async function ModelPage({ params }: Props) {
           ))}
         </ul>
       </section>
+
+      {getRentalListingForModel(make.slug, model.slug) ? (
+        <HoustonRentalCallout
+          makeName={make.name}
+          modelName={model.name}
+          className="mt-10"
+        />
+      ) : null}
 
       <div className="mt-12">
         <RelatedComparisons

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SITE } from "@/data/catalog";
+import { SITE_URL } from "@/data/catalog";
 import { getCatalogMtime } from "@/data/catalog.server";
 import {
   getAllMakeParams,
@@ -10,7 +10,7 @@ import { getAllComparisonParams } from "@/lib/comparisons";
 import { getPublishedReliabilityGuides } from "@/lib/reliability";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = SITE.url;
+  const base = SITE_URL;
   const lastModified = getCatalogMtime();
 
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -71,6 +71,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${base}/rentals/houston`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.74,
+    },
+    {
+      url: `${base}/rentals/houston/hobby-airport`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.74,

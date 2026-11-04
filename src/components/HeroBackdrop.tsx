@@ -28,11 +28,11 @@ export function HeroBackdrop({ images }: Props) {
   }
 
   return (
-    <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
+    <div className="absolute inset-0 overflow-hidden">
       <div className="hero-pan absolute inset-[-4%]">
         <CatalogImage
           src={image.src}
-          alt=""
+          alt={image.alt?.trim() || "Featured vehicle"}
           fill
           priority
           quality={75}

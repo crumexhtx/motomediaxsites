@@ -44,9 +44,11 @@ function HomeMixedTile({ entry }: { entry: HomeMixedEntry }) {
         <p className="mt-1 font-display text-xl tracking-tight">
           {entry.title}
         </p>
-        <p className="mt-1 line-clamp-1 text-sm text-muted">
-          {entry.subtitle}
-        </p>
+        {entry.subtitle ? (
+          <p className="mt-1 line-clamp-1 text-sm text-muted">
+            {entry.subtitle}
+          </p>
+        ) : null}
       </div>
     </Link>
   );

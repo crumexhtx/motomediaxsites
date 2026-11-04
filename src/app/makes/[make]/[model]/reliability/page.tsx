@@ -11,9 +11,9 @@ import {
 } from "@/lib/reliability";
 import {
   JsonLd,
-  absoluteUrl,
   articleJsonLd,
   breadcrumbJsonLd,
+  buildMetadata,
   faqPageJsonLd,
 } from "@/lib/seo";
 
@@ -38,22 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = `${make.name} ${model.name} years to avoid & reliability`;
   const description = `${make.name} ${model.name} reliability guide — best years to buy, years to avoid, common problems by generation, and sourced notes on ${SITE.name}.`;
 
-  return {
-    title,
-    description,
-    alternates: { canonical: path },
-    openGraph: {
-      type: "article",
-      title,
-      description,
-      url: absoluteUrl(path),
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-    },
-  };
+  return buildMetadata({ title, description, path, type: "article" });
 }
 
 export default async function ModelReliabilityPage({ params }: Props) {

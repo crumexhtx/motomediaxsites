@@ -35,8 +35,11 @@ import {
   JsonLd,
   absoluteUrl,
   breadcrumbJsonLd,
+  buildMetadata,
   yearPageJsonLd,
 } from "@/lib/seo";
+import { getRentalListingForModel } from "@/lib/rentals";
+import { HoustonRentalCallout } from "@/components/HoustonRentalCallout";
 import { enrichYearSummary, yearSeoDescription, yearSeoTitle } from "@/lib/text";
 import { diffYears, findPreviousYear } from "@/lib/yearDiff";
 
@@ -92,27 +95,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       modelName: model.name,
     }) ?? year.images[0];
   const path = yearHref(make.slug, model.slug, year.slug);
-  const ogImage = image
-    ? { url: absolutizeImage(image.src), alt: image.alt }
-    : undefined;
+  const useImage = Boolean(image?.src) && !image!.src.endsWith(".svg");
 
-  return {
+  return buildMetadata({
     title,
     description,
-    alternates: { canonical: path },
-    openGraph: {
-      title,
-      description,
-      url: absoluteUrl(path),
-      ...(ogImage ? { images: [ogImage] } : {}),
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      ...(ogImage ? { images: [ogImage.url] } : {}),
-    },
-  };
+    path,
+    ...(useImage
+      ? {
+          image: image!.src,
+          imageAlt: image!.alt || `${year.year} ${make.name} ${model.name}`,
+        }
+      : {}),
+  });
 }
 
 export default async function YearPage({ params }: Props) {
@@ -272,6 +267,13 @@ export default async function YearPage({ params }: Props) {
                 </a>
                 .
               </p>
+            ) : null}
+            {getRentalListingForModel(make.slug, model.slug) ? (
+              <HoustonRentalCallout
+                makeName={make.name}
+                modelName={model.name}
+                className="mt-6"
+              />
             ) : null}
           </section>
         }

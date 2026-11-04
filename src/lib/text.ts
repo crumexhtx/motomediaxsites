@@ -196,3 +196,60 @@ export function repairUtf8Mojibake(text: string): string {
     .replace(/\s+/g, " ")
     .trim();
 }
+
+/** NHTSA recall text often splits nameplates ("RAV 4", "4 Runner"). */
+const MODEL_NAME_FIXES: Array<[RegExp, string]> = [
+  [/\bRAV[\s-]4\b/gi, "RAV4"],
+  [/\b4[\s-]Runner\b/gi, "4Runner"],
+];
+
+/** Normalize split / mis-spaced model names inside NHTSA recall copy. */
+export function normalizeModelNames(text: string): string {
+  let next = text;
+  for (const [re, replacement] of MODEL_NAME_FIXES) {
+    next = next.replace(re, replacement);
+  }
+  return next;
+}
+
+const MONTHS = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+
+/** "2026-09-22" or full ISO timestamp → "Sep 22, 2026" (timezone-independent). */
+export function formatIsoDate(iso: string): string {
+  const m = iso.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return iso;
+  const month = Number(m[2]);
+  if (month < 1 || month > 12) return iso;
+  return `${MONTHS[month - 1]} ${Number(m[3])}, ${m[1]}`;
+}
+
+/** [2021, 2022, 2023, 2025] → "2021–2023, 2025". */
+export function formatYearRanges(years: number[]): string {
+  const sorted = [...new Set(years)].sort((a, b) => a - b);
+  const parts: string[] = [];
+  let start = 0;
+  for (let i = 0; i < sorted.length; i++) {
+    if (i === sorted.length - 1 || sorted[i + 1] !== sorted[i] + 1) {
+      parts.push(
+        sorted[start] === sorted[i]
+          ? String(sorted[i])
+          : `${sorted[start]}–${sorted[i]}`,
+      );
+      start = i + 1;
+    }
+  }
+  return parts.join(", ");
+}

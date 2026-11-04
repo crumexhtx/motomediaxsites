@@ -4,13 +4,13 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SITE } from "@/data/catalog";
 import { getAllComparisons, buildComparisonPage } from "@/lib/comparisons";
 import { formatUsd } from "@/lib/pricing";
-import { JsonLd, breadcrumbJsonLd } from "@/lib/seo";
+import { JsonLd, breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Used car comparisons",
   description: `Side-by-side used-buyer comparisons — MSRP vs asking, recalls, and running costs — on ${SITE.name}.`,
-  alternates: { canonical: "/compare" },
-};
+  path: "/compare",
+});
 
 export default function CompareIndexPage() {
   const pairs = getAllComparisons()

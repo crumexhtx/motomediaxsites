@@ -1,6 +1,7 @@
+import Link from "next/link";
 import { RentalsPageShell } from "@/components/RentalsPageShell";
 import { SITE } from "@/data/catalog";
-import { rentalPageMetadata } from "@/lib/rentals";
+import { HOBBY_AIRPORT_PATH, rentalPageMetadata } from "@/lib/rentals";
 import { articleJsonLd, faqPageJsonLd } from "@/lib/seo";
 
 const PATH = "/rentals/what-to-expect";
@@ -130,6 +131,24 @@ export default function WhatToExpectPage() {
           Message the host promptly for non-urgent issues (warning lights,
           missing adapter, parking questions). Clear, time-stamped photos in
           trip chat help everyone resolve problems faster.
+        </p>
+      </section>
+
+      <section className="mt-10 space-y-4">
+        <h2 className="font-display text-2xl tracking-tight">
+          Renting near Hobby Airport
+        </h2>
+        <p className="leading-relaxed text-muted">
+          If your trip starts at Hobby (HOU), our{" "}
+          <Link
+            href={HOBBY_AIRPORT_PATH}
+            className="text-accent underline-offset-2 hover:underline"
+          >
+            Hobby Airport rental page
+          </Link>{" "}
+          covers the cars we list on Turo and what to confirm before you
+          arrive. Pickup and delivery details always come from the live
+          listing and the trip chat.
         </p>
       </section>
     </RentalsPageShell>

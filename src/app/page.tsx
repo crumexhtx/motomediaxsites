@@ -1,4 +1,5 @@
-﻿import Link from "next/link";
+﻿import type { Metadata } from "next";
+import Link from "next/link";
 import { HeroBackdrop } from "@/components/HeroBackdrop";
 import { HomeMixedGrid } from "@/components/HomeMixedGrid";
 import { LandingSearch } from "@/components/LandingSearch";
@@ -8,6 +9,22 @@ import {
   getLandingHeroImage,
   getRecentRecalls,
 } from "@/lib/catalog";
+import { HOBBY_AIRPORT_PATH } from "@/lib/rentals";
+import { buildMetadata } from "@/lib/seo";
+import { formatIsoDate, formatYearRanges } from "@/lib/text";
+
+const HOME_TITLE = "Which used model year should you actually buy?";
+
+export const metadata: Metadata = {
+  ...buildMetadata({
+    title: HOME_TITLE,
+    description:
+      "Compare years, check NHTSA recalls and owner complaints, and see what changed — then decide if the newer year is worth the price.",
+    path: "/",
+  }),
+  // The root layout's title template doesn't apply to its own segment's page.
+  title: { absolute: `${HOME_TITLE} \u00b7 ${SITE.name}` },
+};
 
 export default function HomePage() {
   const mixedEntries = getHomeMixedEntries(12);
@@ -95,16 +112,30 @@ export default function HomePage() {
             </div>
             <ul className="grid gap-4 md:grid-cols-2">
               {recentRecalls.map((r) => (
-                <li key={`${r.campaignNumber}-${r.href}`}>
+                <li key={r.campaignNumber}>
                   <Link
                     href={r.href}
                     className="focus-ring block rounded-lg border border-line bg-elevated/50 px-4 py-4 transition hover:border-accent/40"
                   >
                     <div className="flex flex-wrap items-baseline justify-between gap-2">
                       <p className="font-display text-lg tracking-tight">
-                        {r.year} {r.makeName} {r.modelName}
+                        {r.makeName} {r.modelName}{" "}
+                        <span className="text-muted">
+                          {formatYearRanges(
+                            r.affected[0]?.years ?? [r.year],
+                          )}
+                        </span>
+                        {r.affected.length > 1 ? (
+                          <span className="ml-2 text-xs font-normal text-muted">
+                            +{r.affected.length - 1} more model
+                            {r.affected.length - 1 === 1 ? "" : "s"}
+                          </span>
+                        ) : null}
                       </p>
-                      <p className="text-xs tabular-nums text-muted">{r.date}</p>
+                      <p className="text-xs tabular-nums text-muted">
+                        NHTSA report{" "}
+                        <time dateTime={r.date}>{formatIsoDate(r.date)}</time>
+                      </p>
                     </div>
                     <p className="mt-1 text-sm text-muted">{r.component}</p>
                     <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted">
@@ -137,6 +168,28 @@ export default function HomePage() {
             </Link>
           </div>
           <HomeMixedGrid entries={mixedEntries} />
+
+          <aside
+            aria-label="Houston car rentals"
+            className="mt-10 flex flex-wrap items-center justify-between gap-4 rounded-lg border border-line bg-elevated/40 px-5 py-4"
+          >
+            <div className="max-w-xl">
+              <h2 className="font-display text-lg tracking-tight">
+                Renting in Houston?
+              </h2>
+              <p className="mt-1 text-sm text-muted">
+                We list our own cars on Turo near Hobby Airport — see what is
+                available and what to expect.
+              </p>
+            </div>
+            <Link
+              href={HOBBY_AIRPORT_PATH}
+              className="focus-ring inline-flex items-center gap-1.5 text-sm font-medium text-accent transition hover:gap-2.5"
+            >
+              Rent near Hobby Airport
+              <span aria-hidden="true">→</span>
+            </Link>
+          </aside>
         </div>
       </section>
     </>

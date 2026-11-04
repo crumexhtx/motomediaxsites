@@ -7,18 +7,21 @@ type Props = {
   modelName: string;
 };
 
+/** One label/value pair — the label is rendered once (as the visible <dt>). */
 function Metric({ metric }: { metric: SnapshotMetric }) {
   return (
     <div className="min-w-0 border-b border-line/60 pb-3 last:border-0 sm:border-b-0 sm:pb-0">
-      <p className="text-[0.65rem] uppercase tracking-[0.14em] text-muted">
+      <dt className="text-[0.65rem] uppercase tracking-[0.14em] text-muted">
         {metric.label}
-      </p>
-      <p className="mt-1 font-display text-xl tracking-tight tabular-nums md:text-2xl">
-        {metric.value}
-      </p>
-      {metric.hint ? (
-        <p className="mt-1 text-xs text-muted">{metric.hint}</p>
-      ) : null}
+      </dt>
+      <dd className="m-0">
+        <span className="mt-1 block font-display text-xl tracking-tight tabular-nums md:text-2xl">
+          {metric.value}
+        </span>
+        {metric.hint ? (
+          <span className="mt-1 block text-xs text-muted">{metric.hint}</span>
+        ) : null}
+      </dd>
     </div>
   );
 }
@@ -45,9 +48,12 @@ export function YearSnapshot({
         >
           {yearLabel} {makeName} {modelName} snapshot
         </h2>
-        <p className="text-xs uppercase tracking-[0.14em] text-muted">
-          As of {snapshot.asOf}
-        </p>
+        {snapshot.asOf ? (
+          <p className="text-xs uppercase tracking-[0.14em] text-muted">
+            {snapshot.asOfLabel ?? "As of"}{" "}
+            <time dateTime={snapshot.asOfIso}>{snapshot.asOf}</time>
+          </p>
+        ) : null}
       </div>
 
       <p className="mt-3 max-w-3xl text-base leading-relaxed text-foreground md:text-lg">
@@ -56,12 +62,7 @@ export function YearSnapshot({
 
       <dl className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {snapshot.metrics.map((metric) => (
-          <div key={metric.label}>
-            <dt className="sr-only">{metric.label}</dt>
-            <dd>
-              <Metric metric={metric} />
-            </dd>
-          </div>
+          <Metric key={metric.label} metric={metric} />
         ))}
       </dl>
 

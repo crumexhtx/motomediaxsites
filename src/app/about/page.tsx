@@ -1,15 +1,29 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SITE } from "@/data/catalog";
-import { JsonLd, breadcrumbJsonLd } from "@/lib/seo";
+import { getCatalogFetchedAt } from "@/lib/catalog";
+import { JsonLd, breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
+import { formatIsoDate } from "@/lib/text";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "About",
-  description: `Learn about ${SITE.name}—a clearer, SEO-friendly way to browse car photos by make, model, and year.`,
-  alternates: { canonical: "/about" },
-};
+  description: `${SITE.name} is a used-car model-year research site using NHTSA recalls and complaints data. Includes the owner's own Houston Turo rentals.`,
+  path: "/about",
+});
+
+/**
+ * TODO(owner): replace with the real corrections inbox before launch.
+ * Intentionally NOT pulled from git config or any other source.
+ */
+const CORRECTIONS_EMAIL_PLACEHOLDER = "[TODO: add corrections email address]";
+
+const h2 = "font-display text-2xl tracking-tight";
+const p = "mt-3 leading-relaxed text-muted";
 
 export default function AboutPage() {
+  const fetchedAt = getCatalogFetchedAt();
+
   return (
     <div className="container-wide py-10 md:py-14">
       <JsonLd
@@ -29,22 +43,118 @@ export default function AboutPage() {
           About {SITE.name}
         </h1>
         <p className="mt-5 text-lg leading-relaxed text-muted">
-          {SITE.name} is a car photo catalog inspired by the browse model of
-          sites like NetCarShow—make, then model, then year—with a cleaner UI
-          and pages structured for search engines.
+          {SITE.name} is a used-car research site built around the model year.
+          Pick a make, model, and year to see recalls, owner complaints, what
+          changed from the year before, and the specs we have — so you can
+          decide which year is actually worth buying.
         </p>
-        <p className="mt-4 leading-relaxed text-muted">
-          Catalog entries are built from Wikipedia/Wikimedia (photos and
-          overviews) and NHTSA (availability and safety ratings where
-          available), covering recent model years for a curated set of popular
-          brands. Some year pages embed a YouTube overview video; those clips
-          remain owned by their uploaders and are credited on the page. Imagery
-          and text are attributed on vehicle pages. Content is best-effort and
-          may not match a specific trim or model year photo.
-        </p>
-        <p className="mt-4 leading-relaxed text-muted">
-          Not affiliated with Wikipedia, NHTSA, NetCarShow, or any vehicle
-          manufacturer.
+
+        <section className="mt-10">
+          <h2 className={h2}>Where the data comes from</h2>
+          <ul className="mt-3 list-disc space-y-2 pl-5 leading-relaxed text-muted">
+            <li>
+              <span className="text-foreground">Recalls:</span> the{" "}
+              <a
+                href="https://www.nhtsa.gov/nhtsa-datasets-and-apis"
+                className="underline-offset-2 hover:underline"
+                rel="noreferrer"
+                target="_blank"
+              >
+                NHTSA recalls API
+              </a>
+              . Each campaign is shown with the NHTSA report date.
+            </li>
+            <li>
+              <span className="text-foreground">Owner complaints:</span> the
+              NHTSA complaints API. We show counts by component, not verified
+              defect rates — a complaint is an owner report, not a finding.
+            </li>
+            <li>
+              <span className="text-foreground">Specs and ratings:</span> NHTSA
+              vPIC and crash ratings, EPA fuel economy, and curated trim data
+              where available. We leave a spec out rather than guess it.
+            </li>
+            <li>
+              <span className="text-foreground">Overviews and photos:</span>{" "}
+              Wikipedia and Wikimedia Commons, credited on vehicle pages. Some
+              year pages embed a YouTube overview that stays owned by its
+              uploader.
+            </li>
+          </ul>
+        </section>
+
+        <section className="mt-10">
+          <h2 className={h2}>How often it updates</h2>
+          <p className={p}>
+            Recall data is re-pulled from NHTSA by a scheduled job that runs
+            daily (around 8:30 a.m. Central) and publishes only when a campaign
+            is added, removed, or changed.
+            {fetchedAt ? (
+              <>
+                {" "}
+                The most recent data pull in the catalog is{" "}
+                <time dateTime={fetchedAt.slice(0, 10)}>
+                  {formatIsoDate(fetchedAt)}
+                </time>
+                .
+              </>
+            ) : null}{" "}
+            {/* TODO(owner): complaints, EPA and pricing refreshes are run
+                manually today; schedule them and update this sentence. */}
+            Owner-complaint counts, EPA figures, and price estimates are
+            refreshed separately and less often; each year page shows the date
+            of its data pull.
+          </p>
+          <p className={p}>
+            Price figures are labeled estimates based on MSRP and vehicle age,
+            not an appraisal.
+          </p>
+        </section>
+
+        <section className="mt-10">
+          <h2 className={h2}>Photos may not match your exact trim</h2>
+          <p className={p}>
+            Photos are best-effort. A picture may show a different trim,
+            package, or a nearby model year, and we mark how much we trust each
+            photo where we can. Always confirm trim and options against the
+            listing and the VIN before you buy.
+          </p>
+        </section>
+
+        <section className="mt-10">
+          <h2 className={h2}>Houston rentals</h2>
+          <p className={p}>
+            The{" "}
+            <Link
+              href="/rentals/houston"
+              className="underline-offset-2 hover:underline"
+            >
+              Houston rentals section
+            </Link>{" "}
+            features the site owner&rsquo;s own cars, listed on Turo. Prices,
+            availability, and trip rules are set on Turo, and links to Turo are
+            marked as sponsored. Those guides are educational and separate from
+            the model-year research above.
+          </p>
+        </section>
+
+        <section className="mt-10">
+          <h2 className={h2}>Corrections</h2>
+          <p className={p}>
+            Spot a wrong spec, recall, or photo? Email{" "}
+            {/* TODO(owner): replace this placeholder with a real address
+                (and make it a mailto: link) before launch. */}
+            <span className="font-medium text-foreground">
+              {CORRECTIONS_EMAIL_PLACEHOLDER}
+            </span>{" "}
+            with the page URL and what looks off.
+          </p>
+        </section>
+
+        <p className="mt-10 text-sm leading-relaxed text-muted">
+          Not affiliated with Wikipedia, NHTSA, EPA, Turo, or any vehicle
+          manufacturer. Recall and complaint data is informational — verify
+          recalls for a specific VIN on NHTSA.gov before you buy.
         </p>
       </article>
     </div>

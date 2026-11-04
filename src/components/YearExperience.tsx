@@ -11,6 +11,7 @@ import type {
   YearPerformance,
   YearVideo,
 } from "@/data/catalog";
+import { trimDisplayLabels } from "@/lib/trimLabels";
 import {
   isTrustedHeroPhoto,
   photoConfidenceLabel,
@@ -82,6 +83,8 @@ export function YearExperience({
     [trims, trimId],
   );
 
+  const trimLabels = useMemo(() => trimDisplayLabels(trims), [trims]);
+
   const trimHero = useMemo((): GalleryImage | null => {
     if (!trim?.image || !isTrustedHeroPhoto(trim.imageConfidence)) return null;
     return {
@@ -133,7 +136,9 @@ export function YearExperience({
             {summary.replace(/\s+/g, " ").trim()}
           </p>
           {trim ? (
-            <p className="mt-2 text-sm text-white/65">Trim: {trim.name}</p>
+            <p className="mt-2 text-sm text-white/65">
+              Trim: {trimLabels[trim.id] ?? trim.name}
+            </p>
           ) : null}
           {confidenceNote ? (
             <p className="mt-1 text-xs text-white/55">{confidenceNote}</p>

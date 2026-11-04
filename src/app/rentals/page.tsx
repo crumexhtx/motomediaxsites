@@ -1,12 +1,19 @@
 import Link from "next/link";
+import { RentalListingGrid } from "@/components/RentalListingCard";
 import { RentalsPageShell } from "@/components/RentalsPageShell";
 import { SITE } from "@/data/catalog";
-import { RENTAL_GUIDES, rentalPageMetadata } from "@/lib/rentals";
+import {
+  HOBBY_AIRPORT_PATH,
+  RENTAL_GUIDES,
+  rentalPageMetadata,
+  turoListings,
+  turoListingsItemListJsonLd,
+} from "@/lib/rentals";
 import { articleJsonLd } from "@/lib/seo";
 
 const PATH = "/rentals";
 const TITLE = "Peer-to-peer car rentals";
-const DESCRIPTION = `How Turo-style rentals work, what to check before you book, and Houston pickup tips — plus a link to our rental fleet listing. Guides on ${SITE.name}.`;
+const DESCRIPTION = `How Turo-style rentals work, what to check before you book, and Houston pickup tips — plus our Hyundai Venue and Chevrolet Trax Turo listings. Guides on ${SITE.name}.`;
 
 export const metadata = rentalPageMetadata({
   title: TITLE,
@@ -27,10 +34,10 @@ export default function RentalsHubPage() {
           description: DESCRIPTION,
           path: PATH,
         }),
+        turoListingsItemListJsonLd(),
       ]}
       showGuideNav={false}
-      ctaTitle="Ready to check availability?"
-      ctaLead="If you already know peer-to-peer rental fits your trip, open our live Houston listing for dates, total price, and pickup details."
+      showCta={false}
     >
       <section className="space-y-4">
         <h2 className="font-display text-2xl tracking-tight">
@@ -50,6 +57,25 @@ export default function RentalsHubPage() {
           host response times, mileage caps, and protection-plan choices you
           should read before you confirm.
         </p>
+      </section>
+
+      <section className="mt-10">
+        <h2 className="font-display text-2xl tracking-tight">
+          Our Houston fleet
+        </h2>
+        <p className="mt-2 leading-relaxed text-muted">
+          Two cars, both listed on Turo and based in the Hobby Airport area of
+          southeast Houston. Open a listing for current availability and the
+          all-in price for your dates. Flying into Hobby? See{" "}
+          <Link
+            href={HOBBY_AIRPORT_PATH}
+            className="text-accent underline-offset-2 hover:underline"
+          >
+            car rentals near Hobby Airport (HOU)
+          </Link>
+          .
+        </p>
+        <RentalListingGrid listings={turoListings} className="mt-6" />
       </section>
 
       <section className="mt-10">

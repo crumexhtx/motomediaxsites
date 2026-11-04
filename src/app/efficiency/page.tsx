@@ -8,13 +8,13 @@ import {
   efficiencyMpgBounds,
 } from "@/lib/efficiency";
 import { getEfficiencyCandidates } from "@/lib/efficiency.server";
-import { JsonLd, breadcrumbJsonLd } from "@/lib/seo";
+import { JsonLd, breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Find cars by MPG",
   description: `Slide to a minimum combined MPG and see ${SITE.name} models that meet or beat it — newest qualifying year first.`,
-  alternates: { canonical: "/efficiency" },
-};
+  path: "/efficiency",
+});
 
 type Props = {
   searchParams: Promise<{ minMpg?: string | string[] }>;

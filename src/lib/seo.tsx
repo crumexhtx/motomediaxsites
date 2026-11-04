@@ -1,9 +1,66 @@
-import { SITE } from "@/data/catalog";
+import type { Metadata } from "next";
+import { SITE, SITE_URL } from "@/data/catalog";
 
 export function absoluteUrl(path: string) {
-  const base = SITE.url.replace(/\/$/, "");
+  const base = SITE_URL.replace(/\/$/, "");
   if (!path || path === "/") return base;
   return `${base}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
+/** Neutral, non-vehicle-specific Open Graph card (see src/app/og/default/route.tsx). */
+export const DEFAULT_OG_IMAGE_PATH = "/og/default";
+export const DEFAULT_OG_IMAGE_ALT = `${SITE.name} — ${SITE.tagline}`;
+
+export type BuildMetadataInput = {
+  title: string;
+  description: string;
+  /** Site-relative path used for the canonical URL and og:url. */
+  path: string;
+  /** Site path (`/catalog/…`) or absolute URL. Defaults to the neutral brand card. */
+  image?: string;
+  imageAlt?: string;
+  /** Open Graph type; guides/articles can pass "article". */
+  type?: "website" | "article";
+};
+
+/**
+ * One place to emit title, description, canonical, Open Graph, and Twitter
+ * tags together so pages never ship og/twitter out of sync.
+ */
+export function buildMetadata({
+  title,
+  description,
+  path,
+  image,
+  imageAlt,
+  type = "website",
+}: BuildMetadataInput): Metadata {
+  const imageUrl = image
+    ? image.startsWith("http")
+      ? image
+      : absoluteUrl(image)
+    : absoluteUrl(DEFAULT_OG_IMAGE_PATH);
+  const alt = image ? (imageAlt?.trim() || title) : DEFAULT_OG_IMAGE_ALT;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: path },
+    openGraph: {
+      type,
+      siteName: SITE.name,
+      title,
+      description,
+      url: absoluteUrl(path),
+      images: [{ url: imageUrl, alt }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [{ url: imageUrl, alt }],
+    },
+  };
 }
 
 type BreadcrumbItem = { name: string; path: string };

@@ -9,7 +9,12 @@ import {
   getAllComparisonParams,
   getComparison,
 } from "@/lib/comparisons";
-import { JsonLd, absoluteUrl, breadcrumbJsonLd } from "@/lib/seo";
+import {
+  JsonLd,
+  absoluteUrl,
+  breadcrumbJsonLd,
+  buildMetadata,
+} from "@/lib/seo";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -28,16 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = `${page.def.title} — used buyer's comparison`;
   const description = page.summary.slice(0, 280);
   const path = `/compare/${page.def.slug}`;
-  return {
-    title,
-    description,
-    alternates: { canonical: path },
-    openGraph: {
-      title,
-      description,
-      url: absoluteUrl(path),
-    },
-  };
+  return buildMetadata({ title, description, path });
 }
 
 export default async function ComparePairPage({ params }: Props) {

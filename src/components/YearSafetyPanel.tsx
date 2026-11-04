@@ -1,4 +1,7 @@
+import { ExpandableText } from "@/components/ExpandableText";
 import type { YearComplaintSummary, YearRecall } from "@/data/catalog";
+import { complaintRowsWithOther } from "@/lib/complaints";
+import { formatIsoDate, normalizeModelNames } from "@/lib/text";
 
 type Props = {
   yearLabel: string;
@@ -17,10 +20,18 @@ function RecallRow({ recall }: { recall: YearRecall }) {
   return (
     <li className="border-b border-line/60 py-3 last:border-0">
       <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
-        <p className="font-medium text-foreground">{recall.component}</p>
-        <p className="text-xs tabular-nums text-muted">{recall.date}</p>
+        <p className="font-medium text-foreground">
+          {normalizeModelNames(recall.component)}
+        </p>
+        <p className="text-xs tabular-nums text-muted">
+          NHTSA report date{" "}
+          <time dateTime={recall.date}>{formatIsoDate(recall.date)}</time>
+        </p>
       </div>
-      <p className="mt-1 text-sm leading-relaxed text-muted">{recall.summary}</p>
+      <ExpandableText
+        text={normalizeModelNames(recall.summary)}
+        className="mt-1 text-sm leading-relaxed text-muted"
+      />
       <p className="mt-1.5 text-xs text-muted">
         Campaign{" "}
         <a
@@ -138,10 +149,10 @@ export function YearSafetyPanel({
                 {complaints.injuryCount
                   ? ` · ${complaints.injuryCount} injuries reported`
                   : ""}
-                . Top components:
+                . By component (top components, remainder under Other):
               </p>
               <ul className="mt-3 grid gap-2 sm:grid-cols-2">
-                {complaints.byComponent.map((row) => (
+                {complaintRowsWithOther(complaints).map((row) => (
                   <li
                     key={row.component}
                     className="flex items-baseline justify-between gap-3 border-b border-line/50 py-1.5 text-sm"

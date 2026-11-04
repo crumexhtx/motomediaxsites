@@ -4,8 +4,7 @@ import { Outfit, Syne } from "next/font/google";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SITE } from "@/data/catalog";
-import { getCatalog } from "@/data/catalog.server";
-import { JsonLd, organizationJsonLd } from "@/lib/seo";
+import { JsonLd, buildMetadata, organizationJsonLd } from "@/lib/seo";
 import "./globals.css";
 
 const display = Syne({
@@ -20,42 +19,17 @@ const body = Outfit({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const catalogSnapshot = getCatalog();
-const defaultOgImage =
-  catalogSnapshot
-    .flatMap((make) =>
-      make.models.flatMap((model) =>
-        model.years.flatMap((year) => year.images),
-      ),
-    )
-    .find((img) => img?.src && !img.src.endsWith(".svg")) ??
-  catalogSnapshot[0]?.coverImage;
-
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
+  // Neutral brand OG/Twitter defaults (no catalog car photo).
+  ...buildMetadata({
+    title: SITE.name,
+    description: SITE.description,
+    path: "/",
+  }),
   title: {
-    default: `${SITE.name} · compare used model years`,
-    template: `%s · ${SITE.name}`,
-  },
-  description: SITE.description,
-  openGraph: {
-    type: "website",
-    siteName: SITE.name,
-    title: SITE.name,
-    description: SITE.description,
-    url: SITE.url,
-    images: defaultOgImage
-      ? [{ url: defaultOgImage.src, alt: defaultOgImage.alt }]
-      : undefined,
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: SITE.name,
-    description: SITE.description,
-    images: defaultOgImage ? [defaultOgImage.src] : undefined,
-  },
-  alternates: {
-    canonical: "/",
+    default: `${SITE.name} \u00b7 compare used model years`,
+    template: `%s \u00b7 ${SITE.name}`,
   },
 };
 

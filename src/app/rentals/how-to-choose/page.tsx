@@ -2,7 +2,11 @@ import Link from "next/link";
 import { RentalsPageShell } from "@/components/RentalsPageShell";
 import { getModel, modelHref } from "@/lib/catalog";
 import { SITE } from "@/data/catalog";
-import { RENTAL_LISTING, rentalPageMetadata } from "@/lib/rentals";
+import {
+  HOBBY_AIRPORT_PATH,
+  RENTAL_LISTING,
+  rentalPageMetadata,
+} from "@/lib/rentals";
 import { articleJsonLd, faqPageJsonLd } from "@/lib/seo";
 
 const PATH = "/rentals/how-to-choose";
@@ -173,10 +177,20 @@ export default function HowToChoosePage() {
           cargo, child seats, or fuel economy.
         </p>
         <p className="leading-relaxed text-muted">
-          Our rental fleet listing is a {RENTAL_LISTING.makeName}{" "}
-          {RENTAL_LISTING.modelName} ({RENTAL_LISTING.bodyStyle}). To research
-          used-year recalls and specs for Chevrolet models on {SITE.name}, start
-          with the <CatalogCrossLink />.
+          Our own rental fleet is a Hyundai Venue and a {RENTAL_LISTING.makeName}{" "}
+          {RENTAL_LISTING.modelName} ({RENTAL_LISTING.bodyStyle}s), both
+          listed on Turo. To research used-year recalls and specs for Chevrolet
+          models on {SITE.name}, start with the <CatalogCrossLink />.
+        </p>
+        <p className="leading-relaxed text-muted">
+          Picking up near Hobby? See{" "}
+          <Link
+            href={HOBBY_AIRPORT_PATH}
+            className="text-accent underline-offset-2 hover:underline"
+          >
+            car rentals near Hobby Airport (HOU)
+          </Link>{" "}
+          for our cars and a Venue vs. Trax comparison.
         </p>
       </section>
     </RentalsPageShell>

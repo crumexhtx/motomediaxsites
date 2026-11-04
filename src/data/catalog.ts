@@ -185,3 +185,6 @@ export const SITE = {
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.motomediax.com"
   ).replace(/\/$/, ""),
 };
+
+/** Single canonical origin (www). Use this for sitemap, robots, canonicals, OG. */
+export const SITE_URL = SITE.url;

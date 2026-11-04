@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RentalOwnerDisclosure } from "@/components/RentalOwnerDisclosure";
 import { RentalsGuideNav } from "@/components/RentalsGuideNav";
 import { TuroListingCta } from "@/components/TuroListingCta";
 import { SITE } from "@/data/catalog";
@@ -73,6 +74,8 @@ export function RentalsPageShell({
         </h1>
         <p className="mt-3 text-muted md:text-lg">{description}</p>
       </header>
+
+      <RentalOwnerDisclosure className="mt-6" />
 
       <article className="prose-like mt-10 max-w-3xl">{children}</article>
 

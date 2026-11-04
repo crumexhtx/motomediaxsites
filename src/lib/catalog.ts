@@ -1,4 +1,5 @@
 import {
+  SITE,
   type GalleryImage,
   type MakeEntry,
   type ModelEntry,
@@ -6,6 +7,7 @@ import {
 } from "@/data/catalog";
 import { getCatalog, publicAssetExists } from "@/data/catalog.server";
 import { enrichYearEntry } from "@/lib/trims";
+import { formatYearRanges, normalizeModelNames } from "@/lib/text";
 
 export type SearchResult = {
   type: "make" | "model" | "year";
@@ -160,6 +162,116 @@ function rankedModels(make: MakeEntry): ModelEntry[] {
   return [...make.models].sort((a, b) => b.years.length - a.years.length);
 }
 
+/** Popular used-buyer model-year band featured on the homepage. */
+export const HOME_USED_YEAR_MIN = 2018;
+export const HOME_USED_YEAR_MAX = 2023;
+
+/**
+ * Pick a year for homepage cards that reads as a used-car shopping pick:
+ * newest year inside 2018–2023 when present; otherwise the oldest year above
+ * that band (e.g. 2024, not 2026); otherwise the newest older year.
+ */
+export function pickHomeUsedYear(model: ModelEntry): YearEntry | undefined {
+  if (!model.years.length) return undefined;
+  const byYearDesc = [...model.years].sort((a, b) => b.year - a.year);
+  const inBand = byYearDesc.find(
+    (y) => y.year >= HOME_USED_YEAR_MIN && y.year <= HOME_USED_YEAR_MAX,
+  );
+  if (inBand) return inBand;
+  const above = byYearDesc.filter((y) => y.year > HOME_USED_YEAR_MAX);
+  if (above.length) return above[above.length - 1];
+  return byYearDesc[0];
+}
+
+function hasHomeUsedBandYear(model: ModelEntry): boolean {
+  return model.years.some(
+    (y) => y.year >= HOME_USED_YEAR_MIN && y.year <= HOME_USED_YEAR_MAX,
+  );
+}
+
+/**
+ * True for placeholder / raw Wikidata descriptions that read badly on cards:
+ * generic labels ("Motor vehicle", "Car model"), disambiguation text,
+ * "Series of…" / "… manufactured by …" phrasing, generation or date ranges.
+ */
+export function isRawWikidataLabel(value: string | null | undefined): boolean {
+  const s = (value ?? "").trim();
+  if (!s) return true;
+  if (/^(motor vehicle|car model|automobile|vehicle|car)$/i.test(s)) return true;
+  if (/^index of\b/i.test(s)) return true;
+  if (/^(model|range|series|line|family|automotive|nameplate|upcoming)\b/i.test(s))
+    return true;
+  if (/\b(manufactured|produced|marketed|developed|sold)\s+by\b/i.test(s))
+    return true;
+  if (/\b(by|from)\s+(the\s+)?[A-Z]/.test(s)) return true;
+  if (/\b(variant|version)\s+of\b/i.test(s)) return true;
+  if (/\bgeneration\b/i.test(s)) return true;
+  if (/\b(19|20)\d{2}\b/.test(s)) return true;
+  if (/\(.*\)/.test(s)) return true;
+  return false;
+}
+
+/** "2018–2023", "2024", or a comma list for non-contiguous years. */
+export function formatYearSpan(years: number[]): string {
+  const sorted = [...new Set(years)].sort((a, b) => a - b);
+  if (!sorted.length) return "";
+  const parts: string[] = [];
+  let start = sorted[0];
+  let prev = sorted[0];
+  for (let i = 1; i <= sorted.length; i += 1) {
+    const cur = sorted[i];
+    if (cur === prev + 1) {
+      prev = cur;
+      continue;
+    }
+    parts.push(start === prev ? String(start) : `${start}–${prev}`);
+    start = cur;
+    prev = cur;
+  }
+  return parts.join(", ");
+}
+
+/** One-liner built only from catalog data: years covered, recalls, MPG. */
+function generatedModelSummary(model: ModelEntry): string {
+  const parts: string[] = [];
+  const span = formatYearSpan(model.years.map((y) => y.year));
+  if (span) {
+    parts.push(
+      model.years.length === 1 ? `${span} model year` : `${span} model years`,
+    );
+  }
+  const campaigns = new Set<string>();
+  for (const y of model.years) {
+    for (const r of y.recalls ?? []) campaigns.add(r.campaignNumber);
+  }
+  if (campaigns.size > 0) {
+    parts.push(
+      `${campaigns.size} NHTSA recall${campaigns.size === 1 ? "" : "s"}`,
+    );
+  }
+  const mpgs = model.years
+    .map((y) => y.specs?.mpgCombined)
+    .filter((v): v is number => typeof v === "number" && v > 0);
+  if (mpgs.length) {
+    const best = Math.max(...mpgs);
+    const allBev = model.years.every(
+      (y) => y.specs?.electrificationLevel === "BEV",
+    );
+    const unit = allBev ? "MPGe" : "MPG";
+    parts.push(`up to ${best} ${unit} combined`);
+  }
+  return parts.join(" · ");
+}
+
+/**
+ * Subtitle for model cards: the Wikidata tagline when it reads cleanly,
+ * otherwise a line generated from our own data (may be empty → hide it).
+ */
+export function modelCardSubtitle(model: ModelEntry): string {
+  if (!isRawWikidataLabel(model.tagline)) return model.tagline.trim();
+  return generatedModelSummary(model);
+}
+
 /**
  * Interleaved make / model / year cards for the homepage grid.
  * Each visual row stays on one brand and uses two different models
@@ -170,10 +282,14 @@ export function getHomeMixedEntries(limit = 12): HomeMixedEntry[] {
   const mixed: HomeMixedEntry[] = [];
 
   for (const make of getAllMakes().slice(0, rows)) {
-    const [modelA, modelB] = rankedModels(make);
+    const ranked = rankedModels(make);
+    const modelA = ranked[0];
     if (!modelA) continue;
-    // Prefer a second model for the year card; fall back to modelA if the make is thin.
-    const yearModel = modelB ?? modelA;
+    // Prefer a second model for the year card (ideally one with a 2018–2023
+    // year); fall back to modelA if the make is thin.
+    const others = ranked.slice(1);
+    const yearModel =
+      others.find(hasHomeUsedBandYear) ?? others[0] ?? modelA;
 
     mixed.push({
       type: "make",
@@ -189,11 +305,11 @@ export function getHomeMixedEntries(limit = 12): HomeMixedEntry[] {
       key: `model-${make.slug}-${modelA.slug}`,
       href: modelHref(make.slug, modelA.slug),
       title: `${make.name} ${modelA.name}`,
-      subtitle: modelA.tagline,
+      subtitle: modelCardSubtitle(modelA),
       image: modelCardImage(make, modelA),
     });
 
-    const year = newestYear(yearModel);
+    const year = pickHomeUsedYear(yearModel);
     if (year) {
       mixed.push({
         type: "year",
@@ -230,7 +346,12 @@ export function getLandingHeroImage(): GalleryImage | undefined {
       };
     }
   }
-  return getHeroBackdropImages(1)[0];
+  const fallback = getHeroBackdropImages(1)[0];
+  if (!fallback) return undefined;
+  // Alt must never be empty — fall back to a generic but meaningful label.
+  return fallback.alt.trim()
+    ? fallback
+    : { ...fallback, alt: `Featured vehicle from the ${SITE.name} catalog` };
 }
 
 /** Diverse local catalog photos for the landing hero (one per make). */
@@ -268,7 +389,12 @@ export function getHeroBackdropImages(limit = 6): GalleryImage[] {
   for (const entry of getLatestEntries(24)) {
     if (picked.some((p) => p.src === entry.image.src)) continue;
     if (entry.image.src.endsWith(".svg")) continue;
-    picked.push(entry.image);
+    picked.push({
+      ...entry.image,
+      alt:
+        entry.image.alt?.trim() ||
+        `${entry.year.year} ${entry.make.name} ${entry.model.name}`,
+    });
     if (picked.length >= limit) break;
   }
 
@@ -436,7 +562,8 @@ export function searchCatalog(query: string, limit = 40): SearchResult[] {
         !exactYearQuery &&
         (searchTextMatch(model.name, q) ||
           searchTextMatch(model.slug, q) ||
-          searchTextMatch(model.tagline, q) ||
+          (!isRawWikidataLabel(model.tagline) &&
+            searchTextMatch(model.tagline, q)) ||
           searchTextMatch(modelLabel, q) ||
           // "ford f150" / "f150 ford"
           searchTextMatch(`${make.slug} ${model.slug}`, q));
@@ -446,7 +573,7 @@ export function searchCatalog(query: string, limit = 40): SearchResult[] {
         results.push({
           type: "model",
           title: modelLabel,
-          subtitle: model.tagline,
+          subtitle: modelCardSubtitle(model),
           href: modelHref(make.slug, model.slug),
           image,
         });
@@ -544,7 +671,25 @@ export function yearHref(
   return `/makes/${makeSlug}/${modelSlug}/${yearSlug}`;
 }
 
+/** One make/model touched by a recall campaign, with every affected year. */
+export type RecallAffectedModel = {
+  makeName: string;
+  makeSlug: string;
+  modelName: string;
+  modelSlug: string;
+  /** Affected model years, newest first. */
+  years: number[];
+  /** Link to the newest affected year page. */
+  href: string;
+};
+
+/**
+ * One NHTSA recall campaign (grouped by campaign number across model years).
+ * `makeName` / `modelName` / `year` / `href` mirror the first (newest-year)
+ * affected model so simple cards can keep a single link.
+ */
 export type RecentRecallItem = {
+  /** NHTSA report received date (YYYY-MM-DD). */
   date: string;
   campaignNumber: string;
   component: string;
@@ -555,6 +700,12 @@ export type RecentRecallItem = {
   modelSlug: string;
   year: number;
   href: string;
+  /** Union of affected model years in the catalog, newest first. */
+  years: number[];
+  /** Every make/model the campaign touches in our catalog. */
+  affected: RecallAffectedModel[];
+  /** e.g. "Toyota RAV4 2019–2021; Toyota 4Runner 2020". */
+  affectedLabel: string;
 };
 
 /** Coerce NHTSA dates that may have been stored as YYYY-DD-MM. */
@@ -568,34 +719,153 @@ function coerceRecallDate(date: string): string {
   return date;
 }
 
-/** Newest NHTSA recalls across the catalog for landing / /recalls pages. */
-export function getRecentRecalls(limit = 24): RecentRecallItem[] {
-  const items: RecentRecallItem[] = [];
+type RecallGroup = {
+  date: string;
+  campaignNumber: string;
+  component: string;
+  summary: string;
+  models: Map<string, RecallAffectedModel & { yearSlugs: Map<number, string> }>;
+};
+
+function groupRecallsByCampaign(): RecallGroup[] {
+  const groups = new Map<string, RecallGroup>();
   for (const make of getCatalog()) {
     for (const model of make.models) {
       for (const year of model.years) {
         for (const recall of year.recalls ?? []) {
-          items.push({
-            date: coerceRecallDate(recall.date),
-            campaignNumber: recall.campaignNumber,
-            component: recall.component,
-            summary: recall.summary,
-            makeName: make.name,
-            makeSlug: make.slug,
-            modelName: model.name,
-            modelSlug: model.slug,
-            year: year.year,
-            href: yearHref(make.slug, model.slug, year.slug),
-          });
+          const date = coerceRecallDate(recall.date);
+          let group = groups.get(recall.campaignNumber);
+          if (!group) {
+            group = {
+              date,
+              campaignNumber: recall.campaignNumber,
+              component: normalizeModelNames(recall.component),
+              summary: normalizeModelNames(recall.summary),
+              models: new Map(),
+            };
+            groups.set(recall.campaignNumber, group);
+          } else if (date > group.date) {
+            group.date = date;
+          }
+          const key = `${make.slug}/${model.slug}`;
+          let entry = group.models.get(key);
+          if (!entry) {
+            entry = {
+              makeName: make.name,
+              makeSlug: make.slug,
+              modelName: model.name,
+              modelSlug: model.slug,
+              years: [],
+              href: "",
+              yearSlugs: new Map(),
+            };
+            group.models.set(key, entry);
+          }
+          if (!entry.yearSlugs.has(year.year)) {
+            entry.yearSlugs.set(year.year, year.slug);
+            entry.years.push(year.year);
+          }
         }
       }
     }
   }
-  return items
+  return [...groups.values()];
+}
+
+function toRecentRecallItem(group: RecallGroup): RecentRecallItem {
+  const affected: RecallAffectedModel[] = [...group.models.values()]
+    .map(({ yearSlugs, ...entry }) => {
+      const years = [...entry.years].sort((a, b) => b - a);
+      return {
+        ...entry,
+        years,
+        href: yearHref(entry.makeSlug, entry.modelSlug, yearSlugs.get(years[0])!),
+      };
+    })
+    .sort(
+      (a, b) =>
+        b.years[0] - a.years[0] ||
+        `${a.makeName} ${a.modelName}`.localeCompare(
+          `${b.makeName} ${b.modelName}`,
+        ),
+    );
+  const primary = affected[0];
+  const years = [
+    ...new Set(affected.flatMap((a) => a.years)),
+  ].sort((a, b) => b - a);
+
+  return {
+    date: group.date,
+    campaignNumber: group.campaignNumber,
+    component: group.component,
+    summary: group.summary,
+    makeName: primary.makeName,
+    makeSlug: primary.makeSlug,
+    modelName: primary.modelName,
+    modelSlug: primary.modelSlug,
+    year: primary.years[0],
+    href: primary.href,
+    years,
+    affected,
+    affectedLabel: affected
+      .map(
+        (a) => `${a.makeName} ${a.modelName} ${formatYearRanges(a.years)}`,
+      )
+      .join("; "),
+  };
+}
+
+function sortedRecallGroups(): RecentRecallItem[] {
+  return groupRecallsByCampaign()
+    .map(toRecentRecallItem)
     .sort((a, b) => {
       const byDate = b.date.localeCompare(a.date);
       if (byDate) return byDate;
       return b.campaignNumber.localeCompare(a.campaignNumber);
-    })
-    .slice(0, limit);
+    });
+}
+
+/**
+ * Newest NHTSA recall campaigns across the catalog — one row per campaign
+ * number (not per model year), newest NHTSA report date first.
+ */
+export function getRecentRecalls(limit = 24): RecentRecallItem[] {
+  return sortedRecallGroups().slice(0, limit);
+}
+
+/** Real totals for /recalls headers (unique campaigns, not year×campaign rows). */
+export function getRecallTotals(): {
+  uniqueCampaigns: number;
+  modelYearRows: number;
+  newestReportDate?: string;
+} {
+  const groups = sortedRecallGroups();
+  const modelYearRows = groups.reduce(
+    (sum, g) => sum + g.affected.reduce((n, a) => n + a.years.length, 0),
+    0,
+  );
+  return {
+    uniqueCampaigns: groups.length,
+    modelYearRows,
+    newestReportDate: groups[0]?.date,
+  };
+}
+
+let catalogFetchedAtCache: string | null | undefined;
+
+/** Newest NHTSA enrich timestamp across the catalog (the latest data pull). */
+export function getCatalogFetchedAt(): string | undefined {
+  if (catalogFetchedAtCache === undefined) {
+    let newest: string | null = null;
+    for (const make of getCatalog()) {
+      for (const model of make.models) {
+        for (const year of model.years) {
+          const at = year.safetyStatus?.fetchedAt;
+          if (at && (!newest || at > newest)) newest = at;
+        }
+      }
+    }
+    catalogFetchedAtCache = newest;
+  }
+  return catalogFetchedAtCache ?? undefined;
 }

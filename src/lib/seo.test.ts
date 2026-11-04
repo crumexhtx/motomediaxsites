@@ -1,7 +1,10 @@
 import { describe, expect, it } from "vitest";
 import {
+  DEFAULT_OG_IMAGE_ALT,
+  DEFAULT_OG_IMAGE_PATH,
   absoluteUrl,
   breadcrumbJsonLd,
+  buildMetadata,
   organizationJsonLd,
   vehicleJsonLd,
   yearPageJsonLd,
@@ -70,6 +73,54 @@ describe("seo helpers", () => {
       path: "/makes/ford/bronco/2024",
     };
     expect(vehicleJsonLd(input)).toEqual(yearPageJsonLd(input));
+  });
+
+  it("buildMetadata sets canonical, openGraph, and twitter together", () => {
+    const meta = buildMetadata({
+      title: "Test page",
+      description: "Desc",
+      path: "/test",
+    });
+    expect(meta.alternates?.canonical).toBe("/test");
+    expect(meta.openGraph).toMatchObject({
+      type: "website",
+      siteName: SITE.name,
+      title: "Test page",
+      description: "Desc",
+      url: `${SITE.url}/test`,
+      images: [
+        { url: `${SITE.url}${DEFAULT_OG_IMAGE_PATH}`, alt: DEFAULT_OG_IMAGE_ALT },
+      ],
+    });
+    expect(meta.twitter).toMatchObject({
+      card: "summary_large_image",
+      title: "Test page",
+      description: "Desc",
+    });
+  });
+
+  it("buildMetadata absolutizes custom images and keeps remote urls", () => {
+    const local = buildMetadata({
+      title: "T",
+      description: "D",
+      path: "/x",
+      image: "/catalog/a.jpg",
+      imageAlt: "A car",
+      type: "article",
+    });
+    expect(local.openGraph).toMatchObject({
+      type: "article",
+      images: [{ url: `${SITE.url}/catalog/a.jpg`, alt: "A car" }],
+    });
+    const remote = buildMetadata({
+      title: "T",
+      description: "D",
+      path: "/x",
+      image: "https://example.com/a.jpg",
+    });
+    expect(remote.openGraph).toMatchObject({
+      images: [{ url: "https://example.com/a.jpg", alt: "T" }],
+    });
   });
 
   it("escapes script breakouts in JsonLd payload", async () => {

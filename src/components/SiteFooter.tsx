@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FooterSources } from "@/components/FooterSources";
 import { SITE } from "@/data/catalog";
 
 export function SiteFooter() {
@@ -6,10 +7,7 @@ export function SiteFooter() {
     <footer className="mt-auto border-t border-line bg-[var(--bg)]">
       <div className="container-wide grid gap-8 py-12 md:grid-cols-[1.4fr_1fr]">
         <div>
-          <p className="font-display text-xs font-bold tracking-[0.22em] text-accent">
-            {SITE.shortName}
-          </p>
-          <p className="mt-2 font-display text-2xl tracking-tight">{SITE.name}</p>
+          <p className="font-display text-2xl tracking-tight">{SITE.name}</p>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-muted">
             {SITE.description}
           </p>
@@ -44,41 +42,14 @@ export function SiteFooter() {
               About
             </Link>
           </div>
-          <div className="flex flex-col gap-2">
-            <p className="text-xs uppercase tracking-[0.16em] text-muted">
-              Sources
-            </p>
-            <p className="leading-relaxed text-muted">
-              Photos and overviews from{" "}
-              <a
-                href="https://www.wikipedia.org/"
-                className="text-foreground underline-offset-2 hover:underline"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Wikipedia
-              </a>
-              /Wikimedia; vehicle specs from{" "}
-              <a
-                href="https://www.nhtsa.gov/"
-                className="text-foreground underline-offset-2 hover:underline"
-                rel="noreferrer"
-                target="_blank"
-              >
-                NHTSA
-              </a>
-              . Year videos are embedded from YouTube and credited to their
-              owners on each page. Not affiliated with manufacturers.
-            </p>
-          </div>
+          <FooterSources />
         </div>
       </div>
       <div className="border-t border-line">
-        <div className="container-wide flex flex-wrap items-center justify-between gap-3 py-4 text-xs text-muted">
+        <div className="container-wide py-4 text-xs text-muted">
           <p>
-            © {new Date().getFullYear()} {SITE.name} · {SITE.shortName}
+            © {new Date().getFullYear()} {SITE.name}
           </p>
-          <p>Built for clearer car browsing and SEO-friendly discovery.</p>
         </div>
       </div>
     </footer>

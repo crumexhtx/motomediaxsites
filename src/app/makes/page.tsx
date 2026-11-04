@@ -3,14 +3,13 @@ import { MakeGrid } from "@/components/MakeGrid";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SITE } from "@/data/catalog";
 import { getAllMakes } from "@/lib/catalog";
-import { JsonLd, breadcrumbJsonLd } from "@/lib/seo";
+import { JsonLd, breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "All makes",
-  description:
-    `Compare used model years across every make in the ${SITE.name} catalog — recalls, complaints, and year-over-year changes.`,
-  alternates: { canonical: "/makes" },
-};
+export const metadata: Metadata = buildMetadata({
+  title: "All car makes",
+  description: `Compare used model years across every make in the ${SITE.name} catalog — recalls, complaints, and year-over-year changes.`,
+  path: "/makes",
+});
 
 export default function MakesIndexPage() {
   const makes = getAllMakes();
@@ -31,7 +30,7 @@ export default function MakesIndexPage() {
       />
       <header className="mt-6 max-w-2xl">
         <h1 className="font-display text-4xl tracking-tight md:text-5xl">
-          All makes
+          All car makes
         </h1>
         <p className="mt-3 text-muted">
           {makes.length} marques. Pick one to compare model years, check

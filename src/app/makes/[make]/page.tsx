@@ -8,12 +8,14 @@ import {
   getAllMakeParams,
   getMake,
   makeCoverImage,
+  isRawWikidataLabel,
   modelCardImage,
+  modelCardSubtitle,
   modelHref,
 } from "@/lib/catalog";
 import { getBrandProfile } from "@/lib/brandProfile";
 import { SITE } from "@/data/catalog";
-import { JsonLd, absoluteUrl, breadcrumbJsonLd } from "@/lib/seo";
+import { JsonLd, breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 import { truncateAtSentence } from "@/lib/text";
 
 type Props = {
@@ -38,33 +40,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? `${make.name} (${profile.headquarters}). ${truncateAtSentence(profile.history, 200)} Compare used model years, recalls, and specs on ${SITE.name}.`
     : `Compare ${make.name} model years for NHTSA recalls, owner complaints, and year-over-year changes. ${blurb}`;
 
+  // Make covers are logo SVGs — poor for OG; fall back to the neutral brand card.
   const cover = makeCoverImage(make);
-  const ogImage = cover.src.endsWith(".svg")
-    ? undefined
-    : {
-        url: cover.src.startsWith("http")
-          ? cover.src
-          : absoluteUrl(cover.src),
-        alt: cover.alt || `${make.name} cars`,
-      };
+  const useCover = !cover.src.endsWith(".svg");
 
-  return {
+  return buildMetadata({
     title,
     description,
-    alternates: { canonical: `/makes/${make.slug}` },
-    openGraph: {
-      title,
-      description,
-      url: absoluteUrl(`/makes/${make.slug}`),
-      ...(ogImage ? { images: [ogImage] } : {}),
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      ...(ogImage ? { images: [ogImage.url] } : {}),
-    },
-  };
+    path: `/makes/${make.slug}`,
+    ...(useCover
+      ? { image: cover.src, imageAlt: cover.alt || `${make.name} cars` }
+      : {}),
+  });
 }
 
 export default async function MakePage({ params }: Props) {
@@ -160,7 +147,11 @@ export default async function MakePage({ params }: Props) {
               <ModelCard
                 href={modelHref(make.slug, model.slug)}
                 title={model.name}
-                subtitle={`${model.tagline} · ${model.years.length} year${model.years.length === 1 ? "" : "s"}`}
+                subtitle={
+                  isRawWikidataLabel(model.tagline)
+                    ? modelCardSubtitle(model)
+                    : `${modelCardSubtitle(model)} · ${model.years.length} year${model.years.length === 1 ? "" : "s"}`
+                }
                 image={modelCardImage(make, model)}
               />
             </li>
