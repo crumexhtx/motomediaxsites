@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HOBBY_AIRPORT_PATH } from "@/lib/rentals";
+import { HOBBY_AIRPORT_PATH, TURO_HOST } from "@/lib/rentals";
 
 /**
  * Small, secondary callout on catalog pages for models the site owner also
@@ -25,8 +25,9 @@ export function HoustonRentalCallout({
         className="focus-ring font-medium text-accent underline-offset-2 hover:underline"
       >
         Rent one in Houston (near Hobby Airport)
-      </Link>
-      .
+      </Link>{" "}
+      from {TURO_HOST.name}, a {TURO_HOST.rating.toFixed(1)}-star Turo host
+      with {TURO_HOST.tripsCompleted} completed trips.
     </aside>
   );
 }
