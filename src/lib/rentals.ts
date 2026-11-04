@@ -63,12 +63,10 @@ export const turoListings: readonly TuroListing[] = [
     features: [], // TODO
     photos: [
       {
-        // TODO: replace with real Venue photos, e.g. /rentals/hyundai-venue-1.jpg
-        src: "/catalog/hyundai--elantra.jpg",
-        alt: "Placeholder photo (Hyundai Elantra) — Hyundai Venue listing photo coming soon",
-        width: 1280,
-        height: 720,
-        placeholder: true,
+        src: "/rentals/hyundai-venue-1.png",
+        alt: "Metallic red Hyundai Venue parked in a Houston lot — our Turo listing near Hobby Airport",
+        width: 746,
+        height: 343,
       },
     ],
     catalogPath: null, // TODO when Venue is added to the catalog
@@ -87,10 +85,10 @@ export const turoListings: readonly TuroListing[] = [
     features: [], // TODO
     photos: [
       {
-        src: "/catalog/chevrolet--trax.jpg",
-        alt: "Chevrolet Trax — Houston Turo listing",
-        width: 1600,
-        height: 900,
+        src: "/rentals/chevrolet-trax-1.png",
+        alt: "Metallic red Chevrolet Trax parked in a Houston lot — our Turo listing near Hobby Airport",
+        width: 748,
+        height: 352,
       },
     ],
     catalogPath: "/makes/chevrolet/trax", // model page exists; listing year TBD
@@ -132,37 +130,19 @@ export const RENTAL_OWNER_DISCLOSURE = {
   body: `These are the site owner’s own cars, listed on ${TURO_PARTNER_LABEL}. Price, availability, and trip rules are set on ${TURO_PARTNER_LABEL}, not on this site. The cars are based in the ${RENTAL_AREA_LABEL}; exact pickup details come from the live listing. Links to ${TURO_PARTNER_LABEL} are marked as sponsored.`,
 } as const;
 
-/**
- * Photos for the listing CTA on /rentals pages.
- * Prefer real listing shots under `/public/rentals/` when available;
- * catalog Trax images are used until those are added.
- */
-export const RENTAL_LISTING_IMAGES: GalleryImage[] = [
-  {
-    src: "/catalog/chevrolet--trax.jpg",
-    alt: "Chevrolet Trax — rental fleet listing vehicle",
-    width: 1600,
-    height: 900,
-  },
-  {
-    src: "/catalog/chevrolet--trax--lt.jpg",
-    alt: "Chevrolet Trax LT",
-    width: 1280,
-    height: 720,
-  },
-  {
-    src: "/catalog/chevrolet--trax--activ.jpg",
-    alt: "Chevrolet Trax ACTIV",
-    width: 1280,
-    height: 720,
-  },
-  {
-    src: "/catalog/chevrolet--trax--2rs.jpg",
-    alt: "Chevrolet Trax 2RS",
-    width: 1280,
-    height: 720,
-  },
-];
+/** Default OG / fallback hero for rental pages — first non-placeholder fleet photo. */
+export const RENTAL_LISTING_IMAGES: GalleryImage[] = turoListings
+  .flatMap((listing) =>
+    listing.photos
+      .filter((p) => !p.placeholder)
+      .map((p) => ({
+        src: p.src,
+        alt: p.alt,
+        width: p.width,
+        height: p.height,
+      })),
+  )
+  .slice(0, 4);
 
 /** Listing vehicle shown in rental CTAs (not an LLC / host brand name). */
 export const RENTAL_LISTING = {

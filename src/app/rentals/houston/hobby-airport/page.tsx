@@ -22,10 +22,9 @@ export const metadata = rentalPageMetadata({
   title: TITLE,
   description: DESCRIPTION,
   path: PATH,
-  // TODO: swap for a real Venue/Trax listing photo once /public/rentals exists.
   image: {
-    src: "/catalog/chevrolet--trax.jpg",
-    alt: "Chevrolet Trax — Houston Turo listing near Hobby Airport",
+    src: "/rentals/chevrolet-trax-1.png",
+    alt: "Metallic red Chevrolet Trax — Houston Turo listing near Hobby Airport",
   },
 });
 
