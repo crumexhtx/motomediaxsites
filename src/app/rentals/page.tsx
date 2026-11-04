@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { RentalHostCard } from "@/components/RentalHostCard";
 import { RentalListingGrid } from "@/components/RentalListingCard";
 import { RentalsPageShell } from "@/components/RentalsPageShell";
 import { SITE } from "@/data/catalog";
@@ -79,7 +78,6 @@ export default function RentalsHubPage() {
           </Link>
           .
         </p>
-        <RentalHostCard className="mt-6 max-w-3xl" compact />
         <RentalListingGrid listings={turoListings} className="mt-6" />
       </section>
 

@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import { CatalogImage } from "@/components/CatalogImage";
 import {
+  TURO_HOST,
   TURO_LINK_REL,
   TURO_PARTNER_LABEL,
   rentalListingName,
@@ -21,12 +23,14 @@ function Todo({ children }: { children: string }) {
 }
 
 /**
- * One fleet vehicle: photo, name, quick specs, features, and an outbound Turo CTA.
+ * One fleet vehicle: photo, name, quick specs, features, host, and Turo CTA.
  * Missing data renders as an explicit TODO — never a guessed value.
+ * Host ratings are visible text only (no AggregateRating JSON-LD).
  */
 export function RentalListingCard({ listing, className = "" }: Props) {
   const photo = listing.photos[0];
   const name = rentalListingName(listing);
+  const host = TURO_HOST;
 
   return (
     <article
@@ -58,6 +62,30 @@ export function RentalListingCard({ listing, className = "" }: Props) {
 
       <div className="flex flex-1 flex-col px-5 py-5">
         <h3 className="font-display text-xl tracking-tight">{name}</h3>
+
+        <div className="mt-3 overflow-hidden rounded-md border border-line/70 bg-soft/40">
+          <div
+            className="relative w-full"
+            style={{ aspectRatio: `${host.photo.width} / ${host.photo.height}` }}
+          >
+            <Image
+              src={host.photo.src}
+              alt={host.photo.alt}
+              fill
+              sizes="(max-width: 768px) 100vw, 360px"
+              className="object-contain object-left"
+            />
+          </div>
+          <p className="border-t border-line/60 px-3 py-2 text-xs leading-relaxed text-muted">
+            Hosted by {host.name} on {TURO_PARTNER_LABEL}
+            {" · "}
+            <span className="font-medium text-foreground">
+              {host.rating.toFixed(1)}★
+            </span>
+            {" · "}
+            {host.tripsCompleted} trips completed
+          </p>
+        </div>
 
         <dl className="mt-3 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1.5 text-sm">
           <dt className="text-muted">Year</dt>
