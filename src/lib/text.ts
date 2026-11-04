@@ -83,13 +83,26 @@ export function firstContentSentence(
   return truncateAtSentence(sentence, maxLen);
 }
 
-/** SEO / social title for a year page (root layout template appends · MotoMediaX). */
+/** Longest full <title> (including the " · MotoMediaX" suffix) we want in results. */
+export const SEO_TITLE_MAX = 60;
+
+/**
+ * SEO / social title for a year page. The root layout template appends
+ * " · MotoMediaX", so the *rendered* title is what must fit `SEO_TITLE_MAX`.
+ * "year make model" always comes first; when the long suffix would push the
+ * rendered title past the limit it is shortened to "Recalls & Specs".
+ */
 export function yearSeoTitle(input: {
   year: number;
   makeName: string;
   modelName: string;
+  siteName?: string;
 }): string {
-  return `${input.year} ${input.makeName} ${input.modelName}: Recalls, Specs & Used Price Guide`;
+  const { year, makeName, modelName, siteName = "MotoMediaX" } = input;
+  const lead = `${year} ${makeName} ${modelName}`;
+  const long = `${lead}: Recalls, Specs & Used Price Guide`;
+  const rendered = `${long} \u00b7 ${siteName}`;
+  return rendered.length > SEO_TITLE_MAX ? `${lead}: Recalls & Specs` : long;
 }
 
 /** SEO / social description for a year page — never a thin “offered in the U.S. market” stub. */
@@ -252,4 +265,142 @@ export function formatYearRanges(years: number[]): string {
     }
   }
   return parts.join(", ");
+}
+
+/** Meta description budget for brand/make pages (Google shows ~155–160 chars). */
+export const META_DESCRIPTION_MAX = 155;
+/** Below this length we top up a description with data-only filler sentences. */
+export const META_DESCRIPTION_TARGET = 120;
+
+/** Split prose into sentences without breaking on "U.S." style abbreviations. */
+export function splitSentences(text: string): string[] {
+  const masked = text
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/\b([A-Z])\.(?=[A-Z]\.)/g, "$1\u0000")
+    .replace(/\b([A-Z])\.(?=\s[a-z])/g, "$1\u0000")
+    .replace(/\u0000/g, "\u0001");
+  const parts = masked.match(/[^.!?]+(?:[.!?]+["']?|$)/g) ?? [];
+  return parts
+    .map((p) => p.replace(/\u0001/g, ".").trim())
+    .filter(Boolean);
+}
+
+/**
+ * Build a meta description within [target, max]: whole sentences from `body`
+ * first (never mid-sentence unless the first sentence alone is too long), then
+ * data-only `fillers` (tried in order) while the result is under `target`.
+ */
+export function composeMetaDescription(input: {
+  body: string;
+  fillers?: Array<string | undefined | null>;
+  max?: number;
+  target?: number;
+}): string {
+  const max = input.max ?? META_DESCRIPTION_MAX;
+  const target = input.target ?? META_DESCRIPTION_TARGET;
+  const normalized = input.body.replace(/\s+/g, " ").trim();
+
+  let out = "";
+  for (const sentence of splitSentences(normalized)) {
+    const next = out ? `${out} ${sentence}` : sentence;
+    if (next.length > max) break;
+    out = next;
+  }
+  if (!out) out = truncateAtSentence(normalized, max);
+
+  for (const raw of input.fillers ?? []) {
+    if (out.length >= target) break;
+    const filler = raw?.replace(/\s+/g, " ").trim();
+    if (!filler || out.includes(filler)) continue;
+    const next = `${out} ${filler}`;
+    if (next.length <= max) out = next;
+  }
+  return out;
+}
+
+/** Meta description for a year page: 110–155 chars, vehicle context first. */
+export function yearMetaDescription(
+  input: Parameters<typeof yearSeoDescription>[0],
+): string {
+  const siteName = input.siteName ?? "MotoMediaX";
+  const recallBit =
+    typeof input.recallCount === "number" && input.recallCount > 0
+      ? `${input.recallCount} NHTSA recall${input.recallCount === 1 ? "" : "s"} on record.`
+      : undefined;
+  return composeMetaDescription({
+    body: yearSeoDescription(input),
+    fillers: [
+      recallBit,
+      `Compare recalls, owner complaints, specs, and est. used price by year on ${siteName}.`,
+      `See recalls, complaints, and specs on ${siteName}.`,
+      `Recalls and specs on ${siteName}.`,
+    ],
+  });
+}
+
+/** Meta description for a model hub page: 110–155 chars, purpose first. */
+export function modelHubSeoDescription(input: {
+  makeName: string;
+  modelName: string;
+  yearRange?: string;
+  tagline?: string;
+  siteName?: string;
+}): string {
+  const { makeName, modelName, yearRange, tagline, siteName = "MotoMediaX" } =
+    input;
+  const core = `Compare ${makeName} ${modelName} model years${yearRange ? ` (${yearRange})` : ""} for NHTSA recalls, owner complaints, and year-over-year changes on ${siteName}.`;
+  const taglineSentence = tagline?.trim()
+    ? `${tagline.trim().replace(/\.$/, "")}.`
+    : undefined;
+  return composeMetaDescription({
+    body: core,
+    fillers: [
+      taglineSentence,
+      "Includes estimated used price by year.",
+      "Includes est. used prices.",
+    ],
+  });
+}
+
+/**
+ * Brand/make page meta description: used-buyer purpose first, then an
+ * optional model list. Never exceeds `META_DESCRIPTION_MAX` and never
+ * leads with founding history.
+ */
+export function makeSeoDescription(input: {
+  makeName: string;
+  modelNames: string[];
+  yearMin?: number;
+  yearMax?: number;
+  siteName?: string;
+  maxLen?: number;
+}): string {
+  const { makeName, modelNames, yearMin, yearMax, siteName = "MotoMediaX" } =
+    input;
+  const maxLen = input.maxLen ?? META_DESCRIPTION_MAX;
+  const n = modelNames.length;
+  const range =
+    yearMin != null && yearMax != null
+      ? yearMin === yearMax
+        ? ` (${yearMin})`
+        : ` (${yearMin}–${yearMax})`
+      : "";
+  const count = n > 0 ? `${n} ` : "";
+  const noun = n === 1 ? "model" : "models";
+  const purpose = `Used ${makeName} buyer guide: compare ${count}${noun}${range} by NHTSA recalls, owner complaints, and year-to-year changes on ${siteName}.`;
+
+  let out = purpose;
+  const picked: string[] = [];
+  for (const name of modelNames) {
+    const candidate = `${purpose} Models include ${[...picked, name].join(", ")}.`;
+    if (candidate.length > maxLen) break;
+    picked.push(name);
+  }
+  // A one-name list out of many reads as misleading; only list when it is
+  // the whole lineup or at least two names.
+  if (picked.length >= 2 || (picked.length === 1 && n === 1)) {
+    out = `${purpose} Models include ${picked.join(", ")}.`;
+  }
+  return truncateAtSentence(out, maxLen);
 }

@@ -16,7 +16,7 @@ import {
 import { getBrandProfile } from "@/lib/brandProfile";
 import { SITE } from "@/data/catalog";
 import { JsonLd, breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
-import { truncateAtSentence } from "@/lib/text";
+import { makeSeoDescription, truncateAtSentence } from "@/lib/text";
 
 type Props = {
   params: Promise<{ make: string }>;
@@ -33,12 +33,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const make = getMake(String(makeSlug));
   if (!make) return {};
 
-  const profile = getBrandProfile(make.slug);
   const title = `${make.name} — brand history & used models`;
-  const blurb = truncateAtSentence(make.blurb, 280);
-  const description = profile
-    ? `${make.name} (${profile.headquarters}). ${truncateAtSentence(profile.history, 200)} Compare used model years, recalls, and specs on ${SITE.name}.`
-    : `Compare ${make.name} model years for NHTSA recalls, owner complaints, and year-over-year changes. ${blurb}`;
+  const allYears = make.models.flatMap((m) => m.years.map((y) => y.year));
+  const description = makeSeoDescription({
+    makeName: make.name,
+    modelNames: make.models.map((m) => m.name),
+    yearMin: allYears.length ? Math.min(...allYears) : undefined,
+    yearMax: allYears.length ? Math.max(...allYears) : undefined,
+    siteName: SITE.name,
+  });
 
   // Make covers are logo SVGs — poor for OG; fall back to the neutral brand card.
   const cover = makeCoverImage(make);
@@ -154,6 +157,16 @@ export default async function MakePage({ params }: Props) {
                 }
                 image={modelCardImage(make, model)}
               />
+              <p className="mt-2 px-1 text-sm text-muted">
+                <Link
+                  href={`/makes/${make.slug}/${model.slug}`}
+                  className="font-medium text-foreground underline-offset-2 hover:underline"
+                >
+                  All {make.name} {model.name} years
+                </Link>
+                {" — "}
+                best used year, recalls, and price by year
+              </p>
             </li>
           ))}
         </ul>

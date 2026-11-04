@@ -78,12 +78,20 @@ function truncateSummary(text: string, max = 320): string {
   return `${(boundary > 80 ? cut.slice(0, boundary) : cut).trim()}…`;
 }
 
-async function fetchJson(
+const MAX_ATTEMPTS = 4;
+const RETRY_BASE_MS = 1500;
+
+/** 429 and 5xx (NHTSA's 503/504 gateway blips) are worth retrying. */
+export function isRetryableStatus(status: number): boolean {
+  return status === 429 || status >= 500;
+}
+
+async function fetchJsonOnce(
   url: string,
 ): Promise<{ ok: boolean; status: number; json: unknown }> {
-  await sleep(MIN_DELAY_MS);
   const res = await fetch(url, {
     headers: { "User-Agent": USER_AGENT, Accept: "application/json" },
+    signal: AbortSignal.timeout(30_000),
   });
   const text = await res.text();
   let json: unknown = null;
@@ -102,6 +110,31 @@ async function fetchJson(
     return { ok: true, status: res.status, json };
   }
   return { ok: res.ok, status: res.status, json };
+}
+
+/**
+ * GET JSON with retry/backoff on transient failures. Never swallows the final
+ * failure: it is returned as `ok: false` (HTTP) or thrown (network), and the
+ * enrich script records it in `safetyStatus` and exits non-zero.
+ */
+async function fetchJson(
+  url: string,
+): Promise<{ ok: boolean; status: number; json: unknown }> {
+  let lastError: unknown;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
+    await sleep(MIN_DELAY_MS);
+    try {
+      const res = await fetchJsonOnce(url);
+      if (res.ok || !isRetryableStatus(res.status) || attempt === MAX_ATTEMPTS) {
+        return res;
+      }
+    } catch (err) {
+      lastError = err;
+      if (attempt === MAX_ATTEMPTS) throw err;
+    }
+    await sleep(RETRY_BASE_MS * 2 ** (attempt - 1));
+  }
+  throw lastError instanceof Error ? lastError : new Error("fetch failed");
 }
 
 function resultsOf(json: unknown): unknown[] {
@@ -246,6 +279,7 @@ export async function fetchRecalls(
     data: [],
     resolvedModel,
   };
+  let firstError: SafetyFetchResult<YearRecall[]> | undefined;
 
   for (const candidate of candidates) {
     const file = cachePath("recalls", make, candidate, year);
@@ -256,14 +290,12 @@ export async function fetchRecalls(
       const url = `https://api.nhtsa.gov/recalls/recallsByVehicle?make=${encodeURIComponent(make)}&model=${encodeURIComponent(candidate)}&modelYear=${year}`;
       const res = await fetchJson(url);
       if (!res.ok || res.json == null) {
-        if (best.status === "empty" && best.data.length === 0) {
-          best = {
-            status: "error",
-            data: [],
-            error: `HTTP ${res.status}`,
-            resolvedModel: candidate,
-          };
-        }
+        firstError ??= {
+          status: "error",
+          data: [],
+          error: `HTTP ${res.status}`,
+          resolvedModel: candidate,
+        };
         continue;
       }
       json = res.json;
@@ -308,10 +340,12 @@ export async function fetchRecalls(
       resolvedModel: candidate,
     };
     if (next.status === "ok") return next;
-    if (best.status !== "ok") best = next;
+    best = next;
   }
 
-  return best;
+  // A failed candidate must not be masked by another candidate's empty result:
+  // we cannot claim "no recalls" if part of the lookup failed.
+  return firstError ?? best;
 }
 
 export async function fetchComplaintSummary(

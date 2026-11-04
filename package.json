@@ -26,6 +26,8 @@
     "fetch:ford-videos": "python3 scripts/fetch-brand-videos.py ford",
     "fetch:videos": "python3 scripts/fetch-brand-videos.py",
     "validate:videos": "node scripts/validate-videos.mjs",
+    "verify:sitemap": "node scripts/verify-sitemap-pages.mjs",
+    "generate:logo": "node scripts/generate-mmx-logo.mjs",
     "fetch:trim-images": "tsx scripts/fetch-trim-images.ts",
     "audit:images": "tsx scripts/audit-catalog-images.ts",
     "validate:catalog": "tsx scripts/validate-catalog.ts",

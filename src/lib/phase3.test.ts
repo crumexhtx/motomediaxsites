@@ -101,9 +101,11 @@ describe("phase 3 · year page helpers", () => {
     });
     expect(fromRecall.asOf).toBe("Sep 11, 2025");
 
-    expect(resolveSnapshotAsOf({ year: {}, pricingAsOf: "2026-07" }).asOf).toBe(
-      "Jul 2026",
-    );
+    // No real fetch/recall date → no stamp at all (never a made-up pricing month).
+    const none = resolveSnapshotAsOf({ year: {} });
+    expect(none.asOf).toBe("");
+    expect(none.asOfLabel).toBe("Data updated");
+    expect(fromYear.asOfLabel).toBe("Data updated");
   });
 
   it("disambiguates trim labels and picks a different Trim B", () => {

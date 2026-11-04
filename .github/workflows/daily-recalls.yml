@@ -13,15 +13,27 @@ concurrency:
   group: daily-recalls
   cancel-in-progress: false
 
+defaults:
+  run:
+    # Explicit bash => `bash -eo pipefail`, so a failing command in a pipeline
+    # can never be swallowed. No step in this job uses `|| true` or
+    # `continue-on-error`: any failure turns the run red (and GitHub emails the
+    # repo owner / workflow actor).
+    shell: bash
+
 jobs:
   refresh:
     name: Refresh NHTSA recalls
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    env:
+      # GitHub sets CI=true already; spelled out because validate-catalog turns
+      # "newest recall fetchedAt is > 7 days old" into an error when CI is set.
+      CI: "true"
     steps:
       - uses: actions/checkout@v4
         with:
-          # Need full history only for push; shallow is fine for enrich.
+          # Full history so the rebase-before-push below can always succeed.
           fetch-depth: 0
 
       - uses: pnpm/action-setup@v4
@@ -39,9 +51,11 @@ jobs:
       - name: Snapshot recall campaigns
         run: pnpm recall:snapshot -- --out scripts/.cache/recalls-before.json
 
+      # Exits non-zero if ANY NHTSA lookup still fails after retries.
       - name: Enrich site catalog recalls
         run: pnpm enrich:nhtsa-recalls -- --force
 
+      # Errors on schema/image problems AND on recall data older than 7 days.
       - name: Validate catalog
         run: REQUIRE_LOCAL_IMAGES=1 pnpm validate:catalog
 
@@ -58,27 +72,55 @@ jobs:
           echo "updated=$(jq -r .updatedCount recall-diff.json)" >> "$GITHUB_OUTPUT"
           jq '{changed, addedCount, removedCount, updatedCount, beforeCount, afterCount, added: .added[0:30], removed: .removed[0:30], updated: .updated[0:30]}' recall-diff.json
 
-      - name: Commit and push when campaigns changed
-        if: steps.diff.outputs.changed == 'true'
+      # Commit whenever git sees a change — not only when the recall *campaign
+      # set* changed. Refreshed fetchedAt stamps are the "Data updated" dates
+      # shown on year pages, so they must land on main too.
+      - name: Commit and push refreshed data
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add src/data/catalog.generated.json motomediax-api/data/recalls-complaints.json
           if git diff --cached --quiet; then
-            echo "Campaign set changed in memory but working tree has nothing to commit."
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            echo "Git reports no changes to src/data/catalog.generated.json or motomediax-api/data/recalls-complaints.json — nothing to commit."
             exit 0
           fi
-          ADDED="${{ steps.diff.outputs.added }}"
-          REMOVED="${{ steps.diff.outputs.removed }}"
-          UPDATED="${{ steps.diff.outputs.updated }}"
-          git commit -m "$(cat <<EOF
-          chore: refresh NHTSA recalls (${ADDED} new, ${REMOVED} removed, ${UPDATED} updated)
 
-          Automated daily enrich via .github/workflows/daily-recalls.yml.
-          EOF
-          )"
+          if [ "$GITHUB_REF" != "refs/heads/main" ]; then
+            echo "::error::Refreshed data differs from ${GITHUB_REF}, but this workflow only pushes to main. Re-run it from main."
+            git diff --cached --stat
+            exit 1
+          fi
+
+          if [ "${{ steps.diff.outputs.changed }}" = "true" ]; then
+            SUBJECT="chore: refresh NHTSA recalls (${{ steps.diff.outputs.added }} new, ${{ steps.diff.outputs.removed }} removed, ${{ steps.diff.outputs.updated }} updated)"
+          else
+            SUBJECT="chore: refresh NHTSA data timestamps (no campaign changes)"
+          fi
+          git commit -m "$SUBJECT" -m "Automated daily enrich via .github/workflows/daily-recalls.yml."
+
+          # Another push may have landed on main during the ~10 minute run.
+          git pull --rebase origin main
           git push origin HEAD:main
+          echo "committed=true" >> "$GITHUB_OUTPUT"
 
-      - name: No campaign changes
-        if: steps.diff.outputs.changed != 'true'
-        run: echo "No recall campaign additions, removals, or content updates — skipping commit."
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### Daily recalls"
+            echo "- Campaign set changed: \`${{ steps.diff.outputs.changed || 'n/a (earlier step failed)' }}\`"
+            echo "- Added / removed / updated: ${{ steps.diff.outputs.added || '?' }} / ${{ steps.diff.outputs.removed || '?' }} / ${{ steps.diff.outputs.updated || '?' }}"
+            echo "- Commit pushed to main: \`${{ steps.commit.outputs.committed || 'no (earlier step failed)' }}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-recalls-diagnostics
+          if-no-files-found: ignore
+          path: |
+            recall-diff.json
+            catalog-validation.json

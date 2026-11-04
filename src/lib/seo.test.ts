@@ -40,6 +40,7 @@ describe("seo helpers", () => {
       name: SITE.name,
       alternateName: SITE.shortName,
       url: SITE.url,
+      logo: `${SITE.url}/mmx-logo.png`,
     });
   });
 

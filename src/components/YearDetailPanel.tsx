@@ -5,6 +5,14 @@ import type { TrimSpec, VehicleSpecs, YearPerformance } from "@/data/catalog";
 import { OwnershipCostCalculator } from "@/components/OwnershipCostCalculator";
 import { trimLooksElectrified } from "@/lib/ownership";
 import { pickCompareTrimId, trimDisplayLabels } from "@/lib/trimLabels";
+import {
+  NOT_PUBLISHED,
+  buildTrimCompareRows,
+  buildTrimIndexColumns,
+  canCompareTrims,
+  formatSpec,
+  isMissingSpec,
+} from "@/lib/trimCompare";
 
 type Props = {
   yearLabel: string;
@@ -18,16 +26,16 @@ type Props = {
 };
 
 /** Placeholder strings that mean "no value" — rows with these are hidden. */
-function isMissing(value: unknown): boolean {
-  if (value === undefined || value === null) return true;
-  if (typeof value === "number") return Number.isNaN(value);
-  const t = String(value).trim();
-  return t === "" || /^(—|–|-+|n\/a|na|null|undefined|unknown|tbd)$/i.test(t);
-}
+const isMissing = isMissingSpec;
+const fmt = formatSpec;
 
-function fmt(value: number | string | undefined, suffix = "") {
-  if (isMissing(value)) return null;
-  return `${value}${suffix}`;
+/** Muted "Not published" for a spec only some trims have — never an em dash. */
+function CellValue({ value }: { value: string | null }) {
+  return value ? (
+    <>{value}</>
+  ) : (
+    <span className="text-muted">{NOT_PUBLISHED}</span>
+  );
 }
 
 function StatBadge({
@@ -225,15 +233,11 @@ export function YearDetailPanel({
   );
 
   // Trim index: drop whole columns that no trim has a value for.
-  const indexColumns = (
-    [
-      { label: "HP", cell: (t: TrimSpec) => fmt(t.horsepower) },
-      { label: "Torque", cell: (t: TrimSpec) => fmt(t.torqueLbFt) },
-      { label: "0–60", cell: (t: TrimSpec) => fmt(t.zeroToSixtySec, "s") },
-      { label: "MPG", cell: (t: TrimSpec) => fmt(t.mpgCombined) },
-      { label: "Drivetrain", cell: (t: TrimSpec) => fmt(t.drivetrain) },
-    ] as const
-  ).filter((col) => trims.some((t) => col.cell(t) !== null));
+  const indexColumns = buildTrimIndexColumns(trims);
+  // Compare + index UI only appears when there is something to compare.
+  const multiTrim = canCompareTrims(trims);
+  const compareRows =
+    multiTrim && trim && compareTrim ? buildTrimCompareRows(trim, compareTrim) : [];
 
   if (!heroHasStats && !mechHas && !dimHas && !effHas && !safetyHas && !trims.length) {
     return null;
@@ -482,7 +486,7 @@ export function YearDetailPanel({
         </Section>
       </div>
 
-      {trims.length > 1 && trim && compareTrim ? (
+      {multiTrim && trim && compareTrim ? (
         <section className="mb-10">
           <h2 className="font-display text-2xl tracking-tight">
             Trim compare
@@ -532,26 +536,7 @@ export function YearDetailPanel({
                   </tr>
                 </thead>
                 <tbody>
-                  {(
-                    [
-                      ["Horsepower", fmt(trim.horsepower, " hp"), fmt(compareTrim.horsepower, " hp")],
-                      ["Torque", fmt(trim.torqueLbFt, " lb-ft"), fmt(compareTrim.torqueLbFt, " lb-ft")],
-                      ["0–60", fmt(trim.zeroToSixtySec, " s"), fmt(compareTrim.zeroToSixtySec, " s")],
-                      ["City MPG", fmt(trim.mpgCity), fmt(compareTrim.mpgCity)],
-                      ["Highway MPG", fmt(trim.mpgHighway), fmt(compareTrim.mpgHighway)],
-                      ["Combined MPG", fmt(trim.mpgCombined), fmt(compareTrim.mpgCombined)],
-                      ["Engine", trim.engine ?? null, compareTrim.engine ?? null],
-                      ["Transmission", trim.transmission ?? null, compareTrim.transmission ?? null],
-                      ["Drivetrain", trim.drivetrain ?? null, compareTrim.drivetrain ?? null],
-                      ["Towing", fmt(trim.towingLb, " lb"), fmt(compareTrim.towingLb, " lb")],
-                      ["Cargo", fmt(trim.cargoCuFt, " cu ft"), fmt(compareTrim.cargoCuFt, " cu ft")],
-                      ["Ground clearance", fmt(trim.groundClearanceIn, " in"), fmt(compareTrim.groundClearanceIn, " in")],
-                      ["Seating", fmt(trim.seatingCapacity), fmt(compareTrim.seatingCapacity)],
-                      ["EV range", fmt(trim.rangeMiles, " mi"), fmt(compareTrim.rangeMiles, " mi")],
-                    ] as const
-                  )
-                    .filter(([, a, b]) => a || b)
-                    .map(([label, a, b]) => {
+                  {compareRows.map(({ label, a, b }) => {
                       const differ = a !== b;
                       return (
                         <tr
@@ -563,8 +548,12 @@ export function YearDetailPanel({
                           }
                         >
                           <td className="py-2.5 pr-4 text-muted">{label}</td>
-                          <td className="py-2.5 pr-4 tabular-nums">{a ?? "—"}</td>
-                          <td className="py-2.5 tabular-nums">{b ?? "—"}</td>
+                          <td className="py-2.5 pr-4 tabular-nums">
+                            <CellValue value={a} />
+                          </td>
+                          <td className="py-2.5 tabular-nums">
+                            <CellValue value={b} />
+                          </td>
                         </tr>
                       );
                     })}
@@ -579,7 +568,7 @@ export function YearDetailPanel({
         </section>
       ) : null}
 
-      {trims.length > 0 ? (
+      {multiTrim && indexColumns.length > 0 ? (
         <section className="mb-10">
           <h2 className="font-display text-2xl tracking-tight">Trim index</h2>
           <div className="relative mt-4 overflow-hidden">
@@ -633,7 +622,7 @@ export function YearDetailPanel({
                               : "py-2.5 pr-4 tabular-nums"
                           }
                         >
-                          {col.cell(t) ?? "—"}
+                          <CellValue value={col.cell(t)} />
                         </td>
                       ))}
                     </tr>

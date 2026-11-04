@@ -32,6 +32,8 @@ type Props = {
   reliabilityGlance?: ReactNode;
   /** Year-over-year delta section (server-rendered). */
   yearChanges?: ReactNode;
+  /** Data-only comparison against sibling model years (server-rendered). */
+  yearsComparison?: ReactNode;
   /** Valuation CTA (affiliate outbound). */
   valuationCta?: ReactNode;
   /** Related A vs B comparisons (server-rendered). */
@@ -59,6 +61,7 @@ export function YearExperience({
   safetyPanel,
   reliabilityGlance,
   yearChanges,
+  yearsComparison,
   valuationCta,
   relatedComparisons,
   dimensionSchematic,
@@ -163,7 +166,7 @@ export function YearExperience({
             <div className="min-w-0">{safetyPanel}</div>
 
             <div className="min-w-0 lg:sticky lg:top-24">
-              {video ? <YearVideoEmbed video={video} /> : null}
+              {video ? <YearVideoEmbed video={video} vehicleName={title} /> : null}
 
               {galleryImages.length > 0 ? (
                 <section className="mb-8">
@@ -182,6 +185,8 @@ export function YearExperience({
         {reliabilityGlance}
 
         {yearChanges}
+
+        {yearsComparison}
 
         {valuationCta}
 

@@ -178,8 +178,8 @@ export default function HomePage() {
                 Renting in Houston?
               </h2>
               <p className="mt-1 text-sm text-muted">
-                Our own Turo cars near Hobby Airport — from a 5.0-star host
-                with 14 completed trips. See what is available and what to
+                Our own Turo cars near Hobby Airport. Check live Turo
+                listings for availability, current host ratings, and what to
                 expect.
               </p>
             </div>

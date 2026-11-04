@@ -141,31 +141,17 @@ export const TURO_LISTING_URL = getTuroListing("chevrolet-trax")!.url;
 export const TURO_LINK_REL = "noopener sponsored";
 
 /**
- * Host profile for the site owner's Turo fleet.
- * Visible copy only — do NOT emit AggregateRating / Review JSON-LD from Turo
- * (Google disallows marking up reviews collected on another site).
+ * Short phrase for meta descriptions and body copy. Deliberately contains no
+ * host name, rating, or trip count — those go stale. Never emit
+ * AggregateRating / Review JSON-LD from Turo (Google disallows marking up
+ * reviews collected on another site).
  */
-export const TURO_HOST = {
-  name: "Joao",
-  /** Host average rating shown on Turo (out of 5). */
-  rating: 5.0,
-  /** Completed trips shown on the Turo host profile. */
-  tripsCompleted: 14,
-  hostingLabel: "<1 year of hosting",
-  photo: {
-    src: "/rentals/host-joao.png",
-    alt: "Hosted by Joao on Turo — 5.0 star host with 14 trips",
-    width: 758,
-    height: 150,
-  },
-  /** Short phrase for meta descriptions and body SEO (no structured rating markup). */
-  seoSnippet:
-    "5.0-star Turo host Joao with 14 completed trips near Hobby Airport (HOU)",
-} as const;
+export const RENTAL_FLEET_SNIPPET =
+  "the site owner’s own Turo cars near Hobby Airport (HOU)";
 
 export const RENTAL_OWNER_DISCLOSURE = {
   heading: "Disclosure",
-  body: `These are the site owner’s own cars, listed on ${TURO_PARTNER_LABEL} by host ${TURO_HOST.name} (${TURO_HOST.rating.toFixed(1)}★, ${TURO_HOST.tripsCompleted} trips completed). Price, availability, and trip rules are set on ${TURO_PARTNER_LABEL}, not on this site. The cars are based in the ${RENTAL_AREA_LABEL}; exact pickup details come from the live listing. Links to ${TURO_PARTNER_LABEL} are marked as sponsored.`,
+  body: `These are the site owner’s own cars, listed on ${TURO_PARTNER_LABEL} by the site owner. Price, availability, and trip rules are set on ${TURO_PARTNER_LABEL}, not on this site. Check the host’s current rating on the live ${TURO_PARTNER_LABEL} listing. The cars are based in the ${RENTAL_AREA_LABEL}; exact pickup details are sent through ${TURO_PARTNER_LABEL} after booking. Links to ${TURO_PARTNER_LABEL} are marked as sponsored.`,
 } as const;
 
 /** Default OG / fallback hero for rental pages — first non-placeholder fleet photo. */

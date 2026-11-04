@@ -68,3 +68,23 @@ jobs:
         run: pnpm build
         env:
           NEXT_PUBLIC_SITE_URL: https://www.motomediax.com
+
+      - name: Verify every sitemap URL (SEO gate)
+        # Starts the production server, crawls all sitemap.xml URLs (status,
+        # one H1, canonical/og:url, JSON-LD, meta description, forbidden copy,
+        # img alt), then stops the server. Fails the job on any regression.
+        run: |
+          PORT=3100 pnpm start > /tmp/next-start.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+          ready=0
+          for _ in $(seq 1 60); do
+            if curl -fsS -o /dev/null http://127.0.0.1:3100/; then ready=1; break; fi
+            sleep 1
+          done
+          if [ "$ready" != "1" ]; then
+            echo "Server did not become ready"; cat /tmp/next-start.log; exit 1
+          fi
+          node scripts/verify-sitemap-pages.mjs http://127.0.0.1:3100 --concurrency=8
+        env:
+          NEXT_PUBLIC_SITE_URL: https://www.motomediax.com

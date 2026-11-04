@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { DimensionSchematic } from "@/components/DimensionSchematic";
 import { SITE } from "@/data/catalog";
+import { composeMetaDescription } from "@/lib/text";
 import {
   buildComparisonPage,
   getAllComparisonParams,
@@ -31,7 +32,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const page = buildComparisonPage(slug);
   if (!page) return {};
   const title = `${page.def.title} — used buyer's comparison`;
-  const description = page.summary.slice(0, 280);
+  const description = composeMetaDescription({
+    body: page.summary,
+    fillers: [
+      `Compare MSRP, used asking prices, recalls, and running costs on ${SITE.name}.`,
+      `See recalls and used prices on ${SITE.name}.`,
+    ],
+  });
   const path = `/compare/${page.def.slug}`;
   return buildMetadata({ title, description, path });
 }

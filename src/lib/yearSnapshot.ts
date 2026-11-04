@@ -11,6 +11,7 @@ import {
   formatRetainedPct,
   formatUsd,
   getYearPricing,
+  pricingDatasetLabel,
   type YearPricing,
 } from "@/lib/pricing";
 import { getCatalogFetchedAt } from "@/lib/catalog";
@@ -80,16 +81,17 @@ function yoyLead(diff: YearDiffResult | null | undefined, modelName: string): st
 }
 
 /**
- * “As of” stamp from the real data pull — never `new Date()`.
+ * “Data updated” stamp from the real NHTSA data pull — never `new Date()` and
+ * never a hard-coded pricing month.
  * Order: this year's NHTSA fetch time → newest catalog-wide fetch time →
- * newest recall report date on the year → pricing-estimate month.
+ * newest recall report date on the year. When none exist, `asOf` is "" and the
+ * UI omits the stamp rather than inventing a date.
  */
 export function resolveSnapshotAsOf(input: {
   year: Pick<YearEntry, "safetyStatus" | "recalls">;
   catalogFetchedAt?: string;
-  pricingAsOf?: string;
 }): { asOf: string; asOfIso?: string; asOfLabel: string } {
-  const label = "Safety data as of";
+  const label = "Data updated";
   const fetched = input.year.safetyStatus?.fetchedAt;
   if (fetched) {
     return {
@@ -117,15 +119,26 @@ export function resolveSnapshotAsOf(input: {
       asOfLabel: "Newest recall report",
     };
   }
-  const month = input.pricingAsOf?.match(/^(\d{4})-(\d{2})$/);
-  if (month) {
-    return {
-      asOf: formatIsoDate(`${month[1]}-${month[2]}-01`).replace(" 1,", ""),
-      asOfIso: input.pricingAsOf,
-      asOfLabel: "Pricing estimate as of",
-    };
-  }
-  return { asOf: "last catalog refresh", asOfLabel: "Data from" };
+  return { asOf: "", asOfLabel: label };
+}
+
+/**
+ * One methodology sentence that dates each dataset on its own terms:
+ * NHTSA recalls/complaints by their fetch time, pricing by its own basis.
+ */
+export function snapshotMethodology(input: {
+  pricing?: YearPricing;
+  safetyFetchedAt?: string;
+}): string {
+  const safety = input.safetyFetchedAt
+    ? `Recalls and complaints: NHTSA data fetched ${formatIsoDate(input.safetyFetchedAt)}.`
+    : "Recalls and complaints: NHTSA data from our latest catalog refresh.";
+  if (!input.pricing) return safety;
+  const price =
+    input.pricing.method === "listing-average"
+      ? "Used asking from dealer listing samples; MSRP is curated base-trim starting price."
+      : "Used asking is a labeled retention estimate from curated MSRP + vehicle age (not an appraisal).";
+  return `${price} ${pricingDatasetLabel(input.pricing)}. ${safety}`;
 }
 
 export function buildYearSnapshot(input: {
@@ -142,7 +155,6 @@ export function buildYearSnapshot(input: {
   const asOfStamp = resolveSnapshotAsOf({
     year,
     catalogFetchedAt: getCatalogFetchedAt(),
-    pricingAsOf: pricing?.asOf,
   });
   const rating = year.specs?.overallRating;
 
@@ -200,10 +212,10 @@ export function buildYearSnapshot(input: {
 
   return {
     ...asOfStamp,
-    methodology:
-      pricing?.method === "listing-average"
-        ? "Used asking from dealer listing samples; MSRP is curated base-trim starting price. Recalls/complaints from NHTSA offline enrich."
-        : "Used asking is a labeled retention estimate from curated MSRP + vehicle age (not an appraisal). Recalls/complaints from NHTSA offline enrich.",
+    methodology: snapshotMethodology({
+      pricing,
+      safetyFetchedAt: year.safetyStatus?.fetchedAt,
+    }),
     directAnswer,
     metrics,
     pricing,

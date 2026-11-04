@@ -3,7 +3,7 @@ import { RentalListingGrid } from "@/components/RentalListingCard";
 import { RentalsPageShell } from "@/components/RentalsPageShell";
 import {
   HOBBY_AIRPORT_PATH,
-  TURO_HOST,
+  RENTAL_FLEET_SNIPPET,
   TURO_LINK_REL,
   getTuroListing,
   rentalListingName,
@@ -17,7 +17,7 @@ const PATH = HOBBY_AIRPORT_PATH;
 const H1 = "Car rentals near Hobby Airport (HOU) on Turo";
 const TITLE = "Hobby Airport (HOU) Car Rental on Turo";
 const DESCRIPTION =
-  "Hobby Airport (HOU) Turo: 2025 Venue SE & Trax LT from 5.0-star host Joao (14 trips). Check dates & price on Turo.";
+  "Hobby Airport (HOU) Turo: 2025 Venue SE & Trax LT from the site owner. Check dates, price & the host’s current rating on Turo.";
 
 export const metadata = rentalPageMetadata({
   title: TITLE,
@@ -33,7 +33,7 @@ const faqs = [
   {
     question: "Is the car parked at Hobby Airport?",
     answer:
-      "Yes — our Hobby Airport pickup is set up at William P. Hobby Airport (HOU) via The Parking Spot 2, a shuttle lot near the terminal (not a counter inside the airport). From the terminal, take the shuttle or a rideshare to The Parking Spot 2. The key is in a lockbox on the driver-side window; the host messages the code the morning of your trip. Exact steps can change, so always confirm on the live Turo listing and in trip chat.",
+      "Pickup is near William P. Hobby Airport (HOU), not at a staffed counter inside the terminal. After you book, the exact pickup location and key or unlock instructions are sent through Turo. Instructions can change, so treat the live Turo listing and your trip chat as the source of truth for your dates.",
   },
   {
     question: "How much does it cost per day?",
@@ -57,20 +57,13 @@ const faqs = [
   },
   {
     question: "Who is the host?",
-    answer: `Both cars are the site owner’s own vehicles, listed on Turo by host ${TURO_HOST.name}. The host profile currently shows a ${TURO_HOST.rating.toFixed(1)} star average and ${TURO_HOST.tripsCompleted} completed trips (${TURO_HOST.hostingLabel}). Ratings and trip counts can change — confirm on the live Turo listing before you book.`,
+    answer:
+      "Both cars are the site owner’s own vehicles, listed on Turo by the site owner. Ratings and trip counts change over time, so check the host’s current rating and reviews on the live Turo listing before you book.",
   },
 ];
 
 const trax = getTuroListing("chevrolet-trax");
 const venue = getTuroListing("hyundai-venue");
-
-function Todo() {
-  return (
-    <span className="rounded border border-dashed border-line px-1.5 py-0.5 text-xs uppercase tracking-wide text-muted">
-      TODO
-    </span>
-  );
-}
 
 const linkClass = "text-accent underline-offset-2 hover:underline";
 
@@ -79,7 +72,7 @@ export default function HobbyAirportRentalsPage() {
     <RentalsPageShell
       path={PATH}
       title={H1}
-      description={`Landing at William P. Hobby Airport and need a car? Rent from ${TURO_HOST.seoSnippet}: a 2025 Hyundai Venue SE and a 2025 Chevrolet Trax LT, with HOU pickup tips and what to check before you book.`}
+      description={`Landing at William P. Hobby Airport and need a car? Rent ${RENTAL_FLEET_SNIPPET}: a 2025 Hyundai Venue SE and a 2025 Chevrolet Trax LT, with HOU pickup tips and what to check before you book.`}
       crumbs={[
         { label: "Rentals", href: "/rentals" },
         { label: "Houston", href: "/rentals/houston" },
@@ -102,10 +95,9 @@ export default function HobbyAirportRentalsPage() {
           commercial airports and sits southeast of downtown, which makes it a
           practical starting point for inner-loop, Medical Center, and
           Gulf-side trips. This page is for travelers who want a rental that
-          is not a counter line: two cars we list on Turo, hosted by{" "}
-          {TURO_HOST.name} ({TURO_HOST.rating.toFixed(1)}★,{" "}
-          {TURO_HOST.tripsCompleted} completed trips), based in the Hobby
-          Airport area of southeast Houston.
+          is not a counter line: two cars we list on Turo, hosted by
+          the site owner and based in the Hobby Airport area of southeast
+          Houston.
         </p>
         <p className="leading-relaxed text-muted">
           Everything below is meant to help you decide, not to push a
@@ -125,10 +117,10 @@ export default function HobbyAirportRentalsPage() {
         </h2>
         <p className="mt-2 leading-relaxed text-muted">
           Both listings are ours — a 2025 Hyundai Venue SE and a 2025
-          Chevrolet Trax LT — from a {TURO_HOST.rating.toFixed(1)}-star Turo
-          host with {TURO_HOST.tripsCompleted} completed trips. Price and
-          availability are set on Turo and change with your dates, so use the
-          button on each card to check your trip.
+          Chevrolet Trax LT — listed on Turo by the site owner. Check the
+          host’s current rating on each live listing. Price and availability
+          are set on Turo and change with your dates, so use the button on
+          each card to check your trip.
         </p>
         <RentalListingGrid listings={turoListings} className="mt-6" />
       </section>
@@ -138,38 +130,34 @@ export default function HobbyAirportRentalsPage() {
           Getting your car at Hobby
         </h2>
         <p className="leading-relaxed text-muted">
-          Our Hobby Airport location on Turo is William P. Hobby Airport
-          (HOU). Pickup is through The Parking Spot 2 — a shuttle lot near
-          the airport, not a staffed rental counter inside the terminal.
+          Our pickup is near William P. Hobby Airport (HOU), not at a staffed
+          rental counter inside the terminal. The exact pickup location and
+          key instructions are sent through Turo after you book.
         </p>
         <ol className="list-decimal space-y-2 pl-5 leading-relaxed text-muted">
           <li>
-            From the terminal, take the shuttle or a rideshare to The Parking
-            Spot 2.
+            Book on Turo and watch the app and trip chat for pickup and key
+            instructions.
           </li>
           <li>
-            The key is in a lockbox on the driver-side window. The host
-            messages you the code the morning of your trip.
+            Share your flight number and expected arrival time so the handoff
+            window stays realistic if the plane runs late.
           </li>
           <li>
-            If you cannot find the car, message the host in the Turo app for
-            a walkthrough.
+            If you cannot find the car or the instructions are unclear,
+            message the host in the Turo app.
           </li>
           <li>
-            When you leave, you should not need a ticket or payment — a
-            windshield tag opens the gate. Leave the tag on the car; if the
-            gate does not open, message the host right away.
+            Take your check-in photos before you drive away, as described in{" "}
+            <Link href="/rentals/what-to-expect" className={linkClass}>
+              what to expect on a Turo trip
+            </Link>
+            .
           </li>
         </ol>
         <p className="leading-relaxed text-muted">
-          After you book, send your flight number and expected arrival time so
-          the handoff window stays realistic if the plane runs late. Take your
-          check-in photos before you drive away, as described in{" "}
-          <Link href="/rentals/what-to-expect" className={linkClass}>
-            what to expect on a Turo trip
-          </Link>
-          . Listing instructions can change — treat the live Turo page and
-          trip chat as the source of truth for your dates.
+          Listing instructions can change — treat the live Turo page and trip
+          chat as the source of truth for your dates.
         </p>
       </section>
 
@@ -225,8 +213,8 @@ export default function HobbyAirportRentalsPage() {
         </h2>
         <p className="leading-relaxed text-muted">
           Both are small SUVs that seat five and are easy to park in the
-          city. Specs below come from the live Turo listings; cargo space is
-          still marked TODO until we confirm a figure.
+          city. Specs below come from the live Turo listings; confirm cargo
+          space and other details there before you book.
         </p>
         <div className="overflow-x-auto rounded-lg border border-line">
           <table className="w-full min-w-[28rem] text-left text-sm">
@@ -251,57 +239,54 @@ export default function HobbyAirportRentalsPage() {
                 <td className="px-4 py-3">{venue?.seats}</td>
                 <td className="px-4 py-3">{trax?.seats}</td>
               </tr>
-              <tr>
-                <th scope="row" className="px-4 py-3 font-normal text-muted">
-                  Combined MPG
-                </th>
-                <td className="px-4 py-3">
-                  {venue?.mpgCombined ?? <Todo />}
-                  {venue?.mpgCombined ? (
-                    <span className="text-muted"> (listing)</span>
-                  ) : null}
-                </td>
-                <td className="px-4 py-3">
-                  {trax?.mpgCombined ?? <Todo />}
-                  {trax?.mpgCombined ? (
-                    <span className="text-muted"> (listing)</span>
-                  ) : null}
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" className="px-4 py-3 font-normal text-muted">
-                  Cargo space
-                </th>
-                <td className="px-4 py-3">
-                  <Todo />
-                </td>
-                <td className="px-4 py-3">
-                  <Todo />
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" className="px-4 py-3 font-normal text-muted">
-                  Listing year &amp; trim
-                </th>
-                <td className="px-4 py-3">
-                  {venue ? (
-                    venue.year || venue.trim ? (
+              {venue?.mpgCombined != null || trax?.mpgCombined != null ? (
+                <tr>
+                  <th scope="row" className="px-4 py-3 font-normal text-muted">
+                    Combined MPG
+                  </th>
+                  <td className="px-4 py-3">
+                    {venue?.mpgCombined != null ? (
+                      <>
+                        {venue.mpgCombined}
+                        <span className="text-muted"> (listing)</span>
+                      </>
+                    ) : (
+                      <span className="text-muted">See listing</span>
+                    )}
+                  </td>
+                  <td className="px-4 py-3">
+                    {trax?.mpgCombined != null ? (
+                      <>
+                        {trax.mpgCombined}
+                        <span className="text-muted"> (listing)</span>
+                      </>
+                    ) : (
+                      <span className="text-muted">See listing</span>
+                    )}
+                  </td>
+                </tr>
+              ) : null}
+              {venue?.year || venue?.trim || trax?.year || trax?.trim ? (
+                <tr>
+                  <th scope="row" className="px-4 py-3 font-normal text-muted">
+                    Listing year &amp; trim
+                  </th>
+                  <td className="px-4 py-3">
+                    {venue && (venue.year || venue.trim) ? (
                       rentalListingName(venue)
                     ) : (
-                      <Todo />
-                    )
-                  ) : null}
-                </td>
-                <td className="px-4 py-3">
-                  {trax ? (
-                    trax.year || trax.trim ? (
+                      <span className="text-muted">See listing</span>
+                    )}
+                  </td>
+                  <td className="px-4 py-3">
+                    {trax && (trax.year || trax.trim) ? (
                       rentalListingName(trax)
                     ) : (
-                      <Todo />
-                    )
-                  ) : null}
-                </td>
-              </tr>
+                      <span className="text-muted">See listing</span>
+                    )}
+                  </td>
+                </tr>
+              ) : null}
             </tbody>
           </table>
         </div>

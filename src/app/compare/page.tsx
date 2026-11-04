@@ -8,7 +8,7 @@ import { JsonLd, breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   title: "Used car comparisons",
-  description: `Side-by-side used-buyer comparisons — MSRP vs asking, recalls, and running costs — on ${SITE.name}.`,
+  description: `Side-by-side used car comparisons on ${SITE.name}: original MSRP vs typical used asking price, NHTSA recalls, and estimated running costs.`,
   path: "/compare",
 });
 

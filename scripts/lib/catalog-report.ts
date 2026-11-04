@@ -87,6 +87,62 @@ export function localPublicAssetIssue(
   return size < 500 ? "too-small" : null;
 }
 
+/** Recall data older than this is considered stale (days). */
+export const RECALL_MAX_AGE_DAYS = 7;
+
+/**
+ * Newest `safetyStatus.fetchedAt` across the catalog — the last time any
+ * recall/complaint lookup succeeded. Ignores missing / unparsable stamps.
+ */
+export function newestRecallFetchedAt(catalog: MakeEntry[]): string | undefined {
+  let newest: string | undefined;
+  let newestMs = -Infinity;
+  for (const make of catalog) {
+    for (const model of make.models) {
+      for (const year of model.years) {
+        const at = year.safetyStatus?.fetchedAt;
+        if (!at) continue;
+        const ms = Date.parse(at);
+        if (Number.isNaN(ms)) continue;
+        if (ms > newestMs) {
+          newestMs = ms;
+          newest = at;
+        }
+      }
+    }
+  }
+  return newest;
+}
+
+/**
+ * Freshness check for recall data: an issue (never null-and-silent) when the
+ * newest recall fetch is older than `maxAgeDays`, or when there is none.
+ * Severity is "error" in CI and "warn" for local runs.
+ */
+export function recallFreshnessIssue(
+  catalog: MakeEntry[],
+  opts: { now?: Date; isCi?: boolean; maxAgeDays?: number } = {},
+): Issue | null {
+  const now = opts.now ?? new Date();
+  const maxAgeDays = opts.maxAgeDays ?? RECALL_MAX_AGE_DAYS;
+  const level: Issue["level"] = opts.isCi ? "error" : "warn";
+  const newest = newestRecallFetchedAt(catalog);
+  if (!newest) {
+    return {
+      level,
+      message: `No recall fetchedAt found anywhere in the catalog — run pnpm enrich:nhtsa-recalls -- --force`,
+    };
+  }
+  const ageDays = (now.getTime() - Date.parse(newest)) / 86_400_000;
+  if (ageDays > maxAgeDays) {
+    return {
+      level,
+      message: `Recall data is stale: newest fetchedAt is ${newest.slice(0, 10)} (${Math.floor(ageDays)} days ago, limit ${maxAgeDays}). The daily-recalls workflow is not landing fresh data — check its latest run, or run pnpm enrich:nhtsa-recalls -- --force`,
+    };
+  }
+  return null;
+}
+
 export function isBlankCopy(value: string | undefined | null): boolean {
   return !value || !value.trim();
 }

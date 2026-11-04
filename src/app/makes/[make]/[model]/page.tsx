@@ -22,6 +22,9 @@ import { JsonLd, breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 import { RelatedComparisons } from "@/components/RelatedComparisons";
 import { HoustonRentalCallout } from "@/components/HoustonRentalCallout";
 import { getRentalListingForModel } from "@/lib/rentals";
+import { ModelYearTable } from "@/components/ModelYearTable";
+import { buildModelYearTable } from "@/lib/yearComparison";
+import { modelHubSeoDescription } from "@/lib/text";
 
 type Props = {
   params: Promise<{ make: string; model: string }>;
@@ -48,10 +51,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         ? String(yearsSorted[0].year)
         : "";
   const title = `${make.name} ${model.name} used years & recalls`;
-  const taglineLead = isRawWikidataLabel(model.tagline)
-    ? ""
-    : `${model.tagline.trim().replace(/\.$/, "")}. `;
-  const description = `${taglineLead}Compare ${make.name} ${model.name} model years${yearRange ? ` (${yearRange})` : ""} for NHTSA recalls, complaints, and year-over-year changes on ${SITE.name}.`;
+  // 110–155 chars: purpose first, tagline / price note only as optional top-up.
+  const description = modelHubSeoDescription({
+    makeName: make.name,
+    modelName: model.name,
+    yearRange,
+    tagline: isRawWikidataLabel(model.tagline) ? undefined : model.tagline,
+    siteName: SITE.name,
+  });
   const cover =
     pickBestCardImage(yearsSorted[0]?.images, {
       makeName: make.name,
@@ -155,6 +162,14 @@ export default async function ModelPage({ params }: Props) {
           </p>
         ) : null}
       </section>
+
+      <ModelYearTable
+        makeSlug={make.slug}
+        makeName={make.name}
+        modelSlug={model.slug}
+        modelName={model.name}
+        rows={buildModelYearTable(make.slug, model.slug, model.years)}
+      />
 
       <section className="mt-10 space-y-4">
         <h2 className="font-display text-2xl tracking-tight">Year galleries</h2>

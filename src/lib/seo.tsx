@@ -78,6 +78,9 @@ export function breadcrumbJsonLd(items: BreadcrumbItem[]) {
   };
 }
 
+/** Square 512×512 PNG of the MMX mark (see scripts/generate-mmx-logo.mjs). */
+export const ORGANIZATION_LOGO_PATH = "/mmx-logo.png";
+
 export function organizationJsonLd() {
   return {
     "@context": "https://schema.org",
@@ -85,6 +88,7 @@ export function organizationJsonLd() {
     name: SITE.name,
     alternateName: SITE.shortName,
     url: SITE.url,
+    logo: absoluteUrl(ORGANIZATION_LOGO_PATH),
     description: SITE.description,
   };
 }

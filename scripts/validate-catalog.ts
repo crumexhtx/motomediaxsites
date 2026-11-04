@@ -9,6 +9,7 @@ import {
   loadCatalog,
   loadModelYearOverrides,
   localPublicAssetIssue,
+  recallFreshnessIssue,
   type Issue,
 } from "./lib/catalog-report";
 
@@ -249,6 +250,14 @@ if (missingLocal.size > 0) {
   } else {
     warn(message);
   }
+}
+
+// Recall freshness: warn locally, fail in CI (`CI` is set by GitHub Actions).
+{
+  const isCi = Boolean(process.env.CI) && process.env.CI !== "false";
+  const maxAgeDays = Number(process.env.RECALL_MAX_AGE_DAYS) || undefined;
+  const stale = recallFreshnessIssue(catalog, { isCi, maxAgeDays });
+  if (stale) issues.push(stale);
 }
 
 const stats = catalogStats(catalog);

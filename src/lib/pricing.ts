@@ -9,6 +9,7 @@
  */
 import msrpSeed from "@/data/msrp-seed.json";
 import pricingOverrides from "@/data/pricing-overrides.json";
+import { formatIsoDate } from "@/lib/text";
 
 export type PricingMethod = "listing-average" | "retention-estimate";
 
@@ -27,10 +28,54 @@ export type YearPricing = {
   method: PricingMethod;
   /** Listing sample size when method is listing-average. */
   sampleSize?: number;
-  asOf: string;
+  /**
+   * Real date of the listing sample ("YYYY-MM" or "YYYY-MM-DD"). Only set for
+   * `listing-average`; retention estimates have no market-data date.
+   */
+  asOf?: string;
+  /** Calendar year whose vehicle age drove a retention estimate. */
+  estimateYear: number;
   msrpNote: string;
   usedNote: string;
 };
+
+const MONTH_NAMES = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+
+/** "2026-07" → "Jul 2026"; "2026-07-10" → "Jul 10, 2026". */
+function formatPricingDate(asOf: string): string {
+  const month = asOf.match(/^(\d{4})-(\d{2})$/);
+  if (month) {
+    const name = MONTH_NAMES[Number(month[2]) - 1];
+    return name ? `${name} ${month[1]}` : asOf;
+  }
+  return formatIsoDate(asOf);
+}
+
+/**
+ * Dataset label for the pricing numbers, dated on its own terms (never the
+ * NHTSA fetch date): the listing sample date, or the retention-curve basis.
+ */
+export function pricingDatasetLabel(pricing: YearPricing): string {
+  if (pricing.method === "listing-average") {
+    return pricing.asOf
+      ? `Listing sample as of ${formatPricingDate(pricing.asOf)}`
+      : "Based on a recent dealer listing sample";
+  }
+  return `Estimate based on ${pricing.estimateYear} vehicle age, not a dated market quote`;
+}
 
 type MsrpSeedEntry = {
   /** USD starting MSRP by model year (string keys). */
@@ -138,7 +183,6 @@ export function getYearPricing(
   if (msrpBase == null) return undefined;
 
   const asOfYear = pricingAsOfYear(now);
-  const asOf = `${asOfYear}-07`;
   const override = OVERRIDES[key(makeSlug, modelSlug, year)];
 
   if (override?.usedAverage && override.usedAverage > 0) {
@@ -153,7 +197,8 @@ export function getYearPricing(
       depreciationUsd: Math.max(0, msrpBase - usedAverage),
       method: "listing-average",
       sampleSize: override.sampleSize,
-      asOf: override.asOf ?? asOf,
+      asOf: override.asOf,
+      estimateYear: asOfYear,
       msrpNote: "Published starting (base-trim) MSRP when new.",
       usedNote: override.source
         ? `Average dealer asking from ${override.source} listings.`
@@ -174,7 +219,7 @@ export function getYearPricing(
     retainedPct: usedAverage / msrpBase,
     depreciationUsd: Math.max(0, msrpBase - usedAverage),
     method: "retention-estimate",
-    asOf,
+    estimateYear: asOfYear,
     msrpNote: "Published starting (base-trim) MSRP when new.",
     usedNote:
       "Estimated typical used asking from a mass-market retention curve — not a live appraisal or guaranteed sale price.",

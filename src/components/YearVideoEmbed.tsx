@@ -5,6 +5,7 @@ import type { YearVideo } from "@/data/catalog";
 import {
   parseYoutubeId,
   YOUTUBE_THUMB_FALLBACKS,
+  videoThumbnailAlt,
   youtubeEmbedUrl,
   youtubeThumbUrl,
   youtubeWatchUrl,
@@ -13,6 +14,8 @@ import {
 
 type Props = {
   video: YearVideo;
+  /** e.g. "2024 Toyota Tacoma" — used for the thumbnail alt when the video has no title. */
+  vehicleName?: string;
 };
 
 function safeOwnerUrl(url: string | undefined): string | undefined {
@@ -42,11 +45,13 @@ function YoutubePoster({
   playing,
   onPlay,
   title,
+  thumbAlt,
 }: {
   youtubeId: string;
   playing: boolean;
   onPlay: () => void;
   title: string;
+  thumbAlt: string;
 }) {
   const [qualityIndex, setQualityIndex] = useState(0);
   const quality = YOUTUBE_THUMB_FALLBACKS[
@@ -84,7 +89,7 @@ function YoutubePoster({
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={thumb}
-        alt=""
+        alt={thumbAlt}
         width={1280}
         height={720}
         decoding="async"
@@ -108,7 +113,7 @@ function YoutubePoster({
   );
 }
 
-export function YearVideoEmbed({ video }: Props) {
+export function YearVideoEmbed({ video, vehicleName }: Props) {
   const [playing, setPlaying] = useState(false);
   const youtubeId = parseYoutubeId(video.youtubeId);
   if (!youtubeId) return null;
@@ -132,6 +137,7 @@ export function YearVideoEmbed({ video }: Props) {
             playing={playing}
             onPlay={() => setPlaying(true)}
             title={video.title}
+            thumbAlt={videoThumbnailAlt(video, vehicleName)}
           />
         </div>
 

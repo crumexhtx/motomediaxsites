@@ -13,6 +13,8 @@ type Props = {
   complaintsStatus?: "ok" | "empty" | "error";
   recallsError?: string;
   complaintsError?: string;
+  /** Real NHTSA fetch timestamp for this year (`safetyStatus.fetchedAt`). */
+  fetchedAt?: string;
 };
 
 function RecallRow({ recall }: { recall: YearRecall }) {
@@ -57,6 +59,7 @@ export function YearSafetyPanel({
   complaintsStatus,
   recallsError,
   complaintsError,
+  fetchedAt,
 }: Props) {
   const recallList = recalls ?? [];
   const showRecalls =
@@ -84,6 +87,15 @@ export function YearSafetyPanel({
             ? `Yes — ${recallList.length} recall campaign${recallList.length === 1 ? "" : "s"} ${complaints && complaints.total > 0 ? `and ${complaints.total} owner complaint${complaints.total === 1 ? "" : "s"}` : "in our catalog"} for the ${yearLabel} ${makeName} ${modelName}. Scan the list before you write a check.`
             : `No recalls in our last refresh, but owners filed ${complaints?.total ?? 0} complaint${(complaints?.total ?? 0) === 1 ? "" : "s"} — review the top components below.`}
       </p>
+      {fetchedAt ? (
+        <p className="mt-1 text-xs text-muted">
+          NHTSA recalls and complaints fetched{" "}
+          <time dateTime={fetchedAt.slice(0, 10)}>
+            {formatIsoDate(fetchedAt)}
+          </time>
+          .
+        </p>
+      ) : null}
 
       {showRecalls ? (
         <div className="mt-6 max-w-3xl">

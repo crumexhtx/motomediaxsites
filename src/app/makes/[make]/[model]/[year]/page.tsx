@@ -40,8 +40,10 @@ import {
 } from "@/lib/seo";
 import { getRentalListingForModel } from "@/lib/rentals";
 import { HoustonRentalCallout } from "@/components/HoustonRentalCallout";
-import { enrichYearSummary, yearSeoDescription, yearSeoTitle } from "@/lib/text";
+import { enrichYearSummary, yearMetaDescription, yearSeoTitle } from "@/lib/text";
 import { diffYears, findPreviousYear } from "@/lib/yearDiff";
+import { buildYearSiblingComparison } from "@/lib/yearComparison";
+import { YearComparedWithOthers } from "@/components/YearComparedWithOthers";
 
 type Props = {
   params: Promise<{ make: string; model: string; year: string }>;
@@ -81,7 +83,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     makeName: make.name,
     modelName: model.name,
   });
-  const description = yearSeoDescription({
+  const description = yearMetaDescription({
     year: year.year,
     makeName: make.name,
     modelName: model.name,
@@ -142,6 +144,12 @@ export default async function YearPage({ params }: Props) {
   });
   const previousYear = findPreviousYear(model.years, year.year);
   const yearDiff = previousYear ? diffYears(previousYear, year) : null;
+  const siblingComparison = buildYearSiblingComparison(
+    make.slug,
+    model.slug,
+    model.years,
+    year.year,
+  );
   const discontinued = getDiscontinuedInfo(make.slug, model.slug);
   const showBanner =
     shouldShowDiscontinuedBanner(discontinued) &&
@@ -297,6 +305,7 @@ export default async function YearPage({ params }: Props) {
             complaintsStatus={year.safetyStatus?.complaints}
             recallsError={year.safetyStatus?.recallsError}
             complaintsError={year.safetyStatus?.complaintsError}
+            fetchedAt={year.safetyStatus?.fetchedAt}
           />
         }
         reliabilityGlance={
@@ -320,6 +329,17 @@ export default async function YearPage({ params }: Props) {
                 model.slug,
                 previousYear.slug,
               )}
+              modelName={model.name}
+            />
+          ) : null
+        }
+        yearsComparison={
+          siblingComparison ? (
+            <YearComparedWithOthers
+              comparison={siblingComparison}
+              makeSlug={make.slug}
+              modelSlug={model.slug}
+              makeName={make.name}
               modelName={model.name}
             />
           ) : null

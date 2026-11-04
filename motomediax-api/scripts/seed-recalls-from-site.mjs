@@ -90,6 +90,13 @@ function main() {
     }
   }
 
+  // Never write (and never let CI commit) an empty seed as if it were fresh data.
+  if (seeded === 0) {
+    throw new Error(
+      `Seeded 0 vehicle records from ${SITE_CATALOG_PATH} — no year has safetyStatus. Run pnpm enrich:nhtsa-recalls first.`,
+    );
+  }
+
   fs.mkdirSync(path.dirname(OUT_PATH), { recursive: true });
   fs.writeFileSync(OUT_PATH, `${JSON.stringify(out, null, 2)}\n`);
 

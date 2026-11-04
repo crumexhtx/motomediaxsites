@@ -4,7 +4,7 @@ import { RentalsPageShell } from "@/components/RentalsPageShell";
 import { SITE } from "@/data/catalog";
 import {
   HOBBY_AIRPORT_PATH,
-  TURO_HOST,
+  RENTAL_FLEET_SNIPPET,
   rentalPageMetadata,
   turoListings,
   turoListingsItemListJsonLd,
@@ -13,7 +13,7 @@ import { articleJsonLd, faqPageJsonLd } from "@/lib/seo";
 
 const PATH = "/rentals/houston";
 const TITLE = "Rent a car in Houston on Turo";
-const DESCRIPTION = `Houston Turo near Hobby (HOU) & IAH: Venue & Trax from ${TURO_HOST.seoSnippet}. Guides on ${SITE.name}.`;
+const DESCRIPTION = `Houston Turo near Hobby (HOU) & IAH: Venue & Trax from ${RENTAL_FLEET_SNIPPET}. Guides on ${SITE.name}.`;
 
 export const metadata = rentalPageMetadata({
   title: TITLE,
@@ -39,7 +39,7 @@ export default function HoustonRentalsPage() {
     <RentalsPageShell
       path={PATH}
       title={TITLE}
-      description={`Practical notes for travelers landing at Hobby or Bush — and our Hyundai Venue and Chevrolet Trax listings from ${TURO_HOST.name}, a ${TURO_HOST.rating.toFixed(1)}-star Turo host with ${TURO_HOST.tripsCompleted} completed trips.`}
+      description={`Practical notes for travelers landing at Hobby or Bush — and our Hyundai Venue and Chevrolet Trax listings from the site owner on Turo.`}
       crumbs={[
         { label: "Rentals", href: "/rentals" },
         { label: "Houston" },
@@ -54,7 +54,7 @@ export default function HoustonRentalsPage() {
         turoListingsItemListJsonLd(),
       ]}
       ctaTitle="Check dates and price for your Houston trip"
-      ctaLead={`Our fleet — a Hyundai Venue and a Chevrolet Trax — is hosted by ${TURO_HOST.name} (${TURO_HOST.rating.toFixed(1)}★, ${TURO_HOST.tripsCompleted} trips) in the Hobby Airport area of southeast Houston. Open either live Turo listing for dates, the all-in trip price, and pickup options before you fly.`}
+      ctaLead={`Our fleet — a Hyundai Venue and a Chevrolet Trax — is hosted by the site owner in the Hobby Airport area of southeast Houston. Open either live Turo listing for dates, the all-in trip price, the host’s current rating, and pickup options before you fly.`}
     >
       <section className="space-y-4">
         <h2 className="font-display text-2xl tracking-tight">
@@ -121,10 +121,8 @@ export default function HoustonRentalsPage() {
           Our Houston rentals: Hyundai Venue &amp; Chevrolet Trax
         </h2>
         <p className="mt-2 leading-relaxed text-muted">
-          Both cars are listed on Turo by {TURO_HOST.name} (
-          {TURO_HOST.rating.toFixed(1)}★, {TURO_HOST.tripsCompleted} completed
-          trips) and based in the Hobby Airport area of southeast Houston.
-          Landing at Hobby? Read{" "}
+          Both cars are listed on Turo by the site owner and based in the
+          Hobby Airport area of southeast Houston. Landing at Hobby? Read{" "}
           <Link
             href={HOBBY_AIRPORT_PATH}
             className="text-accent underline-offset-2 hover:underline"

@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  SEO_TITLE_MAX,
   enrichYearSummary,
   isThinYearSummary,
   looksTruncatedMidSentence,
@@ -75,10 +76,44 @@ describe("text helpers", () => {
     expect(seo).not.toBe("1 NHTSA recall on record.");
   });
 
-  it("builds a specific year SEO title", () => {
-    expect(
-      yearSeoTitle({ year: 2026, makeName: "Ford", modelName: "F-150" }),
-    ).toBe("2026 Ford F-150: Recalls, Specs & Used Price Guide");
+  it("builds a specific year SEO title that fits 60 chars once the site suffix is added", () => {
+    // Rendered title = `${title} · MotoMediaX` (root layout template).
+    const rendered = (t: string) => `${t} \u00b7 MotoMediaX`;
+
+    const tacoma = yearSeoTitle({
+      year: 2024,
+      makeName: "Toyota",
+      modelName: "Tacoma",
+    });
+    expect(tacoma).toBe("2024 Toyota Tacoma: Recalls & Specs");
+    expect(rendered(tacoma).length).toBeLessThanOrEqual(SEO_TITLE_MAX);
+
+    const f150 = yearSeoTitle({
+      year: 2026,
+      makeName: "Ford",
+      modelName: "F-150",
+    });
+    expect(f150).toBe("2026 Ford F-150: Recalls & Specs");
+    expect(f150.startsWith("2026 Ford F-150")).toBe(true);
+  });
+
+  it("keeps the long suffix when the rendered title is within 60 chars", () => {
+    // 3-char make + 2-char model: "2024 Kia K5: Recalls, Specs & Used Price Guide · MotoMediaX" = 58.
+    const title = yearSeoTitle({ year: 2024, makeName: "Kia", modelName: "K5" });
+    expect(title).toBe("2024 Kia K5: Recalls, Specs & Used Price Guide");
+    expect(`${title} \u00b7 MotoMediaX`.length).toBeLessThanOrEqual(SEO_TITLE_MAX);
+  });
+
+  it("always leads year page titles with year make model", () => {
+    for (const [make, model] of [
+      ["Mercedes-Benz", "GLE-Class"],
+      ["Volkswagen", "Atlas Cross Sport"],
+      ["Kia", "K5"],
+    ] as const) {
+      expect(
+        yearSeoTitle({ year: 2025, makeName: make, modelName: model }),
+      ).toMatch(new RegExp(`^2025 ${make} ${model}: `));
+    }
   });
 
   it("repairs ??? mojibake from corrupted UTF-8 dashes", () => {

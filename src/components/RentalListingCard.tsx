@@ -1,8 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { CatalogImage } from "@/components/CatalogImage";
 import {
-  TURO_HOST,
   TURO_LINK_REL,
   TURO_PARTNER_LABEL,
   rentalListingName,
@@ -14,23 +12,14 @@ type Props = {
   className?: string;
 };
 
-function Todo({ children }: { children: string }) {
-  return (
-    <span className="rounded border border-dashed border-line px-1.5 py-0.5 text-xs uppercase tracking-wide text-muted">
-      {children}
-    </span>
-  );
-}
-
 /**
- * One fleet vehicle: photo, name, quick specs, features, host, and Turo CTA.
- * Missing data renders as an explicit TODO — never a guessed value.
- * Host ratings are visible text only (no AggregateRating JSON-LD).
+ * One fleet vehicle: photo, name, quick specs, features, and Turo CTA.
+ * Missing data is hidden — never a placeholder or guessed value. No host
+ * identity or rating is shown (no AggregateRating JSON-LD either).
  */
 export function RentalListingCard({ listing, className = "" }: Props) {
   const photo = listing.photos[0];
   const name = rentalListingName(listing);
-  const host = TURO_HOST;
 
   return (
     <article
@@ -63,62 +52,44 @@ export function RentalListingCard({ listing, className = "" }: Props) {
       <div className="flex flex-1 flex-col px-5 py-5">
         <h3 className="font-display text-xl tracking-tight">{name}</h3>
 
-        <div className="mt-3 overflow-hidden rounded-md border border-line/70 bg-soft/40">
-          <div
-            className="relative w-full"
-            style={{ aspectRatio: `${host.photo.width} / ${host.photo.height}` }}
-          >
-            <Image
-              src={host.photo.src}
-              alt={host.photo.alt}
-              fill
-              sizes="(max-width: 768px) 100vw, 360px"
-              className="object-contain object-left"
-            />
-          </div>
-          <p className="border-t border-line/60 px-3 py-2 text-xs leading-relaxed text-muted">
-            Hosted by {host.name} on {TURO_PARTNER_LABEL}
-            {" · "}
-            <span className="font-medium text-foreground">
-              {host.rating.toFixed(1)}★
-            </span>
-            {" · "}
-            {host.tripsCompleted} trips completed
-          </p>
-        </div>
-
         <dl className="mt-3 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1.5 text-sm">
-          <dt className="text-muted">Year</dt>
-          <dd>{listing.year ?? <Todo>TODO</Todo>}</dd>
-          <dt className="text-muted">Trim</dt>
-          <dd>{listing.trim ?? <Todo>TODO</Todo>}</dd>
+          {listing.year !== null ? (
+            <>
+              <dt className="text-muted">Year</dt>
+              <dd>{listing.year}</dd>
+            </>
+          ) : null}
+          {listing.trim ? (
+            <>
+              <dt className="text-muted">Trim</dt>
+              <dd>{listing.trim}</dd>
+            </>
+          ) : null}
           <dt className="text-muted">Seats</dt>
           <dd>{listing.seats}</dd>
-          <dt className="text-muted">MPG (combined)</dt>
-          <dd>
-            {listing.mpgCombined !== null ? (
-              <>{listing.mpgCombined}</>
-            ) : (
-              <Todo>TODO</Todo>
-            )}
-          </dd>
-          <dt className="text-muted">Features</dt>
-          <dd>
-            {listing.features.length > 0 ? (
-              <ul className="flex flex-wrap gap-1.5">
-                {listing.features.map((feature) => (
-                  <li
-                    key={feature}
-                    className="rounded border border-line px-1.5 py-0.5 text-xs"
-                  >
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <Todo>TODO</Todo>
-            )}
-          </dd>
+          {listing.mpgCombined !== null ? (
+            <>
+              <dt className="text-muted">MPG (combined)</dt>
+              <dd>{listing.mpgCombined}</dd>
+            </>
+          ) : null}
+          {listing.features.length > 0 ? (
+            <>
+              <dt className="text-muted">Features</dt>
+              <dd>
+                <ul className="flex flex-wrap gap-1.5">
+                  {listing.features.map((feature) => (
+                    <li
+                      key={feature}
+                      className="rounded border border-line px-1.5 py-0.5 text-xs"
+                    >
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </dd>
+            </>
+          ) : null}
         </dl>
 
         <div className="mt-auto pt-5">

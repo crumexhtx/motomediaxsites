@@ -52,6 +52,19 @@ export function getCuratedYearVideo(
   return byYear[String(year)];
 }
 
+/**
+ * Alt text for the YouTube poster image: the video title when present,
+ * otherwise "<year make model> video review". Never empty.
+ */
+export function videoThumbnailAlt(
+  video: Pick<YearVideo, "title">,
+  vehicleName?: string,
+): string {
+  const title = video.title?.trim();
+  if (title) return title;
+  return `${vehicleName?.trim() || "Vehicle"} video review`;
+}
+
 export function youtubeWatchUrl(youtubeId: string): string {
   return `https://www.youtube.com/watch?v=${youtubeId}`;
 }

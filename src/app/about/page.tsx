@@ -13,10 +13,11 @@ export const metadata: Metadata = buildMetadata({
 });
 
 /**
- * TODO(owner): replace with the real corrections inbox before launch.
+ * Set to a real inbox before launch (then render a mailto: link).
  * Intentionally NOT pulled from git config or any other source.
+ * Leave null to hide the address until you supply one.
  */
-const CORRECTIONS_EMAIL_PLACEHOLDER = "[TODO: add corrections email address]";
+const CORRECTIONS_EMAIL: string | null = "curimexhtx@gmail.com";
 
 const h2 = "font-display text-2xl tracking-tight";
 const p = "mt-3 leading-relaxed text-muted";
@@ -140,15 +141,31 @@ export default function AboutPage() {
 
         <section className="mt-10">
           <h2 className={h2}>Corrections</h2>
-          <p className={p}>
-            Spot a wrong spec, recall, or photo? Email{" "}
-            {/* TODO(owner): replace this placeholder with a real address
-                (and make it a mailto: link) before launch. */}
-            <span className="font-medium text-foreground">
-              {CORRECTIONS_EMAIL_PLACEHOLDER}
-            </span>{" "}
-            with the page URL and what looks off.
-          </p>
+          {CORRECTIONS_EMAIL ? (
+            <p className={p}>
+              Spot a wrong spec, recall, or photo? Email{" "}
+              <a
+                href={`mailto:${CORRECTIONS_EMAIL}`}
+                className="font-medium text-foreground underline-offset-2 hover:underline"
+              >
+                {CORRECTIONS_EMAIL}
+              </a>{" "}
+              with the page URL and what looks off.
+            </p>
+          ) : (
+            <p className={p}>
+              Spot a wrong spec, recall, or photo? Use the contact method on
+              our Turo host profile (linked from the{" "}
+              <Link
+                href="/rentals"
+                className="underline-offset-2 hover:underline"
+              >
+                rentals
+              </Link>{" "}
+              pages) and include the page URL plus what looks off. A dedicated
+              corrections inbox will be listed here once it is set up.
+            </p>
+          )}
         </section>
 
         <p className="mt-10 text-sm leading-relaxed text-muted">

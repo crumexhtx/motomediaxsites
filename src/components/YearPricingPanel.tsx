@@ -1,6 +1,7 @@
 import {
   formatRetainedPct,
   formatUsd,
+  pricingDatasetLabel,
   type YearPricing,
 } from "@/lib/pricing";
 import { valuationPartnerLabel, valuationUrl } from "@/lib/valuation";
@@ -66,7 +67,7 @@ export function YearPricingPanel({
             {pricing.sampleSize
               ? ` Sample size: ${pricing.sampleSize}.`
               : ""}{" "}
-            As of {pricing.asOf}.
+            {pricingDatasetLabel(pricing)}.
           </dd>
         </div>
       </dl>

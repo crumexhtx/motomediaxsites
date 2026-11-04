@@ -7,7 +7,7 @@ import { JsonLd, breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   title: "Search",
-  description: `Search the ${SITE.name} catalog by make, model, or year to find car photo galleries fast.`,
+  description: `Search the ${SITE.name} catalog by make, model, or year to find used car recalls, owner complaints, specs, and photo galleries in seconds.`,
   path: "/search",
 });
 
