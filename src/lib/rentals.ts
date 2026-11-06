@@ -138,7 +138,24 @@ export function rentalListingName(listing: TuroListing): string {
 export const TURO_LISTING_URL = getTuroListing("chevrolet-trax")!.url;
 
 /** Outbound Turo links: sponsored per the site's disclosure policy. */
-export const TURO_LINK_REL = "noopener sponsored";
+export const TURO_LINK_REL = "sponsored noopener";
+
+/**
+ * Trax listing host stats for the /rentals cards. Single place to update
+ * when Turo numbers change. Do not use for AggregateRating JSON-LD.
+ */
+export const TRAX_LISTING_STATS = {
+  rating: 5.0,
+  tripsHosted: 14,
+} as const;
+
+/** Short buyer-facing pitch under each fleet card title on /rentals. */
+export const RENTAL_CARD_PITCH: Record<string, string> = {
+  "hyundai-venue":
+    "Best for 1-2 travelers. Easy to park, great gas mileage, with Apple CarPlay and Android Auto.",
+  "chevrolet-trax":
+    "Best for more luggage or passengers. More cargo space, keyless entry, and heated seats.",
+};
 
 /**
  * Short phrase for meta descriptions and body copy. Deliberately contains no
@@ -260,13 +277,26 @@ export function rentalPageMetadata(input: {
   path: string;
   /** Page-specific OG/Twitter image. Defaults to the first fleet image. */
   image?: { src: string; alt: string };
+  type?: "website" | "article";
+  /** When set, used for og:title / twitter:title instead of `title`. */
+  socialTitle?: string;
+  /** Full document title, bypassing the root `%s · MotoMediaX` template. */
+  absoluteTitle?: string;
 }): Metadata {
   const hero = input.image ?? RENTAL_LISTING_IMAGES[0];
-  return buildMetadata({
+  const meta = buildMetadata({
     title: input.title,
     description: input.description,
     path: input.path,
-    type: "article",
+    type: input.type ?? "article",
     ...(hero ? { image: hero.src, imageAlt: hero.alt } : {}),
   });
+  if (input.absoluteTitle) {
+    meta.title = { absolute: input.absoluteTitle };
+  }
+  if (input.socialTitle) {
+    meta.openGraph = { ...meta.openGraph, title: input.socialTitle };
+    meta.twitter = { ...meta.twitter, title: input.socialTitle };
+  }
+  return meta;
 }

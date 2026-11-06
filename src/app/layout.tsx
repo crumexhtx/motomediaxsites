@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { Outfit, Syne } from "next/font/google";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -18,6 +18,12 @@ const body = Outfit({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
+
+/** Explicit viewport so Next does not emit an empty `next-size-adjust` meta. */
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),

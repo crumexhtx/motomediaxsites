@@ -1,75 +1,103 @@
 import Link from "next/link";
 import { RentalListingGrid } from "@/components/RentalListingCard";
 import { RentalsPageShell } from "@/components/RentalsPageShell";
-import { SITE } from "@/data/catalog";
 import {
   HOBBY_AIRPORT_PATH,
   RENTAL_GUIDES,
-  RENTAL_FLEET_SNIPPET,
   rentalPageMetadata,
   turoListings,
   turoListingsItemListJsonLd,
 } from "@/lib/rentals";
-import { articleJsonLd } from "@/lib/seo";
+import { faqPageJsonLd } from "@/lib/seo";
 
 const PATH = "/rentals";
-const TITLE = "Peer-to-peer car rentals";
-const DESCRIPTION = `Houston Turo fleet near Hobby Airport from ${RENTAL_FLEET_SNIPPET}: Venue & Trax guides on ${SITE.name}.`;
+const H1 = "Car rentals at Houston Hobby Airport (HOU)";
+const SOCIAL_TITLE = "Hobby Airport Car Rentals in Houston (HOU)";
+const ABSOLUTE_TITLE = `${SOCIAL_TITLE} | MotoMediaX`;
+const DESCRIPTION =
+  "Skip the rental counter at Hobby Airport (HOU). Book a Hyundai Venue or Chevy Trax with self-service pickup and no parking fee for guests.";
+const INTRO =
+  "Two compact SUVs, picked up near Hobby Airport and booked through Turo. No rental counter, no lines: unlock with a code, drive, and return it the same way.";
+
+/** Visible FAQ. The last item is UI-only (left out of FAQPage JSON-LD). */
+const RENTALS_FAQS: Array<{
+  question: string;
+  answer: string;
+  jsonLd?: boolean;
+}> = [
+  {
+    question: "Where do I pick up the car?",
+    answer:
+      "Pickup and return are at Houston Hobby Airport (HOU). After you book, Turo shows you the exact spot, plus step-by-step directions.",
+  },
+  {
+    question: "How do I get the key?",
+    answer:
+      "The key is in a lockbox. The code is sent through the Turo app on the morning your trip starts. When you return the car, lock the key back in the lockbox.",
+  },
+  {
+    question: "Do I pay for parking?",
+    answer:
+      "No. Parking at the airport lot is covered, so you don't pay at the gate.",
+  },
+  {
+    question: "Is there a mileage limit?",
+    answer:
+      "Yes, 200 miles per day. If you go over, extra miles are charged at the rate shown on the Turo listing.",
+  },
+  {
+    question: "What about fuel?",
+    answer:
+      "Return the car with the same fuel level you started with, and take a photo of the gauge.",
+  },
+  {
+    question: "Who pays for tolls?",
+    answer:
+      "If you use a toll road, you're charged for it. Tolls are billed through Turo after the trip, and they can take a few weeks to show up.",
+  },
+  {
+    question: "Is it safe to rent from a private owner?",
+    answer:
+      "Every trip is booked and protected through Turo, with 24/7 roadside assistance included. Read the protection details on the Turo listing before you book.",
+    jsonLd: false,
+  },
+];
+
+const faqsForJsonLd = RENTALS_FAQS.filter((f) => f.jsonLd !== false).map(
+  ({ question, answer }) => ({ question, answer }),
+);
 
 export const metadata = rentalPageMetadata({
-  title: TITLE,
+  title: SOCIAL_TITLE,
+  absoluteTitle: ABSOLUTE_TITLE,
+  socialTitle: SOCIAL_TITLE,
   description: DESCRIPTION,
   path: PATH,
+  type: "website",
 });
 
 export default function RentalsHubPage() {
   return (
     <RentalsPageShell
       path={PATH}
-      title={TITLE}
-      description="Peer-to-peer platforms let you book a privately owned car for a trip — often with more variety and clearer total pricing than a traditional counter. Use these guides to set expectations, then open a live listing if you need a car in Houston."
+      title={H1}
+      description={INTRO}
       crumbs={[{ label: "Rentals" }]}
       jsonLd={[
-        articleJsonLd({
-          title: TITLE,
-          description: DESCRIPTION,
-          path: PATH,
-        }),
         turoListingsItemListJsonLd(),
+        faqPageJsonLd(faqsForJsonLd),
       ]}
       showGuideNav={false}
       showCta={false}
     >
-      <section className="space-y-4">
-        <h2 className="font-display text-2xl tracking-tight">
-          What is peer-to-peer car rental?
-        </h2>
-        <p className="leading-relaxed text-muted">
-          On platforms like Turo, hosts list personal vehicles and guests book
-          them for a set trip window. You usually pick up at a listed location
-          (or arrange delivery), unlock with instructions in the app, and return
-          the car at the agreed time. The platform handles identity checks,
-          payments, and trip messaging — the host owns the car.
-        </p>
-        <p className="leading-relaxed text-muted">
-          Compared with a traditional rental counter, peer-to-peer can mean
-          lower daily rates on some cars, pickup away from airport queues, and
-          a wider mix of models (compact SUVs, trucks, EVs). Tradeoffs include
-          host response times, mileage caps, and protection-plan choices you
-          should read before you confirm.
-        </p>
-      </section>
-
-      <section className="mt-10">
+      <section className="mt-0">
         <h2 className="font-display text-2xl tracking-tight">
           Our Houston fleet
         </h2>
         <p className="mt-2 leading-relaxed text-muted">
-          Two cars listed on Turo by the site owner, based in the Hobby
-          Airport area of southeast Houston. Open a listing for current
-          availability, the host’s current rating, and the all-in price for
-          your dates.
-          Flying into Hobby? See{" "}
+          Two cars listed on Turo by the site owner, based near Hobby Airport
+          (HOU). Open a listing for current availability and the all-in price
+          for your dates. More pickup tips:{" "}
           <Link
             href={HOBBY_AIRPORT_PATH}
             className="text-accent underline-offset-2 hover:underline"
@@ -78,7 +106,26 @@ export default function RentalsHubPage() {
           </Link>
           .
         </p>
-        <RentalListingGrid listings={turoListings} className="mt-6" />
+        <RentalListingGrid
+          listings={turoListings}
+          className="mt-6"
+          showPitch
+          showTraxStats
+        />
+      </section>
+
+      <section className="mt-10 space-y-4">
+        <h2 className="font-display text-2xl tracking-tight">
+          Hobby Airport rental FAQ
+        </h2>
+        <dl className="space-y-5">
+          {RENTALS_FAQS.map((faq) => (
+            <div key={faq.question}>
+              <dt className="font-medium text-foreground">{faq.question}</dt>
+              <dd className="mt-1.5 leading-relaxed text-muted">{faq.answer}</dd>
+            </div>
+          ))}
+        </dl>
       </section>
 
       <section className="mt-10">

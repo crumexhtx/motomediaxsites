@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { CatalogImage } from "@/components/CatalogImage";
+import { TuroListingButton } from "@/components/TuroListingButton";
 import {
+  RENTAL_CARD_PITCH,
+  TRAX_LISTING_STATS,
   TURO_LINK_REL,
   TURO_PARTNER_LABEL,
   rentalListingName,
@@ -10,16 +13,33 @@ import {
 type Props = {
   listing: TuroListing;
   className?: string;
+  /** Show the /rentals buyer pitch under the title. */
+  showPitch?: boolean;
+  /**
+   * Show Trax rating / trip line from TRAX_LISTING_STATS.
+   * Venue never shows ratings here — add only once that listing has real reviews.
+   */
+  showTraxStats?: boolean;
 };
+
+function carKey(listing: TuroListing): "venue" | "trax" {
+  return listing.slug.includes("trax") ? "trax" : "venue";
+}
 
 /**
  * One fleet vehicle: photo, name, quick specs, features, and Turo CTA.
- * Missing data is hidden — never a placeholder or guessed value. No host
- * identity or rating is shown (no AggregateRating JSON-LD either).
+ * Missing data is hidden — never a placeholder or guessed value.
  */
-export function RentalListingCard({ listing, className = "" }: Props) {
+export function RentalListingCard({
+  listing,
+  className = "",
+  showPitch = false,
+  showTraxStats = false,
+}: Props) {
   const photo = listing.photos[0];
   const name = rentalListingName(listing);
+  const pitch = showPitch ? RENTAL_CARD_PITCH[listing.slug] : undefined;
+  const isTrax = listing.slug === "chevrolet-trax";
 
   return (
     <article
@@ -31,6 +51,8 @@ export function RentalListingCard({ listing, className = "" }: Props) {
           className="focus-ring group relative block aspect-[16/10] bg-soft"
           rel={TURO_LINK_REL}
           target="_blank"
+          data-track="turo-click"
+          data-car={carKey(listing)}
           aria-label={`View ${name} listing on ${TURO_PARTNER_LABEL}`}
         >
           <CatalogImage
@@ -51,6 +73,16 @@ export function RentalListingCard({ listing, className = "" }: Props) {
 
       <div className="flex flex-1 flex-col px-5 py-5">
         <h3 className="font-display text-xl tracking-tight">{name}</h3>
+        {pitch ? (
+          <p className="mt-2 text-sm leading-relaxed text-muted">{pitch}</p>
+        ) : null}
+        {showTraxStats && isTrax ? (
+          <p className="mt-2 text-sm font-medium text-foreground">
+            Rated {TRAX_LISTING_STATS.rating.toFixed(1)} on {TURO_PARTNER_LABEL}{" "}
+            · {TRAX_LISTING_STATS.tripsHosted} trips hosted
+          </p>
+        ) : null}
+        {/* Venue: do not show rating or trip count until that listing has real reviews. */}
 
         <dl className="mt-3 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1.5 text-sm">
           {listing.year !== null ? (
@@ -93,21 +125,16 @@ export function RentalListingCard({ listing, className = "" }: Props) {
         </dl>
 
         <div className="mt-auto pt-5">
-          <a
-            href={listing.url}
-            className="focus-ring inline-flex items-center rounded-md bg-accent px-4 py-2.5 text-sm font-semibold text-[#071018] transition hover:brightness-110"
-            rel={TURO_LINK_REL}
-            target="_blank"
-          >
-            Check dates &amp; price on {TURO_PARTNER_LABEL}
-          </a>
+          <TuroListingButton href={listing.url} car={carKey(listing)} />
           {listing.catalogPath ? (
             <p className="mt-3 text-sm">
               <Link
                 href={listing.catalogPath}
                 className="text-accent underline-offset-2 hover:underline"
               >
-                {listing.make} {listing.model} specs, years &amp; recalls
+                {listing.make} {listing.model}
+                {" · "}
+                Specs, years &amp; recalls
               </Link>
             </p>
           ) : null}
@@ -121,14 +148,23 @@ export function RentalListingCard({ listing, className = "" }: Props) {
 export function RentalListingGrid({
   listings,
   className = "",
+  showPitch = false,
+  showTraxStats = false,
 }: {
   listings: readonly TuroListing[];
   className?: string;
+  showPitch?: boolean;
+  showTraxStats?: boolean;
 }) {
   return (
     <div className={`grid gap-5 md:grid-cols-2 ${className}`}>
       {listings.map((listing) => (
-        <RentalListingCard key={listing.id} listing={listing} />
+        <RentalListingCard
+          key={listing.id}
+          listing={listing}
+          showPitch={showPitch}
+          showTraxStats={showTraxStats}
+        />
       ))}
     </div>
   );
