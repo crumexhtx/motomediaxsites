@@ -52,7 +52,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:50.136Z",
+    "fetchedAt": "2026-11-19T21:42:25.093Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/camry/2025": {
@@ -138,7 +138,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:50.723Z",
+    "fetchedAt": "2026-11-19T21:42:25.709Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/camry/2026": {
@@ -187,7 +187,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:51.395Z",
+    "fetchedAt": "2026-11-19T21:42:26.305Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/corolla/2024": {
@@ -249,7 +249,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:52.070Z",
+    "fetchedAt": "2026-11-19T21:42:26.925Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/corolla/2025": {
@@ -298,7 +298,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:52.714Z",
+    "fetchedAt": "2026-11-19T21:42:27.643Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/corolla/2026": {
@@ -354,7 +354,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:53.271Z",
+    "fetchedAt": "2026-11-19T21:42:28.263Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/prius/2024": {
@@ -428,7 +428,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:53.916Z",
+    "fetchedAt": "2026-11-19T21:42:28.929Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/prius/2025": {
@@ -490,7 +490,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:54.514Z",
+    "fetchedAt": "2026-11-19T21:42:29.500Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/prius/2026": {
@@ -526,7 +526,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:55.129Z",
+    "fetchedAt": "2026-11-19T21:42:30.061Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/4runner/2024": {
@@ -570,7 +570,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:55.738Z",
+    "fetchedAt": "2026-11-19T21:42:30.857Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/4runner/2025": {
@@ -626,7 +626,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:56.497Z",
+    "fetchedAt": "2026-11-19T21:42:31.841Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/4runner/2026": {
@@ -672,7 +672,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:57.113Z",
+    "fetchedAt": "2026-11-19T21:42:32.757Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/rav4/2024": {
@@ -740,7 +740,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:57.681Z",
+    "fetchedAt": "2026-11-19T21:42:33.592Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/rav4/2025": {
@@ -808,7 +808,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:58.242Z",
+    "fetchedAt": "2026-11-19T21:42:34.440Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/rav4/2026": {
@@ -853,7 +853,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:58.810Z",
+    "fetchedAt": "2026-11-19T21:42:35.355Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/highlander/2024": {
@@ -927,7 +927,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:59.355Z",
+    "fetchedAt": "2026-11-19T21:42:36.358Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/highlander/2025": {
@@ -997,7 +997,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:29:59.950Z",
+    "fetchedAt": "2026-11-19T21:42:36.983Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/highlander/2026": {
@@ -1018,7 +1018,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:00.548Z",
+    "fetchedAt": "2026-11-19T21:42:37.585Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/tacoma/2024": {
@@ -1098,7 +1098,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:01.285Z",
+    "fetchedAt": "2026-11-19T21:42:38.703Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/tacoma/2025": {
@@ -1178,7 +1178,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:01.951Z",
+    "fetchedAt": "2026-11-19T21:42:39.465Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/tacoma/2026": {
@@ -1211,7 +1211,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:02.639Z",
+    "fetchedAt": "2026-11-19T21:42:40.086Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/tundra/2024": {
@@ -1321,7 +1321,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:03.523Z",
+    "fetchedAt": "2026-11-19T21:42:40.701Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/tundra/2025": {
@@ -1401,7 +1401,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:04.176Z",
+    "fetchedAt": "2026-11-19T21:42:41.341Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/tundra/2026": {
@@ -1457,7 +1457,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:04.727Z",
+    "fetchedAt": "2026-11-19T21:42:41.918Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/supra/2024": {
@@ -1478,7 +1478,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:05.264Z",
+    "fetchedAt": "2026-11-19T21:42:42.565Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/supra/2025": {
@@ -1503,7 +1503,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:05.825Z",
+    "fetchedAt": "2026-11-19T21:42:43.165Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/supra/2026": {
@@ -1519,7 +1519,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:06.349Z",
+    "fetchedAt": "2026-11-19T21:42:43.721Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/gr86/2024": {
@@ -1551,7 +1551,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:06.920Z",
+    "fetchedAt": "2026-11-19T21:42:44.397Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/gr86/2025": {
@@ -1576,7 +1576,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:07.448Z",
+    "fetchedAt": "2026-11-19T21:42:44.968Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/gr86/2026": {
@@ -1592,7 +1592,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:07.967Z",
+    "fetchedAt": "2026-11-19T21:42:45.529Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/gr-corolla/2024": {
@@ -1634,7 +1634,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:08.493Z",
+    "fetchedAt": "2026-11-19T21:42:46.100Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/gr-corolla/2025": {
@@ -1682,7 +1682,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:09.010Z",
+    "fetchedAt": "2026-11-19T21:42:46.881Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/gr-corolla/2026": {
@@ -1731,7 +1731,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:09.541Z",
+    "fetchedAt": "2026-11-19T21:42:47.641Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/land-cruiser/2024": {
@@ -1787,7 +1787,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:10.099Z",
+    "fetchedAt": "2026-11-19T21:42:48.343Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/land-cruiser/2025": {
@@ -1836,7 +1836,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:10.649Z",
+    "fetchedAt": "2026-11-19T21:42:48.946Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "toyota/land-cruiser/2026": {
@@ -1857,7 +1857,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:11.227Z",
+    "fetchedAt": "2026-11-19T21:42:50.088Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/mustang/2024": {
@@ -1979,7 +1979,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:11.862Z",
+    "fetchedAt": "2026-11-19T21:42:51.278Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/mustang/2025": {
@@ -2065,7 +2065,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:12.529Z",
+    "fetchedAt": "2026-11-19T21:42:51.947Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/mustang/2026": {
@@ -2133,7 +2133,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:13.259Z",
+    "fetchedAt": "2026-11-19T21:42:52.518Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/mustang-mach-e/2024": {
@@ -2213,7 +2213,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:14.061Z",
+    "fetchedAt": "2026-11-19T21:42:53.370Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/mustang-mach-e/2025": {
@@ -2305,7 +2305,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:14.894Z",
+    "fetchedAt": "2026-11-19T21:42:54.326Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/mustang-mach-e/2026": {
@@ -2355,7 +2355,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:15.671Z",
+    "fetchedAt": "2026-11-19T21:42:55.188Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/f-150/2024": {
@@ -2471,7 +2471,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:16.331Z",
+    "fetchedAt": "2026-11-19T21:42:55.868Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/f-150/2025": {
@@ -2605,7 +2605,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:17.189Z",
+    "fetchedAt": "2026-11-19T21:42:56.651Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/f-150/2026": {
@@ -2683,7 +2683,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:17.868Z",
+    "fetchedAt": "2026-11-19T21:42:57.288Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/f-150-lightning/2024": {
@@ -2732,7 +2732,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:18.701Z",
+    "fetchedAt": "2026-11-19T21:42:58.106Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/f-150-lightning/2025": {
@@ -2769,7 +2769,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:19.461Z",
+    "fetchedAt": "2026-11-19T21:42:58.922Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/f-150-lightning/2026": {
@@ -2785,7 +2785,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:20.258Z",
+    "fetchedAt": "2026-11-19T21:43:00.011Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/explorer/2024": {
@@ -2895,7 +2895,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:20.939Z",
+    "fetchedAt": "2026-11-19T21:43:00.698Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/explorer/2025": {
@@ -3065,7 +3065,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:21.839Z",
+    "fetchedAt": "2026-11-19T21:43:01.504Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/explorer/2026": {
@@ -3205,7 +3205,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:22.819Z",
+    "fetchedAt": "2026-11-19T21:43:02.395Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/focus/2018": {
@@ -3297,7 +3297,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:23.485Z",
+    "fetchedAt": "2026-11-19T21:43:03.029Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/focus-rs/2018": {
@@ -3346,7 +3346,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:24.093Z",
+    "fetchedAt": "2026-11-19T21:43:03.591Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/fiesta-st/2019": {
@@ -3395,7 +3395,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:24.673Z",
+    "fetchedAt": "2026-11-19T21:43:04.165Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/bronco/2024": {
@@ -3541,7 +3541,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:25.280Z",
+    "fetchedAt": "2026-11-19T21:43:04.774Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/bronco/2025": {
@@ -3705,7 +3705,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:26.193Z",
+    "fetchedAt": "2026-11-19T21:43:05.682Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/bronco/2026": {
@@ -3795,7 +3795,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:27.070Z",
+    "fetchedAt": "2026-11-19T21:43:06.490Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/ranger/2024": {
@@ -3923,7 +3923,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:27.805Z",
+    "fetchedAt": "2026-11-19T21:43:07.170Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/ranger/2025": {
@@ -4051,7 +4051,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:28.533Z",
+    "fetchedAt": "2026-11-19T21:43:07.806Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/ranger/2026": {
@@ -4133,7 +4133,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:29.106Z",
+    "fetchedAt": "2026-11-19T21:43:08.389Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/gt/2022": {
@@ -4149,7 +4149,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:29.642Z",
+    "fetchedAt": "2026-11-19T21:43:08.998Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "ford/fusion/2020": {
@@ -4217,7 +4217,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:30.286Z",
+    "fetchedAt": "2026-11-19T21:43:09.626Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/bolt-ev/2023": {
@@ -4252,7 +4252,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:30.874Z",
+    "fetchedAt": "2026-11-19T21:43:10.310Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/camaro/2024": {
@@ -4268,7 +4268,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:31.688Z",
+    "fetchedAt": "2026-11-19T21:43:11.140Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/colorado/2024": {
@@ -4303,7 +4303,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:32.315Z",
+    "fetchedAt": "2026-11-19T21:43:11.743Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/colorado/2025": {
@@ -4326,7 +4326,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:32.933Z",
+    "fetchedAt": "2026-11-19T21:43:12.327Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/colorado/2026": {
@@ -4349,7 +4349,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:33.494Z",
+    "fetchedAt": "2026-11-19T21:43:12.905Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/corvette/2024": {
@@ -4378,7 +4378,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:34.152Z",
+    "fetchedAt": "2026-11-19T21:43:13.497Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/corvette/2025": {
@@ -4413,7 +4413,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:35.013Z",
+    "fetchedAt": "2026-11-19T21:43:14.337Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/corvette/2026": {
@@ -4429,7 +4429,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:35.652Z",
+    "fetchedAt": "2026-11-19T21:43:14.909Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/cruze/2019": {
@@ -4458,7 +4458,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:36.260Z",
+    "fetchedAt": "2026-11-19T21:43:15.475Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/equinox/2024": {
@@ -4481,7 +4481,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:37.298Z",
+    "fetchedAt": "2026-11-19T21:43:16.086Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/equinox/2025": {
@@ -4497,7 +4497,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:37.895Z",
+    "fetchedAt": "2026-11-19T21:43:16.680Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/equinox/2026": {
@@ -4520,7 +4520,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:38.471Z",
+    "fetchedAt": "2026-11-19T21:43:17.296Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/malibu/2024": {
@@ -4549,7 +4549,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:39.316Z",
+    "fetchedAt": "2026-11-19T21:43:17.922Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/malibu/2025": {
@@ -4572,7 +4572,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:39.916Z",
+    "fetchedAt": "2026-11-19T21:43:18.562Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/silverado/2024": {
@@ -4588,7 +4588,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:40.559Z",
+    "fetchedAt": "2026-11-19T21:43:19.164Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/silverado/2025": {
@@ -4604,7 +4604,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:41.161Z",
+    "fetchedAt": "2026-11-19T21:43:19.709Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/silverado/2026": {
@@ -4620,7 +4620,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:41.793Z",
+    "fetchedAt": "2026-11-19T21:43:20.277Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/suburban/2024": {
@@ -4643,7 +4643,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:42.438Z",
+    "fetchedAt": "2026-11-19T21:43:20.883Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/suburban/2025": {
@@ -4659,7 +4659,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:43.028Z",
+    "fetchedAt": "2026-11-19T21:43:21.464Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/suburban/2026": {
@@ -4675,7 +4675,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:43.662Z",
+    "fetchedAt": "2026-11-19T21:43:22.057Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/tahoe/2024": {
@@ -4710,7 +4710,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:44.320Z",
+    "fetchedAt": "2026-11-19T21:43:22.717Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/tahoe/2025": {
@@ -4733,7 +4733,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:44.921Z",
+    "fetchedAt": "2026-11-19T21:43:23.397Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/tahoe/2026": {
@@ -4768,7 +4768,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:45.623Z",
+    "fetchedAt": "2026-11-19T21:43:24.073Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/trax/2024": {
@@ -4791,7 +4791,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:46.181Z",
+    "fetchedAt": "2026-11-19T21:43:24.656Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/trax/2025": {
@@ -4814,7 +4814,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:46.767Z",
+    "fetchedAt": "2026-11-19T21:43:25.318Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/trax/2026": {
@@ -4830,7 +4830,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:47.312Z",
+    "fetchedAt": "2026-11-19T21:43:25.876Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "chevrolet/volt/2019": {
@@ -4859,7 +4859,7 @@
     },
     "complaintDataAvailable": false,
     "complaintsError": "HTTP 503",
-    "fetchedAt": "2026-11-18T21:30:47.906Z",
+    "fetchedAt": "2026-11-19T21:43:26.494Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/civic/2024": {
@@ -4921,7 +4921,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:48.465Z",
+    "fetchedAt": "2026-11-19T21:43:27.038Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/civic/2025": {
@@ -4983,7 +4983,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:49.358Z",
+    "fetchedAt": "2026-11-19T21:43:27.853Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/civic/2026": {
@@ -5032,7 +5032,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:50.159Z",
+    "fetchedAt": "2026-11-19T21:43:28.755Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/civic-type-r/2024": {
@@ -5064,7 +5064,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:50.981Z",
+    "fetchedAt": "2026-11-19T21:43:29.570Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/civic-type-r/2025": {
@@ -5096,7 +5096,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:51.759Z",
+    "fetchedAt": "2026-11-19T21:43:30.354Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/civic-type-r/2026": {
@@ -5112,7 +5112,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:52.338Z",
+    "fetchedAt": "2026-11-19T21:43:30.940Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/accord/2024": {
@@ -5192,7 +5192,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:52.891Z",
+    "fetchedAt": "2026-11-19T21:43:31.520Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/accord/2025": {
@@ -5260,7 +5260,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:53.464Z",
+    "fetchedAt": "2026-11-19T21:43:32.080Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/accord/2026": {
@@ -5302,7 +5302,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:54.041Z",
+    "fetchedAt": "2026-11-19T21:43:32.675Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/cr-v/2024": {
@@ -5364,7 +5364,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:54.713Z",
+    "fetchedAt": "2026-11-19T21:43:33.333Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/cr-v/2025": {
@@ -5420,7 +5420,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:55.279Z",
+    "fetchedAt": "2026-11-19T21:43:33.930Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/cr-v/2026": {
@@ -5469,7 +5469,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:56.107Z",
+    "fetchedAt": "2026-11-19T21:43:34.733Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/pilot/2024": {
@@ -5561,7 +5561,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:56.747Z",
+    "fetchedAt": "2026-11-19T21:43:35.307Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/pilot/2025": {
@@ -5641,7 +5641,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:57.793Z",
+    "fetchedAt": "2026-11-19T21:43:35.890Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/pilot/2026": {
@@ -5664,7 +5664,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:58.564Z",
+    "fetchedAt": "2026-11-19T21:43:36.491Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/s2000/2009": {
@@ -5680,7 +5680,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:59.159Z",
+    "fetchedAt": "2026-11-19T21:43:37.016Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/odyssey/2024": {
@@ -5748,7 +5748,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:30:59.946Z",
+    "fetchedAt": "2026-11-19T21:43:37.664Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/odyssey/2025": {
@@ -5810,7 +5810,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:00.648Z",
+    "fetchedAt": "2026-11-19T21:43:38.272Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/odyssey/2026": {
@@ -5872,7 +5872,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:01.301Z",
+    "fetchedAt": "2026-11-19T21:43:38.858Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/element/2011": {
@@ -5976,7 +5976,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:01.930Z",
+    "fetchedAt": "2026-11-19T21:43:39.442Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/fit/2020": {
@@ -6050,7 +6050,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:02.487Z",
+    "fetchedAt": "2026-11-19T21:43:40.003Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/ridgeline/2024": {
@@ -6106,7 +6106,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:03.134Z",
+    "fetchedAt": "2026-11-19T21:43:40.581Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/ridgeline/2025": {
@@ -6168,7 +6168,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:03.719Z",
+    "fetchedAt": "2026-11-19T21:43:41.127Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/ridgeline/2026": {
@@ -6205,7 +6205,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:04.280Z",
+    "fetchedAt": "2026-11-19T21:43:41.653Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "honda/insight/2022": {
@@ -6273,7 +6273,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:04.870Z",
+    "fetchedAt": "2026-11-19T21:43:42.211Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/gt-r/2024": {
@@ -6289,7 +6289,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:05.717Z",
+    "fetchedAt": "2026-11-19T21:43:43.002Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/gt-r/2025": {
@@ -6305,7 +6305,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:06.860Z",
+    "fetchedAt": "2026-11-19T21:43:43.783Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/350z/2009": {
@@ -6338,7 +6338,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:07.773Z",
+    "fetchedAt": "2026-11-19T21:43:44.614Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/370z/2020": {
@@ -6354,7 +6354,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:08.389Z",
+    "fetchedAt": "2026-11-19T21:43:45.221Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/z/2024": {
@@ -6388,7 +6388,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:09.054Z",
+    "fetchedAt": "2026-11-19T21:43:45.756Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/z/2025": {
@@ -6404,7 +6404,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:09.586Z",
+    "fetchedAt": "2026-11-19T21:43:46.324Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/z/2026": {
@@ -6420,7 +6420,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:10.160Z",
+    "fetchedAt": "2026-11-19T21:43:46.889Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/altima/2024": {
@@ -6476,7 +6476,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:10.872Z",
+    "fetchedAt": "2026-11-19T21:43:47.504Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/altima/2025": {
@@ -6530,7 +6530,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:11.519Z",
+    "fetchedAt": "2026-11-19T21:43:48.094Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/altima/2026": {
@@ -6546,7 +6546,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:12.104Z",
+    "fetchedAt": "2026-11-19T21:43:48.674Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/maxima/2023": {
@@ -6567,7 +6567,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:12.684Z",
+    "fetchedAt": "2026-11-19T21:43:49.234Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/sentra/2024": {
@@ -6635,7 +6635,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:13.355Z",
+    "fetchedAt": "2026-11-19T21:43:49.798Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/sentra/2025": {
@@ -6709,7 +6709,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:13.973Z",
+    "fetchedAt": "2026-11-19T21:43:50.367Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/sentra/2026": {
@@ -6761,7 +6761,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:14.605Z",
+    "fetchedAt": "2026-11-19T21:43:50.955Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/pathfinder/2024": {
@@ -6823,7 +6823,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:15.281Z",
+    "fetchedAt": "2026-11-19T21:43:51.518Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/pathfinder/2025": {
@@ -6879,7 +6879,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:16.013Z",
+    "fetchedAt": "2026-11-19T21:43:52.116Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/pathfinder/2026": {
@@ -6916,7 +6916,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:16.622Z",
+    "fetchedAt": "2026-11-19T21:43:52.680Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/rogue/2024": {
@@ -6990,7 +6990,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:17.347Z",
+    "fetchedAt": "2026-11-19T21:43:53.254Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/rogue/2025": {
@@ -7058,7 +7058,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:17.957Z",
+    "fetchedAt": "2026-11-19T21:43:53.881Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/rogue/2026": {
@@ -7120,7 +7120,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:18.924Z",
+    "fetchedAt": "2026-11-19T21:43:54.680Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/frontier/2024": {
@@ -7188,7 +7188,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:19.778Z",
+    "fetchedAt": "2026-11-19T21:43:55.521Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/frontier/2025": {
@@ -7244,7 +7244,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:20.588Z",
+    "fetchedAt": "2026-11-19T21:43:56.324Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/frontier/2026": {
@@ -7284,7 +7284,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:21.397Z",
+    "fetchedAt": "2026-11-19T21:43:57.107Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/xterra/2015": {
@@ -7313,7 +7313,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:21.989Z",
+    "fetchedAt": "2026-11-19T21:43:57.703Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/leaf/2024": {
@@ -7338,7 +7338,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:23.083Z",
+    "fetchedAt": "2026-11-19T21:43:58.698Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/leaf/2025": {
@@ -7375,7 +7375,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:24.095Z",
+    "fetchedAt": "2026-11-19T21:43:59.801Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/leaf/2026": {
@@ -7413,7 +7413,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:24.907Z",
+    "fetchedAt": "2026-11-19T21:44:00.723Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/ariya/2024": {
@@ -7450,7 +7450,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:25.471Z",
+    "fetchedAt": "2026-11-19T21:44:01.254Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/ariya/2025": {
@@ -7479,7 +7479,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:26.043Z",
+    "fetchedAt": "2026-11-19T21:44:01.809Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "nissan/ariya/2026": {
@@ -7495,7 +7495,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:26.594Z",
+    "fetchedAt": "2026-11-19T21:44:02.420Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/elantra/2024": {
@@ -7551,7 +7551,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:27.229Z",
+    "fetchedAt": "2026-11-19T21:44:03.024Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/elantra/2025": {
@@ -7600,7 +7600,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:27.798Z",
+    "fetchedAt": "2026-11-19T21:44:04.542Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/elantra/2026": {
@@ -7635,7 +7635,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:28.390Z",
+    "fetchedAt": "2026-11-19T21:44:05.456Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/sonata/2024": {
@@ -7691,7 +7691,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:29.008Z",
+    "fetchedAt": "2026-11-19T21:44:06.105Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/sonata/2025": {
@@ -7736,7 +7736,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:29.613Z",
+    "fetchedAt": "2026-11-19T21:44:06.756Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/sonata/2026": {
@@ -7768,7 +7768,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:30.156Z",
+    "fetchedAt": "2026-11-19T21:44:07.346Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/tucson/2024": {
@@ -7842,7 +7842,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:30.732Z",
+    "fetchedAt": "2026-11-19T21:44:08.076Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/tucson/2025": {
@@ -7928,7 +7928,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:31.333Z",
+    "fetchedAt": "2026-11-19T21:44:08.752Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/tucson/2026": {
@@ -8008,7 +8008,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:31.964Z",
+    "fetchedAt": "2026-11-19T21:44:09.404Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/santa-fe/2024": {
@@ -8100,7 +8100,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:32.579Z",
+    "fetchedAt": "2026-11-19T21:44:10.123Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/santa-fe/2025": {
@@ -8180,7 +8180,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:33.256Z",
+    "fetchedAt": "2026-11-19T21:44:10.817Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/santa-fe/2026": {
@@ -8254,7 +8254,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:33.807Z",
+    "fetchedAt": "2026-11-19T21:44:11.476Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/palisade/2024": {
@@ -8334,7 +8334,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:34.356Z",
+    "fetchedAt": "2026-11-19T21:44:12.240Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/palisade/2025": {
@@ -8402,7 +8402,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:34.891Z",
+    "fetchedAt": "2026-11-19T21:44:12.924Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/palisade/2026": {
@@ -8470,7 +8470,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:35.434Z",
+    "fetchedAt": "2026-11-19T21:44:13.722Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/genesis/2016": {
@@ -8544,7 +8544,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:35.981Z",
+    "fetchedAt": "2026-11-19T21:44:14.456Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/veloster/2022": {
@@ -8569,7 +8569,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:36.616Z",
+    "fetchedAt": "2026-11-19T21:44:15.060Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/elantra-n/2024": {
@@ -8590,7 +8590,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:37.198Z",
+    "fetchedAt": "2026-11-19T21:44:15.710Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/elantra-n/2025": {
@@ -8630,7 +8630,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:37.999Z",
+    "fetchedAt": "2026-11-19T21:44:16.288Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/elantra-n/2026": {
@@ -8653,7 +8653,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:38.561Z",
+    "fetchedAt": "2026-11-19T21:44:17.454Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/ioniq-5/2024": {
@@ -8721,7 +8721,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:39.105Z",
+    "fetchedAt": "2026-11-19T21:44:18.123Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/ioniq-5/2025": {
@@ -8825,7 +8825,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:39.731Z",
+    "fetchedAt": "2026-11-19T21:44:18.780Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/ioniq-5/2026": {
@@ -8887,7 +8887,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:40.312Z",
+    "fetchedAt": "2026-11-19T21:44:19.832Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/ioniq-6/2024": {
@@ -8967,7 +8967,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:40.867Z",
+    "fetchedAt": "2026-11-19T21:44:20.466Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/ioniq-6/2025": {
@@ -9035,7 +9035,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:41.404Z",
+    "fetchedAt": "2026-11-19T21:44:21.100Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "hyundai/ioniq-6/2026": {
@@ -9051,7 +9051,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:41.937Z",
+    "fetchedAt": "2026-11-19T21:44:21.680Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/optima/2020": {
@@ -9100,7 +9100,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:42.508Z",
+    "fetchedAt": "2026-11-19T21:44:22.286Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/k5/2024": {
@@ -9162,7 +9162,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:43.067Z",
+    "fetchedAt": "2026-11-19T21:44:22.928Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/k5/2025": {
@@ -9224,7 +9224,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:43.820Z",
+    "fetchedAt": "2026-11-19T21:44:23.599Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/k5/2026": {
@@ -9268,7 +9268,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:44.386Z",
+    "fetchedAt": "2026-11-19T21:44:24.502Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/stinger/2023": {
@@ -9304,7 +9304,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:44.944Z",
+    "fetchedAt": "2026-11-19T21:44:25.149Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/soul/2024": {
@@ -9353,7 +9353,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:45.515Z",
+    "fetchedAt": "2026-11-19T21:44:25.790Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/soul/2025": {
@@ -9398,7 +9398,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:46.061Z",
+    "fetchedAt": "2026-11-19T21:44:26.880Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/soul/2026": {
@@ -9414,7 +9414,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:46.670Z",
+    "fetchedAt": "2026-11-19T21:44:27.511Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/sorento/2024": {
@@ -9476,7 +9476,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:47.332Z",
+    "fetchedAt": "2026-11-19T21:44:28.499Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/sorento/2025": {
@@ -9544,7 +9544,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:47.956Z",
+    "fetchedAt": "2026-11-19T21:44:29.564Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/sorento/2026": {
@@ -9586,7 +9586,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:48.533Z",
+    "fetchedAt": "2026-11-19T21:44:30.182Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/sportage/2024": {
@@ -9654,7 +9654,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:49.152Z",
+    "fetchedAt": "2026-11-19T21:44:30.818Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/sportage/2025": {
@@ -9710,7 +9710,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:49.705Z",
+    "fetchedAt": "2026-11-19T21:44:31.450Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/sportage/2026": {
@@ -9762,7 +9762,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:50.303Z",
+    "fetchedAt": "2026-11-19T21:44:32.043Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/telluride/2024": {
@@ -9842,7 +9842,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:50.904Z",
+    "fetchedAt": "2026-11-19T21:44:32.631Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/telluride/2025": {
@@ -9910,7 +9910,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:51.597Z",
+    "fetchedAt": "2026-11-19T21:44:33.270Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/telluride/2026": {
@@ -9926,7 +9926,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:52.160Z",
+    "fetchedAt": "2026-11-19T21:44:33.930Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/ev6/2024": {
@@ -9994,7 +9994,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:52.691Z",
+    "fetchedAt": "2026-11-19T21:44:34.661Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/ev6/2025": {
@@ -10039,7 +10039,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:53.304Z",
+    "fetchedAt": "2026-11-19T21:44:35.391Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/ev6/2026": {
@@ -10055,7 +10055,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:53.829Z",
+    "fetchedAt": "2026-11-19T21:44:36.033Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/ev9/2024": {
@@ -10147,7 +10147,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:54.369Z",
+    "fetchedAt": "2026-11-19T21:44:36.676Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/ev9/2025": {
@@ -10217,7 +10217,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:54.901Z",
+    "fetchedAt": "2026-11-19T21:44:37.301Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/ev9/2026": {
@@ -10267,7 +10267,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:55.463Z",
+    "fetchedAt": "2026-11-19T21:44:37.915Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/forte/2024": {
@@ -10316,7 +10316,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:56.047Z",
+    "fetchedAt": "2026-11-19T21:44:38.529Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "kia/rio/2023": {
@@ -10361,7 +10361,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:56.612Z",
+    "fetchedAt": "2026-11-19T21:44:39.111Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/impreza/2024": {
@@ -10423,7 +10423,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:57.316Z",
+    "fetchedAt": "2026-11-19T21:44:39.787Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/impreza/2025": {
@@ -10456,7 +10456,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:57.979Z",
+    "fetchedAt": "2026-11-19T21:44:40.422Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/impreza/2026": {
@@ -10477,7 +10477,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:58.606Z",
+    "fetchedAt": "2026-11-19T21:44:41.435Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/wrx-sti/2024": {
@@ -10522,7 +10522,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:59.149Z",
+    "fetchedAt": "2026-11-19T21:44:42.157Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/wrx-sti/2025": {
@@ -10547,7 +10547,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:31:59.784Z",
+    "fetchedAt": "2026-11-19T21:44:42.752Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/wrx-sti/2026": {
@@ -10563,7 +10563,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:00.507Z",
+    "fetchedAt": "2026-11-19T21:44:43.329Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/legacy/2024": {
@@ -10604,7 +10604,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:01.090Z",
+    "fetchedAt": "2026-11-19T21:44:44.239Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/legacy/2025": {
@@ -10645,7 +10645,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:01.683Z",
+    "fetchedAt": "2026-11-19T21:44:44.882Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/legacy/2026": {
@@ -10661,7 +10661,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:02.224Z",
+    "fetchedAt": "2026-11-19T21:44:45.468Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/outback/2024": {
@@ -10686,7 +10686,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:02.844Z",
+    "fetchedAt": "2026-11-19T21:44:46.130Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/outback/2025": {
@@ -10735,7 +10735,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:03.515Z",
+    "fetchedAt": "2026-11-19T21:44:46.816Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/outback/2026": {
@@ -10776,7 +10776,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:04.081Z",
+    "fetchedAt": "2026-11-19T21:44:47.685Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/forester/2024": {
@@ -10838,7 +10838,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:04.722Z",
+    "fetchedAt": "2026-11-19T21:44:48.702Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/forester/2025": {
@@ -10906,7 +10906,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:05.348Z",
+    "fetchedAt": "2026-11-19T21:44:49.412Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/forester/2026": {
@@ -10972,7 +10972,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:05.910Z",
+    "fetchedAt": "2026-11-19T21:44:50.067Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/brz/2024": {
@@ -10997,7 +10997,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:06.481Z",
+    "fetchedAt": "2026-11-19T21:44:50.743Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/brz/2025": {
@@ -11013,7 +11013,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:07.167Z",
+    "fetchedAt": "2026-11-19T21:44:51.343Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/brz/2026": {
@@ -11029,7 +11029,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:07.763Z",
+    "fetchedAt": "2026-11-19T21:44:51.945Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/crosstrek/2024": {
@@ -11091,7 +11091,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:08.308Z",
+    "fetchedAt": "2026-11-19T21:44:52.572Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/crosstrek/2025": {
@@ -11140,7 +11140,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:08.879Z",
+    "fetchedAt": "2026-11-19T21:44:53.173Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/crosstrek/2026": {
@@ -11188,7 +11188,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:09.410Z",
+    "fetchedAt": "2026-11-19T21:44:54.682Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/ascent/2024": {
@@ -11244,7 +11244,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:09.940Z",
+    "fetchedAt": "2026-11-19T21:44:55.292Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/ascent/2025": {
@@ -11300,7 +11300,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:10.494Z",
+    "fetchedAt": "2026-11-19T21:44:56.074Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "subaru/ascent/2026": {
@@ -11328,7 +11328,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:11.090Z",
+    "fetchedAt": "2026-11-19T21:44:56.729Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "jeep/wrangler/2024": {
@@ -11444,7 +11444,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:11.756Z",
+    "fetchedAt": "2026-11-19T21:44:57.494Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "jeep/wrangler/2025": {
@@ -11518,7 +11518,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:12.575Z",
+    "fetchedAt": "2026-11-19T21:44:58.480Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "jeep/wrangler/2026": {
@@ -11578,7 +11578,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:13.166Z",
+    "fetchedAt": "2026-11-19T21:44:59.100Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "jeep/grand-cherokee/2024": {
@@ -11724,7 +11724,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:13.962Z",
+    "fetchedAt": "2026-11-19T21:44:59.916Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "jeep/grand-cherokee/2025": {
@@ -11798,7 +11798,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:14.604Z",
+    "fetchedAt": "2026-11-19T21:45:00.596Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "jeep/grand-cherokee/2026": {
@@ -11872,7 +11872,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:15.185Z",
+    "fetchedAt": "2026-11-19T21:45:01.292Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "jeep/cherokee/2023": {
@@ -11904,7 +11904,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:15.803Z",
+    "fetchedAt": "2026-11-19T21:45:01.997Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "jeep/compass/2024": {
@@ -11953,7 +11953,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:16.349Z",
+    "fetchedAt": "2026-11-19T21:45:02.631Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "jeep/compass/2025": {
@@ -12002,7 +12002,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:16.907Z",
+    "fetchedAt": "2026-11-19T21:45:03.267Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "jeep/compass/2026": {
@@ -12034,7 +12034,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:17.451Z",
+    "fetchedAt": "2026-11-19T21:45:03.980Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "jeep/renegade/2023": {
@@ -12096,7 +12096,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:18.001Z",
+    "fetchedAt": "2026-11-19T21:45:04.618Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "jeep/gladiator/2024": {
@@ -12154,7 +12154,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:18.601Z",
+    "fetchedAt": "2026-11-19T21:45:05.487Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "jeep/gladiator/2025": {
@@ -12210,7 +12210,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:19.198Z",
+    "fetchedAt": "2026-11-19T21:45:06.130Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "jeep/gladiator/2026": {
@@ -12244,7 +12244,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:19.759Z",
+    "fetchedAt": "2026-11-19T21:45:06.793Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/sierra/2024": {
@@ -12300,7 +12300,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:20.431Z",
+    "fetchedAt": "2026-11-19T21:45:07.485Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/sierra/2025": {
@@ -12356,7 +12356,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:21.067Z",
+    "fetchedAt": "2026-11-19T21:45:08.106Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/sierra/2026": {
@@ -12402,7 +12402,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:21.607Z",
+    "fetchedAt": "2026-11-19T21:45:08.904Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/yukon/2024": {
@@ -12470,7 +12470,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:22.271Z",
+    "fetchedAt": "2026-11-19T21:45:09.708Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/yukon/2025": {
@@ -12532,7 +12532,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:22.866Z",
+    "fetchedAt": "2026-11-19T21:45:10.411Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/yukon/2026": {
@@ -12600,7 +12600,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:23.628Z",
+    "fetchedAt": "2026-11-19T21:45:11.010Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/acadia/2024": {
@@ -12649,7 +12649,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:24.251Z",
+    "fetchedAt": "2026-11-19T21:45:11.597Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/acadia/2025": {
@@ -12698,7 +12698,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:24.943Z",
+    "fetchedAt": "2026-11-19T21:45:12.206Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/acadia/2026": {
@@ -12744,7 +12744,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:25.524Z",
+    "fetchedAt": "2026-11-19T21:45:12.863Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/terrain/2024": {
@@ -12800,7 +12800,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:26.217Z",
+    "fetchedAt": "2026-11-19T21:45:13.492Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/terrain/2025": {
@@ -12841,7 +12841,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:26.844Z",
+    "fetchedAt": "2026-11-19T21:45:14.116Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/terrain/2026": {
@@ -12897,7 +12897,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:27.468Z",
+    "fetchedAt": "2026-11-19T21:45:14.674Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/canyon/2024": {
@@ -12965,7 +12965,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:28.103Z",
+    "fetchedAt": "2026-11-19T21:45:15.336Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/canyon/2025": {
@@ -13015,7 +13015,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:28.693Z",
+    "fetchedAt": "2026-11-19T21:45:15.959Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/canyon/2026": {
@@ -13057,7 +13057,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:29.235Z",
+    "fetchedAt": "2026-11-19T21:45:16.599Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/hummer-ev/2024": {
@@ -13111,7 +13111,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:29.781Z",
+    "fetchedAt": "2026-11-19T21:45:17.192Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/hummer-ev/2025": {
@@ -13136,11 +13136,24 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:30.384Z",
+    "fetchedAt": "2026-11-19T21:45:17.756Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "gmc/hummer-ev/2026": {
-    "recalls": [],
+    "recalls": [
+      {
+        "campaignNumber": "26V114000",
+        "date": "2026-02-26",
+        "component": "Equipment",
+        "summary": "General Motors has decided that certain 2027 Chevrolet Bolt EV, 2025-2026 Cadillac OPTIQ, Chevrolet Colorado, Equinox EV, GMC Canyon, 2026 Buick Enclave, Envision, Cadillac CT5, Escalade, Escalade ESV, Escalade IQ, Escalade IQL, LYRIQ, VISTIQ, Chevrolet Blazer EV, Corvette Convertible, Corvette Coupe, Corvette…"
+      },
+      {
+        "campaignNumber": "25V769000",
+        "date": "2025-11-06",
+        "component": "Air Bags",
+        "summary": "General Motors, LLC (GM) is recalling certain 2026 GMC Hummer EV Pickup and SUV vehicles. The front passenger air bag connection may have an improperly crimped wire, which can result in the air bag failing to deploy as intended."
+      }
+    ],
     "recallDataAvailable": true,
     "recallsError": null,
     "complaints": {
@@ -13152,7 +13165,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:30.978Z",
+    "fetchedAt": "2026-11-19T21:45:18.327Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/3-series/2024": {
@@ -13197,7 +13210,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:31.729Z",
+    "fetchedAt": "2026-11-19T21:45:19.511Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/3-series/2025": {
@@ -13230,7 +13243,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:32.548Z",
+    "fetchedAt": "2026-11-19T21:45:20.324Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/3-series/2026": {
@@ -13246,7 +13259,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:33.297Z",
+    "fetchedAt": "2026-11-19T21:45:21.152Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/5-series/2024": {
@@ -13262,7 +13275,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:33.832Z",
+    "fetchedAt": "2026-11-19T21:45:22.056Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/5-series/2025": {
@@ -13287,7 +13300,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:34.975Z",
+    "fetchedAt": "2026-11-19T21:45:23.427Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/5-series/2026": {
@@ -13308,7 +13321,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:36.065Z",
+    "fetchedAt": "2026-11-19T21:45:24.461Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/7-series/2024": {
@@ -13349,7 +13362,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:36.864Z",
+    "fetchedAt": "2026-11-19T21:45:25.248Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/7-series/2025": {
@@ -13374,7 +13387,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:38.193Z",
+    "fetchedAt": "2026-11-19T21:45:26.329Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/7-series/2026": {
@@ -13390,7 +13403,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:39.118Z",
+    "fetchedAt": "2026-11-19T21:45:27.112Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/m2/2024": {
@@ -13411,7 +13424,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:39.743Z",
+    "fetchedAt": "2026-11-19T21:45:27.679Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/m2/2025": {
@@ -13432,7 +13445,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:40.369Z",
+    "fetchedAt": "2026-11-19T21:45:28.224Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/m2/2026": {
@@ -13448,7 +13461,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:40.938Z",
+    "fetchedAt": "2026-11-19T21:45:28.836Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/m3/2024": {
@@ -13464,7 +13477,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:41.490Z",
+    "fetchedAt": "2026-11-19T21:45:29.475Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/m3/2025": {
@@ -13489,7 +13502,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:42.030Z",
+    "fetchedAt": "2026-11-19T21:45:30.154Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/m3/2026": {
@@ -13505,7 +13518,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:42.571Z",
+    "fetchedAt": "2026-11-19T21:45:30.689Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/m4/2024": {
@@ -13530,7 +13543,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:43.117Z",
+    "fetchedAt": "2026-11-19T21:45:31.249Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/m4/2025": {
@@ -13551,7 +13564,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:43.681Z",
+    "fetchedAt": "2026-11-19T21:45:31.781Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/m4/2026": {
@@ -13574,7 +13587,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:44.324Z",
+    "fetchedAt": "2026-11-19T21:45:32.437Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/m5/2025": {
@@ -13608,7 +13621,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:44.938Z",
+    "fetchedAt": "2026-11-19T21:45:33.102Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/m5/2026": {
@@ -13631,7 +13644,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:45.473Z",
+    "fetchedAt": "2026-11-19T21:45:33.639Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/x3/2024": {
@@ -13699,7 +13712,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:46.034Z",
+    "fetchedAt": "2026-11-19T21:45:34.200Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/x3/2025": {
@@ -13803,7 +13816,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:46.658Z",
+    "fetchedAt": "2026-11-19T21:45:34.834Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/x3/2026": {
@@ -13861,7 +13874,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:47.270Z",
+    "fetchedAt": "2026-11-19T21:45:35.434Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/x5/2024": {
@@ -13959,7 +13972,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:47.836Z",
+    "fetchedAt": "2026-11-19T21:45:36.030Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/x5/2025": {
@@ -14039,7 +14052,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:48.423Z",
+    "fetchedAt": "2026-11-19T21:45:36.966Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/x5/2026": {
@@ -14093,7 +14106,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:48.973Z",
+    "fetchedAt": "2026-11-19T21:45:38.159Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/x7/2024": {
@@ -14185,7 +14198,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:49.586Z",
+    "fetchedAt": "2026-11-19T21:45:38.876Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/x7/2025": {
@@ -14259,7 +14272,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:50.117Z",
+    "fetchedAt": "2026-11-19T21:45:39.830Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/x7/2026": {
@@ -14305,7 +14318,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:50.720Z",
+    "fetchedAt": "2026-11-19T21:45:40.999Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/z4/2024": {
@@ -14326,7 +14339,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:51.255Z",
+    "fetchedAt": "2026-11-19T21:45:41.751Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/z4/2025": {
@@ -14342,7 +14355,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:51.766Z",
+    "fetchedAt": "2026-11-19T21:45:43.328Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/z4/2026": {
@@ -14358,7 +14371,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:52.283Z",
+    "fetchedAt": "2026-11-19T21:45:43.888Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/i3/2021": {
@@ -14374,7 +14387,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:52.816Z",
+    "fetchedAt": "2026-11-19T21:45:44.513Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/i8/2020": {
@@ -14402,7 +14415,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:53.359Z",
+    "fetchedAt": "2026-11-19T21:45:45.126Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/i4/2024": {
@@ -14470,7 +14483,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:53.899Z",
+    "fetchedAt": "2026-11-19T21:45:45.707Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/i4/2025": {
@@ -14507,7 +14520,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:54.424Z",
+    "fetchedAt": "2026-11-19T21:45:46.375Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/i4/2026": {
@@ -14528,7 +14541,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:54.948Z",
+    "fetchedAt": "2026-11-19T21:45:46.912Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/ix/2024": {
@@ -14602,7 +14615,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:55.530Z",
+    "fetchedAt": "2026-11-19T21:45:47.490Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/ix/2025": {
@@ -14654,7 +14667,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:56.120Z",
+    "fetchedAt": "2026-11-19T21:45:48.038Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "bmw/ix/2026": {
@@ -14675,7 +14688,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:56.674Z",
+    "fetchedAt": "2026-11-19T21:45:48.608Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/c-class/2024": {
@@ -14724,7 +14737,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:57.407Z",
+    "fetchedAt": "2026-11-19T21:45:49.400Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/c-class/2025": {
@@ -14740,7 +14753,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:58.166Z",
+    "fetchedAt": "2026-11-19T21:45:50.232Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/c-class/2026": {
@@ -14761,7 +14774,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:58.988Z",
+    "fetchedAt": "2026-11-19T21:45:50.998Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/e-class/2024": {
@@ -14810,7 +14823,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:32:59.746Z",
+    "fetchedAt": "2026-11-19T21:45:51.804Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/e-class/2025": {
@@ -14826,7 +14839,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:00.555Z",
+    "fetchedAt": "2026-11-19T21:45:52.760Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/e-class/2026": {
@@ -14863,7 +14876,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:01.333Z",
+    "fetchedAt": "2026-11-19T21:45:53.619Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/s-class/2024": {
@@ -14904,7 +14917,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:02.091Z",
+    "fetchedAt": "2026-11-19T21:45:54.515Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/s-class/2025": {
@@ -14920,7 +14933,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:02.849Z",
+    "fetchedAt": "2026-11-19T21:45:55.284Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/s-class/2026": {
@@ -14941,7 +14954,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:03.710Z",
+    "fetchedAt": "2026-11-19T21:45:56.619Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/g-class/2024": {
@@ -14966,7 +14979,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:04.474Z",
+    "fetchedAt": "2026-11-19T21:45:57.574Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/g-class/2025": {
@@ -14982,7 +14995,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:05.282Z",
+    "fetchedAt": "2026-11-19T21:45:58.366Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/g-class/2026": {
@@ -14998,7 +15011,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:06.079Z",
+    "fetchedAt": "2026-11-19T21:45:59.170Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/amg-gt/2024": {
@@ -15014,7 +15027,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:06.618Z",
+    "fetchedAt": "2026-11-19T21:45:59.837Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/amg-gt/2025": {
@@ -15035,7 +15048,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:07.183Z",
+    "fetchedAt": "2026-11-19T21:46:00.414Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/amg-gt/2026": {
@@ -15056,7 +15069,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:07.766Z",
+    "fetchedAt": "2026-11-19T21:46:01.087Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/sl-class/2024": {
@@ -15081,7 +15094,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:08.526Z",
+    "fetchedAt": "2026-11-19T21:46:02.063Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/sl-class/2025": {
@@ -15097,7 +15110,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:09.276Z",
+    "fetchedAt": "2026-11-19T21:46:02.868Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/sl-class/2026": {
@@ -15113,7 +15126,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:10.013Z",
+    "fetchedAt": "2026-11-19T21:46:03.704Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/glc/2024": {
@@ -15162,7 +15175,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:10.526Z",
+    "fetchedAt": "2026-11-19T21:46:04.326Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/glc/2025": {
@@ -15207,7 +15220,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:11.049Z",
+    "fetchedAt": "2026-11-19T21:46:04.997Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/glc/2026": {
@@ -15244,7 +15257,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:11.628Z",
+    "fetchedAt": "2026-11-19T21:46:05.592Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/gle/2024": {
@@ -15293,7 +15306,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:12.171Z",
+    "fetchedAt": "2026-11-19T21:46:06.196Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/gle/2025": {
@@ -15342,7 +15355,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:12.845Z",
+    "fetchedAt": "2026-11-19T21:46:06.770Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/gle/2026": {
@@ -15383,7 +15396,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:13.502Z",
+    "fetchedAt": "2026-11-19T21:46:07.318Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/gls/2024": {
@@ -15432,7 +15445,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:14.090Z",
+    "fetchedAt": "2026-11-19T21:46:07.881Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/gls/2025": {
@@ -15477,7 +15490,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:14.660Z",
+    "fetchedAt": "2026-11-19T21:46:08.437Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/gls/2026": {
@@ -15498,7 +15511,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:15.211Z",
+    "fetchedAt": "2026-11-19T21:46:08.970Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/cla/2024": {
@@ -15523,7 +15536,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:15.718Z",
+    "fetchedAt": "2026-11-19T21:46:09.523Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/cla/2025": {
@@ -15544,7 +15557,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:16.245Z",
+    "fetchedAt": "2026-11-19T21:46:10.062Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/cla/2026": {
@@ -15565,7 +15578,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:16.866Z",
+    "fetchedAt": "2026-11-19T21:46:10.774Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/eqs/2024": {
@@ -15614,7 +15627,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:17.438Z",
+    "fetchedAt": "2026-11-19T21:46:11.386Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/eqs/2025": {
@@ -15635,7 +15648,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:18.032Z",
+    "fetchedAt": "2026-11-19T21:46:11.959Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/eqs/2026": {
@@ -15651,7 +15664,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:18.582Z",
+    "fetchedAt": "2026-11-19T21:46:12.812Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mercedes-benz/slk-slc/2020": {
@@ -15667,7 +15680,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:19.111Z",
+    "fetchedAt": "2026-11-19T21:46:14.303Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/model-s/2024": {
@@ -15753,7 +15766,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:19.991Z",
+    "fetchedAt": "2026-11-19T21:46:16.556Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/model-s/2025": {
@@ -15799,7 +15812,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:20.774Z",
+    "fetchedAt": "2026-11-19T21:46:18.412Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/model-s/2026": {
@@ -15828,7 +15841,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:21.486Z",
+    "fetchedAt": "2026-11-19T21:46:19.027Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/model-3/2024": {
@@ -15908,7 +15921,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:22.062Z",
+    "fetchedAt": "2026-11-19T21:46:19.872Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/model-3/2025": {
@@ -15976,7 +15989,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:22.958Z",
+    "fetchedAt": "2026-11-19T21:46:20.913Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/model-3/2026": {
@@ -16028,7 +16041,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:23.592Z",
+    "fetchedAt": "2026-11-19T21:46:21.472Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/model-x/2024": {
@@ -16126,7 +16139,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:24.355Z",
+    "fetchedAt": "2026-11-19T21:46:22.318Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/model-x/2025": {
@@ -16194,7 +16207,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:25.184Z",
+    "fetchedAt": "2026-11-19T21:46:23.156Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/model-x/2026": {
@@ -16231,7 +16244,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:25.751Z",
+    "fetchedAt": "2026-11-19T21:46:23.743Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/model-y/2024": {
@@ -16311,7 +16324,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:26.581Z",
+    "fetchedAt": "2026-11-19T21:46:24.569Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/model-y/2025": {
@@ -16379,7 +16392,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:27.301Z",
+    "fetchedAt": "2026-11-19T21:46:25.155Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/model-y/2026": {
@@ -16477,7 +16490,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:27.927Z",
+    "fetchedAt": "2026-11-19T21:46:25.729Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/cybertruck/2024": {
@@ -16593,7 +16606,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:28.534Z",
+    "fetchedAt": "2026-11-19T21:46:26.331Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/cybertruck/2025": {
@@ -16661,7 +16674,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:29.334Z",
+    "fetchedAt": "2026-11-19T21:46:27.115Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/cybertruck/2026": {
@@ -16703,7 +16716,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:29.916Z",
+    "fetchedAt": "2026-11-19T21:46:27.660Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "tesla/roadster/2011": {
@@ -16724,7 +16737,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:30.464Z",
+    "fetchedAt": "2026-11-19T21:46:28.291Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/jetta/2024": {
@@ -16773,7 +16786,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:31.055Z",
+    "fetchedAt": "2026-11-19T21:46:29.694Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/jetta/2025": {
@@ -16835,7 +16848,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:31.673Z",
+    "fetchedAt": "2026-11-19T21:46:33.695Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/jetta/2026": {
@@ -16867,7 +16880,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:32.273Z",
+    "fetchedAt": "2026-11-19T21:46:34.271Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/golf/2021": {
@@ -16915,7 +16928,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:32.863Z",
+    "fetchedAt": "2026-11-19T21:46:34.965Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/gti/2024": {
@@ -16977,7 +16990,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:33.874Z",
+    "fetchedAt": "2026-11-19T21:46:35.994Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/gti/2025": {
@@ -17000,7 +17013,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:34.543Z",
+    "fetchedAt": "2026-11-19T21:46:36.649Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/gti/2026": {
@@ -17016,7 +17029,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:35.113Z",
+    "fetchedAt": "2026-11-19T21:46:37.232Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/golf-r/2024": {
@@ -17064,7 +17077,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:35.669Z",
+    "fetchedAt": "2026-11-19T21:46:37.817Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/golf-r/2025": {
@@ -17087,7 +17100,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:36.259Z",
+    "fetchedAt": "2026-11-19T21:46:38.368Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/golf-r/2026": {
@@ -17112,7 +17125,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:36.867Z",
+    "fetchedAt": "2026-11-19T21:46:38.977Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/passat/2022": {
@@ -17153,7 +17166,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:37.515Z",
+    "fetchedAt": "2026-11-19T21:46:39.561Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/tiguan/2024": {
@@ -17215,7 +17228,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:38.078Z",
+    "fetchedAt": "2026-11-19T21:46:40.145Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/tiguan/2025": {
@@ -17283,7 +17296,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:38.740Z",
+    "fetchedAt": "2026-11-19T21:46:40.727Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/tiguan/2026": {
@@ -17332,7 +17345,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:39.304Z",
+    "fetchedAt": "2026-11-19T21:46:41.295Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/touareg/2017": {
@@ -17384,7 +17397,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:39.930Z",
+    "fetchedAt": "2026-11-19T21:46:41.870Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/atlas/2024": {
@@ -17482,7 +17495,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:40.539Z",
+    "fetchedAt": "2026-11-19T21:46:42.451Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/atlas/2025": {
@@ -17562,7 +17575,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:41.143Z",
+    "fetchedAt": "2026-11-19T21:46:43.043Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/atlas/2026": {
@@ -17608,7 +17621,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:41.700Z",
+    "fetchedAt": "2026-11-19T21:46:43.683Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/beetle/2019": {
@@ -17682,14 +17695,14 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:42.271Z",
+    "fetchedAt": "2026-11-19T21:46:44.316Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/id-4/2024": {
     "recalls": [
       {
         "campaignNumber": "26V630000",
-        "date": "2026-10-01",
+        "date": "2026-09-30",
         "component": "Electrical System",
         "summary": "Volkswagen Group of America, Inc. (Volkswagen) is recalling certain 2023-2026 ID.4 vehicles. The high voltage battery may fail and lead to a vehicle fire."
       },
@@ -17786,14 +17799,14 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:42.897Z",
+    "fetchedAt": "2026-11-19T21:46:44.885Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/id-4/2025": {
     "recalls": [
       {
         "campaignNumber": "26V630000",
-        "date": "2026-10-01",
+        "date": "2026-09-30",
         "component": "Electrical System",
         "summary": "Volkswagen Group of America, Inc. (Volkswagen) is recalling certain 2023-2026 ID.4 vehicles. The high voltage battery may fail and lead to a vehicle fire."
       },
@@ -17848,14 +17861,14 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:43.476Z",
+    "fetchedAt": "2026-11-19T21:46:45.448Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "volkswagen/id-4/2026": {
     "recalls": [
       {
         "campaignNumber": "26V630000",
-        "date": "2026-10-01",
+        "date": "2026-09-30",
         "component": "Electrical System",
         "summary": "Volkswagen Group of America, Inc. (Volkswagen) is recalling certain 2023-2026 ID.4 vehicles. The high voltage battery may fail and lead to a vehicle fire."
       },
@@ -17877,7 +17890,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:44.020Z",
+    "fetchedAt": "2026-11-19T21:46:46.052Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/miata/2024": {
@@ -17893,7 +17906,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:44.549Z",
+    "fetchedAt": "2026-11-19T21:46:46.579Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/miata/2025": {
@@ -17909,7 +17922,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:45.109Z",
+    "fetchedAt": "2026-11-19T21:46:47.111Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/miata/2026": {
@@ -17925,7 +17938,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:45.668Z",
+    "fetchedAt": "2026-11-19T21:46:47.687Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/mazda3/2024": {
@@ -17989,7 +18002,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:46.247Z",
+    "fetchedAt": "2026-11-19T21:46:48.304Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/mazda3/2025": {
@@ -18037,7 +18050,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:47.076Z",
+    "fetchedAt": "2026-11-19T21:46:49.181Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/mazda3/2026": {
@@ -18058,7 +18071,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:47.841Z",
+    "fetchedAt": "2026-11-19T21:46:50.066Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/mazda6/2021": {
@@ -18091,7 +18104,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:48.439Z",
+    "fetchedAt": "2026-11-19T21:46:50.655Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/rx-8/2011": {
@@ -18143,7 +18156,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:48.969Z",
+    "fetchedAt": "2026-11-19T21:46:51.223Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/cx-5/2024": {
@@ -18192,7 +18205,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:49.832Z",
+    "fetchedAt": "2026-11-19T21:46:52.036Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/cx-5/2025": {
@@ -18241,7 +18254,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:50.681Z",
+    "fetchedAt": "2026-11-19T21:46:52.851Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/cx-5/2026": {
@@ -18282,7 +18295,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:51.530Z",
+    "fetchedAt": "2026-11-19T21:46:53.638Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/cx-30/2024": {
@@ -18344,7 +18357,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:52.155Z",
+    "fetchedAt": "2026-11-19T21:46:54.199Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/cx-30/2025": {
@@ -18400,7 +18413,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:52.703Z",
+    "fetchedAt": "2026-11-19T21:46:54.948Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/cx-30/2026": {
@@ -18416,7 +18429,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:53.532Z",
+    "fetchedAt": "2026-11-19T21:46:55.770Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/cx-9/2023": {
@@ -18461,7 +18474,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:54.338Z",
+    "fetchedAt": "2026-11-19T21:46:56.563Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/cx-90/2024": {
@@ -18577,7 +18590,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:55.198Z",
+    "fetchedAt": "2026-11-19T21:46:57.403Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/cx-90/2025": {
@@ -18639,7 +18652,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:55.808Z",
+    "fetchedAt": "2026-11-19T21:46:57.959Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/cx-90/2026": {
@@ -18672,7 +18685,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:57.019Z",
+    "fetchedAt": "2026-11-19T21:46:58.739Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   },
   "mazda/mazdaspeed3/2013": {
@@ -18704,7 +18717,7 @@
     },
     "complaintDataAvailable": true,
     "complaintsError": null,
-    "fetchedAt": "2026-11-18T21:33:57.651Z",
+    "fetchedAt": "2026-11-19T21:46:59.289Z",
     "source": "seeded from src/data/catalog.generated.json (site's pnpm enrich:nhtsa-recalls run)"
   }
 }
